@@ -1,0 +1,10 @@
+{
+  "source_commit": "45a6fb8f267b8b391f2e737416a11cc6c4b2ccbc",
+  "date": "2026-10-22",
+  "models": "Native local source export per game, not source-swapped catalog assets",
+  "shared_stats": "HoennVR generated gamedata, modern/SV baseline; not per-game damage parity",
+  "za_parameters": "HoennVR Data/za_moves.json, decoded za-v2 rows. Native timeline interpreter is NOT included.",
+  "arceus_scheduler": "Experimental delay model informed by official action-order description; not reverse-engineered formula",
+  "bdsp_scheduler": "Conventional round / priority / Speed subset; not complete BDSP engine",
+  "effects": "Diagnostic Unity geometry and synthesized sound, not native move effects"
+}

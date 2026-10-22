@@ -1,0 +1,9 @@
+BDSP: 2 hits, HP=114/137
+BDSP: completed, HP=0/38
+BDSP: reset during attack, no delayed damage
+Arceus: 2 hits, HP=112/137
+Arceus: completed, HP=0/5
+Arceus: reset during attack, no delayed damage
+ZA: 2 hits, HP=117/147
+ZA: completed, HP=0/101
+ZA: reset during attack, no delayed damage

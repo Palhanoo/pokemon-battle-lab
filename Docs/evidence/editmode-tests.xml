@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Passed" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.5433256">
+  <test-suite type="TestSuite" id="1000" name="Pokemon Battle Lab" fullname="Pokemon Battle Lab" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.543326" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1010" name="BattleLab.Tests.dll" fullname="D:/www/PokemonBattleLab/Library/ScriptAssemblies/BattleLab.Tests.dll" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.519944" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="62372" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1011" name="BattleLab" fullname="BattleLab" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.518888" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1012" name="Tests" fullname="BattleLab.Tests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.518536" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CombatRulesTests" fullname="BattleLab.Tests.CombatRulesTests" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.516384" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1004" name="AgileCanEarnConsecutiveActions" fullname="BattleLab.Tests.CombatRulesTests.AgileCanEarnConsecutiveActions" methodname="AgileCanEarnConsecutiveActions" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="1984044495" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:55Z" duration="0.032698" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="PriorityWinsOverSpeed" fullname="BattleLab.Tests.CombatRulesTests.PriorityWinsOverSpeed" methodname="PriorityWinsOverSpeed" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="133387135" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:55Z" duration="0.000685" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="SelectedRealtimeRowsAreNativeAndUsable" fullname="BattleLab.Tests.CombatRulesTests.SelectedRealtimeRowsAreNativeAndUsable" methodname="SelectedRealtimeRowsAreNativeAndUsable" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="473400595" result="Passed" start-time="2026-10-22 01:46:55Z" end-time="2026-10-22 01:46:56Z" duration="1.441639" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1008" name="SourceSwitchDoesNotChangeCombatData" fullname="BattleLab.Tests.CombatRulesTests.SourceSwitchDoesNotChangeCombatData" methodname="SourceSwitchDoesNotChangeCombatData" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="1718949953" result="Passed" start-time="2026-10-22 01:46:56Z" end-time="2026-10-22 01:46:56Z" duration="0.004958" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="SpeedOrdersEqualPriority" fullname="BattleLab.Tests.CombatRulesTests.SpeedOrdersEqualPriority" methodname="SpeedOrdersEqualPriority" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="1876845711" result="Passed" start-time="2026-10-22 01:46:56Z" end-time="2026-10-22 01:46:56Z" duration="0.000600" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="StrongDelaysFollowingAction" fullname="BattleLab.Tests.CombatRulesTests.StrongDelaysFollowingAction" methodname="StrongDelaysFollowingAction" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="976451970" result="Passed" start-time="2026-10-22 01:46:56Z" end-time="2026-10-22 01:46:56Z" duration="0.001882" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="TypeImmunityRemainsZeroInAllModes" fullname="BattleLab.Tests.CombatRulesTests.TypeImmunityRemainsZeroInAllModes" methodname="TypeImmunityRemainsZeroInAllModes" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="214390008" result="Passed" start-time="2026-10-22 01:46:56Z" end-time="2026-10-22 01:46:56Z" duration="0.001294" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="ZaUsesItsResistedMultiplier" fullname="BattleLab.Tests.CombatRulesTests.ZaUsesItsResistedMultiplier" methodname="ZaUsesItsResistedMultiplier" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="1287040124" result="Passed" start-time="2026-10-22 01:46:56Z" end-time="2026-10-22 01:46:56Z" duration="0.000617" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/Bruno/AppData/LocalLow/BrunoLabs/Pokemon Battle Lab\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,65 @@
+[
+  {
+    "source": "Arceus",
+    "species": "PIKACHU",
+    "model": "pm0025_00_00",
+    "file": "Assets/Models/Arceus/PIKACHU.glb",
+    "sha256": "524fd90cefb98715663f932d772e8bb51231f1f59f5427f1ca9366f876a0c1e6"
+  },
+  {
+    "source": "Arceus",
+    "species": "GENGAR",
+    "model": "pm0094_00_00",
+    "file": "Assets/Models/Arceus/GENGAR.glb",
+    "sha256": "d8ecfb95c949b7795bfd47f6818d968668ba30e181b6a3c2d227d62e5a9b30c4"
+  },
+  {
+    "source": "Arceus",
+    "species": "LUCARIO",
+    "model": "pm0448_00_00",
+    "file": "Assets/Models/Arceus/LUCARIO.glb",
+    "sha256": "ef260dafbf9951cb7ea03525cfa63702959412c514382586b9bbedd10f819ae1"
+  },
+  {
+    "source": "ZA",
+    "species": "PIKACHU",
+    "model": "pm0025_00_00",
+    "file": "Assets/Models/ZA/PIKACHU.glb",
+    "sha256": "5dd8a994f95cf4dc6946a75c55c26b10c654ec433c7741215b17fc59200b2c9c"
+  },
+  {
+    "source": "ZA",
+    "species": "GENGAR",
+    "model": "pm0094_00_00",
+    "file": "Assets/Models/ZA/GENGAR.glb",
+    "sha256": "801ad4803da2d3a76d810deedd56c8971d5b2d0d4c99f246a4650f238ffd7d98"
+  },
+  {
+    "source": "ZA",
+    "species": "LUCARIO",
+    "model": "pm0448_00_00",
+    "file": "Assets/Models/ZA/LUCARIO.glb",
+    "sha256": "a6022dc993b2296fe17d4339f0c81063d5181b55e2b30ec682201328d2de0dc3"
+  },
+  {
+    "source": "BDSP",
+    "species": "PIKACHU",
+    "model": "pm0025_00_00",
+    "file": "Assets/Models/BDSP/PIKACHU.glb",
+    "sha256": "b37c1236a2e1eeffaf516fc8136a7f9c57a09dc49ee5aa6fc3d8e4af2ae4d2b4"
+  },
+  {
+    "source": "BDSP",
+    "species": "GENGAR",
+    "model": "pm0094_00_00",
+    "file": "Assets/Models/BDSP/GENGAR.glb",
+    "sha256": "039b420db7ecbad174c216223cb995a51d793dca26e3208ff896fd1bae77397e"
+  },
+  {
+    "source": "BDSP",
+    "species": "LUCARIO",
+    "model": "pm0448_00_00",
+    "file": "Assets/Models/BDSP/LUCARIO.glb",
+    "sha256": "a0ee8da493b154779d773a4f2ac978ae1ff8419b03241e4d64387426e0a2f968"
+  }
+]

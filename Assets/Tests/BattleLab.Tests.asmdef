@@ -1,0 +1,1 @@
+{"name": "BattleLab.Tests", "references": ["BattleLab.Runtime"], "optionalUnityReferences": ["TestAssemblies"], "includePlatforms": ["Editor"]}
