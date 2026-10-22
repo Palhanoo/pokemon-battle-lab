@@ -8,6 +8,43 @@ namespace BattleLab
 {
     public partial class BattleLabApp
     {
+        IEnumerator ReviewFixSmoke()
+        {
+            while(loading)yield return null;
+            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/review-fixes"));Directory.CreateDirectory(folder);
+            var report=new List<string>();teamSize=1;ai=false;practice=true;setup=inspect=false;mode=BattleMode.ZA;
+            foreach(string id in new[]{"ARCANINE","IRON_JUGULIS","CHARIZARD"})
+            {
+                playerSpecies=Array.IndexOf(Species,id);ResetBattle();while(loading)yield return null;
+                if(loadError!=null)throw new Exception(loadError);
+                // Freeze normal controller updates, then sample several complete loops.
+                Paused=true;var body=Player.body;var bones=body.GetComponentsInChildren<Transform>();
+                foreach(string role in new[]{"battle","run"})
+                {
+                    body.Role(role,true);for(int i=0;i<100;i++)body.Tick(.073f);
+                    var before=bones.Select(b=>b.localToWorldMatrix).ToArray();body.Tick(.137f);
+                    if(!bones.Where((b,i)=>b.localToWorldMatrix!=before[i]).Any())throw new Exception(id+" frozen "+role+" after repeated loops");
+                }
+                body.Idle();body.Tick(.2f);Paused=false;UpdateCamera(1);cam.transform.position=body.Centre+body.transform.forward*Mathf.Max(2,body.BodyHeight*1.6f)+Vector3.up*.2f;cam.transform.LookAt(body.Centre);CaptureEvidence(Path.Combine(folder,id+".png"));
+                report.Add(id+": idle and run still move after multiple loops");
+            }
+            // Switch to an uncached species immediately before starting the drill.
+            playerSpecies=Array.IndexOf(Species,"GENGAR");StartClashDrill();while(loading)yield return null;yield return null;
+            if(!clashDrill||fighters.Length!=2)throw new Exception("Async drill setup failed");
+            ResetBattle();while(loading)yield return null;
+            if(clashDrill||clashMessage!=null)throw new Exception("Drill/message leaked across reset");
+            report.Add("Uncached drill load completes; ordinary reset clears drill and stale clash text");
+            foreach(string moveId in new[]{"THUNDERBOLT","THUNDER","DRAGON_PULSE","FIRE_SPIN"})
+            {
+                var fx=new AttackPresentation(Player.body,Target.body,catalog.Move(moveId),zaFx,bdspFx,nativeTiming);
+                float limit=fx.HitAt+(moveId=="FIRE_SPIN"?1.5f:4f);
+                while(fx.Time<limit){fx.Step(.033f);Player.body.Tick(.033f);if(Mathf.Abs(fx.Time-fx.HitAt)<.02f)CaptureEvidence(Path.Combine(folder,moveId+".png"));yield return null;}
+                if(moveId=="FIRE_SPIN"&&!fx.TailDone)throw new Exception("Fire Spin field did not expire");fx.Dispose();
+                report.Add(moveId+": presentation and cleanup exercised");
+            }
+            if(smokeErrors>0)throw new Exception(lastSmokeError);
+            File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log("LAB REVIEW FIXES PASSED");Application.Quit(0);
+        }
         IEnumerator StreamCombatSmoke()
         {
             while(loading)yield return null;if(pokedex==null)throw new Exception("No streaming roster");

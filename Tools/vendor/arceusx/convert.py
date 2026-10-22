@@ -253,8 +253,11 @@ class MaterialBaker:
             ao = sample(self.tex(texs['AOMap']), h, w).astype(np.float32)[..., 0:1] / 255
             col *= 0.35 + 0.65 * ao  # bake a soft AO so it reads without a custom shader
         # Pokémon eyes draw their shine from a separate mask the shader adds in; bake it in as a white catchlight.
-        if 'eye' in name.lower() and 'BaseColorMap' in texs and self.tex(texs['BaseColorMap'].replace('_alb', '_msk')) is not None:
-            hl = sample(self.tex(texs['BaseColorMap'].replace('_alb', '_msk')), h, w).astype(np.float32)[..., 0:1] / 255
+        highlight = texs.get('HighlightMaskMap')
+        if highlight is None and '_alb' in texs.get('BaseColorMap', ''):
+            highlight = texs['BaseColorMap'].replace('_alb', '_msk')
+        if 'eye' in name.lower() and sh.get('EnableHighlight', 'True') != 'False' and highlight and self.tex(highlight) is not None:
+            hl = sample(self.tex(highlight), h, w).astype(np.float32)[..., 0:1] / 255
             col = col * (1 - hl) + hl
         rgba = np.concatenate([lin_to_srgb(col) * 255, alpha[..., None] * 255], -1).round().astype(np.uint8)
 
@@ -262,6 +265,23 @@ class MaterialBaker:
             'baseColorTexture': {'index': self.glb.image(rgba, name + '_col')},
             'metallicFactor': float(f1.get('Metallic', 0.0)),
             'roughnessFactor': float(max(f1.get('Roughness', 0.7), 0.65))}}
+        # Paradox display eyes are emissive colour layers, absent from base albedo.
+        emission = np.zeros((h, w, 3), np.float32)
+        if lym is not None:
+            mask = sample(lym, h, w, sc[:2], sc[2:], wrap('LayerMaskMap')).astype(np.float32) / 255
+            for i in range(4):
+                colour = f4.get(f'EmissionColorLayer{i+1}', (0, 0, 0, 1))
+                strength = f1.get(f'EmissionIntensityLayer{i+1}', 0)
+                emission += mask[..., i:i+1] * np.array(colour[:3]) * strength
+        if emission.max() > 0:
+            gain = max(1.0, float(emission.max()))
+            pixels = np.concatenate([lin_to_srgb(emission / gain) * 255, np.full((h,w,1),255)], axis=-1).clip(0,255).round().astype(np.uint8)
+            mat['emissiveTexture'] = {'index': self.glb.image(pixels, name + '_emission')}
+            mat['emissiveFactor'] = [1,1,1]
+            if gain > 1:
+                mat.setdefault('extensions', {})['KHR_materials_emissive_strength'] = {'emissiveStrength':gain}
+                used=self.glb.j.setdefault('extensionsUsed',[])
+                if 'KHR_materials_emissive_strength' not in used:used.append('KHR_materials_emissive_strength')
         nrm = self.tex(texs['NormalMap']) if 'NormalMap' in texs else None
         if nrm is not None and sh.get('EnableNormalMap', 'True') == 'True':
             xy = nrm[..., :2].astype(np.float32) / 255 * 2 - 1

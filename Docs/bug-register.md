@@ -255,3 +255,53 @@ LAB-10 final coverage: all1,000 species have successful per-species runtime chec
 across the documented overlapping/resumed runs. evidence/pokedex/coverage.json
 records exact ranges and the corrected Ferroseed fixture. Both90-case attack
 suites pass. Final package stages all1,000 preferred bodies;25 remain unavailable.
+
+## LAB-12 — streamed clash drill exception and stale matchup labels
+
+Bruno reports NullReferenceException clicking the fire/water drill in
+PokedexBattleReady, then incorrect repeated Dark Pulse/Water Gun labels.
+Logs/bruno-pokedex-review.log identifies StartClashDrill line99: ResetBattle
+returns while streamed imports are pending, leaving fighters null. Drill state
+also survives species changes and old clash expiry survives clock resets.
+Repair: await loading before positioning, use current species/matching equipped
+slots, visible stop toggle, clear drill/message on ordinary resets. Clashes remain
+type-independent for opposing projectiles, using actual post-STAB/type damage.
+Recurrence: uncached species -> drill -> change matchup/reset -> no stale label,
+no unsolicited opponent attack. Focused streamed smoke covers async setup/reset.
+
+## LAB-13 — eyes, held locomotion, camera and lingering/absent effect layers
+
+Bruno reports Charizard eye artifacts, Iron Jugulis missing eyes/idle, Arcanine
+held paws during movement, poor POV, missing thunder/Dragon Pulse detail,
+underground attacks and long-lived Fire Spin in PokedexBattleReady.
+Confirmed material causes: fallback highlight replaced `_alb` in a filename
+already ending `_msk`, sampling Charizard's white base as an all-white highlight;
+Iron Jugulis eyes require emissive layers absent from MaterialBaker. Correct
+explicit highlight binding and export masked emissive colour. Only those two
+models rebaked in this quick repair; geometry/animation bytes preserved.
+Animation hypothesis: clamped legacy state disabled after transitions or skinned
+bounds culling. Reassert active loop sampling each frame and update skin offscreen;
+verify actual late-loop transform changes for both reported species. Earlier
+all-roster smoke only proved changes across roles, not sustained idle/run loops.
+Camera now backs off for large bodies and aims ahead with a lower initial pitch.
+Confirmed missing Dragon Pulse layer attachment: BulletWeakHandle wasn't resolved,
+so its muzzle stayed at world origin. Resolve after the projectile advances.
+This is a specific source repair, not proof every underground effect is fixed.
+Fire Spin's native field ends at13s; lab has single-hit rules, so its presentation
+now stops .8s after contact and expires .5s later. Native field behavior and
+thunder/fire/water shader/post-effect parity remain open. Focused recurrence:
+uncached drill, sustained idle/run, four named effect lifecycles and eye captures.
+Bruno requests a quick repair and explicitly no full-suite rerun.
+
+LAB-13 render follow-up: Charizard's corrected eye is visible in the frontal
+player capture. Iron Jugulis emissive texture export alone still rendered dark;
+runtime shader-variant coverage is a hypothesis, not proven. Preserve the same
+native LED mask/colours in a lit eye fallback as well as emissive data. No geometry
+or bone edits. Final capture and focused check are repeated only for this repair.
+
+Final visual result: Iron Jugulis eyes remain dark even with the lit-texture
+fallback; that attempted fallback was removed. Emissive layer export is retained
+as a confirmed missing source feature, but the visible eye defect is OPEN.
+Atlas UV/material addressing or overlapping geometry requires further diagnosis;
+shader-variant stripping is not established. Do not claim Iron Jugulis eyes fixed.
+Charizard's eye repair is visually confirmed. Sustained animation checks pass.

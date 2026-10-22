@@ -29,6 +29,7 @@ namespace BattleLab
         public async void ResetBattle()
         {
             if(loading)return;
+            clashDrill=false;clashMessage=null;clashMessageUntil=0;
             if(pokedex==null){ResetBattleReady();return;}
             loading=true;loadError=null;StopActions();foreach(var g in gallery)if(g)Destroy(g.gameObject);gallery.Clear();
             try

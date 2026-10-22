@@ -4,7 +4,7 @@ An isolated desktop Unity battle experiment for Bruno: **1,000 species**, one
 preferred model per species, direct Pokémon control, and 1v1 or 3v3 battles.
 No HoennVR maps, story, runtime assemblies or gameplay saves are loaded.
 
-Double-click **Play Battle Lab.cmd** to open `Builds/PokedexBattleReady`.
+Double-click **Play Battle Lab.cmd** to open `Builds/PokedexReviewFixes`.
 The previous `Builds/RealtimeRoster` player remains available through
 **Play Previous Roster.cmd**. Historical source-comparison models stay in the
 verification assets; the playable Pokédex shows one body per species.
@@ -22,7 +22,7 @@ verification assets; the playable Pokédex shows one body per species.
 - R resets; Esc pauses; F1 opens the body animation viewer. F2 opens live attack
   layers: pause an attack, then toggle layers to isolate a texture or emitter.
 - Enable Practice and disable AI for repeatable attacks. Sound volume is below
-  the move slots. The fire/water drill launches an opposing Water Gun when you attack.
+  the move slots. The clash drill uses your current Pokémon and matching equipped move slots; any opposing projectiles can collide. Resetting or changing species exits the drill.
 
 Opposing projectiles can clash along their travel paths. Compare damage after
 STAB, target type and defenses: a move at least 50% stronger continues with the

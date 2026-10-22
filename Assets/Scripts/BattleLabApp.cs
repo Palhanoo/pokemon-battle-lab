@@ -47,7 +47,7 @@ namespace BattleLab
         bool setup,practice=false;
         readonly Dictionary<string,int[]> loadouts=new();
         LabAudio soundCatalog;float soundVolume=.5f;
-        float yaw=90,pitch=24;
+        float yaw=90,pitch=18;
         Vector3 cameraFocus;
         Vector3 testInput; bool testDash;
         bool Direct => !inspect&&mode==BattleMode.ZA;
@@ -84,7 +84,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();BuildArena();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -186,6 +186,7 @@ namespace BattleLab
             if(!smoke&&Input.GetKeyDown(KeyCode.R))ResetBattle();
             if(!smoke&&Input.GetKeyDown(KeyCode.F2))effectAudit=!effectAudit;
             if(!smoke&&Input.GetKeyDown(KeyCode.F1)){inspect=!inspect;ResetBattle();}
+            if(loading)return; // A reset key can begin an asynchronous import during this frame.
             if(!smoke&&Direct&&!setup&&!Paused){if(Input.GetKeyDown(KeyCode.Q))SwitchControl();if(Input.GetKeyDown(KeyCode.E))CycleTarget();}
             if(!smoke&&!inspect&&!Paused)for(int i=0;i<ActiveSlots;i++)if(Input.GetKeyDown(KeyCode.Alpha1+i))Command(i);
             AudioListener.pause=Paused||(setup&&Direct);
@@ -208,6 +209,7 @@ namespace BattleLab
         }
         void UpdateCamera(float dt)
         {
+            if(loading||(!inspect&&fighters==null))return;
             bool orbit=Direct&&!Paused&&!smoke&&Input.GetMouseButton(1);
             Cursor.lockState=orbit?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!orbit;
             if(orbit){yaw+=Input.GetAxis("Mouse X")*3;pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,8,65);}
@@ -217,7 +219,13 @@ namespace BattleLab
             Vector3 focus=inspect?new Vector3(0,.85f,0):fighters!=null?(Direct?Player.body.transform.position+Vector3.up*Mathf.Clamp(Player.body.BodyHeight*.6f,.4f,1.6f):(fighters[0].body.Centre+fighters[1].body.Centre)*.5f):Vector3.zero;
             cameraFocus=Vector3.Lerp(cameraFocus,focus,1-Mathf.Exp(-12*dt));
             if(inspect)cameraFocus=focus;
-            float followDistance=Direct?cameraDistance*Mathf.Clamp(Player.body.BodyHeight/1.2f,.85f,1.5f):cameraDistance;
+            float followDistance=Direct?Mathf.Max(cameraDistance,Player.body.BodyHeight*2.2f+2):cameraDistance;
+            if(Direct)
+            {
+                // Aim ahead of the controlled body so it does not cover the target/projectile path.
+                var look=Quaternion.Euler(0,yaw,0)*Vector3.forward;
+                cameraFocus+=look*Mathf.Min(1.2f,Player.body.BodyHeight*.4f)*Mathf.Clamp01(dt*12);
+            }
             cam.transform.position=Direct?cameraFocus+Quaternion.Euler(pitch,yaw,0)*Vector3.back*followDistance:focus+new Vector3(0,inspect?0:cameraDistance*.42f,-cameraDistance);
             cam.transform.LookAt(Direct?cameraFocus:focus);
         }
@@ -249,7 +257,7 @@ namespace BattleLab
                 if(f.ready[slot]>now){message="That move is cooling down.";return false;}
                 if(now<dodgeUntil||Target==null)return false;
                 Begin(controlled,slot,MoveStyle.Normal);
-                if(clashDrill&&fighters[1].action==null)Begin(1,0,MoveStyle.Normal);return true;
+                if(clashDrill&&fighters[1].action==null)Begin(1,slot,MoveStyle.Normal);return true;
             }
             if(ActiveActions>0||queuedActor>=0||now<sequenceAt)return false;
             if(f.pp[slot]<(mode==BattleMode.Arceus?CombatRules.StyleCost(style):1)){message="Not enough PP. Reset to repeat this test.";return false;}
@@ -545,7 +553,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             while(true)
             {
                 object item;

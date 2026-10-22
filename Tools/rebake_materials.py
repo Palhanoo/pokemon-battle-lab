@@ -9,14 +9,14 @@ from convert import Files,MaterialBaker,GLB,params,tex_by_binding
 import numpy as np
 from fb import T
 
-def rebake(marker):
+def rebake(marker, force=False):
     marker=Path(marker);row=json.loads(marker.read_text())
-    if row['source'] not in ('ZA','SV','Arceus') or row.get('materialBake')==3:return (row['species'],'unchanged')
+    if row['source'] not in ('ZA','SV','Arceus') or (row.get('materialBake') in (3,4) and not force):return (row['species'],'unchanged')
     path=marker.parent/row['file'];blob=path.read_bytes();size=struct.unpack_from('<I',blob,12)[0];j=json.loads(blob[20:20+size]);binary=blob[28+size:];c=row['candidate'];model=Path(c['path']).stem
     files=Files([c['path']]) if row['source']=='Arceus' else VioletDir(open_assets() if row['source']=='ZA' else open_violet(),str(Path(c['path']).parent))
     mdl=T(files.get(model+'.trmdl'));byname={m.string(0):m for f in mdl.strings(3) for m in T(files.get(f)).tables(1)}
     baked=GLB();baker=MaterialBaker(files,baked,{},False)
-    affected=False
+    affected=force
     for old in j['materials']:
         mp=byname[old['name']];f4,f1,sh=params(mp);tex=tex_by_binding(mp)
         if 'LayerMaskMap' not in tex:continue
@@ -28,7 +28,7 @@ def rebake(marker):
             if layer and layer[3]>0 and f1.get('LayerMaskScale'+str(i+1),1)>0:count+=(mask[...,i]>0)
         if np.any(count>1) or sh.get('BaseColorMultiply')=='False' and np.any(count):affected=True;break
     if not affected:
-        row.update(materialBake=3,materialNote='Native masks checked: no overlapping active colour layers; existing textures retained.')
+        row.update(materialBake=4,materialNote='Native masks checked: no overlapping active colour layers; existing textures retained.')
         marker.write_text(json.dumps(row,indent=2)+'\n');return (row['species'],'audited; no overlapping layers')
     materials=[baker.build(byname[m['name']]) for m in j['materials']]
     discarded={im['bufferView'] for im in j.get('images',[])};out=bytearray();views=[];mapping={};preserved=hashlib.sha256()
@@ -46,6 +46,7 @@ def rebake(marker):
     for v in baked.j['bufferViews']:append(v,baked.bin[v.get('byteOffset',0):v.get('byteOffset',0)+v['byteLength']])
     for image in baked.j['images']:image['bufferView']+=texture_offset
     for key in ('images','textures','samplers'):j[key]=baked.j[key]
+    j['extensionsUsed']=list(dict.fromkeys(j.get('extensionsUsed',[])+baked.j.get('extensionsUsed',[])))
     j['materials']=materials;j['bufferViews']=views;j['buffers']=[{'byteLength':len(out)}]
     check=hashlib.sha256()
     for v in views[:texture_offset]:check.update(out[v['byteOffset']:v['byteOffset']+v['byteLength']])
@@ -53,7 +54,7 @@ def rebake(marker):
     text=json.dumps(j,separators=(',',':')).encode();text+=b' '*(-len(text)%4);out+=b'\0'*(-len(out)%4)
     result=struct.pack('<III',0x46546c67,2,28+len(text)+len(out))+struct.pack('<II',len(text),0x4e4f534a)+text+struct.pack('<II',len(out),0x004e4942)+out
     temp=path.with_suffix('.tmp');temp.write_bytes(result);temp.replace(path)
-    row.update(materialBake=3,materialNote='Ordered mask layers blend against original albedo; layer opacity respected.',geometryAnimationHash=preserved.hexdigest(),sha256=hashlib.sha256(result).hexdigest(),bytes=len(result));marker.write_text(json.dumps(row,indent=2)+'\n')
+    row.update(materialBake=4,materialNote='Ordered mask layers blend against original albedo; layer opacity respected.',geometryAnimationHash=preserved.hexdigest(),sha256=hashlib.sha256(result).hexdigest(),bytes=len(result));marker.write_text(json.dumps(row,indent=2)+'\n')
     return (row['species'],'rebaked; geometry/animation bytes unchanged')
 
 def main():

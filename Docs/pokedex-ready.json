@@ -802,8 +802,8 @@
         "gender": 0
       },
       "file": "CHARIZARD.glb",
-      "sha256": "f09472dcb8c60fa7c709bae51c66d526d02d7631b88f1c0bb597a3b22dcfc5ba",
-      "bytes": 22499420,
+      "sha256": "e93cbe69cc31fe212d652982cad9e12866b611cd20d3baf3528fbaa21d213209",
+      "bytes": 22509824,
       "clipCount": 114,
       "roles": [
         {
@@ -918,7 +918,7 @@
       "fallbacks": [],
       "roleAliases": {},
       "normalizedTracks": 0,
-      "materialBake": 3,
+      "materialBake": 4,
       "materialNote": "Ordered mask layers blend against original albedo; layer opacity respected.",
       "geometryAnimationHash": "bc15d022980bf61934cce6e10263be9e63b59d11af7ee8c0e02826ba757dbcf4",
       "data": {
@@ -147188,8 +147188,8 @@
         "gender": 0
       },
       "file": "IRON_JUGULIS.glb",
-      "sha256": "e0d7c94486741f6d99a9bb3b643dadd2828eb30d5c760e82e0203352720741c3",
-      "bytes": 12807768,
+      "sha256": "7be67955d9f728997ebcaa1f092b0a9efb564167cefc350733476c8020dd9957",
+      "bytes": 12896668,
       "clipCount": 50,
       "roles": [
         {
@@ -147300,7 +147300,7 @@
       "fallbacks": [],
       "roleAliases": {},
       "normalizedTracks": 0,
-      "materialBake": 3,
+      "materialBake": 4,
       "materialNote": "Ordered mask layers blend against original albedo; layer opacity respected.",
       "geometryAnimationHash": "dd59f2bf0914c58ba9d32d9596b621f298bb5ed953c9d4d80ddb27957e9f535d",
       "data": {

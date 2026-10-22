@@ -197,3 +197,31 @@ Final post-rebake static validation passed: 1,000 unique preferred-source specie
 52,807 clips, all model SHA256s, embedded resource bounds, roles, stats and move
 bindings. Seven explicitly recorded role aliases remain. The validation runs
 against the corrected final catalog rather than the earlier pre-rebake exports.
+
+
+## Quick playtest repairs — 22 October follow-up
+
+Bruno requests targeted checks only. No full roster or 90-case suite rerun.
+The focused standalone run passes sustained idle/run sampling after many loops
+for Arcanine, Iron Jugulis and Charizard; loading an uncached drill matchup;
+reset clearing drill/stale text; and Thunderbolt, Thunder, Dragon Pulse and
+Fire Spin presentation lifecycles. Fire Spin expires within1.3s after contact.
+Log: Logs/focused-review-fixes.log, exit0, LAB REVIEW FIXES PASSED.
+Evidence: evidence/review-fixes. The two rebaked models' hashes match metadata;
+Iron Jugulis eye materials now have emissive textures. These checks do not prove
+all shader layers match the games. Thunder textures/post details and unspecified
+underground effects remain open, beyond the confirmed Dragon Pulse carrier fix.
+Review package: Builds/PokedexReviewFixes. Prior running review remains untouched.
+
+Frontal capture review: Charizard's eye highlight is corrected. Iron Jugulis
+required native LED colours in its lit eye texture too; emissive-only export did
+not display in the player. This is an explicit compatibility fallback, not full
+native glow/shader parity. Updated model data is copied only into the stopped
+PokedexReviewFixes package, preserving the user's previous running player.
+
+Final visual result: Iron Jugulis eyes remain dark even with the lit-texture
+fallback; that attempted fallback was removed. Emissive layer export is retained
+as a confirmed missing source feature, but the visible eye defect is OPEN.
+Atlas UV/material addressing or overlapping geometry requires further diagnosis;
+shader-variant stripping is not established. Do not claim Iron Jugulis eyes fixed.
+Charizard's eye repair is visually confirmed. Sustained animation checks pass.

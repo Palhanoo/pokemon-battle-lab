@@ -89,6 +89,7 @@ namespace BattleLab.Native
                 obj.clips.Sort((a, b) => Order(a).CompareTo(Order(b)));
                 mv.objs.Add(obj);
             }
+            mv.objs.Sort((a,b)=>a.clips.Exists(c=>VioletFx.J.Str(VioletFx.J.Obj(c["params"]),"Target")=="BulletWeakHandle").CompareTo(b.clips.Exists(c=>VioletFx.J.Str(VioletFx.J.Obj(c["params"]),"Target")=="BulletWeakHandle")));
             mv.startTime = first == float.MaxValue ? 0 : Mathf.Max(0, first - 0.1f);
             if (mv.hitTime < 0) mv.hitTime = first == float.MaxValue ? mv.startTime : mv.lastEmit;
             mv.endTime = Mathf.Max(last, mv.startTime) + 1.5f;
@@ -226,7 +227,15 @@ namespace BattleLab.Native
                 case "GameObject/AttachTransform":
                 {
                     var target=Side(VioletFx.J.Str(p,"Target"));
-                    if(target==null)break;
+                    if(target==null)
+                    {
+                        if(VioletFx.J.Str(p,"Target")=="BulletWeakHandle")
+                        {
+                            var carrier=objs.Find(x=>x!=o&&x.name.StartsWith("bullet"));
+                            if(carrier!=null){tr.position=carrier.fx.transform.position;tr.rotation=carrier.fx.transform.rotation;}
+                        }
+                        break;
+                    }
                     string node=VioletFx.J.Str(p,"Node");
                     tr.position=Node(target,node);
                     if(VioletFx.J.B(p,"InherSRT"))

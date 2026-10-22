@@ -36,6 +36,7 @@ namespace BattleLab
             foreach(var c in body.GetComponentsInChildren<Collider>())Destroy(c);
             foreach(var a in body.GetComponentsInChildren<Animation>())a.enabled=false;
             actor.bodyRenderers=body.GetComponentsInChildren<Renderer>();
+            foreach(var skin in body.GetComponentsInChildren<SkinnedMeshRenderer>())skin.updateWhenOffscreen=true;
             actor.bones=body.GetComponentsInChildren<Transform>().GroupBy(t=>t.name.Replace("_","").ToLowerInvariant()).ToDictionary(g=>g.Key,g=>g.First());
             if(entry.clips.Any(c=>c.legacy))
             {
@@ -93,6 +94,7 @@ namespace BattleLab
             {
                 legacyClock+=dt*legacyRate;float length=Mathf.Max(.001f,clip.length);
                 legacyClock=looping?legacyClock%length:Mathf.Min(legacyClock,length);
+                legacyCurrent.enabled=true;legacyCurrent.wrapMode=looping?WrapMode.Loop:WrapMode.ClampForever;
                 legacyCurrent.time=legacyClock;legacyCurrent.weight=legacyPrevious!=null?blend:1;
                 if(legacyPrevious!=null){previousClock+=dt*previousRate;legacyPrevious.time=previousClock;legacyPrevious.weight=1-blend;if(blend>=1){legacyPrevious.enabled=false;legacyPrevious=null;}}
                 legacy.Sample();

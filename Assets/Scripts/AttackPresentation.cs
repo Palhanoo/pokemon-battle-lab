@@ -17,13 +17,13 @@ namespace BattleLab
         public float SoundAt { get; private set; }
         public int CueCount => cueIndex;
         readonly LabActor body,target;
-        readonly bool projectile;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
+        readonly bool projectile;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
         readonly ZaMove timing;
         readonly Material[] effectMaterials;
         int cueIndex;
         float baseRate=1;
         public bool Alive => Effect!=null && Effect.gameObject;
-        public bool TailDone => !Alive || Time>=Effect.EndTime;
+        public bool TailDone => !Alive || Time>=Mathf.Min(Effect.EndTime,sustainedStopAt+.5f);
         public static VioletMove.Battler Bind(LabActor actor)=>new VioletMove.Battler{
             root=actor.transform,head=actor.Bone("head"),height=actor.Bounds.size.y,radius=Mathf.Max(actor.Bounds.extents.x,actor.Bounds.extents.z),
             scale=actor.transform.lossyScale.x,center=()=>actor.Centre,bone=actor.Bone};
@@ -48,6 +48,9 @@ namespace BattleLab
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
             }
             FreeAt=Mathf.Max(FreeAt,HitAt+.15f);
+            // Native Fire Spin is a lingering field. The lab currently resolves one hit,
+            // so end its emission after contact instead of retaining a 13-second field.
+            if(move.id=="FIRE_SPIN")sustainedStopAt=HitAt+.8f;
             shootAt=timing==null?Mathf.Max(0,SoundAt):ZaTimeline.ShootAt(timing);
             shootAt=Mathf.Min(shootAt,HitAt-.05f);
             effectMaterials=Effect.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m&&m.HasProperty("_EffectTime")).Distinct().ToArray();
@@ -76,7 +79,9 @@ namespace BattleLab
                 {var cue=cues[cueIndex++];baseRate=cue.speed;body.Play(cue.clip,ClipPlayback.Loops(cue.clip),baseRate);}
                 body.Rate(baseRate*(timing==null?1:ZaTimeline.MasterSpeed(timing,Time)));
             }
-            if(Alive){Effect.Step(dt);foreach(var material in effectMaterials)if(material)material.SetFloat("_EffectTime",Time);}
+            if(Alive){Effect.Step(dt);
+                if(!sustainedStopped&&Time>=sustainedStopAt){sustainedStopped=true;VioletFx.Stop(Effect.gameObject,false);}
+                foreach(var material in effectMaterials)if(material)material.SetFloat("_EffectTime",Time);}
         }
         public bool Travel(out Vector3 previous,out Vector3 current)
         {

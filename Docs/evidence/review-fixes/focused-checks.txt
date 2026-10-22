@@ -1,0 +1,8 @@
+ARCANINE: idle and run still move after multiple loops
+IRON_JUGULIS: idle and run still move after multiple loops
+CHARIZARD: idle and run still move after multiple loops
+Uncached drill load completes; ordinary reset clears drill and stale clash text
+THUNDERBOLT: presentation and cleanup exercised
+THUNDER: presentation and cleanup exercised
+DRAGON_PULSE: presentation and cleanup exercised
+FIRE_SPIN: presentation and cleanup exercised

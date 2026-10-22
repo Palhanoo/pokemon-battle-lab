@@ -24,7 +24,7 @@ namespace BattleLab
         }
         void CreateTeams()
         {
-            controlled=0;targetIndex=1;clashCount=0;
+            controlled=0;targetIndex=1;clashCount=0;clashMessage=null;clashMessageUntil=0;
             var list=new List<Fighter>();int count=mode==BattleMode.ZA?teamSize:1;
             for(int slot=0;slot<count;slot++)
             {
@@ -79,7 +79,7 @@ namespace BattleLab
         {
             if(Button(new Rect(1068,260,348,38),teamSize==3?"Team battle · 3 versus 3":"Duel · 1 versus 1"))
             {teamSize=teamSize==3?1:3;clashDrill=false;ResetBattle();}
-            if(Button(new Rect(1068,685,348,34),"Fire / water clash drill"))StartClashDrill();
+            if(Button(new Rect(1068,685,348,34),clashDrill?"Stop clash drill":"Clash drill · current move slots"))StartClashDrill();
             if(teamSize!=3)return;
             Panel(1068,310,348,280);Text(1082,322,320,"TEAM ROSTER · click to change",small);
             for(int i=0;i<2;i++)
@@ -93,11 +93,17 @@ namespace BattleLab
         }
         void StartClashDrill()
         {
-            teamSize=1;playerSpecies=4;enemySpecies=5;playerSource=enemySource=1;
-            loadouts["TORCHIC"]=new[]{2,1,4,0};loadouts["MUDKIP"]=new[]{1,2,3,5};
-            mode=BattleMode.ZA;practice=true;ai=false;clashDrill=true;setup=false;ResetBattle();
+            if(clashDrill){clashDrill=false;ResetBattle();return;}
+            teamSize=1;mode=BattleMode.ZA;practice=true;ai=false;setup=false;
+            ResetBattle();StartCoroutine(CompleteClashDrill());
+        }
+        IEnumerator CompleteClashDrill()
+        {
+            while(loading)yield return null;
+            if(loadError!=null||fighters==null||fighters.Length!=2)yield break;
             fighters[0].body.transform.position=new Vector3(-1.3f,0,0);fighters[1].body.transform.position=new Vector3(1.3f,0,0);
-            Note("Clash drill · your attack triggers opposing Water Gun · compare STAB / type damage below");
+            clashDrill=true;
+            Note("Clash drill ON · opponent uses the matching equipped slot · any opposing projectiles can clash");
         }
         void TeamBattleUI()
         {
