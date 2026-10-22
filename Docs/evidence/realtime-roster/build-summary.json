@@ -1,0 +1,18 @@
+{
+  "review_build": "Builds/RealtimeRoster/PokemonBattleLab.exe",
+  "review_bytes": 640861857,
+  "verification_build": "Builds/RealtimeRosterVerification/PokemonBattleLab.exe",
+  "verification_bytes": 640862517,
+  "scenes": 1,
+  "errors": 0,
+  "editmode_passed": 29,
+  "model_hashes_verified": 15,
+  "effect_hashes_verified": 783,
+  "audio_hashes_verified": 27,
+  "notes": "Verification differs only in background-safe camera capture and configurable build output. Review build is frozen while Bruno plays.",
+  "standalone_presentations_passed": 90,
+  "standalone_models": 15,
+  "full_battles_passed": 3,
+  "reset_scenarios_passed": 3,
+  "standalone_exit_code": 0
+}

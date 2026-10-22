@@ -20,11 +20,11 @@ public static class BattleLabBuilder
         var catalog=AssetDatabase.LoadAssetAtPath<LabCatalog>("Assets/Resources/LabCatalog.asset");
         if(!catalog){catalog=ScriptableObject.CreateInstance<LabCatalog>();AssetDatabase.CreateAsset(catalog,"Assets/Resources/LabCatalog.asset");}
         catalog.data=JsonUtility.FromJson<LabData>(File.ReadAllText("Assets/Data/LabData.json"));
-        catalog.models=(from source in new[]{"Arceus","ZA","BDSP"}
-            from species in new[]{"PIKACHU","GENGAR","LUCARIO"}
-            select Import(source,species)).ToArray();
+        catalog.models=Directory.GetFiles("Assets/Models","*.glb",SearchOption.AllDirectories)
+            .Select(path=>Import(new DirectoryInfo(Path.GetDirectoryName(path)).Name,Path.GetFileNameWithoutExtension(path))).ToArray();
         EditorUtility.SetDirty(catalog);
         NativePresentationImporter.Import();
+        LabAudioImporter.Import();
         if(!AssetDatabase.LoadAssetAtPath<Material>("Assets/Resources/LabSurface.mat"))
             AssetDatabase.CreateAsset(new Material(Shader.Find("Universal Render Pipeline/Lit")),"Assets/Resources/LabSurface.mat");
         var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/URP.asset");
@@ -39,7 +39,7 @@ public static class BattleLabBuilder
         EditorSceneManager.SaveScene(scene,"Assets/Scenes/BattleLab.unity");
         EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene("Assets/Scenes/BattleLab.unity",true)};
         AssetDatabase.SaveAssets();
-        Debug.Log("LAB SETUP OK: 9 native models; 1 scene; no world/save dependency");
+        Debug.Log("LAB SETUP OK: native roster; 1 scene; no world/save dependency");
     }
     static ModelEntry Import(string source,string species)
     {
@@ -57,9 +57,11 @@ public static class BattleLabBuilder
     [MenuItem("Battle Lab/Build Windows review")]
     public static void Build()
     {
-        Setup();Directory.CreateDirectory("Builds/DirectControl");
+        var args=Environment.GetCommandLineArgs();int at=Array.IndexOf(args,"-lab-build-dir");
+        string output=at>=0&&at+1<args.Length?args[at+1]:"Builds/RealtimeRoster";
+        Setup();Directory.CreateDirectory(output);
         var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/BattleLab.unity"},
-            locationPathName="Builds/DirectControl/PokemonBattleLab.exe",target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
+            locationPathName=Path.Combine(output,"PokemonBattleLab.exe"),target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
         Debug.Log($"LAB BUILD {report.summary.result} scenes=1 errors={report.summary.totalErrors} bytes={report.summary.totalSize}");
         if(report.summary.result!=BuildResult.Succeeded)throw new Exception("Battle lab build failed");
     }

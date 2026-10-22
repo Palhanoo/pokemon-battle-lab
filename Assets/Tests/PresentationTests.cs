@@ -11,6 +11,8 @@ public class PresentationTests
     [TestCase("Arceus","PIKACHU")][TestCase("Arceus","GENGAR")][TestCase("Arceus","LUCARIO")]
     [TestCase("ZA","PIKACHU")][TestCase("ZA","GENGAR")][TestCase("ZA","LUCARIO")]
     [TestCase("BDSP","PIKACHU")][TestCase("BDSP","GENGAR")][TestCase("BDSP","LUCARIO")]
+    [TestCase("ZA","TREECKO")][TestCase("ZA","TORCHIC")][TestCase("ZA","MUDKIP")]
+    [TestCase("ZA","RALTS")][TestCase("SV","POOCHYENA")][TestCase("BDSP","BRELOOM")]
     public void EveryLoadoutHasEffectsAndARecoveryPlan(string source,string species)
     {
         var cat=Resources.Load<LabCatalog>("LabCatalog");var table=Resources.Load<NativeTiming>("NativeTiming");
@@ -18,7 +20,7 @@ public class PresentationTests
         foreach(var id in cat.Species(species).moves)
         {
             Assert.IsTrue(Resources.Load<VioletFxCatalog>("NativeZA").Has(id),id);
-            Assert.IsTrue(Resources.Load<BdspFxCatalog>("NativeBDSP").Has(id),id);
+            if(source=="BDSP")Assert.IsTrue(Resources.Load<BdspFxCatalog>("NativeBDSP").Has(id),id);
             var plan=new List<(float at,AnimationClip clip,float speed)>();
             float end=source=="BDSP"?AttackPresentation.SplitPlan(model,model.special,0,1,plan):ZaTimeline.Plan(table.Get(id),model,cat.Move(id).physical?"Physical":"Special",plan);
             Assert.That(end,Is.GreaterThan(0).And.LessThan(12),source+id);
@@ -49,7 +51,7 @@ public class PresentationTests
     [Test] public void EffectTexturesAndPrefabsAreActuallyReferenced()
     {
         var za=Resources.Load<VioletFxCatalog>("NativeZA");var bdsp=Resources.Load<BdspFxCatalog>("NativeBDSP");
-        Assert.AreEqual(8,za.moves.Count);Assert.AreEqual(8,bdsp.moves.Count);
+        Assert.AreEqual(Resources.Load<LabCatalog>("LabCatalog").data.moves.Length,za.moves.Count);Assert.GreaterOrEqual(bdsp.moves.Count,22);
         Assert.Greater(za.textures.Count,50);Assert.Greater(bdsp.textures.Count,50);
         Assert.IsFalse(za.textures.Any(t=>!t));Assert.IsFalse(bdsp.prefabs.Any(p=>!p));
         foreach(var m in za.moves)Assert.IsTrue(m.timeline&&m.sets.Length>0&&m.sets.All(x=>x));

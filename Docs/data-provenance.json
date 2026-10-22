@@ -12,5 +12,8 @@
     "effects": "Diagnostic Unity geometry and synthesized sound, not native move effects"
   },
   "presentation_source_commit": "1db47c7d8ca8cbd5946c68577769395d81ab37cd",
-  "direct_control": "Experimental camera-relative Pokemon movement, dash window, range-at-marker collision, Quick Attack burst; not native locomotion or root motion."
+  "direct_control": "Experimental camera-relative Pokemon movement, dash window, range-at-marker collision, Quick Attack burst; not native locomotion or root motion.",
+  "expanded_roster": "Nine species / fifteen bodies. Added ZA Treecko, Torchic, Mudkip, Ralts; SV Poochyena; BDSP Breloom from the verified local Data/species.json source map.",
+  "expanded_moves": "Six experimental choices per species, four equipped. 47 decoded za-v2 moves, 22 original BDSP effect sequences. Move legality, secondaries and full original rules are not asserted.",
+  "audio": "Original Emerald move recordings and eight cries. Missing exact newer-move sounds use explicit type-family substitutes in Tools/audio-index.json. No Lucario cry staged."
 }

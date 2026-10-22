@@ -1,0 +1,137 @@
+[
+  {
+    "path": "Assets/NativeAudio/CRY_BRELOOM.wav",
+    "bytes": 6408,
+    "sha256": "fdfbb8b9f2f3ff0ff09ce3e0c73e11a834941e3ac77a927b36b72dfd542fb0c5"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_GENGAR.wav",
+    "bytes": 7402,
+    "sha256": "b2c4fd9e88f24a8b22068363519ac2a8da7982ed060578900c9f35c1d704ea4d"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_MUDKIP.wav",
+    "bytes": 3806,
+    "sha256": "e3e9d3843f06306e097e051c4278eef323dd9265cd81fe1ae6421e13f6546778"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_PIKACHU.wav",
+    "bytes": 8346,
+    "sha256": "19ff12fa7b2e1c68c163f9718f39e23d3491bd26c544b19dbda0f2324f203f4c"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_POOCHYENA.wav",
+    "bytes": 4688,
+    "sha256": "cbf53a557372725ef8f3ddce84bb8c1b1c9e059372f430ae422956c63ef83e6d"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_RALTS.wav",
+    "bytes": 5096,
+    "sha256": "02c845612f3bf971c660b2b4133b24d0f9e0da101e03766e5acd2bbb7ad441fb"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_TORCHIC.wav",
+    "bytes": 4872,
+    "sha256": "a69b9128277a94f5a8f39ba6a0c86e1b1eaed6453405ea62c421ed26ffb3c85e"
+  },
+  {
+    "path": "Assets/NativeAudio/CRY_TREECKO.wav",
+    "bytes": 5866,
+    "sha256": "1f7699cd4f6780b63f3bfe32a86d47999a2f163e49158f3e8c308b312bf5766d"
+  },
+  {
+    "path": "Assets/NativeAudio/index.json",
+    "bytes": 4716,
+    "sha256": "58a6a34c60cc5a6a2c1e5caf582872fc8875a6cc6922a3379535f10d293b1212"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_ABSORB.wav",
+    "bytes": 465688,
+    "sha256": "d28c4b3ba8b1fdb96aa7a536a7491503cdbb4ec1db13adedd8b4c812209b35f1"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_BITE.wav",
+    "bytes": 494488,
+    "sha256": "e0efe30a3bc51dc625f29e3e0e876c1f5488ccb716800b6ba48d96335e24acdf"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_BUBBLE.wav",
+    "bytes": 494488,
+    "sha256": "d94dbb5f0ee8339b84caab1a7fa098ce1e0e3ac23eadb50421a843a55c445e8c"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_COMET_PUNCH.wav",
+    "bytes": 542488,
+    "sha256": "997e2ee9fb1253fd6a596545c4f9cc627ed0223a633b5b28124f1ef2bede5113"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_CUT.wav",
+    "bytes": 598488,
+    "sha256": "c8247aa484ff7c9f9ac59f8d9047416ecb175c6a4e8f54d08c7f398f21ebe75e"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_EMBER.wav",
+    "bytes": 542488,
+    "sha256": "9ae5778fe82c64244d1ad60d40eed7705f68cba50d5bebe6267982979ee67370"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_FLAMETHROWER.wav",
+    "bytes": 1622488,
+    "sha256": "fc2aad3c188b3949ce64b642b5506cf08ab7b9fd4607fcbcb1ad6a5519eea1e1"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_GUST.wav",
+    "bytes": 4307288,
+    "sha256": "e8608b0c9e1c5ae3dd998aad4edee976de1e2126bd2175ae7823ca8844b47e22"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_HEADBUTT.wav",
+    "bytes": 542488,
+    "sha256": "5a71eb793485e0ce59529fd3d9b9360b169d9c8edc0ca45aff37522649159a41"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_HYPER_BEAM.wav",
+    "bytes": 542488,
+    "sha256": "f9c14dc7ab6263ae28266fb8476c04b82b4b358f637f26c5ea2c021daa4a4080"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_POISON_POWDER.wav",
+    "bytes": 542488,
+    "sha256": "8fc0fe8ad44f3e058c2fcfbba896f7777521b03a901f3bd79c6180c94c08fb63"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_REFLECT.wav",
+    "bytes": 736088,
+    "sha256": "e8ab3f26d3ba30996167f49ab28132273c361ddcbf18132a77f4e1466766cea3"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_ROCK_THROW.wav",
+    "bytes": 696088,
+    "sha256": "90fb31783970b9236c72219ba87c6ffe74a9cc0a4cfa00ffc9fd45ffb44e76b0"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_SAND_ATTACK.wav",
+    "bytes": 542488,
+    "sha256": "b7353ee9ed41e1b7dac9682c1efd17702e2e73468bbbe18f651d61b09eeca695"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_SUPERSONIC.wav",
+    "bytes": 657688,
+    "sha256": "d906b9d8b7e86202d1e8c4676e9d7971be590d6c523d6aeda4c480ff979e4d69"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_THUNDERBOLT.wav",
+    "bytes": 598488,
+    "sha256": "4be5e04a37dc5837d5975dea7d77441b5cb28bc8615a72dd0ff8120a3e3fb63a"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_NOT_EFFECTIVE.wav",
+    "bytes": 483288,
+    "sha256": "12fc6eaa54d959f8754904817378adf3ac0be85e4ee5a9e0110050f21bc7d3a3"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_SUPER_EFFECTIVE.wav",
+    "bytes": 932888,
+    "sha256": "54df078f00cd7320e63f273e8210698507174314f7dce210333a8319fdd287e8"
+  }
+]

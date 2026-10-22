@@ -14,6 +14,7 @@ namespace BattleLab
         public float Time { get; private set; }
         public float HitAt { get; private set; }
         public float FreeAt { get; private set; }
+        public float SoundAt { get; private set; }
         public int CueCount => cueIndex;
         readonly LabActor body;
         readonly ZaMove timing;
@@ -34,7 +35,7 @@ namespace BattleLab
                 if(!fx)throw new InvalidOperationException("Missing BDSP effects: "+move.id);
                 fx.time=0;HitAt=Mathf.Max(.1f,fx.HitTime);
                 var clip=actor.entry.Role(move.physical?"attack":"special");
-                float at=Mathf.Max(0,fx.attackTime);
+                float at=Mathf.Max(0,fx.attackTime);SoundAt=at;
                 FreeAt=SplitPlan(actor.entry,clip,at,HitAt,cues);
             }
             else
@@ -42,7 +43,7 @@ namespace BattleLab
                 timing=table.Get(move.id)??throw new InvalidOperationException("Missing native timing: "+move.id);
                 var fx=za.Play(move.id,Bind(actor),Bind(target));Effect=fx;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
-                fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);
+                fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
             }
             FreeAt=Mathf.Max(FreeAt,HitAt+.15f);

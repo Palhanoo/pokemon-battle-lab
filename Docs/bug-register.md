@@ -59,3 +59,64 @@ Bruno also requests more attacks, available Hoenn species, native sound effects,
 and a real-time battle for every model source. Body animation source and battle
 rhythm remain independent. His preference for mixed generations is established;
 no lore or map work is requested.
+
+LAB-03 investigation: `ew0396_bullet` emitter `allowhead_02` has only a slot-2
+texture (`cpt_3_blur0202s`). The importer only considered slots 0/1, producing an
+unmasked cyan primitive. Slot-2 fallback and UV rotation/scroll are now connected.
+The elongated plate-XZ primitive also lacked its plane-basis rotation, leaving its
+long axis upright. Source repair and focused mask/basis checks pass; the new
+standalone visual check is pending. This supersedes the earlier vague size-only
+hypothesis; no global scale reduction or extra covering geometry was used.
+
+## LAB-04 — expanded real-time roster, moves and sound
+
+22 October request: Bruno wants active real-time battles regardless of the body
+model's original game's rules, more attacks, familiar Hoenn Pokémon, and sound.
+The first expansion stages Treecko/Torchic/Mudkip/Ralts (ZA), Poochyena (SV), and
+Breloom (BDSP), retaining their actual source labels. Fifteen bodies across nine
+species, six move choices each, four equipped slots, 47 distinct ZA effect rows
+and 22 BDSP sequences. Audio uses original Emerald move recordings and eight
+cries; missing exact newer-move sounds use documented type-family substitutes.
+Lucario has no staged Emerald cry. No new lore/map/progression work.
+
+Repair locations: roster/seed data, dynamic catalog/source selection and loadout
+UI in BattleLabApp, LabAudio/Importer and export scripts. Recurrence: all model
+sources can move and fight in real time; slot four and both unequipped choices can
+be selected and used; attacks emit their audio cue, recover, and reset cleanly.
+Actual movement/hitboxes, secondaries, authentic modern audio and native state
+machines remain approximations, distinct from original body/particle assets.
+
+LAB-03 visual follow-up: offscreen wind-up/contact renders for Arceus and ZA
+Lucario in evidence/realtime-roster no longer show the towering cyan primitive.
+The source repair is built and lifecycle verified. Continuous travel, exact
+native fidelity and Bruno's visual acceptance remain open; stills cannot close
+those checks. His launched review build includes this repair.
+
+LAB-04 verification: all 90 source/move presentations pass in the separate
+verification player: exactly one resolved hit, sound-cue dispatch, live native
+particles, recovery to idle and restored movement. All fifteen bodies pass
+movement/idle/dash and reset cleanup. Audio samples are verified non-silent;
+speaker output/mix quality remains for manual listening. See verification.md.
+
+## LAB-05 — remaining converted effect rendering artifacts
+
+Observed during 22 October expanded-roster screenshot review, in both the
+RealtimeRoster gameplay sources and its separate verification build. Evidence:
+`evidence/realtime-roster/BDSP-BRELOOM-MACH_PUNCH-impact.png` shows dark rectangular
+streaks and striped cards around contact; `Arceus-GENGAR-SHADOW_BALL-impact.png`
+shows a visible rectangular effect edge. These cases passed lifecycle checks
+and are explicitly not visually accepted.
+
+Known source facts: BDSP Mach Punch contains speedline_black emitters using
+Zero/SrcColor multiplicative blending, while the converted shared shader computes
+alpha independently of its colour output. Whether missing alpha-to-white blending,
+texture mask channels or another exported shader parameter causes the observed
+rectangles remains a hypothesis. Shadow Ball requires a separate mask/material
+inspection; no root cause established. Repair locations: Native/BdspFx.cs,
+Native/VioletFx.cs, VioletParticle.shader and their source export metadata.
+
+Status: open, captured and disclosed during Bruno's playtest. Recurrence check:
+repeat wind-up, contact and recovery at several camera angles; effect shapes
+should not expose opaque rectangle borders. Preserve the original mask and
+blend behavior rather than hide cards with new covering geometry or blanket
+scale changes. Do not close based on live-particle counts or build success.

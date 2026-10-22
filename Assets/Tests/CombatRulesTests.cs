@@ -30,9 +30,13 @@ namespace BattleLab.Tests
         }
         [Test] public void SourceSwitchDoesNotChangeCombatData()
         {
-            var c=Resources.Load<LabCatalog>("LabCatalog");Assert.NotNull(c);Assert.AreEqual(9,c.models.Length);
-            foreach(var s in c.data.species)
-            {foreach(var source in new[]{"Arceus","ZA","BDSP"}){var m=c.Model(s.id,source);Assert.NotNull(m.prefab);Assert.NotNull(m.Role("attack"));Assert.NotNull(m.Role("damage"));}}
+            var c=Resources.Load<LabCatalog>("LabCatalog");Assert.NotNull(c);Assert.AreEqual(15,c.models.Length);
+            foreach(var m in c.models)
+            {
+                var stats=c.Species(m.species);Assert.NotNull(stats);
+                Assert.NotNull(m.prefab);Assert.NotNull(m.Role("attack"));Assert.NotNull(m.Role("damage"));
+                Assert.AreSame(stats,c.Species(c.Model(m.species,m.source).species),"source changes retain the same species rules row");
+            }
         }
         [Test] public void SelectedRealtimeRowsAreNativeAndUsable()
         {

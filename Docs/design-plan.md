@@ -100,3 +100,13 @@ BDSP effects and split body animations. The older comparison modes remain
 available. Arceus body/effect parity and complete original engines remain open.
 See 2026-10-22-direct-control.md and bug-register.md. First acceptance question:
 does moving, stopping, attacking and regaining movement feel connected?
+
+## Real-time mixed-source follow-up
+
+Bruno asks to run the body animations in real time regardless of their original
+game, add familiar Hoenn species and more attacks, and include sound. The model
+source now only selects available body/presentation assets. The default fight
+has an active opponent and finite HP; practice remains optional. Nine species
+and six choices each support testing four equipped moves without adding maps
+or story systems. Aura Sphere's exaggerated travelling shape is a separate
+visual blocker (LAB-03), not evidence that lifecycle tests are sufficient.

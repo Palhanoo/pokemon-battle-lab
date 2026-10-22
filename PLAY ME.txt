@@ -1,22 +1,31 @@
-POKEMON BATTLE LAB - DIRECT CONTROL / 22 OCTOBER 2026
+POKEMON BATTLE LAB - REAL-TIME ROSTER / 22 OCTOBER 2026
 
 Double-click Play Battle Lab.cmd.
+9 Pokemon, 15 bodies, six move choices each; four equipped at once.
 
 WASD: move the Pokemon
 Shift: walk
 Hold right mouse: orbit camera
 Mouse wheel: zoom
 Space: dash between attacks
-1, 2, 3: attacks (move closer for melee)
-Tab: Setup, model source, species, AI and practice options
+1, 2, 3, 4: attacks (move closer for melee)
+Tab: Setup, model source, species and move loadout
+Click each move slot in Setup to cycle the six choices.
 R: reset
 Esc: pause
-F1: three-source model viewer
+F1: model viewer
 
-Starts with a passive target and unlimited practice HP. Enable opponent commands
-and turn Practice off in Setup to fight. Attacks commit movement until recovery.
+Starts with active AI and finite HP. For animation study, enable Practice and
+turn off Opponent commands in Setup. Sound volume is below the four move slots.
 
-ZA and BDSP effects are imported. Arceus uses its own body animations with ZA
-effects/timing, clearly labeled. Native shaders/state machines remain incomplete.
+Try each move while standing, after running, and after a dash. Check that you
+can move again after recovery. For a problem, note Pokemon / model source /
+move and what looked or sounded wrong. README lists every available move.
 
-Play Original Lab.cmd preserves the earlier prototype. No HoennVR saves are used.
+ZA and BDSP effects are imported. Arceus/SV bodies use ZA effects/timing.
+Sound uses Emerald recordings with substitutes for newer moves. Native shader,
+state-machine and hitbox behavior remain incomplete; secondary move effects
+are not implemented. Passing tests do not establish good battle feel.
+
+Play Animation Study.cmd preserves the previous direct-control build.
+Play Original Lab.cmd preserves the initial prototype. No HoennVR saves used.

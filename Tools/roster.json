@@ -1,0 +1,189 @@
+{
+  "species": {
+    "PIKACHU": [
+      "QUICK_ATTACK",
+      "THUNDERBOLT",
+      "IRON_TAIL",
+      "THUNDER",
+      "SPARK",
+      "DISCHARGE"
+    ],
+    "GENGAR": [
+      "SHADOW_BALL",
+      "DARK_PULSE",
+      "SLUDGE_BOMB",
+      "LICK",
+      "PSYCHIC",
+      "THUNDERBOLT"
+    ],
+    "LUCARIO": [
+      "QUICK_ATTACK",
+      "AURA_SPHERE",
+      "METAL_CLAW",
+      "DRAGON_PULSE",
+      "BULLET_PUNCH",
+      "CLOSE_COMBAT"
+    ],
+    "TREECKO": [
+      "QUICK_ATTACK",
+      "LEAF_BLADE",
+      "ENERGY_BALL",
+      "LEAF_STORM",
+      "ABSORB",
+      "GIGA_DRAIN"
+    ],
+    "TORCHIC": [
+      "SLASH",
+      "EMBER",
+      "FLAMETHROWER",
+      "PECK",
+      "FIRE_SPIN",
+      "AERIAL_ACE"
+    ],
+    "MUDKIP": [
+      "TACKLE",
+      "WATER_GUN",
+      "WATER_PULSE",
+      "MUD_SHOT",
+      "ROCK_THROW",
+      "HYDRO_PUMP"
+    ],
+    "RALTS": [
+      "CONFUSION",
+      "PSYBEAM",
+      "PSYCHIC",
+      "DISARMING_VOICE",
+      "DRAINING_KISS",
+      "SHADOW_BALL"
+    ],
+    "POOCHYENA": [
+      "TACKLE",
+      "BITE",
+      "CRUNCH",
+      "DIG",
+      "TAKE_DOWN",
+      "PLAY_ROUGH"
+    ],
+    "BRELOOM": [
+      "MACH_PUNCH",
+      "BRICK_BREAK",
+      "SEED_BOMB",
+      "GIGA_DRAIN",
+      "ROCK_TOMB",
+      "DRAIN_PUNCH"
+    ]
+  },
+  "models": [
+    {
+      "source": "Arceus",
+      "species": "PIKACHU",
+      "model": "pm0025_00_00",
+      "file": "Assets/Models/Arceus/PIKACHU.glb",
+      "sha256": "524fd90cefb98715663f932d772e8bb51231f1f59f5427f1ca9366f876a0c1e6"
+    },
+    {
+      "source": "Arceus",
+      "species": "GENGAR",
+      "model": "pm0094_00_00",
+      "file": "Assets/Models/Arceus/GENGAR.glb",
+      "sha256": "d8ecfb95c949b7795bfd47f6818d968668ba30e181b6a3c2d227d62e5a9b30c4"
+    },
+    {
+      "source": "Arceus",
+      "species": "LUCARIO",
+      "model": "pm0448_00_00",
+      "file": "Assets/Models/Arceus/LUCARIO.glb",
+      "sha256": "ef260dafbf9951cb7ea03525cfa63702959412c514382586b9bbedd10f819ae1"
+    },
+    {
+      "source": "ZA",
+      "species": "PIKACHU",
+      "model": "pm0025_00_00",
+      "file": "Assets/Models/ZA/PIKACHU.glb",
+      "sha256": "5dd8a994f95cf4dc6946a75c55c26b10c654ec433c7741215b17fc59200b2c9c"
+    },
+    {
+      "source": "ZA",
+      "species": "GENGAR",
+      "model": "pm0094_00_00",
+      "file": "Assets/Models/ZA/GENGAR.glb",
+      "sha256": "801ad4803da2d3a76d810deedd56c8971d5b2d0d4c99f246a4650f238ffd7d98"
+    },
+    {
+      "source": "ZA",
+      "species": "LUCARIO",
+      "model": "pm0448_00_00",
+      "file": "Assets/Models/ZA/LUCARIO.glb",
+      "sha256": "a6022dc993b2296fe17d4339f0c81063d5181b55e2b30ec682201328d2de0dc3"
+    },
+    {
+      "source": "BDSP",
+      "species": "PIKACHU",
+      "model": "pm0025_00_00",
+      "file": "Assets/Models/BDSP/PIKACHU.glb",
+      "sha256": "b37c1236a2e1eeffaf516fc8136a7f9c57a09dc49ee5aa6fc3d8e4af2ae4d2b4"
+    },
+    {
+      "source": "BDSP",
+      "species": "GENGAR",
+      "model": "pm0094_00_00",
+      "file": "Assets/Models/BDSP/GENGAR.glb",
+      "sha256": "039b420db7ecbad174c216223cb995a51d793dca26e3208ff896fd1bae77397e"
+    },
+    {
+      "source": "BDSP",
+      "species": "LUCARIO",
+      "model": "pm0448_00_00",
+      "file": "Assets/Models/BDSP/LUCARIO.glb",
+      "sha256": "a0ee8da493b154779d773a4f2ac978ae1ff8419b03241e4d64387426e0a2f968"
+    },
+    {
+      "source": "ZA",
+      "species": "TREECKO",
+      "model": "pm0252_00_00",
+      "file": "Assets/Models/ZA/TREECKO.glb",
+      "sha256": "9286fcf0b91214a2f3b36f96bee1760078f2b3d768077d2c7ea00054dd7c82fa",
+      "provenance": "za:pm0252"
+    },
+    {
+      "source": "ZA",
+      "species": "TORCHIC",
+      "model": "pm0255_01_00",
+      "file": "Assets/Models/ZA/TORCHIC.glb",
+      "sha256": "450986e4dc1fbd76769628e6882930a8786fa353fe1f1d19ee7417abc163bda5",
+      "provenance": "za:pm0255"
+    },
+    {
+      "source": "ZA",
+      "species": "MUDKIP",
+      "model": "pm0258_00_00",
+      "file": "Assets/Models/ZA/MUDKIP.glb",
+      "sha256": "3bbe104380c8999b428e8828f5c08b44abd2d5bbc6817ec5ab016d949539940d",
+      "provenance": "za:pm0258"
+    },
+    {
+      "source": "ZA",
+      "species": "RALTS",
+      "model": "pm0280_00_00",
+      "file": "Assets/Models/ZA/RALTS.glb",
+      "sha256": "8944ecafe151a3feef208f18b6ff9f0f4ab18f65ee24638a6cedeb22738cdf4b",
+      "provenance": "za:pm0280"
+    },
+    {
+      "source": "SV",
+      "species": "POOCHYENA",
+      "model": "pm0261_00_00",
+      "file": "Assets/Models/SV/POOCHYENA.glb",
+      "sha256": "48d5f662aa2365990b6e4acc7e5402ec77dcf439e71074b029fd59acd54d1190",
+      "provenance": "violet:pm0261"
+    },
+    {
+      "source": "BDSP",
+      "species": "BRELOOM",
+      "model": "pm0286_00_00",
+      "file": "Assets/Models/BDSP/BRELOOM.glb",
+      "sha256": "04d286f43e879f7bec5c82534b4cf92e8154897aa55e08086581832aacb9897f",
+      "provenance": "bdsp:pm0286"
+    }
+  ]
+}

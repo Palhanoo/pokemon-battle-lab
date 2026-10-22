@@ -12,4 +12,4 @@ case "${1:-setup}" in
  tests) args=(-runTests -testPlatform EditMode -testResults "$project\\Logs\\tests.xml") ;;
  *) echo 'usage: unity.sh setup|build|tests'; exit 2 ;;
 esac
-"$editor" -batchmode -projectPath "$project" -logFile "$project\\Logs\\${1:-setup}.log" "${args[@]}"
+"$editor" -batchmode -projectPath "$project" -logFile "$project\\Logs\\${1:-setup}.log" "${args[@]}" "${@:2}"

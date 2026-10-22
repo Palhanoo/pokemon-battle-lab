@@ -6,6 +6,9 @@ Shader "Hoenn/VioletParticle"
     Properties
     {
         _EffectTime ("Presentation clock", Float) = 0
+        _MainScroll ("Main mask scroll", Vector) = (0,0,0,0)
+        _MainRotation ("Main mask rotation", Float) = 0
+        _SubRotation ("Second mask rotation", Float) = 0
         _MainTex ("Mask", 2D) = "white" {}
         _SubTex ("Second mask", 2D) = "white" {}
         _SubScroll ("Second mask scroll per second", Vector) = (0, 0, 0, 0)
@@ -35,7 +38,8 @@ Shader "Hoenn/VioletParticle"
             TEXTURE2D(_MainTex); SAMPLER(sampler_MainTex);
             TEXTURE2D(_SubTex); SAMPLER(sampler_SubTex);
             CBUFFER_START(UnityPerMaterial)
-                float _EffectTime;
+                float _EffectTime, _MainRotation, _SubRotation;
+                float4 _MainScroll;
                 float4 _MainTex_ST, _SubTex_ST, _SubScroll;
                 float _MainGrey, _SubGrey, _MeshParticles, _UseSub, _ColorMode, _AlphaMode, _SrcBlend, _DstBlend, _Cull;
             CBUFFER_END
@@ -60,6 +64,8 @@ Shader "Hoenn/VioletParticle"
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
+            float2 RotateMask(float2 uv,float angle)
+            {float sn,cs;sincos(angle,sn,cs);uv-=.5;return float2(cs*uv.x-sn*uv.y,sn*uv.x+cs*uv.y)+.5;}
             V vert(A i)
             {
                 V o = (V)0;
@@ -72,8 +78,8 @@ Shader "Hoenn/VioletParticle"
                 o.c0 = float4(i.t0.zw, i.t1.xy);
                 o.c1 = float4(i.t1.zw, i.t2);
                 float2 uv = i.t0.xy;
-                o.uv.xy = uv * _MainTex_ST.xy + _MainTex_ST.zw;
-                o.uv.zw = uv * _SubTex_ST.xy + _SubTex_ST.zw + _SubScroll.xy * _EffectTime;
+                o.uv.xy = RotateMask(uv,_MainRotation) * _MainTex_ST.xy + _MainTex_ST.zw + _MainScroll.xy * _EffectTime;
+                o.uv.zw = RotateMask(uv,_SubRotation) * _SubTex_ST.xy + _SubTex_ST.zw + _SubScroll.xy * _EffectTime;
                 return o;
             }
             half4 frag(V i) : SV_Target

@@ -19,3 +19,6 @@ Assets/NativeFx.meta
 Assets/Resources/NativeZA.asset*
 Assets/Resources/NativeBDSP.asset*
 Assets/Resources/NativeTiming.asset*
+Assets/NativeAudio/
+Assets/NativeAudio.meta
+Assets/Resources/LabAudio.asset*

@@ -36,6 +36,16 @@ def main():
             records.append(dict(source=source, species=name, model=model,
                                 file=str(path.relative_to(ROOT)), sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
             print(source, name, path.stat().st_size, flush=True)
+    # Additional Hoenn models retain the verified source in the roster manifest.
+    roster=json.loads((ROOT/'Tools/roster.json').read_text())
+    known={(r['source'],r['species']) for r in records}
+    for row in roster['models']:
+        if (row['source'],row['species']) in known:continue
+        path=ROOT/row['file'];path.parent.mkdir(parents=True,exist_ok=True)
+        original=ROOT.parent/'HoennVR/Assets/Generated/Models/pokemon'/row['species']
+        for ext in ['.glb','.clips.json']:
+            shutil.copy2(str(original)+ext,path.with_name(row['species']+ext))
+        records.append({**row,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
     (ROOT / 'Assets/Data').mkdir(exist_ok=True)
     shutil.copy2(ROOT / 'Tools/seed-data.json', ROOT / 'Assets/Data/LabData.json')
     (ROOT / 'Docs/model-manifest.json').write_text(json.dumps(records, indent=2) + '\n')

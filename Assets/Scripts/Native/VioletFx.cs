@@ -275,7 +275,8 @@ namespace BattleLab.Native
             if (mesh)
             {
                 main.startRotation3D = true;
-                main.startRotationX = new ParticleSystem.MinMaxCurve(init.x, init.x + rnd.x);
+                float basis=J.Str(e,"billboard")=="plate_xz"?-Mathf.PI*.5f:0;
+                main.startRotationX = new ParticleSystem.MinMaxCurve(init.x+basis, init.x + rnd.x+basis);
                 main.startRotationY = new ParticleSystem.MinMaxCurve(-init.y - rnd.y, -init.y);
                 main.startRotationZ = new ParticleSystem.MinMaxCurve(-init.z - rnd.z, -init.z);
                 if (add.sqrMagnitude + addRnd.sqrMagnitude > 1e-8f)
@@ -377,15 +378,15 @@ namespace BattleLab.Native
 
         static void Textures(ParticleSystem ps, Material mat, List<object> textures, Func<string, Texture2D> texture, float avgLife)
         {
-            Dictionary<string, object> t0 = null, t1 = null;
+            Dictionary<string, object> t0 = null, t1 = null, t2 = null;
             foreach (var o in textures)
             {
                 var t = J.Obj(o);
                 int slot = (int)J.F(t, "slot");
                 if (J.B(t, "sphere_map")) continue; // lighting lookups for Violet's own shaders
-                if (slot == 0) t0 = t; else if (slot == 1 && t1 == null) t1 = t;
+                if (slot == 0) t0 = t; else if (slot == 1 && t1 == null) t1 = t; else if(slot==2 && t2==null)t2=t;
             }
-            if (t0 == null) t0 = t1;
+            if (t0 == null) t0 = t1 ?? t2;
             if (t0 == null) return;
             var tex = texture(J.Str(t0, "name"));
             if (tex) { Wrap(tex, t0); mat.SetTexture("_MainTex", tex); mat.SetFloat("_MainGrey", Grey(tex) ? 1 : 0); }
@@ -393,6 +394,9 @@ namespace BattleLab.Native
             int nx = Mathf.Max(1, (int)div[0]), ny = Mathf.Max(1, (int)div[1]);
             if (nx * ny > 1) SheetAnimation(ps, t0, nx, ny, avgLife);
             UvTransform(mat, "_MainTex", t0, nx * ny > 1);
+            var mainScroll=J.Floats(t0["scroll_per_s"]);
+            mat.SetVector("_MainScroll",new Vector4(mainScroll[0],mainScroll[1],0,0));
+            mat.SetFloat("_MainRotation",J.F(t0,"uv_rotate"));
             if (t1 != null && t1 != t0)
             {
                 var sub = texture(J.Str(t1, "name"));
@@ -403,6 +407,7 @@ namespace BattleLab.Native
                     mat.SetFloat("_SubGrey", Grey(sub) ? 1 : 0);
                     mat.SetFloat("_UseSub", 1);
                     UvTransform(mat, "_SubTex", t1, false);
+                    mat.SetFloat("_SubRotation",J.F(t1,"uv_rotate"));
                     var sp = J.Floats(t1["scroll_per_s"]);
                     mat.SetVector("_SubScroll", new Vector4(sp[0], sp[1], 0, 0));
                 }

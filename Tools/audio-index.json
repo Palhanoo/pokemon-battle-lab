@@ -1,0 +1,250 @@
+{
+  "moves": [
+    {
+      "id": "QUICK_ATTACK",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true
+    },
+    {
+      "id": "THUNDERBOLT",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": false
+    },
+    {
+      "id": "IRON_TAIL",
+      "sound": "SE_M_CUT",
+      "substitute": true
+    },
+    {
+      "id": "THUNDER",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true
+    },
+    {
+      "id": "SPARK",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true
+    },
+    {
+      "id": "DISCHARGE",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true
+    },
+    {
+      "id": "SHADOW_BALL",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true
+    },
+    {
+      "id": "DARK_PULSE",
+      "sound": "SE_M_BITE",
+      "substitute": true
+    },
+    {
+      "id": "SLUDGE_BOMB",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true
+    },
+    {
+      "id": "LICK",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true
+    },
+    {
+      "id": "PSYCHIC",
+      "sound": "SE_M_REFLECT",
+      "substitute": true
+    },
+    {
+      "id": "AURA_SPHERE",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true
+    },
+    {
+      "id": "METAL_CLAW",
+      "sound": "SE_M_CUT",
+      "substitute": true
+    },
+    {
+      "id": "DRAGON_PULSE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true
+    },
+    {
+      "id": "BULLET_PUNCH",
+      "sound": "SE_M_CUT",
+      "substitute": true
+    },
+    {
+      "id": "CLOSE_COMBAT",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true
+    },
+    {
+      "id": "LEAF_BLADE",
+      "sound": "SE_M_ABSORB",
+      "substitute": true
+    },
+    {
+      "id": "ENERGY_BALL",
+      "sound": "SE_M_ABSORB",
+      "substitute": true
+    },
+    {
+      "id": "LEAF_STORM",
+      "sound": "SE_M_ABSORB",
+      "substitute": true
+    },
+    {
+      "id": "ABSORB",
+      "sound": "SE_M_ABSORB",
+      "substitute": false
+    },
+    {
+      "id": "GIGA_DRAIN",
+      "sound": "SE_M_ABSORB",
+      "substitute": true
+    },
+    {
+      "id": "SLASH",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true
+    },
+    {
+      "id": "EMBER",
+      "sound": "SE_M_EMBER",
+      "substitute": false
+    },
+    {
+      "id": "FLAMETHROWER",
+      "sound": "SE_M_FLAMETHROWER",
+      "substitute": false
+    },
+    {
+      "id": "PECK",
+      "sound": "SE_M_GUST",
+      "substitute": true
+    },
+    {
+      "id": "FIRE_SPIN",
+      "sound": "SE_M_EMBER",
+      "substitute": true
+    },
+    {
+      "id": "AERIAL_ACE",
+      "sound": "SE_M_GUST",
+      "substitute": true
+    },
+    {
+      "id": "TACKLE",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true
+    },
+    {
+      "id": "WATER_GUN",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true
+    },
+    {
+      "id": "WATER_PULSE",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true
+    },
+    {
+      "id": "MUD_SHOT",
+      "sound": "SE_M_SAND_ATTACK",
+      "substitute": true
+    },
+    {
+      "id": "ROCK_THROW",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": false
+    },
+    {
+      "id": "HYDRO_PUMP",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true
+    },
+    {
+      "id": "CONFUSION",
+      "sound": "SE_M_REFLECT",
+      "substitute": true
+    },
+    {
+      "id": "PSYBEAM",
+      "sound": "SE_M_REFLECT",
+      "substitute": true
+    },
+    {
+      "id": "DISARMING_VOICE",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true
+    },
+    {
+      "id": "DRAINING_KISS",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true
+    },
+    {
+      "id": "BITE",
+      "sound": "SE_M_BITE",
+      "substitute": false
+    },
+    {
+      "id": "CRUNCH",
+      "sound": "SE_M_BITE",
+      "substitute": true
+    },
+    {
+      "id": "DIG",
+      "sound": "SE_M_SAND_ATTACK",
+      "substitute": true
+    },
+    {
+      "id": "TAKE_DOWN",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true
+    },
+    {
+      "id": "PLAY_ROUGH",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true
+    },
+    {
+      "id": "MACH_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true
+    },
+    {
+      "id": "BRICK_BREAK",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true
+    },
+    {
+      "id": "SEED_BOMB",
+      "sound": "SE_M_ABSORB",
+      "substitute": true
+    },
+    {
+      "id": "ROCK_TOMB",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true
+    },
+    {
+      "id": "DRAIN_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true
+    }
+  ],
+  "cries": [
+    "PIKACHU",
+    "GENGAR",
+    "TREECKO",
+    "TORCHIC",
+    "MUDKIP",
+    "RALTS",
+    "POOCHYENA",
+    "BRELOOM"
+  ],
+  "source": "Emerald ROM recordings; type-family substitutes for missing exact move sounds"
+}

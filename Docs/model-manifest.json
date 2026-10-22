@@ -61,5 +61,53 @@
     "model": "pm0448_00_00",
     "file": "Assets/Models/BDSP/LUCARIO.glb",
     "sha256": "a0ee8da493b154779d773a4f2ac978ae1ff8419b03241e4d64387426e0a2f968"
+  },
+  {
+    "source": "ZA",
+    "species": "TREECKO",
+    "model": "pm0252_00_00",
+    "file": "Assets/Models/ZA/TREECKO.glb",
+    "sha256": "9286fcf0b91214a2f3b36f96bee1760078f2b3d768077d2c7ea00054dd7c82fa",
+    "provenance": "za:pm0252"
+  },
+  {
+    "source": "ZA",
+    "species": "TORCHIC",
+    "model": "pm0255_01_00",
+    "file": "Assets/Models/ZA/TORCHIC.glb",
+    "sha256": "450986e4dc1fbd76769628e6882930a8786fa353fe1f1d19ee7417abc163bda5",
+    "provenance": "za:pm0255"
+  },
+  {
+    "source": "ZA",
+    "species": "MUDKIP",
+    "model": "pm0258_00_00",
+    "file": "Assets/Models/ZA/MUDKIP.glb",
+    "sha256": "3bbe104380c8999b428e8828f5c08b44abd2d5bbc6817ec5ab016d949539940d",
+    "provenance": "za:pm0258"
+  },
+  {
+    "source": "ZA",
+    "species": "RALTS",
+    "model": "pm0280_00_00",
+    "file": "Assets/Models/ZA/RALTS.glb",
+    "sha256": "8944ecafe151a3feef208f18b6ff9f0f4ab18f65ee24638a6cedeb22738cdf4b",
+    "provenance": "za:pm0280"
+  },
+  {
+    "source": "SV",
+    "species": "POOCHYENA",
+    "model": "pm0261_00_00",
+    "file": "Assets/Models/SV/POOCHYENA.glb",
+    "sha256": "48d5f662aa2365990b6e4acc7e5402ec77dcf439e71074b029fd59acd54d1190",
+    "provenance": "violet:pm0261"
+  },
+  {
+    "source": "BDSP",
+    "species": "BRELOOM",
+    "model": "pm0286_00_00",
+    "file": "Assets/Models/BDSP/BRELOOM.glb",
+    "sha256": "04d286f43e879f7bec5c82534b4cf92e8154897aa55e08086581832aacb9897f",
+    "provenance": "bdsp:pm0286"
   }
 ]

@@ -88,3 +88,46 @@ exit 0 and LAB SMOKE PASSED. Fifty-four wind-up/impact captures are retained und
 evidence/direct-control. Aura Sphere's impact capture shows an oversized cyan
 travelling element; Bruno independently reports this as the next defect. It is
 not accepted as visually correct despite passing lifecycle checks.
+
+## Expanded real-time roster — 22 October follow-up
+
+- Fifteen actual-source models, nine species, 1,011 imported clips. Six choices
+  per species, four equipped; 47 distinct ZA effect rows and 22 BDSP sequences.
+- **29/29 focused EditMode tests passed**, including all model/move animation
+  plans, roster/audio coverage, non-silent samples and Aura Sphere mask/basis.
+  Evidence: `evidence/realtime-roster/editmode-tests.xml`. One earlier fixture
+  still expected nine models and every species in all three sources; it was
+  updated to check all fifteen actual variants against shared species data.
+- SHA256 audit passed for all 15 model, 783 effect and 27 audio manifest records.
+- User review build: one scene, zero errors, 640,861,857 bytes. Launched for Bruno
+  from Builds/RealtimeRoster; remains untouched while he tests. Verification
+  player is separately packaged (640,862,517 bytes) with the same gameplay and
+  a focus-independent camera-to-texture capture harness. It uses `-batchmode
+  -lab-smoke`, with graphics enabled, so these are rendered images, not null-
+  device simulation. See `evidence/realtime-roster/build-summary.json`.
+- **90/90 standalone model/move cases passed**: one hit, live particles, sound
+  cue dispatch, idle recovery, movement after each attack. All fifteen bodies
+  also passed movement/idle/dash, pause and reset cleanup. PLA Pikachu's split
+  damage reaction recovered independently. Full summary:
+  `evidence/realtime-roster/presentation-smoke.txt`.
+- Wind-up/contact captures are in `evidence/realtime-roster`. Inspected Aura
+  Sphere (ZA/Arceus Lucario), Breloom Mach Punch, Poochyena Crunch, Mudkip Water
+  Pulse, Torchic Flamethrower and Gengar Shadow Ball. The giant upright Aura
+  primitive is absent in the new stills. Mach Punch has dark/striped rectangular
+  artifacts and Shadow Ball exposes effect-card edges (LAB-05, open). No visual
+  acceptance claim for the complete set; stills do not establish travel quality.
+- Sound verification proves clip data and cue dispatch, not speaker playback or
+  a good mix. Samples are Emerald recordings with documented family substitutes
+  for newer moves, not authentic ZA/SV audio. Eight cries; Lucario is missing.
+
+Bruno is testing real keyboard/mouse control and battle feel independently.
+Automated gameplay uses the same controller methods with injected input; no
+manual input or headset verification is claimed. Original-engine root motion,
+projectile collision, secondary move behavior and material parity remain open.
+
+Final standalone result: **exit 0, LAB SMOKE PASSED**, with no exception in
+Logs/realtime-roster-smoke.log. Finite BDSP, Arceus and ZA fights each reached a
+winner; each mode also passed reset-during-attack and the wait for delayed damage.
+Evidence: `evidence/realtime-roster/smoke.txt`. Both the 90-case presentation
+matrix and all three full battle/reset scenarios are complete. These results do
+not close LAB-03 visual acceptance or LAB-05 rendering defects.
