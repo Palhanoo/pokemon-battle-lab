@@ -24,7 +24,7 @@ namespace BattleLab.Native
             public string name;
             public GameObject fx;
             public List<Dictionary<string, object>> clips = new List<Dictionary<string, object>>();
-            public bool playing;
+            public bool playing;public Vector3 previousPosition;
         }
 
         readonly List<Obj> objs = new List<Obj>();
@@ -35,7 +35,7 @@ namespace BattleLab.Native
         public bool ExternalActorClock;
         public void SampleActor(float elapsed){if(actorPresentation && actorLease)actorPresentation.Sample(actorKey,actorClips,elapsed);}
         public Battler attacker, defender;
-        public float time, startTime, endTime, lastEmit;
+        public float time, startTime, endTime, lastEmit;float previousTime;
         public float hitTime = -1, attackTime = -1; // timeline seconds: damage trigger on the target, attacker motion
         float effectScale = 1f;
         public bool manualSimulate; // edit mode: advance particles with Simulate instead of the player loop
@@ -177,15 +177,27 @@ namespace BattleLab.Native
                 if(Application.isPlaying)Destroy(gameObject);else DestroyImmediate(gameObject);
                 return;
             }
-            float prev = time;
+            float prev = time;previousTime=prev;
             time += dt;
             if(!ExternalActorClock)SampleActor(time);
             foreach (var o in objs)
             {
+                o.previousPosition=o.fx.transform.position;
                 foreach (var c in o.clips) Apply(o, c, prev, time);
                 if (manualSimulate && o.playing)
                     foreach (var ps in VioletFx.Roots(o.fx)) ps.Simulate(dt, true, false, false);
             }
+        }
+
+        public bool ProjectileSegment(out Vector3 previous,out Vector3 current)
+        {
+            foreach(var o in objs)
+            {
+                if(!o.name.StartsWith("bullet")||!o.playing)continue;
+                float emit=float.MaxValue;foreach(var clip in o.clips)if(VioletFx.J.Str(clip,"cmd")=="Particle/Emit")emit=Mathf.Min(emit,VioletFx.J.F(clip,"start"));
+                current=o.fx.transform.position;previous=previousTime<emit?current:o.previousPosition;return true;
+            }
+            previous=current=Vector3.zero;return false;
         }
 
         void Apply(Obj o, Dictionary<string, object> c, float prev, float now)

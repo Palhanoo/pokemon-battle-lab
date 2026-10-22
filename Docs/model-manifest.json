@@ -68,7 +68,8 @@
     "model": "pm0252_00_00",
     "file": "Assets/Models/ZA/TREECKO.glb",
     "sha256": "9286fcf0b91214a2f3b36f96bee1760078f2b3d768077d2c7ea00054dd7c82fa",
-    "provenance": "za:pm0252"
+    "provenance": "za:pm0252",
+    "material_note": "Source layer opacity respected; disabled red body_b layer no longer contributes."
   },
   {
     "source": "ZA",

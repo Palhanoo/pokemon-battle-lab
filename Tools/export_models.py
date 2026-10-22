@@ -44,7 +44,10 @@ def main():
         path=ROOT/row['file'];path.parent.mkdir(parents=True,exist_ok=True)
         original=ROOT.parent/'HoennVR/Assets/Generated/Models/pokemon'/row['species']
         for ext in ['.glb','.clips.json']:
-            shutil.copy2(str(original)+ext,path.with_name(row['species']+ext))
+            if row['species']=='TREECKO' and ext=='.glb':
+                files=VioletDir(open_assets(),'ik_pokemon/data/pm0252/pm0252_00_00')
+                convert(files,['pm0252_00_00.trmdl'],str(path),'all',guess_cutouts=False)
+            else:shutil.copy2(str(original)+ext,path.with_name(row['species']+ext))
         records.append({**row,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
     (ROOT / 'Assets/Data').mkdir(exist_ok=True)
     shutil.copy2(ROOT / 'Tools/seed-data.json', ROOT / 'Assets/Data/LabData.json')

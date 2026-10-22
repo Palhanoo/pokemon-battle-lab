@@ -120,3 +120,138 @@ repeat wind-up, contact and recovery at several camera angles; effect shapes
 should not expose opaque rectangle borders. Preserve the original mask and
 blend behavior rather than hide cards with new covering geometry or blanket
 scale changes. Do not close based on live-particle counts or build success.
+
+## LAB-06 — Treecko colour mismatch
+
+Reported by Bruno against RealtimeRoster (dead156), 22 October. Screenshot
+ZA-TREECKO-LEAF_BLADE.png also shows a brown/red head region. Original ZA
+body_b material declares BaseColorLayer1 red with alpha=0; the exporter applied
+RGB without layer opacity. Repair: MaterialBaker opacity factor and Treecko
+re-export from the original ZA pack, with refreshed hash. Recurrence: inspect
+idle, movement and every attack before/after rim effects; no spurious disabled
+red layer. Source repaired; new render verification pending.
+
+## LAB-03 reopened — Aura Sphere remains after hit
+
+Bruno reports the effect remains onscreen after contact in dead156. Known cause:
+infinite native cores use a 600-second placeholder lifetime; Particle/Stop only
+disabled emission so existing cores stayed until disposal of the whole effect.
+Repair: explicit infinite-emitter marker and clearing those cores on native Stop;
+finite sparks still age naturally. Check charge disappears at launch, projectile
+core at contact, finite tails finish, pause/reset remain coherent. New test pending.
+
+## LAB-07 — short-range commands reject instead of approaching; combat feels stuck
+
+Bruno requests automatic approach before an out-of-range attack, plus simultaneous
+allied/enemy teams. The direct controller explicitly rejected distant commands
+and skipped the existing AI approach phase. Repair: all attacks can approach;
+manual input cancels approach without spending cooldown, movement/dash can leave
+post-hit recovery after .18s; cooldown starts on actual wind-up. New 3v3 mode
+uses living team/target selection and individual action/cooldown state, Q ally /
+E target. Recurrence: distant melee, moving target, cancelling approach, switching
+while another ally attacks, faint/retarget, team victory and six-actor reset.
+
+## LAB-08 — fire, water and psychic effects look flat or mismatched
+
+Bruno reports Flamethrower/fire, water, then psychic effects in dead156. Evidence:
+prior fire/water captures and user report. Confirmed gap: third non-sphere texture
+slot silently discarded when slot0/1 exists; many fire/water/psychic emitters also
+have animated UV scale/rotation. HDR colours above 1 clipped without tone mapping.
+Repair: third mask binding, per-layer UV motion, neutral HDR tone mapping, and
+multiplicative alpha-to-white output. Complete native combiners/refraction remain
+unproven. Audit every staged ZA and BDSP move, every layer binding, body/source,
+start/travel/impact/cleanup. Arceus/SV reuse ZA effects and must be labeled.
+Bruno asks to focus entirely on fight quality before returning to the main game.
+
+## LAB-09 — ranged attack clashes experiment
+
+Bruno requests physical intersection of opposing ranged attacks, cancellation
+unless one is at least 50% stronger, and only the winning difference reaching
+the target. Implement post-STAB/type/defense damage comparison: 150 vs100 leaves
+50;149 vs100 cancels both. Swept simultaneous projectile paths prevent tunneling;
+only enemy projectiles clash, once per pair. Visual burst, cancelled future
+impact effects/damage, surviving damage budget, and a fire/water drill. Check
+threshold, immunity, different crossing times, allies, chained clashes and reset.
+This is an explicitly experimental combat rule, not a native game mechanic.
+
+## LAB-10 — one newest usable model per species; large roster streaming
+
+Bruno requests the maximum locally available roster, one body per species,
+prefer the latest game: ZA > SV > Arceus > BDSP > Sword. No additional maps/story.
+Inventory joins actual resource catalogs/personal tables to National Dex IDs;
+model filenames are NOT National Dex identifiers (Froakie is model0700/dex656).
+Initial full conversion recovered 1,000 species;25 have no sourced model in the
+checked local game files. Catalog/provenance: pokedex-inventory.json and pokedex-ready.json.
+Six choices use the existing47 test moves; pooled historical learnsets and
+supplemental test-only slots are explicitly recorded. This is not a full move,
+ability, status or form implementation. Missing native attack/faint/locomotion
+roles can alias another real clip; roleAliases records every such fallback.
+
+Known new loading defect, found by standalone testing: runtime Mecanim curve
+construction rejected SetCurve; simply changing a populated legacy clip's flag
+also did not animate bones. Repair: retain legacy curves and manually sample
+Animation states on the battle clock, with blending; editor-imported models keep
+PlayableGraph playback. First15-model 'pass' was invalid because it only checked
+clip names. Strengthened test checks real transform changes and runtime errors.
+Source tracks with duplicate timestamps violate glTF; normalization keeps the
+last authored value per time, retaining interpolation and cubic tangents.
+Locations: PokedexRoster, BattleLabPokedex, LabActor, Tools/pokedex.py,
+normalize_roster.py and validate_roster.py. Recurrence: load every selected body,
+check actual motion, bounds, textures and roles; reset/swap while effects run;
+ensure only current-team models stay resident. Verify large species camera and
+spacing manually. A source export or catalog entry alone is not visual acceptance.
+
+## LAB-11 — BDSP model layers absent from three attack reconstructions
+
+Found by the all-attack reference audit,22 October. Existing particle-binding
+checks pass, but ModelCreate references for Brick Break's hand/tail, Iron Tail's
+whip and Lick's tongue have no staged model layer. Original bundles exist under
+BDSP Effects/effmodel. The existing exporter only reconstructs particle prefabs;
+its ModelCreate holder stays empty. Known cause, not a texture-mask hypothesis.
+Repair locations: Tools/vendor/bdspfx.py, Native/BdspMove and a future native model
+layer loader. Status: open; do not mark those effects visually complete.
+Concrete recurrence: audit ModelCreate and ParticleCreate separately; compare
+frames containing hand/tail/whip/tongue geometry and verify animated deformation,
+attachment, expiry and reset. Full audit: effect-layer-audit.json (3,500 texture
+references,118 native lighting lookups unsupported by the reconstructed shader).
+
+LAB-03/07/09 verification update:40/40 EditMode checks pass. Isolated standalone
+team test passes approach/cancel, ally/target switching, faint handoff, a finite
+3v3 fight (21 hits), reset/no-late-damage, equal projectiles cancelling and20vs9
+resolving11 residual damage. All90 prior body/move presentations pass lifecycle,
+audio-cue and return-to-control checks, plus all three battle modes finish/reset.
+Evidence: evidence/team-battle. Fire/water/psychic native shader fidelity and
+Bruno's combat-feel acceptance remain open despite those checks.
+
+LAB-06 material follow-up: the first opacity repair did not fix Treecko's head.
+The streamed Leaf Blade capture still showed brown skin. Native body_a mask is
+[R=1,G=1,B=0,A=0] over the skin; red layer1 belongs to the mouth and green layer2
+must replace it over skin. Multiplying accumulated tint produced brown. Shared
+MaterialBaker now blends each layer against original albedo, respecting opacity.
+The native mouth colour is retained; no species-specific tint is introduced.
+Tools/rebake_materials.py audits ZA/SV/Arceus bodies and rebakes overlapping masks,
+proving every geometry/skin/animation buffer byte is unchanged. Independent BDSP
+and Sword converters do not use this mask implementation. Three material tests
+cover overlapping layers, disabled opacity and a single tint. Visual comparison
+and final hash/resource audit are required before closing this repair.
+
+LAB-10 verification correction: Ferroseed's native idle has eight channels with
+one key each, a valid static pose. The sweep's positive-duration assertion was
+incorrect; accept that pose while still requiring actual transform changes
+across its action roles. Earlier successful per-species results remain valid;
+resume597–749 after fixing the fixture. Counts and exact test ranges are recorded
+in the final verification report, including the deliberately stopped overlapping
+first sweep. Do not infer an uninterrupted1,000-case test pass from those runs.
+
+
+LAB-06 final material verification: shared material audit completed for879 bodies;
+830 rebakes preserve all geometry/skin/animation buffers. The new isolated
+PokedexBattleReady player loads and animates Treecko successfully (exit0), and
+its rendered head is visibly green. Retained before/after images:
+evidence/materials/treecko-before.png and treecko-after.png. Mark the brown-head
+cause source-repaired, built and visually spot-checked; broader material/native
+shader fidelity and Bruno's real-input acceptance remain open.
+LAB-10 final coverage: all1,000 species have successful per-species runtime checks
+across the documented overlapping/resumed runs. evidence/pokedex/coverage.json
+records exact ranges and the corrected Ferroseed fixture. Both90-case attack
+suites pass. Final package stages all1,000 preferred bodies;25 remain unavailable.

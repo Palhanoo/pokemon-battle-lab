@@ -1,0 +1,24 @@
+{
+  "path": "Builds/PokedexBattleReady",
+  "result": "Succeeded",
+  "scenes": 1,
+  "errors": 0,
+  "playerBuildBytes": 640917885,
+  "externalRosterModelBytes": 8440906028,
+  "species": 1000,
+  "catalogMatchesSource": true,
+  "materialAudit": {
+    "sharedConverterBodies": 879,
+    "rebakedWithUnchangedGeometryAnimationProof": 830,
+    "independentBDSPAndSwordBodies": 121
+  },
+  "postMaterialSpotCheck": {
+    "species": "TREECKO",
+    "source": "ZA",
+    "exitCode": 0,
+    "rosterSmokePassed": 1,
+    "visualInspection": "Green head visible in rendered player; before/after retained under evidence/materials.",
+    "manualInputTest": false
+  },
+  "staticValidation": "Passed after final material rebake: 1000 species, 52807 clips, hashes/resources/roles/move bindings"
+}

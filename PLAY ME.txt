@@ -1,31 +1,22 @@
-POKEMON BATTLE LAB - REAL-TIME ROSTER / 22 OCTOBER 2026
+POKEMON BATTLE LAB - POKEDEX / 22 OCTOBER 2026
 
 Double-click Play Battle Lab.cmd.
-9 Pokemon, 15 bodies, six move choices each; four equipped at once.
+1,000 species. One newest usable model each: ZA > SV > Arceus > BDSP > Sword.
+Starts in 3 versus 3. No HoennVR saves or maps.
 
-WASD: move the Pokemon
-Shift: walk
-Hold right mouse: orbit camera
-Mouse wheel: zoom
-Space: dash between attacks
-1, 2, 3, 4: attacks (move closer for melee)
-Tab: Setup, model source, species and move loadout
-Click each move slot in Setup to cycle the six choices.
-R: reset
-Esc: pause
-F1: model viewer
+WASD move | Shift walk | hold right mouse look | wheel zoom | Space dash
+1-4 attack (automatically approaches when needed)
+Q switch ally | E change enemy target
+Tab setup: search Pokemon for any team slot; choose 1v1/3v3 and move loadouts
+R reset | Esc pause | F1 body viewer | F2 attack layers
 
-Starts with active AI and finite HP. For animation study, enable Practice and
-turn off Opponent commands in Setup. Sound volume is below the four move slots.
+Use Practice + disable AI to inspect attacks. Pause, then F2 to toggle individual
+particle layers. Four equipped moves draw from six choices. * means a test-only
+assignment; the library contains 47 moves, not every move in the Pokedex.
+Clashes: 150 vs 100 leaves 50 damage; 149 vs 100 cancels both, after STAB/types.
 
-Try each move while standing, after running, and after a dash. Check that you
-can move again after recovery. For a problem, note Pokemon / model source /
-move and what looked or sounded wrong. README lists every available move.
+Some native shader/model layers remain incomplete, particularly three BDSP
+model effects. Seven species reuse a real clip for a missing role. See README.
+Sound uses Emerald recordings with substitutions; only eight cries are staged.
 
-ZA and BDSP effects are imported. Arceus/SV bodies use ZA effects/timing.
-Sound uses Emerald recordings with substitutes for newer moves. Native shader,
-state-machine and hitbox behavior remain incomplete; secondary move effects
-are not implemented. Passing tests do not establish good battle feel.
-
-Play Animation Study.cmd preserves the previous direct-control build.
-Play Original Lab.cmd preserves the initial prototype. No HoennVR saves used.
+Play Previous Roster.cmd keeps the earlier 9-species build available.

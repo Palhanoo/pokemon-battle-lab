@@ -131,3 +131,69 @@ winner; each mode also passed reset-during-attack and the wait for delayed damag
 Evidence: `evidence/realtime-roster/smoke.txt`. Both the 90-case presentation
 matrix and all three full battle/reset scenarios are complete. These results do
 not close LAB-03 visual acceptance or LAB-05 rendering defects.
+
+
+## Preferred Pokédex, teams and renderer audit — 22 October
+
+The local catalog now selects exactly one preferred body per species, with
+ZA > SV > Arceus > BDSP > Sword/Shield priority. There are 1,000 species and
+52,807 clips: ZA 364, SV 478, Arceus 37, BDSP 61, Sword 60. The 25 unavailable
+species and seven explicit role aliases are recorded in pokedex-validation.json.
+All Hoenn species are sourced. Six move choices per species reuse 47 staged moves;
+test-only assignments are marked. This is not a complete move/ability simulation.
+
+- 40/40 focused Unity EditMode tests pass. Standalone team checks pass 3v3,
+  ally/target switching, automatic approach and cancellation, faint handoff,
+  victory/reset and projectile clashes. Equal projectiles cancel; 20 versus 9
+  leaves 11 damage. Evidence: evidence/team-battle/team-smoke.txt.
+- Historical presentation checks pass 90 attacks across 15 source bodies, plus
+  three finite style battles and reset checks. Streamed presentation checks pass
+  another 90 attacks across 15 representative preferred models, spanning all five
+  sources. They check damage, effect/audio cues and return to movement/idle.
+  Evidence: evidence/team-battle and evidence/stream-combat/combat-smoke.txt.
+- The union of standalone roster checks covers all 1,000 species: actual loading,
+  finite bounds, role sampling, real transform changes and bounded model caching.
+  Exact runs are recorded in evidence/pokedex/coverage.json. The initial sweep
+  was deliberately stopped after 444 successful cases once other ranges covered
+  the remaining IDs. The middle range initially rejected Ferroseed's valid
+  one-key idle; the corrected fixture accepts static poses and still requires
+  motion across action roles. The resumed range passed. This is aggregate
+  coverage, not a claim that one uninterrupted 1,000-case run passed.
+- Duplicate/nonincreasing source timestamps were normalized on 28,065 tracks in
+  65 models, keeping the last authored value at each time and preserving cubic
+  tangents. Two Python normalization tests pass. Runtime animation retains native
+  legacy curves and samples them manually; clip-name-only checks were replaced
+  after they failed to expose the original non-moving-bones problem.
+- Three Python material tests pass: overlapping layers, disabled opacity and
+  single tint. Treecko's remaining brown head was caused by multiplying successive
+  mask tints. Later layers now blend against original albedo with their opacity.
+  ZA/SV/Arceus materials were audited/rebaked; BDSP/Sword use independent pipelines.
+  Every rebaked model proves unchanged geometry, skin and animation buffer bytes,
+  so the subsequent material-only update preserves the runtime animation evidence.
+- The full staged attack audit covers 3,500 texture references. It explicitly
+  fails on missing BDSP ModelCreate layers for Brick Break, Iron Tail and Lick;
+  118 native lighting lookups remain unsupported. These are open defects, not
+  passed fidelity checks. F2 layer inspection and Esc pause assist manual review.
+
+Automated gameplay uses the same controller methods with injected input and a
+real graphics device. It does not establish keyboard/mouse feel, speaker playback,
+headset comfort or original-engine visual parity. Fire/water/psychic fidelity,
+large-species spacing and Bruno's playtest acceptance remain open. The previous
+user builds and all main-game saves remain untouched.
+
+
+Final package: **Builds/PokedexBattleReady**, one scene, zero build errors,
+640,917,885 player-build bytes plus 8,440,906,028 bytes of streamed model payloads.
+All 1,000 preferred models were staged and the packaged catalog matches source.
+Of 879 bodies using the shared native material converter, 830 were rebaked with
+unchanged geometry/skin/animation proofs; the others needed no overlap correction.
+The 121 BDSP/Sword bodies use independent pipelines. Final-player Treecko check
+passed with exit 0; its rendered capture visibly has a green head. Before/after:
+evidence/materials/treecko-before.png and treecko-after.png. This closes the
+specific brown-head source repair, with broader material fidelity still reviewed
+by Bruno. See evidence/pokedex/final-build.json for package and spot-check data.
+
+Final post-rebake static validation passed: 1,000 unique preferred-source species,
+52,807 clips, all model SHA256s, embedded resource bounds, roles, stats and move
+bindings. Seven explicitly recorded role aliases remain. The validation runs
+against the corrected final catalog rather than the earlier pre-rebake exports.

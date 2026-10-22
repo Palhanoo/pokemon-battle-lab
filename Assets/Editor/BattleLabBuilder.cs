@@ -29,6 +29,12 @@ public static class BattleLabBuilder
             AssetDatabase.CreateAsset(new Material(Shader.Find("Universal Render Pipeline/Lit")),"Assets/Resources/LabSurface.mat");
         var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/URP.asset");
         GraphicsSettings.defaultRenderPipeline=pipeline;QualitySettings.renderPipeline=pipeline;
+        var toneProfile=AssetDatabase.LoadAssetAtPath<VolumeProfile>("Assets/Resources/LabTone.asset");
+        if(!toneProfile)
+        {
+            toneProfile=ScriptableObject.CreateInstance<VolumeProfile>();AssetDatabase.CreateAsset(toneProfile,"Assets/Resources/LabTone.asset");
+            var tone=toneProfile.Add<Tonemapping>(true);tone.mode.Override(TonemappingMode.Neutral);AssetDatabase.AddObjectToAsset(tone,toneProfile);EditorUtility.SetDirty(toneProfile);
+        }
         QualitySettings.vSyncCount=0;QualitySettings.antiAliasing=4;
         PlayerSettings.companyName="BrunoLabs";PlayerSettings.productName="Pokemon Battle Lab";
         PlayerSettings.defaultScreenWidth=1440;PlayerSettings.defaultScreenHeight=900;
@@ -58,11 +64,23 @@ public static class BattleLabBuilder
     public static void Build()
     {
         var args=Environment.GetCommandLineArgs();int at=Array.IndexOf(args,"-lab-build-dir");
-        string output=at>=0&&at+1<args.Length?args[at+1]:"Builds/RealtimeRoster";
+        string output=at>=0&&at+1<args.Length?args[at+1]:"Builds/PokedexBattleFinal";
         Setup();Directory.CreateDirectory(output);
         var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/BattleLab.unity"},
             locationPathName=Path.Combine(output,"PokemonBattleLab.exe"),target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
         Debug.Log($"LAB BUILD {report.summary.result} scenes=1 errors={report.summary.totalErrors} bytes={report.summary.totalSize}");
         if(report.summary.result!=BuildResult.Succeeded)throw new Exception("Battle lab build failed");
+        if(!args.Contains("-lab-skip-roster")&&File.Exists("LocalRoster/catalog.json"))
+        {
+            var roster=JsonUtility.FromJson<RosterDocument>(File.ReadAllText("LocalRoster/catalog.json"));
+            string destination=Path.Combine(output,"PokemonBattleLab_Data/StreamingAssets/Roster");Directory.CreateDirectory(destination);
+            foreach(var row in roster.models)
+            {
+                string source=Path.Combine("LocalRoster",row.file),target=Path.Combine(destination,row.file);
+                if(!File.Exists(target)||new FileInfo(source).Length!=new FileInfo(target).Length||File.GetLastWriteTimeUtc(source)!=File.GetLastWriteTimeUtc(target))File.Copy(source,target,true);
+            }
+            File.Copy("LocalRoster/catalog.json",Path.Combine(destination,"catalog.json"),true);
+            Debug.Log("LAB ROSTER STAGED: "+roster.models.Length+" species; models load on demand");
+        }
     }
 }

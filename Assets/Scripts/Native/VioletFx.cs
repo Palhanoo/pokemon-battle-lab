@@ -8,6 +8,8 @@ namespace BattleLab.Native
     // Rebuilds Scarlet/Violet battle effects (exported by Tools~/hoenngen/movefx.py) as ParticleSystems.
     // An emitter set (one .ptcl) becomes a root with one ParticleSystem per emitter; child emitters become
     // birth sub-emitters. Violet's space is right-handed like glTF, so x is mirrored as glTFast does.
+    public sealed class VioletInfiniteEmitter : MonoBehaviour {}
+
     public static class VioletFx
     {
         public const float Fps = 30f;
@@ -41,10 +43,12 @@ namespace BattleLab.Native
         // Fade: stop emitting and let particles finish; otherwise clear them now.
         public static void Stop(GameObject root, bool fade)
         {
-            foreach (var ps in Roots(root))
+            foreach (var ps in root.GetComponentsInChildren<ParticleSystem>(true))
             {
                 var em = ps.emission; em.enabled = false;
-                if (!fade) ps.Clear(true);
+                // Native infinite cores live until their timeline Stop. They cannot age out
+                // like finite sparks: the 600-second simulation placeholder is not a tail.
+                if (!fade || ps.GetComponent<VioletInfiniteEmitter>()) ps.Clear(false);
             }
         }
 
@@ -77,6 +81,7 @@ namespace BattleLab.Native
 
             float life = J.F(e, "life"), lifeRnd = J.F(e, "life_random");
             bool infinite = J.B(e, "infinite");
+            if(infinite)go.AddComponent<VioletInfiniteEmitter>();
             main.startLifetime = infinite ? new ParticleSystem.MinMaxCurve(600f) : new ParticleSystem.MinMaxCurve(Mathf.Max(0.02f, life * (1 - lifeRnd)), Mathf.Max(0.02f, life));
             Emission(ps, J.Obj(e["emit"]), parentEmitter, e);
             Shape(ps, J.Obj(e["shape"]));
@@ -412,6 +417,24 @@ namespace BattleLab.Native
                     mat.SetVector("_SubScroll", new Vector4(sp[0], sp[1], 0, 0));
                 }
             }
+            if(t2!=null && t2!=t0)
+            {
+                var third=texture(J.Str(t2,"name"));
+                if(third)
+                {
+                    Wrap(third,t2);mat.SetTexture("_ThirdTex",third);mat.SetFloat("_ThirdGrey",Grey(third)?1:0);mat.SetFloat("_UseThird",1);
+                    UvTransform(mat,"_ThirdTex",t2,false);mat.SetFloat("_ThirdRotation",J.F(t2,"uv_rotate"));
+                    var scroll=J.Floats(t2["scroll_per_s"]);mat.SetVector("_ThirdScroll",new Vector4(scroll[0],scroll[1],0,0));
+                }
+            }
+            TextureMotion(mat,"Main",t0);
+            if(t1!=null&&t1!=t0)TextureMotion(mat,"Sub",t1);
+            if(t2!=null&&t2!=t0)TextureMotion(mat,"Third",t2);
+        }
+        static void TextureMotion(Material material,string prefix,Dictionary<string,object> texture)
+        {
+            var rate=texture.ContainsKey("uv_scale_per_s")?J.Floats(texture["uv_scale_per_s"]):new[]{0f,0f};
+            material.SetVector("_"+prefix+"Motion",new Vector4(rate[0],rate[1],J.F(texture,"uv_rotate_per_s"),0));
         }
 
         // Violet's v runs top-down and its masks are often one quadrant drawn 2x2 with mirror wrap:

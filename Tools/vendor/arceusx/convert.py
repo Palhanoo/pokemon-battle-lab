@@ -239,13 +239,16 @@ class MaterialBaker:
         if not has_layers and 'BaseColor' in f4 and alb is not None:
             col = col * np.array(f4['BaseColor'][:3], np.float32)  # flat tint some shaders (gems, fresnel) use
         if has_layers:
+            layer_base = col.copy()
             m = sample(lym, h, w, sc[:2], sc[2:], wrap('LayerMaskMap')).astype(np.float32) / 255
             for i, lc in enumerate(layers):
                 if lc is None:
                     continue
                 lc = self.tints.get((name, i + 1), lc)
-                k = (m[..., i] * f1.get(f'LayerMaskScale{i + 1}', 1.0)).clip(0, 1)[..., None]
-                col = col * ((1 - k) + np.array(lc[:3], np.float32) * k)  # layers tint the albedo
+                k = (m[..., i] * f1.get(f'LayerMaskScale{i + 1}', 1.0) * (lc[3] if len(lc) > 3 else 1)).clip(0, 1)[..., None]
+                tint = np.array(lc[:3], np.float32)
+                layer = layer_base * tint if sh.get('BaseColorMultiply', 'True') != 'False' else tint
+                col = col * (1 - k) + layer * k  # later masks replace earlier tints, never multiply them together
         if 'AOMap' in texs and self.tex(texs['AOMap']) is not None:
             ao = sample(self.tex(texs['AOMap']), h, w).astype(np.float32)[..., 0:1] / 255
             col *= 0.35 + 0.65 * ao  # bake a soft AO so it reads without a custom shader

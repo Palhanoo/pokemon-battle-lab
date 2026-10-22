@@ -1,0 +1,4005 @@
+{
+  "models": [
+    [
+      "TREECKO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ABOMASNOW",
+      "unchanged"
+    ],
+    [
+      "ABRA",
+      "unchanged"
+    ],
+    [
+      "ABSOL",
+      "unchanged"
+    ],
+    [
+      "ACCELGOR",
+      "unchanged"
+    ],
+    [
+      "AEGISLASH",
+      "unchanged"
+    ],
+    [
+      "AERODACTYL",
+      "unchanged"
+    ],
+    [
+      "AGGRON",
+      "unchanged"
+    ],
+    [
+      "AIPOM",
+      "unchanged"
+    ],
+    [
+      "ALAKAZAM",
+      "unchanged"
+    ],
+    [
+      "ALCREMIE",
+      "unchanged"
+    ],
+    [
+      "ALOMOMOLA",
+      "unchanged"
+    ],
+    [
+      "ALTARIA",
+      "unchanged"
+    ],
+    [
+      "AMAURA",
+      "unchanged"
+    ],
+    [
+      "AMBIPOM",
+      "unchanged"
+    ],
+    [
+      "AMOONGUSS",
+      "unchanged"
+    ],
+    [
+      "AMPHAROS",
+      "unchanged"
+    ],
+    [
+      "ANNIHILAPE",
+      "unchanged"
+    ],
+    [
+      "ANORITH",
+      "unchanged"
+    ],
+    [
+      "APPLETUN",
+      "unchanged"
+    ],
+    [
+      "APPLIN",
+      "unchanged"
+    ],
+    [
+      "ARAQUANID",
+      "unchanged"
+    ],
+    [
+      "ARBOK",
+      "unchanged"
+    ],
+    [
+      "ARBOLIVA",
+      "unchanged"
+    ],
+    [
+      "ARCANINE",
+      "unchanged"
+    ],
+    [
+      "ARCEUS",
+      "unchanged"
+    ],
+    [
+      "ARCHALUDON",
+      "unchanged"
+    ],
+    [
+      "ARCTIBAX",
+      "unchanged"
+    ],
+    [
+      "ARCTOVISH",
+      "unchanged"
+    ],
+    [
+      "ARCTOZOLT",
+      "unchanged"
+    ],
+    [
+      "ARIADOS",
+      "unchanged"
+    ],
+    [
+      "ARMALDO",
+      "unchanged"
+    ],
+    [
+      "ARMAROUGE",
+      "unchanged"
+    ],
+    [
+      "AROMATISSE",
+      "unchanged"
+    ],
+    [
+      "ARON",
+      "unchanged"
+    ],
+    [
+      "ARROKUDA",
+      "unchanged"
+    ],
+    [
+      "ARTICUNO",
+      "unchanged"
+    ],
+    [
+      "AUDINO",
+      "unchanged"
+    ],
+    [
+      "AURORUS",
+      "unchanged"
+    ],
+    [
+      "AVALUGG",
+      "unchanged"
+    ],
+    [
+      "AXEW",
+      "unchanged"
+    ],
+    [
+      "AZELF",
+      "unchanged"
+    ],
+    [
+      "AZUMARILL",
+      "unchanged"
+    ],
+    [
+      "AZURILL",
+      "unchanged"
+    ],
+    [
+      "BAGON",
+      "unchanged"
+    ],
+    [
+      "BALTOY",
+      "unchanged"
+    ],
+    [
+      "BANETTE",
+      "unchanged"
+    ],
+    [
+      "BARBARACLE",
+      "unchanged"
+    ],
+    [
+      "BARBOACH",
+      "unchanged"
+    ],
+    [
+      "BARRASKEWDA",
+      "unchanged"
+    ],
+    [
+      "BASCULEGION",
+      "unchanged"
+    ],
+    [
+      "BASCULIN",
+      "unchanged"
+    ],
+    [
+      "BASTIODON",
+      "unchanged"
+    ],
+    [
+      "BAXCALIBUR",
+      "unchanged"
+    ],
+    [
+      "BAYLEEF",
+      "unchanged"
+    ],
+    [
+      "BEARTIC",
+      "unchanged"
+    ],
+    [
+      "BEAUTIFLY",
+      "unchanged"
+    ],
+    [
+      "BEEDRILL",
+      "unchanged"
+    ],
+    [
+      "BEHEEYEM",
+      "unchanged"
+    ],
+    [
+      "BELDUM",
+      "unchanged"
+    ],
+    [
+      "BELLIBOLT",
+      "unchanged"
+    ],
+    [
+      "BELLOSSOM",
+      "unchanged"
+    ],
+    [
+      "BELLSPROUT",
+      "unchanged"
+    ],
+    [
+      "BERGMITE",
+      "unchanged"
+    ],
+    [
+      "BEWEAR",
+      "unchanged"
+    ],
+    [
+      "BIBAREL",
+      "unchanged"
+    ],
+    [
+      "BIDOOF",
+      "unchanged"
+    ],
+    [
+      "BINACLE",
+      "unchanged"
+    ],
+    [
+      "BISHARP",
+      "unchanged"
+    ],
+    [
+      "BLASTOISE",
+      "unchanged"
+    ],
+    [
+      "BLAZIKEN",
+      "unchanged"
+    ],
+    [
+      "BLIPBUG",
+      "unchanged"
+    ],
+    [
+      "BLISSEY",
+      "unchanged"
+    ],
+    [
+      "BLITZLE",
+      "unchanged"
+    ],
+    [
+      "BOLDORE",
+      "unchanged"
+    ],
+    [
+      "BOLTUND",
+      "unchanged"
+    ],
+    [
+      "BOMBIRDIER",
+      "unchanged"
+    ],
+    [
+      "BONSLY",
+      "unchanged"
+    ],
+    [
+      "BOUNSWEET",
+      "unchanged"
+    ],
+    [
+      "BRAIXEN",
+      "unchanged"
+    ],
+    [
+      "BRAMBLEGHAST",
+      "unchanged"
+    ],
+    [
+      "BRAMBLIN",
+      "unchanged"
+    ],
+    [
+      "BRAVIARY",
+      "unchanged"
+    ],
+    [
+      "BRELOOM",
+      "unchanged"
+    ],
+    [
+      "BRIONNE",
+      "unchanged"
+    ],
+    [
+      "BRONZONG",
+      "unchanged"
+    ],
+    [
+      "BRONZOR",
+      "unchanged"
+    ],
+    [
+      "BRUTE_BONNET",
+      "unchanged"
+    ],
+    [
+      "BRUXISH",
+      "unchanged"
+    ],
+    [
+      "BUDEW",
+      "unchanged"
+    ],
+    [
+      "BUIZEL",
+      "unchanged"
+    ],
+    [
+      "BULBASAUR",
+      "unchanged"
+    ],
+    [
+      "BUNEARY",
+      "unchanged"
+    ],
+    [
+      "BUNNELBY",
+      "unchanged"
+    ],
+    [
+      "BURMY",
+      "unchanged"
+    ],
+    [
+      "BUTTERFREE",
+      "unchanged"
+    ],
+    [
+      "CACNEA",
+      "unchanged"
+    ],
+    [
+      "CACTURNE",
+      "unchanged"
+    ],
+    [
+      "CALYREX",
+      "unchanged"
+    ],
+    [
+      "CAMERUPT",
+      "unchanged"
+    ],
+    [
+      "CAPSAKID",
+      "unchanged"
+    ],
+    [
+      "CARBINK",
+      "unchanged"
+    ],
+    [
+      "CARKOL",
+      "unchanged"
+    ],
+    [
+      "CARNIVINE",
+      "unchanged"
+    ],
+    [
+      "CARVANHA",
+      "unchanged"
+    ],
+    [
+      "CASCOON",
+      "unchanged"
+    ],
+    [
+      "CASTFORM",
+      "unchanged"
+    ],
+    [
+      "CATERPIE",
+      "unchanged"
+    ],
+    [
+      "CELEBI",
+      "unchanged"
+    ],
+    [
+      "CENTISKORCH",
+      "unchanged"
+    ],
+    [
+      "CERULEDGE",
+      "unchanged"
+    ],
+    [
+      "CETITAN",
+      "unchanged"
+    ],
+    [
+      "CETODDLE",
+      "unchanged"
+    ],
+    [
+      "CHANDELURE",
+      "unchanged"
+    ],
+    [
+      "CHANSEY",
+      "unchanged"
+    ],
+    [
+      "CHARCADET",
+      "unchanged"
+    ],
+    [
+      "CHARIZARD",
+      "unchanged"
+    ],
+    [
+      "CHARJABUG",
+      "unchanged"
+    ],
+    [
+      "CHARMANDER",
+      "unchanged"
+    ],
+    [
+      "CHARMELEON",
+      "unchanged"
+    ],
+    [
+      "CHATOT",
+      "unchanged"
+    ],
+    [
+      "CHERRIM",
+      "unchanged"
+    ],
+    [
+      "CHERUBI",
+      "unchanged"
+    ],
+    [
+      "CHESNAUGHT",
+      "unchanged"
+    ],
+    [
+      "CHESPIN",
+      "unchanged"
+    ],
+    [
+      "CHEWTLE",
+      "unchanged"
+    ],
+    [
+      "CHIEN_PAO",
+      "unchanged"
+    ],
+    [
+      "CHIKORITA",
+      "unchanged"
+    ],
+    [
+      "CHIMCHAR",
+      "unchanged"
+    ],
+    [
+      "CHIMECHO",
+      "unchanged"
+    ],
+    [
+      "CHINCHOU",
+      "unchanged"
+    ],
+    [
+      "CHINGLING",
+      "unchanged"
+    ],
+    [
+      "CHI_YU",
+      "unchanged"
+    ],
+    [
+      "CINCCINO",
+      "unchanged"
+    ],
+    [
+      "CINDERACE",
+      "unchanged"
+    ],
+    [
+      "CLAMPERL",
+      "unchanged"
+    ],
+    [
+      "CLAUNCHER",
+      "unchanged"
+    ],
+    [
+      "CLAWITZER",
+      "unchanged"
+    ],
+    [
+      "CLAYDOL",
+      "unchanged"
+    ],
+    [
+      "CLEFABLE",
+      "unchanged"
+    ],
+    [
+      "CLEFAIRY",
+      "unchanged"
+    ],
+    [
+      "CLEFFA",
+      "unchanged"
+    ],
+    [
+      "CLOBBOPUS",
+      "unchanged"
+    ],
+    [
+      "CLODSIRE",
+      "unchanged"
+    ],
+    [
+      "CLOYSTER",
+      "unchanged"
+    ],
+    [
+      "COALOSSAL",
+      "unchanged"
+    ],
+    [
+      "COBALION",
+      "unchanged"
+    ],
+    [
+      "COFAGRIGUS",
+      "unchanged"
+    ],
+    [
+      "COMBEE",
+      "unchanged"
+    ],
+    [
+      "COMBUSKEN",
+      "unchanged"
+    ],
+    [
+      "COMFEY",
+      "unchanged"
+    ],
+    [
+      "CONKELDURR",
+      "unchanged"
+    ],
+    [
+      "COPPERAJAH",
+      "unchanged"
+    ],
+    [
+      "CORPHISH",
+      "unchanged"
+    ],
+    [
+      "CORSOLA",
+      "unchanged"
+    ],
+    [
+      "CORVIKNIGHT",
+      "unchanged"
+    ],
+    [
+      "CORVISQUIRE",
+      "unchanged"
+    ],
+    [
+      "COSMOEM",
+      "unchanged"
+    ],
+    [
+      "COSMOG",
+      "unchanged"
+    ],
+    [
+      "COTTONEE",
+      "unchanged"
+    ],
+    [
+      "CRABOMINABLE",
+      "unchanged"
+    ],
+    [
+      "CRABRAWLER",
+      "unchanged"
+    ],
+    [
+      "CRADILY",
+      "unchanged"
+    ],
+    [
+      "CRAMORANT",
+      "unchanged"
+    ],
+    [
+      "CRANIDOS",
+      "unchanged"
+    ],
+    [
+      "CRAWDAUNT",
+      "unchanged"
+    ],
+    [
+      "CRESSELIA",
+      "unchanged"
+    ],
+    [
+      "CROAGUNK",
+      "unchanged"
+    ],
+    [
+      "CROBAT",
+      "unchanged"
+    ],
+    [
+      "CROCALOR",
+      "unchanged"
+    ],
+    [
+      "CROCONAW",
+      "unchanged"
+    ],
+    [
+      "CRUSTLE",
+      "unchanged"
+    ],
+    [
+      "CRYOGONAL",
+      "unchanged"
+    ],
+    [
+      "CUBCHOO",
+      "unchanged"
+    ],
+    [
+      "CUBONE",
+      "unchanged"
+    ],
+    [
+      "CUFANT",
+      "unchanged"
+    ],
+    [
+      "CURSOLA",
+      "unchanged"
+    ],
+    [
+      "CUTIEFLY",
+      "unchanged"
+    ],
+    [
+      "CYCLIZAR",
+      "unchanged"
+    ],
+    [
+      "CYNDAQUIL",
+      "unchanged"
+    ],
+    [
+      "DACHSBUN",
+      "unchanged"
+    ],
+    [
+      "DARKRAI",
+      "unchanged"
+    ],
+    [
+      "DARMANITAN",
+      "unchanged"
+    ],
+    [
+      "DARTRIX",
+      "unchanged"
+    ],
+    [
+      "DARUMAKA",
+      "unchanged"
+    ],
+    [
+      "DECIDUEYE",
+      "unchanged"
+    ],
+    [
+      "DEDENNE",
+      "unchanged"
+    ],
+    [
+      "DEERLING",
+      "unchanged"
+    ],
+    [
+      "DEINO",
+      "unchanged"
+    ],
+    [
+      "DELCATTY",
+      "unchanged"
+    ],
+    [
+      "DELIBIRD",
+      "unchanged"
+    ],
+    [
+      "DELPHOX",
+      "unchanged"
+    ],
+    [
+      "DEOXYS",
+      "unchanged"
+    ],
+    [
+      "DEWGONG",
+      "unchanged"
+    ],
+    [
+      "DEWOTT",
+      "unchanged"
+    ],
+    [
+      "DEWPIDER",
+      "unchanged"
+    ],
+    [
+      "DHELMISE",
+      "unchanged"
+    ],
+    [
+      "DIALGA",
+      "unchanged"
+    ],
+    [
+      "DIANCIE",
+      "unchanged"
+    ],
+    [
+      "DIGGERSBY",
+      "unchanged"
+    ],
+    [
+      "DIGLETT",
+      "unchanged"
+    ],
+    [
+      "DIPPLIN",
+      "unchanged"
+    ],
+    [
+      "DITTO",
+      "unchanged"
+    ],
+    [
+      "DODRIO",
+      "unchanged"
+    ],
+    [
+      "DODUO",
+      "unchanged"
+    ],
+    [
+      "DOLLIV",
+      "unchanged"
+    ],
+    [
+      "DONDOZO",
+      "unchanged"
+    ],
+    [
+      "DONPHAN",
+      "unchanged"
+    ],
+    [
+      "DOTTLER",
+      "unchanged"
+    ],
+    [
+      "DOUBLADE",
+      "unchanged"
+    ],
+    [
+      "DRACOVISH",
+      "unchanged"
+    ],
+    [
+      "DRACOZOLT",
+      "unchanged"
+    ],
+    [
+      "DRAGALGE",
+      "unchanged"
+    ],
+    [
+      "DRAGAPULT",
+      "unchanged"
+    ],
+    [
+      "DRAGONAIR",
+      "unchanged"
+    ],
+    [
+      "DRAGONITE",
+      "unchanged"
+    ],
+    [
+      "DRAKLOAK",
+      "unchanged"
+    ],
+    [
+      "DRAMPA",
+      "unchanged"
+    ],
+    [
+      "DRAPION",
+      "unchanged"
+    ],
+    [
+      "DRATINI",
+      "unchanged"
+    ],
+    [
+      "DREDNAW",
+      "unchanged"
+    ],
+    [
+      "DREEPY",
+      "unchanged"
+    ],
+    [
+      "DRIFBLIM",
+      "unchanged"
+    ],
+    [
+      "DRIFLOON",
+      "unchanged"
+    ],
+    [
+      "DRILBUR",
+      "unchanged"
+    ],
+    [
+      "DRIZZILE",
+      "unchanged"
+    ],
+    [
+      "DROWZEE",
+      "unchanged"
+    ],
+    [
+      "DUBWOOL",
+      "unchanged"
+    ],
+    [
+      "DUCKLETT",
+      "unchanged"
+    ],
+    [
+      "DUDUNSPARCE",
+      "unchanged"
+    ],
+    [
+      "DUGTRIO",
+      "unchanged"
+    ],
+    [
+      "DUNSPARCE",
+      "unchanged"
+    ],
+    [
+      "DUOSION",
+      "unchanged"
+    ],
+    [
+      "DURALUDON",
+      "unchanged"
+    ],
+    [
+      "DURANT",
+      "unchanged"
+    ],
+    [
+      "DUSCLOPS",
+      "unchanged"
+    ],
+    [
+      "DUSKNOIR",
+      "unchanged"
+    ],
+    [
+      "DUSKULL",
+      "unchanged"
+    ],
+    [
+      "DUSTOX",
+      "unchanged"
+    ],
+    [
+      "DWEBBLE",
+      "unchanged"
+    ],
+    [
+      "EELEKTRIK",
+      "unchanged"
+    ],
+    [
+      "EELEKTROSS",
+      "unchanged"
+    ],
+    [
+      "EEVEE",
+      "unchanged"
+    ],
+    [
+      "EISCUE",
+      "unchanged"
+    ],
+    [
+      "EKANS",
+      "unchanged"
+    ],
+    [
+      "ELDEGOSS",
+      "unchanged"
+    ],
+    [
+      "ELECTABUZZ",
+      "unchanged"
+    ],
+    [
+      "ELECTIVIRE",
+      "unchanged"
+    ],
+    [
+      "ELECTRIKE",
+      "unchanged"
+    ],
+    [
+      "ELECTRODE",
+      "unchanged"
+    ],
+    [
+      "ELEKID",
+      "unchanged"
+    ],
+    [
+      "ELGYEM",
+      "unchanged"
+    ],
+    [
+      "EMBOAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EMOLGA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EMPOLEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ENAMORUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ENTEI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ESCAVALIER",
+      "unchanged"
+    ],
+    [
+      "ESPATHRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ESPEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ESPURR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ETERNATUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EXCADRILL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EXEGGCUTE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EXEGGUTOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "EXPLOUD",
+      "unchanged"
+    ],
+    [
+      "FALINKS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FARFETCHD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FARIGIRAF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FEAROW",
+      "unchanged"
+    ],
+    [
+      "FEEBAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FENNEKIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FERALIGATR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FERROSEED",
+      "unchanged"
+    ],
+    [
+      "FERROTHORN",
+      "unchanged"
+    ],
+    [
+      "FEZANDIPITI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FIDOUGH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FINIZEN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FINNEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLAAFFY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLABEBE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLAMIGO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLAPPLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLAREON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLETCHINDER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLETCHLING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLITTLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLOATZEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLOETTE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLORAGATO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLORGES",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLUTTER_MANE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FLYGON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FOMANTIS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FOONGUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FORRETRESS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FRAXURE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FRIGIBAX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FRILLISH",
+      "unchanged"
+    ],
+    [
+      "FROAKIE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FROGADIER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FROSLASS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FROSMOTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FUECOCO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FURFROU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "FURRET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GABITE",
+      "audited; no overlapping layers"
+    ],
+    [
+      "GALLADE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GALVANTULA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GARBODOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GARCHOMP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GARDEVOIR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GARGANACL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GASTLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GASTRODON",
+      "audited; no overlapping layers"
+    ],
+    [
+      "GENESECT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GENGAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GEODUDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GHOLDENGO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GIBLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GIGALITH",
+      "unchanged"
+    ],
+    [
+      "GIMMIGHOUL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GIRAFARIG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GIRATINA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLACEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLALIE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLAMEOW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLASTRIER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLIGAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLIMMET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLIMMORA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLISCOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GLOOM",
+      "audited; no overlapping layers"
+    ],
+    [
+      "GOGOAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLBAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLDEEN",
+      "unchanged"
+    ],
+    [
+      "GOLDUCK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLEM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLETT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLISOPOD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOLURK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOODRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOOMY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOREBYSS",
+      "unchanged"
+    ],
+    [
+      "GOSSIFLEUR",
+      "unchanged"
+    ],
+    [
+      "GOTHITA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOTHITELLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOTHORITA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOUGING_FIRE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GOURGEIST",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRAFAIAI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRANBULL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRAPPLOCT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRAVELER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GREAT_TUSK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GREAVARD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GREEDENT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRENINJA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRIMER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRIMMSNARL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GROOKEY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GROTLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GROUDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GROVYLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GROWLITHE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRUBBIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GRUMPIG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GULPIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GUMSHOOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GURDURR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "GYARADOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HAKAMO_O",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HAPPINY",
+      "audited; no overlapping layers"
+    ],
+    [
+      "HARIYAMA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HATENNA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "HATTERENE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HATTREM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HAUNTER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HAWLUCHA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HAXORUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HEATMOR",
+      "unchanged"
+    ],
+    [
+      "HEATRAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HELIOLISK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HELIOPTILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HERACROSS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HIPPOPOTAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HIPPOWDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HITMONCHAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HITMONLEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HITMONTOP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HONCHKROW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HONEDGE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOOPA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOOTHOOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOPPIP",
+      "audited; no overlapping layers"
+    ],
+    [
+      "HORSEA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOUNDOOM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOUNDOUR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HOUNDSTONE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HO_OH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HUNTAIL",
+      "unchanged"
+    ],
+    [
+      "HYDRAPPLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HYDREIGON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "HYPNO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IGGLYBUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ILLUMISE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IMPIDIMP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "INCINEROAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "INDEEDEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "INFERNAPE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "INKAY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "INTELEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_BOULDER",
+      "audited; no overlapping layers"
+    ],
+    [
+      "IRON_BUNDLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_CROWN",
+      "audited; no overlapping layers"
+    ],
+    [
+      "IRON_HANDS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_JUGULIS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_LEAVES",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_MOTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_THORNS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_TREADS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IRON_VALIANT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "IVYSAUR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JANGMO_O",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JELLICENT",
+      "unchanged"
+    ],
+    [
+      "JIGGLYPUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JIRACHI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JOLTEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JOLTIK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JUMPLUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "JYNX",
+      "unchanged"
+    ],
+    [
+      "KABUTO",
+      "unchanged"
+    ],
+    [
+      "KABUTOPS",
+      "unchanged"
+    ],
+    [
+      "KADABRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KAKUNA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "KANGASKHAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KARRABLAST",
+      "unchanged"
+    ],
+    [
+      "KECLEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KELDEO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KILOWATTREL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KINGAMBIT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KINGDRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KINGLER",
+      "unchanged"
+    ],
+    [
+      "KIRLIA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KLANG",
+      "unchanged"
+    ],
+    [
+      "KLAWF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KLEAVOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KLEFKI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KLINK",
+      "unchanged"
+    ],
+    [
+      "KLINKLANG",
+      "unchanged"
+    ],
+    [
+      "KOFFING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KOMALA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "KOMMO_O",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KORAIDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KRABBY",
+      "unchanged"
+    ],
+    [
+      "KRICKETOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KRICKETUNE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KROKOROK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KROOKODILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KUBFU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KYOGRE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "KYUREM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LAIRON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LAMPENT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LANDORUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LANTURN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LAPRAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LARVESTA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LARVITAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LATIAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LATIOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LEAFEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LEAVANNY",
+      "audited; no overlapping layers"
+    ],
+    [
+      "LECHONK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LEDIAN",
+      "unchanged"
+    ],
+    [
+      "LEDYBA",
+      "unchanged"
+    ],
+    [
+      "LICKILICKY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LICKITUNG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LIEPARD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LILEEP",
+      "unchanged"
+    ],
+    [
+      "LILLIGANT",
+      "audited; no overlapping layers"
+    ],
+    [
+      "LINOONE",
+      "unchanged"
+    ],
+    [
+      "LITLEO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LITTEN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LITWICK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LOKIX",
+      "audited; no overlapping layers"
+    ],
+    [
+      "LOMBRE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LOPUNNY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LOTAD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LOUDRED",
+      "unchanged"
+    ],
+    [
+      "LUCARIO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUDICOLO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUGIA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUMINEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUNALA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUNATONE",
+      "unchanged"
+    ],
+    [
+      "LURANTIS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUVDISC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUXIO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LUXRAY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "LYCANROC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MABOSSTIFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MACHAMP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MACHOKE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MACHOP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGBY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGCARGO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGEARNA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGIKARP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGMAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGMORTAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGNEMITE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGNETON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAGNEZONE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAKUHITA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "MALAMAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAMOSWINE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANAPHY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANDIBUZZ",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANECTRIC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANKEY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANTINE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MANTYKE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MARACTUS",
+      "unchanged"
+    ],
+    [
+      "MAREANIE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAREEP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MARILL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAROWAK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MARSHADOW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MARSHTOMP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MASCHIFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MASQUERAIN",
+      "audited; no overlapping layers"
+    ],
+    [
+      "MAUSHOLD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MAWILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEDICHAM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEDITITE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEGANIUM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MELMETAL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MELOETTA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MELTAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEOWSCARADA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEOWSTIC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEOWTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MESPRIT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "METAGROSS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "METANG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "METAPOD",
+      "unchanged"
+    ],
+    [
+      "MEW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MEWTWO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MIENFOO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MIENSHAO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MIGHTYENA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MILCERY",
+      "audited; no overlapping layers"
+    ],
+    [
+      "MILOTIC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MILTANK",
+      "unchanged"
+    ],
+    [
+      "MIME_JR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MIMIKYU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MINCCINO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MINIOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MINUN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MIRAIDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MISDREAVUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MISMAGIUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MOLTRES",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MONFERNO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MORELULL",
+      "unchanged"
+    ],
+    [
+      "MORGREM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MORPEKO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MOTHIM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MR_MIME",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MR_RIME",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUDBRAY",
+      "audited; no overlapping layers"
+    ],
+    [
+      "MUDKIP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUDSDALE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUNCHLAX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUNKIDORI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUNNA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MURKROW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "MUSHARNA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NACLI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NACLSTACK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NATU",
+      "unchanged"
+    ],
+    [
+      "NECROZMA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NICKIT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NIDOKING",
+      "unchanged"
+    ],
+    [
+      "NIDOQUEEN",
+      "unchanged"
+    ],
+    [
+      "NIDORAN_F",
+      "unchanged"
+    ],
+    [
+      "NIDORAN_M",
+      "unchanged"
+    ],
+    [
+      "NIDORINA",
+      "unchanged"
+    ],
+    [
+      "NIDORINO",
+      "unchanged"
+    ],
+    [
+      "NINCADA",
+      "unchanged"
+    ],
+    [
+      "NINETALES",
+      "audited; no overlapping layers"
+    ],
+    [
+      "NINJASK",
+      "unchanged"
+    ],
+    [
+      "NOCTOWL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NOIBAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NOIVERN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NOSEPASS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "NUMEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NUZLEAF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "NYMBLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OBSTAGOON",
+      "unchanged"
+    ],
+    [
+      "OCTILLERY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ODDISH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OGERPON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OINKOLOGNE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OKIDOGI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OMANYTE",
+      "unchanged"
+    ],
+    [
+      "OMASTAR",
+      "unchanged"
+    ],
+    [
+      "ONIX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ORANGURU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ORBEETLE",
+      "unchanged"
+    ],
+    [
+      "ORICORIO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ORTHWORM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OSHAWOTT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "OVERQWIL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PACHIRISU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PALAFIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PALKIA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PALOSSAND",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PALPITOAD",
+      "unchanged"
+    ],
+    [
+      "PANCHAM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PANGORO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PANPOUR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PANSAGE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PANSEAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PARAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PARASECT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PASSIMIAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PATRAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PAWMI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PAWMO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PAWMOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PAWNIARD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PECHARUNT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PELIPPER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PERRSERKER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PERSIAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PETILIL",
+      "audited; no overlapping layers"
+    ],
+    [
+      "PHANPY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PHANTUMP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PHIONE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PICHU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIDGEOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIDGEOTTO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIDGEY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIDOVE",
+      "unchanged"
+    ],
+    [
+      "PIGNITE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIKACHU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIKIPEK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PILOSWINE",
+      "audited; no overlapping layers"
+    ],
+    [
+      "PINCURCHIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PINECO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PINSIR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PIPLUP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PLUSLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLITOED",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLIWAG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLIWHIRL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLIWRATH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLTCHAGEIST",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POLTEAGEIST",
+      "audited; no overlapping layers"
+    ],
+    [
+      "PONYTA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POOCHYENA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "POPPLIO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PORYGON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PORYGON2",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PORYGON_Z",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PRIMARINA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PRIMEAPE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PRINPLUP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PROBOPASS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PSYDUCK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PUMPKABOO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PUPITAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PURRLOIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PURUGLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PYROAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "PYUKUMUKU",
+      "unchanged"
+    ],
+    [
+      "QUAGSIRE",
+      "audited; no overlapping layers"
+    ],
+    [
+      "QUAQUAVAL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "QUAXLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "QUAXWELL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "QUILAVA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "QUILLADIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "QWILFISH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RABOOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RABSCA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RAGING_BOLT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RAICHU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RAIKOU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RALTS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RAMPARDOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RAPIDASH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RATICATE",
+      "unchanged"
+    ],
+    [
+      "RATTATA",
+      "unchanged"
+    ],
+    [
+      "RAYQUAZA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REGICE",
+      "audited; no overlapping layers"
+    ],
+    [
+      "REGIDRAGO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REGIELEKI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REGIGIGAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REGIROCK",
+      "audited; no overlapping layers"
+    ],
+    [
+      "REGISTEEL",
+      "audited; no overlapping layers"
+    ],
+    [
+      "RELICANTH",
+      "unchanged"
+    ],
+    [
+      "RELLOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REMORAID",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RESHIRAM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "REUNICLUS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "REVAVROOM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RHYDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RHYHORN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RHYPERIOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RIBOMBEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RILLABOOM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RIOLU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROARING_MOON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROCKRUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROGGENROLA",
+      "unchanged"
+    ],
+    [
+      "ROLYCOLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROOKIDEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROSELIA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROSERADE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROTOM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ROWLET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RUFFLET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "RUNERIGUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SABLEYE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SALAMENCE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SALANDIT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SALAZZLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SAMUROTT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDACONDA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDSHREW",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDSLASH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDYGAST",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SANDY_SHOCKS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SAWK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SAWSBUCK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCATTERBUG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCEPTILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCIZOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCOLIPEDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCORBUNNY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCOVILLAIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCRAFTY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCRAGGY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCREAM_TAIL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SCYTHER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEADRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEAKING",
+      "unchanged"
+    ],
+    [
+      "SEALEO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEEDOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEISMITOAD",
+      "unchanged"
+    ],
+    [
+      "SENTRET",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SERPERIOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SERVINE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEVIPER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SEWADDLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHARPEDO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHAYMIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHEDINJA",
+      "unchanged"
+    ],
+    [
+      "SHELGON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHELLDER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHELLOS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SHELMET",
+      "unchanged"
+    ],
+    [
+      "SHIELDON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHIFTRY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHIINOTIC",
+      "unchanged"
+    ],
+    [
+      "SHINX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHROODLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SHROOMISH",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SHUCKLE",
+      "unchanged"
+    ],
+    [
+      "SHUPPET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SIGILYPH",
+      "unchanged"
+    ],
+    [
+      "SILCOON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SILICOBRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SILVALLY",
+      "unchanged"
+    ],
+    [
+      "SIMIPOUR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SIMISAGE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SIMISEAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SINISTCHA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SINISTEA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SIRFETCHD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SIZZLIPEDE",
+      "unchanged"
+    ],
+    [
+      "SKARMORY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKELEDIRGE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKIDDO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKIPLOOM",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SKITTY",
+      "unchanged"
+    ],
+    [
+      "SKORUPI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKRELP",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKUNTANK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SKWOVET",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLAKING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLAKOTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLIGGOO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLITHER_WING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLOWBRO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLOWKING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLOWPOKE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLUGMA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SLURPUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SMEARGLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SMOLIV",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SMOOCHUM",
+      "unchanged"
+    ],
+    [
+      "SNEASEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SNEASLER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SNIVY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SNOM",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SNORLAX",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SNORUNT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SNOVER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SNUBBULL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SOBBLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SOLGALEO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SOLOSIS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SOLROCK",
+      "unchanged"
+    ],
+    [
+      "SPEAROW",
+      "unchanged"
+    ],
+    [
+      "SPECTRIER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPEWPA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPHEAL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPIDOPS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPINARAK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPINDA",
+      "unchanged"
+    ],
+    [
+      "SPIRITOMB",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPOINK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPRIGATITO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SPRITZEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SQUAWKABILLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SQUIRTLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STANTLER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STARAPTOR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STARAVIA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STARLY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STARMIE",
+      "audited; no overlapping layers"
+    ],
+    [
+      "STARYU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STEELIX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STEENEE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STONJOURNER",
+      "audited; no overlapping layers"
+    ],
+    [
+      "STUFFUL",
+      "unchanged"
+    ],
+    [
+      "STUNFISK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "STUNKY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SUDOWOODO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SUICUNE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SUNFLORA",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SUNKERN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SURSKIT",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SWABLU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWADLOON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWALOT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWAMPERT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWANNA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWELLOW",
+      "unchanged"
+    ],
+    [
+      "SWINUB",
+      "audited; no overlapping layers"
+    ],
+    [
+      "SWIRLIX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "SWOOBAT",
+      "unchanged"
+    ],
+    [
+      "SYLVEON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TADBULB",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TAILLOW",
+      "unchanged"
+    ],
+    [
+      "TALONFLAME",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TANDEMAUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TANGELA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TANGROWTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TAROUNTULA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TATSUGIRI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TAUROS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TEDDIURSA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TENTACOOL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TENTACRUEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TEPIG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TERAPAGOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TERRAKION",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "THIEVUL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "THROH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "THUNDURUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "THWACKEY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TIMBURR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TING_LU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TINKATINK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TINKATON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TINKATUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOEDSCOOL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOEDSCRUEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOGEDEMARU",
+      "unchanged"
+    ],
+    [
+      "TOGEKISS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOGEPI",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOGETIC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TORCHIC",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TORKOAL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TORNADUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TORRACAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TORTERRA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOTODILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOUCANNON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOXAPEX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOXEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOXICROAK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TOXTRICITY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TRANQUILL",
+      "unchanged"
+    ],
+    [
+      "TRAPINCH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TREVENANT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TROPIUS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TRUBBISH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TRUMBEAK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TSAREENA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TURTONATOR",
+      "unchanged"
+    ],
+    [
+      "TURTWIG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYMPOLE",
+      "unchanged"
+    ],
+    [
+      "TYNAMO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYPE_NULL",
+      "unchanged"
+    ],
+    [
+      "TYPHLOSION",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYRANITAR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYRANTRUM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYROGUE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "TYRUNT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "UMBREON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "UNFEZANT",
+      "unchanged"
+    ],
+    [
+      "UNOWN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "URSALUNA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "URSARING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "URSHIFU",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "UXIE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VANILLISH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VANILLITE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VANILLUXE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VAPOREON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VAROOM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VELUZA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VENIPEDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VENOMOTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VENONAT",
+      "audited; no overlapping layers"
+    ],
+    [
+      "VENUSAUR",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VESPIQUEN",
+      "audited; no overlapping layers"
+    ],
+    [
+      "VIBRAVA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VICTREEBEL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VIGOROTH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VIKAVOLT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VILEPLUME",
+      "audited; no overlapping layers"
+    ],
+    [
+      "VIRIZION",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VIVILLON",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VOLBEAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VOLCANION",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VOLCARONA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VOLTORB",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VULLABY",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "VULPIX",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WAILMER",
+      "unchanged"
+    ],
+    [
+      "WAILORD",
+      "unchanged"
+    ],
+    [
+      "WALKING_WAKE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WALREIN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WARTORTLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WATCHOG",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WATTREL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WEAVILE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WEEDLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WEEPINBELL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WEEZING",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WHIMSICOTT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WHIRLIPEDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WHISCASH",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WHISMUR",
+      "unchanged"
+    ],
+    [
+      "WIGGLYTUFF",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WIGLETT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WIMPOD",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WINGULL",
+      "audited; no overlapping layers"
+    ],
+    [
+      "WISHIWASHI",
+      "unchanged"
+    ],
+    [
+      "WOBBUFFET",
+      "unchanged"
+    ],
+    [
+      "WOOBAT",
+      "unchanged"
+    ],
+    [
+      "WOOLOO",
+      "unchanged"
+    ],
+    [
+      "WOOPER",
+      "audited; no overlapping layers"
+    ],
+    [
+      "WORMADAM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WO_CHIEN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WUGTRIO",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WURMPLE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "WYNAUT",
+      "unchanged"
+    ],
+    [
+      "WYRDEER",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "XATU",
+      "unchanged"
+    ],
+    [
+      "XERNEAS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "YAMASK",
+      "audited; no overlapping layers"
+    ],
+    [
+      "YAMPER",
+      "unchanged"
+    ],
+    [
+      "YANMA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "YANMEGA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "YUNGOOS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "YVELTAL",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZACIAN",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZAMAZENTA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZANGOOSE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZAPDOS",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZARUDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZEBSTRIKA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZEKROM",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZERAORA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZIGZAGOON",
+      "unchanged"
+    ],
+    [
+      "ZOROARK",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZORUA",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZUBAT",
+      "rebaked; geometry/animation bytes unchanged"
+    ],
+    [
+      "ZWEILOUS",
+      "audited; no overlapping layers"
+    ],
+    [
+      "ZYGARDE",
+      "rebaked; geometry/animation bytes unchanged"
+    ]
+  ],
+  "rule": "Later layer masks replace previous tints against original albedo, preserving all geometry/skin/animation bytes."
+}

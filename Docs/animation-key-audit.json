@@ -1,0 +1,266 @@
+{
+  "changedTracks": 28065,
+  "affected": [
+    {
+      "species": "ACCELGOR",
+      "tracks": 114
+    },
+    {
+      "species": "ARCTOVISH",
+      "tracks": 333
+    },
+    {
+      "species": "ARCTOZOLT",
+      "tracks": 454
+    },
+    {
+      "species": "BEAUTIFLY",
+      "tracks": 1093
+    },
+    {
+      "species": "BEHEEYEM",
+      "tracks": 113
+    },
+    {
+      "species": "BEWEAR",
+      "tracks": 231
+    },
+    {
+      "species": "BLIPBUG",
+      "tracks": 516
+    },
+    {
+      "species": "BOLDORE",
+      "tracks": 11
+    },
+    {
+      "species": "BOLTUND",
+      "tracks": 646
+    },
+    {
+      "species": "CASCOON",
+      "tracks": 445
+    },
+    {
+      "species": "CENTISKORCH",
+      "tracks": 1949
+    },
+    {
+      "species": "CRUSTLE",
+      "tracks": 72
+    },
+    {
+      "species": "CURSOLA",
+      "tracks": 3611
+    },
+    {
+      "species": "DARMANITAN",
+      "tracks": 319
+    },
+    {
+      "species": "DARUMAKA",
+      "tracks": 148
+    },
+    {
+      "species": "DHELMISE",
+      "tracks": 239
+    },
+    {
+      "species": "DOTTLER",
+      "tracks": 126
+    },
+    {
+      "species": "DRACOVISH",
+      "tracks": 356
+    },
+    {
+      "species": "DRACOZOLT",
+      "tracks": 632
+    },
+    {
+      "species": "DUBWOOL",
+      "tracks": 469
+    },
+    {
+      "species": "DURANT",
+      "tracks": 32
+    },
+    {
+      "species": "DUSTOX",
+      "tracks": 547
+    },
+    {
+      "species": "DWEBBLE",
+      "tracks": 139
+    },
+    {
+      "species": "ELDEGOSS",
+      "tracks": 840
+    },
+    {
+      "species": "ELGYEM",
+      "tracks": 165
+    },
+    {
+      "species": "ESCAVALIER",
+      "tracks": 89
+    },
+    {
+      "species": "FERROSEED",
+      "tracks": 25
+    },
+    {
+      "species": "FERROTHORN",
+      "tracks": 85
+    },
+    {
+      "species": "FRILLISH",
+      "tracks": 208
+    },
+    {
+      "species": "GIGALITH",
+      "tracks": 48
+    },
+    {
+      "species": "GOSSIFLEUR",
+      "tracks": 885
+    },
+    {
+      "species": "HEATMOR",
+      "tracks": 425
+    },
+    {
+      "species": "JELLICENT",
+      "tracks": 190
+    },
+    {
+      "species": "KARRABLAST",
+      "tracks": 22
+    },
+    {
+      "species": "KLANG",
+      "tracks": 11
+    },
+    {
+      "species": "KLINK",
+      "tracks": 12
+    },
+    {
+      "species": "KLINKLANG",
+      "tracks": 25
+    },
+    {
+      "species": "MARACTUS",
+      "tracks": 277
+    },
+    {
+      "species": "MORELULL",
+      "tracks": 472
+    },
+    {
+      "species": "OBSTAGOON",
+      "tracks": 1028
+    },
+    {
+      "species": "ORBEETLE",
+      "tracks": 298
+    },
+    {
+      "species": "PALPITOAD",
+      "tracks": 207
+    },
+    {
+      "species": "PIDOVE",
+      "tracks": 432
+    },
+    {
+      "species": "PYUKUMUKU",
+      "tracks": 428
+    },
+    {
+      "species": "ROGGENROLA",
+      "tracks": 27
+    },
+    {
+      "species": "SEISMITOAD",
+      "tracks": 655
+    },
+    {
+      "species": "SHELMET",
+      "tracks": 57
+    },
+    {
+      "species": "SHIINOTIC",
+      "tracks": 931
+    },
+    {
+      "species": "SIGILYPH",
+      "tracks": 64
+    },
+    {
+      "species": "SILCOON",
+      "tracks": 541
+    },
+    {
+      "species": "SILVALLY",
+      "tracks": 965
+    },
+    {
+      "species": "SIZZLIPEDE",
+      "tracks": 674
+    },
+    {
+      "species": "STUFFUL",
+      "tracks": 234
+    },
+    {
+      "species": "SWOOBAT",
+      "tracks": 352
+    },
+    {
+      "species": "TOGEDEMARU",
+      "tracks": 777
+    },
+    {
+      "species": "TRANQUILL",
+      "tracks": 245
+    },
+    {
+      "species": "TURTONATOR",
+      "tracks": 443
+    },
+    {
+      "species": "TYMPOLE",
+      "tracks": 9
+    },
+    {
+      "species": "TYPE_NULL",
+      "tracks": 1059
+    },
+    {
+      "species": "UNFEZANT",
+      "tracks": 299
+    },
+    {
+      "species": "WISHIWASHI",
+      "tracks": 63
+    },
+    {
+      "species": "WOOBAT",
+      "tracks": 166
+    },
+    {
+      "species": "WOOLOO",
+      "tracks": 645
+    },
+    {
+      "species": "WURMPLE",
+      "tracks": 673
+    },
+    {
+      "species": "YAMPER",
+      "tracks": 419
+    }
+  ],
+  "rule": "Sort timestamps; last authored value wins for duplicates; no pose resampling."
+}

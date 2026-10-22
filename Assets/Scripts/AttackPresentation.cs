@@ -16,7 +16,8 @@ namespace BattleLab
         public float FreeAt { get; private set; }
         public float SoundAt { get; private set; }
         public int CueCount => cueIndex;
-        readonly LabActor body;
+        readonly LabActor body,target;
+        readonly bool projectile;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
         readonly ZaMove timing;
         readonly Material[] effectMaterials;
         int cueIndex;
@@ -28,8 +29,8 @@ namespace BattleLab
             scale=actor.transform.lossyScale.x,center=()=>actor.Centre,bone=actor.Bone};
         public AttackPresentation(LabActor actor,LabActor target,MoveData move,VioletFxCatalog za,BdspFxCatalog bdsp,NativeTiming table)
         {
-            body=actor;
-            if(actor.entry.source=="BDSP")
+            body=actor;this.target=target;projectile=move.shape=="Projectile";
+            if(actor.entry.source=="BDSP"&&bdsp.Has(move.id))
             {
                 var fx=bdsp.Play(move.id,Bind(actor),Bind(target));Effect=fx;
                 if(!fx)throw new InvalidOperationException("Missing BDSP effects: "+move.id);
@@ -47,6 +48,8 @@ namespace BattleLab
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
             }
             FreeAt=Mathf.Max(FreeAt,HitAt+.15f);
+            shootAt=timing==null?Mathf.Max(0,SoundAt):ZaTimeline.ShootAt(timing);
+            shootAt=Mathf.Min(shootAt,HitAt-.05f);
             effectMaterials=Effect.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m&&m.HasProperty("_EffectTime")).Distinct().ToArray();
             Effect.ManualSimulate=true;Step(0);
         }
@@ -65,7 +68,8 @@ namespace BattleLab
         }
         public void Step(float dt,bool bodyOwned=true)
         {
-            Time+=dt;
+            previousTime=Time;Time+=dt;
+            if(!launched&&Time>=shootAt){launched=true;travelOrigin=body.Centre+body.transform.forward*.25f;travelTarget=target.Centre;}
             if(bodyOwned&&body)
             {
                 while(cueIndex<cues.Count&&cues[cueIndex].at<=Time+.0001f)
@@ -74,6 +78,16 @@ namespace BattleLab
             }
             if(Alive){Effect.Step(dt);foreach(var material in effectMaterials)if(material)material.SetFloat("_EffectTime",Time);}
         }
+        public bool Travel(out Vector3 previous,out Vector3 current)
+        {
+            previous=current=Vector3.zero;
+            if(!projectile||!Alive||Time<shootAt||previousTime>HitAt)return false;
+            if(Effect is VioletMove native && native.ProjectileSegment(out previous,out current))return true;
+            float duration=Mathf.Max(.05f,HitAt-shootAt);
+            previous=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((previousTime-shootAt)/duration));
+            current=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((Time-shootAt)/duration));return true;
+        }
+        public void BlockEffects(){Dispose();}
         public void Dispose()
         {if(Alive)UnityEngine.Object.Destroy(Effect.gameObject);Effect=null;}
     }

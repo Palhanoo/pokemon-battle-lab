@@ -1,0 +1,161 @@
+{
+  "species": 1000,
+  "clips": 52807,
+  "sourceCounts": {
+    "ZA": 364,
+    "BDSP": 61,
+    "SV": 478,
+    "Arceus": 37,
+    "Sword": 60
+  },
+  "roleAliases": [
+    {
+      "species": "CATERPIE",
+      "aliases": {
+        "attack": "special"
+      }
+    },
+    {
+      "species": "KABUTO",
+      "aliases": {
+        "attack": "special",
+        "faint": "damage"
+      }
+    },
+    {
+      "species": "CASTFORM",
+      "aliases": {
+        "attack": "special"
+      }
+    },
+    {
+      "species": "CLAMPERL",
+      "aliases": {
+        "attack": "special",
+        "faint": "damage"
+      }
+    },
+    {
+      "species": "ROGGENROLA",
+      "aliases": {
+        "faint": "damage"
+      }
+    },
+    {
+      "species": "TYMPOLE",
+      "aliases": {
+        "attack": "special",
+        "faint": "damage"
+      }
+    },
+    {
+      "species": "ELGYEM",
+      "aliases": {
+        "attack": "special"
+      }
+    }
+  ],
+  "missingSpecies": [
+    {
+      "dex": 494,
+      "species": "VICTINI"
+    },
+    {
+      "dex": 506,
+      "species": "LILLIPUP"
+    },
+    {
+      "dex": 507,
+      "species": "HERDIER"
+    },
+    {
+      "dex": 508,
+      "species": "STOUTLAND"
+    },
+    {
+      "dex": 564,
+      "species": "TIRTOUGA"
+    },
+    {
+      "dex": 565,
+      "species": "CARRACOSTA"
+    },
+    {
+      "dex": 566,
+      "species": "ARCHEN"
+    },
+    {
+      "dex": 567,
+      "species": "ARCHEOPS"
+    },
+    {
+      "dex": 621,
+      "species": "DRUDDIGON"
+    },
+    {
+      "dex": 626,
+      "species": "BOUFFALANT"
+    },
+    {
+      "dex": 785,
+      "species": "TAPU_KOKO"
+    },
+    {
+      "dex": 786,
+      "species": "TAPU_LELE"
+    },
+    {
+      "dex": 787,
+      "species": "TAPU_BULU"
+    },
+    {
+      "dex": 788,
+      "species": "TAPU_FINI"
+    },
+    {
+      "dex": 793,
+      "species": "NIHILEGO"
+    },
+    {
+      "dex": 794,
+      "species": "BUZZWOLE"
+    },
+    {
+      "dex": 795,
+      "species": "PHEROMOSA"
+    },
+    {
+      "dex": 796,
+      "species": "XURKITREE"
+    },
+    {
+      "dex": 797,
+      "species": "CELESTEELA"
+    },
+    {
+      "dex": 798,
+      "species": "KARTANA"
+    },
+    {
+      "dex": 799,
+      "species": "GUZZLORD"
+    },
+    {
+      "dex": 803,
+      "species": "POIPOLE"
+    },
+    {
+      "dex": 804,
+      "species": "NAGANADEL"
+    },
+    {
+      "dex": 805,
+      "species": "STAKATAKA"
+    },
+    {
+      "dex": 806,
+      "species": "BLACEPHALON"
+    }
+  ],
+  "status": "Static resources/provenance passed; standalone/manual results are separate."
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="40" result="Passed" total="40" passed="40" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:16Z" duration="10.1367399">
+  <test-suite type="TestSuite" id="1000" name="Pokemon Battle Lab" fullname="Pokemon Battle Lab" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:16Z" duration="10.136740" total="40" passed="40" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1047" name="BattleLab.Tests.dll" fullname="D:/www/PokemonBattleLab/Library/ScriptAssemblies/BattleLab.Tests.dll" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:16Z" duration="10.119827" total="40" passed="40" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="16840" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1048" name="BattleLab" fullname="BattleLab" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:07Z" duration="2.036865" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1049" name="Tests" fullname="BattleLab.Tests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:07Z" duration="2.036575" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1038" name="CombatRulesTests" fullname="BattleLab.Tests.CombatRulesTests" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:07Z" duration="2.034075" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1041" name="AgileCanEarnConsecutiveActions" fullname="BattleLab.Tests.CombatRulesTests.AgileCanEarnConsecutiveActions" methodname="AgileCanEarnConsecutiveActions" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="69559955" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:05Z" duration="0.024975" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="PriorityWinsOverSpeed" fullname="BattleLab.Tests.CombatRulesTests.PriorityWinsOverSpeed" methodname="PriorityWinsOverSpeed" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="2029577524" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:05Z" duration="0.000415" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="SelectedRealtimeRowsAreNativeAndUsable" fullname="BattleLab.Tests.CombatRulesTests.SelectedRealtimeRowsAreNativeAndUsable" methodname="SelectedRealtimeRowsAreNativeAndUsable" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="1267283475" result="Passed" start-time="2026-10-22 04:08:05Z" end-time="2026-10-22 04:08:07Z" duration="1.973126" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="SourceSwitchDoesNotChangeCombatData" fullname="BattleLab.Tests.CombatRulesTests.SourceSwitchDoesNotChangeCombatData" methodname="SourceSwitchDoesNotChangeCombatData" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="299161100" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.006201" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="SpeedOrdersEqualPriority" fullname="BattleLab.Tests.CombatRulesTests.SpeedOrdersEqualPriority" methodname="SpeedOrdersEqualPriority" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="941246488" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.000326" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="StrongDelaysFollowingAction" fullname="BattleLab.Tests.CombatRulesTests.StrongDelaysFollowingAction" methodname="StrongDelaysFollowingAction" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="483324171" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.001682" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="TypeImmunityRemainsZeroInAllModes" fullname="BattleLab.Tests.CombatRulesTests.TypeImmunityRemainsZeroInAllModes" methodname="TypeImmunityRemainsZeroInAllModes" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="731257290" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.001277" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="ZaUsesItsResistedMultiplier" fullname="BattleLab.Tests.CombatRulesTests.ZaUsesItsResistedMultiplier" methodname="ZaUsesItsResistedMultiplier" classname="BattleLab.Tests.CombatRulesTests" runstate="Runnable" seed="457944380" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.000344" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestFixture" id="1001" name="PresentationTests" fullname="PresentationTests" classname="PresentationTests" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:10Z" duration="2.185683" total="18" passed="18" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1018" name="ArceusPikachuSplitSpecialCannotHoldItsStartPose" fullname="PresentationTests.ArceusPikachuSplitSpecialCannotHoldItsStartPose" methodname="ArceusPikachuSplitSpecialCannotHoldItsStartPose" classname="PresentationTests" runstate="Runnable" seed="2124300574" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:07Z" duration="0.006473" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1020" name="EffectTexturesAndPrefabsAreActuallyReferenced" fullname="PresentationTests.EffectTexturesAndPrefabsAreActuallyReferenced" methodname="EffectTexturesAndPrefabsAreActuallyReferenced" classname="PresentationTests" runstate="Runnable" seed="1988304629" result="Passed" start-time="2026-10-22 04:08:07Z" end-time="2026-10-22 04:08:08Z" duration="0.678221" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1017" name="EveryLoadoutHasEffectsAndARecoveryPlan" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-10-22 04:08:08Z" end-time="2026-10-22 04:08:10Z" duration="1.494165" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1002" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;PIKACHU&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;PIKACHU&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="2084431519" result="Passed" start-time="2026-10-22 04:08:08Z" end-time="2026-10-22 04:08:10Z" duration="1.354562" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1003" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;GENGAR&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;GENGAR&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="764135718" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.004286" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1004" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;LUCARIO&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;Arceus&quot;,&quot;LUCARIO&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="791526763" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.002003" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1005" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;PIKACHU&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;PIKACHU&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1666046833" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.003060" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1006" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;GENGAR&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;GENGAR&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1895602846" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.003999" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1007" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;LUCARIO&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;LUCARIO&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1700135706" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.002135" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1008" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;PIKACHU&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;PIKACHU&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="628362806" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.081979" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1009" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;GENGAR&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;GENGAR&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1069967043" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000433" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1010" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;LUCARIO&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;LUCARIO&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1511584951" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000345" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1011" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;TREECKO&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;TREECKO&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1654063776" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001568" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1012" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;TORCHIC&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;TORCHIC&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1264571949" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001727" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1013" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;MUDKIP&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;MUDKIP&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1546836989" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.002439" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1014" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;RALTS&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;ZA&quot;,&quot;RALTS&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="2007467630" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.003383" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1015" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;SV&quot;,&quot;POOCHYENA&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;SV&quot;,&quot;POOCHYENA&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="1751723881" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001567" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1016" name="EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;BRELOOM&quot;)" fullname="PresentationTests.EveryLoadoutHasEffectsAndARecoveryPlan(&quot;BDSP&quot;,&quot;BRELOOM&quot;)" methodname="EveryLoadoutHasEffectsAndARecoveryPlan" classname="PresentationTests" runstate="Runnable" seed="598875361" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000340" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1019" name="NativePikachuQuickAttackReleasesSplitRush" fullname="PresentationTests.NativePikachuQuickAttackReleasesSplitRush" methodname="NativePikachuQuickAttackReleasesSplitRush" classname="PresentationTests" runstate="Runnable" seed="2141986732" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001484" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1021" name="RosterAndEffectsTests" fullname="RosterAndEffectsTests" classname="RosterAndEffectsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.183898" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1023" name="AuraSphereUsesItsThirdSlotMaskAndXZPrimitiveBasis" fullname="RosterAndEffectsTests.AuraSphereUsesItsThirdSlotMaskAndXZPrimitiveBasis" methodname="AuraSphereUsesItsThirdSlotMaskAndXZPrimitiveBasis" classname="RosterAndEffectsTests" runstate="Runnable" seed="1334339661" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.091323" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1024" name="ImportedSoundsContainAudioSamples" fullname="RosterAndEffectsTests.ImportedSoundsContainAudioSamples" methodname="ImportedSoundsContainAudioSamples" classname="RosterAndEffectsTests" runstate="Runnable" seed="507952146" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.088368" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1022" name="MixedSourcesHaveSixChoicesWithDataAndSound" fullname="RosterAndEffectsTests.MixedSourcesHaveSixChoicesWithDataAndSound" methodname="MixedSourcesHaveSixChoicesWithDataAndSound" classname="RosterAndEffectsTests" runstate="Runnable" seed="273788205" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.002467" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1025" name="TeamAndClashTests" fullname="TeamAndClashTests" classname="TeamAndClashTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:16Z" duration="5.711794" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="ParameterizedMethod" id="1032" name="ClashThresholdAndResidual" fullname="TeamAndClashTests.ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.002630" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1026" name="ClashThresholdAndResidual(100,100,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(100,100,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="1867112805" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001184" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1027" name="ClashThresholdAndResidual(149,100,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(149,100,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="1484538676" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000145" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1028" name="ClashThresholdAndResidual(150,100,50,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(150,100,50,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="228076022" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000059" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1029" name="ClashThresholdAndResidual(100,150,0,50)" fullname="TeamAndClashTests.ClashThresholdAndResidual(100,150,0,50)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="328526634" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000049" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1030" name="ClashThresholdAndResidual(0,100,0,100)" fullname="TeamAndClashTests.ClashThresholdAndResidual(0,100,0,100)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="840512462" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000050" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1031" name="ClashThresholdAndResidual(0,0,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(0,0,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="917092357" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.000046" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1034" name="ClashUsesDamageAfterStabAndTargetType" fullname="TeamAndClashTests.ClashUsesDamageAfterStabAndTargetType" methodname="ClashUsesDamageAfterStabAndTargetType" classname="TeamAndClashTests" runstate="Runnable" seed="1698035787" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:10Z" duration="0.001121" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1037" name="EveryNativeBDSPMaterialBindsBothExportedTextureLayers" fullname="TeamAndClashTests.EveryNativeBDSPMaterialBindsBothExportedTextureLayers" methodname="EveryNativeBDSPMaterialBindsBothExportedTextureLayers" classname="TeamAndClashTests" runstate="Runnable" seed="695612253" result="Passed" start-time="2026-10-22 04:08:10Z" end-time="2026-10-22 04:08:11Z" duration="1.196496" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1036" name="EveryNativeZAEmitterBindsEverySupportedTextureSlot" fullname="TeamAndClashTests.EveryNativeZAEmitterBindsEverySupportedTextureSlot" methodname="EveryNativeZAEmitterBindsEverySupportedTextureSlot" classname="TeamAndClashTests" runstate="Runnable" seed="1914453169" result="Passed" start-time="2026-10-22 04:08:11Z" end-time="2026-10-22 04:08:16Z" duration="4.461094" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1035" name="NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" fullname="TeamAndClashTests.NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" methodname="NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" classname="TeamAndClashTests" runstate="Runnable" seed="363983261" result="Passed" start-time="2026-10-22 04:08:16Z" end-time="2026-10-22 04:08:16Z" duration="0.045514" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1033" name="SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" fullname="TeamAndClashTests.SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" methodname="SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" classname="TeamAndClashTests" runstate="Runnable" seed="1059962791" result="Passed" start-time="2026-10-22 04:08:16Z" end-time="2026-10-22 04:08:16Z" duration="0.001244" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: C:/Users/Bruno/AppData/LocalLow/BrunoLabs/Pokemon Battle Lab\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

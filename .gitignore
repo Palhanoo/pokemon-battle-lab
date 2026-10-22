@@ -22,3 +22,7 @@ Assets/Resources/NativeTiming.asset*
 Assets/NativeAudio/
 Assets/NativeAudio.meta
 Assets/Resources/LabAudio.asset*
+
+Assets/StreamingAssets/Roster/
+Assets/StreamingAssets/Roster.meta
+LocalRoster/

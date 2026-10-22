@@ -1,0 +1,15 @@
+ABOMASNOW / ZA · loaded, bounds, six roles, cache <=2 passed
+ACCELGOR / Sword · loaded, bounds, six roles, cache <=2 passed
+AIPOM / SV · loaded, bounds, six roles, cache <=2 passed
+ANORITH / BDSP · loaded, bounds, six roles, cache <=2 passed
+BEAUTIFLY / Arceus · loaded, bounds, six roles, cache <=2 passed
+BRELOOM / SV · loaded, bounds, six roles, cache <=2 passed
+GENGAR / ZA · loaded, bounds, six roles, cache <=2 passed
+LUCARIO / ZA · loaded, bounds, six roles, cache <=2 passed
+MUDKIP / ZA · loaded, bounds, six roles, cache <=2 passed
+PIKACHU / ZA · loaded, bounds, six roles, cache <=2 passed
+POOCHYENA / SV · loaded, bounds, six roles, cache <=2 passed
+RALTS / ZA · loaded, bounds, six roles, cache <=2 passed
+RAYQUAZA / ZA · loaded, bounds, six roles, cache <=2 passed
+TORCHIC / ZA · loaded, bounds, six roles, cache <=2 passed
+TREECKO / ZA · loaded, bounds, six roles, cache <=2 passed

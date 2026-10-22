@@ -1,0 +1,7 @@
+3v3 roster, ally/target cycling, one-faint survival, distant approach -> one hit -> recovery passed
+Manual approach cancellation preserves cooldown
+Controlled faint hands input to living ally
+Equal opposing Ember projectiles collide mid-flight, cancel both effects/hits, no HP loss
+Stronger Flamethrower 20 vs Ember 9: survivor deals exactly 11 after STAB/type/defense
+Finite 3v3 completed: hits=21, clashes=1, survivors=3
+Reset clears all six actors/actions/effect tails without late damage

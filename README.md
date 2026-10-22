@@ -1,46 +1,62 @@
 # Pokémon Battle Lab
 
-An isolated desktop Unity experiment for Bruno. One flat arena, nine Pokémon,
-15 native bodies from four sources, and three small combat-loop comparisons. Created
-22 October 2026 after the Rayquaza battle-feel reset.
+An isolated desktop Unity battle experiment for Bruno: **1,000 species**, one
+preferred model per species, direct Pokémon control, and 1v1 or 3v3 battles.
+No HoennVR maps, story, runtime assemblies or gameplay saves are loaded.
 
-Double-click **Play Battle Lab.cmd**. No HoennVR save, map, story, or runtime
-assemblies are loaded. The application uses its own BrunoLabs/Pokemon Battle Lab
-identity and does not write gameplay saves.
+Double-click **Play Battle Lab.cmd** to open `Builds/PokedexBattleReady`.
+The previous `Builds/RealtimeRoster` player remains available through
+**Play Previous Roster.cmd**. Historical source-comparison models stay in the
+verification assets; the playable Pokédex shows one body per species.
 
-## Try this first
+## Controls and testing
 
-1. Open **Play Battle Lab.cmd**: the expanded real-time review is selected.
-2. **WASD** moves your Pokémon. **Shift** walks, **hold right mouse** rotates the
-   camera, **mouse wheel** zooms, **Space** dashes between attacks.
-3. **1–4** attacks the single opponent. Get close for melee attacks. Body movement
-   is committed until recovery; effects can finish trailing after control returns.
-4. **Tab** opens Setup: choose Pokémon and model source. Click an equipped move
-   to cycle through six choices, keeping four equipped. Battles start with active
-   AI and finite HP. For animation study, enable Practice and disable opponent
-   commands. Sound volume is below the move slots.
-5. **R** resets, **Esc** pauses, **F1** opens the model viewer. The
-   earlier BDSP/Arceus rule comparisons are in Setup.
+- WASD moves the Pokémon; Shift walks; Space dashes; hold right mouse to look;
+  mouse wheel zooms. 1–4 use the equipped attacks.
+- Short-range commands approach automatically. WASD cancels approach without
+  spending cooldown, or exits recovery shortly after contact.
+- Q switches living allies. E changes the enemy target. Other Pokémon use AI.
+- Tab opens setup. Click any team slot to search by name or Pokédex number.
+  Choose 1v1/3v3 and click move slots to cycle six choices. `*` marks a test-only
+  assignment absent from the pooled historical learnsets.
+- R resets; Esc pauses; F1 opens the body animation viewer. F2 opens live attack
+  layers: pause an attack, then toggle layers to isolate a texture or emitter.
+- Enable Practice and disable AI for repeatable attacks. Sound volume is below
+  the move slots. The fire/water drill launches an opposing Water Gun when you attack.
 
-Original player: **Play Original Lab.cmd**. New player:
-`Builds/RealtimeRoster/PokemonBattleLab.exe`. **Play Animation Study.cmd** keeps
-the earlier direct-control build. All use in-memory fights, no saves.
+Opposing projectiles can clash along their travel paths. Compare damage after
+STAB, target type and defenses: a move at least 50% stronger continues with the
+**difference**; otherwise both cancel. 150 vs 100 leaves 50; 149 vs 100 cancels both.
+This is a lab experiment, not an original-game rule.
 
-## Current roster
+## Preferred roster
 
-| Pokémon | Available bodies | Six move choices |
-|---|---|---|
-| Pikachu | Arceus, ZA, BDSP | Quick Attack, Thunderbolt, Iron Tail, Thunder, Spark, Discharge |
-| Gengar | Arceus, ZA, BDSP | Shadow Ball, Dark Pulse, Sludge Bomb, Lick, Psychic, Thunderbolt |
-| Lucario | Arceus, ZA, BDSP | Quick Attack, Aura Sphere, Metal Claw, Dragon Pulse, Bullet Punch, Close Combat |
-| Treecko | ZA | Quick Attack, Leaf Blade, Energy Ball, Leaf Storm, Absorb, Giga Drain |
-| Torchic | ZA | Slash, Ember, Flamethrower, Peck, Fire Spin, Aerial Ace |
-| Mudkip | ZA | Tackle, Water Gun, Water Pulse, Mud Shot, Rock Throw, Hydro Pump |
-| Ralts | ZA | Confusion, Psybeam, Psychic, Disarming Voice, Draining Kiss, Shadow Ball |
-| Poochyena | SV | Tackle, Bite, Crunch, Dig, Take Down, Play Rough |
-| Breloom | BDSP | Mach Punch, Brick Break, Seed Bomb, Giga Drain, Rock Tomb, Drain Punch |
+| Source preference | Selected species |
+|---|---:|
+| Legends: Z-A |364|
+| Scarlet/Violet |478|
+| Legends: Arceus |37|
+| Brilliant Diamond/Shining Pearl |61|
+| Sword/Shield |60|
 
-These are experimental test loadouts, not a claim of original-game move legality.
+The highest available, validated source wins. Native resource/personal tables map
+model IDs to species; filenames alone are unreliable. Only current-team models
+are streamed into the roster cache. See `Docs/pokedex-ready.json` for each body,
+source, hash, clip roles and move choices; `Docs/pokedex-validation.json` lists
+25 unavailable species and seven species with explicit clip-role fallbacks.
+
+The roster includes every sourced Hoenn species. Six choices per species reuse
+**47 existing test moves**, with four equipped. This is not every Pokémon move,
+all alternate forms, or a complete learnset/ability/status simulation. Some bodies
+reuse a native special clip for physical attacks; four use the damage pose when
+no exported faint clip exists. These are marked in the provenance, not presented
+as authentic missing animations.
+
+The renderer now binds third texture masks and UV motion, clears stopped infinite
+Aura Sphere cores, and handles multiplicative transparency. The audit found
+additional native gaps: BDSP Brick Break/Iron Tail/Lick model layers are missing;
+118 native lighting lookups are unsupported. Fire, water and psychic appearance
+still need manual review. Passing lifecycle checks does not establish fidelity.
 
 ## What the labels mean
 
@@ -50,11 +66,11 @@ controllers are new, small reconstructions. No HoennVR battle controller was cop
 
 | Part | Implemented | Explicit limit |
 |---|---|---|
-| Models | 9 species, 15 distinct assets, 1,011 clips | Source animations do not imply native state-machine or shader parity |
-| BDSP style | simultaneous round choices, priority, Speed, PP, accuracy, types | Shared modern stats/damage baseline; no abilities, items, status, switching or full BDSP rules |
+| Models | 1,000 species, one preferred body each, 52,807 clips | Source animations do not imply native state-machine or shader parity |
+| BDSP style | simultaneous round choices, priority, Speed, PP, accuracy, types | Shared modern stats/damage baseline; no abilities, items, status or full BDSP rules |
 | Arceus style | independent action queue, preview, Agile/Strong power/delay tradeoffs, extra PP cost | Delay/power formulas are experimental; not decoded Arceus formulas, move legality or native damage |
 | Z-A rhythm / direct control | camera-relative Pokémon movement, walk/run/dash, native cooldowns, imported body cues and effect clocks | Experimental movement, dash and range-at-hit collision; no full native hitboxes, homing, root motion, Mega or boss state machine |
-| Attack presentation | 47 native ZA move effects, 22 BDSP sequences; split start/loop/end body cues and reaction recovery | Arceus/SV bodies use ZA effects/timing; converted renderers and incomplete native state/motion variants |
+| Attack presentation | 47 native ZA move effects, 22 BDSP sequences; split start/loop/end body cues and reaction recovery | Arceus/SV/Sword bodies use ZA effects/timing; BDSP falls back to ZA when a native sequence is not staged; converted renderers and incomplete native state/motion variants |
 | Sound | Emerald recordings mapped to all 47 moves; eight species cries; volume/pause/reset | Newer moves use documented type-family substitutes; no Lucario cry or authentic modern audio |
 | Review | pause, reset with seed 42, speed/zoom controls, event log | Desktop only; VR and headset comfort untested |
 
@@ -83,10 +99,17 @@ Pokémon Python environment with numpy, Pillow, UnityPy and ooz:
 /home/bruno/pokemon/tools/venv/bin/python Tools/export_models.py
 /home/bruno/pokemon/tools/venv/bin/python Tools/export_attack_effects.py --source ../HoennVR
 python3 Tools/export_audio.py
+/home/bruno/pokemon/tools/venv/bin/python Tools/pokedex.py --export --workers 1
+python3 Tools/validate_roster.py
 ```
 
 For a separate verification package, use `bash Tools/unity.sh build -lab-build-dir
-Builds/RealtimeRosterVerification`. Never rebuild over a player Bruno is using.
+Builds/PokedexVerificationNew`. Never rebuild over a player Bruno is using.
+
+The large roster is exported into `LocalRoster`, outside Unity Assets. The build
+copies it into StreamingAssets and keeps unchanged files on incremental rebuilds.
+`pokedex.py` normalizes duplicate timestamps and audits/rebakes native colour layers automatically. Exported models,
+textures and clips stay local and ignored by Git.
 
 Source paths are in `Tools/vendor/arceusx/sources.py`; BDSP also supports
 `BDSP_ROMFS`. Export only while this project's Unity editor/import/build is

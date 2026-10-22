@@ -1,0 +1,106 @@
+Arceus GENGAR: direct move/idle/dash passed
+Arceus GENGAR/SHADOW_BALL: one hit, audio cue, release + movement; peak particles=674; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/DARK_PULSE: one hit, audio cue, release + movement; peak particles=271; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/SLUDGE_BOMB: one hit, audio cue, release + movement; peak particles=541; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/LICK: one hit, audio cue, release + movement; peak particles=255; clips=roar01,attack01,battlewait01_loop
+Arceus GENGAR/PSYCHIC: one hit, audio cue, release + movement; peak particles=387; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=566; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus LUCARIO: direct move/idle/dash passed
+Arceus LUCARIO/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=162; clips=roar01,attack01,defaultwait01_loop
+Arceus LUCARIO/AURA_SPHERE: one hit, audio cue, release + movement; peak particles=330; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus LUCARIO/METAL_CLAW: one hit, audio cue, release + movement; peak particles=359; clips=roar01,attack01,defaultwait01_loop
+Arceus LUCARIO/DRAGON_PULSE: one hit, audio cue, release + movement; peak particles=718; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus LUCARIO/BULLET_PUNCH: one hit, audio cue, release + movement; peak particles=351; clips=roar01,attack01,defaultwait01_loop
+Arceus LUCARIO/CLOSE_COMBAT: one hit, audio cue, release + movement; peak particles=345; clips=roar01,attack01,defaultwait01_loop
+Arceus PIKACHU: direct move/idle/dash passed
+Arceus PIKACHU/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=158; clips=roar01,attack01,defaultwait01_loop
+Arceus PIKACHU/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=584; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus PIKACHU/IRON_TAIL: one hit, audio cue, release + movement; peak particles=285; clips=roar01,attack01,defaultwait01_loop
+Arceus PIKACHU/THUNDER: one hit, audio cue, release + movement; peak particles=249; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus PIKACHU/SPARK: one hit, audio cue, release + movement; peak particles=333; clips=roar01,attack01,defaultwait01_loop
+Arceus PIKACHU/DISCHARGE: one hit, audio cue, release + movement; peak particles=1697; clips=roar01
+BDSP BRELOOM: direct move/idle/dash passed
+BDSP BRELOOM/MACH_PUNCH: one hit, audio cue, release + movement; peak particles=203; clips=attack01
+BDSP BRELOOM/BRICK_BREAK: one hit, audio cue, release + movement; peak particles=46; clips=run01_loop,attack01
+BDSP BRELOOM/SEED_BOMB: one hit, audio cue, release + movement; peak particles=257; clips=battlewait01_loop,attack01
+BDSP BRELOOM/GIGA_DRAIN: one hit, audio cue, release + movement; peak particles=184; clips=battlewait01_loop,rangeattack01
+BDSP BRELOOM/ROCK_TOMB: one hit, audio cue, release + movement; peak particles=58; clips=attack01
+BDSP BRELOOM/DRAIN_PUNCH: one hit, audio cue, release + movement; peak particles=97; clips=run01_loop,attack01
+BDSP GENGAR: direct move/idle/dash passed
+BDSP GENGAR/SHADOW_BALL: one hit, audio cue, release + movement; peak particles=107; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/DARK_PULSE: one hit, audio cue, release + movement; peak particles=139; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/SLUDGE_BOMB: one hit, audio cue, release + movement; peak particles=159; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/LICK: one hit, audio cue, release + movement; peak particles=157; clips=run01_loop,attack01
+BDSP GENGAR/PSYCHIC: one hit, audio cue, release + movement; peak particles=41; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=190; clips=battlewait01_loop,rangeattack01
+BDSP LUCARIO: direct move/idle/dash passed
+BDSP LUCARIO/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=44; clips=run01_loop,attack01
+BDSP LUCARIO/AURA_SPHERE: one hit, audio cue, release + movement; peak particles=327; clips=rangeattack01,battlewait01_loop
+BDSP LUCARIO/METAL_CLAW: one hit, audio cue, release + movement; peak particles=51; clips=run01_loop,attack01
+BDSP LUCARIO/DRAGON_PULSE: one hit, audio cue, release + movement; peak particles=161; clips=battlewait01_loop,rangeattack01
+BDSP LUCARIO/BULLET_PUNCH: one hit, audio cue, release + movement; peak particles=70; clips=run01_loop,attack01
+BDSP LUCARIO/CLOSE_COMBAT: one hit, audio cue, release + movement; peak particles=42; clips=attack01
+BDSP PIKACHU: direct move/idle/dash passed
+BDSP PIKACHU/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=44; clips=run01_loop,attack01
+BDSP PIKACHU/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=190; clips=battlewait01_loop,rangeattack01
+BDSP PIKACHU/IRON_TAIL: one hit, audio cue, release + movement; peak particles=42; clips=attack01
+BDSP PIKACHU/THUNDER: one hit, audio cue, release + movement; peak particles=24; clips=rangeattack01,battlewait01_loop
+BDSP PIKACHU/SPARK: one hit, audio cue, release + movement; peak particles=58; clips=battlewait01_loop,attack01
+BDSP PIKACHU/DISCHARGE: one hit, audio cue, release + movement; peak particles=154; clips=battlewait01_loop,rangeattack01
+SV POOCHYENA: direct move/idle/dash passed
+SV POOCHYENA/TACKLE: one hit, audio cue, release + movement; peak particles=119; clips=roar01,attack01
+SV POOCHYENA/BITE: one hit, audio cue, release + movement; peak particles=111; clips=roar01,attack01,battlewait01_loop
+SV POOCHYENA/CRUNCH: one hit, audio cue, release + movement; peak particles=111; clips=roar01,attack01,battlewait01_loop
+SV POOCHYENA/DIG: one hit, audio cue, release + movement; peak particles=326; clips=roar01,attack01,battlewait01_loop
+SV POOCHYENA/TAKE_DOWN: one hit, audio cue, release + movement; peak particles=240; clips=roar01,attack01
+SV POOCHYENA/PLAY_ROUGH: one hit, audio cue, release + movement; peak particles=322; clips=roar01,attack01
+ZA GENGAR: direct move/idle/dash passed
+ZA GENGAR/SHADOW_BALL: one hit, audio cue, release + movement; peak particles=697; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/DARK_PULSE: one hit, audio cue, release + movement; peak particles=268; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/SLUDGE_BOMB: one hit, audio cue, release + movement; peak particles=543; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/LICK: one hit, audio cue, release + movement; peak particles=253; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA GENGAR/PSYCHIC: one hit, audio cue, release + movement; peak particles=389; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=578; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA LUCARIO: direct move/idle/dash passed
+ZA LUCARIO/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=158; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA LUCARIO/AURA_SPHERE: one hit, audio cue, release + movement; peak particles=323; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA LUCARIO/METAL_CLAW: one hit, audio cue, release + movement; peak particles=356; clips=charge01_loop,attack01
+ZA LUCARIO/DRAGON_PULSE: one hit, audio cue, release + movement; peak particles=731; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA LUCARIO/BULLET_PUNCH: one hit, audio cue, release + movement; peak particles=353; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA LUCARIO/CLOSE_COMBAT: one hit, audio cue, release + movement; peak particles=353; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA MUDKIP: direct move/idle/dash passed
+ZA MUDKIP/TACKLE: one hit, audio cue, release + movement; peak particles=119; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA MUDKIP/WATER_GUN: one hit, audio cue, release + movement; peak particles=202; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA MUDKIP/WATER_PULSE: one hit, audio cue, release + movement; peak particles=237; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA MUDKIP/MUD_SHOT: one hit, audio cue, release + movement; peak particles=267; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA MUDKIP/ROCK_THROW: one hit, audio cue, release + movement; peak particles=99; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA MUDKIP/HYDRO_PUMP: one hit, audio cue, release + movement; peak particles=1714; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA PIKACHU: direct move/idle/dash passed
+ZA PIKACHU/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=158; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA PIKACHU/THUNDERBOLT: one hit, audio cue, release + movement; peak particles=584; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA PIKACHU/IRON_TAIL: one hit, audio cue, release + movement; peak particles=292; clips=charge01_loop,attack01
+ZA PIKACHU/THUNDER: one hit, audio cue, release + movement; peak particles=380; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA PIKACHU/SPARK: one hit, audio cue, release + movement; peak particles=330; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA PIKACHU/DISCHARGE: one hit, audio cue, release + movement; peak particles=1670; clips=charge01_loop,roar01
+ZA RALTS: direct move/idle/dash passed
+ZA RALTS/CONFUSION: one hit, audio cue, release + movement; peak particles=156; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA RALTS/PSYBEAM: one hit, audio cue, release + movement; peak particles=555; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA RALTS/PSYCHIC: one hit, audio cue, release + movement; peak particles=387; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA RALTS/DISARMING_VOICE: one hit, audio cue, release + movement; peak particles=106; clips=charge01_loop,roar01
+ZA RALTS/DRAINING_KISS: one hit, audio cue, release + movement; peak particles=118; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA RALTS/SHADOW_BALL: one hit, audio cue, release + movement; peak particles=690; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TORCHIC: direct move/idle/dash passed
+ZA TORCHIC/SLASH: one hit, audio cue, release + movement; peak particles=105; clips=charge01_loop,attack01
+ZA TORCHIC/EMBER: one hit, audio cue, release + movement; peak particles=262; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TORCHIC/FLAMETHROWER: one hit, audio cue, release + movement; peak particles=1072; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TORCHIC/PECK: one hit, audio cue, release + movement; peak particles=106; clips=charge01_loop,attack01,battlewait01_loop
+ZA TORCHIC/FIRE_SPIN: one hit, audio cue, release + movement; peak particles=928; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TORCHIC/AERIAL_ACE: one hit, audio cue, release + movement; peak particles=178; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA TREECKO: direct move/idle/dash passed
+ZA TREECKO/QUICK_ATTACK: one hit, audio cue, release + movement; peak particles=158; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA TREECKO/LEAF_BLADE: one hit, audio cue, release + movement; peak particles=502; clips=charge01_loop,attack01,battlewait01_loop
+ZA TREECKO/ENERGY_BALL: one hit, audio cue, release + movement; peak particles=835; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TREECKO/LEAF_STORM: one hit, audio cue, release + movement; peak particles=159; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA TREECKO/ABSORB: one hit, audio cue, release + movement; peak particles=56; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA TREECKO/GIGA_DRAIN: one hit, audio cue, release + movement; peak particles=249; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+Arceus Pikachu: split damage reaction returned to idle

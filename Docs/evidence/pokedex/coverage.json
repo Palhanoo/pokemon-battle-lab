@@ -1,0 +1,25 @@
+{
+  "uniqueSpecies": 1000,
+  "runs": [
+    {
+      "report": "roster-smoke-0.txt",
+      "cases": 444
+    },
+    {
+      "report": "roster-smoke-400.txt",
+      "cases": 189
+    },
+    {
+      "report": "roster-smoke-597.txt",
+      "cases": 151
+    },
+    {
+      "report": "roster-smoke-750.txt",
+      "cases": 261
+    }
+  ],
+  "initialSweep": "Stopped deliberately after 444 individually successful cases once parallel ranges covered the remaining IDs.",
+  "middleSweep": "Succeeded through dex596, then rejected a valid one-key Ferroseed idle. Corrected static-pose fixture; dex597\u2013749 passed separately.",
+  "checked": "Load, finite nonzero bounds, native role sampling, real transform changes, cache<=2. Remaining-range runs reject runtime errors.",
+  "materialUpdate": "Subsequent mask-only rebake proves geometry/skin/animation buffer bytes unchanged. Final texture/reference checks and spot renders are separate."
+}
