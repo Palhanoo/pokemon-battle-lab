@@ -90,3 +90,13 @@ mode, reset mid-action and verify no lingering projectile or later HP change.
   turn selection, Speed ordering, switching/items and their turn cost.
 - HoennVR `Docs~/notes/2026-10-22-battle-volley-review.md`,
   `2026-10-22-native-presentation.md`, `2026-10-20-za-battles-spec.md`, bug register.
+
+## 22 October follow-up — control and animations first
+
+Bruno confirmed that he wants to control the Pokémon directly. This chooses the
+next experiment's player role: movement, attacks and recovery from the Pokémon's
+perspective. The default is now that direct-control study, with native ZA and
+BDSP effects and split body animations. The older comparison modes remain
+available. Arceus body/effect parity and complete original engines remain open.
+See 2026-10-22-direct-control.md and bug-register.md. First acceptance question:
+does moving, stopping, attacking and regaining movement feel connected?

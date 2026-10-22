@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using BattleLab.Native;
 using Random = System.Random;
 
 namespace BattleLab
@@ -12,7 +13,7 @@ namespace BattleLab
     public class BattleLabApp : MonoBehaviour
     {
         public LabCatalog catalog;
-        public BattleMode mode=BattleMode.BDSP;
+        public BattleMode mode=BattleMode.ZA;
         public MoveStyle style;
         public bool Paused { get; private set; }
         public int ResolvedHits { get; private set; }
@@ -29,23 +30,30 @@ namespace BattleLab
         class Action
         {
             public MoveData move; public MoveStyle style; public Fighter target;
-            public int phase; public float clock, windup, recovery, elapsed;
-            public Vector3 destination, start, aim;
-            public GameObject fx;
+            public int phase; public float clock;
+
+            public AttackPresentation presentation; public bool hit;
         }
         Fighter[] fighters;
         readonly List<LabActor> gallery=new();
         readonly Queue<string> log=new();
         readonly List<(GameObject go,float end)> flashes=new();
-        Camera cam; Transform trainer;
+        Camera cam;
+        VioletFxCatalog zaFx; BdspFxCatalog bdspFx; NativeTiming nativeTiming;
+        readonly List<AttackPresentation> tails=new();
+        bool setup,practice=true;
+        float yaw=90,pitch=24;
+        Vector3 cameraFocus;
+        Vector3 testInput; bool testDash;
+        bool Direct => !inspect&&mode==BattleMode.ZA;
         Material floorMat,gridMat;
         readonly Dictionary<Color,Material> materials=new();
         AudioSource audioSource; AudioClip hitSound;
         Random rng=new(42);
-        float now, aiAt, gameSpeed=1, impactFraction=.55f, cameraDistance=5.8f, dodgeUntil, dodgeReady;
+        float now, aiAt, gameSpeed=1, cameraDistance=5.8f, dodgeUntil, dodgeReady;
         Vector3 dodgeDirection;
-        int playerSpecies=0,enemySpecies=2,playerSource=2,enemySource=2,inspectSpecies;
-        bool inspect,ai=true,diagnostics=true;
+        int playerSpecies=0,enemySpecies=2,playerSource=1,enemySource=1,inspectSpecies;
+        bool inspect,ai=false,diagnostics=false;
         int waitingActor=-1,queuedActor=-1,queuedMove=-1,round;
         float sequenceAt;
         string message="Choose a move to begin.", clipRole="battle";
@@ -65,6 +73,7 @@ namespace BattleLab
             catalog=Resources.Load<LabCatalog>("LabCatalog");
             if(!catalog){Debug.LogError("Run BattleLabBuilder.Setup first.");enabled=false;return;}
             Application.targetFrameRate=120;
+            zaFx=Resources.Load<VioletFxCatalog>("NativeZA");bdspFx=Resources.Load<BdspFxCatalog>("NativeBDSP");nativeTiming=Resources.Load<NativeTiming>("NativeTiming");
             BuildArena();ResetBattle();
             smoke=Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
@@ -103,7 +112,7 @@ namespace BattleLab
                     line.GetComponent<Renderer>().sharedMaterial=gridMat;Destroy(line.GetComponent<Collider>());
                 }
             }
-            trainer=Shape("Trainer position",PrimitiveType.Cylinder,new Vector3(-3,.025f,-2),new Vector3(.6f,.025f,.6f),accent).transform;
+
             audioSource=gameObject.AddComponent<AudioSource>();
             hitSound=AudioClip.Create("Diagnostic impact",4400,1,22050,false);
             var samples=new float[4400];for(int i=0;i<samples.Length;i++)samples[i]=Mathf.Sin(i*.095f)*Mathf.Exp(-i/600f)*.18f;
@@ -114,7 +123,7 @@ namespace BattleLab
             StopActions();foreach(var g in gallery)if(g)Destroy(g.gameObject);gallery.Clear();
             now=0;aiAt=1;sequenceAt=0;round=0;waitingActor=queuedActor=queuedMove=-1;
             dodgeUntil=dodgeReady=0;ResolvedHits=0;Paused=false;rng=new Random(42);
-            trainer.position=new Vector3(-3,.025f,-2);trainer.gameObject.SetActive(!inspect&&mode==BattleMode.ZA);
+            Cursor.lockState=CursorLockMode.None;Cursor.visible=true;
             if(inspect)
             {
                 float commonScale=1;
@@ -132,7 +141,8 @@ namespace BattleLab
             if(!ai)fighters[1].next=double.PositiveInfinity;
             fighters[0].body.Face(fighters[1].home);fighters[1].body.Face(fighters[0].home);
             log.Clear();Note("Reset · same matchup, seed 42");
-            message=mode==BattleMode.ZA?"Command a move. WASD moves the trainer; your partner follows.":"Choose a move to begin.";
+            cameraFocus=fighters[0].body.Centre;testInput=Vector3.zero;testDash=false;
+            message=Direct?"You control the Pokémon. WASD move · hold right mouse to look · 1–3 attack · Space dash · Tab setup.":"Choose a move to begin.";
         }
         Fighter CreateFighter(int species,int source,Vector3 at)
         {
@@ -142,7 +152,8 @@ namespace BattleLab
         }
         void StopActions()
         {
-            if(fighters!=null)foreach(var f in fighters){if(f.action?.fx)Destroy(f.action.fx);if(f.body)Destroy(f.body.gameObject);}
+            if(fighters!=null)foreach(var f in fighters){f.action?.presentation?.Dispose();if(f.body)Destroy(f.body.gameObject);}
+            foreach(var tail in tails)tail.Dispose();tails.Clear();
             fighters=null;foreach(var f in flashes)if(f.go)Destroy(f.go);flashes.Clear();
         }
         void Note(string text){message=text;log.Enqueue($"{now:0.0}s  {text}");while(log.Count>6)log.Dequeue();Debug.Log("LAB "+text);}
@@ -151,6 +162,7 @@ namespace BattleLab
         {
             if(!catalog)return;
             if(!smoke&&Input.GetKeyDown(KeyCode.Escape))Paused=!Paused;
+            if(!smoke&&Input.GetKeyDown(KeyCode.Tab))setup=!setup;
             if(!smoke&&Input.GetKeyDown(KeyCode.R))ResetBattle();
             if(!smoke&&Input.GetKeyDown(KeyCode.F1)){inspect=!inspect;ResetBattle();}
             if(!smoke&&!inspect&&!Paused)for(int i=0;i<3;i++)if(Input.GetKeyDown(KeyCode.Alpha1+i))Command(i);
@@ -166,12 +178,24 @@ namespace BattleLab
                 }
                 else if(Ended)foreach(var f in fighters)if(f.action!=null)Cancel(f);
             }
+            for(int i=tails.Count-1;i>=0;i--){tails[i].Step(dt,false);if(tails[i].TailDone){tails[i].Dispose();tails.RemoveAt(i);}}
             for(int i=flashes.Count-1;i>=0;i--)if(now>=flashes[i].end){Destroy(flashes[i].go);flashes.RemoveAt(i);}
-            Vector3 focus=inspect?new Vector3(0,.85f,0):fighters!=null?(fighters[0].body.Centre+fighters[1].body.Centre)*.5f:Vector3.zero;
-            // Fixed viewing direction, no shake or combat cuts; only zoom is user controlled.
+            UpdateCamera(dt);
+        }
+        void UpdateCamera(float dt)
+        {
+            bool orbit=Direct&&!Paused&&!smoke&&Input.GetMouseButton(1);
+            Cursor.lockState=orbit?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!orbit;
+            if(orbit){yaw+=Input.GetAxis("Mouse X")*3;pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,8,65);}
+            if(Direct&&!Paused&&!smoke)cameraDistance=Mathf.Clamp(cameraDistance-Input.mouseScrollDelta.y*.5f,3.5f,12);
+            cam.rect=Direct&&!setup?new Rect(0,0,1,1):new Rect(.215f,.18f,.785f,.73f);
             cam.orthographic=inspect;cam.orthographicSize=2.5f*cameraDistance/5.8f;
-            cam.transform.position=focus+new Vector3(0,inspect?0:cameraDistance*.42f,-cameraDistance);
-            cam.transform.LookAt(focus);
+            Vector3 focus=inspect?new Vector3(0,.85f,0):fighters!=null?(Direct?fighters[0].body.transform.position+Vector3.up*Mathf.Clamp(fighters[0].body.BodyHeight*.6f,.4f,1.6f):(fighters[0].body.Centre+fighters[1].body.Centre)*.5f):Vector3.zero;
+            cameraFocus=Vector3.Lerp(cameraFocus,focus,1-Mathf.Exp(-12*dt));
+            if(inspect)cameraFocus=focus;
+            float followDistance=Direct?cameraDistance*Mathf.Clamp(fighters[0].body.BodyHeight/1.2f,.85f,1.5f):cameraDistance;
+            cam.transform.position=Direct?cameraFocus+Quaternion.Euler(pitch,yaw,0)*Vector3.back*followDistance:focus+new Vector3(0,inspect?0:cameraDistance*.42f,-cameraDistance);
+            cam.transform.LookAt(Direct?cameraFocus:focus);
         }
         void TickTurns()
         {
@@ -199,6 +223,11 @@ namespace BattleLab
             if(mode==BattleMode.ZA)
             {
                 if(f.ready[slot]>now){message="That move is cooling down.";return false;}
+                var move=catalog.Move(f.data.moves[slot]);
+                float reach=Reach(f,fighters[1],move);
+                if(Vector3.Distance(f.body.transform.position,fighters[1].body.transform.position)>reach)
+                {message=$"Move closer for {move.name} · range {reach:0.0} m";return false;}
+                if(now<dodgeUntil)return false;
                 Begin(0,slot,MoveStyle.Normal);return true;
             }
             if(ActiveActions>0||queuedActor>=0||now<sequenceAt)return false;
@@ -221,22 +250,35 @@ namespace BattleLab
             var f=fighters[index];var target=fighters[1-index];var move=catalog.Move(f.data.moves[slot]);
             if(mode==BattleMode.ZA)f.ready[slot]=now+move.cooldown;
             else f.pp[slot]-=mode==BattleMode.Arceus?CombatRules.StyleCost(selected):1;
-            f.action=new Action{move=move,style=selected,target=target,start=f.body.transform.position};
+            f.action=new Action{move=move,style=selected,target=target};
             f.state="Approaching";Note($"{f.data.id}: {move.name}"+(selected==MoveStyle.Normal?"":" · "+selected));
         }
+        static float Reach(Fighter f,Fighter target,MoveData move)=>Mathf.Max(move.physical?.8f:2,move.rangeMax)+Mathf.Min(.6f,target.body.Bounds.extents.x);
         void TickRealtime(float dt)
         {
-            Vector3 input=smoke?Vector3.zero:new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));input=Vector3.ClampMagnitude(input,1);
-            if(!smoke&&Input.GetKeyDown(KeyCode.Space)&&now>=dodgeReady)
-            {dodgeDirection=input.sqrMagnitude>.01f?input:Vector3.back;dodgeUntil=now+.3f;dodgeReady=now+1;}
-            trainer.position+= (now<dodgeUntil?dodgeDirection*9:input*4)*dt;
-            trainer.position=new Vector3(Mathf.Clamp(trainer.position.x,-10,10),.025f,Mathf.Clamp(trainer.position.z,-8,8));
             var p=fighters[0];
+            Vector3 axes=smoke?testInput:new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
+            var input=Quaternion.Euler(0,yaw,0)*Vector3.ClampMagnitude(axes,1);
+            bool dash=smoke?testDash:Input.GetKeyDown(KeyCode.Space);testDash=false;
             if(p.action==null)
             {
-                Vector3 destination=trainer.position+Vector3.forward*1.8f;destination.y=0;
-                MoveActor(p,destination,dt,3);
-                if(Vector3.Distance(p.body.transform.position,destination)<.1f)p.body.Face(fighters[1].body.transform.position);
+                if(dash&&now>=dodgeReady)
+                {dodgeDirection=input.sqrMagnitude>.01f?input:p.body.transform.forward;dodgeUntil=now+.24f;dodgeReady=now+.85f;}
+                var velocity=now<dodgeUntil?dodgeDirection*8:input*(!smoke&&Input.GetKey(KeyCode.LeftShift)?1.6f:3.6f);
+                if(velocity.sqrMagnitude>.01f)
+                {
+                    var at=p.body.transform.position;var next=at+velocity*dt;
+                    next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);
+                    // Separate footprints; direct input never gets handed to partner-follow logic.
+                    var away=next-fighters[1].body.transform.position;away.y=0;
+                    float clearance=Mathf.Clamp(p.body.Bounds.extents.x+fighters[1].body.Bounds.extents.x,.55f,1.1f);
+                    if(away.magnitude<clearance)next=fighters[1].body.transform.position+(away.sqrMagnitude>.001f?away.normalized:Vector3.back)*clearance;
+                    p.body.Face(at+velocity);p.body.transform.position=next;
+                    string role=velocity.magnitude<2?"walk":"run";
+                    if(p.body.CurrentClip!=p.body.entry.Role(role)?.name)p.body.Role(role,true);
+                    p.state=now<dodgeUntil?"Dashing":"Moving";
+                }
+                else if(p.state=="Moving"||p.state=="Dashing"){p.body.Idle();p.state="Ready";}
             }
             if(ai&&fighters[1].action==null&&now>=aiAt){int m=ChooseEnemy();if(m>=0)Begin(1,m,MoveStyle.Normal);aiAt=now+.4f;}
         }
@@ -249,65 +291,57 @@ namespace BattleLab
         }
         void TickAction(Fighter f,float dt)
         {
-            var a=f.action;a.elapsed+=dt;
+            var a=f.action;
             if(a.target.hp<=0||f.hp<=0){Cancel(f);return;}
             Vector3 from=f.body.transform.position,to=a.target.body.transform.position;
-            float gap=Vector3.Distance(from,to);
             if(a.phase==0)
             {
-                float bodyReach=(f.body.Bounds.extents.x+a.target.body.Bounds.extents.x)*.65f;
-                float desired=a.move.physical?bodyReach+.65f:mode==BattleMode.ZA?Mathf.Max(2,a.move.rangeMax*.65f):gap;
-                if(gap>desired+.1f)
+                float desired=a.move.physical?Mathf.Min(1.2f,Reach(f,a.target,a.move)):Mathf.Min(6,Reach(f,a.target,a.move)*.75f);
+                if(!(Direct&&f==fighters[0])&&Vector3.Distance(from,to)>desired+.1f)
                 {MoveActor(f,to+(from-to).normalized*desired,dt,4);return;}
-                f.body.Face(to);f.body.Role(a.move.physical?"attack":"special");
-                a.windup=mode==BattleMode.ZA?a.move.windup:Mathf.Max(.25f,f.body.ClipLength*impactFraction);
-                a.recovery=mode==BattleMode.ZA?a.move.recovery:Mathf.Max(.2f,f.body.ClipLength-a.windup);
+                f.body.Face(to);
+                a.presentation=new AttackPresentation(f.body,a.target.body,a.move,zaFx,bdspFx,nativeTiming);
                 a.phase=1;a.clock=0;f.state="Wind-up";
+                Note($"{f.body.entry.source} body · {(f.body.entry.source=="BDSP"?"BDSP":"Z-A")} attack effects");
             }
-            a.clock+=dt;
-            if(a.phase==1&&a.clock>=a.windup)
+            if(a.phase==1)
             {
-                a.clock=0;a.aim=a.target.body.Centre;
-                if(!a.move.physical)
+                a.clock+=dt;a.presentation.Step(dt);
+                // Quick Attack's small committed burst is lab movement, synchronized to the native release.
+                if(a.move.id=="QUICK_ATTACK"&&a.clock>=a.presentation.HitAt-.18f&&a.clock<a.presentation.HitAt)
                 {
-                    a.fx=Shape("Diagnostic "+a.move.name,PrimitiveType.Sphere,f.body.Centre,Vector3.one*.22f,MoveColor(a.move));
-                    a.phase=2;f.state="In flight";
+                    var delta=to-from;delta.y=0;float travel=Mathf.Max(0,delta.magnitude-.85f);
+                    f.body.transform.position+=delta.normalized*Mathf.Min(travel,dt*22);
                 }
-                else {Impact(f,mode!=BattleMode.ZA||gap< f.body.Bounds.extents.x+a.target.body.Bounds.extents.x+1.3f);a.phase=3;f.state="Recovering";}
-            }
-            else if(a.phase==2)
-            {
-                float speed=mode==BattleMode.ZA?Mathf.Max(8,a.move.speed):12;
-                // Fixed aim at release deliberately exposes misses. Native homing is not reconstructed.
-                var old=a.fx.transform.position;var next=Vector3.MoveTowards(old,a.aim,dt*speed);a.fx.transform.position=next;
-                var bounds=a.target.body.Bounds;bounds.Expand(Mathf.Min(a.move.radius,.7f)*2);
-                bool contact=bounds.Contains(next)||SegmentHits(bounds,old,next);
-                if(contact||Vector3.Distance(next,a.aim)<.02f)
+                if(!a.hit&&a.clock>=a.presentation.HitAt)
                 {
-                    Impact(f,mode!=BattleMode.ZA||contact);Destroy(a.fx);a.fx=null;a.phase=3;a.clock=0;f.state="Recovering";
+                    a.hit=true;
+                    bool contact=!Direct||Vector3.Distance(f.body.transform.position,to)<=Reach(f,a.target,a.move);
+                    if(Direct&&a.target==fighters[0]&&now<dodgeUntil)contact=false;
+                    Impact(f,contact);f.state="Recovering";
                 }
-            }
-            else if(a.phase==3&&a.clock>=a.recovery)
-            {
-                if(mode!=BattleMode.ZA&&Vector3.Distance(f.body.transform.position,f.home)>.1f){a.phase=4;f.state="Returning";}
-                else Finish(f);
+                if(a.clock>=a.presentation.FreeAt)
+                {
+                    if(!a.presentation.TailDone)tails.Add(a.presentation);else a.presentation.Dispose();
+                    a.presentation=null;
+                    if(mode!=BattleMode.ZA&&Vector3.Distance(f.body.transform.position,f.home)>.1f){a.phase=4;f.state="Returning";}
+                    else Finish(f);
+                }
             }
             else if(a.phase==4)
             {MoveActor(f,f.home,dt,4);if(Vector3.Distance(f.body.transform.position,f.home)<.1f)Finish(f);}
         }
-        static bool SegmentHits(Bounds b,Vector3 start,Vector3 end)
-        {var d=end-start;return d.sqrMagnitude>.00001f&&b.IntersectRay(new Ray(start,d.normalized),out var hit)&&hit<=d.magnitude;}
         void Impact(Fighter f,bool contact)
         {
             var a=f.action;var t=a.target;
             bool hit=contact&&(mode==BattleMode.ZA||CombatRules.Hits(a.move.accuracy,rng));
             if(!hit){Note(a.move.name+" missed");return;}
             int damage=CombatRules.Damage(f.data,t.data,a.move,catalog.data.types,mode,a.style);
-            t.hp=Mathf.Max(0,t.hp-damage);ResolvedHits++;
+            t.hp=practice?t.hp:Mathf.Max(0,t.hp-damage);ResolvedHits++;
             if(damage>0)
             {
-                if(t.hp<=0)t.body.Role("faint");else if(t.action==null)t.body.Role("damage");
-                flashes.Add((Shape("Impact",PrimitiveType.Sphere,t.body.Centre,Vector3.one*.45f,MoveColor(a.move)),now+.12f));
+                if(t.hp<=0)t.body.Role("faint");else if(t.action==null)t.body.React();
+
                 audioSource.PlayOneShot(hitSound);
             }
             Note(damage==0?"No effect · type immunity":$"{t.data.id} −{damage} HP");
@@ -317,10 +351,10 @@ namespace BattleLab
         {
             var a=f.action;if(mode==BattleMode.Arceus)f.next+=CombatRules.ActionDelay(f.data.stats[3],a.style);
             f.action=null;f.state="Ready";f.body.Idle();f.body.Face(a.target.body.transform.position);sequenceAt=now+.25f;
-            if(a.target.action==null&&a.target.hp>0)a.target.body.Idle();
+
         }
         void Cancel(Fighter f)
-        {if(f.action?.fx)Destroy(f.action.fx);f.action=null;f.state=f.hp<=0?"Fainted":"Ready";if(f.hp>0)f.body.Idle();}
+        {f.action?.presentation?.Dispose();f.action=null;f.state=f.hp<=0?"Fainted":"Ready";if(f.hp>0)f.body.Idle();}
         Color MoveColor(MoveData m)=>m.type=="ELECTRIC"?new Color(1,.8f,.15f):m.type=="GHOST"||m.type=="POISON"?new Color(.7f,.35f,.95f):m.type=="FIGHTING"?new Color(.25f,.7f,1):new Color(.8f,.9f,1);
         void Styles()
         {
@@ -340,8 +374,9 @@ namespace BattleLab
             if(!catalog)return;
             if(smoke&&(Event.current.isMouse||Event.current.isKey))Event.current.Use();
             Styles();GUI.matrix=Matrix4x4.Scale(new Vector3(Screen.width/1440f,Screen.height/900f,1));
+            if(Direct&&!setup){DirectUI();return;}
             Text(24,16,450,"POKÉMON / BATTLE LAB",title,40);
-            Text(24,57,850,"01   /   FEEL STUDY     ·     one arena, three model sources, three battle rhythms",muted);
+            Text(24,57,850,"02   /   ANIMATION STUDY     ·     direct control + native attack presentation",muted);
             if(Button(new Rect(1090,20,150,40),inspect?"Back to battle":"Model comparison",inspect)){inspect=!inspect;ResetBattle();}
             if(Button(new Rect(1250,20,165,40),Paused?"Resume  [Esc]":"Pause  [Esc]"))Paused=!Paused;
             Panel(24,104,270,604);
@@ -360,12 +395,36 @@ namespace BattleLab
                 bool nextAi=GUI.Toggle(new Rect(43,532,230,25),ai," Opponent commands enabled");if(nextAi!=ai){ai=nextAi;ResetBattle();}
             }
             if(Button(new Rect(40,578,238,40),"Reset experiment  [R]"))ResetBattle();
-            Text(40,638,230,"Model/rule changes reset the fight. No saves or story dependencies.",muted,55);
+            bool nextPractice=GUI.Toggle(new Rect(43,629,230,25),practice," Practice · keep HP full");if(nextPractice!=practice){practice=nextPractice;ResetBattle();}
+            if(Direct&&Button(new Rect(40,663,238,34),"Play Pokémon  [Tab]"))setup=false;
             if(inspect)GalleryUI();else BattleUI();
             Panel(24,724,270,152);Text(40,736,238,$"Playback speed   {gameSpeed:0.00}×",small);
             gameSpeed=GUI.HorizontalSlider(new Rect(43,769,230,20),gameSpeed,.25f,1.5f);
             Text(40,796,238,"Camera distance",small);cameraDistance=GUI.HorizontalSlider(new Rect(43,829,230,20),cameraDistance,4.5f,14);
-            Text(322,872,1090,"Native model/clip exports · reconstructed mechanics subset · diagnostic effects · desktop prototype",muted,25);
+            Text(322,872,1090,"Native model/clip exports · reconstructed mechanics subset · native ZA / BDSP effects · Arceus uses ZA effects · desktop prototype",muted,25);
+        }
+        void DirectUI()
+        {
+            var p=fighters[0];var foe=fighters[1];
+            Panel(22,20,410,92);Text(38,29,380,p.data.id+"  /  "+p.body.entry.source,title,36);
+            Text(38,68,380,$"{p.hp}/{p.MaxHp} HP · {(practice?"Practice":"Battle")} · {p.state}",small);
+            Panel(1090,20,328,92);Text(1106,31,296,foe.data.id+"  /  "+foe.body.entry.source,label);
+            Text(1106,68,296,$"{foe.hp}/{foe.MaxHp} HP · {(ai?"Opponent active":"Training target")}",small);
+            if(Button(new Rect(22,125,195,36),"Setup / models  [Tab]"))setup=true;
+            Text(450,27,620,"PLAY AS YOUR POKÉMON",small);
+            Text(450,58,620,"WASD move · Shift walk · hold RMB look · Space dash",small);
+            Text(450,85,620,"1–3 attack · wheel zoom · Esc pause · R reset",small);
+            if(Paused)Text(560,370,400,"PAUSED · Esc to resume",title,50);
+            Text(330,663,900,message,label,55);
+            for(int i=0;i<3;i++)
+            {
+                var m=catalog.Move(p.data.moves[i]);float left=Mathf.Max(0,p.ready[i]-now);
+                GUI.enabled=!Paused&&!Ended&&p.action==null&&left<=0&&now>=dodgeUntil;
+                string status=left>0?$"{left:0.0}s":p.action!=null?p.state:"Ready";
+                if(Button(new Rect(302+i*280,735,268,76),$"[{i+1}] {m.name}\n{status}"))Command(i);GUI.enabled=true;
+            }
+            Text(302,823,950,$"Body: {p.body.CurrentClip}  ·  Effects: {(p.body.entry.source=="BDSP"?"BDSP":"Z-A")}"+(p.body.entry.source=="Arceus"?" (Arceus effects not imported)":""),small);
+            Text(302,852,1000,"Attacks commit until recovery. Dash between attacks. Practice keeps HP full; enable opponent in Setup.",muted);
         }
         void GalleryUI()
         {
@@ -401,7 +460,7 @@ namespace BattleLab
                 Text(330,650,1000,"Action-order preview assumes repeated selected style; experimental delay curve.",muted);
                 for(int i=0;i<3;i++)if(Button(new Rect(330+i*145,685,137,34),((MoveStyle)i).ToString(),(int)style==i))style=(MoveStyle)i;
             }
-            else if(mode==BattleMode.ZA)Text(330,677,1000,"WASD  trainer movement     SPACE  trainer dash     1–3  partner commands",small);
+            else if(mode==BattleMode.ZA)Text(330,677,1000,"WASD  Pokémon movement     RMB  camera     SPACE  dash     1–3  attacks",small);
             else Text(330,677,1000,$"Round {round}  ·  both sides select, then priority and Speed decide order",small);
             Text(330,244,1065,message,label,50);
             if(diagnostics)
@@ -429,13 +488,76 @@ namespace BattleLab
                 yield return item;
             }
         }
+        IEnumerator PresentationSmoke(string folder,List<string> summaries)
+        {
+            mode=BattleMode.ZA;inspect=false;ai=false;practice=true;setup=false;gameSpeed=1.5f;
+            for(int source=0;source<3;source++)for(int species=0;species<3;species++)
+            {
+                playerSource=source;playerSpecies=species;enemySpecies=species==2?0:2;enemySource=source;ResetBattle();
+                var p=fighters[0];var start=p.body.transform.position;
+                testInput=Vector3.back;float until=now+.6f;while(now<until)yield return null;testInput=Vector3.zero;
+                if(Vector3.Distance(start,p.body.transform.position)<.8f)throw new Exception("Direct movement failed "+p.body.name);
+                yield return null;
+                if(p.body.CurrentClip!=p.body.entry.battle.name)throw new Exception("Run did not recover to idle");
+                testDash=true;yield return new WaitForSecondsRealtime(.3f);
+                summaries.Add(p.body.name+": direct move/idle/dash passed");
+                for(int slot=0;slot<3;slot++)
+                {
+                    ResetBattle();p=fighters[0];var foe=fighters[1];
+                    p.body.transform.position=new Vector3(-1,0,0);foe.body.transform.position=new Vector3(catalog.Move(p.data.moves[slot]).physical?.3f:2.5f,0,0);
+                    string id=p.data.moves[slot];
+                    if(!Command(slot))throw new Exception("Move rejected "+p.body.name+id);
+                    yield return null;
+                    var presentation=p.action.presentation;
+                    float clock=presentation.Time,clip=p.body.ClipTime;var position=p.body.transform.position;
+                    Paused=true;yield return new WaitForSecondsRealtime(.15f);
+                    if(presentation.Time!=clock||p.body.ClipTime!=clip||p.body.transform.position!=position)throw new Exception("Pause advanced presentation");
+                    Paused=false;
+                    float deadline=Time.realtimeSinceStartup+12;int particles=0;bool captured=false,impactCaptured=false;
+                    var seen=new HashSet<string>();
+                    while(p.action!=null&&Time.realtimeSinceStartup<deadline)
+                    {
+                        seen.Add(p.body.CurrentClip);
+                        if(presentation.Alive)particles=Mathf.Max(particles,presentation.Effect.gameObject.GetComponentsInChildren<ParticleSystem>().Sum(x=>x.particleCount));
+                        if(!captured&&presentation.Time>=presentation.HitAt*.8f)
+                        {
+                            captured=true;yield return new WaitForEndOfFrame();
+                            ScreenCapture.CaptureScreenshot(Path.Combine(folder,$"{Sources[source]}-{Species[species]}-{id}.png"));
+                        }
+                        if(!impactCaptured&&presentation.Time>=presentation.HitAt+.04f)
+                        {
+                            impactCaptured=true;yield return new WaitForEndOfFrame();
+                            ScreenCapture.CaptureScreenshot(Path.Combine(folder,$"{Sources[source]}-{Species[species]}-{id}-impact.png"));
+                        }
+                        yield return null;
+                    }
+                    if(p.action!=null||ResolvedHits!=1)throw new Exception("Attack failed to settle exactly once "+p.body.name+id+" hits="+ResolvedHits);
+                    if(particles==0)throw new Exception("No live native particles "+p.body.name+id);
+                    if(p.body.CurrentClip!=p.body.entry.battle.name)throw new Exception("Attack stuck "+p.body.name+id);
+                    start=p.body.transform.position;testInput=Vector3.back;until=now+.4f;while(now<until)yield return null;testInput=Vector3.zero;
+                    if(Vector3.Distance(start,p.body.transform.position)<.4f)throw new Exception("Movement remained locked after attack");
+                    summaries.Add($"{p.body.name}/{id}: one hit, pause/resume, release + movement; peak particles={particles}; clips={string.Join(",",seen)}");
+                }
+                ResetBattle();Command(1);yield return null;ResetBattle();yield return new WaitForSecondsRealtime(.15f);
+                if(ActiveActions!=0||tails.Count!=0||FindObjectsByType<VioletMove>(FindObjectsSortMode.None).Length!=0||FindObjectsByType<BdspMove>(FindObjectsSortMode.None).Length!=0)throw new Exception("Reset retained native presentation");
+            }
+            // Damage reaction must recover independently of the attacker's state.
+            playerSource=0;playerSpecies=0;ResetBattle();fighters[0].body.React();yield return new WaitForSecondsRealtime(2);
+            if(fighters[0].body.CurrentClip!=fighters[0].body.entry.battle.name)throw new Exception("Arceus damage reaction stuck");
+            summaries.Add("Arceus Pikachu: split damage reaction returned to idle");
+            gameSpeed=1;playerSpecies=0;enemySpecies=2;
+            File.WriteAllLines(Path.Combine(folder,"presentation-smoke.txt"),summaries);
+            Debug.Log("LAB PRESENTATION SMOKE PASSED: 27 attacks across nine models");
+        }
         IEnumerator SmokeRun()
         {
-            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../Docs/evidence"));Directory.CreateDirectory(folder);
+            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/direct-control"));Directory.CreateDirectory(folder);
             var summaries=new List<string>();
+            var presentation=PresentationSmoke(folder,summaries);
+            while(presentation.MoveNext())yield return presentation.Current;
             foreach(BattleMode testMode in Enum.GetValues(typeof(BattleMode)))
             {
-                mode=testMode;style=MoveStyle.Normal;playerSource=enemySource=mode==BattleMode.BDSP?2:mode==BattleMode.Arceus?0:1;inspect=false;ai=true;ResetBattle();
+                mode=testMode;style=MoveStyle.Normal;playerSource=enemySource=mode==BattleMode.BDSP?2:mode==BattleMode.Arceus?0:1;inspect=false;ai=true;practice=false;ResetBattle();
                 float deadline=Time.realtimeSinceStartup+45;
                 while(ResolvedHits<2&&Time.realtimeSinceStartup<deadline&&!Ended){Command(1);yield return null;}
                 if(ResolvedHits<2)throw new Exception("Smoke failed: fewer than two landed hits in "+mode);

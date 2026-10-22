@@ -3,8 +3,14 @@
   "date": "2026-10-22",
   "models": "Native local source export per game, not source-swapped catalog assets",
   "shared_stats": "HoennVR generated gamedata, modern/SV baseline; not per-game damage parity",
-  "za_parameters": "HoennVR Data/za_moves.json, decoded za-v2 rows. Native timeline interpreter is NOT included.",
+  "za_parameters": "Decoded za-v2 rows; selected native body cue/hold/rate interpreter now adapted in BattleLab.Native.",
   "arceus_scheduler": "Experimental delay model informed by official action-order description; not reverse-engineered formula",
   "bdsp_scheduler": "Conventional round / priority / Speed subset; not complete BDSP engine",
-  "effects": "Diagnostic Unity geometry and synthesized sound, not native move effects"
+  "effects": "Eight native ZA particle/timeline exports and eight original BDSP sequences from local dumps. Arceus bodies use ZA effects/timing, not native Arceus effects. Sound remains synthetic.",
+  "initial_lab": {
+    "za_parameters": "HoennVR Data/za_moves.json, decoded za-v2 rows. Native timeline interpreter is NOT included.",
+    "effects": "Diagnostic Unity geometry and synthesized sound, not native move effects"
+  },
+  "presentation_source_commit": "1db47c7d8ca8cbd5946c68577769395d81ab37cd",
+  "direct_control": "Experimental camera-relative Pokemon movement, dash window, range-at-marker collision, Quick Attack burst; not native locomotion or root motion."
 }

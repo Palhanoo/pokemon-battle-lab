@@ -1,5 +1,7 @@
 # Verification — 22 October 2026
 
+## Initial lab (5453b54)
+
 - Nine distinct native GLB exports verified against the SHA256 manifest:
   73,729,808 bytes total. No source models were relabeled as another game.
 - Unity imported all nine models with 591 clips: Arceus 194, Z-A 314, BDSP 83.
@@ -42,3 +44,47 @@ materials under shared Unity lighting, not the original games' renderers.
 HoennVR received only the feedback/decision notes (commit 1db47c7). Its existing
 ProjectSettings edits remain untouched, and its game executable and saves were
 not opened or rewritten. This local lab has no remote configured.
+
+## Direct-control animation review — follow-up
+
+Bruno reported Arceus Pikachu sticking and confirmed that movement and attack
+animations are the priority. See bug-register.md LAB-01/02. Native presentation
+helpers, eight ZA effects and eight original BDSP sequences are now staged.
+Arceus uses its own body clips with ZA effects/timing; this is labeled in the UI.
+
+- Focused final EditMode checks: **20/20 passed**, including the original eight
+  rule tests, nine model/loadout plans, PLA split special, ZA split rush, and
+  non-null exported effect references. Native imported clips remain 591.
+- First standalone attempt failed because its movement check waited on wall time
+  during initial rendering. The test now measures movement over simulated game
+  time; startup cannot consume the test's movement interval. Initial failure log
+  retained as Logs/direct-control-player-initial.log.
+- The next standalone run passed **27 attacks over all nine bodies**, with live
+  particle counts, one hit each, pause/resume, body recovery and movement after
+  each attack. All nine also passed direct movement/idle/dash checks and reset
+  cleanup; PLA Pikachu's split damage reaction returned to idle.
+- That run completed finite battles in BDSP, Arceus and ZA rhythms and verified
+  reset during attacks without delayed damage. Process exit 0, no exception.
+- Inspected source-specific screenshots: native effects are visible, including
+  BDSP Thunderbolt and ZA Aura Sphere. Gengar's charge effect is large in the
+  initial framing; the camera now adapts to body height. Effect UV scrolling now
+  uses the presentation clock so pausing also freezes the texture motion. Final
+  rebuilt-player evidence will be recorded below.
+- Desktop input inspection through the Computer Use skill could not initialize:
+  node_repl reported sandboxCwd is not a local file URI: file:///mnt/d/www/HoennVR.
+  Automated gameplay drives the same movement/action methods with controlled
+  input. Actual keyboard/mouse handling and subjective feel are not claimed as
+  manually verified. No headset verification.
+
+Limits: native renderer parity, Arceus move effects, complete BDSP motion-ID
+variants, locomotion/root motion, authentic audio and moving projectile hitboxes
+remain incomplete. Large/solid-looking particle meshes can differ from the
+original shaders. The test establishes body/effect/control lifecycle, not native
+game fidelity or that Bruno will enjoy the result.
+
+Final direct-control package: one scene, zero build errors, 443,011,297 bytes.
+Final standalone again passed all 27 presentations and three complete fights;
+exit 0 and LAB SMOKE PASSED. Fifty-four wind-up/impact captures are retained under
+evidence/direct-control. Aura Sphere's impact capture shows an oversized cyan
+travelling element; Bruno independently reports this as the next defect. It is
+not accepted as visually correct despite passing lifecycle checks.

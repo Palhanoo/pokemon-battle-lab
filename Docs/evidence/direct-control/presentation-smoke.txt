@@ -1,0 +1,37 @@
+Arceus PIKACHU: direct move/idle/dash passed
+Arceus PIKACHU/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=163; clips=roar01,attack01,defaultwait01_loop
+Arceus PIKACHU/THUNDERBOLT: one hit, pause/resume, release + movement; peak particles=575; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus PIKACHU/IRON_TAIL: one hit, pause/resume, release + movement; peak particles=292; clips=roar01,attack01,defaultwait01_loop
+Arceus GENGAR: direct move/idle/dash passed
+Arceus GENGAR/SHADOW_BALL: one hit, pause/resume, release + movement; peak particles=700; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/DARK_PULSE: one hit, pause/resume, release + movement; peak particles=269; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus GENGAR/SLUDGE_BOMB: one hit, pause/resume, release + movement; peak particles=542; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus LUCARIO: direct move/idle/dash passed
+Arceus LUCARIO/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=159; clips=roar01,attack01,defaultwait01_loop
+Arceus LUCARIO/AURA_SPHERE: one hit, pause/resume, release + movement; peak particles=344; clips=roar01,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+Arceus LUCARIO/METAL_CLAW: one hit, pause/resume, release + movement; peak particles=373; clips=roar01,attack01,defaultwait01_loop
+ZA PIKACHU: direct move/idle/dash passed
+ZA PIKACHU/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=159; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA PIKACHU/THUNDERBOLT: one hit, pause/resume, release + movement; peak particles=586; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA PIKACHU/IRON_TAIL: one hit, pause/resume, release + movement; peak particles=288; clips=charge01_loop,attack01
+ZA GENGAR: direct move/idle/dash passed
+ZA GENGAR/SHADOW_BALL: one hit, pause/resume, release + movement; peak particles=689; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/DARK_PULSE: one hit, pause/resume, release + movement; peak particles=277; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA GENGAR/SLUDGE_BOMB: one hit, pause/resume, release + movement; peak particles=550; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA LUCARIO: direct move/idle/dash passed
+ZA LUCARIO/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=159; clips=charge01_loop,attack03_start,attack03_loop,attack03_end
+ZA LUCARIO/AURA_SPHERE: one hit, pause/resume, release + movement; peak particles=344; clips=charge01_loop,rangeattack02_start,rangeattack02_loop,rangeattack02_end
+ZA LUCARIO/METAL_CLAW: one hit, pause/resume, release + movement; peak particles=372; clips=charge01_loop,attack01
+BDSP PIKACHU: direct move/idle/dash passed
+BDSP PIKACHU/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=44; clips=battlewait01_loop,attack01
+BDSP PIKACHU/THUNDERBOLT: one hit, pause/resume, release + movement; peak particles=193; clips=battlewait01_loop,rangeattack01
+BDSP PIKACHU/IRON_TAIL: one hit, pause/resume, release + movement; peak particles=42; clips=attack01
+BDSP GENGAR: direct move/idle/dash passed
+BDSP GENGAR/SHADOW_BALL: one hit, pause/resume, release + movement; peak particles=107; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/DARK_PULSE: one hit, pause/resume, release + movement; peak particles=136; clips=battlewait01_loop,rangeattack01
+BDSP GENGAR/SLUDGE_BOMB: one hit, pause/resume, release + movement; peak particles=133; clips=battlewait01_loop,rangeattack01
+BDSP LUCARIO: direct move/idle/dash passed
+BDSP LUCARIO/QUICK_ATTACK: one hit, pause/resume, release + movement; peak particles=44; clips=battlewait01_loop,attack01
+BDSP LUCARIO/AURA_SPHERE: one hit, pause/resume, release + movement; peak particles=331; clips=rangeattack01,battlewait01_loop
+BDSP LUCARIO/METAL_CLAW: one hit, pause/resume, release + movement; peak particles=49; clips=battlewait01_loop,attack01
+Arceus Pikachu: split damage reaction returned to idle

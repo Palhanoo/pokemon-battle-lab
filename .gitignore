@@ -14,3 +14,8 @@ Assets/Models.meta
 Assets/Data/
 Assets/Data.meta
 Assets/Resources/LabCatalog.asset*
+Assets/NativeFx/
+Assets/NativeFx.meta
+Assets/Resources/NativeZA.asset*
+Assets/Resources/NativeBDSP.asset*
+Assets/Resources/NativeTiming.asset*

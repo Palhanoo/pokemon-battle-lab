@@ -1,0 +1,11 @@
+{
+  "result": "Succeeded",
+  "scenes": 1,
+  "errors": 0,
+  "bytes": 443011297,
+  "focused_tests": 20,
+  "presentation_cases": 27,
+  "complete_battle_modes": 3,
+  "player_exit": 0,
+  "visual_acceptance": "Open: Aura Sphere size reported by Bruno"
+}

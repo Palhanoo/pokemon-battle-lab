@@ -24,6 +24,7 @@ public static class BattleLabBuilder
             from species in new[]{"PIKACHU","GENGAR","LUCARIO"}
             select Import(source,species)).ToArray();
         EditorUtility.SetDirty(catalog);
+        NativePresentationImporter.Import();
         if(!AssetDatabase.LoadAssetAtPath<Material>("Assets/Resources/LabSurface.mat"))
             AssetDatabase.CreateAsset(new Material(Shader.Find("Universal Render Pipeline/Lit")),"Assets/Resources/LabSurface.mat");
         var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/URP.asset");
@@ -56,9 +57,9 @@ public static class BattleLabBuilder
     [MenuItem("Battle Lab/Build Windows review")]
     public static void Build()
     {
-        Setup();Directory.CreateDirectory("Builds");
+        Setup();Directory.CreateDirectory("Builds/DirectControl");
         var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/BattleLab.unity"},
-            locationPathName="Builds/PokemonBattleLab.exe",target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
+            locationPathName="Builds/DirectControl/PokemonBattleLab.exe",target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
         Debug.Log($"LAB BUILD {report.summary.result} scenes=1 errors={report.summary.totalErrors} bytes={report.summary.totalSize}");
         if(report.summary.result!=BuildResult.Succeeded)throw new Exception("Battle lab build failed");
     }

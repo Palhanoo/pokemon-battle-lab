@@ -1,0 +1,22 @@
+POKEMON BATTLE LAB - DIRECT CONTROL / 22 OCTOBER 2026
+
+Double-click Play Battle Lab.cmd.
+
+WASD: move the Pokemon
+Shift: walk
+Hold right mouse: orbit camera
+Mouse wheel: zoom
+Space: dash between attacks
+1, 2, 3: attacks (move closer for melee)
+Tab: Setup, model source, species, AI and practice options
+R: reset
+Esc: pause
+F1: three-source model viewer
+
+Starts with a passive target and unlimited practice HP. Enable opponent commands
+and turn Practice off in Setup to fight. Attacks commit movement until recovery.
+
+ZA and BDSP effects are imported. Arceus uses its own body animations with ZA
+effects/timing, clearly labeled. Native shaders/state machines remain incomplete.
+
+Play Original Lab.cmd preserves the earlier prototype. No HoennVR saves are used.
