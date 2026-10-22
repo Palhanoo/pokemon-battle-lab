@@ -4,7 +4,7 @@ An isolated desktop Unity battle experiment for Bruno: **1,000 species**, one
 preferred model per species, direct Pokémon control, and 1v1 or 3v3 battles.
 No HoennVR maps, story, runtime assemblies or gameplay saves are loaded.
 
-Double-click **Play Battle Lab.cmd** to open `Builds/PokedexReviewFixes`.
+Double-click **Play Battle Lab.cmd** to open `Builds/PokedexHitFeel`.
 The previous `Builds/RealtimeRoster` player remains available through
 **Play Previous Roster.cmd**. Historical source-comparison models stay in the
 verification assets; the playable Pokédex shows one body per species.
@@ -28,6 +28,9 @@ Opposing projectiles can clash along their travel paths. Compare damage after
 STAB, target type and defenses: a move at least 50% stronger continues with the
 **difference**; otherwise both cancel. 150 vs 100 leaves 50; 149 vs 100 cancels both.
 This is a lab experiment, not an original-game rule.
+Successful damaging hits now trigger a compact contact burst, visual recoil, a
+contact sound and a brief desktop hit-stop. Close Combat’s unsupported flat backdrop is omitted and broad glow
+layers are reduced for readability; attack ranges are unchanged.
 
 ## Preferred roster
 

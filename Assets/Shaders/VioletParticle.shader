@@ -5,6 +5,7 @@ Shader "Hoenn/VioletParticle"
     // Custom1, colour1/alpha1 in Custom2 (both HDR). Streams: UV, Custom1, Custom2 packed into TEXCOORD0..2.
     Properties
     {
+        _ReadabilityAlpha ("Presentation opacity", Range(0,1)) = 1
         _ThirdTex ("Third mask", 2D) = "white" {}
         _ThirdScroll ("Third mask scroll", Vector) = (0,0,0,0)
         _ThirdRotation ("Third mask rotation", Float) = 0
@@ -47,6 +48,7 @@ Shader "Hoenn/VioletParticle"
             TEXTURE2D(_SubTex); SAMPLER(sampler_SubTex);
             TEXTURE2D(_ThirdTex); SAMPLER(sampler_ThirdTex);
             CBUFFER_START(UnityPerMaterial)
+                float _ReadabilityAlpha;
                 float _EffectTime, _MainRotation, _SubRotation, _ThirdRotation, _UseThird, _ThirdGrey;
                 float4 _ThirdTex_ST, _ThirdScroll, _MainMotion, _SubMotion, _ThirdMotion;
                 float4 _MainScroll;
@@ -124,7 +126,8 @@ Shader "Hoenn/VioletParticle"
                 // mesh particles get unreliable vertex colour from Unity: tint billboards only
                 if (_MeshParticles < 0.5) { col *= i.color.rgb; a *= i.color.a; }
                 else col *= 0.55 + 0.45 * saturate(dot(normalize(i.n), normalize(float3(0.3, 1, -0.4)))); // simple form shading for rocks, leaves
-                a = saturate(a);
+                a = saturate(a)*_ReadabilityAlpha;
+                if(abs(_SrcBlend-1)<.1)col*=_ReadabilityAlpha;
                 // Multiplicative effects need white at zero opacity; blend factors ignore alpha.
                 if ((_SrcBlend < .5 && abs(_DstBlend-3)<.1) || (abs(_SrcBlend-2)<.1 && _DstBlend<.5)) col=lerp(float3(1,1,1),col,a);
                 return half4(col, a);

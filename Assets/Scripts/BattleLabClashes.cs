@@ -47,13 +47,24 @@ namespace BattleLab
                 if(f.action!=null)f.state=a.blocked?"Attack blocked":"Recovering";
             }
         }
-        void SpawnClash(Vector3 position)
+        void ContactFeedback(Fighter attacker,Fighter target,int damage)
+        {
+            var away=target.body.Centre-attacker.body.Centre;away.y=0;
+            target.body.Recoil(away,Mathf.Lerp(.055f,.13f,Mathf.Clamp01((float)damage/target.MaxHp)));
+            var contact=target.body.Centre-away.normalized*Mathf.Min(.3f,target.body.Bounds.extents.magnitude*.25f);
+            SpawnBurst(contact,Mathf.Clamp(target.body.BodyHeight*.2f,.18f,.38f),.28f);
+            var sound=soundCatalog.MoveClip("TACKLE");if(sound)target.voice.PlayOneShot(sound,.32f);
+            if(Direct&&(attacker==Player||target==Player))hitStopRemaining=Mathf.Max(hitStopRemaining,.045f);
+            contactFeedbackCount++;
+        }
+        void SpawnClash(Vector3 position)=>SpawnBurst(position,.6f,.65f);
+        void SpawnBurst(Vector3 position,float scale,float duration)
         {
             var set=zaFx.moves.SelectMany(m=>m.sets).First(s=>s.name=="cmn_impact_tp01_00");
             var root=VioletFx.Build(set.text,n=>zaFx.textures.FirstOrDefault(t=>t.name==n),zaFx.material);
-            root.name="Ranged clash";root.transform.position=position;root.transform.localScale=Vector3.one*.6f;
+            root.name="Ranged clash";root.transform.position=position;root.transform.localScale=Vector3.one*scale;
             foreach(var ps in VioletFx.Roots(root)){var em=ps.emission;em.enabled=true;ps.Simulate(0,true,true,false);}
-            clashBursts.Add((root,now+.65f));
+            clashBursts.Add((root,now+duration));
         }
         void TickClashes(float dt)
         {

@@ -225,3 +225,27 @@ as a confirmed missing source feature, but the visible eye defect is OPEN.
 Atlas UV/material addressing or overlapping geometry requires further diagnosis;
 shader-variant stripping is not established. Do not claim Iron Jugulis eyes fixed.
 Charizard's eye repair is visually confirmed. Sustained animation checks pass.
+
+
+## Movement transition and contact feel — 22 October follow-up
+
+Focused standalone check: LAB HIT FEEL PASSED, exit0. Arcanine actually moves,
+stops without an attack/reaction, and selects idle; every local bone then matches
+a freshly spawned idle actor at the same animation time. This covers the sparse
+shoulder/spine channels that the earlier sustained-loop check missed.
+Close Combat, Ember, Brick Break and Dragon Pulse each resolve exactly one damage
+event and one contact-feedback event; contact bursts expire. A miss produces no
+feedback and reset clears transient state. No full-roster or full-suite rerun.
+Evidence: evidence/hit-feel, Logs/hit-feel-check.log. Review: Builds/PokedexHitFeel.
+Native shader/layer fidelity, missing BDSP Brick Break models and subjective
+combat feel remain open. The smaller backdrops/glow are lab readability choices.
+
+Post-contact visual inspection caught a remaining flat yellow Close Combat disk
+inside the initially reduced backdrop. Its specific `base` renderer is now omitted
+from the lab readability profile; strikes/sparks/wind/trails remain. This is a
+bounded compatibility choice, not a completed native compositor. The stopped
+Arcanine capture and bone comparison establish run-pose cleanup; comfort/feel
+still need Bruno's playtest.
+
+Final package rerun: exit0, LAB HIT FEEL PASSED in Logs/hit-feel-final.log.
+Post-contact capture visibly confirms the flat yellow disk is absent.

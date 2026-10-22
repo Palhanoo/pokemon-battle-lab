@@ -1,0 +1,6 @@
+Arcanine: actual movement then stop; every local bone pose matches a freshly spawned idle at the same time
+CLOSE_COMBAT: exactly one damage/contact-feedback event; compact burst cleaned up
+EMBER: exactly one damage/contact-feedback event; compact burst cleaned up
+BRICK_BREAK: exactly one damage/contact-feedback event; compact burst cleaned up
+DRAGON_PULSE: exactly one damage/contact-feedback event; compact burst cleaned up
+Miss: no impact feedback; reset clears recoil actors/bursts/hit-stop

@@ -54,7 +54,28 @@ namespace BattleLab
             shootAt=timing==null?Mathf.Max(0,SoundAt):ZaTimeline.ShootAt(timing);
             shootAt=Mathf.Min(shootAt,HitAt-.05f);
             effectMaterials=Effect.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m&&m.HasProperty("_EffectTime")).Distinct().ToArray();
-            Effect.ManualSimulate=true;Step(0);
+            ApplyReadability(Effect.gameObject,move.id);Effect.ManualSimulate=true;Step(0);
+        }
+        static void ApplyReadability(GameObject root,string move)
+        {
+            foreach(var ps in root.GetComponentsInChildren<ParticleSystem>(true))
+            {
+                float scale=1,opacity=1;
+                if(ps.name=="glow"){scale=.3f;opacity=.5f;}
+                if(move=="CLOSE_COMBAT")
+                {
+                    // The reconstructed backdrop renders as a filled disk, not a native
+                    // textured impact. Omit that decorative layer until its compositor is supported.
+                    if(ps.name=="base"){ps.GetComponent<ParticleSystemRenderer>().enabled=false;continue;}
+                    else if(ps.name.StartsWith("wind")||ps.name.StartsWith("trail")){scale=.45f;opacity=.45f;}
+                    else if(ps.transform.parent.name.Contains("warp")){scale=.55f;opacity=.45f;}
+                }
+                var main=ps.main;
+                if(main.startSize3D){main.startSizeXMultiplier*=scale;main.startSizeYMultiplier*=scale;main.startSizeZMultiplier*=scale;}
+                else main.startSizeMultiplier*=scale;
+                var renderer=ps.GetComponent<ParticleSystemRenderer>();
+                if(renderer&&renderer.sharedMaterial&&renderer.sharedMaterial.HasProperty("_ReadabilityAlpha"))renderer.sharedMaterial.SetFloat("_ReadabilityAlpha",opacity);
+            }
         }
         // Use each body's matching family, including PLA's rangeattack01_start/loop/end.
         public static float SplitPlan(ModelEntry entry,AnimationClip clip,float at,float hit,List<(float at,AnimationClip clip,float speed)> list)

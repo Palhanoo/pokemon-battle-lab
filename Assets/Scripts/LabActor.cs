@@ -17,6 +17,10 @@ namespace BattleLab
         public Vector3 Centre => Bounds.center;
         Renderer[] bodyRenderers;
         Dictionary<string,Transform> bones;
+        Transform visualRoot;Vector3 visualRest,recoilDirection;float recoilRemaining;
+        (Transform bone,Vector3 position,Quaternion rotation,Vector3 scale)[] restPose;
+        public void Recoil(Vector3 away,float strength)
+        {recoilDirection=transform.InverseTransformDirection(away.normalized)*Mathf.Clamp(strength,.04f,.16f);recoilRemaining=.18f;}
         float reactionRemaining;
         AnimationClip reactionEnd;
         public Transform Bone(string name)=>name!=null&&bones.TryGetValue(name.Replace("_","").ToLowerInvariant(),out var bone)?bone:null;
@@ -38,6 +42,9 @@ namespace BattleLab
             actor.bodyRenderers=body.GetComponentsInChildren<Renderer>();
             foreach(var skin in body.GetComponentsInChildren<SkinnedMeshRenderer>())skin.updateWhenOffscreen=true;
             actor.bones=body.GetComponentsInChildren<Transform>().GroupBy(t=>t.name.Replace("_","").ToLowerInvariant()).ToDictionary(g=>g.Key,g=>g.First());
+            actor.visualRoot=body.transform;
+            actor.restPose=body.GetComponentsInChildren<Transform>().Where(t=>t!=body.transform)
+                .Select(t=>(t,t.localPosition,t.localRotation,t.localScale)).ToArray();
             if(entry.clips.Any(c=>c.legacy))
             {
                 actor.legacy=body.GetComponent<Animation>()??body.AddComponent<Animation>();actor.legacy.enabled=false;actor.legacy.playAutomatically=false;
@@ -55,6 +62,7 @@ namespace BattleLab
             }
             // Ground once from the posed body. Never chase animated foot bounds each frame.
             body.transform.localPosition-=Vector3.up*(actor.Bounds.min.y-at.y);
+            actor.visualRest=body.transform.localPosition;
             actor.BodyHeight=actor.Bounds.size.y;
             return actor;
         }
@@ -97,6 +105,9 @@ namespace BattleLab
                 legacyCurrent.enabled=true;legacyCurrent.wrapMode=looping?WrapMode.Loop:WrapMode.ClampForever;
                 legacyCurrent.time=legacyClock;legacyCurrent.weight=legacyPrevious!=null?blend:1;
                 if(legacyPrevious!=null){previousClock+=dt*previousRate;legacyPrevious.time=previousClock;legacyPrevious.weight=1-blend;if(blend>=1){legacyPrevious.enabled=false;legacyPrevious=null;}}
+                // Native clips are sparse: idle can omit shoulder/spine channels keyed
+                // by run. Clear the previous pose before sampling the active blend.
+                foreach(var pose in restPose){pose.bone.localPosition=pose.position;pose.bone.localRotation=pose.rotation;pose.bone.localScale=pose.scale;}
                 legacy.Sample();
             }
             else
@@ -110,6 +121,8 @@ namespace BattleLab
             }
             graph.Evaluate(dt);
             }
+            recoilRemaining=Mathf.Max(0,recoilRemaining-dt);
+            visualRoot.localPosition=visualRest+recoilDirection*Mathf.Sin(Mathf.PI*recoilRemaining/.18f);
             if(reactionRemaining>0)
             {
                 reactionRemaining-=dt;

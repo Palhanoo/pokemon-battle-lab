@@ -305,3 +305,34 @@ as a confirmed missing source feature, but the visible eye defect is OPEN.
 Atlas UV/material addressing or overlapping geometry requires further diagnosis;
 shader-variant stripping is not established. Do not claim Iron Jugulis eyes fixed.
 Charizard's eye repair is visually confirmed. Sustained animation checks pass.
+
+## LAB-14 — run pose survives stopping; obscuring effects and weak contact
+
+Bruno reopens Arcanine's raised paw after stopping in PokedexReviewFixes: attack
+or damage resets it. Prior sustained-loop checks missed the transition defect.
+Source evidence: run01_loop keys shoulder and spine transforms absent from
+battlewait01_loop (15 additional channels). A legacy sparse clip retains those
+channels from the previous pose. Restore imported rest transforms before sampling
+the active blend. Recurrence compares every local bone after actual run->stop to
+a fresh idle actor at the same time, rather than checking clip names or motion.
+
+Bruno reports Close Combat's large circle hiding both bodies, weak/no contact
+sensation, and oversized/incomplete Ember, Brick Break and Dragon Pulse layers.
+Close Combat exports a3-unit base circle growing1.5x plus large wind/trail/warp
+layers; reduce those explicit backdrop layers' size/opacity. Reduce broad glow
+layers in shared presentation; keep damage range and other attack shapes intact.
+These are lab readability choices, not a claim of native shader parity.
+At confirmed nonzero damage only, add compact native contact burst, short visual
+recoil (including during another action), a contact sound, and45ms desktop
+hit-stop. Misses, immunities and blocked attacks must not trigger contact cues.
+Source: LabActor, AttackPresentation, VioletParticle, BattleLabApp/Clashes.
+Focused recurrence: Arcanine transition, the four reported moves' actual damage
+and single contact cue, burst expiry and miss/reset. Original BDSP Brick Break
+model-layer gap and native texture/compositor differences remain open.
+
+LAB-14 visual follow-up: the smaller/transparent Close Combat base still draws a
+large flat yellow disk in the post-contact capture. Omit that specific decorative
+base renderer in the lab profile; retain its strikes, sparks, wind and trails.
+This removes an unsupported flat backdrop rather than presenting it as a faithful
+native layer. Final focused pose/contact run passed before this profile-only
+adjustment; the final build is checked again for the four reported attacks.

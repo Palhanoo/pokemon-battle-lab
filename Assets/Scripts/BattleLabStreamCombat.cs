@@ -8,6 +8,52 @@ namespace BattleLab
 {
     public partial class BattleLabApp
     {
+        IEnumerator HitFeelSmoke()
+        {
+            while(loading)yield return null;
+            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/hit-feel"));Directory.CreateDirectory(folder);
+            var report=new List<string>();teamSize=1;ai=false;practice=false;setup=inspect=false;mode=BattleMode.ZA;gameSpeed=1;
+            playerSpecies=Array.IndexOf(Species,"ARCANINE");enemySpecies=0;ResetBattle();while(loading)yield return null;
+            if(loadError!=null)throw new Exception(loadError);
+            testInput=Vector3.forward;float until=now+.67f;while(now<until)yield return null;
+            testInput=Vector3.zero;until=now+.3f;while(now<until)yield return null;
+            if(Player.body.CurrentClip!=Player.body.entry.battle.name)throw new Exception("Stopping did not select idle");
+            Paused=true;
+            var clean=LabActor.Spawn(Player.body.entry,new Vector3(20,0,20));clean.Idle();clean.Tick(.37f);
+            Player.body.Idle();Player.body.Tick(.37f);
+            var expected=clean.GetComponentsInChildren<Transform>();var actual=Player.body.GetComponentsInChildren<Transform>();
+            for(int i=1;i<expected.Length;i++)
+                if(Vector3.Distance(expected[i].localPosition,actual[i].localPosition)>.0001f||Quaternion.Angle(expected[i].localRotation,actual[i].localRotation)>.05f||Vector3.Distance(expected[i].localScale,actual[i].localScale)>.0001f)
+                    throw new Exception("Run pose leaked into idle: "+actual[i].name);
+            Destroy(clean.gameObject);cam.transform.position=Player.body.Centre+new Vector3(0,1.2f,-4);cam.transform.LookAt(Player.body.Centre);CaptureEvidence(Path.Combine(folder,"arcanine-stopped.png"));Paused=false;
+            report.Add("Arcanine: actual movement then stop; every local bone pose matches a freshly spawned idle at the same time");
+            foreach(string id in new[]{"CLOSE_COMBAT","EMBER","BRICK_BREAK","DRAGON_PULSE"})
+            {
+                ResetBattle();while(loading)yield return null;Player.moves[0]=id;
+                Player.body.transform.position=new Vector3(-1,0,0);Target.body.transform.position=new Vector3(1,0,0);
+                int hp=Target.hp;if(!Command(0))throw new Exception(id+" rejected");
+                float deadline=Time.realtimeSinceStartup+20;bool impact=false;
+                while(Player.action!=null&&Time.realtimeSinceStartup<deadline)
+                {
+                    if(!impact&&contactFeedbackCount>0)
+                    {
+                        impact=true;float frameAt=now+.18f;while(now<frameAt)yield return null;
+                        var midpoint=(Player.body.Centre+Target.body.Centre)*.5f;cam.transform.position=midpoint+new Vector3(0,2.3f,-5);cam.transform.LookAt(midpoint);
+                        CaptureEvidence(Path.Combine(folder,id+"-contact.png"));
+                    }
+                    yield return null;
+                }
+                if(Player.action!=null||ResolvedHits!=1||contactFeedbackCount!=1||Target.hp>=hp)throw new Exception(id+" hit/feedback mismatch");
+                until=now+.5f;while(now<until)yield return null;
+                if(clashBursts.Count!=0)throw new Exception("Contact burst lingered");
+                report.Add(id+": exactly one damage/contact-feedback event; compact burst cleaned up");
+            }
+            ResetBattle();while(loading)yield return null;Begin(0,0,MoveStyle.Normal);Impact(Player,false);
+            if(contactFeedbackCount!=0)throw new Exception("Miss produced hit feedback");Cancel(Player);
+            report.Add("Miss: no impact feedback; reset clears recoil actors/bursts/hit-stop");
+            if(smokeErrors>0)throw new Exception(lastSmokeError);
+            File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log("LAB HIT FEEL PASSED");Application.Quit(0);
+        }
         IEnumerator ReviewFixSmoke()
         {
             while(loading)yield return null;
