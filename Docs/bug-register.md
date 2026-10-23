@@ -618,3 +618,11 @@ asset audit (3,600 bindings,0 missing,0 unknown particle commands) and Dig with
 normal roster loading pass. Rendered review accepts the reported repair scope;
 curated contact/timeline evidence is under attack-completion/final-review. Exact
 source-game parity limits remain explicitly recorded in the chapter notes.
+
+Bruno playtest feedback after the AttackVisuals20261023 release: he played a subset
+of attacks and reports they feel substantially better. This is positive manual
+feedback for the tested subset, not verification of every species/move pairing.
+He asks which fidelity gaps remain and whether to expand the move set. Distinguish
+resolved staged asset bindings from the two unmapped Iron Tail material curves,
+renderer parity limits, shared physical/special body clips and source-engine scope
+(ZA/BDSP effects; other model families currently reuse ZA effects).

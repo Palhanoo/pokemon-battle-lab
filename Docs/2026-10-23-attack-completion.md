@@ -164,3 +164,11 @@ set. That run is rejected as acceptance evidence. The selected 47 ZA / 22 BDSP
 pipeline was restored, with a runtime count guard and required model-layer checks.
 Full current-build rendered acceptance results follow below; these source repairs
 alone do not close the visual gate.
+
+Bruno playtest feedback after the AttackVisuals20261023 release: he played a subset
+of attacks and reports they feel substantially better. This is positive manual
+feedback for the tested subset, not verification of every species/move pairing.
+He asks which fidelity gaps remain and whether to expand the move set. Distinguish
+resolved staged asset bindings from the two unmapped Iron Tail material curves,
+renderer parity limits, shared physical/special body clips and source-engine scope
+(ZA/BDSP effects; other model families currently reuse ZA effects).
