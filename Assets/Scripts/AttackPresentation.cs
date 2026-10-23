@@ -17,6 +17,10 @@ namespace BattleLab
         public float SoundAt { get; private set; }
         public int CueCount => cueIndex;
         readonly LabActor body,target;
+        readonly Func<Vector3> aim; readonly Transform aimAnchor; readonly VioletMove.Battler defender;
+        Vector3 frozenAim; bool aimFrozen;
+        public void FreezeAim(Vector3 point){frozenAim=point;aimFrozen=true;if(aimAnchor)aimAnchor.position=point;}
+        Vector3 Destination=>aimAnchor?aimAnchor.position:target.Centre;
         readonly bool projectile,beam,groundWave;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
         readonly ZaMove timing;
         readonly Material[] effectMaterials;
@@ -27,12 +31,18 @@ namespace BattleLab
         public static VioletMove.Battler Bind(LabActor actor)=>new VioletMove.Battler{
             root=actor.transform,head=actor.Bone("head"),height=actor.Bounds.size.y,radius=Mathf.Max(actor.Bounds.extents.x,actor.Bounds.extents.z),
             scale=actor.transform.lossyScale.x,center=()=>actor.Centre,bone=actor.Bone};
-        public AttackPresentation(LabActor actor,LabActor target,MoveData move,VioletFxCatalog za,BdspFxCatalog bdsp,NativeTiming table)
+        public AttackPresentation(LabActor actor,LabActor target,MoveData move,VioletFxCatalog za,BdspFxCatalog bdsp,NativeTiming table,EffectSource source=EffectSource.Auto,Func<Vector3> aim=null,float fieldRadius=4)
         {
             body=actor;this.target=target;projectile=move.shape=="Projectile"||move.shape=="Beam";beam=move.shape=="Beam";groundWave=move.id=="MUDDY_WATER";
-            if(actor.entry.source=="BDSP"&&bdsp.Has(move.id))
+            this.aim=aim;defender=Bind(target);
+            if(aim!=null)
             {
-                var fx=bdsp.Play(move.id,Bind(actor),Bind(target));Effect=fx;
+                aimAnchor=new GameObject("Attack aim point").transform;aimAnchor.position=aim();aimAnchor.rotation=actor.transform.rotation;
+                defender=new VioletMove.Battler{root=aimAnchor,height=1,radius=.35f,scale=1,center=()=>aimAnchor.position,bone=_=>null};
+            }
+            if((source==EffectSource.BDSP||source==EffectSource.Auto&&actor.entry.source=="BDSP")&&bdsp.Has(move.id))
+            {
+                var fx=bdsp.Play(move.id,Bind(actor),defender);Effect=fx;
                 if(!fx)throw new InvalidOperationException("Missing BDSP effects: "+move.id);
                 fx.time=0;HitAt=Mathf.Max(.1f,fx.HitTime);
                 var clip=actor.entry.Role(move.physical?"attack":"special");
@@ -42,7 +52,7 @@ namespace BattleLab
             else
             {
                 timing=table.Get(move.id)??throw new InvalidOperationException("Missing native timing: "+move.id);
-                var fx=za.Play(move.id,Bind(actor),Bind(target),move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
+                var fx=za.Play(move.id,Bind(actor),defender,move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
                 if(fx && (move.id=="HYDRO_PUMP" || move.id=="PSYBEAM" || move.id=="ICE_BEAM"))fx.FitUnitBeam=true;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
                 fx.LabMove=move.id;fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
@@ -55,7 +65,14 @@ namespace BattleLab
             shootAt=timing==null?Mathf.Max(0,SoundAt):ZaTimeline.ShootAt(timing);
             shootAt=Mathf.Min(shootAt,HitAt-.05f);
             effectMaterials=Effect.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m&&m.HasProperty("_EffectTime")).Distinct().ToArray();
-            ApplyReadability(Effect.gameObject,move.id);Effect.ManualSimulate=true;Step(0);
+            ApplyReadability(Effect.gameObject,move.id);
+            if(move.id=="EARTHQUAKE")
+            {
+                if(Effect is BdspMove quake)quake.FieldRadius=fieldRadius;
+                else foreach(var t in Effect.gameObject.GetComponentsInChildren<Transform>(true))
+                    if(t.parent&&t.parent.parent==Effect.gameObject.transform&&!t.GetComponent<ParticleSystem>()&&t.parent.name!="ready")t.localScale*=fieldRadius/4;
+            }
+            Effect.ManualSimulate=true;Step(0);
         }
         public static void ApplyReadability(GameObject root,string move)
         {
@@ -119,7 +136,8 @@ namespace BattleLab
         public void Step(float dt,bool bodyOwned=true)
         {
             previousTime=Time;Time+=dt;
-            if(!launched&&Time>=shootAt){launched=true;travelOrigin=body.Centre+body.transform.forward*.25f;travelTarget=target.Centre;}
+            if(aimAnchor)aimAnchor.position=aimFrozen?frozenAim:aim();
+            if(!launched&&Time>=shootAt){launched=true;travelOrigin=body.Centre+body.transform.forward*.25f;travelTarget=Destination; if(aim!=null&&!beam)FreezeAim(travelTarget);}
             if(bodyOwned&&body)
             {
                 while(cueIndex<cues.Count&&cues[cueIndex].at<=Time+.0001f)
@@ -134,7 +152,7 @@ namespace BattleLab
         {
             previous=current=Vector3.zero;
             if(!projectile||!Alive||Time<shootAt||previousTime>HitAt)return false;
-            if(beam){previous=VioletMove.Node(Bind(body),"eff_rangeattack01");current=target.Centre;return true;}
+            if(beam){previous=VioletMove.Node(Bind(body),"eff_rangeattack01");current=Vector3.Lerp(previous,Destination,Mathf.Clamp01((Time-shootAt)/Mathf.Max(.01f,Mathf.Min(.28f,HitAt-shootAt))));return true;}
             if(Effect is VioletMove native && native.ProjectileSegment(out previous,out current))
             {if(groundWave){previous.y+=.55f;current.y+=.55f;}return true;}
             float duration=Mathf.Max(.05f,HitAt-shootAt);
@@ -143,6 +161,6 @@ namespace BattleLab
         }
         public void BlockEffects(){Dispose();}
         public void Dispose()
-        {if(Alive)UnityEngine.Object.Destroy(Effect.gameObject);Effect=null;}
+        {if(Alive)UnityEngine.Object.Destroy(Effect.gameObject);Effect=null;if(aimAnchor)UnityEngine.Object.Destroy(aimAnchor.gameObject);}
     }
 }

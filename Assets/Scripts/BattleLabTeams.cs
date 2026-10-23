@@ -44,7 +44,7 @@ namespace BattleLab
             {
                 int index=(controlled+step)%fighters.Length;
                 if(fighters[index].team==0&&fighters[index].hp>0)
-                {controlled=index;var target=Target;Note("Controlling "+Player.data.id+" · Q switches ally");return;}
+                {controlled=index;marked=false;var target=Target;Note("Controlling "+Player.data.id+" · Q switches ally");return;}
             }
         }
         void CycleTarget()
@@ -84,11 +84,11 @@ namespace BattleLab
         {
             for(int pass=0;pass<4;pass++)foreach(var other in fighters)
             {
-                if(other==f||other.hp<=0||!other.body||IsUnderground(other))continue;
+                if(other==f||other.hp<=0||!other.body||IsUnderground(other)||Mathf.Abs(f.altitude-other.altitude)>Mathf.Max(1,other.body.BodyHeight))continue;
                 var away=next-other.body.transform.position;away.y=0;float clearance=f.body.FootprintRadius(-away)+other.body.FootprintRadius(away)+.12f;
                 if(away.magnitude<clearance)next=other.body.transform.position+(away.sqrMagnitude>.001f?away.normalized:Vector3.back)*clearance;
             }
-            next.y=0;next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);return next;
+            next.y=f.altitude;next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);return next;
         }
         void TickReposition(float dt)
         {

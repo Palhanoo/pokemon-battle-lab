@@ -48,6 +48,7 @@ namespace BattleLab.Native
         public VioletMove.Battler attacker, defender;
         public float time, startTime, endTime, lastEmit, hitTime = -1, attackTime = -1;
         public bool manualSimulate;
+        public float FieldRadius=4;
         static Dictionary<int, string> locators;
 
         string moveId;

@@ -1,0 +1,11 @@
+Same Swampert model: independent ZA and BDSP native effects, cleanup
+Ice Beam aimed away: selected target takes no damage
+Ice Beam aimed at body: exactly one hit
+Earthquake casts in place; 7m radius hits distant grounded enemy
+Flight rises, spends energy and lands
+Water-type speed bonus restricted to water lane
+BLAZIKEN: native Mega model/stats, HP fraction preserved on return
+SWAMPERT: native Mega model/stats, HP fraction preserved on return
+SALAMENCE: native Mega model/stats, HP fraction preserved on return
+Dynamax scale and 2x HP; timed return preserves damage fraction
+Reset clears transformations, aim anchors, actions and effects

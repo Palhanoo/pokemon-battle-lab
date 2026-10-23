@@ -30,6 +30,7 @@ namespace BattleLab
             catalog.data=new LabData{moves=catalog.data.moves,types=catalog.data.types,species=order.Where(s=>rows.Any(r=>r.species==s)).Select(s=>rows.First(r=>r.species==s).data).ToArray()};
             catalog.models=rows.Select(r=>new ModelEntry{species=r.species,source=r.source,roles=r.roles,clips=Array.Empty<AnimationClip>()}).ToArray();
         }
+        public void RegisterForm(RosterRow row)=>bySpecies.Add(row.species,row);
         public async Task Prepare(IEnumerable<ModelEntry> models)
         {
             var needed=models.Distinct().ToArray();var ids=needed.Select(m=>m.species).ToHashSet();

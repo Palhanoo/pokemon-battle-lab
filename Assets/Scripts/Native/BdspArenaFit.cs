@@ -64,9 +64,9 @@ namespace BattleLab.Native
             }
             if(moveId=="MOVE_EARTHQUAKE")
             {
-                if(g.model){g.tr.position=attacker.root.position;g.tr.localScale=Vector3.one;g.tr.rotation=groundFacing;}
+                if(g.model){g.tr.position=attacker.root.position;g.tr.localScale=new Vector3(FieldRadius/3.5f,1,FieldRadius/3.5f);g.tr.rotation=groundFacing;}
                 else if(g.file=="ew089_at_kem"||g.file=="ew089_crack_kem01")
-                {g.tr.position=attacker.root.position;g.tr.localScale=g.scale*Size(attacker)*.22f;}
+                {g.tr.position=attacker.root.position;g.tr.localScale=g.scale*Size(attacker)*.22f*(FieldRadius/4);}
             }
             if(moveId=="MOVE_BLAZE_KICK")
             {

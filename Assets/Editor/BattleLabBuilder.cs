@@ -83,6 +83,16 @@ public static class BattleLabBuilder
             }
             File.Copy("LocalRoster/catalog.json",Path.Combine(destination,"catalog.json"),true);
             Debug.Log("LAB ROSTER STAGED: "+roster.models.Length+" species; models load on demand");
+            if(File.Exists("LocalForms/catalog.json"))
+            {
+                string formsDestination=Path.Combine(output,"PokemonBattleLab_Data/StreamingAssets/Forms");Directory.CreateDirectory(formsDestination);
+                foreach(var source in Directory.GetFiles("LocalForms"))
+                {
+                    string target=Path.Combine(formsDestination,Path.GetFileName(source));
+                    if(!File.Exists(target)||new FileInfo(source).Length!=new FileInfo(target).Length||File.GetLastWriteTimeUtc(source)!=File.GetLastWriteTimeUtc(target))File.Copy(source,target,true);
+                }
+                Debug.Log("LAB MEGA FORMS STAGED");
+            }
         }
     }
 }

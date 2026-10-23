@@ -5,6 +5,7 @@ using UnityEngine;
 namespace BattleLab
 {
     public enum BattleMode { BDSP, Arceus, ZA }
+    public enum EffectSource { Auto, ZA, BDSP }
     public enum MoveStyle { Normal, Agile, Strong }
     [Serializable] public class SpeciesData { public string id; public int[] stats; public string[] types, moves; }
     [Serializable] public class MoveData

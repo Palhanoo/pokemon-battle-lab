@@ -1,0 +1,28 @@
+{
+  "build": "Builds/ImmersiveBattle20261023",
+  "stableCommit": "be0a9d0b50de8148ef343d81ddf82b52a0d70909",
+  "stableTag": "reviewed-hoenn-20261023",
+  "branch": "codex/immersive-battle",
+  "baseModels": 1000,
+  "megaForms": 96,
+  "buildErrors": 0,
+  "focusedTests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "runtimeReviews": [
+    "same-body ZA/BDSP selection",
+    "aimed beam hit/miss",
+    "aimed beam clash",
+    "Earthquake field/radius",
+    "flight energy and landing",
+    "water speed including Starmie",
+    "Blaziken/Swampert/Salamence Mega model and stat swaps",
+    "Mega Blaze Kick damage",
+    "Dynamax HP ratio, timer and three-attack limits",
+    "reset cleanup"
+  ],
+  "renderedReview": "accepted tested field/camera/UI and representative form scope",
+  "userPlaytest": "pending",
+  "limits": "Dynamax prototype retains ordinary moves; no Max/G-Max implementation. See iteration notes for renderer, body-bound hit detection and untested combination limits."
+}

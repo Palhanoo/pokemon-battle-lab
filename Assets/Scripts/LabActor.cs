@@ -19,7 +19,7 @@ namespace BattleLab
         public float FootprintRadius(Vector3 direction)
         {
             var local=transform.InverseTransformDirection(direction.normalized);
-            return Mathf.Max(.15f,Vector3.Dot(footprint.center,local)+Mathf.Abs(local.x)*footprint.extents.x+Mathf.Abs(local.z)*footprint.extents.z);
+            return transform.lossyScale.x*Mathf.Max(.15f,Vector3.Dot(footprint.center,local)+Mathf.Abs(local.x)*footprint.extents.x+Mathf.Abs(local.z)*footprint.extents.z);
         }
         Renderer[] bodyRenderers;
         Dictionary<string,Transform> bones;

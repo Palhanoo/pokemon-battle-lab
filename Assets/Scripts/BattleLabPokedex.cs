@@ -35,7 +35,7 @@ namespace BattleLab
             try
             {
                 // Old actors must be destroyed before their shared import resources are evicted.
-                await Task.Yield();await pokedex.Prepare(RequiredModels());if(!this)return;
+                await Task.Yield();await pokedex.Prepare(RequiredModels().Concat(RequiredForms()));if(!this)return;
                 ResetBattleReady();
             }
             catch(Exception e){loadError=e.Message;Debug.LogException(e);}
@@ -88,8 +88,8 @@ namespace BattleLab
                 }
                 if(!changed)throw new Exception(row.species+" clips did not animate any bones");
                 if(smokeErrors>0)throw new Exception(row.species+" logged "+smokeErrors+" runtime errors: "+lastSmokeError);
-                actor.Idle();actor.Tick(.2f);if(pokedex.LoadedCount>2)throw new Exception("Pokédex cache retained unused models");
-                report.Add(row.species+" / "+row.source+" · loaded, bounds, six roles, cache <=2 passed");
+                actor.Idle();actor.Tick(.2f);if(pokedex.LoadedCount>RequiredModels().Concat(RequiredForms()).Distinct().Count())throw new Exception("Pokédex cache retained unused models");
+                report.Add(row.species+" / "+row.source+" · loaded, bounds, six roles, cache limited to required base/form models passed");
                 if(row.dex%25==0||new[]{"TREECKO","RAYQUAZA","POOCHYENA","CATERPIE"}.Contains(row.species))CaptureEvidence(Path.Combine(folder,row.species+".png"));
                 File.WriteAllLines(Path.Combine(folder,"roster-smoke-"+startDex+".txt"),report);yield return null;
             }

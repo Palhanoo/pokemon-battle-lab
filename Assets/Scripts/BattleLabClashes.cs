@@ -41,7 +41,9 @@ namespace BattleLab
         {
             foreach(var f in fighters)
             {
-                var a=f.action;if(a==null||a.phase!=1||a.hit||a.clock<a.presentation.HitAt)continue;
+                var a=f.action;if(a==null||a.phase!=1||a.hit)continue;
+                if(a.aimed&&CanClash(a.move)){ResolveAimedHit(f);continue;}
+                if(a.clock<a.presentation.HitAt)continue;
                 a.hit=true;
                 if(!a.blocked&&f.hp>0&&a.target.hp>0)
                 {
@@ -54,9 +56,14 @@ namespace BattleLab
                         foreach(var victim in fighters.Where(v=>v.team!=f.team&&v.hp>0).ToArray())
                         {
                             float distance=Vector3.Distance(f.body.transform.position,victim.body.transform.position);
-                            bool reached=distance<=a.move.radius+Mathf.Max(victim.body.Bounds.extents.x,victim.body.Bounds.extents.z)&&now>=victim.dodgeUntil&&!IsUnderground(victim);
+                            bool reached=distance<=a.fieldRadius+Mathf.Max(victim.body.Bounds.extents.x,victim.body.Bounds.extents.z)&&now>=victim.dodgeUntil&&!IsUnderground(victim)&&victim.altitude<.65f;
                             if(reached)Impact(f,true,victim);
                         }
+                    }
+                    else if(a.aimed)
+                    {
+                        foreach(var victim in fighters.Where(v=>v.team!=f.team&&v.hp>0))
+                            if(Vector3.Distance(victim.body.Centre,a.aimPoint)<=Mathf.Max(.7f,a.move.radius)+victim.body.Bounds.extents.magnitude*.45f&&now>=victim.dodgeUntil&&!IsUnderground(victim))Impact(f,true,victim);
                     }
                     else Impact(f,contact);
                 }
