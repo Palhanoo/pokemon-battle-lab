@@ -33,6 +33,12 @@ namespace BattleLab.Native
         bool actorLease;
         readonly object actorKey=new();
         public bool ExternalActorClock;
+        public bool SteeredDig;
+        public bool HiddenAt(float at)=>ZaActorPresentation.Evaluate(actorClips,at).hidden;
+        public Vector2 HideWindow
+        {
+            get {var c=actorClips.Find(x=>VioletFx.J.Str(x,"cmd")=="Title/Character/EnableInvisible");return c==null?Vector2.zero:new Vector2(VioletFx.J.F(c,"start"),VioletFx.J.F(c,"end"));}
+        }
         public bool FitUnitBeam;bool beamPrepared;readonly HashSet<Mesh> beamSourceMeshes=new();
         public void SampleActor(float elapsed){if(actorPresentation && actorLease)actorPresentation.Sample(actorKey,actorClips,elapsed);}
         public Battler attacker, defender;
@@ -228,6 +234,8 @@ namespace BattleLab.Native
                     if(direction.sqrMagnitude>.0001f)o.fx.transform.rotation=Quaternion.LookRotation(direction);
                     o.fx.transform.localScale=Vector3.one*Mathf.Clamp(defender.height*.45f,.18f,.65f);
                 }
+                if(SteeredDig&&(o.name=="ew0091_attack_out"||o.name=="ew0091_sign"||o.name=="impact0_0"))
+                {o.fx.transform.position=attacker.root.position;o.fx.transform.localScale=Vector3.one*Mathf.Clamp(attacker.height*.45f,.3f,1.2f);}
                 if (manualSimulate && o.playing)
                     foreach (var ps in VioletFx.Roots(o.fx)) ps.Simulate(dt, true, false, false);
             }
@@ -235,14 +243,23 @@ namespace BattleLab.Native
 
         public bool ProjectileSegment(out Vector3 previous,out Vector3 current)
         {
-            if(FitUnitBeam){previous=current=Vector3.zero;return false;}
+            previous=current=Vector3.zero;if(FitUnitBeam)return false;
+            Obj selected=null;float firstEmit=float.MaxValue;
             foreach(var o in objs)
             {
                 if(!o.name.StartsWith("bullet")||!o.playing)continue;
+                // Carriers, stationary muzzles and expired tails are not a flight path.
+                var travel=o.clips.Find(c=>VioletFx.J.Str(c,"cmd")=="GameObject/SetTranslation"
+                    &&VioletFx.J.Str(VioletFx.J.Obj(c["params"]),"Target")=="DEF"
+                    &&VioletFx.J.F(c,"end")-VioletFx.J.F(c,"start")>1.5f/VioletFx.Fps);
+                if(travel==null||previousTime>VioletFx.J.F(travel,"end"))continue;
                 float emit=float.MaxValue;foreach(var clip in o.clips)if(VioletFx.J.Str(clip,"cmd")=="Particle/Emit")emit=Mathf.Min(emit,VioletFx.J.F(clip,"start"));
-                current=o.fx.transform.position;previous=previousTime<emit?current:o.previousPosition;return true;
+                // Object dependency sorting is not shot order. Keep the leading active
+                // projectile instead of jumping back to each newly emitted child.
+                if(emit<firstEmit){firstEmit=emit;selected=o;}
             }
-            previous=current=Vector3.zero;return false;
+            if(selected==null)return false;
+            current=selected.fx.transform.position;previous=previousTime<firstEmit?current:selected.previousPosition;return true;
         }
 
         void Apply(Obj o, Dictionary<string, object> c, float prev, float now)
@@ -330,6 +347,13 @@ namespace BattleLab.Native
                     tr.localScale = span > 1.5f / VioletFx.Fps && scaleFrom.TryGetValue(o, out var from) ? Vector3.Lerp(from, to, k) : to;
                     break;
                 }
+                case "Title/Character/SetTargetPosition":
+                    tr.position=(SteeredDig?attacker:defender).root.position;
+                    break;
+                case "Physics/CastRay":
+                    // The battle lab's floor is y=0. Native ray endpoints locate this same surface.
+                    tr.position=new Vector3(tr.position.x,0,tr.position.z);
+                    break;
                 case "Title/Battle/AdjustScaleTarget":
                 {
                     var target = Side(VioletFx.J.Str(p, "Target"));

@@ -16,6 +16,7 @@ namespace BattleLab
             {
                 var r=renderers[i];var m=r.sharedMaterial;var ps=r.GetComponent<ParticleSystem>();
                 r.enabled=GUI.Toggle(new Rect(0,i*76,520,27),r.enabled,r.name+" · "+ps.particleCount+" particles");
+                if(!m)continue;
                 var textures=new[]{"_MainTex","_SubTex","_ThirdTex"}.Where(p=>m.HasProperty(p)&&m.GetTexture(p)).Select(p=>m.GetTexture(p).name);
                 Text(20,i*76+29,510,string.Join(" + ",textures),small,44);
             }

@@ -39,6 +39,11 @@ Shader "Hoenn/VioletParticle"
         _MainMotion ("Main scale / rotation rate", Vector) = (0,0,0,0)
         _SubMotion ("Second scale / rotation rate", Vector) = (0,0,0,0)
         _ThirdMotion ("Third scale / rotation rate", Vector) = (0,0,0,0)
+        _ParticleUvClock ("Use native particle texture clock", Float) = 0
+        _MainSheet ("Main texture atlas dimensions", Vector) = (1,1,0,0)
+        _MainRandomScroll ("Main random texture phase", Vector) = (0,0,0,0)
+        _SubRandomScroll ("Sub random texture phase", Vector) = (0,0,0,0)
+        _ThirdRandomScroll ("Third random texture phase", Vector) = (0,0,0,0)
         _EffectTime ("Presentation clock", Float) = 0
         _MainScroll ("Main mask scroll", Vector) = (0,0,0,0)
         _MainRotation ("Main mask rotation", Float) = 0
@@ -84,6 +89,8 @@ Shader "Hoenn/VioletParticle"
                 float4 _ColorChannels, _AlphaChannels, _ColorBlends, _AlphaBlends, _ModelColor, _ModelEmission;
                 float4 _MainWrap, _SubWrap, _ThirdWrap;
                 float _ReadabilityAlpha, _MainSphere, _SubSphere, _ThirdSphere;
+                float _ParticleUvClock;
+                float4 _MainSheet,_MainRandomScroll,_SubRandomScroll,_ThirdRandomScroll;
                 float _EffectTime, _MainRotation, _SubRotation, _ThirdRotation, _UseThird, _ThirdGrey;
                 float4 _ThirdTex_ST, _ThirdScroll, _MainMotion, _SubMotion, _ThirdMotion;
                 float4 _MainScroll;
@@ -98,7 +105,8 @@ Shader "Hoenn/VioletParticle"
                 float4 t0 : TEXCOORD0; // uv.xy, c0.xy
                 float4 t1 : TEXCOORD1; // c0.zw, c1.xy
                 float4 t2 : TEXCOORD2; // c1.zw, primitive.rg
-                float2 t3 : TEXCOORD3; // primitive.ba
+                float4 t3 : TEXCOORD3; // primitive.ba, normalized age, inverse lifetime
+                float4 t4 : TEXCOORD4; // stable per-particle random
                 UNITY_VERTEX_INPUT_INSTANCE_ID
             };
             struct V
@@ -113,6 +121,7 @@ Shader "Hoenn/VioletParticle"
                 float3 world : TEXCOORD5;
                 float2 rawUv : TEXCOORD6;
                 float4 primitive : TEXCOORD7;
+                float4 particleUv : TEXCOORD8; // seconds since birth, random phase
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -130,7 +139,8 @@ Shader "Hoenn/VioletParticle"
                 o.n = TransformObjectToWorldNormal(i.normal);
                 o.c0 = float4(i.t0.zw, i.t1.xy);
                 o.c1 = float4(i.t1.zw, i.t2.xy);
-                o.primitive=float4(i.t2.zw,i.t3);
+                o.primitive=float4(i.t2.zw,i.t3.xy);
+                o.particleUv=float4(i.t3.z/max(i.t3.w,1e-6),i.t4.xyz);
                 if(_Model>.5){o.c0=_ModelColor;o.c1=float4(0,0,0,1);o.color=1;}
                 return o;
             }
@@ -143,7 +153,7 @@ Shader "Hoenn/VioletParticle"
             }
             float2 WrapMask(float2 uv,float2 mode){return float2(WrapAxis(uv.x,mode.x),WrapAxis(uv.y,mode.y));}
             float3 ColorChannel(float4 t,float channel){return channel<.5?t.rgb:channel<1.5?float3(1,1,1):channel<2.5?1-t.rgb:channel<3.5?t.aaa:1-t.aaa;}
-            float AlphaChannel(float4 t,float channel){return channel<.5?t.a:channel<1.5?t.r:channel<2.5?1:1-t.a;}
+            float AlphaChannel(float4 t,float channel){return channel<.5?t.a:channel<1.5?t.r:channel<2.5?1:channel<3.5?1-t.a:1-t.r;}
             float4 Combine(float4 a,float4 b,float colorOp,float alphaOp)
             {return float4(colorOp<.5?a.rgb*b.rgb:colorOp<1.5?a.rgb+b.rgb:a.rgb-b.rgb,alphaOp<.5?a.a*b.a:alphaOp<1.5?a.a+b.a:a.a-b.a);}
             float4 Channels(float4 t,float color,float alpha){return float4(ColorChannel(t,color),AlphaChannel(t,alpha));}
@@ -153,9 +163,15 @@ Shader "Hoenn/VioletParticle"
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
                 // Normalize after interpolation: sphere masks must not flatten across coarse mesh faces.
                 float2 sphereUv=normalize(mul((float3x3)GetWorldToViewMatrix(),i.n)).xy*.5+.5;
-                i.uv.xy=RotateMask(lerp(i.rawUv,sphereUv,_MainSphere),_MainRotation+_MainMotion.z*_EffectTime)*(_MainTex_ST.xy+_MainMotion.xy*_EffectTime)+_MainTex_ST.zw+_MainScroll.xy*_EffectTime;
-                i.uv.zw=RotateMask(lerp(i.rawUv,sphereUv,_SubSphere),_SubRotation+_SubMotion.z*_EffectTime)*(_SubTex_ST.xy+_SubMotion.xy*_EffectTime)+_SubTex_ST.zw+_SubScroll.xy*_EffectTime;
-                i.thirdUv=RotateMask(lerp(i.rawUv,sphereUv,_ThirdSphere),_ThirdRotation+_ThirdMotion.z*_EffectTime)*(_ThirdTex_ST.xy+_ThirdMotion.xy*_EffectTime)+_ThirdTex_ST.zw+_ThirdScroll.xy*_EffectTime;
+                float clock=lerp(_EffectTime,i.particleUv.x,_ParticleUvClock);
+                // Unity animates UV0 for the main atlas. Other texture slots use the
+                // full original face, not the narrow rectangle of that atlas frame.
+                float2 baseUv=i.rawUv;
+                if(_ParticleUvClock>.5&&(_MainSheet.x>1||_MainSheet.y>1))baseUv=frac(i.rawUv*_MainSheet.xy);
+                float2 phase=i.particleUv.yz*_ParticleUvClock;
+                i.uv.xy=RotateMask(lerp(i.rawUv,sphereUv,_MainSphere),_MainRotation+_MainMotion.z*clock)*(_MainTex_ST.xy+_MainMotion.xy*clock)+_MainTex_ST.zw+_MainScroll.xy*clock+phase*_MainRandomScroll.xy;
+                i.uv.zw=RotateMask(lerp(baseUv,sphereUv,_SubSphere),_SubRotation+_SubMotion.z*clock)*(_SubTex_ST.xy+_SubMotion.xy*clock)+_SubTex_ST.zw+_SubScroll.xy*clock+phase.yx*_SubRandomScroll.xy;
+                i.thirdUv=RotateMask(lerp(baseUv,sphereUv,_ThirdSphere),_ThirdRotation+_ThirdMotion.z*clock)*(_ThirdTex_ST.xy+_ThirdMotion.xy*clock)+_ThirdTex_ST.zw+_ThirdScroll.xy*clock+frac(phase+.381966)*_ThirdRandomScroll.xy*_ParticleUvClock;
                 float2 screenUv=GetNormalizedScreenSpaceUV(i.cs);
                 float eyeDepth=-TransformWorldToView(i.world).z;
                 float fade=1;

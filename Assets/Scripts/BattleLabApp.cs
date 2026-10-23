@@ -35,7 +35,7 @@ namespace BattleLab
             public MoveData move; public MoveStyle style; public Fighter target;
             public int phase,slot; public float clock;
 
-            public AttackPresentation presentation; public bool hit,sounded,blocked;
+            public DigTravel dig; public AttackPresentation presentation; public bool hit,sounded,blocked;
             public int? remainingDamage; public readonly HashSet<Action> met=new();
         }
         Fighter[] fighters;
@@ -86,7 +86,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();BuildArena();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -173,7 +173,7 @@ namespace BattleLab
         }
         void StopActions()
         {
-            if(fighters!=null)foreach(var f in fighters){f.action?.presentation?.Dispose();if(f.voice)f.voice.Stop();if(f.body)Destroy(f.body.gameObject);}
+            if(fighters!=null)foreach(var f in fighters){EndDig(f);f.action?.presentation?.Dispose();if(f.voice)f.voice.Stop();if(f.body)Destroy(f.body.gameObject);}
             foreach(var tail in tails)tail.Dispose();tails.Clear();
             foreach(var burst in clashBursts)DestroyBurst(burst.root);clashBursts.Clear();
             hitStopRemaining=0;contactFeedbackCount=0;fighters=null;foreach(var f in flashes)if(f.go)Destroy(f.go);flashes.Clear();
@@ -297,6 +297,7 @@ namespace BattleLab
                 if(p.action.phase==0)Cancel(p);
                 else if(p.action.hit&&p.action.clock>=p.action.presentation.HitAt+.18f)ReleaseAction(p);
             }
+            if(IsUnderground(p))MoveUnderground(p,input,dt);
             if(p.action==null)
             {
                 if(dash&&now>=dodgeReady)
@@ -339,17 +340,18 @@ namespace BattleLab
             if(a.phase==0)
             {
                 float desired=Clearance(f,a.target)+(a.move.shape=="Melee"?.15f:Mathf.Min(6,Mathf.Max(2,a.move.rangeMax)*.8f));
-                if(Vector3.Distance(from,to)>desired+.05f)
+                if(!(Direct&&a.move.id=="DIG")&&Vector3.Distance(from,to)>desired+.05f)
                 {MoveActor(f,to+(from-to).normalized*desired,dt,4);return;}
                 f.body.Face(to);
                 if(mode==BattleMode.ZA)f.ready[a.slot]=now+a.move.cooldown;
                 a.presentation=new AttackPresentation(f.body,a.target.body,a.move,zaFx,bdspFx,nativeTiming);
+                if(Direct&&a.move.id=="DIG"&&a.presentation.Effect is VioletMove digFx){a.dig=new DigTravel(digFx);digFx.SteeredDig=true;}
                 a.phase=1;a.clock=0;f.state="Wind-up";
                 Note($"{f.body.entry.source} body · {(a.presentation.Effect is BdspMove?"BDSP":"Z-A")} attack effects");
             }
             if(a.phase==1)
             {
-                a.clock+=dt;a.presentation.Step(dt);
+                a.clock+=dt;TickDig(f,dt);a.presentation.Step(dt);
                 if(!a.sounded&&a.clock>=a.presentation.SoundAt)
                 {a.sounded=true;var clip=soundCatalog.MoveClip(a.move.id);if(clip){f.voice.volume=soundVolume;f.voice.PlayOneShot(clip);}}
                 // Quick Attack's small committed burst is lab movement, synchronized to the native release.
@@ -388,7 +390,7 @@ namespace BattleLab
 
         }
         void Cancel(Fighter f)
-        {f.action?.presentation?.Dispose();f.action=null;f.state=f.hp<=0?"Fainted":"Ready";if(f.hp>0)f.body.Idle();}
+        {EndDig(f);f.action?.presentation?.Dispose();f.action=null;f.state=f.hp<=0?"Fainted":"Ready";if(f.hp>0)f.body.Idle();}
         Color MoveColor(MoveData m)=>m.type=="ELECTRIC"?new Color(1,.8f,.15f):m.type=="GHOST"||m.type=="POISON"?new Color(.7f,.35f,.95f):m.type=="FIGHTING"?new Color(.25f,.7f,1):new Color(.8f,.9f,1);
         void Styles()
         {
@@ -556,7 +558,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             while(true)
             {
                 object item;

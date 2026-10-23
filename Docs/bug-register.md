@@ -514,3 +514,71 @@ invisible carriers, 195 ZA / 188 BDSP soft-particle entries. Native states resto
 on 914 masked and 242 one-sided ZA emitter records. No attacks added or full
 roster tests rerun. Evidence: Docs/evidence/shader-details. Bruno's acceptance is
 pending; launcher selects this isolated build and prior builds are preserved.
+
+
+## LAB-18 — completion gate, Nidoking Sludge splash, controllable Dig
+
+Bruno reports Sludge Bomb's splash resembles the older broken lightning effects,
+using Nidoking (current selected body BDSP). Confirmed: ew188_hit/pri_hit_cyl is
+unblended and has native GreaterEqual alpha test/ref=.5, but BDSP export omitted
+alpha/depth state. Transparent mask pixels therefore painted opaque dark geometry.
+Repair shared BDSP exporter/material setup, not a hidden/removed splash layer.
+Dig currently hides the actor but locks movement and misses native ground-placement
+commands. Keep direct steering during its original hidden interval; use native
+soil particles as position feedback, emerge at actual location and check contact
+there. Restore visibility/grounding on cancel/reset/faint. Test near/far emergence,
+AI movement, pause and incoming hits while buried. Effects remain under review.
+User explicitly requests the full build only after all current attacks are good;
+no candidate player/launcher handoff until all 47 ZA +22 BDSP presentations and
+new Dig behaviour have completed visual and runtime review. Existing build stays.
+Status: source repairs started, no new build released.
+
+## LAB-19 — missing Flamethrower / Dragon Pulse travelling stream
+
+Bruno reports a small red patch instead of flames leaving the mouth; Dragon Pulse
+also lacks a visible travelling path. Confirmed native carriers 53 and 219 have
+lifeTime=.05 but optionLifeTimeMotion=true, child intervals .1/.2. Original export
+counted children using .05, yielding one pulse instead of the motion hold's 11/3.
+BulletWeakHandle also incorrectly followed the first travelling child. Repair
+Tools/repair_motion_streams.py restores native count/spacing and anchors the muzzle
+to the carrier's attacker locator. Does not add extra gameplay damage per visual
+child. Dense 60Hz launch/travel captures, one-hit/clash/cleanup checks required.
+Status: source repair; build withheld until visual verification.
+
+LAB-18 progress: BDSP splash stripe cause additionally confirmed as omitted native
+UV rotation (1x8 particle sheet, horizontal atlas, rotation1.57). Before/after
+captures preserve the rejected strip pattern and repaired splash. Native
+render/depth state, primitive channels and material UV motion restored. Dig's
+focused runtime/grounding/cleanup checks pass (Logs/attack-completion-dig.log).
+See 2026-10-23-attack-completion.md for verification and remaining shader limits.
+The completion gate remains open; public launcher unchanged.
+
+LAB-19 reopened by dense visual review: restoring source volleys does not restore
+adequate core opacity. Geometry-only captures show the travelling mesh; removing
+secondary alpha masks diagnostically reveals it. No-secondary-alpha is NOT a
+production fix. Independent atlas coordinates, source UV random ranges and
+particle clocks are restored, but the native combiner/coverage interpretation is
+still unresolved. Broad contact-only checks had missed the short flight interval.
+Rerun dense travel screenshots, not just contact snapshots. A new live volley
+clash fixture also exposed dependence on unordered/expired projectile objects;
+select the earliest active travelling child and verify cancellation/one-hit
+semantics. No full-build handoff until visual approval, regardless of test PASS.
+
+LAB-19 runtime verification: selecting the earliest active travelling child fixes
+the restored-volley clash (equal Pikachu fixture); one clash, zero damage, no tails.
+Each single stream resolves one hit. Dense rendered core coverage still rejected.
+LAB-18 broader review: all69 bindings/capture checks pass, but this is not visual
+approval. Re-enabling Close Combat's base restored its filled dome, so reject that
+change and retain the previous workaround. Reopen card borders on ZA Bullet Punch,
+Mach Punch and Quick Attack (evidence/attack-completion contact captures); source
+combiner/alpha interpretation remains a hypothesis, recurrence is normal-contact
+and full-timeline review against transparent-background cards. BDSP mesh transport
+initially lost start/over-life tint, producing neon/black seeds and splash cores;
+retain the native particle COLOR separately from primitive UV channels. Check
+Seed Bomb, Shadow Ball, Sludge Bomb and Thunderbolt after this correction.
+
+LAB-18 mesh follow-up: retaining particle COLOR did not resolve false blue/black
+patches. Reject/revert the separate BDSP mesh transport and retain the baseline
+mesh path. Native primitive metadata remains exported for later repair. The
+atlas stripe repair is confirmed separately; complete Sludge/Seed/Shadow mesh
+fidelity remains open. Evidence preserved in rejected-mesh/.

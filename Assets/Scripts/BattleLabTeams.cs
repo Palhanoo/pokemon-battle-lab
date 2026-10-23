@@ -84,7 +84,7 @@ namespace BattleLab
         {
             for(int pass=0;pass<4;pass++)foreach(var other in fighters)
             {
-                if(other==f||other.hp<=0)continue;
+                if(other==f||other.hp<=0||!other.body||IsUnderground(other))continue;
                 var away=next-other.body.transform.position;away.y=0;float clearance=f.body.FootprintRadius(-away)+other.body.FootprintRadius(away)+.12f;
                 if(away.magnitude<clearance)next=other.body.transform.position+(away.sqrMagnitude>.001f?away.normalized:Vector3.back)*clearance;
             }
@@ -111,7 +111,7 @@ namespace BattleLab
         }
         void ReleaseAction(Fighter f)
         {
-            var a=f.action;if(a==null)return;
+            var a=f.action;if(a==null)return;EndDig(f);
             if(a.presentation!=null){if(!a.presentation.TailDone)tails.Add(a.presentation);else a.presentation.Dispose();a.presentation=null;}
             if(mode!=BattleMode.ZA&&Vector3.Distance(f.body.transform.position,f.home)>.1f){a.phase=4;f.state="Returning";}
             else Finish(f);

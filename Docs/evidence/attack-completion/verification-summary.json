@@ -1,0 +1,41 @@
+{
+  "visualGate": "OPEN \u2014 DO NOT RELEASE",
+  "allMoveCaptureScope": {
+    "ZA": 47,
+    "BDSP": 22
+  },
+  "logs": {
+    "attack-completion-dig": {
+      "passMarkers": [
+        "LAB DIG CHECKS PASSED"
+      ],
+      "exceptions": 0
+    },
+    "attack-completion-travel": {
+      "passMarkers": [
+        "LAB ATTACK COMPLETION CAPTURES PASSED"
+      ],
+      "exceptions": 0
+    },
+    "attack-completion-final": {
+      "passMarkers": [
+        "LAB ATTACK COMPLETION CAPTURES PASSED"
+      ],
+      "exceptions": 0
+    },
+    "attack-completion-shaders": {
+      "passMarkers": [
+        "LAB REFRACTION PIXELS PASSED changed=19845, outside/zero/foreground/soft=0",
+        "LAB SHADER DETAILS PASSED"
+      ],
+      "exceptions": 0
+    },
+    "attack-completion-checkpoint": {
+      "passMarkers": [
+        "LAB ATTACK COMPLETION CAPTURES PASSED"
+      ],
+      "exceptions": 0
+    }
+  },
+  "motionStreamExportIdempotence": "PASS"
+}

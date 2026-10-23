@@ -1,0 +1,1 @@
+PASS: Nidoking direct underground input, visible soil trail, pause, incoming immunity, distant miss, nearby hit, emergence grounding, cancel, faint, AI travel, reset cleanup.

@@ -1,0 +1,9 @@
+Pikachu actual skinned vertices ground error: 0
+Both Flying test moves use the 0.65s faded clip (was 11.2167s)
+Uncontrolled fighter repositions on cooldown; controlled Pikachu stays put without input
+ZA MOVE_DRAGON_PULSE: models=0; 70 systems, peak 792 particles; refraction=1, soft=6; material bindings/clock exercised; contact capture saved
+ZA MOVE_FLAMETHROWER: models=0; 142 systems, peak 1083 particles; refraction=1, soft=16; material bindings/clock exercised; contact capture saved
+Sphere-projected material bindings exercised: 2. These checks do not establish native visual parity.
+FLAMETHROWER: restored volley resolves exactly one hit and all tails expire
+DRAGON_PULSE: restored volley resolves exactly one hit and all tails expire
+Opposing Flamethrower volleys: one clash, no damage, no remaining actions/tails

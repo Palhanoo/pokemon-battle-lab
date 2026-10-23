@@ -1,0 +1,57 @@
+[
+  {
+    "move": 53,
+    "carrierId": 53,
+    "childId": 380,
+    "interval": 0.1,
+    "count": 11,
+    "start": 1.3334,
+    "end": 2.4,
+    "nativeBaseLifetime": 0.05,
+    "source": "optionLifeTimeMotion / WazaAttackLoopFrame"
+  },
+  {
+    "move": 352,
+    "carrierId": 204,
+    "childId": 384,
+    "interval": 0.2,
+    "count": 3,
+    "start": 1.1667,
+    "end": 1.7333,
+    "nativeBaseLifetime": 0.05,
+    "source": "optionLifeTimeMotion / WazaAttackLoopFrame"
+  },
+  {
+    "move": 406,
+    "carrierId": 219,
+    "childId": 385,
+    "interval": 0.2,
+    "count": 3,
+    "start": 1.3334,
+    "end": 1.9,
+    "nativeBaseLifetime": 0.05,
+    "source": "optionLifeTimeMotion / WazaAttackLoopFrame"
+  },
+  {
+    "move": 437,
+    "carrierId": 242,
+    "childId": 1697,
+    "interval": 0.1,
+    "count": 4,
+    "start": 1.3334,
+    "end": 1.7333,
+    "nativeBaseLifetime": 0.05,
+    "source": "optionLifeTimeMotion / WazaAttackLoopFrame"
+  },
+  {
+    "move": 574,
+    "carrierId": 275,
+    "childId": 1702,
+    "interval": 0.18,
+    "count": 4,
+    "start": 1.0,
+    "end": 1.5666,
+    "nativeBaseLifetime": 0.05,
+    "source": "optionLifeTimeMotion / WazaAttackLoopFrame"
+  }
+]

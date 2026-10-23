@@ -341,6 +341,12 @@ def material(t, mb, tex):
         m2 = mb.get('_MulColor', {'r': 1, 'g': 1, 'b': 1, 'a': 1})
         mul = {ch: mul[ch] * m2[ch] for ch in 'rgba'}
     out['mul'] = _r([mul[ch] for ch in 'rgba'])
+    out['render_state']={'display_side':{0:0,1:2,2:1}.get(int(fl.get('_Cull',0)),0),
+        'depth_test':int(fl.get('_ZTest',4))!=0,'depth_func':max(0,int(fl.get('_ZTest',4))-1),
+        'depth_mask':int(fl.get('_ZWrite',0)),
+        'alpha_test':int(fl.get('_AlphaTest',0))!=0,'alpha_func':max(0,int(fl.get('_AlphaTest',0))-1),
+        'alpha_threshold':fl.get('_AlphaRef',0),
+        'blend_enable':not(out['src']==1 and out['dst']==0)}
     out['surface']={'soft':1 if '_SOFTPARTICLESENABLED_ON' in kw else 0,
         'soft_range':[fl.get('_SoftParticlesNearFadeDistance',0),fl.get('_SoftParticlesFarFadeDistance',1)],
         'refraction':False}
@@ -350,6 +356,9 @@ def material(t, mb, tex):
     out['combiner']={'color_channels':channels('COLOR',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),
                      'alpha_channels':channels('ALPHA',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3}),
                      'color_blends':blends('COLOR'),'alpha_blends':blends('ALPHA')}
+    for prefix,stem,values in [('COLOR','color',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),('ALPHA','alpha',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3,'ONEMINUSR':4})]:
+        out['combiner'][stem+'_channels'].append(values[key(f'_{prefix}PRIMITIVECHANNEL_',next(iter(values)))])
+        out['combiner'][stem+'_blends'][2]={'MUL':0,'PLUS':1,'MINUS':2}.get(key(f'_{prefix}PRIMITIVEEXPRESSION_','MUL'),0)
     for slot, name in ((0, '_Texture0'), (1, '_Texture1'), (2,'_Texture2')):
         te = texs.get(name)
         if te is None or not te['m_Texture']['m_PathID']:
@@ -366,6 +375,12 @@ def material(t, mb, tex):
             d['scroll'] = _r([s['x'], s['y']])
         if slot>0 and not any(k.startswith('_MULTITEXTUREMODE_TEX'+str(n)) for k in kw for n in range(slot+1,4)):
             continue
+        d['sphere_map']=bool(fl.get(f'_SphereMapEnabled_Tex{slot}',0))
+        if mb is not None and slot<len(mb.get('_UvRotation',[])):
+            rotation=mb['_UvRotation'][slot]
+            d['rotation']=_r(rotation['x']);d['rotation_speed']=_r(rotation['y'])
+        if mb is not None and slot<len(mb.get('_UvScale1',[])):
+            delta=mb['_UvScale1'][slot];d['scale_speed']=_r([delta['x'],delta['y']])
         out[f'tex{slot}'] = d
     return out
 

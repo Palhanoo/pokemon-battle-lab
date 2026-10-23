@@ -42,6 +42,8 @@ namespace BattleLab
                 {
                     bool contact=!Direct||Vector3.Distance(f.body.transform.position,a.target.body.transform.position)<=Reach(f,a.target,a.move);
                     if(Direct&&now<a.target.dodgeUntil)contact=false;
+                    if(IsUnderground(a.target))contact=false;
+                    if(a.dig!=null)contact=contact&&Vector3.Distance(f.body.transform.position,a.target.body.transform.position)<=Clearance(f,a.target)+.85f;
                     Impact(f,contact);
                 }
                 if(f.action!=null)f.state=a.blocked?"Attack blocked":"Recovering";

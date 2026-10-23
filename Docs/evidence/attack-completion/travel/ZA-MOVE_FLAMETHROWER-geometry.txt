@@ -1,0 +1,87 @@
+bullet0c0/fire_mesh bounds=Center: (-0.16, 0.13, 0.00), Extents: (2.88, 2.88, 2.86) scale=(0.45, 0.45, 0.45) pos=(-0.16, 0.13, 0.00) custom=(5.00, 0.15, 0.00, 0.53)
+  local=(0.00, 0.00, 0.00) size=(1.00, 2.02, 1.07) remaining=1.254885
+bullet0c0/fire_sprite_tate bounds=Center: (-0.16, 0.13, 0.00), Extents: (0.96, 0.96, 0.95) scale=(0.45, 0.45, 0.45) pos=(-0.27, 0.18, 0.00) custom=(6.48, 1.82, 0.00, 0.77)
+  local=(0.00, 0.25, 0.10) size=(0.78, 2.18, 0.00) remaining=0.6105698
+bullet0c0/fire_sprite_yoko bounds=Center: (-0.16, 0.13, 0.00), Extents: (0.96, 0.96, 0.95) scale=(0.45, 0.45, 0.45) pos=(-0.27, 0.14, 0.00) custom=(6.21, 1.69, 0.00, 0.80)
+  local=(0.00, 0.25, 0.00) size=(0.92, 1.94, 0.00) remaining=0.4879526
+bullet0c0/tubu_col bounds=Center: (-0.91, 0.14, 0.07), Extents: (0.84, 0.13, 0.27) scale=(0.45, 0.45, 0.45) pos=(0.14, 0.13, 0.00) custom=(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00)
+  local=(-1.71, 0.19, -0.12) size=(0.03, 0.04, 0.05) remaining=0.7960294
+  local=(-1.69, 0.16, 0.12) size=(0.07, 0.05, 0.05) remaining=0.997543
+  local=(-1.61, 0.15, 0.28) size=(0.05, 0.06, 0.07) remaining=1.833158
+  local=(-1.71, 0.18, 0.19) size=(0.04, 0.08, 0.06) remaining=1.15193
+  local=(-1.45, 0.17, 0.01) size=(0.03, 0.06, 0.04) remaining=1.56313
+  local=(-1.36, 0.15, 0.23) size=(0.05, 0.07, 0.09) remaining=1.607239
+  local=(-1.26, 0.07, 0.17) size=(0.05, 0.05, 0.08) remaining=1.42245
+  local=(-1.15, 0.24, -0.10) size=(0.04, 0.05, 0.08) remaining=1.731273
+  local=(-0.96, 0.23, -0.14) size=(0.04, 0.05, 0.09) remaining=1.800785
+  local=(-0.79, 0.13, 0.19) size=(0.08, 0.03, 0.04) remaining=0.5729258
+  local=(-0.77, 0.13, -0.17) size=(0.05, 0.09, 0.05) remaining=0.9985079
+  local=(-0.66, 0.08, 0.31) size=(0.05, 0.08, 0.07) remaining=0.4803067
+  local=(-0.50, 0.04, -0.12) size=(0.05, 0.07, 0.07) remaining=1.658676
+  local=(-0.51, 0.10, 0.16) size=(0.05, 0.08, 0.06) remaining=0.7199927
+  local=(-0.32, 0.19, -0.01) size=(0.07, 0.08, 0.04) remaining=0.8296947
+  local=(-0.11, 0.16, 0.14) size=(0.04, 0.04, 0.04) remaining=1.28952
+bullet0c0/fire_0f bounds=Center: (-0.16, 0.13, 0.00), Extents: (2.60, 2.60, 2.57) scale=(0.45, 0.45, 0.45) pos=(-0.16, 0.13, 0.00) custom=(5.00, 0.15, 0.00, 0.68)
+  local=(0.00, 0.00, 0.00) size=(0.72, 3.05, 0.68) remaining=0.7335135
+bullet0c1/fire_mesh bounds=Center: (-1.13, 0.14, 0.00), Extents: (2.88, 2.88, 2.86) scale=(0.45, 0.45, 0.45) pos=(-1.13, 0.14, 0.00) custom=(5.00, 0.15, 0.00, 0.25)
+  local=(0.00, 0.00, 0.00) size=(0.93, 1.77, 0.74) remaining=0.9304119
+bullet0c1/fire_sprite_tate bounds=Center: (-1.13, 0.14, 0.00), Extents: (0.96, 0.96, 0.95) scale=(0.45, 0.45, 0.45) pos=(-1.24, 0.19, 0.00) custom=(6.50, 1.83, 0.00, 0.21)
+  local=(0.00, 0.25, 0.10) size=(0.31, 1.50, 0.00) remaining=0.8637989
+bullet0c1/fire_sprite_yoko bounds=Center: (-1.13, 0.14, 0.00), Extents: (0.96, 0.96, 0.95) scale=(0.45, 0.45, 0.45) pos=(-1.24, 0.15, 0.00) custom=(6.50, 1.83, 0.00, 0.24)
+  local=(0.00, 0.25, 0.00) size=(0.40, 1.50, 0.00) remaining=0.775961
+bullet0c1/tubu_col bounds=Center: (-1.38, 0.17, 0.02), Extents: (0.30, 0.12, 0.41) scale=(0.45, 0.45, 0.45) pos=(-0.84, 0.14, 0.00) custom=(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00);(12.00, 4.26, 0.95, 1.00)
+  local=(-1.62, 0.08, 0.23) size=(0.07, 0.04, 0.07) remaining=1.754738
+  local=(-1.60, 0.17, 0.25) size=(0.08, 0.07, 0.05) remaining=0.9338134
+  local=(-1.57, 0.14, 0.09) size=(0.05, 0.07, 0.06) remaining=0.5496476
+  local=(-1.65, 0.19, -0.36) size=(0.05, 0.08, 0.04) remaining=1.130143
+  local=(-1.43, 0.25, -0.07) size=(0.05, 0.05, 0.06) remaining=1.337081
+  local=(-1.34, 0.12, 0.29) size=(0.09, 0.08, 0.09) remaining=1.637422
+  local=(-1.31, 0.10, 0.41) size=(0.04, 0.09, 0.08) remaining=0.9053233
+  local=(-1.11, 0.20, 0.34) size=(0.07, 0.06, 0.06) remaining=1.916223
+bullet0c1/fire_0f bounds=Center: (-1.13, 0.14, 0.00), Extents: (2.60, 2.60, 2.57) scale=(0.45, 0.45, 0.45) pos=(-1.13, 0.14, 0.00) custom=(5.00, 0.15, 0.00, 0.77)
+  local=(0.00, 0.00, 0.00) size=(0.83, 3.77, 0.74) remaining=0.8898187
+bullet0c2/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c2/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c2/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c2/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c2/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c3/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c3/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c3/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c3/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c3/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c4/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c4/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c4/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c4/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c4/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c5/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c5/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c5/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c5/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c5/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c6/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c6/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c6/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c6/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c6/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c7/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c7/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c7/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c7/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c7/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c8/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c8/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c8/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c8/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c8/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c9/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c9/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c9/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c9/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c9/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c10/fire_mesh bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=
+bullet0c10/fire_sprite_tate bounds=Center: (0.00, -12.40, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.10, -0.25) custom=
+bullet0c10/fire_sprite_yoko bounds=Center: (0.00, -12.50, -0.25), Extents: (12.28, 13.21, 12.28) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, -0.25) custom=
+bullet0c10/tubu_col bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.66) custom=
+bullet0c10/fire_0f bounds=Center: (0.00, 0.00, 12.50), Extents: (12.28, 12.28, 13.21) scale=(1.00, 1.00, 1.00) pos=(0.00, 0.00, 0.00) custom=

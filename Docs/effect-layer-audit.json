@@ -32498,20 +32498,7 @@
       "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     }
   ],
-  "unhandledTimelineCommands": [
-    {
-      "asset": "ZA/zaew0091/move.json",
-      "command": "Physics/CastRay"
-    },
-    {
-      "asset": "ZA/zaew0091/move.json",
-      "command": "Title/Character/SetTargetPosition"
-    },
-    {
-      "asset": "ZA/zaew0091/move.json",
-      "command": "Physics/CastRay"
-    }
-  ],
+  "unhandledTimelineCommands": [],
   "commands": {
     "BDSP:DprParticleFollowModel": 2,
     "BDSP:ModelCreate": 5,
@@ -32526,13 +32513,13 @@
     "BDSP:ParticleScale": 107,
     "ZA:GameObject/AttachTransform": 75,
     "ZA:GameObject/SetRotationByTarget": 27,
-    "ZA:GameObject/SetRotationtoTarget": 124,
-    "ZA:GameObject/SetScale": 89,
-    "ZA:GameObject/SetTranslation": 177,
-    "ZA:Particle/Emit": 225,
-    "ZA:Particle/Stop": 190,
+    "ZA:GameObject/SetRotationtoTarget": 168,
+    "ZA:GameObject/SetScale": 113,
+    "ZA:GameObject/SetTranslation": 245,
+    "ZA:Particle/Emit": 269,
+    "ZA:Particle/Stop": 234,
     "ZA:Physics/CastRay": 2,
-    "ZA:Title/Battle/AdjustScaleTarget": 167,
+    "ZA:Title/Battle/AdjustScaleTarget": 191,
     "ZA:Title/Character/SetTargetPosition": 1
   },
   "limitations": [

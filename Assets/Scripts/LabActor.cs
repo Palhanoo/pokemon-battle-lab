@@ -27,6 +27,8 @@ namespace BattleLab
         (Transform bone,Vector3 position,Quaternion rotation,Vector3 scale)[] restPose;
         public void Recoil(Vector3 away,float strength)
         {recoilDirection=transform.InverseTransformDirection(away.normalized)*Mathf.Clamp(strength,.04f,.16f);recoilRemaining=.18f;}
+        float burrowDepth;
+        public void SetBurrowDepth(float depth){burrowDepth=Mathf.Max(0,depth);if(visualRoot)visualRoot.localPosition=visualRest+Vector3.down*burrowDepth;}
         float reactionRemaining;
         AnimationClip reactionEnd;
         public Transform Bone(string name)=>name!=null&&bones.TryGetValue(name.Replace("_","").ToLowerInvariant(),out var bone)?bone:null;
@@ -151,7 +153,7 @@ namespace BattleLab
             graph.Evaluate(dt);
             }
             recoilRemaining=Mathf.Max(0,recoilRemaining-dt);
-            visualRoot.localPosition=visualRest+recoilDirection*Mathf.Sin(Mathf.PI*recoilRemaining/.18f);
+            visualRoot.localPosition=visualRest+Vector3.down*burrowDepth+recoilDirection*Mathf.Sin(Mathf.PI*recoilRemaining/.18f);
             if(reactionRemaining>0)
             {
                 reactionRemaining-=dt;

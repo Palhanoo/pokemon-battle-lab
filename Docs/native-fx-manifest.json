@@ -1381,8 +1381,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/move.json",
-    "bytes": 9716,
-    "sha256": "6e9c2fdbdc46bf91e776fcf59a5674cacca545dacb1d7dce397deecbdbf01728"
+    "bytes": 28584,
+    "sha256": "244e861ecd5ab9ff0db943b9962a9edfbfbedd2af329881c38e6e467a76d5fb3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/cmn_impact_tp10_00.json",
@@ -2121,8 +2121,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/move.json",
-    "bytes": 10846,
-    "sha256": "cc95a27142bc10bf801e6adad9281b7ac930eb54e3cce069b4f66c1ed716b46a"
+    "bytes": 14398,
+    "sha256": "1c0bad39c7c8effe49ab126c4ab1bc2548fa5c8ba616eb9246a941f68f1783f4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/cmn_ready_foot_tp01_01.json",
@@ -2281,8 +2281,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/move.json",
-    "bytes": 12146,
-    "sha256": "3282bce782970be0e6e4618071d794dd8cf2ce1170923c9933aecb8f03b21f9e"
+    "bytes": 15383,
+    "sha256": "3dd6a969994cabbb8f6430248dee2de3183110e0b6fff13ecc72a32f9466d091"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/cmn_ready_foot_tp01_01.json",
@@ -2426,8 +2426,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/move.json",
-    "bytes": 10543,
-    "sha256": "e0b61598f5bcdf7b11cc77fc4869e986b3e4b8196d9fa0d73636688bebfec3c6"
+    "bytes": 13932,
+    "sha256": "b07922cb9be2ae843da8e2759f5bd24296534b9fc0f0f9f99bf063983263aee3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/cmn_impact_tp17_00.json",
@@ -2446,8 +2446,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/move.json",
-    "bytes": 7772,
-    "sha256": "89fb72d755aa337799912b0db405fa2b56d11567591bfba23b5d9aa4b6f2dc6a"
+    "bytes": 11954,
+    "sha256": "c57254053dda6e9ac35c9acfafc32151a97061136a29661d8932b635c6be3053"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0577/cmn_ready_foot_tp17_01.json",
@@ -2611,363 +2611,363 @@
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_at_start.json",
-    "bytes": 24007,
-    "sha256": "aeefb0780810eec61d3b195f83d0a9ffb8f707fd807299c0f0dc8d3c5eac0f98"
+    "bytes": 26098,
+    "sha256": "ae7df1ae44d901b75c495f0203b74c19496cbfca1fd90b6f62c826ecca86515d"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_beam01.json",
-    "bytes": 52696,
-    "sha256": "81360711ce453d3a66a64b692a2efd5fa3fe6f2570cd3a983c621f66264b4224"
+    "bytes": 54145,
+    "sha256": "49505b59bf61c249d9f087164f0eb0e56d8cc782eadf066f9b9418e26f5edb47"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_df_hit01.json",
-    "bytes": 43369,
-    "sha256": "0d2a85e3ec8543158bcba2c32e11778848d7a4c046367b5a762ec14ebf493139"
+    "bytes": 47152,
+    "sha256": "33ee287816d4fec438505f0a78b0e1dbe26befaefa2d907ceba714dfd25e8c12"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_spark01.json",
-    "bytes": 57343,
-    "sha256": "41c550cb1f72627d126bca436dd4964d57ee309f8c67e82fa277e95c2737bc91"
+    "bytes": 58955,
+    "sha256": "3ef0451becedb31056ce26bab28bfd79666d4f514bbb28794f3b8217b6cc401a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_at_start.json",
-    "bytes": 84793,
-    "sha256": "6ae912e0b71ba934427332f3b6cadcb88ff1d9687ad66487ed1a4def7a7f26c9"
+    "bytes": 86081,
+    "sha256": "d44e37e3ca3e5b4c9cc6887df859978379790980008cc166ef2bd25524448057"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit.json",
-    "bytes": 80121,
-    "sha256": "6e8efa576f02882da47bba3b69c8a1c69e25ee0bb68d5ff079ed1635aeb9b8a6"
+    "bytes": 83873,
+    "sha256": "528b5a110312341f7655c15b407b9293d4804968adb5a363b7a89314042b2748"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit02.json",
-    "bytes": 51282,
-    "sha256": "372abb6f490efe83d272b3c8ce8102c7343c5052b707f6fef755dfe70b8559b0"
+    "bytes": 55778,
+    "sha256": "a64338f5c40e8047bacab3fbf0c401e4a9d85ba299385f32bed017e36d7085a6"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_aura.json",
-    "bytes": 233525,
-    "sha256": "b54015433c29927f75dc1cad05762d028b312ac03fdb390b93d7d095c51713d3"
+    "bytes": 237057,
+    "sha256": "c3f030f3f5fb6fba62f6586cef8ffb209f1a6b0ff4c643c41e79364a6d1e837d"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_df_ball.json",
-    "bytes": 147924,
-    "sha256": "22f98f4286efa2633a050607507ea453aec077102758bb0c41a67ac7e50c72d9"
+    "bytes": 149532,
+    "sha256": "0b8c5b96fc088b5f76e06ec3e1e4031b3cbf5c2c6bd0ff6221daf59c909792f1"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_hit.json",
-    "bytes": 71392,
-    "sha256": "b8194ead4c8c24f55a622a12f9bb4030543bb80b7eb4e197eed8c6e7266e1740"
+    "bytes": 75669,
+    "sha256": "041cfb6763cb99efd8808127dd8393634ffedd28d22771de079b1272f8900eb2"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_bgkem.json",
-    "bytes": 9693,
-    "sha256": "db0a1189b8e84a524beb4bb5f6fdd5f5dd04e48ab410e7bf292d82e25278bec2"
+    "bytes": 10496,
+    "sha256": "2419893da5f9a799f9db58962ce3d22a0a8f29e63106f04e34ededc9d03d7b30"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_srash01.json",
-    "bytes": 3702,
-    "sha256": "c016ac17ed2b697b6911808bf9507c2d5ca1df8475f2274e12036dbbb13310a0"
+    "bytes": 4024,
+    "sha256": "3e7925c68486f34ae567399c2fb606c2411812f454b198b440753823e6496493"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_df_hit.json",
-    "bytes": 26139,
-    "sha256": "03d08cb944ee77d7190c66a78b5267922e54127b1e32a03accc8abe6597972af"
+    "bytes": 28466,
+    "sha256": "8479d0c94493b3250ec7512971e9a6eaf47576e9db93c41b135aeff26a95bfef"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_hideline.json",
-    "bytes": 3578,
-    "sha256": "6c98c825bfdfa71f4563cacaf4907f6f10819c5c54baa03a212ae3f633ba2c7a"
+    "bytes": 3899,
+    "sha256": "799667b2df9807a0a7342e85be5fa5b58eaf3ea909de65c4349cf420bbf6e7aa"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew122_hit.json",
-    "bytes": 37925,
-    "sha256": "03870592dbe56adec7b6fd9babd58060aea7e9ace7f3d7cd05d192cedea34ac2"
+    "bytes": 41385,
+    "sha256": "c2e87bf9c07b0ffc7b4c8a5e7b102d5c85a5962e22295eadd12e22d916b5bf62"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_at_line.json",
-    "bytes": 6349,
-    "sha256": "d041e323a8eded704c7e4ea0a517ae9094b3c8a5bbad718982c8788ae87f5343"
+    "bytes": 6912,
+    "sha256": "3ec6434595c13373245218a71e097b583b0b0f9ba72d76868b255b4c5e48d423"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_hit.json",
-    "bytes": 46050,
-    "sha256": "812acd447acb6852a0ee7be886ffc15a041ac40aaaf79e4ece8c3b1649c44742"
+    "bytes": 49906,
+    "sha256": "13e6950f0c3091112403beb08ca6250168d2f284a7d3b18c4af9f4919558239a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_punch01.json",
-    "bytes": 14678,
-    "sha256": "b9ebd06b613a7c7f17b300c3f564179a6549a319c5f75dd22ad89739ada79d44"
+    "bytes": 15966,
+    "sha256": "73073dc8c327bf3d7337b9fbc4657d6db3b8e038ef374098606e62a986066ad7"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_bullet.json",
-    "bytes": 29518,
-    "sha256": "c8684b186119132271672d17347db1e58bbc2c92550c3fe4ea6d400fdefa0d2c"
+    "bytes": 31691,
+    "sha256": "da5318aa4431e26196436551d8fb74eac751d41e44768fd9922c79258e900e49"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_hit.json",
-    "bytes": 49416,
-    "sha256": "2d06f190802445d4aa5c66858222403fb4adb2a65dbe1e6042aa33575ed671ac"
+    "bytes": 51909,
+    "sha256": "b1649bcd3bd4f5c45455569cf052f17923b98396ba36dce3fe137b00c56133ac"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_muzzle.json",
-    "bytes": 12169,
-    "sha256": "858dbc7d710d875e0380fed9a780b869278e9d9d64a1fb8d368c865e1f483b83"
+    "bytes": 13134,
+    "sha256": "86c9e02db5edac379e416ce1e83b484f257b932c98d257ff53e3515af6a09da0"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_hit.json",
-    "bytes": 33125,
-    "sha256": "b514e10bcb41f4c232865fd86b2bff7b3848e63d1cdc93700c64c926cad0dc13"
+    "bytes": 35538,
+    "sha256": "8a6da08ffea2c1d60baeea23bb8ce2ba3a028e5f7b24f65cbc2f6aec18c44834"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_movept.json",
-    "bytes": 24994,
-    "sha256": "6508a9d5b148daa30928106e056eb0eb6466e29d35448fe49cbc5c8d667ff492"
+    "bytes": 26544,
+    "sha256": "6d515726161087b7df48c7fae0347ad8c6b0f0883dc52a296efee31b75484515"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_df_circle.json",
-    "bytes": 65199,
-    "sha256": "94ddeb2b77e14fa0f620dc04cde8fafa297bfe54ae0b5660093507ea140ce4fb"
+    "bytes": 67449,
+    "sha256": "93ba442c45968aa61f48b63e975598162ea3ec90ab320a59171df23ebe0fc683"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_body_thunder.json",
-    "bytes": 35585,
-    "sha256": "b45d207c03aebb1b718f920c1a001d5107d0051776dfd17f2c1146e888a8d2fe"
+    "bytes": 36948,
+    "sha256": "d7b60b62d06705d8e5499650386d0a561ac31d2f25c014f35e8936cd263f8b24"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_hit.json",
-    "bytes": 24444,
-    "sha256": "7089ea8fe9ba222e0bfab657e656cf7a9421ce45a56d26d29bc258f925e3f65d"
+    "bytes": 26376,
+    "sha256": "85f0b03defe230cfbaab32f4579dbfda0b7d9aa906a7c6f224b9802542d998f6"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri.json",
-    "bytes": 18530,
-    "sha256": "41479452f437ffe3d8b21a186838f25b4c2f846d024459d6d7d6c45a959c8181"
+    "bytes": 20217,
+    "sha256": "b72ca0fb09e07fe7ace34bb51004ffee996551684d85393af867188b90d6aee6"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri_back.json",
-    "bytes": 3843,
-    "sha256": "c9bd836f9590b63a4a56dcd10392f0b962de2cf30ffe65cd75427bbad9866090"
+    "bytes": 4163,
+    "sha256": "86b89ab9b242065f3386c82d61460cd17c729c3d43b0eaeeabaf7a98ff798ab3"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_at_charge001.json",
-    "bytes": 3484,
-    "sha256": "9140b40dac24b55f1227cf3650890222d6159562d5d41ef74a20146db39b427f"
+    "bytes": 3725,
+    "sha256": "ba1ffff04f490039bd7a080f336704cd58c85377819025f8a6b70abf123910f3"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_df_hit001.json",
-    "bytes": 48142,
-    "sha256": "2a376c6d02fe729462144f2516c37f1797f418ab5e0e144f7faee657a137b457"
+    "bytes": 50817,
+    "sha256": "c2c2f2289dc4355852354b3823dbef5f0f6f99427d80318e32f4892728018f86"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_wind.json",
-    "bytes": 64784,
-    "sha256": "dd303be391ea5db7c81c3263ccd25057715923d74aeae8d0c21f61a034ee8654"
+    "bytes": 65424,
+    "sha256": "1187f34745d09a07b71c71d55be820cc1b8c3f7e7ed46e7f0871f8e3189ea5e7"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew232_df_hit.json",
-    "bytes": 39036,
-    "sha256": "40ba8891310e7f57a2851afe5d9b28a0f4c85cbfa6a0c2f4a02e8969e45dced0"
+    "bytes": 42274,
+    "sha256": "8172a3e3164753fd6044c075e229d002d0b42f630b67c327a35db6c2b800625a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_bullet.json",
-    "bytes": 233565,
-    "sha256": "8c4ab79141be55c8251804525e05649cd074978f6c8e497c5bc7cd905929b948"
+    "bytes": 237330,
+    "sha256": "0e68996ab7c353d021edf17c125bf5ef5b12d36d2c754d55d69b7e50cb0c03af"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge.json",
-    "bytes": 16886,
-    "sha256": "700bb99f150aa3309ae81644cafef2bff1f09d8ed42007e89c02a007f4f58ef3"
+    "bytes": 18008,
+    "sha256": "884681a06f8fd70478705e81ad58c414e13875a49a07b18c1fed4f1b88eaf650"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge2.json",
-    "bytes": 21798,
-    "sha256": "bd5435b3ac3aa95d90484eb6ca67e6de04d6e15edf3e3daa857149a9099f5b09"
+    "bytes": 22118,
+    "sha256": "043ddab24ea2feca87bf0525373571b125c80743a9f249dbf4c9165cc666eb4a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_df_hit.json",
-    "bytes": 77823,
-    "sha256": "8be09e9e537a1cf065f1df0ad91e0d30a1cebdbe9c9b0dac928ba1be4acf7498"
+    "bytes": 79585,
+    "sha256": "4edabd968a8161bacff41cd9dcc546a6160bd07253cd07b01445d2e56863d09f"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit.json",
-    "bytes": 17717,
-    "sha256": "05c145d4455d8287e036065fecbbbeb3d8fe4e5709944d4fb9cf348e3d170671"
+    "bytes": 19164,
+    "sha256": "0d5119ab4454634e5b84c2cc233faf1ee81142b8d7ea699256771d95dd599bbb"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit_many.json",
-    "bytes": 11295,
-    "sha256": "422e03f0764489ea5335057bd3f89f9e692c069c1b94e7f346ab5452e7602487"
+    "bytes": 12019,
+    "sha256": "f2f329c67a844eeecdb74b15f9688df7ad69e46051ae4c403a286a2f53ae8cb3"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew317_at_rock.json",
-    "bytes": 61125,
-    "sha256": "f326d1b974ab0f132103bcd4e50e82ca28fff402dd9099d4c34bd4614817a00f"
+    "bytes": 61766,
+    "sha256": "830170d3b04c7824327b0bd013a9c573111cc93de3c5081400276056d01e2f93"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew317_df_hit.json",
-    "bytes": 38569,
-    "sha256": "c25a9a59e77d552407661eb402b9493849c0be5c844c6bee50deffe7699bd0e2"
+    "bytes": 40661,
+    "sha256": "eb5986397909f21b0ddaab1e2bb25c441b9783fdc216a38eff6ec46cbe053188"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_cam.json",
-    "bytes": 3572,
-    "sha256": "77fdcd928c9a6e8790dec4ab7cfa1fb62bf998f63638883605ad946a608ec7a1"
+    "bytes": 3814,
+    "sha256": "09fdbb24b3e17d287b5f00edaae61169ba148af50e8f6d8669ddb47330851026"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit.json",
-    "bytes": 82179,
-    "sha256": "ddc744ed705c98aac5f365cf4f2b89d0bf697b4668f3ec56cb720f237d52066d"
+    "bytes": 84202,
+    "sha256": "52c3c1e20e6fca211976d32e03f06d0b6e918c5cc018d058ef992a9ac725733c"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit_end.json",
-    "bytes": 10617,
-    "sha256": "e02febc6917227d1e67c9e5c0941f3d16d30e87d3e4b6845bd36bca968548e50"
+    "bytes": 11744,
+    "sha256": "51bc04d5dec1cdc764c8048e5bb7028ba944c5ba22f14020baad9bca190ceb00"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_start.json",
-    "bytes": 3601,
-    "sha256": "da1a56e4e860ba9a5718f49834e042a15f896d992219f055a93800b5100e9df0"
+    "bytes": 3845,
+    "sha256": "2ca718720a37333a95c6b3ffc167ca5d400d9cbcc396517412f72783cd88b2dc"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_start_line01.json",
-    "bytes": 57674,
-    "sha256": "2e4651dbd8dfaa7409a48a059d2f48e9e9662c4ec4b5c2bac91005c2c603de96"
+    "bytes": 57915,
+    "sha256": "4fcaa206d9303f7e12f3f67556ed8d264c33460e4bacad41dc9505e42918b46d"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet.json",
-    "bytes": 192734,
-    "sha256": "0f487d3befab510635fc14539998af53c21153c0b2fa5fc63880d94b407636cf"
+    "bytes": 197894,
+    "sha256": "0e41d1b083cc531941abff24c510999251cae2b50bc504a5d529c36026447af1"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet_charge.json",
-    "bytes": 127250,
-    "sha256": "8a71d43aa402908626bb7db8cc6332b81a35db264a94e95521ad9e39a04aa7bf"
+    "bytes": 130638,
+    "sha256": "2f75b9f95545f2f7fca77a4931bf2718d8a3d5afc2c9693875e808bd17ec41cf"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_hit.json",
-    "bytes": 30629,
-    "sha256": "21f9f40a69326acdbee903fe5f6d7c166492144cb86d5ecb0f8dc90922b1494c"
+    "bytes": 33293,
+    "sha256": "9b590a9ff0fd283c378495a2b30999cf067d75e958824300c8c8748f472273ec"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_charge.json",
-    "bytes": 12519,
-    "sha256": "ffe36bfdf13c3b7c6f630ee21d2124045a81fa6801ed7f734693c37f38053735"
+    "bytes": 13486,
+    "sha256": "afa86daa132d2015aa0c14cfed3b5acf2e44c564ef0d6eb07ff8eeb0678e9225"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_hit.json",
-    "bytes": 18100,
-    "sha256": "3f211baf60823c4ab5d46baeeaf910d52807f4a18b1ac8fbbca4422a783093e1"
+    "bytes": 19555,
+    "sha256": "a7d0a54d5a66e8e29009378ef0fd687a68dffeccdabad7db61f43272d45c3e8a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_muzzle_under.json",
-    "bytes": 76573,
-    "sha256": "1fa68783581583982783f45787d504177a2ebf58ddb8a63eb578b647cd785146"
+    "bytes": 79858,
+    "sha256": "297bef1f669cf96c8a77bc0ba2497fc0c25e137fc93e81ea45a958d3b1027b92"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_ring.json",
-    "bytes": 6702,
-    "sha256": "4cfd33c45257c63b7fc6551bf163f7a8778a1f2f138ea94635a70e32826cedbf"
+    "bytes": 7342,
+    "sha256": "4c56f34a7dfee694eac00d8953eada0ced1110b105b294ad4d9be7acc7e99a08"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew402_bullet.json",
-    "bytes": 62632,
-    "sha256": "fc2d6ecb10c7784c18aa52f08896c3ac295674550ffd4f891eac7a1fbb693bbc"
+    "bytes": 63034,
+    "sha256": "36eedb59e8e1a425e338de976f7ebe54a4077819cb94f71782cb4972715a6670"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew402_seed.json",
-    "bytes": 91313,
-    "sha256": "75c19a0a701bcb1ebc93872d7a03a5b86bb87b1506ae1e9e87a8ae77971394ae"
+    "bytes": 94393,
+    "sha256": "c691bc3b197af57549d04b115ab88e1745ed59f11c5f5fdc3dc82afab1bf13f3"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_muzzleimpact.json",
-    "bytes": 30273,
-    "sha256": "8b7aac4f854d1568f7a7bd9c24705421a8ec05cd4db560d00d60f58610d7b531"
+    "bytes": 31240,
+    "sha256": "3160f280f34aca91fc5dfff81d8f9ab9c8e60d4afbd7d1e0500de9a28fc51902"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st01_bgaura.json",
-    "bytes": 7801,
-    "sha256": "2f559a262ac4331368d92398d03882f1db89bdea40fae2b689feebf382a59248"
+    "bytes": 8612,
+    "sha256": "f0dc3661bbf7449d8db9901d0c261bc4d5080d3dcc440549379392c051097d95"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st02_charge.json",
-    "bytes": 42750,
-    "sha256": "b7788608465415a9f3dc046faf57c7637b40b98535752ba00a7a353f4689880d"
+    "bytes": 45757,
+    "sha256": "80b60e0cf9345f81a20ebb393a4b08370d33c1ab3776ffe20938adceb5825402"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st03_muzzle.json",
-    "bytes": 55460,
-    "sha256": "702d47ab077b4770c79c19724bb5e5762fb66684877a1fe2c1787e9cb56d9f32"
+    "bytes": 59290,
+    "sha256": "c53a16b0db2a6b7013960464d3a30f1a873eff5ef2ad0d818173750bb9544be5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
-    "bytes": 17247,
-    "sha256": "f7c5beb54821b86043b8d2c61446752dd8a59fb4be87c0aa9ab7364cad85f6cd"
+    "bytes": 18712,
+    "sha256": "714bc9c36a61e9fa292f21c749826f18b04a3b7b6577213adafd6ad04631a829"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_beam.json",
-    "bytes": 39617,
-    "sha256": "6790360be5a122141612e76a21ee558e9867155fceea413e26145f5fa7cc96ae"
+    "bytes": 41588,
+    "sha256": "024f1d77fbea775f678c6e30931e7f51739544e90003c12e5ddb21f27c45ee11"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit01_lo.json",
-    "bytes": 27652,
-    "sha256": "7772018963789f0d95b76bdeff0b7114d60fd5860c8cf3f400e14a6b1cb239fa"
+    "bytes": 30639,
+    "sha256": "75799130ceb34274c90ac9e90dba6e8fe1878813bd4246709fe2d8ad2f68076c"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit02_end.json",
-    "bytes": 42515,
-    "sha256": "56ebcf5a33fb7e08b245bc5590ae80435353ddd2ef56ae3a5523b9147675a6f4"
+    "bytes": 44901,
+    "sha256": "c0b690a77f7970aecb9fda0085a9218bfe8daeb2937103788cac6d1e89e7b8d7"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_at_draw_ed.json",
-    "bytes": 24919,
-    "sha256": "a87e906024ce4c4bfcd3b0fd57c8b56ae4cb3fe20c7d83a76ac738c3cf793c9a"
+    "bytes": 27254,
+    "sha256": "f58b0d53e3e2a1a1c513f73e676b0ecff54a01b99a8e3ec0e22a6c5f9712629a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_draw_st.json",
-    "bytes": 11120,
-    "sha256": "b4eddb98ed6b8594ab8424309acdb09877a27767d354b02582761c6db9f2cb5e"
+    "bytes": 12088,
+    "sha256": "43e668f26e6d3e1531fa43a1c9b974c31ca362ebd3353149c24a028fe1112d70"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_hit_punch01.json",
-    "bytes": 31274,
-    "sha256": "64ea0658b04fcc7e4f4c132f3f885004edb96c7c3b077033a452c7ba225b29c9"
+    "bytes": 34670,
+    "sha256": "3c3aa21e2825173124cc4df3e2fdc5f4eb75bb1442cf70e4316dd56b1c56afb5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_line_st.json",
-    "bytes": 4426,
-    "sha256": "b707ec0817138ead534c87aad72162ab017597575114d71f5cc44e1e7d9d23b9"
+    "bytes": 4916,
+    "sha256": "e88ef74f9488c0f776c443a5a6eb1fa205fa7234f6ebbb6d2f74b4bd54005d42"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark01.json",
-    "bytes": 26182,
-    "sha256": "1d1753630f4b3ef295de93d979b86ca0c9ec95c329879c1931c191b669dbdda7"
+    "bytes": 29098,
+    "sha256": "af4a46db65815ffebf3359a8515742c056664e42ee8429da8ec0b85aedd812e6"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark02.json",
-    "bytes": 15243,
-    "sha256": "6ca15c6eb98b6630ee5300f45d5717ed925ed91a4245536ea8cc3da443717966"
+    "bytes": 16628,
+    "sha256": "a176241be31e5bcae605e27563339e7a1710c5fcc368dcb5397a6403f37ca6ee"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_body_thunder.json",
-    "bytes": 34149,
-    "sha256": "a8fbde60e0ea64b8c3768c79b1839e5596c040b08f4e27ea14aa4be384fc79d1"
+    "bytes": 35753,
+    "sha256": "9c09bd164bfa6e97c67d1020327a585cfbb31b78b592ef9320e232caaa9aa5bf"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_field_thunder.json",
-    "bytes": 66430,
-    "sha256": "c0711f8a090e7f8250cfcb8d3b8fea0645dfa457e9e9055569fb95411273eb95"
+    "bytes": 69156,
+    "sha256": "d0813e3af1b75477ff4b28ecdadd2546e68f3b9cd7b6b5b8bd1b8680b9e993bb"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_hit.json",
-    "bytes": 21940,
-    "sha256": "1f2dfd9e122518080d641fd2584fbfa5cffe34c1af8861c395dfe0727e048716"
+    "bytes": 24116,
+    "sha256": "a5914ce041178eee2bf1978ac0b4b0bb45e0b97f22faae4a60563bdfb11788b9"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_thunder_flash.json",
-    "bytes": 42131,
-    "sha256": "f16bb0a45be5b0c02864afb6a41e2716a35aa59f542e6479ce6f5328ed48e18d"
+    "bytes": 44460,
+    "sha256": "467dde0d7b787f85cbeb87bc0f2eb2d795aad7c58324ec5183ae85586079a7c8"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/model_ew122_tanM.json",

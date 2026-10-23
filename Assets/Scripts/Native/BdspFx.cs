@@ -361,11 +361,12 @@ namespace BattleLab.Native
             mat.SetFloat("_MeshParticles", 0);
             int queue = (int)J.F(d, "queue");
             mat.renderQueue = queue >= 2500 ? queue : 3000;
-            Texture(mat, "_MainTex", m, "tex0", texture, null);
+            Texture(mat, "_MainTex", m, "tex0", texture, "_MainScroll");
             mat.SetFloat("_UseSub", Texture(mat, "_SubTex", m, "tex1", texture, "_SubScroll") ? 1 : 0);
             if(m.TryGetValue("combiner",out var combiner))VioletFx.NativeCombiner(mat,J.Obj(combiner));
             mat.SetFloat("_UseThird",Texture(mat,"_ThirdTex",m,"tex2",texture,"_ThirdScroll")?1:0);
             if(m.TryGetValue("surface",out var surface))VioletFx.Surface(mat,J.Obj(surface));
+            if(m.TryGetValue("render_state",out var state))VioletFx.RenderState(mat,J.Obj(state));
             r.sharedMaterial = mat;
             // the combiner's colour scale and multiply colour act on colour0 / colour1
             float scale = J.F(m, "color_scale");
@@ -409,6 +410,10 @@ namespace BattleLab.Native
                 var s = J.Floats(t["scroll"]);
                 mat.SetVector(scrollProp, new Vector4(s[0], s[1], 0, 0));
             }
+            mat.SetFloat(prop.Replace("Tex","Sphere"),J.B(t,"sphere_map")?1:0);
+            mat.SetFloat(prop.Replace("Tex","Rotation"),J.F(t,"rotation"));
+            var speed=t.ContainsKey("scale_speed")?J.Floats(t["scale_speed"]):new float[2];
+            mat.SetVector(prop.Replace("Tex","Motion"),new Vector4(speed[0],speed[1],J.F(t,"rotation_speed"),0));
             return true;
         }
 

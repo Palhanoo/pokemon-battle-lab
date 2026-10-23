@@ -1,0 +1,5 @@
+# Uncurated full capture frames stay local; selected evidence is tracked explicitly.
+/*.png
+/*-layers.txt
+/focused-checks-in-progress.txt
+/shader-checks/

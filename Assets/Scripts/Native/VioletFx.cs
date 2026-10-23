@@ -93,9 +93,12 @@ namespace BattleLab.Native
 
             var r = go.GetComponent<ParticleSystemRenderer>();
             var mat = new Material(baseMaterial) { name = go.name };
+            mat.SetFloat("_ParticleUvClock",1);
             Blend(mat, J.Str(e, "blend"));
             mat.SetFloat("_ColorMode", J.F(J.Obj(e["color"]), "mode"));
-            mat.SetFloat("_AlphaMode", J.F(J.Obj(e["color"]), "alpha_mode"));
+            // ZA compatibility mapping; exact native combiner parity remains under review.
+            int alphaMode=(int)J.F(J.Obj(e["color"]), "alpha_mode");
+            mat.SetFloat("_AlphaMode",alphaMode==1?6:alphaMode==2?1:alphaMode==3?5:alphaMode);
             if(e.TryGetValue("combiner",out var combiner)) NativeCombiner(mat,J.Obj(combiner));
             Textures(ps, mat, J.List(e, "textures"), texture, avgLife);
             if(e.TryGetValue("surface",out var surface))
@@ -115,6 +118,7 @@ namespace BattleLab.Native
             {
                 ParticleSystemVertexStream.Position, ParticleSystemVertexStream.Normal, ParticleSystemVertexStream.Color, ParticleSystemVertexStream.UV,
                 ParticleSystemVertexStream.Custom1XYZW, ParticleSystemVertexStream.Custom2XYZW, ParticleSystemVertexStream.UV2, ParticleSystemVertexStream.UV3,
+                ParticleSystemVertexStream.AgePercent, ParticleSystemVertexStream.InvStartLifetime, ParticleSystemVertexStream.StableRandomXYZW,
             });
 
             foreach (var c in J.List(e, "children"))
@@ -126,7 +130,7 @@ namespace BattleLab.Native
             return ps;
         }
 
-        static void RenderState(Material mat,Dictionary<string,object> state)
+        public static void RenderState(Material mat,Dictionary<string,object> state)
         {
             int side=(int)J.F(state,"display_side");mat.SetFloat("_Cull",side==1?2:side==2?1:0);
             mat.SetFloat("_ZTest",J.B(state,"depth_test")?J.F(state,"depth_func")+1:8);
@@ -444,6 +448,7 @@ namespace BattleLab.Native
             if (tex) { Wrap(mat,"Main", t0); mat.SetTexture("_MainTex", tex); mat.SetFloat("_MainGrey", Grey(tex) ? 1 : 0); }
             var div = J.Floats(t0["div"]);
             int nx = Mathf.Max(1, (int)div[0]), ny = Mathf.Max(1, (int)div[1]);
+            mat.SetVector("_MainSheet",new Vector4(nx,ny,0,0));
             if (nx * ny > 1) SheetAnimation(ps, t0, nx, ny, avgLife);
             UvTransform(mat, "_MainTex", t0, nx * ny > 1);
             var mainScroll=J.Floats(t0["scroll_per_s"]);
@@ -483,6 +488,8 @@ namespace BattleLab.Native
         }
         static void TextureMotion(Material material,string prefix,Dictionary<string,object> texture)
         {
+            var random=texture.ContainsKey("scroll_random")?J.Floats(texture["scroll_random"]):new[]{0f,0f};
+            material.SetVector("_"+prefix+"RandomScroll",new Vector4(random[0],random[1],0,0));
             var rate=texture.ContainsKey("uv_scale_per_s")?J.Floats(texture["uv_scale_per_s"]):new[]{0f,0f};
             material.SetVector("_"+prefix+"Motion",new Vector4(rate[0],rate[1],J.F(texture,"uv_rotate_per_s"),0));
         }

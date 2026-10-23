@@ -12,10 +12,12 @@ namespace BattleLab
         IEnumerator EffectAuditSmoke()
         {
             while(loading)yield return null;
+            bool travelReview=Environment.GetCommandLineArgs().Contains("-lab-travel-review");
+            bool full=Environment.GetCommandLineArgs().Contains("-lab-attack-completion");
             bool shaders=Environment.GetCommandLineArgs().Contains("-lab-shader-details");
-            bool visuals=Environment.GetCommandLineArgs().Contains("-lab-visual-layers")||shaders;
+            bool visuals=Environment.GetCommandLineArgs().Contains("-lab-visual-layers")||shaders||full;
             bool lifecycle=Environment.GetCommandLineArgs().Contains("-lab-effect-lifecycle");
-            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/"+(shaders?"shader-details":visuals?"visual-layers":"effect-repair"+(lifecycle?"/lifecycle":""))));Directory.CreateDirectory(folder);
+            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/"+(full?"attack-completion":shaders?"shader-details":visuals?"visual-layers":"effect-repair"+(lifecycle?"/lifecycle":""))));Directory.CreateDirectory(folder);
             var report=new List<string>();teamSize=1;ai=false;practice=true;setup=inspect=false;mode=BattleMode.ZA;gameSpeed=1;
             playerSpecies=Array.IndexOf(Species,"PIKACHU");enemySpecies=Array.IndexOf(Species,"MUDKIP");ResetBattle();while(loading)yield return null;
             if(loadError!=null)throw new Exception(loadError);
@@ -37,12 +39,15 @@ namespace BattleLab
             cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);
             if(shaders)CheckRefractionPixels(folder);
             int sphereMasks=0;
-            foreach(var source in new[]{"ZA","BDSP"})
+            foreach(var source in travelReview?new[]{"ZA"}:new[]{"ZA","BDSP"})
             {
                 var ids=source=="ZA"?zaFx.moves.Select(m=>m.id).ToArray():bdspFx.moves.Select(m=>m.id).ToArray();
+                if(full&&source=="BDSP"){playerSpecies=Array.IndexOf(Species,"NIDOKING");ResetBattle();while(loading)yield return null;Paused=true;Player.body.transform.position=new Vector3(-2,0,0);Target.body.transform.position=new Vector3(2,0,0);Player.body.Face(Target.body.Centre);Target.body.Face(Player.body.Centre);midpoint=(Player.body.Centre+Target.body.Centre)*.5f;}
                 if(shaders)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM","MOVE_PSYCHIC","MOVE_SHADOW_BALL","MOVE_THUNDERBOLT"}:new[]{"MOVE_THUNDERBOLT","MOVE_PSYCHIC","MOVE_BRICK_BREAK"}).Contains(id)).ToArray();
-                else if(visuals)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();
+                else if(visuals&&!full)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();
                 if(lifecycle)ids=ids.Where(id=>id==(source=="ZA"?"MOVE_HYDRO_PUMP":"MOVE_PSYCHIC")).ToArray();
+                var only=Environment.GetCommandLineArgs().FirstOrDefault(a=>a.StartsWith("-lab-only="));
+                if(only!=null)ids=ids.Where(id=>only.Substring(10).Split(',').Contains(id)).ToArray();
                 foreach(string id in ids)
                 {
                     IMoveFx fx=source=="ZA"?zaFx.Play(id,AttackPresentation.Bind(Player.body),AttackPresentation.Bind(Target.body),id=="MOVE_HYDRO_PUMP"?n=>!n.Contains("0c0"):null):bdspFx.Play(id,AttackPresentation.Bind(Player.body),AttackPresentation.Bind(Target.body));
@@ -61,12 +66,45 @@ namespace BattleLab
                         }
                     }
                     var models=fx.gameObject.GetComponentsInChildren<BdspModel>(true);
-                    if(visuals&&!shaders&&source=="BDSP"&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
+                    if(visuals&&!shaders&&!full&&source=="BDSP"&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
+                    var perLayer=new Dictionary<string,int>();
+                    bool travelDiagnosed=false;
                     bool refractionCaptured=false;int maximum=0;int snapshots=0;bool captured=false;float captureAt=Mathf.Max(.1f,fx.HitTime+.1f);
-                    for(float t=0;t<Mathf.Min(fx.EndTime+1,20);t+=.1f)
+                    float step=travelReview?1f/60:.1f;
+                    for(float t=0;t<Mathf.Min(fx.EndTime+1,20);t+=step)
                     {
-                        fx.Step(.1f);foreach(var m in materials)if(m.HasProperty("_EffectTime"))m.SetFloat("_EffectTime",fx.Now);
+                        fx.Step(step);foreach(var m in materials)if(m.HasProperty("_EffectTime"))m.SetFloat("_EffectTime",fx.Now);
                         maximum=Mathf.Max(maximum,systems.Sum(ps=>ps.particleCount));
+                        foreach(var ps in systems){string key=ps.transform.parent.name+"/"+ps.name;perLayer[key]=Mathf.Max(perLayer.TryGetValue(key,out int n)?n:0,ps.particleCount);}
+                        if(travelReview&&!travelDiagnosed&&fx.Now>=1.5f)
+                        {
+                            travelDiagnosed=true;var details=new List<string>();var saved=new Dictionary<Renderer,Material>();
+                            foreach(var ps in systems.Where(p=>p.transform.parent.name=="pos"||p.transform.parent.name=="root"))
+                            {
+                                var r=ps.GetComponent<ParticleSystemRenderer>();var original=r.sharedMaterial;if(!original)continue;
+                                var parts=new ParticleSystem.Particle[ps.particleCount];ps.GetParticles(parts);
+                                var custom=new List<Vector4>();ps.GetCustomParticleData(custom,ParticleSystemCustomData.Custom1);
+                                details.Add(ps.transform.parent.parent.parent.name+"/"+ps.name+" bounds="+r.bounds+" scale="+ps.transform.lossyScale+" pos="+ps.transform.position+" custom="+string.Join(";",custom));
+                                foreach(var part in parts)details.Add("  local="+part.position+" size="+part.GetCurrentSize3D(ps)+" remaining="+part.remainingLifetime);
+                                saved[r]=original;var diagnostic=new Material(original);diagnostic.SetFloat("_Model",1);diagnostic.SetColor("_ModelColor",Color.magenta);diagnostic.SetFloat("_NativeCombiner",0);diagnostic.SetFloat("_AlphaMode",0);diagnostic.SetFloat("_UseSub",0);diagnostic.SetFloat("_UseThird",0);diagnostic.SetFloat("_MainGrey",0);diagnostic.SetFloat("_Refraction",0);diagnostic.SetTexture("_MainTex",Texture2D.whiteTexture);diagnostic.SetFloat("_Cull",0);r.sharedMaterial=diagnostic;
+                            }
+                            CaptureEvidence(Path.Combine(folder,source+"-"+id+"-geometry.png"));
+                            foreach(var entry in saved){Destroy(entry.Key.sharedMaterial);entry.Key.sharedMaterial=entry.Value;}
+                            File.WriteAllLines(Path.Combine(folder,source+"-"+id+"-geometry.txt"),details);
+                            var coreMaterials=saved.Values.Distinct().ToArray();
+                            foreach(var variant in new[]{"local-clock","no-secondary-alpha","eft1-alpha"})
+                            {
+                                var copies=coreMaterials.ToDictionary(m=>m,m=>new Material(m));
+                                foreach(var m in coreMaterials)
+                                {
+                                    if(variant=="local-clock")m.SetFloat("_EffectTime",.15f);
+                                    if(variant=="no-secondary-alpha"){var channels=m.GetVector("_AlphaChannels");channels.y=channels.z=2;m.SetVector("_AlphaChannels",channels);}
+                                    if(variant=="eft1-alpha")m.SetFloat("_AlphaMode",id=="MOVE_FLAMETHROWER"?6:2);
+                                }
+                                CaptureEvidence(Path.Combine(folder,source+"-"+id+"-"+variant+".png"));
+                                foreach(var m in coreMaterials){m.CopyPropertiesFromMaterial(copies[m]);Destroy(copies[m]);}
+                            }
+                        }
                         if(shaders&&!refractionCaptured&&systems.Any(ps=>ps.particleCount>0&&ps.GetComponent<ParticleSystemRenderer>().sharedMaterial&&ps.GetComponent<ParticleSystemRenderer>().sharedMaterial.GetFloat("_Refraction")>.5f))
                         {
                             refractionCaptured=true;
@@ -76,7 +114,7 @@ namespace BattleLab
                             CaptureEvidence(Path.Combine(folder,source+"-"+id+"-refraction-off.png"));
                             foreach(var r in refractors)r.enabled=true;
                         }
-                        if(visuals&&fx.Now>=fx.StartTime+.2f+snapshots*.25f&&snapshots<12)
+                        if(visuals&&fx.Now>=(travelReview?1.3f+snapshots*.1f:fx.StartTime+.2f+snapshots*(full?Mathf.Max(.15f,(fx.EndTime-fx.StartTime)/11):.25f))&&snapshots<12)
                         {
                             cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);
                             CaptureEvidence(Path.Combine(folder,source+"-"+id+"-"+(snapshots++).ToString("00")+".png"));
@@ -99,14 +137,41 @@ namespace BattleLab
                             if(!before.Where((v,i)=>Vector3.Distance(v,after[i])>.0001f).Any())throw new Exception(id+" model skeleton never deformed");Destroy(baked);}
                     }
                     report.Add($"{source} {id}: models={models.Length}; {systems.Length} systems, peak {maximum} particles; refraction={materials.Count(m=>m.GetFloat("_Refraction")>.5f)}, soft={materials.Count(m=>m.GetVector("_SoftParticle").x>.5f)}; material bindings/clock exercised; contact capture saved");
+                    File.WriteAllLines(Path.Combine(folder,source+"-"+id+"-layers.txt"),perLayer.Select(p=>p.Key+"="+p.Value));
                     Destroy(fx.gameObject);File.WriteAllLines(Path.Combine(folder,"focused-checks-in-progress.txt"),report);yield return null;
                 }
             }
             report.Add("Sphere-projected material bindings exercised: "+sphereMasks+". These checks do not establish native visual parity.");
             if(visuals)
             {
+                if(travelReview)
+                {
+                    Paused=false;ai=false;gameSpeed=1;
+                    foreach(var move in new[]{"FLAMETHROWER","DRAGON_PULSE"})
+                    {
+                        ResetBattle();while(loading)yield return null;Player.moves[0]=move;
+                        Player.body.transform.position=Vector3.left*2;Target.body.transform.position=Vector3.right*2;
+                        if(!Command(0))throw new Exception(move+" stream command rejected");
+                        float limit=Time.realtimeSinceStartup+20;
+                        while((ActiveActions>0||tails.Count>0)&&Time.realtimeSinceStartup<limit)yield return null;
+                        if(ActiveActions>0||tails.Count>0||ResolvedHits!=1)throw new Exception(move+" stream must hit once and fully expire");
+                        report.Add(move+": restored volley resolves exactly one hit and all tails expire");
+                    }
+                    enemySpecies=playerSpecies;ResetBattle();while(loading)yield return null;Player.moves[0]=Target.moves[0]="FLAMETHROWER";
+                    Player.body.transform.position=Vector3.left*2;Target.body.transform.position=Vector3.right*2;
+                    Command(0);Begin(1,0,MoveStyle.Normal);float clashLimit=Time.realtimeSinceStartup+20;
+                    var flight=new List<string>();
+                    while((ActiveActions>0||tails.Count>0)&&Time.realtimeSinceStartup<clashLimit)
+                    {
+                        foreach(var fighter in fighters)if(fighter.action?.presentation!=null&&fighter.action.presentation.Travel(out var from,out var to))flight.Add($"{fighter.team}: {fighter.action.clock:F3} {from} -> {to}");
+                        yield return null;
+                    }
+                    File.WriteAllLines(Path.Combine(folder,"travel-clash-paths.txt"),flight);
+                    if(ActiveActions>0||tails.Count>0||clashCount!=1||ResolvedHits!=0)throw new Exception($"Flamethrower volleys must clash once and cancel every child: actions={ActiveActions}, tails={tails.Count}, clashes={clashCount}, hits={ResolvedHits}");
+                    report.Add("Opposing Flamethrower volleys: one clash, no damage, no remaining actions/tails");
+                }
                 if(smokeErrors>0)throw new Exception(lastSmokeError);
-                File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log(shaders?"LAB SHADER DETAILS PASSED":"LAB VISUAL LAYERS PASSED");Application.Quit(0);yield break;
+                File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log(full?"LAB ATTACK COMPLETION CAPTURES PASSED":shaders?"LAB SHADER DETAILS PASSED":"LAB VISUAL LAYERS PASSED");Application.Quit(0);yield break;
             }
             SpawnClash(midpoint);var ring=clashBursts.Last().root.GetComponent<LineRenderer>();now+=.12f;TickClashes(.12f);
             if(!ring||ring.GetPosition(0).magnitude<.2f)throw new Exception("Clash ring did not expand");
