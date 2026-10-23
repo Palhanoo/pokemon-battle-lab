@@ -43,7 +43,7 @@ namespace BattleLab
             {
                 timing=table.Get(move.id)??throw new InvalidOperationException("Missing native timing: "+move.id);
                 var fx=za.Play(move.id,Bind(actor),Bind(target),move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
-                if(fx&&move.id=="HYDRO_PUMP")fx.FitHydroBeam=true;
+                if(fx && (move.id=="HYDRO_PUMP" || move.id=="PSYBEAM"))fx.FitUnitBeam=true;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
                 fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
@@ -62,7 +62,8 @@ namespace BattleLab
             foreach(var ps in root.GetComponentsInChildren<ParticleSystem>(true))
             {
                 float scale=1,opacity=1;
-                if(ps.name=="glow"){scale=.3f;opacity=.5f;}
+                bool beam=(move=="HYDRO_PUMP"||move=="PSYBEAM")&&ps.transform.parent.name.Contains("_beam");
+                if(ps.name=="glow"){scale=beam?1:.3f;opacity=.5f;}
                 if(move=="CLOSE_COMBAT")
                 {
                     // The reconstructed backdrop renders as a filled disk, not a native

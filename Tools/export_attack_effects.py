@@ -39,6 +39,9 @@ def main():
     for move in MOVES:
         row=timing[move];row['shape']=['Melee','Projectile','Beam','Arc','Area','Self'].index(row['shape']);rows.append({'id':move,'move':row})
     (out/'za-timing.json').write_text(json.dumps({'rows':rows},indent=2))
+    from enrich_effect_data import enrich
+    from export_bdsp_effect_models import export_models
+    enrich(args.source);export_models()
     manifest=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in out.rglob('*') if p.is_file() and p.suffix!='.meta']
     (ROOT/'Docs/native-fx-manifest.json').write_text(json.dumps(manifest,indent=2))
     print(f'Staged {len(manifest)} native effect files. Run BattleLabBuilder.Setup next.')

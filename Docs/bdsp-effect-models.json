@@ -1,0 +1,53 @@
+[
+  {
+    "file": "ew122_tanM/ew122_tanM.gfbmdl",
+    "bundle": "ew122_tanm",
+    "renderers": 1,
+    "tracks": 24,
+    "materialTracks": 0,
+    "vertices": 517,
+    "unmappedMaterialTracks": [],
+    "trailFallback": false
+  },
+  {
+    "file": "ew231_whip01/ew231_whip01.gfbmdl",
+    "bundle": "ew231_whip01",
+    "renderers": 1,
+    "tracks": 33,
+    "materialTracks": 0,
+    "vertices": 1087,
+    "unmappedMaterialTracks": [
+      {
+        "clip": "ew231_whip01",
+        "type": 23,
+        "attribute": 2372308180
+      },
+      {
+        "clip": "ew231_whip01",
+        "type": 23,
+        "attribute": 2221923694
+      }
+    ],
+    "trailFallback": false
+  },
+  {
+    "file": "ew280_hand/ew280_hand.gfbmdl",
+    "bundle": "ew280_hand",
+    "renderers": 1,
+    "tracks": 48,
+    "materialTracks": 0,
+    "vertices": 1906,
+    "unmappedMaterialTracks": [],
+    "trailFallback": false
+  },
+  {
+    "file": "ew280_tail/ew280_tail.gfbmdl",
+    "bundle": "ew280_hand",
+    "renderers": 1,
+    "tracks": 0,
+    "materialTracks": 8,
+    "vertices": 55,
+    "unmappedMaterialTracks": [],
+    "trailFallback": true
+  }
+]

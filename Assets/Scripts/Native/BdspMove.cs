@@ -31,7 +31,7 @@ namespace BattleLab.Native
             public int grp;
             public bool particle;
             public string file;
-            public GameObject fx;
+            public GameObject fx;public BdspModel model;public float born;public bool flip;
             public Transform tr;
             public List<Dictionary<string, object>> cmds = new();
             public VioletMove.Battler anchor;     // the battler the group was placed on (sets its size)
@@ -78,12 +78,12 @@ namespace BattleLab.Native
                     string cmd = J.Str(c, "cmd");
                     if (cmd != "ParticleCreate" && cmd != "ModelCreate") continue;
                     float s = J.F(c, "start"), e = J.F(c, "end");
-                    if (cmd == "ParticleCreate")
                     {
                         g.file = J.Str(J.Obj(c["args"]), "file");
                         var json = prefabJson(g.file);
                         if (json == null) continue;
-                        g.fx = BdspFx.Build(json, texture, baseMaterial, holder.transform);
+                        g.fx = cmd=="ModelCreate"?BdspModel.Build(json,texture,baseMaterial,holder.transform):BdspFx.Build(json, texture, baseMaterial, holder.transform);
+                        g.model=g.fx.GetComponent<BdspModel>();g.born=s;
                         first = Mathf.Min(first, s); mv.lastEmit = Mathf.Max(mv.lastEmit, s);
                     }
                     last = Mathf.Max(last, e);
@@ -95,6 +95,7 @@ namespace BattleLab.Native
             mv.hitTime = js.TryGetValue("hit", out var h) && h is double hd ? (float)hd : -1;
             mv.startTime = first == float.MaxValue ? 0 : Mathf.Max(0, first - 0.1f);
             if (mv.hitTime < mv.startTime) mv.hitTime = first == float.MaxValue ? mv.startTime : mv.lastEmit;
+            foreach(var g in mv.groups)if(g.model)g.model.FitContact(Mathf.Max(0,mv.hitTime-g.born));
             mv.endTime = Mathf.Max(last, mv.startTime) + 1.5f;
             mv.time = mv.startTime;
             return mv;
@@ -135,6 +136,7 @@ namespace BattleLab.Native
             {
                 foreach (var c in g.cmds) Apply(g, c, prev, time);
                 Follow(g);
+                if(g.alive&&g.model)g.model.Sample(time-g.born);
                 if (manualSimulate && g.playing && g.fx)
                     foreach (var ps in VioletFx.Roots(g.fx)) ps.Simulate(dt, true, false, false);
             }
@@ -155,7 +157,7 @@ namespace BattleLab.Native
                 case "ModelCreate":
                     if (begins && !g.alive)
                     {
-                        g.alive = true;
+                        g.alive = true;g.born=s;
                         g.tr.gameObject.SetActive(true);
                         if (g.fx)
                         {
@@ -175,8 +177,10 @@ namespace BattleLab.Native
                 {
                     var b = Poke((int)J.F(p, "trg"));
                     if (b == null) break;
-                    if (begins) { g.anchor ??= b; ApplyScale(g); g.followPoke = null; g.followGroup = null; }
-                    var to = Node(b, (int)J.F(p, "node")) + Offset(b, p, "pos", J.B(p, "isRotPos"));
+                    if (begins) { g.anchor ??= b; g.flip=J.B(p,"isFlip");ApplyScale(g); g.followPoke = null; g.followGroup = null; }
+                    var offset=Offset(b,p,"pos",J.B(p,"isRotPos"));
+                    if(g.model)offset=Vector3.ClampMagnitude(offset,b.height*.25f);
+                    var to = Node(b, (int)J.F(p, "node")) + offset;
                     float rate = p.ContainsKey("rate") ? J.F(p, "rate") / 100f : 1f;
                     if (begins) g.tweenFrom = g.tr.position;
                     g.tr.position = tween ? Vector3.LerpUnclamped(g.tweenFrom, to, Ease((int)J.F(p, "move"), k) * rate) : to;
@@ -260,7 +264,8 @@ namespace BattleLab.Native
         {
             if (!g.alive) return;
             g.alive = false;
-            if (g.fx) BdspFx.Stop(g.fx, true); // let live particles finish
+            if(g.model){g.playing=false;g.tr.gameObject.SetActive(false);}
+            else if (g.fx) BdspFx.Stop(g.fx, true); // let live particles finish
             else g.tr.gameObject.SetActive(false);
         }
 
@@ -270,7 +275,7 @@ namespace BattleLab.Native
             else if (g.followPoke != null) g.tr.position = Node(g.followPoke, g.followNode) + g.followPoke.root.rotation * (g.followOffset * Size(g.followPoke));
         }
 
-        void ApplyScale(Group g) => g.tr.localScale = g.scale * Size(g.anchor ?? attacker);
+        void ApplyScale(Group g) => g.tr.localScale = Vector3.Scale(g.scale,new Vector3(g.flip?-1:1,1,1)) * Size(g.anchor ?? attacker);
 
         // Effects were made for BDSP's battle size; a small Pokémon gets a smaller burst.
         static float Size(VioletMove.Battler b) => b == null ? 1f : Mathf.Clamp(b.height / RefHeight, 0.45f, 1.8f) * Mathf.Max(0.3f, b.scale);

@@ -96,6 +96,7 @@ namespace BattleLab.Native
             Blend(mat, J.Str(e, "blend"));
             mat.SetFloat("_ColorMode", J.F(J.Obj(e["color"]), "mode"));
             mat.SetFloat("_AlphaMode", J.F(J.Obj(e["color"]), "alpha_mode"));
+            if(e.TryGetValue("combiner",out var combiner)) NativeCombiner(mat,J.Obj(combiner));
             Textures(ps, mat, J.List(e, "textures"), texture, avgLife);
             r.sharedMaterial = mat;
             Render(r, e, meshes);
@@ -113,6 +114,15 @@ namespace BattleLab.Native
                 subs.AddSubEmitter(child, ParticleSystemSubEmitterType.Birth, ParticleSystemSubEmitterProperties.InheritNothing);
             }
             return ps;
+        }
+
+        public static void NativeCombiner(Material mat,Dictionary<string,object> data)
+        {
+            mat.SetFloat("_NativeCombiner",1);
+            foreach(var pair in new[]{("color_channels","_ColorChannels"),("alpha_channels","_AlphaChannels"),("color_blends","_ColorBlends"),("alpha_blends","_AlphaBlends")})
+            {
+                var v=J.Floats(data[pair.Item1]);mat.SetVector(pair.Item2,new Vector4(v[0],v[1],v[2],v.Length>3?v[3]:0));
+            }
         }
 
         static void Emission(ParticleSystem ps, Dictionary<string, object> em, Dictionary<string, object> parentEmitter, Dictionary<string, object> e)
@@ -260,15 +270,17 @@ namespace BattleLab.Native
             var main = ps.main;
             var b = J.Vec(s, "base");
             float bx = b.x > 1e-5f ? b.x : Mathf.Max(b.y, 1e-3f), rnd = J.F(s, "random");
-            main.startSize = new ParticleSystem.MinMaxCurve(bx * (1 - rnd), bx);
-            float ry = b.y / bx;
+            main.startSize3D=true;
+            main.startSizeX=new ParticleSystem.MinMaxCurve(bx*(1-rnd),bx);
+            main.startSizeY=new ParticleSystem.MinMaxCurve(b.y*(1-rnd),b.y);
+            main.startSizeZ=new ParticleSystem.MinMaxCurve(b.z*(1-rnd),b.z);
             var keys = J.List(s, "keys");
             var sol = ps.sizeOverLifetime;
             sol.enabled = true;
             sol.separateAxes = true;
             sol.x = new ParticleSystem.MinMaxCurve(1f, KeyCurve(keys, 1, 1f));
-            sol.y = new ParticleSystem.MinMaxCurve(1f, KeyCurve(keys, 2, ry));
-            sol.z = new ParticleSystem.MinMaxCurve(1f, KeyCurve(keys, 3, b.z > 1e-5f ? b.z / bx : 1f));
+            sol.y = new ParticleSystem.MinMaxCurve(1f, KeyCurve(keys, 2, 1f));
+            sol.z = new ParticleSystem.MinMaxCurve(1f, KeyCurve(keys, 3, 1f));
         }
 
         static void Rotation(ParticleSystem ps, Dictionary<string, object> r, Dictionary<string, object> e)

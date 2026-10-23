@@ -33,7 +33,7 @@ namespace BattleLab.Native
         bool actorLease;
         readonly object actorKey=new();
         public bool ExternalActorClock;
-        public bool FitHydroBeam;bool hydroPrepared;readonly HashSet<Mesh> hydroSourceMeshes=new();
+        public bool FitUnitBeam;bool beamPrepared;readonly HashSet<Mesh> beamSourceMeshes=new();
         public void SampleActor(float elapsed){if(actorPresentation && actorLease)actorPresentation.Sample(actorKey,actorClips,elapsed);}
         public Battler attacker, defender;
         public float time, startTime, endTime, lastEmit;float previousTime;
@@ -152,7 +152,7 @@ namespace BattleLab.Native
         void OnDestroy()
         {
             ReleaseActor();
-            foreach(var mesh in hydroSourceMeshes)if(mesh)Gone(mesh);
+            foreach(var mesh in beamSourceMeshes)if(mesh)Gone(mesh);
             foreach (var r in GetComponentsInChildren<ParticleSystemRenderer>(true))
             {
                 if (r.sharedMaterial) Gone(r.sharedMaterial);
@@ -180,14 +180,21 @@ namespace BattleLab.Native
                 if(Application.isPlaying)Destroy(gameObject);else DestroyImmediate(gameObject);
                 return;
             }
-            if(FitHydroBeam&&!hydroPrepared)
+            if(FitUnitBeam&&!beamPrepared)
             {
-                hydroPrepared=true;
-                foreach(var o in objs)if(o.name.StartsWith("bullet"))foreach(var ps in o.fx.GetComponentsInChildren<ParticleSystem>(true))
+                beamPrepared=true;
+                foreach(var o in objs)if(o.set.Contains("_beam"))foreach(var ps in o.fx.GetComponentsInChildren<ParticleSystem>(true))
                 {
                     var renderer=ps.GetComponent<ParticleSystemRenderer>();if(!renderer.mesh)continue;
-                    hydroSourceMeshes.Add(renderer.mesh);renderer.mesh=VioletFx.YToZ(renderer.mesh);
-                    var main=ps.main;main.startRotationX=0;main.startRotationZ=main.startRotationY;main.startRotationY=0;
+                    var sourceBounds=renderer.mesh.bounds;
+                    beamSourceMeshes.Add(renderer.mesh);renderer.mesh=VioletFx.YToZ(renderer.mesh);
+                    if(sourceBounds.min.y<-.01f)
+                    {
+                        var vertices=renderer.mesh.vertices;float length=1.1f/(sourceBounds.size.y*Mathf.Max(.001f,ps.main.startSizeY.constantMax));
+                        for(int i=0;i<vertices.Length;i++)vertices[i].z=(vertices[i].z-sourceBounds.min.y)*length;
+                        renderer.mesh.vertices=vertices;renderer.mesh.RecalculateBounds();
+                    }
+                    var main=ps.main;var baseY=main.startSizeY;main.startSizeY=main.startSizeZ;main.startSizeZ=baseY;main.startRotationX=0;main.startRotationZ=main.startRotationY;main.startRotationY=0;
                     var rotation=ps.rotationOverLifetime;rotation.z=rotation.y;rotation.x=new ParticleSystem.MinMaxCurve(0,0);rotation.y=new ParticleSystem.MinMaxCurve(0,0);
                     var size=ps.sizeOverLifetime;var oldY=size.y;size.y=size.z;size.z=oldY;
                 }
@@ -199,13 +206,27 @@ namespace BattleLab.Native
             {
                 o.previousPosition=o.fx.transform.position;
                 foreach (var c in o.clips) Apply(o, c, prev, time);
-                if(FitHydroBeam&&o.name.StartsWith("bullet"))
+                if(FitUnitBeam&&!o.set.Contains("_beam")&&o.name!="ready")
+                {
+                    // Native spray assemblies are authored for the cinematic camera. Keep their
+                    // whole footprint (particle size, spawn radius and travel) proportional in the lab.
+                    var body=o.name.Contains("impact")||o.set.Contains("_end")?defender:attacker;
+                    o.fx.transform.localScale=Vector3.one*Mathf.Clamp(body.height*.45f,.18f,.65f);
+                }
+                if(FitUnitBeam&&o.set.Contains("_beam"))
                 {
                     var from=Node(attacker,"eff_rangeattack01");var to=defender.Center;
                     var direction=to-from;var tr=o.fx.transform;
                     tr.position=from;
                     if(direction.sqrMagnitude>.0001f)tr.rotation=Quaternion.LookRotation(direction.normalized);
-                    tr.localScale=new Vector3(.65f,.65f,direction.magnitude/1.1f);
+                    tr.localScale=new Vector3(Mathf.Clamp(attacker.height,.4f,.8f),Mathf.Clamp(attacker.height,.4f,.8f),direction.magnitude/1.1f);
+                }
+                if(FitUnitBeam&&o.name.StartsWith("bullet")&&o.set.Contains("_end"))
+                {
+                    o.fx.transform.position=defender.Center;
+                    var direction=defender.Center-Node(attacker,"eff_rangeattack01");
+                    if(direction.sqrMagnitude>.0001f)o.fx.transform.rotation=Quaternion.LookRotation(direction);
+                    o.fx.transform.localScale=Vector3.one*Mathf.Clamp(defender.height*.45f,.18f,.65f);
                 }
                 if (manualSimulate && o.playing)
                     foreach (var ps in VioletFx.Roots(o.fx)) ps.Simulate(dt, true, false, false);
@@ -214,7 +235,7 @@ namespace BattleLab.Native
 
         public bool ProjectileSegment(out Vector3 previous,out Vector3 current)
         {
-            if(FitHydroBeam){previous=current=Vector3.zero;return false;}
+            if(FitUnitBeam){previous=current=Vector3.zero;return false;}
             foreach(var o in objs)
             {
                 if(!o.name.StartsWith("bullet")||!o.playing)continue;
@@ -313,7 +334,12 @@ namespace BattleLab.Native
                 {
                     var target = Side(VioletFx.J.Str(p, "Target"));
                     // Violet sizes these to the target Pokémon; heights here already include the size setting
-                    if (target != null && begins) adjust[o] = Mathf.Clamp(target.height, 0.4f, 2.5f);
+                    if (target != null && begins)
+                    {
+                        float previous=adjust.TryGetValue(o,out var old)?old:effectScale;
+                        adjust[o]=Mathf.Clamp(target.height,0.4f,2.5f);
+                        tr.localScale*=adjust[o]/Mathf.Max(.001f,previous);
+                    }
                     break;
                 }
             }

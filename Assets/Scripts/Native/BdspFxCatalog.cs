@@ -43,7 +43,11 @@ namespace BattleLab.Native
                 byId = new Dictionary<string, Move>();
                 foreach (var m in moves) byId[m.id] = m;
                 prefabByName = new Dictionary<string, TextAsset>();
-                foreach (var p in prefabs) if (p) prefabByName[p.name] = p;
+                foreach (var p in prefabs) if (p)
+                {
+                    prefabByName[p.name]=p;
+                    if(p.name.StartsWith("model_")){var data=VioletFx.J.Obj(MiniJson.Parse(p.text));prefabByName[VioletFx.J.Str(data,"file")]=p;}
+                }
                 texByName = new Dictionary<string, Texture2D>();
                 foreach (var t in textures) if (t) texByName[t.name] = t;
                 locatorNames = new Dictionary<int, string>();

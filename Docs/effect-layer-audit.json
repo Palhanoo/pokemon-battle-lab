@@ -4,14 +4,8 @@
     "BDSP": 22,
     "Arceus/SV/Sword": "Bodies use shared ZA effects; their separate native effect engines are not imported."
   },
-  "missing": [
-    "/mnt/d/www/PokemonBattleLab/Assets/NativeFx/BDSP/MOVE_BRICK_BREAK/move.json: ew280_hand/ew280_hand.gfbmdl",
-    "/mnt/d/www/PokemonBattleLab/Assets/NativeFx/BDSP/MOVE_BRICK_BREAK/move.json: ew280_tail/ew280_tail.gfbmdl",
-    "/mnt/d/www/PokemonBattleLab/Assets/NativeFx/BDSP/MOVE_IRON_TAIL/move.json: ew231_whip01/ew231_whip01.gfbmdl",
-    "/mnt/d/www/PokemonBattleLab/Assets/NativeFx/BDSP/MOVE_IRON_TAIL/move.json: ew231_whip01/ew231_whip01.gfbmdl",
-    "/mnt/d/www/PokemonBattleLab/Assets/NativeFx/BDSP/MOVE_LICK/move.json: ew122_tanM/ew122_tanM.gfbmdl"
-  ],
-  "layerCount": 3500,
+  "missing": [],
+  "layerCount": 3600,
   "layers": [
     {
       "source": "ZA",
@@ -26098,6 +26092,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew085_df_hit01.json",
+      "emitter": "ring_add",
+      "texture": "fxpt_1_circle006_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew085_df_hit01.json",
       "emitter": "spark02_up_side",
       "texture": "fxpt_2_thunder209a_a",
       "slot": "tex0",
@@ -26287,6 +26290,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew085_spark01.json",
+      "emitter": "00_pri_fol02_nor",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew085_spark01.json",
       "emitter": "00_pri_fol02_nor_Copy1",
       "texture": "fxpt_0_mask001_m",
       "slot": "tex0",
@@ -26317,6 +26329,15 @@
       "emitter": "pri_at_spark_nor",
       "texture": "fxpt_2_thunder209a_a",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_at_start.json",
+      "emitter": "pri_at_spark_nor",
+      "texture": "fxpt_2_thunder201_a",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -26557,6 +26578,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew087_df_hit02.json",
+      "emitter": "line_spark04_main",
+      "texture": "fxpt_2_thunder209a_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_df_hit02.json",
       "emitter": "line_spark04_main_Child",
       "texture": "fxpt_0_flash201_a",
       "slot": "tex0",
@@ -26587,6 +26617,15 @@
       "emitter": "ring_dist",
       "texture": "fxpt_0_cloud601_u",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_df_hit02.json",
+      "emitter": "ring_dist",
+      "texture": "fxpt_1_circle006_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26656,6 +26695,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew087_df_hit02.json",
+      "emitter": "ring01",
+      "texture": "fxpt_1_ring001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_df_hit02.json",
       "emitter": "spark01_grain",
       "texture": "fxpt_2_thunder004_m",
       "slot": "tex0",
@@ -26674,6 +26722,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew087_df_hit02.json",
+      "emitter": "spark02_grain",
+      "texture": "fxpt_2_thunder010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_df_hit02.json",
       "emitter": "ring_add",
       "texture": "fxpt_3_flow801_n",
       "slot": "tex0",
@@ -26686,6 +26743,15 @@
       "emitter": "ring_add",
       "texture": "fxpt_0_cloud601_u",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew087_df_hit02.json",
+      "emitter": "ring_add",
+      "texture": "fxpt_1_circle006_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26737,6 +26803,24 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "prim_aura02_nor",
+      "texture": "fxpt_0_mask004_m_03",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "prim_aura02_nor",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
       "emitter": "prim_ball01_nor",
       "texture": "fxpt_3_cloud002_m",
       "slot": "tex0",
@@ -26755,6 +26839,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "prim_ball01_nor",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
       "emitter": "prim_ball01_add",
       "texture": "fxpt_3_cloud002_m",
       "slot": "tex0",
@@ -26767,6 +26860,15 @@
       "emitter": "prim_ball01_add",
       "texture": "fxpt_3_flow013_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "prim_ball01_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26782,6 +26884,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "00_flash_hitmark_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
       "emitter": "01_flash_add",
       "texture": "fxpt_1_circle001_m",
       "slot": "tex0",
@@ -26791,6 +26902,24 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "01_flash_add",
+      "texture": "fxpt_0_frash202_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "01_flash_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
       "emitter": "ring_add_old",
       "texture": "fxpt_1_ring006_m",
       "slot": "tex0",
@@ -26809,6 +26938,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "ring_add_old",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
       "emitter": "ring_add",
       "texture": "fxpt_1_ring006_m",
       "slot": "tex0",
@@ -26821,6 +26959,15 @@
       "emitter": "ring_add",
       "texture": "fxpt_1_ring011_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_aura.json",
+      "emitter": "ring_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26854,9 +27001,45 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball01_nor",
+      "texture": "fxpt_3_flow203_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball01_nor",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
       "emitter": "prim_ball02_nor",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball02_nor",
+      "texture": "fxpt_3_flow010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball02_nor",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26872,9 +27055,45 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_aura02_add",
+      "texture": "fxpt_3_flow601_u",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_aura02_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
       "emitter": "prim_ball01_add",
       "texture": "fxpt_3_flow012_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball01_add",
+      "texture": "fxpt_3_flow203_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_df_ball.json",
+      "emitter": "prim_ball01_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -26962,6 +27181,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_hit.json",
+      "emitter": "prim_ball03",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_hit.json",
       "emitter": "prim_ball02",
       "texture": "fxpt_3_flow702_o",
       "slot": "tex0",
@@ -26974,6 +27202,15 @@
       "emitter": "prim_ball02",
       "texture": "fxpt_3_flow203_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_hit.json",
+      "emitter": "prim_ball02",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -27016,6 +27253,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew094_hit.json",
+      "emitter": "ring_add_old",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_hit.json",
       "emitter": "ring_add",
       "texture": "fxpt_1_ring006_m",
       "slot": "tex0",
@@ -27028,6 +27274,15 @@
       "emitter": "ring_add",
       "texture": "fxpt_1_ring011_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew094_hit.json",
+      "emitter": "ring_add",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -27109,6 +27364,15 @@
       "emitter": "srash02",
       "texture": "fxpt_0_wind001_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew098_at_srash01.json",
+      "emitter": "srash02",
+      "texture": "fxpt_0_wind003_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -27253,6 +27517,15 @@
       "emitter": "base_war01",
       "texture": "fxpt_2_water003_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew122_hit.json",
+      "emitter": "base_war01",
+      "texture": "fxpt_2_water003_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -27442,6 +27715,15 @@
       "emitter": "ring",
       "texture": "fxpt_0_ring201_a_02",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew183_df_hit.json",
+      "emitter": "ring",
+      "texture": "fxpt_0_ring001_m_02",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -28149,6 +28431,15 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/ew209_body_thunder.json",
+      "emitter": "thunder_out2",
+      "texture": "fxpt_3_flow015_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/ew209_hit.json",
       "emitter": "kona",
       "texture": "fxpt_0_water001_m",
@@ -28351,6 +28642,15 @@
       "emitter": "whipline_add",
       "texture": "fxpt_1_ring201_a",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew231_df_hit001.json",
+      "emitter": "whipline_add",
+      "texture": "fxpt_0_flash202_a",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -28600,6 +28900,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew247_at_bullet.json",
+      "emitter": "ring_wind",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_bullet.json",
       "emitter": "bom01_nor",
       "texture": "fxpt_2_bom201_a",
       "slot": "tex0",
@@ -28621,6 +28930,15 @@
       "emitter": "ring_follow",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_bullet.json",
+      "emitter": "ring_follow",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -28663,6 +28981,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew247_at_bullet.json",
+      "emitter": "core_dist",
+      "texture": "fxpt_0_mask003_m_02",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_bullet.json",
       "emitter": "grain01",
       "texture": "fxpt_1_circle005_m",
       "slot": "tex0",
@@ -28684,6 +29011,15 @@
       "emitter": "base01_nor",
       "texture": "fxpt_3_flow703_sml_o",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_bullet.json",
+      "emitter": "base01_nor",
+      "texture": "fxpt_3_flow703_sml_o",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -28735,6 +29071,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew247_at_bullet.json",
+      "emitter": "thunder01",
+      "texture": "fxpt_0_mask007_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_bullet.json",
       "emitter": "thunder02",
       "texture": "fxpt_2_thunder004_m",
       "slot": "tex0",
@@ -28765,6 +29110,15 @@
       "emitter": "ring_follow",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_at_charge.json",
+      "emitter": "ring_follow",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -28810,6 +29164,15 @@
       "emitter": "frash02_add",
       "texture": "fxpt_0_flash002_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_df_hit.json",
+      "emitter": "frash02_add",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -28873,6 +29236,15 @@
       "emitter": "ring_wind",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew247_df_hit.json",
+      "emitter": "ring_wind",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -28986,6 +29358,15 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/ew317_at_rock.json",
+      "emitter": "rock",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/ew317_df_hit.json",
       "emitter": "glow_charge_under",
       "texture": "fxpt_1_circle001_m",
@@ -29035,6 +29416,15 @@
       "emitter": "rock_prim",
       "texture": "fxpt_cmn_lt002_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew317_df_hit.json",
+      "emitter": "rock_prim",
+      "texture": "fxpt_cmn_ht001_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29167,6 +29557,24 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew370_df_hit_end.json",
+      "emitter": "kem02_bill_nor",
+      "texture": "fxpt_0_smoke002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew370_df_hit_end.json",
+      "emitter": "kem02_bill_nor",
+      "texture": "fxpt_3_flow701_o",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew370_df_hit_end.json",
       "emitter": "kem02_bill_nor_Copy1",
       "texture": "fxpt_0_smoke005_m",
       "slot": "tex0",
@@ -29176,9 +29584,36 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew370_df_hit_end.json",
+      "emitter": "kem02_bill_nor_Copy1",
+      "texture": "fxpt_0_smoke002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew370_df_hit_end.json",
+      "emitter": "kem02_bill_nor_Copy1",
+      "texture": "fxpt_3_flow701_o",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew370_df_hit_end.json",
       "emitter": "kem_ybill",
       "texture": "fxpt_0_tail004_m_repeat",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew370_df_hit_end.json",
+      "emitter": "kem_ybill",
+      "texture": "fxpt_3_smoke201_a",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -29221,6 +29656,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "mzl_wave_prim_Copy2_Copy1",
+      "texture": "fxpt_3_flow004_m_05",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
       "emitter": "mzl_wave_prim_Copy2",
       "texture": "fxpt_cmn_white001_m",
       "slot": "tex0",
@@ -29233,6 +29677,15 @@
       "emitter": "mzl_wave_prim_Copy2",
       "texture": "fxpt_3_flow801_n",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "mzl_wave_prim_Copy2",
+      "texture": "fxpt_3_flow004_m_05",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29260,6 +29713,15 @@
       "emitter": "wave_prim",
       "texture": "fxpt_3_flow004_m_05",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "wave_prim",
+      "texture": "fxpt_3_flow004_m_05",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29320,6 +29782,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "spike",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
       "emitter": "coreBall",
       "texture": "fxpt_3_flow016_m",
       "slot": "tex0",
@@ -29332,6 +29803,15 @@
       "emitter": "coreBall",
       "texture": "fxpt_3_flow005_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "coreBall",
+      "texture": "fxpt_0_circle003_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29436,10 +29916,28 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet.json",
+      "emitter": "opq_cly_prim",
+      "texture": "fxpt_3_flow019_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/ew396_bullet_charge.json",
       "emitter": "glow",
       "texture": "fxpt_0_light604_u",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet_charge.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -29545,7 +30043,34 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew396_bullet_charge.json",
+      "emitter": "coreBall",
+      "texture": "fxpt_0_circle003_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet_charge.json",
       "emitter": "stripe_01",
+      "texture": "fxpt_1_aura701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet_charge.json",
+      "emitter": "stripe_01",
+      "texture": "fxpt_1_aura701_o",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew396_bullet_charge.json",
+      "emitter": "stripe_02",
       "texture": "fxpt_1_aura701_o",
       "slot": "tex0",
       "exists": true,
@@ -29556,7 +30081,7 @@
       "asset": "BDSP/prefabs/ew396_bullet_charge.json",
       "emitter": "stripe_02",
       "texture": "fxpt_1_aura701_o",
-      "slot": "tex0",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -29815,6 +30340,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew399_muzzle_under.json",
+      "emitter": "Up_under_ring_p",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_muzzle_under.json",
       "emitter": "ring_black",
       "texture": "fxpt_1_ring010_m",
       "slot": "tex0",
@@ -29842,6 +30376,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew399_muzzle_under.json",
+      "emitter": "Fire_under01",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_muzzle_under.json",
       "emitter": "Fire_under02",
       "texture": "fxpt_2_fire007_m",
       "slot": "tex0",
@@ -29860,6 +30403,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew399_muzzle_under.json",
+      "emitter": "Fire_under02",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_muzzle_under.json",
       "emitter": "Fire_under03",
       "texture": "fxpt_2_fire007_m",
       "slot": "tex0",
@@ -29872,6 +30424,15 @@
       "emitter": "Fire_under03",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_muzzle_under.json",
+      "emitter": "Fire_under03",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29890,6 +30451,15 @@
       "emitter": "Up_cylinder_p",
       "texture": "fxpt_3_flow016_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_muzzle_under.json",
+      "emitter": "Up_cylinder_p",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -29932,6 +30502,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew399_ring.json",
+      "emitter": "wave01",
+      "texture": "fxpt_0_ring501_y",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew399_ring.json",
       "emitter": "wave02",
       "texture": "fxpt_2_ring006_m",
       "slot": "tex0",
@@ -29958,6 +30537,15 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/ew402_bullet.json",
+      "emitter": "seed_base",
+      "texture": "fxpt_cmn_lt701_o",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/ew402_seed.json",
       "emitter": "seed_base",
       "texture": "fxpt_ew402_seed02_o",
@@ -29977,6 +30565,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew402_seed.json",
+      "emitter": "seed_base",
+      "texture": "fxpt_cmn_lt701_o",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew402_seed.json",
       "emitter": "seed_base_Copy1",
       "texture": "fxpt_ew402_seed02_o",
       "slot": "tex0",
@@ -29989,6 +30586,15 @@
       "emitter": "seed_base_Copy1",
       "texture": "fxpt_ew402_seed01_o",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew402_seed.json",
+      "emitter": "seed_base_Copy1",
+      "texture": "fxpt_cmn_lt701_o",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -30166,6 +30772,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
+      "emitter": "ring01",
+      "texture": "fxpt_0_flash202_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
       "emitter": "radial",
       "texture": "fxpt_3_cloud203_a",
       "slot": "tex0",
@@ -30211,6 +30826,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
+      "emitter": "ring02_lo",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
       "emitter": "ring03",
       "texture": "fxpt_2_bom002_m",
       "slot": "tex0",
@@ -30238,6 +30862,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
+      "emitter": "ring04",
+      "texture": "fxpt_0_ring002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
       "emitter": "flash_line01",
       "texture": "fxpt_1_circle003_m",
       "slot": "tex0",
@@ -30259,6 +30892,15 @@
       "emitter": "ring02_lo_Copy1",
       "texture": "fxpt_1_circle003_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st02_charge.json",
+      "emitter": "ring02_lo_Copy1",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30310,9 +30952,36 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "shot_st_muzzle",
+      "texture": "fxpt_0_aura201_a_repeat",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
       "emitter": "main_beam_nor_smoke",
       "texture": "fxpt_3_flow701_o_repeat",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "main_beam_nor_smoke",
+      "texture": "fxpt_3_mask001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "main_beam_nor_smoke",
+      "texture": "fxpt_3_fire201_a_repeat_mirror",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -30328,9 +30997,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "linestart",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
       "emitter": "line_loop",
       "texture": "fxpt_0_mask006_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "line_loop",
+      "texture": "fxpt_0_mask006_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30346,9 +31033,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "main_beam_add01_col",
+      "texture": "fxpt_3_color001_m_mirror",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
       "emitter": "shot",
       "texture": "fxpt_2_hit014_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "shot",
+      "texture": "fxpt_2_hit014_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30373,9 +31078,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "linekem_rainbow",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
       "emitter": "ring02_lo_Copy1",
       "texture": "fxpt_1_circle005_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_st03_muzzle.json",
+      "emitter": "ring02_lo_Copy1",
+      "texture": "fxpt_2_thunder003_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30427,6 +31150,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
+      "emitter": "base_bill_add",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
       "emitter": "wind",
       "texture": "fxpt_2_wind001_m",
       "slot": "tex0",
@@ -30472,6 +31204,24 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_df_beam.json",
+      "emitter": "main_beam_nor_smoke",
+      "texture": "fxpt_3_mask001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_beam.json",
+      "emitter": "main_beam_nor_smoke",
+      "texture": "fxpt_3_fire201_a_repeat_mirror",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_beam.json",
       "emitter": "line_loop",
       "texture": "fxpt_0_mask006_m",
       "slot": "tex0",
@@ -30481,9 +31231,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_df_beam.json",
+      "emitter": "line_loop",
+      "texture": "fxpt_0_mask006_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_beam.json",
       "emitter": "beam01_smokebullet_add",
       "texture": "fxpt_2_fire203_a",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_beam.json",
+      "emitter": "beam01_smokebullet_add",
+      "texture": "fxpt_0_aura201_a_repeat",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30535,9 +31303,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_df_hit01_lo.json",
+      "emitter": "Fire_core",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit01_lo.json",
       "emitter": "first_flashbase01",
       "texture": "fxpt_1_circle001_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit01_lo.json",
+      "emitter": "first_flashbase01",
+      "texture": "fxpt_1_ring009_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30583,6 +31369,15 @@
       "emitter": "smoke_rainbow",
       "texture": "fxpt_0_smoke002_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit01_lo.json",
+      "emitter": "smoke_rainbow",
+      "texture": "fxpt_3_color001_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30652,6 +31447,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
+      "emitter": "shot_st_muzzle",
+      "texture": "fxpt_2_line002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
       "emitter": "hit_beamline_02",
       "texture": "fxpt_0_mark006_m",
       "slot": "tex0",
@@ -30661,9 +31465,27 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
+      "emitter": "hit_beamline_02",
+      "texture": "fxpt_0_blur001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
       "emitter": "grain01",
       "texture": "fxpt_0_water002_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
+      "emitter": "grain01",
+      "texture": "fxpt_0_dast001_m_mirror_repeat",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30682,6 +31504,15 @@
       "emitter": "hitmark02_lo",
       "texture": "fxpt_2_hit014_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew406_df_hit02_end.json",
+      "emitter": "hitmark02_lo",
+      "texture": "fxpt_2_hit014_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -30715,6 +31546,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew409_at_draw_ed.json",
+      "emitter": "grain_ring_fall",
+      "texture": "fxpt_1_ring010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew409_at_draw_ed.json",
       "emitter": "grain_kira_fall",
       "texture": "fxpt_1_flash001_m",
       "slot": "tex0",
@@ -30727,6 +31567,15 @@
       "emitter": "grain02_kira_fall",
       "texture": "fxpt_1_circle004_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew409_at_draw_ed.json",
+      "emitter": "grain02_kira_fall",
+      "texture": "fxpt_1_flash002_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     },
@@ -31264,6 +32113,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew435_field_thunder.json",
+      "emitter": "thunder_imp",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew435_field_thunder.json",
       "emitter": "thunder_imp_delay",
       "texture": "fxpt_0_mask001_m",
       "slot": "tex0",
@@ -31276,6 +32134,15 @@
       "emitter": "thunder_imp_delay",
       "texture": "fxpt_0_tail004_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew435_field_thunder.json",
+      "emitter": "thunder_imp_delay",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex2",
       "exists": true,
       "bound": true
     },
@@ -31498,6 +32365,15 @@
     {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew435_thunder_flash.json",
+      "emitter": "thunder_delay02",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew435_thunder_flash.json",
       "emitter": "thunder1",
       "texture": "fxpt_2_thunder003_m",
       "slot": "tex0",
@@ -31510,6 +32386,24 @@
       "emitter": "tubu",
       "texture": "fxpt_2_dast003_m",
       "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew280_tail.json",
+      "emitter": "model",
+      "texture": "fxpt_ew280_shock_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew280_tail.json",
+      "emitter": "model",
+      "texture": "fxpt_3_flow007_m",
+      "slot": "tex1",
       "exists": true,
       "bound": true
     }
@@ -31715,7 +32609,7 @@
     "ZA:Title/Character/SetTargetPosition": 1
   },
   "limitations": [
-    "Sphere textures now bind via view-normal projection; native combiner/refraction/material fidelity is still approximate.",
+    "Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.",
     "Source camera tracks, native deformation and full state machines remain incomplete.",
     "Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause."
   ]

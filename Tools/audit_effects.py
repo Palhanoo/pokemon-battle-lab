@@ -28,6 +28,7 @@ for move,folder in za.items():
         if path.name=='move.json':continue
         for group in json.loads(path.read_text()).get('sets',[]):
             for e in group.get('emitters',[]):walk(e,path)
+models={json.loads(p.read_text())['file']:p for p in (FX/'BDSP/prefabs').glob('model_*.json')}
 bdsp=list((FX/'BDSP').glob('MOVE_*/move.json'))
 for path in bdsp:
     for group in json.loads(path.read_text()).get('groups',[]):
@@ -36,16 +37,17 @@ for path in bdsp:
             if cmd['cmd'] not in bdsp_supported:unsupported.append(dict(asset=str(path.relative_to(FX)),command=cmd['cmd']))
             if cmd['cmd'] in ('ParticleCreate','ModelCreate'):
                 name=cmd['args'].get('file')
-                if name and not (FX/'BDSP/prefabs'/(str(name)+'.json')).exists():missing.append(str(path)+': '+str(name))
+                if name and name not in models and not (FX/'BDSP/prefabs'/(str(name)+'.json')).exists():missing.append(str(path)+': '+str(name))
 for path in (FX/'BDSP/prefabs').glob('*.json'):
-    for node in json.loads(path.read_text()).get('nodes',[]):
-        mat=node.get('r',{}).get('mat',{})
-        for slot in ('tex0','tex1'):
+    data=json.loads(path.read_text())
+    entries=[(n['name'],n.get('r',{}).get('mat',{})) for n in data.get('nodes',[])]+[('model',m) for m in data.get('materials',[])]
+    for label,mat in entries:
+        for slot in ('tex0','tex1','tex2'):
             if not mat.get(slot):continue
             name=mat[slot]['name'];exists=(FX/'BDSP/textures'/(name+'.png')).exists()
             if not exists:missing.append(str(path)+': '+name)
-            layers.append(dict(source='BDSP',asset=str(path.relative_to(FX)),emitter=node['name'],texture=name,slot=slot,exists=exists,bound=True))
-report=dict(scope={'ZA':len(za),'BDSP':len(bdsp),'Arceus/SV/Sword':'Bodies use shared ZA effects; their separate native effect engines are not imported.'},missing=missing,layerCount=len(layers),layers=layers,unsupportedLightingLookups=warnings,omittedRenderers=omitted,unhandledTimelineCommands=unsupported,commands=dict(sorted(commands.items())),limitations=['Sphere textures now bind via view-normal projection; native combiner/refraction/material fidelity is still approximate.','Source camera tracks, native deformation and full state machines remain incomplete.','Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause.'])
+            layers.append(dict(source='BDSP',asset=str(path.relative_to(FX)),emitter=label,texture=name,slot=slot,exists=exists,bound=True))
+report=dict(scope={'ZA':len(za),'BDSP':len(bdsp),'Arceus/SV/Sword':'Bodies use shared ZA effects; their separate native effect engines are not imported.'},missing=missing,layerCount=len(layers),layers=layers,unsupportedLightingLookups=warnings,omittedRenderers=omitted,unhandledTimelineCommands=unsupported,commands=dict(sorted(commands.items())),limitations=['Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.','Source camera tracks, native deformation and full state machines remain incomplete.','Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause.'])
 (ROOT/'Docs/effect-layer-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ('layers','commands','unsupportedLightingLookups','omittedRenderers','unhandledTimelineCommands')},indent=2));print('Unsupported texture slots:',len(warnings),'Omitted renderers:',len(omitted),'Unhandled timeline commands:',len(unsupported))
 raise SystemExit(bool(missing))

@@ -249,3 +249,22 @@ still need Bruno's playtest.
 
 Final package rerun: exit0, LAB HIT FEEL PASSED in Logs/hit-feel-final.log.
 Post-contact capture visibly confirms the flat yellow disk is absent.
+
+## Visual layer repair — 23 October 2026
+
+LAB-16 final verification: Builds/PokedexVisualLayers compiles with 0 errors.
+Eight targeted presentations pass in Logs/visual-layers-final.log, process exit0,
+no logged exceptions or particle errors through shutdown. All five BDSP model
+instances exist, deform and deactivate at timeline end. No full roster rerun.
+Docs/evidence/visual-layers retains contact frames and twelve timed frames per
+move plus focused-checks.txt. Visual inspection confirms smaller Hydro spray,
+full-length forward Psybeam (including its aura), more textured fire/Dragon Pulse
+and the restored models placed around their target. The new material blending is
+shared across the existing47 ZA/22 BDSP effects; no attacks were added.
+Audit now resolves3,600 texture references and all five model references (four
+unique assets). This is not native visual parity: refraction/deformation shaders,
+32 disabled/carrier renderer records, Dig positioning commands and two Iron Tail
+material-animation curves remain incomplete. BDSP contact pose fitting and beam
+spray footprint limits are intentional real-time lab adaptations. Bruno's visual
+acceptance remains open. Launcher selects this isolated build; previous player
+and build remain intact.

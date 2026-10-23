@@ -363,6 +363,8 @@ namespace BattleLab.Native
             mat.renderQueue = queue >= 2500 ? queue : 3000;
             Texture(mat, "_MainTex", m, "tex0", texture, null);
             mat.SetFloat("_UseSub", Texture(mat, "_SubTex", m, "tex1", texture, "_SubScroll") ? 1 : 0);
+            if(m.TryGetValue("combiner",out var combiner))VioletFx.NativeCombiner(mat,J.Obj(combiner));
+            mat.SetFloat("_UseThird",Texture(mat,"_ThirdTex",m,"tex2",texture,"_ThirdScroll")?1:0);
             r.sharedMaterial = mat;
             // the combiner's colour scale and multiply colour act on colour0 / colour1
             float scale = J.F(m, "color_scale");
@@ -389,15 +391,15 @@ namespace BattleLab.Native
             }
         }
 
-        static bool Texture(Material mat, string prop, Dictionary<string, object> m, string key, Func<string, Texture2D> texture, string scrollProp)
+        public static bool Texture(Material mat, string prop, Dictionary<string, object> m, string key, Func<string, Texture2D> texture, string scrollProp)
         {
             if (!m.TryGetValue(key, out var to) || !(to is Dictionary<string, object> t)) return false;
             var tex = texture(J.Str(t, "name"));
             if (!tex) return false;
             var wrap = J.Floats(t["wrap"]);
-            mat.SetVector(prop=="_MainTex"?"_MainWrap":"_SubWrap",new Vector4(wrap[0],wrap[1],0,0));
+            mat.SetVector(prop.Replace("Tex","Wrap"),new Vector4(wrap[0],wrap[1],0,0));
             mat.SetTexture(prop, tex);
-            mat.SetFloat(prop == "_MainTex" ? "_MainGrey" : "_SubGrey", Grey(tex) ? 1 : 0);
+            mat.SetFloat(prop.Replace("Tex","Grey"), Grey(tex) ? 1 : 0);
             var sc = J.Floats(t["scale"]); var off = J.Floats(t["offset"]);
             mat.SetTextureScale(prop, new Vector2(sc[0], sc[1]));
             mat.SetTextureOffset(prop, new Vector2(off[0], off[1]));
@@ -411,7 +413,7 @@ namespace BattleLab.Native
 
         static bool Grey(Texture2D t) => t.format == TextureFormat.R8 || t.format == TextureFormat.BC4 || t.format == TextureFormat.Alpha8 || t.format == TextureFormat.R16;
 
-        static Mesh BuildMesh(Dictionary<string, object> m)
+        public static Mesh BuildMesh(Dictionary<string, object> m)
         {
             var mesh = new Mesh { name = "bdsp mesh " + J.Str(m, "name") };
             var v = J.Floats(m["v"]);

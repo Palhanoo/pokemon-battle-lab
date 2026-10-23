@@ -1261,18 +1261,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0033/cmn_impact_tp00_00.json",
-    "bytes": 10488,
-    "sha256": "0cd0419203d13dbf43fc7a45641d3c16209daa086afe2c5e576326444566fc8a"
+    "bytes": 10940,
+    "sha256": "9bf9fd99e2a315e96950b0450cef7a793a6068932971751520e65a1188d348c1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0033/cmn_ready_foot_tp00_01.json",
-    "bytes": 15382,
-    "sha256": "6b1552ad93a6ae8a5e587015c09a662fc07ba4a338d4a16c4fc4688999092d37"
+    "bytes": 15608,
+    "sha256": "d3833333acd6e47b69b21fe9bfc5415b327ee8ff5a3d763f167b7f4697876545"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0033/ew0033_bullet.json",
-    "bytes": 43773,
-    "sha256": "697920ab7cc79123333e62c3d5d1205f6995ed9dace3018a180a81d37bb57a82"
+    "bytes": 44338,
+    "sha256": "5d3224c8c3fa0dea115ddebfd1244d6cf357179f736ecd35350bdc709af56a0c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0033/move.json",
@@ -1281,28 +1281,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/cmn_impact_tp00_00.json",
-    "bytes": 10488,
-    "sha256": "0cd0419203d13dbf43fc7a45641d3c16209daa086afe2c5e576326444566fc8a"
+    "bytes": 10940,
+    "sha256": "9bf9fd99e2a315e96950b0450cef7a793a6068932971751520e65a1188d348c1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/cmn_ready_foot_tp00_01.json",
-    "bytes": 15382,
-    "sha256": "6b1552ad93a6ae8a5e587015c09a662fc07ba4a338d4a16c4fc4688999092d37"
+    "bytes": 15608,
+    "sha256": "d3833333acd6e47b69b21fe9bfc5415b327ee8ff5a3d763f167b7f4697876545"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/ew0036_bullet.json",
-    "bytes": 109536,
-    "sha256": "f8eacfafffa4a9bcaf45c350357fa5d1e1a2279360709e56591f9b736159ef76"
+    "bytes": 110666,
+    "sha256": "b3d90315b09096d4b07d113c87630723591bcf6a03f6a8925ef5799f125a1422"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/ew0036_impact.json",
-    "bytes": 82364,
-    "sha256": "7647add05f0060465f39b503c6028660e241c50e3f8c729e27411d6ce3b907a5"
+    "bytes": 83720,
+    "sha256": "40c72494d6c52f7bb9ddfe5ef5ca8d688860770c501e1e3352360b4297e55caf"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/ew0036_wind_foot.json",
-    "bytes": 33393,
-    "sha256": "7d0b99c7233cd891484fb372f5b42643b5b68849557664955393017537b0e572"
+    "bytes": 34071,
+    "sha256": "eb41617f9404a0b1a896b3ae072e5e3436751456000ed4d47c999e386aa2cf30"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0036/move.json",
@@ -1311,18 +1311,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0044/cmn_impact_tp16_00.json",
-    "bytes": 10251,
-    "sha256": "4dd09cce72e7d500ed4b21855e0193b8a462664ae65a95f542bbc832a81373a0"
+    "bytes": 10703,
+    "sha256": "d37de9a34c63168725856abf6e8f6fb04a3154f43ef721416d146e8e9535306e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0044/cmn_ready_foot_tp16_01.json",
-    "bytes": 17411,
-    "sha256": "772b8762ed56765e9858fb727605a861a4e186c89f409d103c2890676d5a22b4"
+    "bytes": 17750,
+    "sha256": "5ac599b8a9fdaaf4142e68bfbca70e32c830b1eea1f28758a7175f094eb8277b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0044/ew0044_fang.json",
-    "bytes": 463830,
-    "sha256": "0a85aa07ba2ced2a3f5da957b65157723a58541cabee0750015b10a9d7baf86d"
+    "bytes": 464395,
+    "sha256": "e12829d0da7e5130ba059fae6934680b407742c105d9730267da94371ce7ec09"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0044/move.json",
@@ -1331,23 +1331,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0052/cmn_impact_tp09_00.json",
-    "bytes": 10097,
-    "sha256": "83be714aed08840b2faa0958f1ccd790a2913b4f3348927df77ddd9262051241"
+    "bytes": 10549,
+    "sha256": "6efcf6ae43371e8f7407dec10a5b4ef6450a94d2212f1c1a1595aafcb4fa335f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0052/cmn_muzzle_tp09_00.json",
-    "bytes": 44143,
-    "sha256": "ecd6ed6a2bd01e4fdde6547fabb31d16cea30a8189e23e67ee5322916c924ca1"
+    "bytes": 44708,
+    "sha256": "785dd70b8b1c36596e6fabe780c92a4e06667e13734dcbe8a5b7be562bde2f57"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0052/cmn_ready_foot_tp09_01.json",
-    "bytes": 17752,
-    "sha256": "7dc5df9f00d46015d72e6fbcc38b72f7962d450d92dc352cf98f8424ede0cab3"
+    "bytes": 18091,
+    "sha256": "5416c5fbfd280b47431910ae33eb85db36244510e4253891dff38b68c182a42b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0052/ew0052_bullet.json",
-    "bytes": 39686,
-    "sha256": "afee6f2528aa0a1d94f3369b36df0b42b8b98a43ab5c4c48de8c729d5b9b4051"
+    "bytes": 40590,
+    "sha256": "2859a868d65158dd039940623eef4bc1f5247bbf85895789ea79288089418528"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0052/move.json",
@@ -1356,28 +1356,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/cmn_impact_tp09_00.json",
-    "bytes": 10097,
-    "sha256": "83be714aed08840b2faa0958f1ccd790a2913b4f3348927df77ddd9262051241"
+    "bytes": 10549,
+    "sha256": "6efcf6ae43371e8f7407dec10a5b4ef6450a94d2212f1c1a1595aafcb4fa335f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/cmn_ready_foot_tp09_01.json",
-    "bytes": 17752,
-    "sha256": "7dc5df9f00d46015d72e6fbcc38b72f7962d450d92dc352cf98f8424ede0cab3"
+    "bytes": 18091,
+    "sha256": "5416c5fbfd280b47431910ae33eb85db36244510e4253891dff38b68c182a42b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/ew0053_bullet.json",
-    "bytes": 36614,
-    "sha256": "91690b7eb0308240fab1bff3972a6207d746393b3ae87fef7d74862824d1ea9c"
+    "bytes": 37405,
+    "sha256": "2cb5313dfa4a2c4dab425c6baff2952b1fdd946bca9e9dae16ebf78ef71f9e5a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/ew0053_charge.json",
-    "bytes": 66027,
-    "sha256": "966c75e7d0d7239d6dea1d6776d883dbd073a84645f0aeaca4cb50f07d99c08e"
+    "bytes": 66705,
+    "sha256": "e22c9400de7df6faec2fc79757d1b67b85307369fcc4c02acfca1f6cc9f9966e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/ew0053_muzzle.json",
-    "bytes": 116064,
-    "sha256": "506dd90c32219238c44da2f952fabb167de1ebb4c9b23bfbd38f3ef40d480f57"
+    "bytes": 117420,
+    "sha256": "47dd6fd23beada914543085415ea7c666104986b1272eb263565b328dabfd717"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0053/move.json",
@@ -1386,23 +1386,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/cmn_impact_tp10_00.json",
-    "bytes": 10321,
-    "sha256": "696dc50e0176c8aecb1885a4766e0658bcde7a075dcdf05590371350a220149d"
+    "bytes": 10773,
+    "sha256": "a3157b65f03b3b6aef9e31e5dac11645e3645e6afbab2522c6cccf1c5557dd36"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/cmn_muzzle_tp10_00.json",
-    "bytes": 43564,
-    "sha256": "672f48b247587e53c77ee4e053c5a5071fd1d626953fbf9620c52c28bf61aa85"
+    "bytes": 44129,
+    "sha256": "4d004231bf622b8446c60d5e4da7864d5122f3011812d7f4acd3c9c231dd647f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/cmn_ready_foot_tp10_01.json",
-    "bytes": 18032,
-    "sha256": "4db81ee126f518a19d2c8d314d776ba553c945719e8d88ca64cdbf3d5c23378d"
+    "bytes": 18371,
+    "sha256": "21471bda9f567d5bd0ba5a3670e3f12bfebe68d2595944b21dec2c8fc1f57784"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/ew0055_bullet.json",
-    "bytes": 40129,
-    "sha256": "1f01b5c8098c8ecc9fa89901e1416200cce5fa8b3a9abebcdc1ac28d585c3af2"
+    "bytes": 41033,
+    "sha256": "5ffc276b6fc132c26fedea7f0bfad5ead5bf30aa57e52b452d4edd684f833bfc"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0055/move.json",
@@ -1411,58 +1411,58 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/cmn_ready_foot_tp10_01.json",
-    "bytes": 18032,
-    "sha256": "4db81ee126f518a19d2c8d314d776ba553c945719e8d88ca64cdbf3d5c23378d"
+    "bytes": 18371,
+    "sha256": "21471bda9f567d5bd0ba5a3670e3f12bfebe68d2595944b21dec2c8fc1f57784"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_beam.json",
-    "bytes": 132331,
-    "sha256": "67fd6c8d79afaf07ea55ec65e180bf2a1a344cfaf772f6aa10223d619cea5b61"
+    "bytes": 133009,
+    "sha256": "79ae2b72a389f050b2d6e9f09537bfaffcb789437891846280b2285dc3599dbf"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_charge.json",
-    "bytes": 220979,
-    "sha256": "966a48d56098b529808468f466fd0ed750da143192bec20b8b1d3e3aaae734f1"
+    "bytes": 222109,
+    "sha256": "bc064d9d504ced2c442a362838f04bd44ceb5d478c3e2550adfd67f423d3f14b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_end.json",
-    "bytes": 87856,
-    "sha256": "c5488ed0ce0713d335dc851868b037961f08af6ca6062352df7055a47e22466c"
+    "bytes": 88534,
+    "sha256": "a6007e296a1ce9685645a3a8776efed071d5b98d2ecae7939ed7fa4f8cadf4a4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_impact.json",
-    "bytes": 107502,
-    "sha256": "fd40f0fdee33f7a2c10e7539c6964ce2aeafcd3870f9a3f178dec5db5b3c9996"
+    "bytes": 108406,
+    "sha256": "310a5a601ec383dec1860d5e5771be8c7292dfb4f46198e6572c06efe47ba3c6"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_impact_hit.json",
-    "bytes": 59950,
-    "sha256": "6968f7432e8006d6c79b182169448a528218f429d45c91278ff41e5721708f24"
+    "bytes": 61306,
+    "sha256": "5d8e2ea62b1e59e07648e6542eb8534c278a036e0be25c0fd4022f1cbc44348f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_muzzle.json",
-    "bytes": 115021,
-    "sha256": "de97c7ff28747cd5096441488cb0e9eb70115b96c55677a04b3eb51d20198bba"
+    "bytes": 115925,
+    "sha256": "96760f3fc27b2471426d8327dca9a6b3e50929f3f7b861359e4bfedc86eca49c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_u_beam.json",
-    "bytes": 132432,
-    "sha256": "3d89bd7db6bedf07b375e375e046171bd1899cb9774a5c5c84a40f3d1fbec0a7"
+    "bytes": 133110,
+    "sha256": "bc217e9b3ae639f38d0e6c19d533955b2cb1c7fb701201001b40f6df9e7416c1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_u_end.json",
-    "bytes": 85203,
-    "sha256": "25e6884562809ed54e4d8c02de240a048d47d84179bffad3fe88af0cbd91b990"
+    "bytes": 85768,
+    "sha256": "1ea3ae55856eb539ec8b5c8d0617a9002b7e2f976bd12fc2effb0c06af2f1b72"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_u_impact_hit.json",
-    "bytes": 59952,
-    "sha256": "536583e82033db206449ba1ea9b677777905e23674a9869d01815beafa443910"
+    "bytes": 61308,
+    "sha256": "1da9a4db7d5fe35c57877e5c0f2c524e3195ac92e388176389d7c7aaa62cd2a9"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/ew0056_wind.json",
-    "bytes": 2940,
-    "sha256": "f5467f3d8b607aa1ce9343a4a4d45b82b4d25fc422b644dc71100a56e8233d9d"
+    "bytes": 3053,
+    "sha256": "2dbfd54584f8ac4957521d7cd0969150bf32e17f34e23ee355d4cea35620ab5e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0056/move.json",
@@ -1471,33 +1471,33 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/cmn_impact_tp13_01.json",
-    "bytes": 89602,
-    "sha256": "1af1bc0d6b81ab8bce1063e20ca09259855b9f30a35bf8fafbe1e06c6e766124"
+    "bytes": 90845,
+    "sha256": "77924d08a3f2318f8df26ecc076a819be46d7920a7b6fabcc4dd8178ac47552c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/cmn_ready_foot_tp13_01.json",
-    "bytes": 18040,
-    "sha256": "5a90da6d8e243c673aece04f41dd9c6dccca98604adfc678847b05251ef201c8"
+    "bytes": 18379,
+    "sha256": "9e5f956ea2ae72f4cfa2d5ee11ed18290599b649fe4f93bf9bb598646b2ed0a2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/ew0060_beam.json",
-    "bytes": 163242,
-    "sha256": "d76307fcaedd3267551cc254dce3061f0842303966617d767f1b80c82b8b6c44"
+    "bytes": 163920,
+    "sha256": "506cf6b72288b69fd9717bc8c5aa075b4e61931de03bb6476dfde92fc0fe45a5"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/ew0060_end.json",
-    "bytes": 118859,
-    "sha256": "9bcc321ed2f32b4a340c6b061eaca959ea376525f471cf81737d09a20a6ff371"
+    "bytes": 119537,
+    "sha256": "854a1c943ee7dba73cc207875fbd54c173802625c179972388c32ff03fd9646b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/ew0060_muzzle.json",
-    "bytes": 67439,
-    "sha256": "c618e12361f389e482411876d2f99d42978e7c52d40b476f98db7b08b959827b"
+    "bytes": 68117,
+    "sha256": "e3eb10b01a62674b952282b95cada8e2fef97ba45f253b8bd32e6d1b9cb9d35a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/ew0060_muzzle_impact.json",
-    "bytes": 42725,
-    "sha256": "4903cc7a2c537b52d4bfd912cadb70a2c5d05e455c4b7b131b5cc93e19dbc4b6"
+    "bytes": 43290,
+    "sha256": "9aa5e2b96f22ca750452e55b04edbd5628492d34fb0074448599b43ffcbe36f3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0060/move.json",
@@ -1506,18 +1506,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0064/cmn_impact_tp02_00.json",
-    "bytes": 10324,
-    "sha256": "ed3e23eb4358ebccbed32e92eec628574aa2dc31281978e0e180d30fb8afa8e3"
+    "bytes": 10776,
+    "sha256": "6d45175a0181700cae3a13368b0ebe244124d5186ee13e6e7605c653d0e464d3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0064/cmn_ready_foot_tp02_01.json",
-    "bytes": 22680,
-    "sha256": "bcdd4ce23bdcb9a282660281b2ec75b8364175769961415505004c69b112d1be"
+    "bytes": 23019,
+    "sha256": "5eacbe573acb20347b2a7937a2767cbdc6c232037098d468a8dcc991273057bc"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0064/ew0064_bullet.json",
-    "bytes": 71885,
-    "sha256": "434a37e34677ba68a886f0e2c7b9c988283f8be9f5f308f49f34595744c3e33e"
+    "bytes": 72450,
+    "sha256": "6401c97552cff9351d71baf0f46ef87fb0e03a9b17bb703bf1126b4e422eed70"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0064/move.json",
@@ -1526,18 +1526,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0071/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0071/ew0071_ball.json",
-    "bytes": 45867,
-    "sha256": "2e224cd9ca27297869d8f570b040feec9a1012a2f2a5f06663a7af51d5e467eb"
+    "bytes": 46771,
+    "sha256": "f3b10f24f46f6bfd89a10c1785136bdc2c9d2cedc58fb829775aca263ebc211f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0071/ew0071_user.json",
-    "bytes": 65594,
-    "sha256": "550f80c8be83fc4621243fa2477568e1d2e22b9330cf14d778283bba8fc28b55"
+    "bytes": 66385,
+    "sha256": "d54d1677c72946db1763f0ea24fc40ead6be9adbdf8a4bb46fd9aba40b90f6e9"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0071/move.json",
@@ -1546,23 +1546,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0083/cmn_impact_tp09_00.json",
-    "bytes": 10097,
-    "sha256": "83be714aed08840b2faa0958f1ccd790a2913b4f3348927df77ddd9262051241"
+    "bytes": 10549,
+    "sha256": "6efcf6ae43371e8f7407dec10a5b4ef6450a94d2212f1c1a1595aafcb4fa335f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0083/cmn_ready_foot_tp09_01.json",
-    "bytes": 17752,
-    "sha256": "7dc5df9f00d46015d72e6fbcc38b72f7962d450d92dc352cf98f8424ede0cab3"
+    "bytes": 18091,
+    "sha256": "5416c5fbfd280b47431910ae33eb85db36244510e4253891dff38b68c182a42b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0083/ew0083_end.json",
-    "bytes": 125579,
-    "sha256": "338e7d05d4c806bfd5f382f7dfa9b31db1507dc16be2650185296dc32c67c97e"
+    "bytes": 126596,
+    "sha256": "beaf65e03a6ac92d9bd36a7a1e6fa17c15ed94438aeebb119714ec96d02be8cc"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0083/ew0083_whirlpool.json",
-    "bytes": 136540,
-    "sha256": "5948fe5ccad5d94dd4dc4d0d2e13dd69ba7efd5976c44576456e5aa867a80ff5"
+    "bytes": 138009,
+    "sha256": "0f103ac9abeea02be8246e3516c23f1bbf830804eb7d3bf125775d3949517183"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0083/move.json",
@@ -1571,23 +1571,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0085/cmn_impact_tp12_00.json",
-    "bytes": 23188,
-    "sha256": "b29dcbc7c5cc330727e4852a1fe46484d5e29e33634ab455daaea5a1ee43bd08"
+    "bytes": 23753,
+    "sha256": "fc5de581bd2072ef67f91241edce7e4af71b80b58b69e3b64a00e3e6be5c03d5"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0085/cmn_ready_foot_tp12_01.json",
-    "bytes": 30184,
-    "sha256": "6eec1d8c15bae346f83074f8ad11680774760ea939bbe8ba6506a1ae3cad8faa"
+    "bytes": 30523,
+    "sha256": "2bf63914cee9e1232b570733549b09f10f4e3d4c2923e4ff1d8a118eaa8687e4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0085/ew0085_bullet.json",
-    "bytes": 206056,
-    "sha256": "03dedcc49786208fc563801dfab1ff26c2bf4b381f79f9293d282bba579eaecd"
+    "bytes": 207864,
+    "sha256": "6d6622bdaf05b9ef968b58c2ca6307a2155863ec2455021779a4313b6b0b2792"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0085/ew0085_muzzle.json",
-    "bytes": 152366,
-    "sha256": "c27868e872fa19c686737a1fa92a5780d1102d5b293d7a15938701576bd59866"
+    "bytes": 153496,
+    "sha256": "c684610e5f390c34f672d46dc16fa608c92c31c73532afd1a3ca4b656ce02f1d"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0085/move.json",
@@ -1596,23 +1596,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0087/cmn_ready_foot_tp12_01.json",
-    "bytes": 30184,
-    "sha256": "6eec1d8c15bae346f83074f8ad11680774760ea939bbe8ba6506a1ae3cad8faa"
+    "bytes": 30523,
+    "sha256": "2bf63914cee9e1232b570733549b09f10f4e3d4c2923e4ff1d8a118eaa8687e4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0087/ew0087_bullet.json",
-    "bytes": 179362,
-    "sha256": "48a24d93a2a9d7199daa57bd216c73e5e3ec10c786c7a0d5f0f2d3816a8b1f4e"
+    "bytes": 181170,
+    "sha256": "33957cc48a17dc8e0c7722cde44d259f09d97dbe66f2f8943e0be38fbe1115eb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0087/ew0087_hit.json",
-    "bytes": 257795,
-    "sha256": "eeec0e82073cdfea1cadb7295ed4b07bebda12a2cc8149826ec8e7f22ec85db4"
+    "bytes": 259603,
+    "sha256": "9cd7a9bc20e55b389a64b275eab7e32494189a98be90fca6bac101d78806cfc7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0087/ew0087_sign.json",
-    "bytes": 108016,
-    "sha256": "783f5f9adfb5f05bf6f82cc1ddcea317e650357ef30f64ccbd6a0f9e728bb009"
+    "bytes": 109146,
+    "sha256": "1fa46415991f39a07351b02e52082dc1ff3581691bfcfd5af5b1784950b8980e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0087/move.json",
@@ -1621,18 +1621,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/cmn_ready_foot_tp05_01.json",
-    "bytes": 26118,
-    "sha256": "a189adc6e2cdd12f115a15ca1806a44279f3613d1e2cb4628da950798cde241a"
+    "bytes": 26457,
+    "sha256": "0c1194ce175df004deda9507bdb93be6c4d527d4ac7a4434cc8377e54dbe7428"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/ew0088_bullet.json",
-    "bytes": 283369,
-    "sha256": "fdbaa8c90a34b54cc799540d117d71cae42bbf5742ddc18405d3b1f50c8a1a76"
+    "bytes": 283821,
+    "sha256": "7101e5375216d082d66379afcf3f0702b5db093745e4c0291d16f9009f4edbbc"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/ew0088_impact.json",
-    "bytes": 154541,
-    "sha256": "2e801b876296fa4ebd99ea57d1979f9a042bfb6a223a89e9cf8a04ab7c542b46"
+    "bytes": 155332,
+    "sha256": "28e93cfffabe984e0b7b3ad8adf910e522ec6585152dfe932152226bcf7609fb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/move.json",
@@ -1641,28 +1641,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/cmn_impact_tp04_00.json",
-    "bytes": 10205,
-    "sha256": "8f9d2eedd888de95d92a46f6724952bb36873f8ff80d5b9c0196412184d7da5d"
+    "bytes": 10657,
+    "sha256": "aaf25311d35e9b18ba8a9b666ffda096fb48f8628ff62f7c40fdb225f5a42fe9"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/cmn_ready_foot_tp04_01.json",
-    "bytes": 38610,
-    "sha256": "aa4e0ded74c2f4940ed00554d6e8c483c3cb98e4e46cef3c4ca42feb0258a517"
+    "bytes": 38949,
+    "sha256": "f21dc3ac1ef13b490fd911e8d0a4551dc203f6457d116c937880ae9dd81ca57a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/ew0091_attack_in.json",
-    "bytes": 100941,
-    "sha256": "3a7aa373e331e71e7b527e5387273d2eddd6676eec3939cbdc05476817489c9a"
+    "bytes": 102523,
+    "sha256": "a1f00daf8d264461b4ecf1161780418e4d7571aee9c9405329d9b7cd1199826f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/ew0091_attack_out.json",
-    "bytes": 132775,
-    "sha256": "549dfef6dc7e88a82683c55fbfdd586a20f741b77e109e2ff42afe12e82d2fc2"
+    "bytes": 134357,
+    "sha256": "d5b4a83fea9eb9c1f2a56543a4b66eaacb9050bb87aa3942ae53ac7ca891967f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/ew0091_sign.json",
-    "bytes": 83999,
-    "sha256": "5f400b519ff0a814d1f3236f4ffdc46842d6469aeb0d0c5a5be1134180198c53"
+    "bytes": 84790,
+    "sha256": "9c743da609d5eec9cf9e5e3adb207b157cbb823a6d8397740034037750b6da06"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0091/move.json",
@@ -1671,18 +1671,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0093/cmn_impact_tp13_00.json",
-    "bytes": 10516,
-    "sha256": "68a54ecb9cabdab137020676b0858102c9e7322a6ca5d9c997e68ae8326ddc5e"
+    "bytes": 10968,
+    "sha256": "70e6f2356f96b638bf921875e2da2e41450022ff421b166f0b278c4ca8d8ffa2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0093/cmn_ready_foot_tp13_01.json",
-    "bytes": 18040,
-    "sha256": "5a90da6d8e243c673aece04f41dd9c6dccca98604adfc678847b05251ef201c8"
+    "bytes": 18379,
+    "sha256": "9e5f956ea2ae72f4cfa2d5ee11ed18290599b649fe4f93bf9bb598646b2ed0a2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0093/ew0093_bullet.json",
-    "bytes": 154612,
-    "sha256": "7b9e59c0c1a26a332c9ff2cf8866c9634a62ed1d37f6b6e00cfa271d855044a9"
+    "bytes": 155742,
+    "sha256": "21373c14cf4f8790e27bcf9bfd53052ddbdb98abafdcf2414a4161296b99a060"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0093/move.json",
@@ -1691,23 +1691,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0094/cmn_impact_tp13_00.json",
-    "bytes": 10516,
-    "sha256": "68a54ecb9cabdab137020676b0858102c9e7322a6ca5d9c997e68ae8326ddc5e"
+    "bytes": 10968,
+    "sha256": "70e6f2356f96b638bf921875e2da2e41450022ff421b166f0b278c4ca8d8ffa2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0094/cmn_ready_foot_tp13_01.json",
-    "bytes": 18040,
-    "sha256": "5a90da6d8e243c673aece04f41dd9c6dccca98604adfc678847b05251ef201c8"
+    "bytes": 18379,
+    "sha256": "9e5f956ea2ae72f4cfa2d5ee11ed18290599b649fe4f93bf9bb598646b2ed0a2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0094/ew0094_bullet.json",
-    "bytes": 438117,
-    "sha256": "8564be3571f9a48aa071313af899d73c266d2169e992aa67f4db11eb82982b19"
+    "bytes": 439812,
+    "sha256": "25b732601826034ca5bef4ce1b60af0a3a1b1d763f8430889964a8273bf49c9a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0094/ew0094_charge.json",
-    "bytes": 102309,
-    "sha256": "a2010db58c87cc9305a1e65a79130e518a9b95ffc44ebd11551ccd29cc6e9346"
+    "bytes": 103100,
+    "sha256": "ff2802ac6f2f1fd894c9ffaae4243f51bca2425e0738e727fe386d319832cd90"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0094/move.json",
@@ -1716,28 +1716,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/cmn_ready_foot_tp00_01.json",
-    "bytes": 15382,
-    "sha256": "6b1552ad93a6ae8a5e587015c09a662fc07ba4a338d4a16c4fc4688999092d37"
+    "bytes": 15608,
+    "sha256": "d3833333acd6e47b69b21fe9bfc5415b327ee8ff5a3d763f167b7f4697876545"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/cmn_warp_body.json",
-    "bytes": 7073,
-    "sha256": "a3743b95b1cee0426cdfa4dbf1f0a21e16a37246e9838bfe17a676ebd93673ad"
+    "bytes": 7412,
+    "sha256": "21d3ac5b2c73359a7aa9472856da4a23c46d3c74200bbd3009a3a826bb591f80"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/cmn_warp_charge.json",
-    "bytes": 15986,
-    "sha256": "77cfedff3d6af345f1c7fbdef10dddd3225729edb11ac016042cf259b098f315"
+    "bytes": 16212,
+    "sha256": "a606d749da1d28f5babd83f50572972290986641f218fa9a38824f30e5c7b8c7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/cmn_warp_main.json",
-    "bytes": 175431,
-    "sha256": "9c44fa6c485f9bfe33e8a67872e8df191790679dc6b4963eb67c8cc608b2966f"
+    "bytes": 176674,
+    "sha256": "401a1acac695f9225d8aab377fc0222757c085dff5704e58b01de99ee32bce6d"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/ew0098_attack.json",
-    "bytes": 10660,
-    "sha256": "937ac74875279d5a9aa1dcbd77ce6fe0d7155508e4a01cf8f3e33d080059b0c8"
+    "bytes": 11225,
+    "sha256": "622eefdfccfd1c01a8c8a09b0216dffa2333b42aaf21dccb2623c72069ad4ec1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0098/move.json",
@@ -1746,18 +1746,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0122/cmn_impact_tp07_00.json",
-    "bytes": 10313,
-    "sha256": "3ac4b2bf4e1683995f27654661b877ada2f8beb485ec62073014a754407e2b82"
+    "bytes": 10765,
+    "sha256": "af22508d2fd4874bb499cb4cdc6fd132add2c6321ec3e171bf3846dbe348a6e6"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0122/cmn_ready_foot_tp07_01.json",
-    "bytes": 17814,
-    "sha256": "d90deafc6fa83e75282ec039ed08d0af42b2236e6a5ec06807ded524576a072c"
+    "bytes": 18153,
+    "sha256": "9ebdc22af5aa04e0bf5c93746cfba3f86ca9865a68259301457ae68dadd4d5e6"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0122/ew0122_hit.json",
-    "bytes": 80140,
-    "sha256": "a25d43deba7d81beb4bfc08f284c347659b11b282ab60b85b784e28276ac1ec1"
+    "bytes": 80705,
+    "sha256": "c76ad93f2cdbb17c85e336d5eb0996c63b53b9a457bf21c7a6971ad08256788b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0122/move.json",
@@ -1766,18 +1766,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0163/cmn_impact_tp00_00.json",
-    "bytes": 10488,
-    "sha256": "0cd0419203d13dbf43fc7a45641d3c16209daa086afe2c5e576326444566fc8a"
+    "bytes": 10940,
+    "sha256": "9bf9fd99e2a315e96950b0450cef7a793a6068932971751520e65a1188d348c1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0163/cmn_ready_foot_tp00_01.json",
-    "bytes": 15382,
-    "sha256": "6b1552ad93a6ae8a5e587015c09a662fc07ba4a338d4a16c4fc4688999092d37"
+    "bytes": 15608,
+    "sha256": "d3833333acd6e47b69b21fe9bfc5415b327ee8ff5a3d763f167b7f4697876545"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0163/ew0163_claw.json",
-    "bytes": 25247,
-    "sha256": "89b1e6bd0d1cc17ea6682bd88d838b168444ff4a439950c329f1c742359ae062"
+    "bytes": 25699,
+    "sha256": "f1ed6e6f2afe258090b77d51b7df821f074bcd556ab796106dc24a830d7864d4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0163/move.json",
@@ -1786,28 +1786,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/cmn_ready_foot_tp01_01.json",
-    "bytes": 17408,
-    "sha256": "9ea95e138ed8672a3a361c477c78598008c32f89e026e0d7aeae19309a5bf75e"
+    "bytes": 17747,
+    "sha256": "fa9c3c23c38f78658c11da1795f315b1b43a50d11f058cd539ca41a10cff8db0"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/cmn_warp_body.json",
-    "bytes": 7073,
-    "sha256": "a3743b95b1cee0426cdfa4dbf1f0a21e16a37246e9838bfe17a676ebd93673ad"
+    "bytes": 7412,
+    "sha256": "21d3ac5b2c73359a7aa9472856da4a23c46d3c74200bbd3009a3a826bb591f80"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/cmn_warp_charge.json",
-    "bytes": 15986,
-    "sha256": "77cfedff3d6af345f1c7fbdef10dddd3225729edb11ac016042cf259b098f315"
+    "bytes": 16212,
+    "sha256": "a606d749da1d28f5babd83f50572972290986641f218fa9a38824f30e5c7b8c7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/ew0183_attack.json",
-    "bytes": 304928,
-    "sha256": "7d34b0731da9d56f562a76a89a59bb753745fd7751958800a4a358d62a009b2f"
+    "bytes": 305719,
+    "sha256": "3fbb5e41e84877ec4dd127bf0d167fad536d7c2bbfdcc98598ec0aa1a777940b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/ew0183_warp_main.json",
-    "bytes": 175428,
-    "sha256": "38471a2b2d71a21442986b817967375cc89e804be9a0532605606faff320c798"
+    "bytes": 176671,
+    "sha256": "a5cf5752a381d6388322a05980b9c5a66ff167807c261380d089d3dee48c900b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0183/move.json",
@@ -1816,28 +1816,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/cmn_ready_foot_tp03_01.json",
-    "bytes": 18082,
-    "sha256": "f7fda6449f69e76a83e2ea3670addae4419f68afc15e839d6bbddb3761df9af6"
+    "bytes": 18421,
+    "sha256": "7e25d6204e2e2c80868ffa9803e41c59da7794e9f0ab4122b1aacdfc1cded31b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/ew0188_1_bullet.json",
-    "bytes": 144967,
-    "sha256": "6591dbc16d75e0005f67be9e69c9754812c535e84ca8ddeef1b80cd57397066e"
+    "bytes": 145758,
+    "sha256": "d6a8a5cd4041612aff1941b43643e7b714c02dd5506d6217e1ec74a379fd0b4a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/ew0188_bullet.json",
-    "bytes": 142695,
-    "sha256": "1bec86a6f9b2dbe57b20462e014953b80d54bf947d38e39fa54bd8e34f4f876a"
+    "bytes": 143373,
+    "sha256": "05b2a8b5ea39b69fed51479f0e82c87adc624f5ff53b1733760183cc1e868c8c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/ew0188_charge.json",
-    "bytes": 140332,
-    "sha256": "26a262a759d7ac21fb4fe8aa67b7f957e5f4e7163f30db2403cbd8b6cd88856b"
+    "bytes": 140897,
+    "sha256": "aae3aa80487f4ec2dcdb099dc9d189948a61d87d711ebe9699be6faca0b5c6a9"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/ew0188_impact.json",
-    "bytes": 20703,
-    "sha256": "4764adcc02bc23d2e127eb6d4655b852b5d3f58cbe7f878e6e477ac05c2bfa36"
+    "bytes": 21381,
+    "sha256": "11e38eab1b47e99c737a2443a9a3d82f058756b36bec6fe234637b6441abd118"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0188/move.json",
@@ -1846,18 +1846,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0202/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0202/ew0202_hit.json",
-    "bytes": 94667,
-    "sha256": "7b7bc70fc28ac488f984074edc72bdb0bfa49a124b95ddb9da0574dd04cc4efa"
+    "bytes": 96475,
+    "sha256": "09f4758affe9fa26674f636ff72dbe8cb5e656bcae2a9e77c43156b4b12aa6e2"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0202/ew0202_user.json",
-    "bytes": 78422,
-    "sha256": "85370fa17ef4b75d076652b91e8ce93213ae7fab1e58ba97f259c3bbe29ca9d1"
+    "bytes": 79778,
+    "sha256": "a912ecfccae8ed27b8557e37bdccd409273393adf6eb4a02e2a85481a103cc44"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0202/move.json",
@@ -1866,23 +1866,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0209/cmn_impact_tp12_00.json",
-    "bytes": 23188,
-    "sha256": "b29dcbc7c5cc330727e4852a1fe46484d5e29e33634ab455daaea5a1ee43bd08"
+    "bytes": 23753,
+    "sha256": "fc5de581bd2072ef67f91241edce7e4af71b80b58b69e3b64a00e3e6be5c03d5"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0209/cmn_ready_foot_tp12_01.json",
-    "bytes": 30184,
-    "sha256": "6eec1d8c15bae346f83074f8ad11680774760ea939bbe8ba6506a1ae3cad8faa"
+    "bytes": 30523,
+    "sha256": "2bf63914cee9e1232b570733549b09f10f4e3d4c2923e4ff1d8a118eaa8687e4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0209/ew0209_bullet.json",
-    "bytes": 51230,
-    "sha256": "33a5701682e0424cfae1cdfd3754cd6b2fbb3f0984982c66e4f92dbafdf76a86"
+    "bytes": 52134,
+    "sha256": "4a8b92cd06aeef7b5062d272a941af51ad6e7dbef6c8ae7367db5872ebeecaf8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0209/ew0209_impact.json",
-    "bytes": 224369,
-    "sha256": "2476caddfdff38464c1e1f0f6fc93482cde034f83eadd224130b687c0c1e5a97"
+    "bytes": 226177,
+    "sha256": "2d80ba9ea0faa5bfe4a1e62f5d955365e708f6aa082badc9be1fadc3154c901b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0209/move.json",
@@ -1891,18 +1891,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0231/cmn_impact_tp08_00.json",
-    "bytes": 21068,
-    "sha256": "b2001d6513c36dbe933dceb3b206177f69c33e62fa73ee03cd7ba2098f38bb19"
+    "bytes": 21633,
+    "sha256": "93c32763700dc4f5a07b5cdda74a6245ca6bdbb1111f829abe41d07299a5762b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0231/cmn_ready_foot_tp08_01.json",
-    "bytes": 17456,
-    "sha256": "056aca5b65f1882be2c6ec440188419d669e7aceff499ebfea095e768c9b2fd5"
+    "bytes": 17795,
+    "sha256": "3fa50064d13eb814257f6fa0a552943a360559fc9e000a1c3e6c360e0b3b96d1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0231/ew0231_bullet.json",
-    "bytes": 56375,
-    "sha256": "d4e461e332e281b91c6ae6cbe78186cb1c15c4098ce8e1925a48e830bf383fee"
+    "bytes": 57053,
+    "sha256": "7fe86b2e3a4dc339a42669700c9772eb6af2d120ba4aeedb5e5a6fe1f3faf8ce"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0231/move.json",
@@ -1911,18 +1911,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0232/cmn_impact_tp08_00.json",
-    "bytes": 21068,
-    "sha256": "b2001d6513c36dbe933dceb3b206177f69c33e62fa73ee03cd7ba2098f38bb19"
+    "bytes": 21633,
+    "sha256": "93c32763700dc4f5a07b5cdda74a6245ca6bdbb1111f829abe41d07299a5762b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0232/cmn_ready_foot_tp08_01.json",
-    "bytes": 17456,
-    "sha256": "056aca5b65f1882be2c6ec440188419d669e7aceff499ebfea095e768c9b2fd5"
+    "bytes": 17795,
+    "sha256": "3fa50064d13eb814257f6fa0a552943a360559fc9e000a1c3e6c360e0b3b96d1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0232/ew0232_claw.json",
-    "bytes": 36058,
-    "sha256": "7e67febae1454c7cbccadd91ddf92c44c7f8d92859a997eff4ded5b223aff2e9"
+    "bytes": 36962,
+    "sha256": "a8254b32f61719399bebcb970bffa1ba1ccfd1f86eb3dc294b5b0c9aa7d03d7b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0232/move.json",
@@ -1931,18 +1931,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0242/cmn_impact_tp16_00.json",
-    "bytes": 10251,
-    "sha256": "4dd09cce72e7d500ed4b21855e0193b8a462664ae65a95f542bbc832a81373a0"
+    "bytes": 10703,
+    "sha256": "d37de9a34c63168725856abf6e8f6fb04a3154f43ef721416d146e8e9535306e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0242/cmn_ready_foot_tp16_01.json",
-    "bytes": 17411,
-    "sha256": "772b8762ed56765e9858fb727605a861a4e186c89f409d103c2890676d5a22b4"
+    "bytes": 17750,
+    "sha256": "5ac599b8a9fdaaf4142e68bfbca70e32c830b1eea1f28758a7175f094eb8277b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0242/ew0242_crunch.json",
-    "bytes": 494004,
-    "sha256": "d313395075d30a2cac3132e8297f69b96f51930e42ce918cdce99034062490d7"
+    "bytes": 495586,
+    "sha256": "f71c189de2c099bf51a618ed9a3da846516fed46d218ec622e77502d375e021e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0242/move.json",
@@ -1951,33 +1951,33 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/cmn_impact_tp07_01.json",
-    "bytes": 55138,
-    "sha256": "8df12281373fc3efd9ed8678283ae989e71f3ed99e7e5cd82049edca6f0f02cf"
+    "bytes": 56268,
+    "sha256": "f90adbf711f9fcb5a0b876ab0044d6be443c49a50227d80eec2c58c6b0122b36"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/cmn_ready_foot_tp07_01.json",
-    "bytes": 17814,
-    "sha256": "d90deafc6fa83e75282ec039ed08d0af42b2236e6a5ec06807ded524576a072c"
+    "bytes": 18153,
+    "sha256": "9ebdc22af5aa04e0bf5c93746cfba3f86ca9865a68259301457ae68dadd4d5e6"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/ew0247_bullet.json",
-    "bytes": 140982,
-    "sha256": "d5944718ac0c6b75dccdd0fda99ae0c92932593e526d41802ec9b909ba7a61a6"
+    "bytes": 142338,
+    "sha256": "7d09ca592cb426fa0d575ccbefa504ae1a3422beca2a13c7ce1e7a48423d117d"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/ew0247_charge.json",
-    "bytes": 156779,
-    "sha256": "c6b7be2902ae93ff31941c703974998519037c33e72a1bb605269c5ad7cd904c"
+    "bytes": 158135,
+    "sha256": "de8ea0315b0acae6bdf023cb7def9a27c7410bbf57847ade9f663e9d2cf7427d"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/ew0247_end.json",
-    "bytes": 149191,
-    "sha256": "d9508ce20a81abdf7bebf3252f9831c0f26e742f65297fda5ae3d2ecbc392f0f"
+    "bytes": 150321,
+    "sha256": "eb6a2da45016de758bfb147887f4f56880bc8124268543b6817c4f0e8d9d8c68"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/ew0247_impact.json",
-    "bytes": 133468,
-    "sha256": "5ccced7b399558d6c562733fafa52f05bd2271d88412c6ea54a1556618ef01d0"
+    "bytes": 134372,
+    "sha256": "f963b4ad6f3690e5c124c472ee12ca63874f95e0135db665bc7c876c523b13d7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0247/move.json",
@@ -1986,18 +1986,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0280/cmn_impact_tp01_00.json",
-    "bytes": 10330,
-    "sha256": "9f4d864927f0e8a370af105af9d76e1c0dce401016866491b75aa90074c3aa04"
+    "bytes": 10782,
+    "sha256": "1cc07efc8f3410d5f8d7b0e8cfeed6850d8f69ab7064d9d03db09733f3cd66da"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0280/cmn_ready_foot_tp01_01.json",
-    "bytes": 17408,
-    "sha256": "9ea95e138ed8672a3a361c477c78598008c32f89e026e0d7aeae19309a5bf75e"
+    "bytes": 17747,
+    "sha256": "fa9c3c23c38f78658c11da1795f315b1b43a50d11f058cd539ca41a10cff8db0"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0280/ew0280_bullet.json",
-    "bytes": 149131,
-    "sha256": "b88cb9454577c7d03eb3b04ece5b090e4143f5fd11657d0e565aaf1afea56ddb"
+    "bytes": 149922,
+    "sha256": "ba62d65b0034da7dadc969840b840205967685594a7fb9520b72ca34b203fd5b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0280/move.json",
@@ -2006,23 +2006,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0317/cmn_ready_foot_tp05_01.json",
-    "bytes": 26118,
-    "sha256": "a189adc6e2cdd12f115a15ca1806a44279f3613d1e2cb4628da950798cde241a"
+    "bytes": 26457,
+    "sha256": "0c1194ce175df004deda9507bdb93be6c4d527d4ac7a4434cc8377e54dbe7428"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0317/ew0317_at_rock.json",
-    "bytes": 269057,
-    "sha256": "9ec79f8af235a01aa9b47d6a38be3552c4be93481b30214ee01394e49adc35bc"
+    "bytes": 269509,
+    "sha256": "3681e52cd8e90aa148d7ce60c0db0c77a5393d5e5226036b610f342e71162b26"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0317/ew0317_impact.json",
-    "bytes": 412073,
-    "sha256": "d5ce5ecc67bc1666d3380b719753ea9b7edd694a7578e9723a9ee46296bb54f6"
+    "bytes": 412751,
+    "sha256": "84d3bc96cb709955a8e10afdd0bb7d8ebc0d3b35804aaf737972cf9bcaa80226"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0317/ew0317_rock_break.json",
-    "bytes": 40946,
-    "sha256": "edd33a5ccab378a0a7211c2d00b0e1ac096ffb47784b5cb92d20c2c6d438455a"
+    "bytes": 41963,
+    "sha256": "f7876889bdb5d416b3e2b2a4aa3f1dc79a31c36c24140807e9c20682e665b129"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0317/move.json",
@@ -2031,18 +2031,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0332/cmn_impact_tp02_00.json",
-    "bytes": 10324,
-    "sha256": "ed3e23eb4358ebccbed32e92eec628574aa2dc31281978e0e180d30fb8afa8e3"
+    "bytes": 10776,
+    "sha256": "6d45175a0181700cae3a13368b0ebe244124d5186ee13e6e7605c653d0e464d3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0332/cmn_ready_foot_tp02_01.json",
-    "bytes": 22680,
-    "sha256": "bcdd4ce23bdcb9a282660281b2ec75b8364175769961415505004c69b112d1be"
+    "bytes": 23019,
+    "sha256": "5eacbe573acb20347b2a7937a2767cbdc6c232037098d468a8dcc991273057bc"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0332/ew0332_bullet.json",
-    "bytes": 33819,
-    "sha256": "69f4ba3f985049e866c9f58ae949848151b46ea0e75319ad3847727afa92f4b8"
+    "bytes": 34610,
+    "sha256": "7c8b6242837ec8f6e5ac4125f25e9dd76ce0f524a49f24a40a86b592ea86d7a8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0332/move.json",
@@ -2051,23 +2051,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/cmn_ready_foot_tp04_01.json",
-    "bytes": 38610,
-    "sha256": "aa4e0ded74c2f4940ed00554d6e8c483c3cb98e4e46cef3c4ca42feb0258a517"
+    "bytes": 38949,
+    "sha256": "f21dc3ac1ef13b490fd911e8d0a4551dc203f6457d116c937880ae9dd81ca57a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/ew0341_bullet.json",
-    "bytes": 55759,
-    "sha256": "33e3cf62385f9f0a252ffa3a207a3b0dd5e35dc95c81dfba45a35a07804f63b8"
+    "bytes": 56437,
+    "sha256": "2e7f0e823404589de02dcb10b71b717bb65141baaafd41902d2b0cbff276f273"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/ew0341_hit.json",
-    "bytes": 12051,
-    "sha256": "110f7814866f85b7ac12d8d3808f72afed033257885d48f1a651a5ff3bb7c5f9"
+    "bytes": 12616,
+    "sha256": "dfd223a7948527f7df7958bbf567815ccde573b0d07d54cedb72a204580fbe05"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/ew0341_muzzle.json",
-    "bytes": 39068,
-    "sha256": "a8d76f3288f3ae2dcfd00a065d8760368938676d2e8ef27cbf124b7e8ad0d6c1"
+    "bytes": 39407,
+    "sha256": "354de279a2e3a08a3b17a5c745b25765cd849224835968bd3fe3e9b1b49aade7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/move.json",
@@ -2076,18 +2076,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0348/cmn_impact_tp11_00.json",
-    "bytes": 14536,
-    "sha256": "a068c7fd08e462fd4784abc0b3659e2327d7bb0716ec79daf04e587fd65ca84a"
+    "bytes": 15101,
+    "sha256": "f4ccbc2f3b7347a2eaddb6f2ce9397f0e1bd3dd2a95bb6fdf0fde1135242ac14"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0348/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0348/ew0348_slash.json",
-    "bytes": 59686,
-    "sha256": "206a22a3a0c2f682b2c78b90da7939f68f0ff3fef9f2322722c208cb55c9647c"
+    "bytes": 61268,
+    "sha256": "6b6880631e78af4ec29da5d0b54d87cb9ab043fc19cac9aa4df1dc53790c092c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0348/move.json",
@@ -2096,28 +2096,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/cmn_impact_tp10_00.json",
-    "bytes": 10321,
-    "sha256": "696dc50e0176c8aecb1885a4766e0658bcde7a075dcdf05590371350a220149d"
+    "bytes": 10773,
+    "sha256": "a3157b65f03b3b6aef9e31e5dac11645e3645e6afbab2522c6cccf1c5557dd36"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/cmn_ready_foot_tp10_01.json",
-    "bytes": 18032,
-    "sha256": "4db81ee126f518a19d2c8d314d776ba553c945719e8d88ca64cdbf3d5c23378d"
+    "bytes": 18371,
+    "sha256": "21471bda9f567d5bd0ba5a3670e3f12bfebe68d2595944b21dec2c8fc1f57784"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/ew0352_bullet.json",
-    "bytes": 49548,
-    "sha256": "0d77ecf72dcd6706b10f696ce51a493a010d4964f38890565adf3924fa9dae7f"
+    "bytes": 50339,
+    "sha256": "e596ce37294db7f96235100245fa72fa95915e47a0ba3fe76c4e885589d5b720"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/ew0352_end.json",
-    "bytes": 44663,
-    "sha256": "f6bc0b9c7651995d5d7aac9141267d5337f2432bc60b1857deb19f0a6023bdad"
+    "bytes": 45228,
+    "sha256": "7670a2ca0dc760c7a964178ee757568cb00e8c93ae4942fab54cd0000c09d07e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/ew0352_muzzle.json",
-    "bytes": 68529,
-    "sha256": "31b5998e545861b842b884904c5d0469a703102ac39137e02d1d6def5c45bebd"
+    "bytes": 69207,
+    "sha256": "c798eafb7b0cb9cbce626b433befb225c50ede1490b56e0c8b005af44ab4757f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0352/move.json",
@@ -2126,28 +2126,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/cmn_ready_foot_tp01_01.json",
-    "bytes": 17408,
-    "sha256": "9ea95e138ed8672a3a361c477c78598008c32f89e026e0d7aeae19309a5bf75e"
+    "bytes": 17747,
+    "sha256": "fa9c3c23c38f78658c11da1795f315b1b43a50d11f058cd539ca41a10cff8db0"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/cmn_warp_body.json",
-    "bytes": 7073,
-    "sha256": "a3743b95b1cee0426cdfa4dbf1f0a21e16a37246e9838bfe17a676ebd93673ad"
+    "bytes": 7412,
+    "sha256": "21d3ac5b2c73359a7aa9472856da4a23c46d3c74200bbd3009a3a826bb591f80"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/cmn_warp_charge.json",
-    "bytes": 15986,
-    "sha256": "77cfedff3d6af345f1c7fbdef10dddd3225729edb11ac016042cf259b098f315"
+    "bytes": 16212,
+    "sha256": "a606d749da1d28f5babd83f50572972290986641f218fa9a38824f30e5c7b8c7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/ew0370_bullet.json",
-    "bytes": 166546,
-    "sha256": "07d5cca524addb8f79de630a7baa55516d58f56aef07fad6ed2933df57d3c0e3"
+    "bytes": 168354,
+    "sha256": "3edcf9431321e32eb03462ebefae0cf0b48777938e23f0f8495cb6a72019f9d3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/ew0370_warp_main.json",
-    "bytes": 175420,
-    "sha256": "046a12ea8269687804cbf285f80d5b4989833c50a7c720bbdd91e5a2b4bde694"
+    "bytes": 176663,
+    "sha256": "53fd785dae223556806a862e84afc0cc8ee6f3cb54fe354e02b40918b6afdf71"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0370/move.json",
@@ -2156,28 +2156,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/cmn_impact_tp01_00.json",
-    "bytes": 10330,
-    "sha256": "9f4d864927f0e8a370af105af9d76e1c0dce401016866491b75aa90074c3aa04"
+    "bytes": 10782,
+    "sha256": "1cc07efc8f3410d5f8d7b0e8cfeed6850d8f69ab7064d9d03db09733f3cd66da"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/cmn_ready_foot_tp01_01.json",
-    "bytes": 17408,
-    "sha256": "9ea95e138ed8672a3a361c477c78598008c32f89e026e0d7aeae19309a5bf75e"
+    "bytes": 17747,
+    "sha256": "fa9c3c23c38f78658c11da1795f315b1b43a50d11f058cd539ca41a10cff8db0"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/ew0396_bullet.json",
-    "bytes": 214701,
-    "sha256": "53db03807abfcfec3a3eec245428caddc787921c382c1d5bf83718a2e25e6d93"
+    "bytes": 215944,
+    "sha256": "b303e7dcd9e51fd9b1f81611b63fe080a03bb0411814d5301b0b58d144eb9127"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/ew0396_charge.json",
-    "bytes": 264544,
-    "sha256": "d6d99b49eeedba036fb3988e72365505f9e77a6e4560f448c7a7db831e627631"
+    "bytes": 266239,
+    "sha256": "2b241b97deba5505da0a199b10b119f334e5f0132b3b971ac1b6739fdb3cf3ed"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/ew0396_impact.json",
-    "bytes": 139216,
-    "sha256": "8a2414ca1bb857e99ba62ddf44136cbd3af94adcd5445aa528da1bc8fb8d5efa"
+    "bytes": 140346,
+    "sha256": "e973993e09ab1559afcc4e0785972402fd526e8eef01c48ac2cf3f96b8e85133"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0396/move.json",
@@ -2186,28 +2186,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/cmn_impact_tp16_00.json",
-    "bytes": 10251,
-    "sha256": "4dd09cce72e7d500ed4b21855e0193b8a462664ae65a95f542bbc832a81373a0"
+    "bytes": 10703,
+    "sha256": "d37de9a34c63168725856abf6e8f6fb04a3154f43ef721416d146e8e9535306e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/cmn_ready_foot_tp16_01.json",
-    "bytes": 17411,
-    "sha256": "772b8762ed56765e9858fb727605a861a4e186c89f409d103c2890676d5a22b4"
+    "bytes": 17750,
+    "sha256": "5ac599b8a9fdaaf4142e68bfbca70e32c830b1eea1f28758a7175f094eb8277b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/ew0399_bullet.json",
-    "bytes": 124868,
-    "sha256": "75bac6298631be71231a32d3e7c27ab82caebe63ab538e6c196fcd208d1d5766"
+    "bytes": 126337,
+    "sha256": "e622677acc6d48a0a98ecb5882249aa5f8a966497fa91bdbb3c7368964966b7c"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/ew0399_charge.json",
-    "bytes": 76009,
-    "sha256": "acffd113412e917256e28edfbe77d756e3df7c72329d1d7d637d50ca36bef1c5"
+    "bytes": 76687,
+    "sha256": "78baff7e59b8ef42835d8f0e0013d9337dc99e0b71161114d3624a79efa4ca05"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/ew0399_muzzle.json",
-    "bytes": 76393,
-    "sha256": "f7df4a018d9e7e757fe5fe71d074b2b15b663967b440ffb9bc8bcf8c7d158854"
+    "bytes": 77523,
+    "sha256": "20117cf70546dcfb64cb7b61c7a3b0b98516ea62d15a081d592e5c28d59dab70"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0399/move.json",
@@ -2216,33 +2216,33 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/cmn_impact_tp11_00.json",
-    "bytes": 14536,
-    "sha256": "a068c7fd08e462fd4784abc0b3659e2327d7bb0716ec79daf04e587fd65ca84a"
+    "bytes": 15101,
+    "sha256": "f4ccbc2f3b7347a2eaddb6f2ce9397f0e1bd3dd2a95bb6fdf0fde1135242ac14"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/ew0402_bullet.json",
-    "bytes": 27982,
-    "sha256": "df090e561fdecc26282d1354fa238d4a79a76df909b6d2d0ac338921ca0a1e3f"
+    "bytes": 28208,
+    "sha256": "6cf7b738afe34f45a2596ab61bee759da1cd8b46468eff8af20178964e2e00e4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/ew0402_end.json",
-    "bytes": 37614,
-    "sha256": "c3d490f2f53537bd16b71c41dcacc37c12bc89141a5858aa389bc66c2ce8af09"
+    "bytes": 38179,
+    "sha256": "1c41cbccf3d0924dc2cacdccc666564c2942d198ba7b7dbaa02213fc330b41a8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/ew0402_hit.json",
-    "bytes": 37609,
-    "sha256": "ee6196a3d0c783cc19ecff507aa827623ff1ae44178d003bb221a1a4b9c2a92a"
+    "bytes": 38174,
+    "sha256": "a7fcf534639bc5edcf6ebfbf16f68c0b9fd0640606b5620bd60835e9d206a9f3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/ew0402_muzzle.json",
-    "bytes": 47816,
-    "sha256": "156284f94ddf4c8e6c9ec282e1d9faa8706cad6cad25ec1e6462e3f816fe9723"
+    "bytes": 48494,
+    "sha256": "21ba6ea1679e0990f49cd48eefa693f8533bb7812f54e6d34be3a94c8688b70f"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0402/move.json",
@@ -2251,33 +2251,33 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/cmn_impact_tp15_00.json",
-    "bytes": 10098,
-    "sha256": "8e12640c1db5234ed19416de6817f9148a238e6fc81d7e3927127fb53583aa93"
+    "bytes": 10550,
+    "sha256": "7c793f3346079e061496edd44fa47832accc04720a7bb7ea4decfdee3bbd607a"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/cmn_ready_foot_tp15_01.json",
-    "bytes": 17744,
-    "sha256": "587e446cd303259a67fdfeca68983c9488d5187ee92db304b66437aba4ca8e64"
+    "bytes": 18083,
+    "sha256": "de30417f84ab29f2ac8382f644bce558d3dce322da84d7721cf438e611f61f20"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/ew0406_bullet.json",
-    "bytes": 36131,
-    "sha256": "01a3c2eee6c169182fa85c5feaa55cd92a7d612baf0a7ac4e3d10ac23919839d"
+    "bytes": 36922,
+    "sha256": "2a514a840bf31cb563dfdfbb21b2265c37848f0ba31565444b7ececacda0bd68"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/ew0406_charge.json",
-    "bytes": 69132,
-    "sha256": "8b992b4652daba0b0e38ae610be29da985513ba94419415c4ab0fe483c71fea8"
+    "bytes": 69923,
+    "sha256": "7158533e35ca23c18e308d7ef09b8985bcdf7ccb75c5fe43d9c446719dddaa5b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/ew0406_end.json",
-    "bytes": 34286,
-    "sha256": "d5eb5b977c1dd69f96577de9982358b07f3e4bd79354741a86cb5fe5b13aae9b"
+    "bytes": 34964,
+    "sha256": "2e3bf78bc4ef996c1fe0ca6856e29cb01c867e56a8af50cdc607372cefa1e13b"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/ew0406_muzzle.json",
-    "bytes": 116542,
-    "sha256": "1e4ec3a991129f63d4fc3dc713e965e6ec39f3927865bc6e6098203d03519aa6"
+    "bytes": 117559,
+    "sha256": "8f8c6e69aaf39886b930cc5900a9c43e1d03769e8db92385c9ddfe3df99e82d3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0406/move.json",
@@ -2286,23 +2286,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/cmn_ready_foot_tp01_01.json",
-    "bytes": 17408,
-    "sha256": "9ea95e138ed8672a3a361c477c78598008c32f89e026e0d7aeae19309a5bf75e"
+    "bytes": 17747,
+    "sha256": "fa9c3c23c38f78658c11da1795f315b1b43a50d11f058cd539ca41a10cff8db0"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/ew0409_bullet.json",
-    "bytes": 307354,
-    "sha256": "2564952b46f512c81aeebffc480120efbdd1ba833c5e1229b953ad9f4fcc197e"
+    "bytes": 308258,
+    "sha256": "e7709a9a0932466a899bb6f94038e133c12c0f8d25967c37881648ea77c12da4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/ew0409_hit.json",
-    "bytes": 19342,
-    "sha256": "eea0ce56115c22c6434b5499b2e09b2f99a0ec8e4a165d7203411c026de69561"
+    "bytes": 20246,
+    "sha256": "80947276afee2f15fbdffd27b044f27d10c4c7a56c3cb2dc4169e5a86c4cddf3"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/ew0409_user.json",
-    "bytes": 43645,
-    "sha256": "7697963511e59d600d6f95fa2c3d4ba09440bee84a4b9510b6a6cc677b49d25e"
+    "bytes": 44662,
+    "sha256": "d42aaf20e06996dee31749845755851295e8a58ec19333107397f7e2867ec4fb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0409/move.json",
@@ -2311,33 +2311,33 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/cmn_impact_tp11_00.json",
-    "bytes": 14536,
-    "sha256": "a068c7fd08e462fd4784abc0b3659e2327d7bb0716ec79daf04e587fd65ca84a"
+    "bytes": 15101,
+    "sha256": "f4ccbc2f3b7347a2eaddb6f2ce9397f0e1bd3dd2a95bb6fdf0fde1135242ac14"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/ew0412_bullet.json",
-    "bytes": 111203,
-    "sha256": "d67484a15ad74e8740741ca30b5d16d7ee817e52a097f7932cebd3d84b3655e4"
+    "bytes": 112785,
+    "sha256": "2c4e10303207da2138aea354c958e65afc7acfbc59ce7de5eb3717c373bcac06"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/ew0412_charge.json",
-    "bytes": 161174,
-    "sha256": "abd6a63c0a3ed48b15f6bbd7eda7b67f72631be7033bd41f44b0a2d02bf5ed69"
+    "bytes": 162643,
+    "sha256": "220a8d0329c8ac01c3b8955422a3c4ea71fcf79fd8bfab122f95876fd6c8e768"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/ew0412_end.json",
-    "bytes": 100032,
-    "sha256": "ea1f2d03e25c08d9109110d46a1d8244031a65b2017c828e1f302dadfd64d2ed"
+    "bytes": 101049,
+    "sha256": "25c17d91e293e33359f9d8a8a31204330a67b1a6c1f6f38a1506d31e49df8c60"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/ew0412_impact.json",
-    "bytes": 161262,
-    "sha256": "c10e84e20fb792da8dd92bd453bb221d2eb89708aca7957c688475f21f4b1759"
+    "bytes": 162731,
+    "sha256": "9a2b3cad76866ae6d3cc3ca1dd15a04593441d29076394e752e628c841a1ab46"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0412/move.json",
@@ -2346,28 +2346,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/cmn_ready_foot_tp08_01.json",
-    "bytes": 17456,
-    "sha256": "056aca5b65f1882be2c6ec440188419d669e7aceff499ebfea095e768c9b2fd5"
+    "bytes": 17795,
+    "sha256": "3fa50064d13eb814257f6fa0a552943a360559fc9e000a1c3e6c360e0b3b96d1"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/cmn_warp_body.json",
-    "bytes": 7073,
-    "sha256": "a3743b95b1cee0426cdfa4dbf1f0a21e16a37246e9838bfe17a676ebd93673ad"
+    "bytes": 7412,
+    "sha256": "21d3ac5b2c73359a7aa9472856da4a23c46d3c74200bbd3009a3a826bb591f80"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/cmn_warp_charge.json",
-    "bytes": 15986,
-    "sha256": "77cfedff3d6af345f1c7fbdef10dddd3225729edb11ac016042cf259b098f315"
+    "bytes": 16212,
+    "sha256": "a606d749da1d28f5babd83f50572972290986641f218fa9a38824f30e5c7b8c7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/ew0418_bullet.json",
-    "bytes": 316177,
-    "sha256": "bed30e98ae2bba20fcd1d96c0063eaf0168cd6092a2625764a415684da9ef599"
+    "bytes": 317194,
+    "sha256": "5f4163a6e78857dc164bb0ecce97e81877f518c1ed4c62ac084b91164b291ad8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/ew0418_warp_main.json",
-    "bytes": 175493,
-    "sha256": "6c692a1e996f1f86b5d3cafa4b9b84056cbe181236af318a802f59acbb455bb9"
+    "bytes": 176736,
+    "sha256": "cfabbfe12f95cc082c7eba7167f903a265bdec28b3344aab95dbbc5593c2a0fb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0418/move.json",
@@ -2376,23 +2376,23 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0435/cmn_impact_tp12_00.json",
-    "bytes": 23188,
-    "sha256": "b29dcbc7c5cc330727e4852a1fe46484d5e29e33634ab455daaea5a1ee43bd08"
+    "bytes": 23753,
+    "sha256": "fc5de581bd2072ef67f91241edce7e4af71b80b58b69e3b64a00e3e6be5c03d5"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0435/cmn_ready_foot_tp12_01.json",
-    "bytes": 30184,
-    "sha256": "6eec1d8c15bae346f83074f8ad11680774760ea939bbe8ba6506a1ae3cad8faa"
+    "bytes": 30523,
+    "sha256": "2bf63914cee9e1232b570733549b09f10f4e3d4c2923e4ff1d8a118eaa8687e4"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0435/ew0435_sign.json",
-    "bytes": 18399,
-    "sha256": "75e5bb2dca2bf7653c69b43b498a919cd59a6c1233f7ba95ca40a7db67468f2d"
+    "bytes": 18964,
+    "sha256": "41fa81b3b9c5e370bc95c9a154df96a21f7cd9b360ced75208b6306ad74868cb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0435/ew0435_thunder.json",
-    "bytes": 33484,
-    "sha256": "d84d1f6ec714ea1e16a999899ce5823704f057155d32e9fb16751ecd0bb198f9"
+    "bytes": 34840,
+    "sha256": "3dea54ec1333ff7896e85ae77adc3c9b6fc704ec2ea7b8730d73e7116382d389"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0435/move.json",
@@ -2401,28 +2401,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/cmn_impact_tp11_00.json",
-    "bytes": 14536,
-    "sha256": "a068c7fd08e462fd4784abc0b3659e2327d7bb0716ec79daf04e587fd65ca84a"
+    "bytes": 15101,
+    "sha256": "f4ccbc2f3b7347a2eaddb6f2ce9397f0e1bd3dd2a95bb6fdf0fde1135242ac14"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/cmn_ready_foot_tp11_01.json",
-    "bytes": 19321,
-    "sha256": "f98be8e7205db40506e05a5bd68c254b37825fe437ff09ab2051d13af2a876a9"
+    "bytes": 19660,
+    "sha256": "f5ae696b8b16eabc87d1a0de15c52baddc6f3b7187b11f837406beb8c4446f13"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/ew0437_bullet.json",
-    "bytes": 66315,
-    "sha256": "b8952a1896e5fc4694b0c27b7e0bc2675cf17ce5d04b7169db950341fb64f0b2"
+    "bytes": 67558,
+    "sha256": "233d20436d626466306f573800b8d69f0754b62887f57e7f177078816ddafebb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/ew0437_muzzle.json",
-    "bytes": 85273,
-    "sha256": "d8524543ac925c2279418e0abcc68f76ff28159b20f4d6f515b8394cd8d8bf80"
+    "bytes": 85838,
+    "sha256": "7be1cb42f8ab2a84f33f4d792e51146bdd558db0d49c1b261d255208d2c258f8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/ew0437_wind.json",
-    "bytes": 5448,
-    "sha256": "1c496faacc7d972ff7ac078c82c35623b708aa7edfacf000797d891942a426eb"
+    "bytes": 5674,
+    "sha256": "7e755668a3adbe9bf0d6b1f0e186a4f96941acaa43eacdfde3292c7b71fe4166"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0437/move.json",
@@ -2431,18 +2431,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/cmn_impact_tp17_00.json",
-    "bytes": 10384,
-    "sha256": "0541432fcbae05c4dc6696745332253bfd750e0c9bdb4446032e60b473a0eb72"
+    "bytes": 10836,
+    "sha256": "9606f31f674cd82cc20e4f11a1ed5efcdb509e04222d777953992841f45f4335"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/cmn_ready_foot_tp17_01.json",
-    "bytes": 17412,
-    "sha256": "f21b5ff47a12add9b4d916fff769085233f88b1b5ffe20311ddd2e5103b47777"
+    "bytes": 17751,
+    "sha256": "71a3819484a9e85664ef9803aadc9db1b1d79c34e37a5e7e9e04d34e6c44cbeb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/ew0574_charm_voice.json",
-    "bytes": 179467,
-    "sha256": "82a6a573003b2ff29eb316250084d3a7743cfad29858323a42e01757916da4e0"
+    "bytes": 181275,
+    "sha256": "2458ef1ae18376dd2f80161131003596c85ec2d7acd867e6e2cad2e69fa31010"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0574/move.json",
@@ -2451,18 +2451,18 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0577/cmn_ready_foot_tp17_01.json",
-    "bytes": 17412,
-    "sha256": "f21b5ff47a12add9b4d916fff769085233f88b1b5ffe20311ddd2e5103b47777"
+    "bytes": 17751,
+    "sha256": "71a3819484a9e85664ef9803aadc9db1b1d79c34e37a5e7e9e04d34e6c44cbeb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0577/ew0577_hit.json",
-    "bytes": 84508,
-    "sha256": "65a1ee52915092746712de3a0bf91b972a19eba15c39eeb7a34375e4f87b904c"
+    "bytes": 85638,
+    "sha256": "619d37fac2101bb03cae0787bdc4735d1c90a56f0b19f5a6be516f786427cb7e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0577/ew0577_user.json",
-    "bytes": 87160,
-    "sha256": "ef1139c8496ca4303796eecfb3e84abf34452569637eb73316fe36aa18895010"
+    "bytes": 88290,
+    "sha256": "b81f60f4bbf6b9211f0033bbe9960895955fc84916dc4c5d0a80dd6fb2420fb9"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0577/move.json",
@@ -2471,28 +2471,28 @@
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/cmn_ready_foot_tp17_01.json",
-    "bytes": 17412,
-    "sha256": "f21b5ff47a12add9b4d916fff769085233f88b1b5ffe20311ddd2e5103b47777"
+    "bytes": 17751,
+    "sha256": "71a3819484a9e85664ef9803aadc9db1b1d79c34e37a5e7e9e04d34e6c44cbeb"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/cmn_warp_charge.json",
-    "bytes": 15986,
-    "sha256": "77cfedff3d6af345f1c7fbdef10dddd3225729edb11ac016042cf259b098f315"
+    "bytes": 16212,
+    "sha256": "a606d749da1d28f5babd83f50572972290986641f218fa9a38824f30e5c7b8c7"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/ew0583_bullet_up.json",
-    "bytes": 56797,
-    "sha256": "cf5e00a75fd5bc39c613e2fe5f2b6809a84e42a6ee5fbb2ac191aedea30e7b91"
+    "bytes": 58153,
+    "sha256": "5dd0ba8ae572b97eb40e7cd09b220a5ba34c280545dbbc2df412f4056c330600"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/ew0583_warp_body.json",
-    "bytes": 7079,
-    "sha256": "b64b241aae9dc0d54fb91875b2204439f83612ae116e793cabce31ba5fdb9654"
+    "bytes": 7418,
+    "sha256": "491a2767b972ccde0c9baa858ceab59c2f18b19d7afb6402aa7ace5c13d39056"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/ew0583_warp_main.json",
-    "bytes": 175476,
-    "sha256": "a5b854aa4ad06003cbd3a79b292039ab7e9f667c4e45a0c328404520f3b02b51"
+    "bytes": 176719,
+    "sha256": "a99032fc772120f88a4399c0e00b9525d8e6b39be7088f898d74b6ce8e7538fa"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0583/move.json",
@@ -2611,363 +2611,383 @@
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_at_start.json",
-    "bytes": 22449,
-    "sha256": "86a71e3436c8e9b45bb4ad3b6edec68aea8597bfd4f4e3659593e0b0a1b4d588"
+    "bytes": 23321,
+    "sha256": "d308203428332f345880d1fc95fd3b51e79796f7e1946beb86139c6d38b67493"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_beam01.json",
-    "bytes": 51751,
-    "sha256": "8d8ffa35b7c564c4a5836479ad6efd3a85888f47e5d3d019e9ab2d1d2d46eada"
+    "bytes": 52296,
+    "sha256": "e16b702751e0ef71e4263821f7195ec9d9908d6cb0fd036f497b365b1cbde910"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_df_hit01.json",
-    "bytes": 40570,
-    "sha256": "dc4048e1849a422d7ec83c0da91bdab59abf2bc9dfc9adaaf985e258007dac3d"
+    "bytes": 42203,
+    "sha256": "bdc45a0dc3682e03c9b5e695062c05ecc28516313418a840ce3a5e4d26d1befc"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew085_spark01.json",
-    "bytes": 56293,
-    "sha256": "b36edf266c22449ec63c5fd00a5d48c70b6019636a072622fe7473f6ad8ed9ac"
+    "bytes": 56943,
+    "sha256": "1230f7d067364ab41110e26a878841b0fe8ed88768be868459c95b30a5572e79"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_at_start.json",
-    "bytes": 83724,
-    "sha256": "54af660c50de9616c1b7384c93587e28b76effdd824736f6386d3875ae8f0238"
+    "bytes": 84377,
+    "sha256": "a49f780ae2a69581a4ff96a386dfa47fe884b644cdd88c9c585958b3de34041f"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit.json",
-    "bytes": 77459,
-    "sha256": "816d39afc837ffb987056a2de732d2871ad503e51338872337bdd83d2e8531d6"
+    "bytes": 78985,
+    "sha256": "e2de38effbdc7420aaaf0f503a90d9d71af7c5fc9b1b87de51ff7ede6866fe83"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit02.json",
-    "bytes": 47692,
-    "sha256": "e22c27cdab44ad78a44c404377e038095033fa5566420be73ea559cc655756fa"
+    "bytes": 49972,
+    "sha256": "9dab9100330f7dadb2dff27da6ee59a005c3173f8fdfe904e8da5d8a6744cf3c"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_aura.json",
-    "bytes": 230679,
-    "sha256": "88878e97404a6a07e7098efb36de408f7260b53f55356c62f51bb71c4a5eaf67"
+    "bytes": 232725,
+    "sha256": "98d031901ab4674c2888f7060ace9dbfc0842dcce99f375402f50396d39c7509"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_df_ball.json",
-    "bytes": 146324,
-    "sha256": "5838dac8466f036f09adce419084fecb35a78c74739108242a5fcf6d380ae570"
+    "bytes": 147604,
+    "sha256": "1ee463845183a88483021e33cb1ad31fd82f3e621f34433364f3c6bcd1c2ee90"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew094_hit.json",
-    "bytes": 68322,
-    "sha256": "182110d2901e3957aa6a562d04fbc467069e64e480397637c7f3079ccb2a9b67"
+    "bytes": 70272,
+    "sha256": "8af7fa94fe28149a6282e218f0ab077838be4f72d12fcf0e547cb311159590ec"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_bgkem.json",
-    "bytes": 9109,
-    "sha256": "fff7de8779bdb74ae9942d26bde251d2b43fc66e987620aed824b64095b5a990"
+    "bytes": 9436,
+    "sha256": "03527bd534bb8806392fe64c665ca17b676b3b6a5d6416fe2f4e6c036067d4e5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_srash01.json",
-    "bytes": 3408,
-    "sha256": "8ffbfa2775bf90a843c470b00beb180dd1c7459ed4b11861ad794063640421f2"
+    "bytes": 3622,
+    "sha256": "768a2a52bca3d7dce6543f0d1c83fe3cbfb7fb9b5b378e44f6b5d88eab49b1b6"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_df_hit.json",
-    "bytes": 24438,
-    "sha256": "aaae29ddac7b9b120792be0eea04668d4a83f8fee454500fe3219183dac165ae"
+    "bytes": 25419,
+    "sha256": "028680827c51d7f6d97a5d0a69fa1fd05c5afbedfa368a3bbbdb7bd110e56d0f"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew098_hideline.json",
-    "bytes": 3389,
-    "sha256": "23d9eaad3bb2cf536a334c924d632ad334c4e5c7d405cdf3bdde512c9ee42b85"
+    "bytes": 3498,
+    "sha256": "2c9afb4b8653407eef02cc239b4451b8fe2998b35a6de021414dc37ec85b61c4"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew122_hit.json",
-    "bytes": 35371,
-    "sha256": "2217ae2b54bc9d7076d6eb8937a44571ff11e2463efd2176a0ff711a1cff7ad6"
+    "bytes": 36785,
+    "sha256": "667f70b0eaeca13a52d9d62891517dceed48eb3219467f5612d5c80ece357629"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_at_line.json",
-    "bytes": 5939,
-    "sha256": "f11a9883186177420109b8757ab4bc1d647d3553f1874f66868803502557e766"
+    "bytes": 6157,
+    "sha256": "791569671d0485c1ceaf15d9288944d290eee7c4ccc83f68b9b2ea126659a000"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_hit.json",
-    "bytes": 43075,
-    "sha256": "b9bb53071fefbb942fec3421d36eaaa8521bc7c798a29fee9476618f5af5ff68"
+    "bytes": 44819,
+    "sha256": "f06381855abdb98007a19443373574936c1eedc443ff4cf4976bce3901bb5ab3"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_punch01.json",
-    "bytes": 13733,
-    "sha256": "ae11af25308413b63cdc1039ee63a3ba2bcca900b647ae5cb506518a81baaa74"
+    "bytes": 14278,
+    "sha256": "f5bf9170dc7e128f8933d2fc55a4ed607de4e2d27d69db3d8c5767125e033438"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_bullet.json",
-    "bytes": 27682,
-    "sha256": "ba0853a92301c30f00db7bd85ee1039ddfdc00130da764af77e3091674d1c177"
+    "bytes": 28663,
+    "sha256": "4863787f6d207929be1f43ed565108f2bb4eef1f61be5297b8417d755ef22c09"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_hit.json",
-    "bytes": 47376,
-    "sha256": "9dc5f1f150bf6f5a3ca407246372fdf221df7932c553162a69de3e0d2580872b"
+    "bytes": 48466,
+    "sha256": "0be7ace9b791466c672ba050d273e389df6e2e4b22df1a2105d096e0c1d73031"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew188_muzzle.json",
-    "bytes": 11353,
-    "sha256": "7fc3ef0f283ce06464e6cc251e7e4c568f93e7bdc6bd03a59903becff21c0236"
+    "bytes": 11789,
+    "sha256": "3f6d88ad55658d9b28c6c1f57b20a8da874b9135a66ffd9bcf0f2a1539467d7b"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_hit.json",
-    "bytes": 31173,
-    "sha256": "1c8f8c826bd5629460332115a4897a434bf92e51847c57a6c55704a0a9cba6cc"
+    "bytes": 32263,
+    "sha256": "69de833af174a6ed4f0fc11c72277188541e97b8eb8288e31df0f676458e3d6d"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_movept.json",
-    "bytes": 23845,
-    "sha256": "fbf254b79f3c27feb90d3d590f44a81919be027f8277ace9bd0b6b3ea6a57a74"
+    "bytes": 24499,
+    "sha256": "1406951fc446c860c4693ed4c1296a17bd98fb9078be158b5a9189d861b5dfa5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew202_df_circle.json",
-    "bytes": 63482,
-    "sha256": "075fde4c75f4da947ae38b91cadb28ceffe6abda6943a69605dc12f9456c0e3a"
+    "bytes": 64463,
+    "sha256": "d4b92f40851483018a6ea53bd04976674023e94281930e6da63903dd17d525a9"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_body_thunder.json",
-    "bytes": 34535,
-    "sha256": "53bf2860c44d2b908d66e2a8fef3588bb2bbd86d56c5f977e9a9b9823c417ee0"
+    "bytes": 35185,
+    "sha256": "74d0a57f3d339eb7b81963ed1d852ae85ba81f907b0864e2a6c703eef87fe557"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_hit.json",
-    "bytes": 22932,
-    "sha256": "ffca114fea614b324bcc68988c9a3220dbbebf27e7b705c2d16bbf6d709015c8"
+    "bytes": 23804,
+    "sha256": "806b571f38e5d828e702700be215fb0052f8adc261333c8059480c52827c8e25"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri.json",
-    "bytes": 17207,
-    "sha256": "e5a7dbb79cf7b61dbdc26da80e383064556e27a7276c1622666752acf0d6efe4"
+    "bytes": 17970,
+    "sha256": "9ee44534bc9e81c37d080610d598a0f0c40e7c499294521a2fca552870d8187f"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri_back.json",
-    "bytes": 3654,
-    "sha256": "2cb9e3b49bb55aa163e40d44566f524aeaf6063decef486a123b47b4c409c45e"
+    "bytes": 3763,
+    "sha256": "cab722223b71cd16e71dbd7550b3a86ea9b5a90978fc675e8b2d8920cfff8840"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_at_charge001.json",
-    "bytes": 3295,
-    "sha256": "9e75dffc9f5d6afb9e2aae617abcb2277881e7f8826eeddd50379491db99ac39"
+    "bytes": 3404,
+    "sha256": "d9d6a0a115d7c97ee30f4748a9bde8804e991acaa9ec0928f08973bd4832d2bf"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_df_hit001.json",
-    "bytes": 46130,
-    "sha256": "5232f2af6606b4cd6e581b00d04906afd205892dc49832bba522acd5c6552fd3"
+    "bytes": 47326,
+    "sha256": "05355bdd93f8bd7eaa61d5d8ff43b0ec0ba83b8079eafe25fa5db44efed0b698"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew231_wind.json",
-    "bytes": 64374,
-    "sha256": "fabd3662a7c27c0d57431ba9b46fc95a6543e485bc5785bb6139295ee9bd3045"
+    "bytes": 64592,
+    "sha256": "ba856e439c71db3258712eea2eaffe651e65853bc0216fdc9869022fcdd4914e"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew232_df_hit.json",
-    "bytes": 36515,
-    "sha256": "2f5debd235eec432f056376c22ef15f41d35019e8fde9c6be3e3c37cce41550a"
+    "bytes": 37932,
+    "sha256": "245958408f30c4719e55d79d1ac7595692cfe33f8e05f4963ac212e22c1350ce"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_bullet.json",
-    "bytes": 230766,
-    "sha256": "3814f0146ae7bac4ae2eb3ec63cf0217f8ff41027aec52a9a24bbefa56fc2202"
+    "bytes": 232605,
+    "sha256": "87e873015dcfbd02b00704e195baf68d121ab0e9570c213c5bd59c3965a055b2"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge.json",
-    "bytes": 16025,
-    "sha256": "d8978d82e320d9229bb8148a0455c633750716bf085a56a3d7081bfdfbf17502"
+    "bytes": 16566,
+    "sha256": "e9d0880136aa4809ea161991a73b90624be39f703fcf984141e363e69ebfd6a9"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge2.json",
-    "bytes": 21609,
-    "sha256": "438eab46157ca346f203dafa56212d7a73f42b4fd45ede3723b18ca87e0ac7aa"
+    "bytes": 21718,
+    "sha256": "8b65c0523852478a0eb0059cd2e02b13af45d494010b355d8c649191954b05bd"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew247_df_hit.json",
-    "bytes": 76477,
-    "sha256": "68cf7039363a1aa4261d45442cecc63a832aa3cc0bf412b9b92b7c53eb8f9d51"
+    "bytes": 77343,
+    "sha256": "2ecfd67b169a5de6ab42cbf2142ccb5f0a4101f643c62c5863d27af2d35db5ec"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit.json",
-    "bytes": 16487,
-    "sha256": "1ac4ffe70111e3b9ca049ecdfabe463371cacdfc967b371736d2351dcdcd8be4"
+    "bytes": 17141,
+    "sha256": "51b8e0944483dc9acc16c77c9a849dab7bf4f87498a8aa5704abd0308c1f7f4e"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit_many.json",
-    "bytes": 10728,
-    "sha256": "fd83d771e3090a4d9fbbf19890e0f235a7b5242e1426b9c939975bdb4476c38e"
+    "bytes": 11055,
+    "sha256": "9baccbbb05c9310de601367e66bcba0ecbaffb06dc61dd3add3592661a8edfc1"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew317_at_rock.json",
-    "bytes": 60643,
-    "sha256": "34000a4873e77c322f4c396cd967579b9e6a43e5a1d5695cbfff86543abdff4b"
+    "bytes": 60965,
+    "sha256": "5036bf1a071f8a999ab5028afa576f08a2c0095a93c763d1a6753cbdd0db2738"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew317_df_hit.json",
-    "bytes": 36873,
-    "sha256": "e035dc839ce51925246129aa2e5704246fd40bfa9a1ce22bc1df188b3fd5be9f"
+    "bytes": 37849,
+    "sha256": "47e1c8c96f27f71fbb999e0da35a82f61983c69c8fe7268782f823c21b91905a"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_cam.json",
-    "bytes": 3383,
-    "sha256": "2f6d0a9eee67de3ea38fcffc0dda0a0cf750b8bdcbfd43597e48d32fc781fcdb"
+    "bytes": 3492,
+    "sha256": "20fb5c968d807e9faf0e9b353832adcb73e42bed091242df4cf5fdef2b58f75f"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit.json",
-    "bytes": 80667,
-    "sha256": "519374984bc47f5cad3d827429ad8151cd857db6550934897f61a3b9b7c7e88e"
+    "bytes": 81539,
+    "sha256": "31629f440fcc5fbb64ea71a780dff38742215d2c83225a7cd0227cefe7621893"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit_end.json",
-    "bytes": 9522,
-    "sha256": "b6ec773cbf7835626bec8585b033f7e4f7a6662a471cd8acbc785fd57dd8188a"
+    "bytes": 10377,
+    "sha256": "8289529586c29f43e5ef7d07e0ebf0a4e5fcc04b522b9e9a03d7523101379d39"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_start.json",
-    "bytes": 3412,
-    "sha256": "b7536271b0a5f63b43a1ff7c40dfd8d1378b0a44ec56b44f2e483d1004efdb83"
+    "bytes": 3521,
+    "sha256": "478814e499918115af286df14214bda4e3d72e46c6d47881ae5c777b23c22d7b"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew370_start_line01.json",
-    "bytes": 57469,
-    "sha256": "829c2e240015d474d93260801c63b7f812eeac78595ed3af4dd2c027338bf6a0"
+    "bytes": 57578,
+    "sha256": "5a6a7a173cb45e6011c337999cc4925fabb096ab66311d09ad87e94d5495d739"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet.json",
-    "bytes": 189009,
-    "sha256": "729c7309a2fd342c65eeab6dfdf90914b224af29a0e5a3975a92ab8355dc6186"
+    "bytes": 191391,
+    "sha256": "512c54b1203c60d0f0ca5486e524df8e584971cbe9f8eb85a7ae8aab80a7a8cb"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet_charge.json",
-    "bytes": 124538,
-    "sha256": "122c62ac53064b6d4fde7141dba9bebf31703189b909cdf1d6b3313cc5d242b8"
+    "bytes": 126274,
+    "sha256": "aafde98e8631c30b02be05a363e934374cfdca0c3a9e395173ce5a9189220f6b"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew396_hit.json",
-    "bytes": 28659,
-    "sha256": "db714200caf216db3db2ec5facfb9da1eec2fdd240b5ef89c75fbb024a767154"
+    "bytes": 29749,
+    "sha256": "41e04a397551862e76bdc4112b0843341074b6fb36f857d81fd6130695106ac5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_charge.json",
-    "bytes": 11703,
-    "sha256": "cfcb360943a6e82a5538629fc7e28005df9599e549a85018d110f323a24b8c35"
+    "bytes": 12139,
+    "sha256": "a8b4f7b272adc7da0b5fb55d9c04df739ad5964e63618715944ba95677158cc1"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_hit.json",
-    "bytes": 16870,
-    "sha256": "22d5dadd8865c3f6852004b9b68eec228b44c6eb0de54ab443c5da913418f70e"
+    "bytes": 17524,
+    "sha256": "0fa7524355b582ce04b2049a68610a8ce53caba62b3e22183120c5b81dada6b8"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_muzzle_under.json",
-    "bytes": 74096,
-    "sha256": "f8b0c66f390137200875521065dd5a681561d71918a20e83603fc016b83ade92"
+    "bytes": 75712,
+    "sha256": "7287a6855081bcd280f611f164783afa602f530dc22d2075f99a01402f960a61"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew399_ring.json",
-    "bytes": 6187,
-    "sha256": "2cf1ad6ca70d552a59bf6a4517586428460074330f5054aaef0b005157c13c04"
+    "bytes": 6510,
+    "sha256": "a87c2e9807bf9aa269add95355263c8f8d56c46e712231ca81951cfe4d223575"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew402_bullet.json",
-    "bytes": 62337,
-    "sha256": "05cc14b6df2ebd89416de4c05855198e21cac5a0ec60f0dae15eecc294c09fb0"
+    "bytes": 62552,
+    "sha256": "bb5a9716665a2f11ee71991f9b2b92af6d6043ac6491f7f3a9998140564d3171"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew402_seed.json",
-    "bytes": 88741,
-    "sha256": "1e3870a125906b166f2408320ce0abfcb2e68fb6f12f57f905426805695b20c7"
+    "bytes": 90262,
+    "sha256": "2b36a20a07c0ce78f28091212a16d8f77347212c78be4328e2236b042283f61e"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_muzzleimpact.json",
-    "bytes": 29517,
-    "sha256": "786c0975655363ac1ecc42cf49bac110aa75872f0246f90b0c497f4c3b5526fc"
+    "bytes": 29953,
+    "sha256": "fdc5acb43fe87493c69d46c6e39571dcfb44e31bf2a1283c69364cd0f3dbfa70"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st01_bgaura.json",
-    "bytes": 7234,
-    "sha256": "bca1e4ec0b7343b13d57ea5a83ba4da7a0d384d0a180a3eb13260af00b32c2fa"
+    "bytes": 7561,
+    "sha256": "4dc0c4e293a02f0aea122ecfe32d6c70a2a2bac53c196204bf96b02ec2e08261"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st02_charge.json",
-    "bytes": 40435,
-    "sha256": "983d56c9ee6937cfcfef9b73a4af4a26658880bc282d36493b56745fe3f049f3"
+    "bytes": 41950,
+    "sha256": "f8f9899855869d74b5bfc1eb811c523bd2de11fac8ce7b2acb99bae08b3b0b02"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st03_muzzle.json",
-    "bytes": 52025,
-    "sha256": "8bf585d1b2eac82c4a62b3394ccbc1f94702050e6e2d69545efbffb6c3b418d4"
+    "bytes": 54420,
+    "sha256": "ed4325186fcb70277943ae9304838e14e2c5c3c5fd8077b5206405e47be21625"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
-    "bytes": 15992,
-    "sha256": "54ce4c6d176722dde03dfdab39e7ab7d5b98bd1665494a0e39c402d4f1458efc"
+    "bytes": 16751,
+    "sha256": "5c4bdc0cf6f25daba5b1e1b33db2f67fc51795f4bcb20bd3b12def296632fdc5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_beam.json",
-    "bytes": 37852,
-    "sha256": "cbf24909967d9178b031bece0219f732232a8e6293904b3557d477ac191534ba"
+    "bytes": 39057,
+    "sha256": "bb7377517a0fb6096d6e33772ec8d0dc45708e556c90ce55864ca9dfcb9f5790"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit01_lo.json",
-    "bytes": 25241,
-    "sha256": "51a4ab422cf3aa28d36cc8d86314d4cc687e6e3eb26a51ad7386c8ac8d92cea2"
+    "bytes": 26757,
+    "sha256": "923fe8c653f4897d5c7f64f3af81b355126c4ea2b478434baed3f2cac76f6a58"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit02_end.json",
-    "bytes": 40400,
-    "sha256": "fcfebb6f633080a440f9d38cf5560a5c88517576386114f7c1b5dc4ac421066f"
+    "bytes": 41795,
+    "sha256": "986613f9edf02676c3d2784a98995ab96d204ccd941361ed740cd517884d3581"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_at_draw_ed.json",
-    "bytes": 23007,
-    "sha256": "2de5e4a8ee38efcd795cf467711f0e9bf6ccd45f811467faf273ca1756ea7cb2"
+    "bytes": 24199,
+    "sha256": "b23170a00b46b429fc7d0e3d0bb4d317db9fdd73f884843a865201436cc2e9b9"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_draw_st.json",
-    "bytes": 10364,
-    "sha256": "04c1a8f21d518aefaa54ca027559e50db0c0f5f1aea4ce1b5e82fc49cf60ed2e"
+    "bytes": 10800,
+    "sha256": "ee58101e9dbf6415aeea53c0ab2b4f52d0662d0fe94d6fb93b63a33f740d901d"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_hit_punch01.json",
-    "bytes": 28628,
-    "sha256": "2d36e0ea423fafb5a80f732f1b0e4c6c918df68d1b6bb4657a0b1c05ce61faea"
+    "bytes": 30154,
+    "sha256": "3e200dc525ed63f1f3a4ccaaf03406c61913e9df1ca83ee4c3cf2260d6f06601"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew409_line_st.json",
-    "bytes": 4048,
-    "sha256": "e4b0a67ae8024861ba6d2bc6907a145ffa1d5e4a8660fe2b0cfef3f16f384fd0"
+    "bytes": 4266,
+    "sha256": "dc0bafd6a4044d24ab9e8a31f48b4a9920d039d1437c4848f2f16dc9ae3eb4f1"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark01.json",
-    "bytes": 24103,
-    "sha256": "9901298c57cf301b02aed268a7c7d79fa44f279ffd52418619245afae6412f18"
+    "bytes": 25302,
+    "sha256": "801b553accd1859fb2c5a27bc71edf059e792cd40ba02300d1c2af7d195e6662"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark02.json",
-    "bytes": 14298,
-    "sha256": "697e843ce5f19d0bb9204dfc8d191cd43f5077851f4961b46f2206bb97cbd474"
+    "bytes": 14843,
+    "sha256": "6ab42413bb32faebaa8cbaa69cb8fabe888ec2cbf560f57494dd10a9996121be"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_body_thunder.json",
-    "bytes": 32951,
-    "sha256": "c041138b27c90832d7e003991cbfde884d89da1b96da56e8893848113920709e"
+    "bytes": 33605,
+    "sha256": "abe345f5d2176253cb521855ddad74febf3c8dff94ecdc49e2b509f160842bc5"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_field_thunder.json",
-    "bytes": 64504,
-    "sha256": "76121614f8279e6ab9483dc63e11a1a43b6d80e59eaead73748a85761fbbf521"
+    "bytes": 65695,
+    "sha256": "39aa2298d9822c6709c1cb613bb85b6fd8f55962125870aed3dab9ff5a51801c"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_hit.json",
-    "bytes": 20223,
-    "sha256": "b95163e09cdba225d330b8142de49469997908dd1a6c6aceb30fd99b6e8f2087"
+    "bytes": 21204,
+    "sha256": "21919e2c9b7cec92ffef8ff2181f2d0338c169ca2b8337bf9293b164d2be2deb"
   },
   {
     "path": "Assets/NativeFx/BDSP/prefabs/ew435_thunder_flash.json",
-    "bytes": 40325,
-    "sha256": "fea0d3e327a57f9e4d2851ce2745fdb904c1c3584df3aaeab7771471addbca63"
+    "bytes": 41411,
+    "sha256": "020fee161edd6554242bb1a72d4d5500ec0b81e09878d5882b193ffe6c1c05fe"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew122_tanM.json",
+    "bytes": 159676,
+    "sha256": "307ebf1159082fd39e3039a371b6630de2764cc158081a6b27a1753e6e2591c4"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew231_whip01.json",
+    "bytes": 322640,
+    "sha256": "a72b1fab079eb8e67719b858d906ec90068a84e88da034bd01d07f3375e15e0f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_hand.json",
+    "bytes": 527451,
+    "sha256": "3196e9d833c97dd5366a5d8f72392557330812220ab035c3895385b937d9fe50"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_tail.json",
+    "bytes": 16015,
+    "sha256": "54b4ff04a0b2c9d70fd0785dcee7edffd75fc1bf1096ce335b21a44726c1879c"
   },
   {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura003_m.png",
@@ -3013,6 +3033,11 @@
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_bubble201_a.png",
     "bytes": 7679,
     "sha256": "9467dc7b8120b2d3d43585f2d8ed980809fc348a030175d760a57abe624f993f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle003_m.png",
+    "bytes": 15844,
+    "sha256": "213e3a075a6a23b1f4c11498b69c2832014b81e0ed03aff1bcfca44ace97fdf1"
   },
   {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle201_a_clamp.png",
@@ -3130,6 +3155,11 @@
     "sha256": "044efd0746a02c5341eed0d6d0cab2389cabde23026cb30abfe6cabf52ffc1c0"
   },
   {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask007_m.png",
+    "bytes": 198,
+    "sha256": "c5858aad7fa634514dd2607ca50c7f6356d01f8eb09791db07d93fdbd117de7c"
+  },
+  {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask701_o.png",
     "bytes": 276,
     "sha256": "5316300352b94a92324dd1363e8b79dbcc6d398c8de7fb0125c1dfbe922abc42"
@@ -3183,6 +3213,11 @@
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring203_a.png",
     "bytes": 10047,
     "sha256": "2d8d326f2e733bf89ccd302c7a04ce484679ab54230148deaa3e56ca8ca2f88a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring501_y.png",
+    "bytes": 21703,
+    "sha256": "6770ac22798a530b526418a402919b0a9d1f212525bf30169749792854adc226"
   },
   {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke002_m.png",
@@ -3765,6 +3800,11 @@
     "sha256": "5e3e1e9207586a3e04dcc510a7521af2d7bd49d3e52ad0146673e40506653783"
   },
   {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_fire201_a_repeat_mirror.png",
+    "bytes": 39604,
+    "sha256": "aaec910d95708b6ee0c985c15a3134a4482fe9993411666d50182d4d43b0efc3"
+  },
+  {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow001_m.png",
     "bytes": 27883,
     "sha256": "f6ce15b20d1451ec9bd5127920ac57b905527f7aa6750f41cc5283c7923ce0a5"
@@ -3790,6 +3830,11 @@
     "sha256": "1ad0e0014db3981160c3219cd37c1f0d44474490158839d0b0d27fedf5f00d68"
   },
   {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow007_m.png",
+    "bytes": 75077,
+    "sha256": "c9d5527745e2d16d93818b42be00a27a897d1923a208e08de95b7fb7b84ac78e"
+  },
+  {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow008_m.png",
     "bytes": 133001,
     "sha256": "5977ca93caee3a5da9cf2d791924fb381232c6a87d3fa5d426998478c77669ad"
@@ -3813,6 +3858,11 @@
     "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow013_m.png",
     "bytes": 9443,
     "sha256": "b7c24d6cd41afe89214acfa3acf6be0b1c3be66ed77ecd641b913b3c5765ce16"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow015_m.png",
+    "bytes": 14181,
+    "sha256": "abcf41cc82867804e0b28a309b59c7c97c9fa33392134c066ddba0896bc41e12"
   },
   {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow016_m.png",
@@ -3890,6 +3940,16 @@
     "sha256": "c46aa1f2e1a65f3f7cec4838bad0f2f4bb4727fbce2a1f1114a4fb0e80b00be9"
   },
   {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_ht001_m.png",
+    "bytes": 142,
+    "sha256": "8db71b75f7041481139b7a664f7b2b7222a622c846f0cb929ea59cd6c6a348bd"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt001_m.png",
+    "bytes": 159,
+    "sha256": "dc9983d4a4633e26827479abdde27f449c149bf4fdd2ba0d6960b42480b7329a"
+  },
+  {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt002_m.png",
     "bytes": 240,
     "sha256": "dcec15a8d3a24064cdceaa9f0c95391d3da90aec205eb80f8fef7c81bc171f90"
@@ -3900,9 +3960,19 @@
     "sha256": "9eecce3536e5f2f72b4393cb0250172342e1cf9392598b515d64039862c0f464"
   },
   {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt701_o.png",
+    "bytes": 451,
+    "sha256": "b0dddcce90857962ae77f78ce0d9ec4a4004d99d8083364e8fa939251f23fd50"
+  },
+  {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_white001_m.png",
     "bytes": 73,
     "sha256": "304293895c5b70ecb8f014efb4e7c9af0005eb29c301622da17e5e5d0a805a0f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew280_shock_m.png",
+    "bytes": 59817,
+    "sha256": "a6cd09f78a65675b5d7e59e934b989a9391596aa70854c9c180b14f64988970b"
   },
   {
     "path": "Assets/NativeFx/BDSP/textures/fxpt_ew402_seed01_o.png",

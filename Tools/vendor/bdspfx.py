@@ -330,11 +330,9 @@ def material(t, mb, tex):
     def key(prefix, default):
         return next((k[len(prefix):] for k in kw if k.startswith(prefix)), default)
     cexpr = COLOR_EXPR.get(key('_COLORTEXTUREEXPRESSION_', 'C0MULCOMBORGB'), 1)
-    if key('_COLORTEXTURE0CHANNEL_', 'RGB') == 'ONE':
-        cexpr = 0
     aexpr = ALPHA_EXPR.get(key('_ALPHAEXPRESSION_', 'COMBOAMULA0'), 0)
-    if key('_ALPHATEXTURE0CHANNEL_', 'ALPHA') == 'R' and aexpr in (0, 1):
-        aexpr += 2
+    if key('_ALPHAEXPRESSION_', '')=='COMBOAMINUSA0MULA1':aexpr=5
+    if key('_ALPHAEXPRESSION_', '')=='COMBOAMULA0MULA1':aexpr=6
     out = {'color_mode': cexpr, 'alpha_mode': aexpr, 'src': int(fl.get('_SrcColor', 5)),
            'dst': int(fl.get('_DestColor', 10)), 'cull': int(fl.get('_Cull', 0)),
            'color_scale': _r(fl.get('_ColorScale', 1.0)), 'mesh': '_MESHENABLED_ON' in kw}
@@ -343,7 +341,12 @@ def material(t, mb, tex):
         m2 = mb.get('_MulColor', {'r': 1, 'g': 1, 'b': 1, 'a': 1})
         mul = {ch: mul[ch] * m2[ch] for ch in 'rgba'}
     out['mul'] = _r([mul[ch] for ch in 'rgba'])
-    for slot, name in ((0, '_Texture0'), (1, '_Texture1')):
+    def channels(prefix,values):return [values[key(f'_{prefix}TEXTURE{i}CHANNEL_',next(iter(values)))] for i in range(3)]
+    def blends(prefix):return [{'MUL':0,'PLUS':1,'MINUS':2}.get(key(f'_{prefix}TEXTURE{i}BLENDTYPE_','MUL'),0) for i in (1,2)]+[0]
+    out['combiner']={'color_channels':channels('COLOR',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),
+                     'alpha_channels':channels('ALPHA',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3}),
+                     'color_blends':blends('COLOR'),'alpha_blends':blends('ALPHA')}
+    for slot, name in ((0, '_Texture0'), (1, '_Texture1'), (2,'_Texture2')):
         te = texs.get(name)
         if te is None or not te['m_Texture']['m_PathID']:
             continue
@@ -357,9 +360,8 @@ def material(t, mb, tex):
         if mb is not None and slot < len(mb.get('_UvScroll0', [])):
             s = mb['_UvScroll0'][slot]
             d['scroll'] = _r([s['x'], s['y']])
-        if slot == 1:
-            if key('_COLORTEXTURE1BLENDTYPE_', 'MUL') != 'MUL' or not any(k.startswith('_MULTITEXTUREMODE_TEX2') or k.startswith('_MULTITEXTUREMODE_TEX3') for k in kw):
-                continue  # added or subtracted second layers are left out
+        if slot>0 and not any(k.startswith('_MULTITEXTUREMODE_TEX'+str(n)) for k in kw for n in range(slot+1,4)):
+            continue
         out[f'tex{slot}'] = d
     return out
 

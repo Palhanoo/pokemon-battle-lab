@@ -412,3 +412,50 @@ Dig's three unsupported position/raycast commands remain explicitly audited.
 Other games' bodies still use shared ZA/BDSP effects, not their own native engines.
 Launcher updated; prior player/build preserved. Subjective feel/audio acceptance
 and full source-game visual parity remain open for Bruno's playtest.
+
+## LAB-16 — remaining texture blending, beam ends and BDSP model layers
+
+23 October 2026, PokedexEffectRepair: Bruno asks to prioritize flat fire/Dragon
+Pulse, oversized Hydro splashes, missing BDSP layers and Psybeam's malformed beam.
+Evidence: previous LAB-15 captures and this chat report; Psybeam added as a defect.
+Confirmed: ZA export dropped channel/blend selectors; BDSP exporter discarded
+additive texture layers and slot 2. Dissolve expression used the wrong order and
+scale. Psybeam shares Hydro's unit +Y mesh/90-degree rotation, but was not fitted.
+Hydro fitting also stretched radial end meshes as though they were beam tubes.
+AdjustScaleTarget stored a multiplier without applying it absent SetScale.
+BDSP ModelCreate created empty holders, discarding skeleton and model layers.
+Repair locations: native shader/importers, VioletMove unit beam fitting/scaling,
+BdspModel and export_bdsp_effect_models, native timeline/catalog. The source
+standalone Brick Break trail bundle has missing-prefab placeholders; recover its
+named trail from the hand bundle, split its duplicate draw and retain its UV curves.
+Recurrence: capture release/travel/contact/tail for Flamethrower, Ember, Dragon
+Pulse, Hydro Pump, Psybeam, BDSP Brick Break/Iron Tail/Lick; confirm aimed beam
+length, un-stretched endpoint, skeleton deformation and model end-of-life.
+Status: source repaired, build and actual visual review pending. No new attacks.
+
+LAB-16 focused captures caught two additional import errors: assuming four bone
+weights for Lick (source has two), and storing base Y/Z sizes inside Unity's
+normalized size curves, truncating thin long beams. Pad missing weights with
+zero and use native 3D start size with normalized lifetime curves. The rebuilt
+eight-move run passes, including all five animated model groups and cleanup.
+Visual rejection: initial tongue/whip placement reflects BDSP's fixed stage, not
+this variable-distance lab. Fit original model contact poses to the battler and
+bound authored stage offsets; preserve skeleton motion. Center Psybeam's aura
+along the forward beam so it cannot stretch backwards behind the attacker.
+
+LAB-16 final verification: Builds/PokedexVisualLayers compiles with 0 errors.
+Eight targeted presentations pass in Logs/visual-layers-final.log, process exit0,
+no logged exceptions or particle errors through shutdown. All five BDSP model
+instances exist, deform and deactivate at timeline end. No full roster rerun.
+Docs/evidence/visual-layers retains contact frames and twelve timed frames per
+move plus focused-checks.txt. Visual inspection confirms smaller Hydro spray,
+full-length forward Psybeam (including its aura), more textured fire/Dragon Pulse
+and the restored models placed around their target. The new material blending is
+shared across the existing47 ZA/22 BDSP effects; no attacks were added.
+Audit now resolves3,600 texture references and all five model references (four
+unique assets). This is not native visual parity: refraction/deformation shaders,
+32 disabled/carrier renderer records, Dig positioning commands and two Iron Tail
+material-animation curves remain incomplete. BDSP contact pose fitting and beam
+spray footprint limits are intentional real-time lab adaptations. Bruno's visual
+acceptance remains open. Launcher selects this isolated build; previous player
+and build remain intact.
