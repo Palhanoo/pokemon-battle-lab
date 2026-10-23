@@ -21,7 +21,7 @@ namespace BattleLab.Native
 
         class Obj
         {
-            public string name;
+            public string name,set;
             public GameObject fx;
             public List<Dictionary<string, object>> clips = new List<Dictionary<string, object>>();
             public bool playing;public Vector3 previousPosition;
@@ -33,6 +33,7 @@ namespace BattleLab.Native
         bool actorLease;
         readonly object actorKey=new();
         public bool ExternalActorClock;
+        public bool FitHydroBeam;bool hydroPrepared;readonly HashSet<Mesh> hydroSourceMeshes=new();
         public void SampleActor(float elapsed){if(actorPresentation && actorLease)actorPresentation.Sample(actorKey,actorClips,elapsed);}
         public Battler attacker, defender;
         public float time, startTime, endTime, lastEmit;float previousTime;
@@ -70,7 +71,7 @@ namespace BattleLab.Native
             foreach (var o in VioletFx.J.List(js, "objects"))
             {
                 var od = VioletFx.J.Obj(o);
-                var obj = new Obj { name = VioletFx.J.Str(od, "name") };
+                var obj = new Obj { name = VioletFx.J.Str(od, "name"),set=VioletFx.J.Str(od,"set") };
                 if (keep != null && !keep(obj.name)) continue;
                 var set = setJson(VioletFx.J.Str(od, "set"));
                 if (set == null) continue;
@@ -151,6 +152,7 @@ namespace BattleLab.Native
         void OnDestroy()
         {
             ReleaseActor();
+            foreach(var mesh in hydroSourceMeshes)if(mesh)Gone(mesh);
             foreach (var r in GetComponentsInChildren<ParticleSystemRenderer>(true))
             {
                 if (r.sharedMaterial) Gone(r.sharedMaterial);
@@ -178,6 +180,18 @@ namespace BattleLab.Native
                 if(Application.isPlaying)Destroy(gameObject);else DestroyImmediate(gameObject);
                 return;
             }
+            if(FitHydroBeam&&!hydroPrepared)
+            {
+                hydroPrepared=true;
+                foreach(var o in objs)if(o.name.StartsWith("bullet"))foreach(var ps in o.fx.GetComponentsInChildren<ParticleSystem>(true))
+                {
+                    var renderer=ps.GetComponent<ParticleSystemRenderer>();if(!renderer.mesh)continue;
+                    hydroSourceMeshes.Add(renderer.mesh);renderer.mesh=VioletFx.YToZ(renderer.mesh);
+                    var main=ps.main;main.startRotationX=0;main.startRotationZ=main.startRotationY;main.startRotationY=0;
+                    var rotation=ps.rotationOverLifetime;rotation.z=rotation.y;rotation.x=new ParticleSystem.MinMaxCurve(0,0);rotation.y=new ParticleSystem.MinMaxCurve(0,0);
+                    var size=ps.sizeOverLifetime;var oldY=size.y;size.y=size.z;size.z=oldY;
+                }
+            }
             float prev = time;previousTime=prev;
             time += dt;
             if(!ExternalActorClock)SampleActor(time);
@@ -185,6 +199,14 @@ namespace BattleLab.Native
             {
                 o.previousPosition=o.fx.transform.position;
                 foreach (var c in o.clips) Apply(o, c, prev, time);
+                if(FitHydroBeam&&o.name.StartsWith("bullet"))
+                {
+                    var from=Node(attacker,"eff_rangeattack01");var to=defender.Center;
+                    var direction=to-from;var tr=o.fx.transform;
+                    tr.position=from;
+                    if(direction.sqrMagnitude>.0001f)tr.rotation=Quaternion.LookRotation(direction.normalized);
+                    tr.localScale=new Vector3(.65f,.65f,direction.magnitude/1.1f);
+                }
                 if (manualSimulate && o.playing)
                     foreach (var ps in VioletFx.Roots(o.fx)) ps.Simulate(dt, true, false, false);
             }
@@ -192,6 +214,7 @@ namespace BattleLab.Native
 
         public bool ProjectileSegment(out Vector3 previous,out Vector3 current)
         {
+            if(FitHydroBeam){previous=current=Vector3.zero;return false;}
             foreach(var o in objs)
             {
                 if(!o.name.StartsWith("bullet")||!o.playing)continue;

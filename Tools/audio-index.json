@@ -122,7 +122,7 @@
     },
     {
       "id": "PECK",
-      "sound": "SE_M_GUST",
+      "sound": "SE_M_GUST_SHORT",
       "substitute": true
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "id": "AERIAL_ACE",
-      "sound": "SE_M_GUST",
+      "sound": "SE_M_GUST_SHORT",
       "substitute": true
     },
     {
@@ -246,5 +246,8 @@
     "POOCHYENA",
     "BRELOOM"
   ],
-  "source": "Emerald ROM recordings; type-family substitutes for missing exact move sounds"
+  "source": "Emerald ROM recordings; type-family substitutes for missing exact move sounds",
+  "edits": {
+    "SE_M_GUST_SHORT": "First 0.65s of SE_M_GUST; 10ms fade-in, 100ms fade-out. Removes long repeated Gust tail for Peck/Aerial Ace."
+  }
 }

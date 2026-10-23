@@ -22,7 +22,7 @@ namespace BattleLab
         readonly Material[] effectMaterials;
         int cueIndex;
         float baseRate=1;
-        public bool Alive => Effect!=null && Effect.gameObject;
+        public bool Alive => Effect is Component component && component && component.gameObject;
         public bool TailDone => !Alive || Time>=Mathf.Min(Effect.EndTime,sustainedStopAt+.5f);
         public static VioletMove.Battler Bind(LabActor actor)=>new VioletMove.Battler{
             root=actor.transform,head=actor.Bone("head"),height=actor.Bounds.size.y,radius=Mathf.Max(actor.Bounds.extents.x,actor.Bounds.extents.z),
@@ -42,7 +42,8 @@ namespace BattleLab
             else
             {
                 timing=table.Get(move.id)??throw new InvalidOperationException("Missing native timing: "+move.id);
-                var fx=za.Play(move.id,Bind(actor),Bind(target));Effect=fx;
+                var fx=za.Play(move.id,Bind(actor),Bind(target),move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
+                if(fx&&move.id=="HYDRO_PUMP")fx.FitHydroBeam=true;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
                 fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
@@ -56,7 +57,7 @@ namespace BattleLab
             effectMaterials=Effect.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m&&m.HasProperty("_EffectTime")).Distinct().ToArray();
             ApplyReadability(Effect.gameObject,move.id);Effect.ManualSimulate=true;Step(0);
         }
-        static void ApplyReadability(GameObject root,string move)
+        public static void ApplyReadability(GameObject root,string move)
         {
             foreach(var ps in root.GetComponentsInChildren<ParticleSystem>(true))
             {

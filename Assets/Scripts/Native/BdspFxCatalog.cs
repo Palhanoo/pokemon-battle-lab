@@ -60,7 +60,7 @@ namespace BattleLab.Native
             var m = Find(moveId);
             if (m == null || !material || !m.sequence) return null;
             return BdspMove.Create(m.sequence.text, n => prefabByName.TryGetValue(n, out var p) ? p.text : null,
-                                   n => texByName.TryGetValue(n, out var t) ? t : null, material, locatorNames, attacker, defender);
+                                   n => texByName.TryGetValue(n, out var t) ? t : throw new InvalidOperationException("Missing BDSP effect texture: "+n), material, locatorNames, attacker, defender);
         }
     }
 }

@@ -41,8 +41,8 @@
   },
   {
     "path": "Assets/NativeAudio/index.json",
-    "bytes": 4716,
-    "sha256": "58a6a34c60cc5a6a2c1e5caf582872fc8875a6cc6922a3379535f10d293b1212"
+    "bytes": 4881,
+    "sha256": "8540e62dd71de17ab040752e6e50e1bc46a0fea91a90206a25ccfffd23979e39"
   },
   {
     "path": "Assets/NativeAudio/SE_M_ABSORB.wav",
@@ -133,5 +133,10 @@
     "path": "Assets/NativeAudio/SE_SUPER_EFFECTIVE.wav",
     "bytes": 932888,
     "sha256": "54df078f00cd7320e63f273e8210698507174314f7dce210333a8319fdd287e8"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_GUST_SHORT.wav",
+    "bytes": 124844,
+    "sha256": "2585dbbac9621dd4c722e2507fcd572c994f1053a04d3f9b80dfee27b9c7d6d4"
   }
 ]

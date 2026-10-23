@@ -15,6 +15,12 @@ namespace BattleLab
         public float ClipLength => clip ? clip.length : 0;
         public Bounds Bounds { get { var rs=bodyRenderers; var b=rs[0].bounds; foreach(var r in rs)b.Encapsulate(r.bounds); return b; } }
         public Vector3 Centre => Bounds.center;
+        Bounds footprint;
+        public float FootprintRadius(Vector3 direction)
+        {
+            var local=transform.InverseTransformDirection(direction.normalized);
+            return Mathf.Max(.15f,Vector3.Dot(footprint.center,local)+Mathf.Abs(local.x)*footprint.extents.x+Mathf.Abs(local.z)*footprint.extents.z);
+        }
         Renderer[] bodyRenderers;
         Dictionary<string,Transform> bones;
         Transform visualRoot;Vector3 visualRest,recoilDirection;float recoilRemaining;
@@ -48,6 +54,10 @@ namespace BattleLab
             if(entry.clips.Any(c=>c.legacy))
             {
                 actor.legacy=body.GetComponent<Animation>()??body.AddComponent<Animation>();actor.legacy.enabled=false;actor.legacy.playAutomatically=false;
+                // The glTF can contain category/menu clips with the same name as land
+                // clips. Unity's imported library keeps the last; ModelEntry selects first.
+                // Rebuild it in the same order so Idle cannot silently sample a menu pose.
+                foreach(var state in actor.legacy.Cast<AnimationState>().ToArray())actor.legacy.RemoveClip(state.name);
                 foreach(var c in entry.clips){if(!actor.legacy[c.name])actor.legacy.AddClip(c,c.name);actor.legacy[c.name].enabled=false;}
                 actor.Idle();actor.Tick(0);
             }
@@ -61,10 +71,29 @@ namespace BattleLab
                 actor.graph.Play();actor.Idle();actor.graph.Evaluate(0);
             }
             // Ground once from the posed body. Never chase animated foot bounds each frame.
-            body.transform.localPosition-=Vector3.up*(actor.Bounds.min.y-at.y);
+            body.transform.localPosition-=Vector3.up*(actor.PosedBounds().min.y-at.y);
             actor.visualRest=body.transform.localPosition;
-            actor.BodyHeight=actor.Bounds.size.y;
+            var posed=actor.PosedBounds();actor.footprint=new Bounds(posed.center-at,posed.size);
+            actor.BodyHeight=posed.size.y;
             return actor;
+        }
+        public Bounds PosedBounds()
+        {
+            var result=new Bounds();bool found=false;var baked=new Mesh();
+            foreach(var renderer in bodyRenderers)
+            {
+                if(!renderer.enabled||!renderer.gameObject.activeInHierarchy)continue;
+                Mesh mesh=null;
+                if(renderer is SkinnedMeshRenderer skin){skin.BakeMesh(baked);mesh=baked;}
+                else mesh=renderer.GetComponent<MeshFilter>()?.sharedMesh;
+                if(!mesh)continue;
+                foreach(var vertex in mesh.vertices)
+                {
+                    var world=renderer.transform.TransformPoint(vertex);
+                    if(!found){result=new Bounds(world,Vector3.zero);found=true;}else result.Encapsulate(world);
+                }
+            }
+            Destroy(baked);return found?result:Bounds;
         }
         public void Idle() => Play(entry.Role("battle")??entry.Role("idle"),true);
         public void Role(string role, bool loop=false) => Play(entry.Role(role)??entry.Role("idle"),loop);

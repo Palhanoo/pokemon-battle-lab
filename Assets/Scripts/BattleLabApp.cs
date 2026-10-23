@@ -25,6 +25,7 @@ namespace BattleLab
             public int hp; public int[] pp; public string[] moves;public AudioSource voice;
             public float[] ready=new float[ActiveSlots]; public Action action;
             public double next; public Vector3 home; public int team;
+            public Vector3 reposition;public float repositionUntil;
             public float dodgeUntil,dodgeReady; public Vector3 dodgeDirection;
             public string state="Ready";
             public int MaxHp => data.stats[0]+100;
@@ -85,7 +86,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();BuildArena();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -283,7 +284,7 @@ namespace BattleLab
             f.action=new Action{move=move,style=selected,target=target,slot=slot};
             f.state="Approaching";Note($"{f.data.id}: {move.name}"+(selected==MoveStyle.Normal?"":" · "+selected));
         }
-        static float Reach(Fighter f,Fighter target,MoveData move)=>Mathf.Max(move.physical?.8f:2,move.rangeMax)+Mathf.Min(.6f,target.body.Bounds.extents.x);
+        static float Reach(Fighter f,Fighter target,MoveData move)=>Clearance(f,target)+Mathf.Max(move.physical?.25f:2,move.rangeMax);
         void TickRealtime(float dt)
         {
             if(Player.hp<=0)SwitchControl();
@@ -314,6 +315,7 @@ namespace BattleLab
                 }
                 else if(p.state=="Moving"||p.state=="Dashing"){p.body.Idle();p.state="Ready";}
             }
+            if(ai)TickReposition(dt);
             if(ai&&now>=aiAt)
             {
                 for(int i=0;i<fighters.Length;i++)if(i!=controlled&&fighters[i].hp>0&&fighters[i].action==null)
@@ -336,7 +338,7 @@ namespace BattleLab
             Vector3 from=f.body.transform.position,to=a.target.body.transform.position;
             if(a.phase==0)
             {
-                float desired=a.move.shape=="Melee"?Mathf.Max(Clearance(f,a.target)+.08f,Mathf.Min(1.2f,Reach(f,a.target,a.move)*.8f)):Mathf.Min(6,Reach(f,a.target,a.move)*.8f);
+                float desired=Clearance(f,a.target)+(a.move.shape=="Melee"?.15f:Mathf.Min(6,Mathf.Max(2,a.move.rangeMax)*.8f));
                 if(Vector3.Distance(from,to)>desired+.05f)
                 {MoveActor(f,to+(from-to).normalized*desired,dt,4);return;}
                 f.body.Face(to);
@@ -353,7 +355,7 @@ namespace BattleLab
                 // Quick Attack's small committed burst is lab movement, synchronized to the native release.
                 if(a.move.id=="QUICK_ATTACK"&&a.clock>=a.presentation.HitAt-.18f&&a.clock<a.presentation.HitAt)
                 {
-                    var delta=to-from;delta.y=0;float travel=Mathf.Max(0,delta.magnitude-.85f);
+                    var delta=to-from;delta.y=0;float travel=Mathf.Max(0,delta.magnitude-Clearance(f,a.target)-.08f);
                     f.body.transform.position+=delta.normalized*Mathf.Min(travel,dt*22);
                 }
                 if(a.clock>=a.presentation.FreeAt)
@@ -554,7 +556,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             while(true)
             {
                 object item;

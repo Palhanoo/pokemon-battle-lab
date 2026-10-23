@@ -145,8 +145,8 @@ namespace BattleLab.Native
             {
                 var m2 = ps.velocityOverLifetime; m2.enabled = true;
                 m2.x = Curve(v["x"]); m2.y = Curve(v["y"]); m2.z = Curve(v["z"]);
-                m2.orbitalX = Curve(v["orbitalX"]); m2.orbitalY = Curve(v["orbitalY"]); m2.orbitalZ = Curve(v["orbitalZ"]);
-                m2.orbitalOffsetX = Curve(v["orbitalOffsetX"]); m2.orbitalOffsetY = Curve(v["orbitalOffsetY"]); m2.orbitalOffsetZ = Curve(v["orbitalOffsetZ"]);
+                m2.orbitalX = MatchingCurve(Curve(v["orbitalX"])); m2.orbitalY = MatchingCurve(Curve(v["orbitalY"])); m2.orbitalZ = MatchingCurve(Curve(v["orbitalZ"]));
+                m2.orbitalOffsetX = MatchingCurve(Curve(v["orbitalOffsetX"])); m2.orbitalOffsetY = MatchingCurve(Curve(v["orbitalOffsetY"])); m2.orbitalOffsetZ = MatchingCurve(Curve(v["orbitalOffsetZ"]));
                 m2.radial = Curve(v["radial"]); m2.speedModifier = Curve(v["speedModifier"]);
                 m2.space = J.B(v, "world") ? ParticleSystemSimulationSpace.World : ParticleSystemSimulationSpace.Local;
             }
@@ -217,6 +217,16 @@ namespace BattleLab.Native
             CustomColours(ps, d.TryGetValue("custom", out var co) ? co as Dictionary<string, object> : null);
         }
 
+        // Unity requires matching modes on all three orbital axes. Keep authored
+        // curves and random ranges exactly; represent constants as constant curves.
+        static ParticleSystem.MinMaxCurve MatchingCurve(ParticleSystem.MinMaxCurve c)
+        {
+            if(c.mode==ParticleSystemCurveMode.TwoCurves)return c;
+            if(c.mode==ParticleSystemCurveMode.Curve)return new ParticleSystem.MinMaxCurve(c.curveMultiplier,c.curve,c.curve);
+            float lo=c.mode==ParticleSystemCurveMode.TwoConstants?c.constantMin:c.constant;
+            float hi=c.mode==ParticleSystemCurveMode.TwoConstants?c.constantMax:c.constant;
+            return new ParticleSystem.MinMaxCurve(1,AnimationCurve.Constant(0,1,lo),AnimationCurve.Constant(0,1,hi));
+        }
         static bool Module(Dictionary<string, object> d, string key, out Dictionary<string, object> m)
         {
             m = d.TryGetValue(key, out var o) ? o as Dictionary<string, object> : null;
@@ -385,8 +395,7 @@ namespace BattleLab.Native
             var tex = texture(J.Str(t, "name"));
             if (!tex) return false;
             var wrap = J.Floats(t["wrap"]);
-            tex.wrapModeU = (TextureWrapMode)(int)wrap[0];
-            tex.wrapModeV = (TextureWrapMode)(int)wrap[1];
+            mat.SetVector(prop=="_MainTex"?"_MainWrap":"_SubWrap",new Vector4(wrap[0],wrap[1],0,0));
             mat.SetTexture(prop, tex);
             mat.SetFloat(prop == "_MainTex" ? "_MainGrey" : "_SubGrey", Grey(tex) ? 1 : 0);
             var sc = J.Floats(t["scale"]); var off = J.Floats(t["offset"]);

@@ -46,7 +46,7 @@ namespace BattleLab.Native
         {
             var m = Find(moveId);
             if (m == null || !material) return null;
-            return VioletMove.Create(m.timeline.text, SetJson(m), n => byName.TryGetValue(n, out var t) ? t : null, material, attacker, defender, keep, shotCount);
+            return VioletMove.Create(m.timeline.text, SetJson(m), n => byName.TryGetValue(n, out var t) ? t : throw new InvalidOperationException("Missing ZA effect texture: "+n), material, attacker, defender, keep, shotCount);
         }
 
         static Func<string, string> SetJson(Move m) => file =>

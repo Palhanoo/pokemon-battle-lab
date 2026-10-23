@@ -388,13 +388,12 @@ namespace BattleLab.Native
             {
                 var t = J.Obj(o);
                 int slot = (int)J.F(t, "slot");
-                if (J.B(t, "sphere_map")) continue; // lighting lookups for Violet's own shaders
                 if (slot == 0) t0 = t; else if (slot == 1 && t1 == null) t1 = t; else if(slot==2 && t2==null)t2=t;
             }
             if (t0 == null) t0 = t1 ?? t2;
             if (t0 == null) return;
             var tex = texture(J.Str(t0, "name"));
-            if (tex) { Wrap(tex, t0); mat.SetTexture("_MainTex", tex); mat.SetFloat("_MainGrey", Grey(tex) ? 1 : 0); }
+            if (tex) { Wrap(mat,"Main", t0); mat.SetTexture("_MainTex", tex); mat.SetFloat("_MainGrey", Grey(tex) ? 1 : 0); }
             var div = J.Floats(t0["div"]);
             int nx = Mathf.Max(1, (int)div[0]), ny = Mathf.Max(1, (int)div[1]);
             if (nx * ny > 1) SheetAnimation(ps, t0, nx, ny, avgLife);
@@ -407,7 +406,7 @@ namespace BattleLab.Native
                 var sub = texture(J.Str(t1, "name"));
                 if (sub)
                 {
-                    Wrap(sub, t1);
+                    Wrap(mat,"Sub", t1);
                     mat.SetTexture("_SubTex", sub);
                     mat.SetFloat("_SubGrey", Grey(sub) ? 1 : 0);
                     mat.SetFloat("_UseSub", 1);
@@ -422,11 +421,14 @@ namespace BattleLab.Native
                 var third=texture(J.Str(t2,"name"));
                 if(third)
                 {
-                    Wrap(third,t2);mat.SetTexture("_ThirdTex",third);mat.SetFloat("_ThirdGrey",Grey(third)?1:0);mat.SetFloat("_UseThird",1);
+                    Wrap(mat,"Third",t2);mat.SetTexture("_ThirdTex",third);mat.SetFloat("_ThirdGrey",Grey(third)?1:0);mat.SetFloat("_UseThird",1);
                     UvTransform(mat,"_ThirdTex",t2,false);mat.SetFloat("_ThirdRotation",J.F(t2,"uv_rotate"));
                     var scroll=J.Floats(t2["scroll_per_s"]);mat.SetVector("_ThirdScroll",new Vector4(scroll[0],scroll[1],0,0));
                 }
             }
+            mat.SetFloat("_MainSphere",J.B(t0,"sphere_map")?1:0);
+            if(t1!=null&&t1!=t0)mat.SetFloat("_SubSphere",J.B(t1,"sphere_map")?1:0);
+            if(t2!=null&&t2!=t0)mat.SetFloat("_ThirdSphere",J.B(t2,"sphere_map")?1:0);
             TextureMotion(mat,"Main",t0);
             if(t1!=null&&t1!=t0)TextureMotion(mat,"Sub",t1);
             if(t2!=null&&t2!=t0)TextureMotion(mat,"Third",t2);
@@ -444,7 +446,7 @@ namespace BattleLab.Native
             var rep = t.ContainsKey("repeat") ? J.Floats(t["repeat"]) : new[] { 1f, 1f };
             var sc = J.Floats(t["uv_scale"]);
             var off = J.Floats(t["scroll"]);
-            float sx = rep[0] * (sheet || sc[0] == 0 ? 1 : sc[0]), sy = rep[1] * (sheet || sc[1] == 0 ? 1 : sc[1]);
+            float sx = rep[0] * (sheet ? 1 : sc[0]), sy = rep[1] * (sheet ? 1 : sc[1]);
             mat.SetTextureScale(prop, new Vector2(sx, sy));
             mat.SetTextureOffset(prop, new Vector2(off[0], 1 - sy - off[1]));
         }
@@ -452,11 +454,10 @@ namespace BattleLab.Native
         // Greyscale masks are imported single channel (red only).
         static bool Grey(Texture2D t) => t.format == TextureFormat.BC4 || t.format == TextureFormat.R8 || t.format == TextureFormat.R16;
 
-        static void Wrap(Texture2D tex, Dictionary<string, object> t)
+        static void Wrap(Material material,string prefix, Dictionary<string, object> t)
         {
             var w = J.Floats(t["wrap"]);
-            tex.wrapModeU = WrapOf((int)w[0]);
-            tex.wrapModeV = WrapOf((int)w[1]);
+            material.SetVector("_"+prefix+"Wrap",new Vector4((int)WrapOf((int)w[0]),(int)WrapOf((int)w[1]),0,0));
         }
 
         static TextureWrapMode WrapOf(int w) => w switch
@@ -587,7 +588,7 @@ namespace BattleLab.Native
         }
 
         // Violet aligns a velocity-facing primitive's +Y with the motion; Unity aligns +Z.
-        static Mesh YToZ(Mesh src)
+        public static Mesh YToZ(Mesh src)
         {
             var m = UnityEngine.Object.Instantiate(src);
             var v = m.vertices; var n = m.normals;

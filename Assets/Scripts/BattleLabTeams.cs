@@ -34,7 +34,7 @@ namespace BattleLab
                 var right=CreateFighter(b,ValidSource(b,slot==0?enemySource:1),new Vector3(3,0,z));right.team=1;list.Add(right);
                 left.body.Face(right.home);right.body.Face(left.home);
             }
-            fighters=list.ToArray();
+            fighters=list.ToArray();SeparateTeamSpawn();
         }
         Fighter NearestEnemy(Fighter f)=>fighters.Where(x=>x.team!=f.team&&x.hp>0).OrderBy(x=>(x.body.transform.position-f.body.transform.position).sqrMagnitude).FirstOrDefault();
         void SwitchControl()
@@ -57,16 +57,57 @@ namespace BattleLab
                 {targetIndex=index;Note("Target: "+Target.data.id);return;}
             }
         }
-        static float Clearance(Fighter a,Fighter b)=>Mathf.Clamp(a.body.Bounds.extents.x+b.body.Bounds.extents.x,.5f,1.1f);
+        static float Clearance(Fighter a,Fighter b)
+        {
+            var axis=b.body.transform.position-a.body.transform.position;axis.y=0;
+            if(axis.sqrMagnitude<.001f)axis=Vector3.right;
+            return a.body.FootprintRadius(axis)+b.body.FootprintRadius(-axis)+.12f;
+        }
+        void SeparateTeamSpawn()
+        {
+            // Uncapped authored footprints; resolve every pair, including teammates.
+            for(int pass=0;pass<32;pass++)
+            {
+                bool changed=false;
+                for(int i=0;i<fighters.Length;i++)for(int j=i+1;j<fighters.Length;j++)
+                {
+                    var a=fighters[i];var b=fighters[j];var delta=b.body.transform.position-a.body.transform.position;delta.y=0;
+                    float overlap=Clearance(a,b)+.15f-delta.magnitude;if(overlap<=.001f)continue;
+                    var push=(delta.sqrMagnitude>.001f?delta.normalized:Vector3.right)*(overlap*.5f);
+                    a.body.transform.position-=push;b.body.transform.position+=push;changed=true;
+                }
+                if(!changed)break;
+            }
+            foreach(var f in fighters)f.home=f.body.transform.position;
+        }
         Vector3 ClearPosition(Fighter f,Vector3 next)
         {
-            foreach(var other in fighters)
+            for(int pass=0;pass<4;pass++)foreach(var other in fighters)
             {
                 if(other==f||other.hp<=0)continue;
-                var away=next-other.body.transform.position;away.y=0;float clearance=Clearance(f,other);
+                var away=next-other.body.transform.position;away.y=0;float clearance=f.body.FootprintRadius(-away)+other.body.FootprintRadius(away)+.12f;
                 if(away.magnitude<clearance)next=other.body.transform.position+(away.sqrMagnitude>.001f?away.normalized:Vector3.back)*clearance;
             }
             next.y=0;next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);return next;
+        }
+        void TickReposition(float dt)
+        {
+            for(int i=0;i<fighters.Length;i++)
+            {
+                var f=fighters[i];if(i==controlled||f.hp<=0||f.action!=null)continue;
+                var enemy=NearestEnemy(f);if(enemy==null)continue;
+                if(now>=f.repositionUntil)
+                {
+                    var away=f.body.transform.position-enemy.body.transform.position;away.y=0;
+                    if(away.sqrMagnitude<.01f)away=f.team==0?Vector3.left:Vector3.right;
+                    // Small deliberate flanks between committed attacks; close fighters make room.
+                    var tangent=Vector3.Cross(Vector3.up,away.normalized)*((i%3==0)?-1:1);
+                    float spacing=Clearance(f,enemy)+.4f;
+                    f.reposition=ClearPosition(f,f.body.transform.position+tangent*.85f+away.normalized*Mathf.Max(0,spacing-away.magnitude));
+                    f.repositionUntil=now+1.1f;
+                }
+                MoveActor(f,f.reposition,dt,1.5f);
+            }
         }
         void ReleaseAction(Fighter f)
         {

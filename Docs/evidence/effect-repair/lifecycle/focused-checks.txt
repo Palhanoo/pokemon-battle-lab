@@ -1,0 +1,10 @@
+Pikachu actual skinned vertices ground error: 0
+Both Flying test moves use the 0.65s faded clip (was 11.2167s)
+Uncontrolled fighter repositions on cooldown; controlled Pikachu stays put without input
+ZA MOVE_HYDRO_PUMP: 54 systems, peak 1145 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_PSYCHIC: 31 systems, peak 43 particles; material bindings/clock exercised; contact capture saved
+Sphere-projected material bindings exercised: 6. These checks do not establish native visual parity.
+Collision flash expands at the contact point and cleans up within .45s
+Opposing Ember actions produce one actual clash event
+Giratina/Latias: separate at spawn and throughout actual melee approach; one confirmed hit
+Externally destroyed effect can be queried/disposed safely through interface; shutdown log checked separately

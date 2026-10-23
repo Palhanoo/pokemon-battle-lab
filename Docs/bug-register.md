@@ -336,3 +336,79 @@ base renderer in the lab profile; retain its strikes, sparks, wind and trails.
 This removes an unsupported flat backdrop rather than presenting it as a faithful
 native layer. Final focused pose/contact run passed before this profile-only
 adjustment; the final build is checked again for the four reported attacks.
+
+## LAB-15 — shared effect layers, Hydro Pump, floating Pikachu, AI and Flying sound
+
+Reported by Bruno against PokedexHitFeel: all attack families need a layer audit;
+Pikachu floats; Hydro Pump is malformed; clashes lack a clear collision animation;
+uncontrolled fighters wait in place; Flying attack sounds repeat excessively.
+Confirmed shared gaps: all118 sphere-map references were skipped; texture wrap
+mutated shared texture assets; screen blending ignored alpha; authored zero UV
+scale was replaced with1. Bind all three slots with per-slot view-normal projection
+where requested, per-material wrap, and opacity-aware screen blending. Native
+combiner/refraction parity remains incomplete: audit now also lists omitted
+renderers and unhandled timeline commands instead of calling file existence enough.
+Hydro Pump has unit meshes along +Y; aim/stretch its beam between muzzle and target
+and select its normal variant rather than drawing the conditional extra variant.
+This is a lab beam fit, not reconstruction of native deformation shaders.
+Pikachu grounding used conservative renderer bounds: use actual posed skinned
+vertices once at spawn. Preserve animation offsets thereafter, with no framewise
+foot snapping. Flying SFX source is11.2167s of repeated Gust: derive a faded0.65s
+clip for Peck/Aerial Ace. Source recording preserved. Add short expanding clash
+ring + impact sound at collision; uncontrolled fighters flank during cooldowns,
+while attack approach/commitment and player ownership stay unchanged.
+Recurrence: all47 ZA +22 BDSP presentations and material bindings, Pikachu baked
+feet, Hydro beam axis/length, two sound durations, cooldown movement ownership,
+actual projectile collision + flash expiry. Source repair pending build/visual
+review. Five BDSP model references remain absent, not counted as repaired.
+
+LAB-15 additional feedback: Bruno supplies large-body overlap screenshot (saved
+under Docs/evidence/effect-repair/bruno-large-body-overlap.png). Confirmed source
+cause:1.1m clearance cap, .6m target reach cap, fixed .85m Quick Attack stop, and
+fixed team spawn separation. Use uncapped directional posed-body footprints for
+allied/enemy separation and range, separate all spawn pairs, and stop approach at
+body surfaces. Recurrence: Giratina/Latias spawn and actual melee approach/contact.
+Roster currently exposes47 distinct test attacks with four equipped from each
+species' small candidate list; it is not a complete species learnset. No expansion
+of move coverage is claimed by this rendering repair.
+
+LAB-15 grounding follow-up: first capture still shows Pikachu balanced on its tail
+although lowest-vertex ground check passes. Its GLB includes duplicate named
+category/menu clips after land clips. ModelEntry picks first, but imported Legacy
+Animation's name lookup retains another clip. Rebuild its library in first-source
+order to match role resolution. This is a shared duplicate-name repair, not a
+species-specific vertical offset. Capture must show the intended foot-supported
+pose before claiming success. First renderer smoke also exposed an overstrict test:
+untextured emitters legitimately use shader-default white. Allow these, while
+catalog lookups now fail explicitly if a requested texture is absent.
+
+LAB-15 full-library sweep caught a BDSP runtime error: mixed orbital-velocity curve
+modes rejected by Unity. Convert all three orbital/offset axes to TwoCurves while
+preserving original ranges/keyframes. Second run reached all69 effects, actual
+clash and large-body hit, but is FAILED because of those logged renderer errors.
+Hydro screenshot rejected the initial axis fit: native90-degree particle rotation
+already changes the mesh axis. Normalize mesh/size/longitudinal rotation together
+to +Z before fitting beam length, so roll cannot swing the beam off its target.
+Pikachu's new capture is foot-supported after duplicate-name fix; large-body
+spawn/approach capture shows separation. These two visual checks pass independently.
+
+LAB-15 release verification: all69 presentation checks pass, but process shutdown
+then logs NullReferenceException from AttackPresentation.Alive: an IMoveFx interface
+bypasses Unity's destroyed-object null semantics. Check the backing Component
+before accessing gameObject. Focused final lifecycle run exercises externally
+destroyed effects and process shutdown; do not treat exit0 alone as error-free.
+
+LAB-15 outcome: isolated Builds/PokedexEffectRepair compiles with0 errors. The69
+presentation sweep passes all assertions; final focused lifecycle rerun after the
+Alive guard passes and exits0 with no exceptions/particle errors in the complete
+shutdown log (Logs/effect-repair-lifecycle.log). No full1,000-body suite rerun.
+Evidence: Docs/evidence/effect-repair/focused-checks.txt and lifecycle/focused-checks.txt;
+69 contact-frame captures plus Pikachu, clash and Giratina/Latias captures.
+Visual inspection confirms Pikachu feet, large-body separation, Hydro beam axis
+and visible clash ring. It also confirms remaining visual limitations: flat fire/
+Dragon Pulse surfaces and oversized Hydro splashes; sphere binding is not native
+shader reconstruction. Five BDSP model references,32 omitted renderer records and
+Dig's three unsupported position/raycast commands remain explicitly audited.
+Other games' bodies still use shared ZA/BDSP effects, not their own native engines.
+Launcher updated; prior player/build preserved. Subjective feel/audio acceptance
+and full source-game visual parity remain open for Bruno's playtest.

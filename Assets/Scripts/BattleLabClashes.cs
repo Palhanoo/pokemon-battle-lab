@@ -57,20 +57,34 @@ namespace BattleLab
             if(Direct&&(attacker==Player||target==Player))hitStopRemaining=Mathf.Max(hitStopRemaining,.045f);
             contactFeedbackCount++;
         }
-        void SpawnClash(Vector3 position)=>SpawnBurst(position,.6f,.65f);
-        void SpawnBurst(Vector3 position,float scale,float duration)
+        void SpawnClash(Vector3 position)
+        {
+            var root=SpawnBurst(position,.6f,.45f);
+            var ring=root.AddComponent<LineRenderer>();ring.sharedMaterial=Material(new Color(.45f,.85f,1));
+            ring.useWorldSpace=false;ring.loop=true;ring.positionCount=48;ring.widthMultiplier=.09f;
+            ring.alignment=LineAlignment.View;
+            var sound=soundCatalog.MoveClip("TACKLE");if(sound&&Player!=null)Player.voice.PlayOneShot(sound,.45f);
+        }
+        GameObject SpawnBurst(Vector3 position,float scale,float duration)
         {
             var set=zaFx.moves.SelectMany(m=>m.sets).First(s=>s.name=="cmn_impact_tp01_00");
             var root=VioletFx.Build(set.text,n=>zaFx.textures.FirstOrDefault(t=>t.name==n),zaFx.material);
             root.name="Ranged clash";root.transform.position=position;root.transform.localScale=Vector3.one*scale;
             foreach(var ps in VioletFx.Roots(root)){var em=ps.emission;em.enabled=true;ps.Simulate(0,true,true,false);}
-            clashBursts.Add((root,now+duration));
+            clashBursts.Add((root,now+duration));return root;
         }
         void TickClashes(float dt)
         {
             for(int i=clashBursts.Count-1;i>=0;i--)
             {
                 var burst=clashBursts[i];foreach(var ps in VioletFx.Roots(burst.root))ps.Simulate(dt,true,false,false);
+                var ring=burst.root.GetComponent<LineRenderer>();
+                if(ring)
+                {
+                    float t=Mathf.Clamp01(1-(burst.end-now)/.45f);ring.widthMultiplier=.09f*(1-t);
+                    burst.root.transform.rotation=cam.transform.rotation;
+                    for(int n=0;n<ring.positionCount;n++){float a=n*Mathf.PI*2/ring.positionCount;ring.SetPosition(n,new Vector3(Mathf.Cos(a),Mathf.Sin(a),0)*Mathf.Lerp(.12f,1.6f,t));}
+                }
                 if(now>=burst.end){DestroyBurst(burst.root);clashBursts.RemoveAt(i);}
             }
         }

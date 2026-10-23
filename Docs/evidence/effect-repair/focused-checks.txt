@@ -1,0 +1,76 @@
+Pikachu actual skinned vertices ground error: 0
+Both Flying test moves use the 0.65s faded clip (was 11.2167s)
+Uncontrolled fighter repositions on cooldown; controlled Pikachu stays put without input
+ZA MOVE_QUICK_ATTACK: 23 systems, peak 158 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_THUNDERBOLT: 34 systems, peak 580 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_IRON_TAIL: 14 systems, peak 283 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_THUNDER: 45 systems, peak 489 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_SPARK: 32 systems, peak 356 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DISCHARGE: 25 systems, peak 1640 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_SHADOW_BALL: 55 systems, peak 703 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DARK_PULSE: 36 systems, peak 268 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_SLUDGE_BOMB: 27 systems, peak 526 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_LICK: 12 systems, peak 242 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_PSYCHIC: 29 systems, peak 362 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_AURA_SPHERE: 43 systems, peak 343 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_METAL_CLAW: 16 systems, peak 377 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DRAGON_PULSE: 36 systems, peak 732 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_BULLET_PUNCH: 28 systems, peak 346 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_CLOSE_COMBAT: 35 systems, peak 354 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_LEAF_BLADE: 22 systems, peak 404 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_ENERGY_BALL: 57 systems, peak 790 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_LEAF_STORM: 26 systems, peak 166 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_ABSORB: 18 systems, peak 53 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_GIGA_DRAIN: 31 systems, peak 253 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_SLASH: 10 systems, peak 105 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_EMBER: 20 systems, peak 255 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_FLAMETHROWER: 32 systems, peak 1071 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_PECK: 12 systems, peak 107 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_FIRE_SPIN: 29 systems, peak 929 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_AERIAL_ACE: 14 systems, peak 164 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_TACKLE: 11 systems, peak 119 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_WATER_GUN: 20 systems, peak 205 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_WATER_PULSE: 25 systems, peak 237 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_MUD_SHOT: 17 systems, peak 265 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_ROCK_THROW: 14 systems, peak 96 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_HYDRO_PUMP: 54 systems, peak 1142 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_CONFUSION: 17 systems, peak 149 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_PSYBEAM: 37 systems, peak 553 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DISARMING_VOICE: 23 systems, peak 94 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DRAINING_KISS: 23 systems, peak 117 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_BITE: 12 systems, peak 105 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_CRUNCH: 21 systems, peak 107 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DIG: 42 systems, peak 324 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_TAKE_DOWN: 34 systems, peak 252 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_PLAY_ROUGH: 31 systems, peak 327 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_MACH_PUNCH: 26 systems, peak 240 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_BRICK_BREAK: 14 systems, peak 215 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_SEED_BOMB: 95 systems, peak 904 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_ROCK_TOMB: 22 systems, peak 180 particles; material bindings/clock exercised; contact capture saved
+ZA MOVE_DRAIN_PUNCH: 28 systems, peak 492 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_GIGA_DRAIN: 37 systems, peak 166 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_CLOSE_COMBAT: 19 systems, peak 70 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_SPARK: 25 systems, peak 41 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_SEED_BOMB: 30 systems, peak 351 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_DARK_PULSE: 26 systems, peak 121 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_THUNDER: 38 systems, peak 124 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_BRICK_BREAK: 12 systems, peak 69 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_DISCHARGE: 37 systems, peak 120 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_DRAIN_PUNCH: 33 systems, peak 91 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_METAL_CLAW: 14 systems, peak 51 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_DRAGON_PULSE: 75 systems, peak 162 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_SLUDGE_BOMB: 26 systems, peak 147 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_QUICK_ATTACK: 24 systems, peak 39 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_THUNDERBOLT: 42 systems, peak 188 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_PSYCHIC: 31 systems, peak 43 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_AURA_SPHERE: 41 systems, peak 284 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_MACH_PUNCH: 25 systems, peak 154 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_BULLET_PUNCH: 19 systems, peak 67 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_SHADOW_BALL: 27 systems, peak 101 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_ROCK_TOMB: 12 systems, peak 57 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_IRON_TAIL: 19 systems, peak 41 particles; material bindings/clock exercised; contact capture saved
+BDSP MOVE_LICK: 13 systems, peak 154 particles; material bindings/clock exercised; contact capture saved
+Sphere-projected material bindings exercised: 121. These checks do not establish native visual parity.
+Collision flash expands at the contact point and cleans up within .45s
+Opposing Ember actions produce one actual clash event
+Giratina/Latias: separate at spawn and throughout actual melee approach; one confirmed hit

@@ -4,7 +4,7 @@ An isolated desktop Unity battle experiment for Bruno: **1,000 species**, one
 preferred model per species, direct Pokémon control, and 1v1 or 3v3 battles.
 No HoennVR maps, story, runtime assemblies or gameplay saves are loaded.
 
-Double-click **Play Battle Lab.cmd** to open `Builds/PokedexHitFeel`.
+Double-click **Play Battle Lab.cmd** to open `Builds/PokedexEffectRepair`.
 The previous `Builds/RealtimeRoster` player remains available through
 **Play Previous Roster.cmd**. Historical source-comparison models stay in the
 verification assets; the playable Pokédex shows one body per species.
@@ -128,3 +128,12 @@ no remote repository has been created or published.
 See `Docs/design-plan.md` for the staged design/research plan and `Docs/verification.md`
 for actual checks. A build or smoke test does not establish enjoyable combat or
 original-game parity.
+
+Latest effect review: shared sphere-mask/UV/blend repairs; duplicate animation-name
+selection and posed grounding; model-sized spawn/approach spacing; Hydro Pump beam
+fit; cooldown flanking for AI; short Flying SFX; visible collision ring/audio.
+There are47 distinct test moves (four equipped from a small candidate list per
+species), not complete species learnsets. The69 staged presentations cover47 ZA
+and22 BDSP variants. Other model sources currently share those effect libraries.
+See Docs/effect-layer-audit.json for remaining missing BDSP models and unsupported
+refraction/deformation, and Docs/evidence/effect-repair for captures/checks.

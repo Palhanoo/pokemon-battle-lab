@@ -974,7 +974,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1280,7 +1280,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1289,7 +1289,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1298,7 +1298,7 @@
       "texture": "cpt_0_grad0803s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1370,7 +1370,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1397,7 +1397,7 @@
       "texture": "cpt_cmn_white0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1424,7 +1424,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1451,7 +1451,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -1982,7 +1982,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -3017,7 +3017,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -3710,7 +3710,7 @@
       "texture": "cpt_3_ice0001_8aa355",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -3908,7 +3908,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -3971,7 +3971,7 @@
       "texture": "cpt_0_circle0603",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -3980,7 +3980,7 @@
       "texture": "cpt_cmn_white0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -4115,7 +4115,7 @@
       "texture": "cpt_0_circle0603",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -4124,7 +4124,7 @@
       "texture": "cpt_cmn_white0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -4304,7 +4304,7 @@
       "texture": "cpt_0_circle0603",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -4313,7 +4313,7 @@
       "texture": "cpt_cmn_white0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -4457,7 +4457,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -5339,7 +5339,7 @@
       "texture": "cpt_3_jewelry0004ss",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -5447,7 +5447,7 @@
       "texture": "cpt_3_jewelry0004ss",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -5573,7 +5573,7 @@
       "texture": "cpt_3_jewelry0004ss",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -5618,7 +5618,7 @@
       "texture": "cpt_3_jewelry0004ss",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -5645,7 +5645,7 @@
       "texture": "cpt_3_jewelry0004ss",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6041,7 +6041,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6050,7 +6050,7 @@
       "texture": "cpt_3_flow0018s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6365,7 +6365,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6383,7 +6383,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6563,7 +6563,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6590,7 +6590,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6815,7 +6815,7 @@
       "texture": "cpt_0_circle1602",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6968,7 +6968,7 @@
       "texture": "cpt_0_circle1602",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -6995,7 +6995,7 @@
       "texture": "cpt_0_circle1602",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7013,7 +7013,7 @@
       "texture": "cpt_0_base0601",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7346,7 +7346,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7517,7 +7517,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7526,7 +7526,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7535,7 +7535,7 @@
       "texture": "cpt_0_grad0803s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7607,7 +7607,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7634,7 +7634,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7652,7 +7652,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7670,7 +7670,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7688,7 +7688,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7715,7 +7715,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -7742,7 +7742,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -8327,7 +8327,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -8651,7 +8651,7 @@
       "texture": "cpt_3_jewelry0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -8660,7 +8660,7 @@
       "texture": "cpt_0_grad0803s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -8669,7 +8669,7 @@
       "texture": "cpt_3_flow0027",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -8678,7 +8678,7 @@
       "texture": "cpt_3_ice0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -9479,7 +9479,7 @@
       "texture": "cpt_0_circle0603",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -9875,7 +9875,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10325,7 +10325,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10469,7 +10469,7 @@
       "texture": "cpt_3_color0005s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10559,7 +10559,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10577,7 +10577,7 @@
       "texture": "cpt_3_flow0703s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10622,7 +10622,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10676,7 +10676,7 @@
       "texture": "cpt_3_color0005s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10847,7 +10847,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -10937,7 +10937,7 @@
       "texture": "cpt_3_color0005s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11000,7 +11000,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11162,7 +11162,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11171,7 +11171,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11369,7 +11369,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11450,7 +11450,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11558,7 +11558,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -11594,7 +11594,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -12836,7 +12836,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -12863,7 +12863,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -12881,7 +12881,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -13160,7 +13160,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -13907,7 +13907,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -14987,7 +14987,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -15014,7 +15014,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -15032,7 +15032,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -15068,7 +15068,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -15095,7 +15095,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -15122,7 +15122,7 @@
       "texture": "cpt_3_flow0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -16670,7 +16670,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -16742,7 +16742,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -16769,7 +16769,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -16796,7 +16796,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -16823,7 +16823,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17012,7 +17012,7 @@
       "texture": "cpt_0_base0601",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17057,7 +17057,7 @@
       "texture": "cpt_0_base0601",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17165,7 +17165,7 @@
       "texture": "cpt_0_base0601",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17174,7 +17174,7 @@
       "texture": "cpt_3_color0101",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17498,7 +17498,7 @@
       "texture": "cpt_0_base0601",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -17732,7 +17732,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -18191,7 +18191,7 @@
       "texture": "cpt_0_base0601",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -18236,7 +18236,7 @@
       "texture": "cpt_0_base0601",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -18398,7 +18398,7 @@
       "texture": "cpt_0_base0601",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -19289,7 +19289,7 @@
       "texture": "cpt_3_ice0001_8aa355",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -19424,7 +19424,7 @@
       "texture": "cpt_3_color0102",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -19451,7 +19451,7 @@
       "texture": "cpt_3_color0102",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -19586,7 +19586,7 @@
       "texture": "cpt_3_color0102",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -20909,7 +20909,7 @@
       "texture": "cpt_cmn_white0001s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -22772,7 +22772,7 @@
       "texture": "cpt_0_uv0101",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23096,7 +23096,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23123,7 +23123,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23150,7 +23150,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23177,7 +23177,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23204,7 +23204,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23231,7 +23231,7 @@
       "texture": "cpt_cmn_lt0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -23879,7 +23879,7 @@
       "texture": "cpt_3_flow0027",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24374,7 +24374,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24401,7 +24401,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24428,7 +24428,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24455,7 +24455,7 @@
       "texture": "cpt_0_light1601s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24599,7 +24599,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -24923,7 +24923,7 @@
       "texture": "cpt_0_grad0006s",
       "slot": 1,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25040,7 +25040,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25076,7 +25076,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25121,7 +25121,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25265,7 +25265,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25310,7 +25310,7 @@
       "texture": "cpt_0_grad0005s",
       "slot": 2,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25463,7 +25463,7 @@
       "texture": "cpt_0_bubble0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -25472,7 +25472,7 @@
       "texture": "cpt_0_bubble0001s",
       "slot": 0,
       "exists": true,
-      "bound": false
+      "bound": true
     },
     {
       "source": "ZA",
@@ -31514,714 +31514,181 @@
       "bound": true
     }
   ],
-  "unsupportedLightingLookups": [
+  "unsupportedLightingLookups": [],
+  "omittedRenderers": [
+    {
+      "asset": "ZA/zaew0098/ew0098_attack.json",
+      "emitter": "Emitter1",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+    },
     {
       "asset": "ZA/zaew0085/ew0085_bullet.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0231/cmn_impact_tp08_00.json",
-      "emitter": "grain",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0231/cmn_impact_tp08_00.json",
-      "emitter": "grain_stone",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0231/cmn_impact_tp08_00.json",
-      "emitter": "grain_stone",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0803s"
-    },
-    {
-      "asset": "ZA/zaew0231/ew0231_bullet.json",
-      "emitter": "slash",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0231/ew0231_bullet.json",
-      "emitter": "kiseki_main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_white0001s"
-    },
-    {
-      "asset": "ZA/zaew0231/ew0231_bullet.json",
-      "emitter": "sub_1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0231/ew0231_bullet.json",
-      "emitter": "grain_1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0087/ew0087_hit.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0209/ew0209_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0247/cmn_impact_tp07_01.json",
-      "emitter": "grain_02",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_ice0001_8aa355"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0247/ew0247_bullet.json",
-      "emitter": "hinoko_Copy1_Copy1_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_bullet.json",
-      "emitter": "soto_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle0603"
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_bullet.json",
-      "emitter": "soto_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_white0001s"
+      "emitter": "dist",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0247/ew0247_charge.json",
-      "emitter": "soto_Copy1_Copy2",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle0603"
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_charge.json",
-      "emitter": "soto_Copy1_Copy2",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_white0001s"
+      "emitter": "dist",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0247/ew0247_end.json",
-      "emitter": "soto_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle0603"
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_end.json",
-      "emitter": "soto_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_white0001s"
+      "emitter": "dist",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0247/ew0247_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0188/ew0188_1_bullet.json",
-      "emitter": "main_s_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0004ss"
-    },
-    {
-      "asset": "ZA/zaew0188/ew0188_bullet.json",
-      "emitter": "main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0004ss"
-    },
-    {
-      "asset": "ZA/zaew0188/ew0188_bullet.json",
-      "emitter": "main_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0004ss"
-    },
-    {
-      "asset": "ZA/zaew0188/ew0188_charge.json",
-      "emitter": "main_base",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0004ss"
-    },
-    {
-      "asset": "ZA/zaew0188/ew0188_charge.json",
-      "emitter": "main_s",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0004ss"
-    },
-    {
-      "asset": "ZA/zaew0122/ew0122_hit.json",
-      "emitter": "tan",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0122/ew0122_hit.json",
-      "emitter": "tan",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0018s"
+      "asset": "ZA/zaew0094/ew0094_bullet.json",
+      "emitter": "root",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0094/ew0094_bullet.json",
       "emitter": "dis",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+    },
+    {
+      "asset": "ZA/zaew0094/ew0094_bullet.json",
+      "emitter": "in_root",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0094/ew0094_bullet.json",
       "emitter": "in_dis",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0094/ew0094_charge.json",
-      "emitter": "charge_par_01",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0094/ew0094_charge.json",
-      "emitter": "charge_par_02",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0396/ew0396_bullet.json",
-      "emitter": "coreball",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle1602"
-    },
-    {
-      "asset": "ZA/zaew0396/ew0396_charge.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle1602"
-    },
-    {
-      "asset": "ZA/zaew0396/ew0396_charge.json",
-      "emitter": "core_start",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle1602"
-    },
-    {
-      "asset": "ZA/zaew0396/ew0396_charge.json",
-      "emitter": "flash",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
+      "emitter": "in_root",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0396/ew0396_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0232/cmn_impact_tp08_00.json",
-      "emitter": "grain",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0232/cmn_impact_tp08_00.json",
-      "emitter": "grain_stone",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0232/cmn_impact_tp08_00.json",
-      "emitter": "grain_stone",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0803s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "slash_main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "grain_0",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "grain_1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "grain_2",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "sub_0",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "sub_1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0232/ew0232_claw.json",
-      "emitter": "sub_2",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0406/ew0406_muzzle.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0418/ew0418_bullet.json",
-      "emitter": "stone_toge_ugoki_Copy1_Copy1_Copy1_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_jewelry0001s"
+      "emitter": "cross",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0418/ew0418_bullet.json",
-      "emitter": "stone_toge_ugoki_Copy1_Copy1_Copy1_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0803s"
-    },
-    {
-      "asset": "ZA/zaew0418/ew0418_bullet.json",
-      "emitter": "hando_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0027"
-    },
-    {
-      "asset": "ZA/zaew0418/ew0418_bullet.json",
-      "emitter": "hando_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_ice0001s"
-    },
-    {
-      "asset": "ZA/zaew0370/ew0370_bullet.json",
-      "emitter": "base",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_circle0603"
-    },
-    {
-      "asset": "ZA/zaew0348/cmn_impact_tp11_00.json",
-      "emitter": "grain_leaf",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/cmn_impact_tp11_00.json",
-      "emitter": "grain_leaf",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_bullet.json",
-      "emitter": "edge_aura",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0005s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_bullet.json",
-      "emitter": "happa_lit",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_bullet.json",
-      "emitter": "spheremap_aura",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0703s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_bullet.json",
-      "emitter": "happa_lit_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_charge.json",
-      "emitter": "edge_aura",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0005s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_charge.json",
-      "emitter": "happa_lit",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_end.json",
-      "emitter": "edge_aura",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0005s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_end.json",
-      "emitter": "happa_lit",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_impact.json",
-      "emitter": "happa",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
+      "emitter": "main_hit",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0412/ew0412_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0437/cmn_impact_tp11_00.json",
-      "emitter": "grain_leaf",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
-      "emitter": "slash_main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
+      "emitter": "slash",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
-      "emitter": "happa",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
+      "emitter": "wind",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
-      "emitter": "happa_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
+      "emitter": "leaf",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0163/ew0163_claw.json",
-      "emitter": "slash_main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
+      "asset": "ZA/zaew0071/ew0071_ball.json",
+      "emitter": "move01",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0163/ew0163_claw.json",
-      "emitter": "grain",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
+      "asset": "ZA/zaew0202/ew0202_hit.json",
+      "emitter": "move01",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0163/ew0163_claw.json",
-      "emitter": "sub",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
+      "asset": "ZA/zaew0202/ew0202_hit.json",
+      "emitter": "move01_Copy1",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0052/ew0052_bullet.json",
-      "emitter": "nokosi02",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
+      "asset": "ZA/zaew0053/ew0053_bullet.json",
+      "emitter": "pos",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0053/ew0053_muzzle.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "slash_main",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "grain",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "sub",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "slash_main_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "sub_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0332/ew0332_bullet.json",
-      "emitter": "grain_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0006s"
-    },
-    {
-      "asset": "ZA/zaew0088/ew0088_bullet.json",
-      "emitter": "rock",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0088/ew0088_bullet.json",
-      "emitter": "rock_debris_fall_sprite02",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0088/ew0088_impact.json",
-      "emitter": "rockdebris_large_Copy1_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0088/ew0088_impact.json",
-      "emitter": "rockDebris_mideam",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0088/ew0088_impact.json",
-      "emitter": "rockDebris_mid_up",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_beam.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_beam.json",
-      "emitter": "dust_base",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_charge.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_charge.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0101"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_end.json",
-      "emitter": "dust",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0056/ew0056_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0056/ew0056_u_beam.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
+      "asset": "ZA/zaew0093/ew0093_bullet.json",
+      "emitter": "in_root_Copy1",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
-      "asset": "ZA/zaew0056/ew0056_u_beam.json",
-      "emitter": "dust_base",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_u_end.json",
-      "emitter": "dust",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_base0601"
-    },
-    {
-      "asset": "ZA/zaew0060/cmn_impact_tp13_01.json",
-      "emitter": "grain_02",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_ice0001_8aa355"
-    },
-    {
-      "asset": "ZA/zaew0060/ew0060_beam.json",
-      "emitter": "core_ura",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0102"
-    },
-    {
-      "asset": "ZA/zaew0060/ew0060_beam.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0102"
-    },
-    {
-      "asset": "ZA/zaew0060/ew0060_end.json",
-      "emitter": "core",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_color0102"
-    },
-    {
-      "asset": "ZA/zaew0044/ew0044_fang.json",
-      "emitter": "tooth_bottom",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_white0001s"
+      "asset": "ZA/zaew0036/ew0036_bullet.json",
+      "emitter": "dist",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0036/ew0036_impact.json",
       "emitter": "dist",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_uv0101"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_deka_parts",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_deka_parts_big",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_deka_center",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_deka",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_deka_out",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
-    },
-    {
-      "asset": "ZA/zaew0583/ew0583_bullet_up.json",
-      "emitter": "smoke_chibi",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_cmn_lt0001s"
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0183/ew0183_attack.json",
-      "emitter": "hando_Copy1",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_3_flow0027"
-    },
-    {
-      "asset": "ZA/zaew0280/ew0280_bullet.json",
-      "emitter": "main_top",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0280/ew0280_bullet.json",
-      "emitter": "after_line",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0280/ew0280_bullet.json",
-      "emitter": "impact_front",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0280/ew0280_bullet.json",
-      "emitter": "impact_back",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_light1601s"
-    },
-    {
-      "asset": "ZA/zaew0402/cmn_impact_tp11_00.json",
-      "emitter": "grain_leaf",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0402/ew0402_muzzle.json",
-      "emitter": "grain",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0006s"
-    },
-    {
-      "asset": "ZA/zaew0317/ew0317_at_rock.json",
-      "emitter": "rock_2",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0317/ew0317_at_rock.json",
-      "emitter": "rockdust_3",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
-    },
-    {
-      "asset": "ZA/zaew0317/ew0317_impact.json",
-      "emitter": "rock_s",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
+      "emitter": "Emitter1",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
     },
     {
       "asset": "ZA/zaew0317/ew0317_rock_break.json",
-      "emitter": "rock",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
+      "emitter": "hit_oya",
+      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+    }
+  ],
+  "unhandledTimelineCommands": [
+    {
+      "asset": "ZA/zaew0091/move.json",
+      "command": "Physics/CastRay"
     },
     {
-      "asset": "ZA/zaew0317/ew0317_rock_break.json",
-      "emitter": "rock_s",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_grad0005s"
+      "asset": "ZA/zaew0091/move.json",
+      "command": "Title/Character/SetTargetPosition"
     },
     {
-      "asset": "ZA/zaew0409/ew0409_bullet.json",
-      "emitter": "punch",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_bubble0001s"
-    },
-    {
-      "asset": "ZA/zaew0409/ew0409_bullet.json",
-      "emitter": "punch_rim",
-      "reason": "Native lighting lookup / texture slot beyond supported masks",
-      "texture": "cpt_0_bubble0001s"
+      "asset": "ZA/zaew0091/move.json",
+      "command": "Physics/CastRay"
     }
   ],
   "commands": {
@@ -32248,7 +31715,7 @@
     "ZA:Title/Character/SetTargetPosition": 1
   },
   "limitations": [
-    "Texture binding does not establish native combiner/refraction/material fidelity.",
+    "Sphere textures now bind via view-normal projection; native combiner/refraction/material fidelity is still approximate.",
     "Source camera tracks, native deformation and full state machines remain incomplete.",
     "Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause."
   ]
