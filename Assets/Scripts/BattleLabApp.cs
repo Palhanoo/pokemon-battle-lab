@@ -28,7 +28,7 @@ namespace BattleLab
             public Vector3 reposition;public float repositionUntil;
             public float dodgeUntil,dodgeReady; public Vector3 dodgeDirection;
             public string state="Ready";
-            public float flightEnergy=3,altitude; public bool ascending;
+            public float flightEnergy=FlightCapacity,altitude; public bool ascending;
             public SpeciesData baseData;public ModelEntry baseModel;public string megaId;public float formEnds;public bool megaUsed;public float megaSwapAt;public MegaFormData pendingMega;public BattleLab.Native.VioletMove megaFx;
             public Vector3 baseScale;
             public int MaxHp => data.stats[0]+100;

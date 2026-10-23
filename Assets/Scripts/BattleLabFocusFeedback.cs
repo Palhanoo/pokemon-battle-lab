@@ -45,7 +45,7 @@ namespace BattleLab
                 Text(at.x*1440/Screen.width+30,(Screen.height-at.y)*900/Screen.height-25,220,item.text,title,45);GUI.color=old;
             }
             if(now<hitConfirmUntil){Panel(590,560,260,45);Text(607,568,235,hitConfirm,label);}
-            Text(22,393,400,"View: "+cameraView+" · "+(immersive?"Manual aim":"Focused attacks"),small);
+            Text(22,463,400,"View: "+cameraView+" · "+(immersive?"Manual aim":"Focused attacks"),small);
         }
     }
 }

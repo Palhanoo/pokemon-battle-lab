@@ -17,6 +17,7 @@ namespace BattleLab
     }
     public partial class BattleLabApp
     {
+        const float FlightCapacity=3f;
         EffectSource effectSource=EffectSource.Auto;
         bool immersive=false,marked,immersionCheck,testFly;
         float earthquakeRadius=6;int selectedAttack;
@@ -92,7 +93,7 @@ namespace BattleLab
                 bool transforming=f.pendingMega!=null||f.state=="Mega Evolved";
                 bool rise=can&&!transforming&&hold&&f.flightEnergy>0&&(f.action==null||f.action.aimed);
                 if(rise)f.flightEnergy=Mathf.Max(0,f.flightEnergy-dt);
-                else if(f.altitude<.05f&&!hold)f.flightEnergy=Mathf.Min(3,f.flightEnergy+dt*.6f);
+                else if(f.altitude<.05f&&!hold)f.flightEnergy=Mathf.Min(FlightCapacity,f.flightEnergy+dt*.6f);
                 float old=f.altitude;f.altitude=Mathf.MoveTowards(f.altitude,rise?(f.data.id=="ROTOM"?1.6f:2.8f):0,dt*(rise?3:2.3f));
                 var position=f.body.transform.position;position.y=f.altitude;f.body.transform.position=position;
                 if(!transforming&&f.action==null&&f.altitude>.05f)MovementPose(f,"fly");
@@ -127,11 +128,24 @@ namespace BattleLab
                 GUI.DrawTexture(new Rect(719,438,2,8),Texture2D.whiteTexture);GUI.DrawTexture(new Rect(719,454,2,8),Texture2D.whiteTexture);GUI.color=old;
                 Text(590,480,400,marked?"MARKED · beams remain free aim":"FREE AIM · T to mark",small);
             }
-            var p=Player;string flight=FlyCapable(p)?$"F hold to fly · {p.flightEnergy:0.0}s energy":"";
-            Text(22,300,320,flight,small);
-            if(HabitatSpeed(p)>1)Text(22,330,320,"WATER · swim speed ×1.65",small);
+            var p=Player;
+            if(FlyCapable(p))
+            {
+                float remaining=Mathf.Clamp(p.flightEnergy,0,FlightCapacity);
+                bool hold=smoke?testFly:Input.GetKey(KeyCode.F);
+                string state=p.altitude>.05f?"AIRBORNE":remaining>=FlightCapacity?"READY":hold?"RELEASE F TO RECOVER":"RECOVERING";
+                Panel(14,294,320,100);
+                Text(26,301,296,$"FLIGHT STAMINA    {remaining:0.0} / {FlightCapacity:0.0} s",small);
+                var old=GUI.color;
+                GUI.color=new Color(.06f,.10f,.14f);GUI.DrawTexture(new Rect(26,328,296,12),Texture2D.whiteTexture);
+                GUI.color=remaining<=.75f?new Color(1,.61f,.24f):new Color(.3f,.82f,1);
+                GUI.DrawTexture(new Rect(26,328,296*remaining/FlightCapacity,12),Texture2D.whiteTexture);GUI.color=old;
+                Text(26,346,296,state,small);
+                Text(26,369,296,"Hold F to rise · release to descend",small);
+            }
+            if(HabitatSpeed(p)>1)Text(22,401,320,"WATER · swim speed ×1.65",small);
             string form=p.pendingMega!=null?"MEGA EVOLUTION…":p.megaId!=null?$"MEGA · {Mathf.Max(0,p.formEnds-now):0}s":"M Mega Evolution · C camera";
-            Text(22,360,400,form,small);
+            Text(22,430,400,form,small);
             if(p.action?.move.id=="EARTHQUAKE")Text(590,510,360,$"GROUND FIELD · {p.action.fieldRadius:0.0} m",small);
         }
         void BuildWaterLane()

@@ -24,6 +24,23 @@ namespace BattleLab
             {yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(Path.Combine(folder,name+".png"));yield return null;yield return null;}
             while(loading)yield return null;
             immersionCheck=true;immersive=false;teamSize=1;mode=BattleMode.ZA;ai=false;practice=true;setup=inspect=false;gameSpeed=1;
+            if(Environment.GetCommandLineArgs().Contains("-lab-flight-hud"))
+            {
+                playerSpecies=Array.IndexOf(Species,"ROTOM");ResetBattle();while(loading)yield return null;
+                yield return new WaitForSecondsRealtime(.4f);yield return Screenshot("flight-ready");
+                Check(Mathf.Approximately(Player.flightEnergy,FlightCapacity),"Flight starts with full three-second reserve");
+                testFly=true;yield return new WaitForSecondsRealtime(2.4f);yield return Screenshot("flight-low");
+                Check(Player.altitude>1.3f&&Player.flightEnergy<.75f&&Player.flightEnergy>0,"Rotom levitates with a visible low reserve");
+                yield return new WaitForSecondsRealtime(1.5f);yield return Screenshot("flight-empty");
+                Check(Player.altitude<.05f&&Player.flightEnergy==0,"Exhaustion lands Rotom and holding F cannot recharge");
+                testFly=false;yield return new WaitForSecondsRealtime(2);yield return Screenshot("flight-recovering");
+                Check(Player.flightEnergy>1&&Player.flightEnergy<1.5f,"Grounded reserve recovers after F is released");
+                yield return new WaitForSecondsRealtime(3.2f);
+                Check(Mathf.Approximately(Player.flightEnergy,FlightCapacity),"Reserve returns to full without changing flight mechanics");
+                Check(smokeErrors==0,"Flight HUD review has no runtime errors");
+                File.WriteAllLines(Path.Combine(folder,"flight-stamina-checks.txt"),report);
+                Debug.Log("LAB FLIGHT HUD PASSED");Application.Quit(0);yield break;
+            }
             if(Environment.GetCommandLineArgs().Contains("-lab-setup-final"))
             {
                 Equip("SWAMPERT","HYDRO_PUMP");ResetBattle();while(loading)yield return null;

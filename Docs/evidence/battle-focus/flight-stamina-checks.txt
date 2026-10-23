@@ -1,0 +1,6 @@
+Flight starts with full three-second reserve
+Rotom levitates with a visible low reserve
+Exhaustion lands Rotom and holding F cannot recharge
+Grounded reserve recovers after F is released
+Reserve returns to full without changing flight mechanics
+Flight HUD review has no runtime errors

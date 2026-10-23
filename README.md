@@ -17,7 +17,8 @@ cloning it alone does not supply the native game assets or compiled player.
 - **C switches Classic / RPG / Shoulder views**; scroll zooms. E changes focus,
   Q changes allies. Camera anchors remain stable while bodies animate.
 - Hold F to rise briefly on eligible flying/levitating Pokémon; release descends.
-  Rotom has a lower ascent. Energy recovers after landing.
+  Rotom has a lower ascent. The flight stamina bar shows the remaining three-second
+  reserve, turns amber when low, and displays recovery after landing and releasing F.
 - M starts Mega Evolution with native ZA charge/reveal particles and the Mega
   body's appeal animation. **Dynamax has been removed.**
 - Tab opens Setup. Esc pauses; R resets. F1 opens the model viewer;

@@ -23,3 +23,9 @@ Rendered review caught additional issues despite those functional passes. Hydro 
 Hydro Pump and Rock Throw do not have staged BDSP versions; selecting BDSP for them falls back to ZA. Test labels record the requested selector, not a claim of distinct BDSP assets. Exact source-game shader/cinematic parity, broad move/species coverage and Bruno's subjective camera/impact preference remain outside this verification. Hold-to-steer/DPS beams are not implemented in this release.
 
 Build BattleFocus20261023 is isolated from earlier releases and compiles with zero errors. Play Battle Lab.cmd selects it after review. Play Hoenn Checkpoint.cmd continues to preserve the original stable version. Focused report summaries and screenshots are under Docs/evidence/battle-focus.
+
+## Accepted feel and next scope
+
+Bruno's follow-up accepts the current appearance, levitation and battle feel. Keep Classic, RPG and Shoulder available while he compares them. Add a readable flight stamina bar with remaining powered-flight seconds and recovery state; retain the existing three-second reserve and grounded recovery. No new moves or broad movement mechanics are added in this pass. A small species-specific movement pass is the proposed next step before another move batch, using existing attacks to judge the differences. Continuous beams remain deferred.
+
+Flight stamina follow-up completed24 October: the bar shows remaining seconds, amber below0.75s, and ready/airborne/recovery instructions. Existing three-second capacity and0.6s/s grounded recharge are unchanged. Six focused runtime assertions pass, no runtime errors, and ready/low/empty/recovering captures are visually reviewed under evidence/battle-focus/reviewed/flight-*.jpg. FlightStamina20261023 compiled without errors and includes the full1,000 base/96 Mega roster. The launcher selects it; the previous BattleFocus build remains intact.
