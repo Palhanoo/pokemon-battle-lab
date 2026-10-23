@@ -14,7 +14,7 @@ def main():
     index=json.loads((src/'index.json').read_text());subset={};strings=set()
     data=json.loads((ROOT/'Tools/seed-data.json').read_text())
     timing=json.loads((args.source/'Data/za_moves.json').read_text())
-    MOVES={m['id']:timing[m['id']]['sourceId'] for m in data['moves']}
+    MOVES={m['id']:timing[m['id']]['sourceId'] for m in data['moves'] if not m.get('effectOrigin')}
     def scan(x):
         if isinstance(x,str):strings.add(x)
         elif isinstance(x,list):
@@ -32,7 +32,7 @@ def main():
     (out/'ZA/index.json').write_text(json.dumps({'moves':subset},indent=2))
     roster=json.loads((ROOT/'Tools/roster.json').read_text())
     bdspSpecies={m['species'] for m in roster['models'] if m['source']=='BDSP'}
-    ids={m for species in data['species'] if species['id'] in bdspSpecies for m in species['moves']}
+    ids={m for species in data['species'] if species['id'] in bdspSpecies for m in species['moves'] if m in MOVES}
     ids.update(m['id'] for m in json.loads((ROOT/'Tools/hoenn-moves.json').read_text())['moves'])
     bdspfx.SOURCE={m:MOVES[m] for m in ids};exported,missing=bdspfx.export_all(out/'BDSP')
     if missing or len(exported)!=len(ids):raise RuntimeError(f'Incomplete BDSP export: {missing}')

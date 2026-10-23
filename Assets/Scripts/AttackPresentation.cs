@@ -33,14 +33,14 @@ namespace BattleLab
             scale=actor.transform.lossyScale.x,center=()=>actor.Centre,bone=actor.Bone};
         public AttackPresentation(LabActor actor,LabActor target,MoveData move,VioletFxCatalog za,BdspFxCatalog bdsp,NativeTiming table,EffectSource source=EffectSource.Auto,Func<Vector3> aim=null,float fieldRadius=4)
         {
-            body=actor;this.target=target;projectile=move.shape=="Projectile"||move.shape=="Beam";beam=move.shape=="Beam";groundWave=move.id=="MUDDY_WATER";
+            body=actor;this.target=target;projectile=move.shape=="Projectile"||move.shape=="Beam";beam=move.shape=="Beam";groundWave=move.id=="MUDDY_WATER"||move.id=="SURF";
             this.aim=aim;defender=Bind(target);
             if(aim!=null)
             {
                 aimAnchor=new GameObject("Attack aim point").transform;aimAnchor.position=aim();aimAnchor.rotation=actor.transform.rotation;
                 defender=new VioletMove.Battler{root=aimAnchor,height=1,radius=.35f,scale=1,center=()=>aimAnchor.position,bone=_=>null};
             }
-            if((source==EffectSource.BDSP||source==EffectSource.Auto&&actor.entry.source=="BDSP")&&bdsp.Has(move.id))
+            if((source==EffectSource.BDSP||source==EffectSource.Auto&&actor.entry.source=="BDSP"||!za.Has(move.id))&&bdsp.Has(move.id))
             {
                 var fx=bdsp.Play(move.id,Bind(actor),defender);Effect=fx;
                 if(!fx)throw new InvalidOperationException("Missing BDSP effects: "+move.id);
@@ -55,8 +55,18 @@ namespace BattleLab
                 var fx=za.Play(move.id,Bind(actor),defender,move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
                 if(fx && (move.id=="HYDRO_PUMP" || move.id=="PSYBEAM" || move.id=="ICE_BEAM"))fx.FitUnitBeam=true;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
-                fx.LabMove=move.id;fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
-                FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
+                fx.LabMove=move.id;fx.time=0;
+                if(za.OnMoveClock(move.id))
+                {
+                    HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
+                    FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
+                }
+                else
+                {
+                    // SV exports already contain their contact time, without ZA charge holds.
+                    HitAt=Mathf.Max(.1f,fx.HitTime);SoundAt=Mathf.Max(0,fx.attackTime);
+                    FreeAt=SplitPlan(actor.entry,actor.entry.Role(move.physical?"attack":"special"),SoundAt,HitAt,cues);
+                }
             }
             FreeAt=Mathf.Max(FreeAt,HitAt+.15f);
             // Native Fire Spin is a lingering field. The lab currently resolves one hit,
@@ -84,6 +94,7 @@ namespace BattleLab
                 {
                     if(move=="BLAZE_KICK"&&t.parent.name=="bullet1")t.localScale*=.3f;
                     if(move=="DRAGON_CLAW"&&t.parent.name=="bullet1")t.localScale*=.28f;
+                    if(root.GetComponent<VioletMove>()&&move=="SURF"&&t.parent.name!="ready")t.localScale*=.35f;
                     if(root.GetComponent<VioletMove>()&&move=="MUDDY_WATER"&&t.parent.name!="ready")t.localScale*=t.parent.name=="bullet0_1"?.2f:.32f;
                     if(root.GetComponent<VioletMove>()&&move=="EARTHQUAKE"&&t.parent.name!="ready")t.localScale*=.22f;
                     if(move=="ROCK_SLIDE"&&t.parent.name=="ew0157_line")t.localScale*=.4f;

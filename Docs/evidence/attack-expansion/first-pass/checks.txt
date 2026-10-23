@@ -1,0 +1,49 @@
+2v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Enemy team defeat ends fight
+2v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Enemy team defeat ends fight
+3v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+3v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v6: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v12: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v12 autonomous fighters approach and resolve attacks
+Large-team reset clears damage and effect tails
+Expanded-move review models loaded

@@ -23,8 +23,8 @@ namespace BattleLab
             if(inspect){yield return catalog.models.First(m=>m.species==Species[inspectSpecies]);yield break;}
             yield return catalog.Model(Species[playerSpecies],Sources[ValidSource(playerSpecies,playerSource)]);
             yield return catalog.Model(Species[enemySpecies],Sources[ValidSource(enemySpecies,enemySource)]);
-            if(mode==BattleMode.ZA&&teamSize==3)
-                foreach(int s in allySpecies.Concat(foeSpecies))yield return catalog.Model(Species[s],Sources[ValidSource(s,1)]);
+            if(mode==BattleMode.ZA)
+                foreach(int s in allySpecies.Take(Allies-1).Concat(foeSpecies.Take(Enemies-1)))yield return catalog.Model(Species[s],Sources[ValidSource(s,1)]);
         }
         public async void ResetBattle()
         {
@@ -57,8 +57,8 @@ namespace BattleLab
                 var item=matches[i];string source=item.row?.source??catalog.models.First(m=>m.species==item.s.id).source;
                 if(Button(new Rect(i%3*344,i/3*66,333,58),$"{(item.row==null?"":"#"+item.row.dex+"  ")}{item.s.id.Replace('_',' ')}\n{source}"))
                 {
-                    if(picker==0)playerSpecies=item.i;else if(picker==1)enemySpecies=item.i;else if(picker==6)inspectSpecies=item.i;
-                    else if(picker<4)allySpecies[picker-2]=item.i;else foeSpecies[picker-4]=item.i;
+                    if(picker==0)playerSpecies=item.i;else if(picker==1)enemySpecies=item.i;else if(picker==100)inspectSpecies=item.i;
+                    else if(picker<20)allySpecies[picker-2]=item.i;else foeSpecies[picker-20]=item.i;
                     picker=-1;ResetBattle();
                 }
             }

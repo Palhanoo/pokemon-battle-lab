@@ -5,13 +5,13 @@ using NUnit.Framework;
 using UnityEngine;
 public class RosterAndEffectsTests
 {
-    [Test] public void MixedSourcesHaveSixChoicesWithDataAndSound()
+    [Test] public void MixedSourcesHaveExpandedChoicesWithDataAndSound()
     {
         var cat=Resources.Load<LabCatalog>("LabCatalog");var audio=Resources.Load<LabAudio>("LabAudio");
-        Assert.AreEqual(9,cat.data.species.Length);Assert.AreEqual(15,cat.models.Length);Assert.AreEqual(53,cat.data.moves.Length);
+        Assert.AreEqual(9,cat.data.species.Length);Assert.AreEqual(15,cat.models.Length);Assert.GreaterOrEqual(cat.data.moves.Length,306);
         foreach(var species in cat.data.species)
         {
-            Assert.AreEqual(6,species.moves.Distinct().Count(),species.id);
+            Assert.GreaterOrEqual(species.moves.Distinct().Count(),6,species.id);
             Assert.IsTrue(cat.models.Any(m=>m.species==species.id),species.id);
             foreach(var move in species.moves){Assert.IsNotNull(cat.Move(move));Assert.IsTrue(audio.MoveClip(move),move);}
         }
@@ -40,7 +40,7 @@ public class RosterAndEffectsTests
     [Test] public void ImportedSoundsContainAudioSamples()
     {
         var cat=Resources.Load<LabAudio>("LabAudio");
-        Assert.AreEqual(53,cat.moves.Length);Assert.AreEqual(8,cat.cries.Length);
+        Assert.AreEqual(Resources.Load<LabCatalog>("LabCatalog").data.moves.Length,cat.moves.Length);Assert.AreEqual(8,cat.cries.Length);
         foreach(var clip in cat.moves.Select(m=>m.clip).Concat(cat.cries.Select(c=>c.clip)).Distinct())
         {
             Assert.Greater(clip.samples,100);Assert.IsTrue(clip.LoadAudioData());

@@ -19,7 +19,7 @@ public static class BattleLabBuilder
         AssetDatabase.Refresh();
         var catalog=AssetDatabase.LoadAssetAtPath<LabCatalog>("Assets/Resources/LabCatalog.asset");
         if(!catalog){catalog=ScriptableObject.CreateInstance<LabCatalog>();AssetDatabase.CreateAsset(catalog,"Assets/Resources/LabCatalog.asset");}
-        catalog.data=JsonUtility.FromJson<LabData>(File.ReadAllText("Assets/Data/LabData.json"));
+        catalog.data=JsonUtility.FromJson<LabData>(File.ReadAllText("Tools/seed-data.json"));
         catalog.models=Directory.GetFiles("Assets/Models","*.glb",SearchOption.AllDirectories)
             .Select(path=>Import(new DirectoryInfo(Path.GetDirectoryName(path)).Name,Path.GetFileNameWithoutExtension(path))).ToArray();
         EditorUtility.SetDirty(catalog);

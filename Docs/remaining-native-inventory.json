@@ -1,0 +1,685 @@
+{
+  "svFolders": 697,
+  "additionalDamageMoves": [
+    {
+      "id": "BIND",
+      "sourceId": 20
+    },
+    {
+      "id": "HIGH_JUMP_KICK",
+      "sourceId": 136
+    },
+    {
+      "id": "HAMMER_ARM",
+      "sourceId": 359
+    },
+    {
+      "id": "BRINE",
+      "sourceId": 362
+    },
+    {
+      "id": "PLUCK",
+      "sourceId": 365
+    },
+    {
+      "id": "PAYBACK",
+      "sourceId": 371
+    },
+    {
+      "id": "ASSURANCE",
+      "sourceId": 372
+    },
+    {
+      "id": "LAST_RESORT",
+      "sourceId": 387
+    },
+    {
+      "id": "FORCE_PALM",
+      "sourceId": 395
+    },
+    {
+      "id": "AQUA_TAIL",
+      "sourceId": 401
+    },
+    {
+      "id": "AVALANCHE",
+      "sourceId": 419
+    },
+    {
+      "id": "ROCK_WRECKER",
+      "sourceId": 439
+    },
+    {
+      "id": "CROSS_POISON",
+      "sourceId": 440
+    },
+    {
+      "id": "JUDGMENT",
+      "sourceId": 449
+    },
+    {
+      "id": "ATTACK_ORDER",
+      "sourceId": 454
+    },
+    {
+      "id": "ROAR_OF_TIME",
+      "sourceId": 459
+    },
+    {
+      "id": "SPACIAL_REND",
+      "sourceId": 460
+    },
+    {
+      "id": "SEED_FLARE",
+      "sourceId": 465
+    },
+    {
+      "id": "SHADOW_FORCE",
+      "sourceId": 467
+    },
+    {
+      "id": "VENOSHOCK",
+      "sourceId": 474
+    },
+    {
+      "id": "SMACK_DOWN",
+      "sourceId": 479
+    },
+    {
+      "id": "FOUL_PLAY",
+      "sourceId": 492
+    },
+    {
+      "id": "CLEAR_SMOG",
+      "sourceId": 499
+    },
+    {
+      "id": "STORED_POWER",
+      "sourceId": 500
+    },
+    {
+      "id": "HEX",
+      "sourceId": 506
+    },
+    {
+      "id": "INCINERATE",
+      "sourceId": 510
+    },
+    {
+      "id": "ACROBATICS",
+      "sourceId": 512
+    },
+    {
+      "id": "RETALIATE",
+      "sourceId": 514
+    },
+    {
+      "id": "INFERNO",
+      "sourceId": 517
+    },
+    {
+      "id": "WATER_PLEDGE",
+      "sourceId": 518
+    },
+    {
+      "id": "FIRE_PLEDGE",
+      "sourceId": 519
+    },
+    {
+      "id": "GRASS_PLEDGE",
+      "sourceId": 520
+    },
+    {
+      "id": "STRUGGLE_BUG",
+      "sourceId": 522
+    },
+    {
+      "id": "DRAGON_TAIL",
+      "sourceId": 525
+    },
+    {
+      "id": "RAZOR_SHELL",
+      "sourceId": 534
+    },
+    {
+      "id": "NIGHT_DAZE",
+      "sourceId": 539
+    },
+    {
+      "id": "TAIL_SLAP",
+      "sourceId": 541
+    },
+    {
+      "id": "GLACIATE",
+      "sourceId": 549
+    },
+    {
+      "id": "BOLT_STRIKE",
+      "sourceId": 550
+    },
+    {
+      "id": "BLUE_FLARE",
+      "sourceId": 551
+    },
+    {
+      "id": "FIERY_DANCE",
+      "sourceId": 552
+    },
+    {
+      "id": "FREEZE_SHOCK",
+      "sourceId": 553
+    },
+    {
+      "id": "ICE_BURN",
+      "sourceId": 554
+    },
+    {
+      "id": "V_CREATE",
+      "sourceId": 557
+    },
+    {
+      "id": "FUSION_FLARE",
+      "sourceId": 558
+    },
+    {
+      "id": "FUSION_BOLT",
+      "sourceId": 559
+    },
+    {
+      "id": "BELCH",
+      "sourceId": 562
+    },
+    {
+      "id": "FELL_STINGER",
+      "sourceId": 565
+    },
+    {
+      "id": "PETAL_BLIZZARD",
+      "sourceId": 572
+    },
+    {
+      "id": "HOLD_BACK",
+      "sourceId": 610
+    },
+    {
+      "id": "SPIRIT_SHACKLE",
+      "sourceId": 662
+    },
+    {
+      "id": "DARKEST_LARIAT",
+      "sourceId": 663
+    },
+    {
+      "id": "SPARKLING_ARIA",
+      "sourceId": 664
+    },
+    {
+      "id": "HIGH_HORSEPOWER",
+      "sourceId": 667
+    },
+    {
+      "id": "THROAT_CHOP",
+      "sourceId": 675
+    },
+    {
+      "id": "POLLEN_PUFF",
+      "sourceId": 676
+    },
+    {
+      "id": "FIRE_LASH",
+      "sourceId": 680
+    },
+    {
+      "id": "POWER_TRIP",
+      "sourceId": 681
+    },
+    {
+      "id": "BURN_UP",
+      "sourceId": 682
+    },
+    {
+      "id": "SMART_STRIKE",
+      "sourceId": 684
+    },
+    {
+      "id": "REVELATION_DANCE",
+      "sourceId": 686
+    },
+    {
+      "id": "TROP_KICK",
+      "sourceId": 688
+    },
+    {
+      "id": "BEAK_BLAST",
+      "sourceId": 690
+    },
+    {
+      "id": "CLANGING_SCALES",
+      "sourceId": 691
+    },
+    {
+      "id": "DRAGON_HAMMER",
+      "sourceId": 692
+    },
+    {
+      "id": "STOMPING_TANTRUM",
+      "sourceId": 707
+    },
+    {
+      "id": "ACCELEROCK",
+      "sourceId": 709
+    },
+    {
+      "id": "PRISMATIC_LASER",
+      "sourceId": 711
+    },
+    {
+      "id": "SUNSTEEL_STRIKE",
+      "sourceId": 713
+    },
+    {
+      "id": "MOONGEIST_BEAM",
+      "sourceId": 714
+    },
+    {
+      "id": "ZING_ZAP",
+      "sourceId": 716
+    },
+    {
+      "id": "PHOTON_GEYSER",
+      "sourceId": 722
+    },
+    {
+      "id": "DYNAMAX_CANNON",
+      "sourceId": 744
+    },
+    {
+      "id": "SNIPE_SHOT",
+      "sourceId": 745
+    },
+    {
+      "id": "JAW_LOCK",
+      "sourceId": 746
+    },
+    {
+      "id": "DRAGON_DARTS",
+      "sourceId": 751
+    },
+    {
+      "id": "BODY_PRESS",
+      "sourceId": 776
+    },
+    {
+      "id": "DRUM_BEATING",
+      "sourceId": 778
+    },
+    {
+      "id": "PYRO_BALL",
+      "sourceId": 780
+    },
+    {
+      "id": "BEHEMOTH_BLADE",
+      "sourceId": 781
+    },
+    {
+      "id": "BEHEMOTH_BASH",
+      "sourceId": 782
+    },
+    {
+      "id": "BRANCH_POKE",
+      "sourceId": 785
+    },
+    {
+      "id": "APPLE_ACID",
+      "sourceId": 787
+    },
+    {
+      "id": "GRAV_APPLE",
+      "sourceId": 788
+    },
+    {
+      "id": "SPIRIT_BREAK",
+      "sourceId": 789
+    },
+    {
+      "id": "STRANGE_STEAM",
+      "sourceId": 790
+    },
+    {
+      "id": "FALSE_SURRENDER",
+      "sourceId": 793
+    },
+    {
+      "id": "EXPANDING_FORCE",
+      "sourceId": 797
+    },
+    {
+      "id": "STEEL_ROLLER",
+      "sourceId": 798
+    },
+    {
+      "id": "SHELL_SIDE_ARM",
+      "sourceId": 801
+    },
+    {
+      "id": "MISTY_EXPLOSION",
+      "sourceId": 802
+    },
+    {
+      "id": "GRASSY_GLIDE",
+      "sourceId": 803
+    },
+    {
+      "id": "RISING_VOLTAGE",
+      "sourceId": 804
+    },
+    {
+      "id": "TERRAIN_PULSE",
+      "sourceId": 805
+    },
+    {
+      "id": "SKITTER_SMACK",
+      "sourceId": 806
+    },
+    {
+      "id": "BURNING_JEALOUSY",
+      "sourceId": 807
+    },
+    {
+      "id": "LASH_OUT",
+      "sourceId": 808
+    },
+    {
+      "id": "POLTERGEIST",
+      "sourceId": 809
+    },
+    {
+      "id": "WICKED_BLOW",
+      "sourceId": 817
+    },
+    {
+      "id": "SURGING_STRIKES",
+      "sourceId": 818
+    },
+    {
+      "id": "THUNDER_CAGE",
+      "sourceId": 819
+    },
+    {
+      "id": "DRAGON_ENERGY",
+      "sourceId": 820
+    },
+    {
+      "id": "FREEZING_GLARE",
+      "sourceId": 821
+    },
+    {
+      "id": "FIERY_WRATH",
+      "sourceId": 822
+    },
+    {
+      "id": "THUNDEROUS_KICK",
+      "sourceId": 823
+    },
+    {
+      "id": "GLACIAL_LANCE",
+      "sourceId": 824
+    },
+    {
+      "id": "ASTRAL_BARRAGE",
+      "sourceId": 825
+    },
+    {
+      "id": "EERIE_SPELL",
+      "sourceId": 826
+    },
+    {
+      "id": "DIRE_CLAW",
+      "sourceId": 827
+    },
+    {
+      "id": "PSYSHIELD_BASH",
+      "sourceId": 828
+    },
+    {
+      "id": "SPRINGTIDE_STORM",
+      "sourceId": 831
+    },
+    {
+      "id": "MYSTICAL_POWER",
+      "sourceId": 832
+    },
+    {
+      "id": "RAGING_FURY",
+      "sourceId": 833
+    },
+    {
+      "id": "WAVE_CRASH",
+      "sourceId": 834
+    },
+    {
+      "id": "CHLOROBLAST",
+      "sourceId": 835
+    },
+    {
+      "id": "MOUNTAIN_GALE",
+      "sourceId": 836
+    },
+    {
+      "id": "HEADLONG_RUSH",
+      "sourceId": 838
+    },
+    {
+      "id": "ESPER_WING",
+      "sourceId": 840
+    },
+    {
+      "id": "BITTER_MALICE",
+      "sourceId": 841
+    },
+    {
+      "id": "TRIPLE_ARROWS",
+      "sourceId": 843
+    },
+    {
+      "id": "INFERNAL_PARADE",
+      "sourceId": 844
+    },
+    {
+      "id": "CEASELESS_EDGE",
+      "sourceId": 845
+    },
+    {
+      "id": "BLEAKWIND_STORM",
+      "sourceId": 846
+    },
+    {
+      "id": "WILDBOLT_STORM",
+      "sourceId": 847
+    },
+    {
+      "id": "SANDSEAR_STORM",
+      "sourceId": 848
+    },
+    {
+      "id": "TERA_BLAST",
+      "sourceId": 851
+    },
+    {
+      "id": "AXE_KICK",
+      "sourceId": 853
+    },
+    {
+      "id": "LUMINA_CRASH",
+      "sourceId": 855
+    },
+    {
+      "id": "JET_PUNCH",
+      "sourceId": 857
+    },
+    {
+      "id": "SPIN_OUT",
+      "sourceId": 859
+    },
+    {
+      "id": "POPULATION_BOMB",
+      "sourceId": 860
+    },
+    {
+      "id": "ICE_SPINNER",
+      "sourceId": 861
+    },
+    {
+      "id": "TRIPLE_DIVE",
+      "sourceId": 865
+    },
+    {
+      "id": "KOWTOW_CLEAVE",
+      "sourceId": 869
+    },
+    {
+      "id": "FLOWER_TRICK",
+      "sourceId": 870
+    },
+    {
+      "id": "TORCH_SONG",
+      "sourceId": 871
+    },
+    {
+      "id": "AQUA_STEP",
+      "sourceId": 872
+    },
+    {
+      "id": "RAGING_BULL",
+      "sourceId": 873
+    },
+    {
+      "id": "PSYBLADE",
+      "sourceId": 875
+    },
+    {
+      "id": "HYDRO_STEAM",
+      "sourceId": 876
+    },
+    {
+      "id": "RUINATION",
+      "sourceId": 877
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "sourceId": 878
+    },
+    {
+      "id": "ELECTRO_DRIFT",
+      "sourceId": 879
+    },
+    {
+      "id": "POUNCE",
+      "sourceId": 884
+    },
+    {
+      "id": "HYPER_DRILL",
+      "sourceId": 887
+    },
+    {
+      "id": "TWIN_BEAM",
+      "sourceId": 888
+    },
+    {
+      "id": "DOUBLE_SHOCK",
+      "sourceId": 892
+    },
+    {
+      "id": "COMEUPPANCE",
+      "sourceId": 894
+    },
+    {
+      "id": "AQUA_CUTTER",
+      "sourceId": 895
+    },
+    {
+      "id": "BLAZING_TORQUE",
+      "sourceId": 896
+    },
+    {
+      "id": "WICKED_TORQUE",
+      "sourceId": 897
+    },
+    {
+      "id": "NOXIOUS_TORQUE",
+      "sourceId": 898
+    },
+    {
+      "id": "COMBAT_TORQUE",
+      "sourceId": 899
+    },
+    {
+      "id": "MAGICAL_TORQUE",
+      "sourceId": 900
+    },
+    {
+      "id": "BLOOD_MOON",
+      "sourceId": 901
+    },
+    {
+      "id": "MATCHA_GOTCHA",
+      "sourceId": 902
+    },
+    {
+      "id": "SYRUP_BOMB",
+      "sourceId": 903
+    },
+    {
+      "id": "IVY_CUDGEL",
+      "sourceId": 904
+    },
+    {
+      "id": "ELECTRO_SHOT",
+      "sourceId": 905
+    },
+    {
+      "id": "TERA_STARSTORM",
+      "sourceId": 906
+    },
+    {
+      "id": "FICKLE_BEAM",
+      "sourceId": 907
+    },
+    {
+      "id": "THUNDERCLAP",
+      "sourceId": 909
+    },
+    {
+      "id": "MIGHTY_CLEAVE",
+      "sourceId": 910
+    },
+    {
+      "id": "TACHYON_CUTTER",
+      "sourceId": 911
+    },
+    {
+      "id": "ALLURING_VOICE",
+      "sourceId": 914
+    },
+    {
+      "id": "TEMPER_FLARE",
+      "sourceId": 915
+    },
+    {
+      "id": "SUPERCELL_SLAM",
+      "sourceId": 916
+    },
+    {
+      "id": "PSYCHIC_NOISE",
+      "sourceId": 917
+    },
+    {
+      "id": "UPPER_HAND",
+      "sourceId": 918
+    },
+    {
+      "id": "MALIGNANT_CHAIN",
+      "sourceId": 919
+    }
+  ]
+}

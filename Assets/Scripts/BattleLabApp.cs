@@ -90,7 +90,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();LoadForms();BuildArena();BuildWaterLane();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-focus-check")||Environment.GetCommandLineArgs().Contains("-lab-immersion-check")||Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")||Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-expansion-check")||Environment.GetCommandLineArgs().Contains("-lab-focus-check")||Environment.GetCommandLineArgs().Contains("-lab-immersion-check")||Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")||Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -376,7 +376,7 @@ namespace BattleLab
                 a.presentation=new AttackPresentation(f.body,a.target.body,a.move,zaFx,bdspFx,nativeTiming,effectSource,a.aimed?()=>a.aimPoint:null,a.fieldRadius);
                 if(Direct&&a.move.id=="DIG"&&a.presentation.Effect is VioletMove digFx){a.dig=new DigTravel(digFx);digFx.SteeredDig=true;}
                 a.phase=1;a.clock=0;f.state="Wind-up";
-                Note($"{f.body.entry.source} body · {(a.presentation.Effect is BdspMove?"BDSP":"Z-A")} attack effects");
+                Note($"{f.body.entry.source} body · {(a.presentation.Effect is BdspMove?"BDSP":NativeSource(a.move))} attack effects");
             }
             if(a.phase==1)
             {
@@ -454,6 +454,7 @@ namespace BattleLab
                 return;
             }
             if(picker>=0){PokedexUI();return;}
+            if(movePickerSlot>=0){MovePickerUI();return;}
             if(Direct&&!setup){DirectUI();if(effectAudit)EffectAuditUI();return;}
             Text(24,16,450,"POKÉMON / BATTLE LAB",title,40);
             Text(24,57,850,"04   /   POKÉDEX BATTLE LAB     ·     direct control + native attack presentation",muted);
@@ -465,14 +466,14 @@ namespace BattleLab
             {mode=(BattleMode)i;inspect=false;style=MoveStyle.Normal;ResetBattle();}
             Text(40,290,238,inspect?"Species to compare":"Your Pokémon",small);
             if(Button(new Rect(40,318,238,34),Species[inspect?inspectSpecies:playerSpecies]+"  ›"))
-            {OpenPicker(inspect?6:0);}
+            {OpenPicker(inspect?100:0);}
             if(!inspect)
             {
                 Text(40,368,238,"Newest model: "+Sources[playerSource],small);
                 Text(40,408,238,"Opponent",small);
                 if(Button(new Rect(40,435,238,34),Species[enemySpecies]+"  ›")){OpenPicker(1);}
                 Text(40,485,238,"Newest model: "+Sources[enemySource],small);
-                bool nextAi=GUI.Toggle(new Rect(43,532,230,25),ai," Opponent commands enabled");if(nextAi!=ai){ai=nextAi;ResetBattle();}
+                bool nextAi=GUI.Toggle(new Rect(43,532,230,25),ai," Other Pokémon AI enabled");if(nextAi!=ai){ai=nextAi;ResetBattle();}
             }
             if(Button(new Rect(40,578,238,40),"Reset experiment  [R]"))ResetBattle();
             bool nextPractice=GUI.Toggle(new Rect(43,629,230,25),practice," Practice · keep HP full");if(nextPractice!=practice){practice=nextPractice;ResetBattle();}
@@ -521,10 +522,10 @@ namespace BattleLab
         void LoadoutUI()
         {
             var f=Player;if(f==null)return;var chosen=Loadout(f.data.id);
-            Panel(330,302,710,318);Text(348,316,670,"EQUIPPED MOVES · click to cycle · * test-only choice",label);
+            Panel(330,302,710,318);Text(348,316,670,"EQUIPPED MOVES · click to choose · * test override",label);
             for(int slot=0;slot<ActiveSlots;slot++)
                 if(Button(new Rect(348,352+slot*46,668,40),$"[{slot+1}] {catalog.Move(f.moves[slot]).name}{(pokedex?.Row(f.data.id).testOnlyMoves?.Contains(f.moves[slot])==true?" *":"")}  ›"))
-                {CycleLoadoutSlot(slot);return;}
+                {OpenMovePicker(slot);return;}
             Text(348,545,670,"Sound effects · Emerald recordings, substitutes for newer moves",small);
             soundVolume=GUI.HorizontalSlider(new Rect(352,583,650,20),soundVolume,0,1);
             if(pokedex!=null)
@@ -613,7 +614,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-focus-check")?FocusSmoke():Environment.GetCommandLineArgs().Contains("-lab-immersion-check")?ImmersionSmoke():Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")?HoennSmoke():Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-expansion-check")?ExpansionSmoke():Environment.GetCommandLineArgs().Contains("-lab-focus-check")?FocusSmoke():Environment.GetCommandLineArgs().Contains("-lab-immersion-check")?ImmersionSmoke():Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")?HoennSmoke():Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             var stack=new Stack<IEnumerator>();stack.Push(run);
             while(stack.Count>0)
             {

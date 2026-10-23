@@ -114,7 +114,7 @@ namespace BattleLab
             if(Button(new Rect(1068,762,348,32),immersive?"Attacks: manual aim (experimental)":"Attacks: focused commands")){immersive=!immersive;marked=false;}
             Text(1068,802,348,$"Earthquake radius: {earthquakeRadius:0.0} m",small);
             earthquakeRadius=GUI.HorizontalSlider(new Rect(1075,832,330,20),earthquakeRadius,4,10);
-            Text(348,716,680,"Effects can change independently of models · BDSP falls back to ZA if absent",small);
+            Text(348,716,680,"Effects independent of models · missing BDSP uses ZA / SV fallback",small);
             if(Button(new Rect(348,747,330,32),"Camera: "+cameraView+"  [C] ›"))CycleCamera();
             Text(348,787,680,"Hold RMB to rotate · scroll to zoom · E changes the focused enemy",small);
             FormSetupUI();

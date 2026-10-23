@@ -1,0 +1,217 @@
+{
+  "nativeSequencesToStage": [
+    {
+      "id": "KARATE_CHOP",
+      "sourceId": 2,
+      "createCount": 3,
+      "models": 1
+    },
+    {
+      "id": "DOUBLE_SLAP",
+      "sourceId": 3,
+      "createCount": 14,
+      "models": 2
+    },
+    {
+      "id": "BIND",
+      "sourceId": 20,
+      "createCount": 1,
+      "models": 1
+    },
+    {
+      "id": "SUBMISSION",
+      "sourceId": 66,
+      "createCount": 8,
+      "models": 0
+    },
+    {
+      "id": "EGG_BOMB",
+      "sourceId": 121,
+      "createCount": 2,
+      "models": 0
+    },
+    {
+      "id": "BONE_CLUB",
+      "sourceId": 125,
+      "createCount": 3,
+      "models": 1
+    },
+    {
+      "id": "CONSTRICT",
+      "sourceId": 132,
+      "createCount": 3,
+      "models": 3
+    },
+    {
+      "id": "HIGH_JUMP_KICK",
+      "sourceId": 136,
+      "createCount": 10,
+      "models": 0
+    },
+    {
+      "id": "BUBBLE",
+      "sourceId": 145,
+      "createCount": 3,
+      "models": 0
+    },
+    {
+      "id": "HYPER_FANG",
+      "sourceId": 158,
+      "createCount": 4,
+      "models": 1
+    },
+    {
+      "id": "OCTAZOOKA",
+      "sourceId": 190,
+      "createCount": 3,
+      "models": 0
+    },
+    {
+      "id": "PURSUIT",
+      "sourceId": 228,
+      "createCount": 2,
+      "models": 0
+    },
+    {
+      "id": "VITAL_THROW",
+      "sourceId": 233,
+      "createCount": 1,
+      "models": 0
+    },
+    {
+      "id": "HIDDEN_POWER",
+      "sourceId": 237,
+      "createCount": 5,
+      "models": 0
+    },
+    {
+      "id": "REVENGE",
+      "sourceId": 279,
+      "createCount": 2,
+      "models": 0
+    },
+    {
+      "id": "ICE_BALL",
+      "sourceId": 301,
+      "createCount": 4,
+      "models": 0
+    },
+    {
+      "id": "ROCK_CLIMB",
+      "sourceId": 431,
+      "createCount": 6,
+      "models": 0
+    },
+    {
+      "id": "CHATTER",
+      "sourceId": 448,
+      "createCount": 2,
+      "models": 0
+    }
+  ],
+  "emptyOrUnsupported": [
+    {
+      "id": "JUMP_KICK",
+      "sourceId": 26,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "ROLLING_KICK",
+      "sourceId": 27,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "TWINEEDLE",
+      "sourceId": 41,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "RAGE",
+      "sourceId": 99,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "CLAMP",
+      "sourceId": 128,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "SPIKE_CANNON",
+      "sourceId": 131,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "BARRAGE",
+      "sourceId": 140,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "DIZZY_PUNCH",
+      "sourceId": 146,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "FEINT_ATTACK",
+      "sourceId": 185,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "SMELLING_SALTS",
+      "sourceId": 265,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "SECRET_POWER",
+      "sourceId": 290,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "NEEDLE_ARM",
+      "sourceId": 302,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "SIGNAL_BEAM",
+      "sourceId": 324,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "SKY_UPPERCUT",
+      "sourceId": 327,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "WAKE_UP_SLAP",
+      "sourceId": 358,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "MUD_BOMB",
+      "sourceId": 426,
+      "createCount": 0,
+      "models": 0
+    },
+    {
+      "id": "MIRROR_SHOT",
+      "sourceId": 429,
+      "createCount": 0,
+      "models": 0
+    }
+  ],
+  "scope": "Exact original move IDs only; no borrowed effects."
+}

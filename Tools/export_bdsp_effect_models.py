@@ -10,14 +10,21 @@ sys.path.insert(0,str(ROOT/'Tools/vendor'))
 import bdspfx
 from hoenngen import bdsp
 
-def export_models():
+def export_models(requested=None):
  import UnityPy
  out=ROOT/'Assets/NativeFx/BDSP';store=bdspfx.TextureStore(out/'textures');report=[]
+ from PIL import Image
+ import hashlib
+ for p in (out/'textures').glob('*.png'):
+  pixels=np.asarray(Image.open(p));store.hashes[p.stem]=hashlib.sha1(pixels.tobytes()+str(pixels.shape).encode()).hexdigest()[:10]
  requests={c['args']['file'] for p in out.glob('*/move.json') for g in json.loads(p.read_text())['groups'] for c in g['cmds'] if c['cmd']=='ModelCreate'}
+ if requested is not None:requests=set(requested)
  for file in sorted(requests):
   print('Effect model',file,flush=True)
   bundle=file.split('/')[0].lower();trail=bundle=='ew280_tail';bundle='ew280_hand' if trail else bundle
-  env=UnityPy.load(str(Path(bdsp.AA)/'Effects/effmodel'/bundle));objs={o.path_id:o for o in env.objects};trees={k:o.read_typetree() for k,o in objs.items() if o.type.name in ['GameObject','Transform','MeshRenderer','MeshFilter','SkinnedMeshRenderer','Material','AnimationClip']}
+  source=Path(bdsp.AA)/'Effects/effmodel'/bundle
+  if not source.is_file():raise FileNotFoundError('Native effect model bundle is absent: '+str(source))
+  env=UnityPy.load(str(source));objs={o.path_id:o for o in env.objects};trees={k:o.read_typetree() for k,o in objs.items() if o.type.name in ['GameObject','Transform','MeshRenderer','MeshFilter','SkinnedMeshRenderer','Material','AnimationClip']}
   trs={k:t for k,t in trees.items() if objs[k].type.name=='Transform'};root=next(k for k,t in trs.items() if t['m_Father']['m_PathID']==0)
   nodes=[];indices={};paths=[]
   def walk(k,parent,path):
@@ -89,5 +96,7 @@ def export_models():
   data={'file':file,'model':True,'nodes':nodes,'meshes':meshes,'renderers':renderers,'materials':materials,'tracks':tracks,'materialTracks':materialTracks}
   (out/'prefabs'/('model_'+file.split('/')[0]+'.json')).write_text(json.dumps(data,separators=(',',':')))
   report.append({'file':file,'bundle':bundle,'renderers':len(renderers),'tracks':len(tracks),'materialTracks':len(materialTracks),'vertices':sum(len(m['v'])//3 for m in meshes),'unmappedMaterialTracks':unmapped,'trailFallback':trail})
- (ROOT/'Docs/bdsp-effect-models.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+ history=ROOT/'Docs/bdsp-effect-models.json'
+ if requested is not None and history.exists():report=[r for r in json.loads(history.read_text()) if r['file'] not in requests]+report
+ history.write_text(json.dumps(report,indent=2));print('Exported native model layers:',len(requests),flush=True)
 if __name__=='__main__':export_models()

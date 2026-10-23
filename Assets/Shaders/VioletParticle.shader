@@ -268,7 +268,7 @@ Shader "Hoenn/VioletParticle"
                     if(_FlowColor>.5)col*=c1;
                     a=saturate(a1*(interior*_FlowShape.w+edge));
                 }
-                if(_NativeFlow>1.5)
+                if(_NativeFlow>1.5&&_NativeFlow<5.5)
                 {
                     float noise=flowNoise.r+a0-1;
                     float inside=ceil(saturate(noise-_FlowShape.x));
@@ -287,7 +287,19 @@ Shader "Hoenn/VioletParticle"
                     }
                     else {col*=c1;a=flowMain.r*visible*a1;}
                 }
-                if(_Fresnel.x>.5&&(_NativeFlow<1.5||(_NativeFlow>2.5&&_NativeFlow<3.5)))
+                if(_NativeFlow>5.5&&_NativeFlow<6.5)
+                {
+                    // SV c9f1e066: slot 0 is a flow vector, slot 1 is coverage,
+                    // slot 2 blends the two particle colours. Adding flow-map alpha
+                    // to coverage turns the entire particle card opaque.
+                    float2 flowVector=(_MainGrey>.5?flowMain.rr:flowMain.ra)*2-1;
+                    float2 maskUv=i.uv.zw+flowVector*_FlowShape.xy*a1;
+                    float4 mask=SAMPLE_TEXTURE2D(_SubTex,sampler_SubTex,WrapMask(maskUv,_SubWrap.xy));
+                    float4 tint=_ThirdGrey>.5?flowNoise.rrrr:flowNoise;
+                    col=lerp(c1,c0,tint.rgb);
+                    a=a0*a1*tint.a*(_SubGrey>.5?mask.r:mask.a);
+                }
+                if(_Fresnel.x>.5&&(_NativeFlow<1.5||(_NativeFlow>2.5&&_NativeFlow<3.5)||_NativeFlow>5.5))
                 {
                     float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
                     float rim=saturate((facing-_Fresnel.y)/((_Fresnel.z-_Fresnel.y)==0?.0001:(_Fresnel.z-_Fresnel.y)));

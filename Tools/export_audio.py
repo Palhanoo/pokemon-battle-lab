@@ -3,6 +3,9 @@ from pathlib import Path
 import hashlib,json,shutil,struct,wave,array,sys
 ROOT=Path(__file__).resolve().parents[1]
 index=json.loads((ROOT/'Tools/audio-index.json').read_text())
+for move in index['moves']:
+    if move['sound']=='SE_M_GUST':move['sound']='SE_M_GUST_SHORT';move['substitute']=True
+(ROOT/'Tools/audio-index.json').write_text(json.dumps(index,indent=2)+'\n')
 source=ROOT.parent/'HoennVR/Assets/Generated/Audio';out=ROOT/'Assets/NativeAudio';out.mkdir(exist_ok=True)
 for name in sorted({m['sound'] for m in index['moves']}):
     if name!='SE_M_GUST_SHORT':shutil.copy2(source/'sfx'/(name+'.wav'),out/(name+'.wav'));continue

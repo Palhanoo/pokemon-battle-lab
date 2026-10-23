@@ -41,8 +41,8 @@
   },
   {
     "path": "Assets/NativeAudio/index.json",
-    "bytes": 5450,
-    "sha256": "dae65ce72f4051f4b675557cad04b57b13c1f7ff15171f217dafd42308364de6"
+    "bytes": 70764,
+    "sha256": "f3e70f1837aa9250586cf94bcada0b89220bb0c612afe2691ebbf7a3dbb60567"
   },
   {
     "path": "Assets/NativeAudio/SE_M_ABSORB.wav",
@@ -75,6 +75,11 @@
     "sha256": "9ae5778fe82c64244d1ad60d40eed7705f68cba50d5bebe6267982979ee67370"
   },
   {
+    "path": "Assets/NativeAudio/SE_M_EXPLOSION.wav",
+    "bytes": 851288,
+    "sha256": "221a39d96aa54ff46bcd2c66bc1d75dbe889dc093ea5abee943e37f651da68d8"
+  },
+  {
     "path": "Assets/NativeAudio/SE_M_FLAMETHROWER.wav",
     "bytes": 1622488,
     "sha256": "fc2aad3c188b3949ce64b642b5506cf08ab7b9fd4607fcbcb1ad6a5519eea1e1"
@@ -93,6 +98,11 @@
     "path": "Assets/NativeAudio/SE_M_HEADBUTT.wav",
     "bytes": 542488,
     "sha256": "5a71eb793485e0ce59529fd3d9b9360b169d9c8edc0ca45aff37522649159a41"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_HORN_ATTACK.wav",
+    "bytes": 542488,
+    "sha256": "4ccff3f40587ed94a30d9b8a3bb512c28584fc11b37f6848ef68e3c4e6d2eac9"
   },
   {
     "path": "Assets/NativeAudio/SE_M_HYPER_BEAM.wav",
@@ -120,6 +130,11 @@
     "sha256": "b7353ee9ed41e1b7dac9682c1efd17702e2e73468bbbe18f651d61b09eeca695"
   },
   {
+    "path": "Assets/NativeAudio/SE_M_SCRATCH.wav",
+    "bytes": 494488,
+    "sha256": "53a6043dda83757a4736083d2584ff0ecde3adadeb419b9e9316ee16e650b5d0"
+  },
+  {
     "path": "Assets/NativeAudio/SE_M_STRENGTH.wav",
     "bytes": 542488,
     "sha256": "b80c6307927cd0ad63d0be8faa99ea0e8086217af358ccf50b3d1ecb47e668a2"
@@ -133,6 +148,11 @@
     "path": "Assets/NativeAudio/SE_M_THUNDERBOLT.wav",
     "bytes": 598488,
     "sha256": "4be5e04a37dc5837d5975dea7d77441b5cb28bc8615a72dd0ff8120a3e3fb63a"
+  },
+  {
+    "path": "Assets/NativeAudio/SE_M_WING_ATTACK.wav",
+    "bytes": 494488,
+    "sha256": "fda967bce0967248d4c160178ce435c7cd81c9d5453ca9aae2dac8e65b03fc7a"
   },
   {
     "path": "Assets/NativeAudio/SE_NOT_EFFECTIVE.wav",

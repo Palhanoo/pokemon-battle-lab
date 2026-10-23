@@ -120,6 +120,7 @@ namespace BattleLab.Native
                     {
                         mat.SetFloat("_NativeFlow",J.F(native,"flow"));mat.SetFloat("_FlowColor",J.F(native,"flow_color"));
                         mat.SetVector("_FlowShape",new Vector4(values[12],values[13],values[14],values[15]));
+                        if(J.F(native,"flow")==6)mat.SetVector("_FlowShape",new Vector4(values[0],values[1],0,0));
                         mat.SetVector("_FlowEdge",new Vector4(values[16],values[17],values[18],values[19]));
                     }
                 }

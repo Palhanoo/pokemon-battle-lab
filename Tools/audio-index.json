@@ -264,6 +264,2610 @@
       "id": "EARTHQUAKE",
       "sound": "SE_M_STRENGTH",
       "substitute": true
+    },
+    {
+      "id": "POUND",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "COMET_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "MEGA_PUNCH",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PAY_DAY",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FIRE_PUNCH",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICE_PUNCH",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THUNDER_PUNCH",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SCRATCH",
+      "sound": "SE_M_SCRATCH",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "VICE_GRIP",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "RAZOR_WIND",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CUT",
+      "sound": "SE_M_CUT",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "GUST",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Emerald recording",
+      "substitute": true
+    },
+    {
+      "id": "WING_ATTACK",
+      "sound": "SE_M_WING_ATTACK",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "FLY",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SLAM",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "VINE_WHIP",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STOMP",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DOUBLE_KICK",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MEGA_KICK",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HEADBUTT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "HORN_ATTACK",
+      "sound": "SE_M_HORN_ATTACK",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "FURY_ATTACK",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BODY_SLAM",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WRAP",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THRASH",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DOUBLE_EDGE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POISON_STING",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PIN_MISSILE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "ACID",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SURF",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BLIZZARD",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BUBBLE_BEAM",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AURORA_BEAM",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HYPER_BEAM",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "DRILL_PECK",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STRENGTH",
+      "sound": "SE_M_STRENGTH",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "MEGA_DRAIN",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "RAZOR_LEAF",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SOLAR_BEAM",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PETAL_DANCE",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THUNDER_SHOCK",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SELF_DESTRUCT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SMOG",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SLUDGE",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FIRE_BLAST",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WATERFALL",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SWIFT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SKULL_BASH",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DREAM_EATER",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LEECH_LIFE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "SKY_ATTACK",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CRABHAMMER",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "EXPLOSION",
+      "sound": "SE_M_EXPLOSION",
+      "note": "Emerald recording",
+      "substitute": false
+    },
+    {
+      "id": "FURY_SWIPES",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BONEMERANG",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TRI_ATTACK",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STRUGGLE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TRIPLE_KICK",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THIEF",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLAME_WHEEL",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SNORE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AEROBLAST",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POWDER_SNOW",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MUD_SLAP",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ZAP_CANNON",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICY_WIND",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BONE_RUSH",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "OUTRAGE",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ROLLOUT",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FALSE_SWIPE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FURY_CUTTER",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "STEEL_WING",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SACRED_FIRE",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DYNAMIC_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MEGAHORN",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "DRAGON_BREATH",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "RAPID_SPIN",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CROSS_CHOP",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TWISTER",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "EXTREME_SPEED",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ANCIENT_POWER",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FUTURE_SIGHT",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ROCK_SMASH",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WHIRLPOOL",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FAKE_OUT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "UPROAR",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HEAT_WAVE",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FACADE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FOCUS_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SUPERPOWER",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "KNOCK_OFF",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ERUPTION",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DIVE",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ARM_THRUST",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LUSTER_PURGE",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MIST_BALL",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HYPER_VOICE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POISON_FANG",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CRUSH_CLAW",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BLAST_BURN",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HYDRO_CANNON",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "METEOR_MASH",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ASTONISH",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WEATHER_BALL",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AIR_CUTTER",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "OVERHEAT",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SILVER_WIND",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "WATER_SPOUT",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SHADOW_PUNCH",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "EXTRASENSORY",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SAND_TOMB",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BULLET_SEED",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICICLE_SPEAR",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FRENZY_PLANT",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BOUNCE",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POISON_TAIL",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "COVET",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "VOLT_TACKLE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MAGICAL_LEAF",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ROCK_BLAST",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SHOCK_WAVE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DOOM_DESIRE",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PSYCHO_BOOST",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FEINT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "U_TURN",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "SUCKER_PUNCH",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLARE_BLITZ",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POISON_JAB",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "NIGHT_SLASH",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AIR_SLASH",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "X_SCISSOR",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "BUG_BUZZ",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "DRAGON_RUSH",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POWER_GEM",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "VACUUM_WAVE",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FOCUS_BLAST",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BRAVE_BIRD",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "EARTH_POWER",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "GIGA_IMPACT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICE_SHARD",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SHADOW_CLAW",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THUNDER_FANG",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICE_FANG",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FIRE_FANG",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SHADOW_SNEAK",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PSYCHO_CUT",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ZEN_HEADBUTT",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLASH_CANNON",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DRACO_METEOR",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LAVA_PLUME",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "POWER_WHIP",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "GUNK_SHOT",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "IRON_HEAD",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MAGNET_BOMB",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STONE_EDGE",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BUG_BITE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "CHARGE_BEAM",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WOOD_HAMMER",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AQUA_JET",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HEAD_SMASH",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DOUBLE_HIT",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MAGMA_STORM",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "OMINOUS_WIND",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PSYSHOCK",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STORM_THROW",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SLUDGE_WAVE",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLAME_CHARGE",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LOW_SWEEP",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ACID_SPRAY",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ROUND",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ECHOED_VOICE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SCALD",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CIRCLE_THROW",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "VOLT_SWITCH",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BULLDOZE",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FROST_BREATH",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ELECTROWEB",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WILD_CHARGE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DRILL_RUN",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DUAL_CHOP",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HORN_LEECH",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SACRED_SWORD",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PSYSTRIKE",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HURRICANE",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TECHNO_BLAST",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "RELIC_SONG",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SECRET_SWORD",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SNARL",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ICICLE_CRASH",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLYING_PRESS",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PHANTOM_FORCE",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PARABOLIC_CHARGE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FREEZE_DRY",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FAIRY_WIND",
+      "sound": "SE_M_SUPERSONIC",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MOONBLAST",
+      "sound": "SE_M_SUPERSONIC",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BOOMBURST",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DIAMOND_STORM",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STEAM_ERUPTION",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HYPERSPACE_HOLE",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "WATER_SHURIKEN",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MYSTICAL_FIRE",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DAZZLING_GLEAM",
+      "sound": "SE_M_SUPERSONIC",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "NUZZLE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "INFESTATION",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "POWER_UP_PUNCH",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "OBLIVION_WING",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THOUSAND_ARROWS",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "THOUSAND_WAVES",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LANDS_WRATH",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LIGHT_OF_RUIN",
+      "sound": "SE_M_SUPERSONIC",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ORIGIN_PULSE",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PRECIPICE_BLADES",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DRAGON_ASCENT",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HYPERSPACE_FURY",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FIRST_IMPRESSION",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "ICE_HAMMER",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SOLAR_BLADE",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LEAFAGE",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LUNGE",
+      "sound": "SE_M_HEADBUTT",
+      "note": "Generic impact substitute; source recording unavailable",
+      "substitute": true
+    },
+    {
+      "id": "CORE_ENFORCER",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BRUTAL_SWING",
+      "sound": "SE_M_BITE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLEUR_CANNON",
+      "sound": "SE_M_SUPERSONIC",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PSYCHIC_FANGS",
+      "sound": "SE_M_REFLECT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SHADOW_BONE",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LIQUIDATION",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SPECTRAL_THIEF",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "PLASMA_FISTS",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DOUBLE_IRON_BASH",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "AURA_WHEEL",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BREAKING_SWIPE",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "OVERDRIVE",
+      "sound": "SE_M_THUNDERBOLT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "METEOR_ASSAULT",
+      "sound": "SE_M_COMET_PUNCH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STEEL_BEAM",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SCALE_SHOT",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "METEOR_BEAM",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "FLIP_TURN",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TRIPLE_AXEL",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "DUAL_WINGBEAT",
+      "sound": "SE_M_GUST_SHORT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SCORCHING_SANDS",
+      "sound": "SE_M_STRENGTH",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "STONE_AXE",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BARB_BARRAGE",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "LAST_RESPECTS",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ORDER_UP",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "GLAIVE_RUSH",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "SALT_CURE",
+      "sound": "SE_M_ROCK_THROW",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MORTAL_SPIN",
+      "sound": "SE_M_POISON_POWDER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "MAKE_IT_RAIN",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "TRAILBLAZE",
+      "sound": "SE_M_ABSORB",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "CHILLING_WATER",
+      "sound": "SE_M_BUBBLE",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "RAGE_FIST",
+      "sound": "SE_M_HYPER_BEAM",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "ARMOR_CANNON",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "BITTER_BLADE",
+      "sound": "SE_M_EMBER",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "GIGATON_HAMMER",
+      "sound": "SE_M_CUT",
+      "note": "Same-type substitute for lab testing",
+      "substitute": true
+    },
+    {
+      "id": "HAMMER_ARM",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BRINE",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PLUCK",
+      "sound": "SE_M_GUST_SHORT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PAYBACK",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ASSURANCE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "LAST_RESORT",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FORCE_PALM",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "AQUA_TAIL",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "AVALANCHE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ROCK_WRECKER",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CROSS_POISON",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "JUDGMENT",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ATTACK_ORDER",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ROAR_OF_TIME",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPACIAL_REND",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SEED_FLARE",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SHADOW_FORCE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "VENOSHOCK",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SMACK_DOWN",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FOUL_PLAY",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CLEAR_SMOG",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "STORED_POWER",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HEX",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "INCINERATE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ACROBATICS",
+      "sound": "SE_M_GUST_SHORT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RETALIATE",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "INFERNO",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "WATER_PLEDGE",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FIRE_PLEDGE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "GRASS_PLEDGE",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "STRUGGLE_BUG",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DRAGON_TAIL",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RAZOR_SHELL",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "NIGHT_DAZE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TAIL_SLAP",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "GLACIATE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BOLT_STRIKE",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BLUE_FLARE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FIERY_DANCE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FREEZE_SHOCK",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ICE_BURN",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "V_CREATE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FUSION_FLARE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FUSION_BOLT",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BELCH",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FELL_STINGER",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PETAL_BLIZZARD",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HOLD_BACK",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPIRIT_SHACKLE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DARKEST_LARIAT",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPARKLING_ARIA",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HIGH_HORSEPOWER",
+      "sound": "SE_M_STRENGTH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "THROAT_CHOP",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "POLLEN_PUFF",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FIRE_LASH",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "POWER_TRIP",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BURN_UP",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SMART_STRIKE",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "REVELATION_DANCE",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TROP_KICK",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BEAK_BLAST",
+      "sound": "SE_M_GUST_SHORT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CLANGING_SCALES",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DRAGON_HAMMER",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "STOMPING_TANTRUM",
+      "sound": "SE_M_STRENGTH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ACCELEROCK",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PRISMATIC_LASER",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SUNSTEEL_STRIKE",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MOONGEIST_BEAM",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ZING_ZAP",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PHOTON_GEYSER",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DYNAMAX_CANNON",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SNIPE_SHOT",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "JAW_LOCK",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DRAGON_DARTS",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BODY_PRESS",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DRUM_BEATING",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PYRO_BALL",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BEHEMOTH_BLADE",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BEHEMOTH_BASH",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BRANCH_POKE",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "APPLE_ACID",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPIRIT_BREAK",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "STRANGE_STEAM",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FALSE_SURRENDER",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "EXPANDING_FORCE",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "STEEL_ROLLER",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SHELL_SIDE_ARM",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MISTY_EXPLOSION",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "GRASSY_GLIDE",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RISING_VOLTAGE",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TERRAIN_PULSE",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SKITTER_SMACK",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BURNING_JEALOUSY",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "LASH_OUT",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "POLTERGEIST",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "WICKED_BLOW",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SURGING_STRIKES",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "THUNDER_CAGE",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DRAGON_ENERGY",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FREEZING_GLARE",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FIERY_WRATH",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "THUNDEROUS_KICK",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "GLACIAL_LANCE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ASTRAL_BARRAGE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "EERIE_SPELL",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DIRE_CLAW",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PSYSHIELD_BASH",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPRINGTIDE_STORM",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MYSTICAL_POWER",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RAGING_FURY",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "WAVE_CRASH",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CHLOROBLAST",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MOUNTAIN_GALE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HEADLONG_RUSH",
+      "sound": "SE_M_STRENGTH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ESPER_WING",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BITTER_MALICE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TRIPLE_ARROWS",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "INFERNAL_PARADE",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CEASELESS_EDGE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BLEAKWIND_STORM",
+      "sound": "SE_M_GUST_SHORT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "WILDBOLT_STORM",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SANDSEAR_STORM",
+      "sound": "SE_M_STRENGTH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TERA_BLAST",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "AXE_KICK",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "LUMINA_CRASH",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "JET_PUNCH",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SPIN_OUT",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "POPULATION_BOMB",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ICE_SPINNER",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TRIPLE_DIVE",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "KOWTOW_CLEAVE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FLOWER_TRICK",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TORCH_SONG",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "AQUA_STEP",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RAGING_BULL",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PSYBLADE",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HYDRO_STEAM",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "RUINATION",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ELECTRO_DRIFT",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "POUNCE",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HYPER_DRILL",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TWIN_BEAM",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "DOUBLE_SHOCK",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "COMEUPPANCE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "AQUA_CUTTER",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BLAZING_TORQUE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "WICKED_TORQUE",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "NOXIOUS_TORQUE",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "COMBAT_TORQUE",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MAGICAL_TORQUE",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BLOOD_MOON",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MATCHA_GOTCHA",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SYRUP_BOMB",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "IVY_CUDGEL",
+      "sound": "SE_M_ABSORB",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ELECTRO_SHOT",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TERA_STARSTORM",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "FICKLE_BEAM",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "THUNDERCLAP",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MIGHTY_CLEAVE",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TACHYON_CUTTER",
+      "sound": "SE_M_CUT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ALLURING_VOICE",
+      "sound": "SE_M_SUPERSONIC",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "TEMPER_FLARE",
+      "sound": "SE_M_EMBER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SUPERCELL_SLAM",
+      "sound": "SE_M_THUNDERBOLT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PSYCHIC_NOISE",
+      "sound": "SE_M_REFLECT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "UPPER_HAND",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "MALIGNANT_CHAIN",
+      "sound": "SE_M_POISON_POWDER",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HIGH_JUMP_KICK",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BIND",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "SUBMISSION",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "EGG_BOMB",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "BUBBLE",
+      "sound": "SE_M_BUBBLE",
+      "substitute": false,
+      "note": "Emerald recording"
+    },
+    {
+      "id": "HYPER_FANG",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "OCTAZOOKA",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "PURSUIT",
+      "sound": "SE_M_BITE",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "VITAL_THROW",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "HIDDEN_POWER",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "REVENGE",
+      "sound": "SE_M_COMET_PUNCH",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ICE_BALL",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "ROCK_CLIMB",
+      "sound": "SE_M_HEADBUTT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
+    },
+    {
+      "id": "CHATTER",
+      "sound": "SE_M_GUST_SHORT",
+      "substitute": true,
+      "note": "Same-type substitute for lab testing"
     }
   ],
   "cries": [

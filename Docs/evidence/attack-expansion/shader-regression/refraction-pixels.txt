@@ -1,0 +1,3 @@
+Changed pixels=19845; outside footprint=0; zero strength=0; foreground interior=0
+Packed UNorm8 mesh tint agrees with particle colour.
+Soft-intersection, native alpha cutout front/back culling and actual particle primitive-channel pixel checks passed.

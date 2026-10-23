@@ -1,7 +1,7 @@
 # Pokémon Battle Lab
 
 An isolated desktop Unity battle experiment: 1,000 species with one preferred
-model per species, direct Pokémon control, 1v1/3v3, and native ZA/BDSP attack effects.
+model per species, direct Pokémon control, independent simultaneous teams, and native ZA/SV/BDSP effects.
 It loads no HoennVR maps, story or gameplay saves.
 
 The reviewed six-move checkpoint is commit `be0a9d0` on `main`.
@@ -14,6 +14,12 @@ cloning it alone does not supply the native game assets or compiled player.
 
 - WASD moves; hold RMB to rotate the camera; Shift walks; Space dashes.
 - 1–4 command attacks on the focused enemy, with automatic approach.
+- Setup independently selects **1–6 allies against 1–12 enemies**, with a
+  scrollable roster for each side. All selected members fight simultaneously.
+  The BDSP/Arceus turn comparisons remain duels.
+- Click an equipped move to search by name or type. Choose from the species pool
+  or enable explicitly marked **All lab moves** test overrides. Selecting an
+  already-equipped move swaps slots. Four moves remain equipped.
 - **C switches Classic / RPG / Shoulder views**; scroll zooms. E changes focus,
   Q changes allies. Camera anchors remain stable while bodies animate.
 - Hold F to rise briefly on eligible flying/levitating Pokémon; release descends.
@@ -32,10 +38,18 @@ cloning it alone does not supply the native game assets or compiled player.
 - The arena is 100×100m. The blue water lane gives grounded Water types a
   1.65× movement bonus.
 
-There are 53 distinct test moves, four equipped per Pokémon: 53 ZA and 28 BDSP
-native presentations. The Hoenn tryout buttons equip Blaze Kick, Muddy Water,
-Ice Beam, Dragon Claw, Rock Slide or Earthquake on representative species.
-This is a curated move set, not complete learnsets/status/ability simulation.
+The catalog contains **487 damage moves**: 249 ZA, 225 SV and 13 BDSP native
+primary presentations, plus 29 alternate BDSP variants. The original53 reviewed moves
+remain available. Species pools include all available moves recorded in the
+pinned pooled learnsets; test overrides are labeled. BDSP selection falls back
+to the available ZA/SV presentation when there is no BDSP version.
+
+This is not the complete move dex or complete competitive mechanics. Status,
+fixed-damage and missing-presentation moves remain coverage gaps. Secondary
+effects, abilities and specialized rules are not fully simulated. Multi-hit
+animations currently use one combined damage event. See
+`Docs/2026-10-24-attack-coverage.md` and `Docs/attack-coverage.json` for exact scope
+and verification; native asset presence alone does not establish visual quality.
 
 Ranged clashes compare damage after STAB, target typing and defenses. At least
 1.5× damage wins and continues with the difference; otherwise both cancel.
@@ -69,6 +83,12 @@ python Tools/export_audio.py
 python Tools/pokedex.py --export --workers 1
 python Tools/stage_hoenn_roster.py
 python Tools/stage_hoenn_effects.py
+python Tools/export_remaining_sv_attacks.py
+python Tools/expand_attack_catalog.py
+python Tools/stage_bdsp_legacy_attacks.py
+python Tools/expand_attack_catalog.py
+python Tools/export_audio.py
+python Tools/audit_effects.py
 python Tools/stage_forms.py
 python Tools/validate_roster.py
 ```

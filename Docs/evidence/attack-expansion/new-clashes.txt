@@ -1,0 +1,5 @@
+Expanded source catalog is present in player
+FIRE_BLAST: equal opposing native attacks cancel at the clash without damage
+AURORA_BEAM: equal opposing native attacks cancel at the clash without damage
+SURF: equal opposing native attacks cancel at the clash without damage
+New native clash drills have no runtime errors

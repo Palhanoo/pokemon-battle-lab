@@ -8,8 +8,14 @@ namespace BattleLab
 {
     public partial class BattleLabApp
     {
-        int teamSize=3,controlled,targetIndex=1;
-        int[] allySpecies={3,5},foeSpecies={1,8};
+        const int MaxAllies=6,MaxEnemies=12;
+        int allyCount=3,enemyCount=3,controlled,targetIndex=1;
+        // Existing isolated drills request symmetric teams through this setter.
+        int teamSize { get=>allyCount; set { allyCount=Mathf.Clamp(value,1,MaxAllies);enemyCount=Mathf.Clamp(value,1,MaxEnemies); } }
+        int Allies=>mode==BattleMode.ZA?allyCount:1;
+        int Enemies=>mode==BattleMode.ZA?enemyCount:1;
+        Vector2 teamScroll;bool editingEnemies;
+        int[] allySpecies={3,5,0,2,4},foeSpecies={1,8,6,7,0,3,4,5,2,8,1};
         bool teamSmoke,clashDrill;
         Fighter Player=>fighters==null?null:fighters[Mathf.Clamp(controlled,0,fighters.Length-1)];
         Fighter Target
@@ -25,14 +31,20 @@ namespace BattleLab
         void CreateTeams()
         {
             controlled=0;targetIndex=1;clashCount=0;clashMessage=null;clashMessageUntil=0;
-            var list=new List<Fighter>();int count=mode==BattleMode.ZA?teamSize:1;
-            for(int slot=0;slot<count;slot++)
+            var list=new List<Fighter>();
+            for(int slot=0;slot<Mathf.Max(Allies,Enemies);slot++)
             {
-                float z=slot==0?0:slot==1?-3:3;
-                int a=slot==0?playerSpecies:allySpecies[slot-1],b=slot==0?enemySpecies:foeSpecies[slot-1];
-                var left=CreateFighter(a,ValidSource(a,slot==0?playerSource:1),new Vector3(-3,0,z));left.team=0;list.Add(left);
-                var right=CreateFighter(b,ValidSource(b,slot==0?enemySource:1),new Vector3(3,0,z));right.team=1;list.Add(right);
-                left.body.Face(right.home);right.body.Face(left.home);
+                float z=slot==0?0:((slot+1)/2)*4*(slot%2==1?-1:1);
+                if(slot<Allies)
+                {
+                    int a=slot==0?playerSpecies:allySpecies[slot-1];
+                    var left=CreateFighter(a,ValidSource(a,slot==0?playerSource:1),new Vector3(-3,0,z));left.team=0;list.Add(left);left.body.Face(new Vector3(3,0,z));
+                }
+                if(slot<Enemies)
+                {
+                    int b=slot==0?enemySpecies:foeSpecies[slot-1];
+                    var right=CreateFighter(b,ValidSource(b,slot==0?enemySource:1),new Vector3(3,0,z));right.team=1;list.Add(right);right.body.Face(new Vector3(-3,0,z));
+                }
             }
             fighters=list.ToArray();SeparateTeamSpawn();
         }
@@ -116,21 +128,34 @@ namespace BattleLab
             if(mode!=BattleMode.ZA&&Vector3.Distance(f.body.transform.position,f.home)>.1f){a.phase=4;f.state="Returning";}
             else Finish(f);
         }
+        IEnumerable<int> TeamSpecies()=>new[]{playerSpecies,enemySpecies}.Concat(allySpecies.Take(Allies-1)).Concat(foeSpecies.Take(Enemies-1));
+        void SetTeamCount(bool enemies,int value)
+        {
+            if(enemies)enemyCount=Mathf.Clamp(value,1,MaxEnemies);else allyCount=Mathf.Clamp(value,1,MaxAllies);
+            teamScroll=Vector2.zero;clashDrill=false;ResetBattle();
+        }
         void TeamSetupUI()
         {
-            if(Button(new Rect(1068,260,348,38),teamSize==3?"Team battle · 3 versus 3":"Duel · 1 versus 1"))
-            {teamSize=teamSize==3?1:3;clashDrill=false;ResetBattle();}
-            if(Button(new Rect(1068,685,348,34),clashDrill?"Stop clash drill":"Clash drill · current move slots"))StartClashDrill();
-            if(teamSize!=3)return;
-            Panel(1068,310,348,280);Text(1082,322,320,"TEAM ROSTER · click to change",small);
-            for(int i=0;i<2;i++)
+            Text(1068,255,348,$"SIMULTANEOUS BATTLE · {Allies} vs {Enemies}",label);
+            for(int side=0;side<2;side++)
             {
-                if(Button(new Rect(1082,355+i*51,320,43),"Ally "+(i+2)+": "+Species[allySpecies[i]]))
-                {OpenPicker(2+i);}
-                if(Button(new Rect(1082,463+i*51,320,43),"Enemy "+(i+2)+": "+Species[foeSpecies[i]]))
-                {OpenPicker(4+i);}
+                bool enemies=side==1;int count=enemies?enemyCount:allyCount;float y=291+side*40;
+                Text(1082,y+4,190,(enemies?"Enemies: ":"Your team: ")+count,small);
+                if(Button(new Rect(1296,y,52,32),"−")){SetTeamCount(enemies,count-1);return;}
+                if(Button(new Rect(1358,y,52,32),"+")){SetTeamCount(enemies,count+1);return;}
             }
-            Text(1082,598,320,"Q switches living allies · E changes target. Other Pokémon fight automatically when AI is enabled.",small,80);
+            if(Button(new Rect(1078,380,160,32),"Your roster",!editingEnemies)){editingEnemies=false;teamScroll=Vector2.zero;}
+            if(Button(new Rect(1248,380,160,32),"Enemy roster",editingEnemies)){editingEnemies=true;teamScroll=Vector2.zero;}
+            int size=editingEnemies?Enemies:Allies;
+            teamScroll=GUI.BeginScrollView(new Rect(1078,420,338,206),teamScroll,new Rect(0,0,314,size*42));
+            for(int slot=0;slot<size;slot++)
+            {
+                int species=slot==0?(editingEnemies?enemySpecies:playerSpecies):(editingEnemies?foeSpecies:allySpecies)[slot-1];
+                if(Button(new Rect(0,slot*42,308,36),$"{slot+1}. {Species[species]}  ›"))OpenPicker(slot==0?(editingEnemies?1:0):(editingEnemies?20+slot-1:2+slot-1));
+            }
+            GUI.EndScrollView();
+            Text(1082,635,320,"Q switches allies · E changes focus. AI controls the other Pokémon.",small,43);
+            if(Button(new Rect(1068,685,348,34),clashDrill?"Stop clash drill":"Clash drill · current move slots"))StartClashDrill();
         }
         void StartClashDrill()
         {
@@ -148,12 +173,12 @@ namespace BattleLab
         }
         void TeamBattleUI()
         {
-            if(teamSize!=3)return;
-            Text(22,174,300,"YOUR TEAM · Q to switch",small);
+            if(Allies==1&&Enemies==1)return;
+            Text(22,160,300,"YOUR TEAM · Q to switch",small);
             int row=0;foreach(var f in fighters.Where(f=>f.team==0))
-                Text(22,201+row++*27,300,$"{(f==Player?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
+                Text(22,185+row++*17,300,$"{(f==Player?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
             Text(1110,134,300,"ENEMIES · E to target",small);row=0;
-            foreach(var f in fighters.Where(f=>f.team==1))Text(1110,164+row++*27,300,$"{(f==Target?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
+            foreach(var f in fighters.Where(f=>f.team==1))Text(1110,164+row++*17,300,$"{(f==Target?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
 
         }
         IEnumerator TeamSmokeRun()

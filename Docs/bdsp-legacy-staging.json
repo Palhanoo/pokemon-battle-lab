@@ -1,0 +1,106 @@
+[
+  {
+    "id": "BIND",
+    "state": "staged",
+    "sourceId": 20,
+    "models": 1
+  },
+  {
+    "id": "SUBMISSION",
+    "state": "staged",
+    "sourceId": 66,
+    "models": 0
+  },
+  {
+    "id": "EGG_BOMB",
+    "state": "staged",
+    "sourceId": 121,
+    "models": 0
+  },
+  {
+    "id": "HIGH_JUMP_KICK",
+    "state": "staged",
+    "sourceId": 136,
+    "models": 0
+  },
+  {
+    "id": "BUBBLE",
+    "state": "staged",
+    "sourceId": 145,
+    "models": 0
+  },
+  {
+    "id": "HYPER_FANG",
+    "state": "staged",
+    "sourceId": 158,
+    "models": 1
+  },
+  {
+    "id": "OCTAZOOKA",
+    "state": "staged",
+    "sourceId": 190,
+    "models": 0
+  },
+  {
+    "id": "PURSUIT",
+    "state": "staged",
+    "sourceId": 228,
+    "models": 0
+  },
+  {
+    "id": "VITAL_THROW",
+    "state": "staged",
+    "sourceId": 233,
+    "models": 0
+  },
+  {
+    "id": "HIDDEN_POWER",
+    "state": "staged",
+    "sourceId": 237,
+    "models": 0
+  },
+  {
+    "id": "REVENGE",
+    "state": "staged",
+    "sourceId": 279,
+    "models": 0
+  },
+  {
+    "id": "ICE_BALL",
+    "state": "staged",
+    "sourceId": 301,
+    "models": 0
+  },
+  {
+    "id": "ROCK_CLIMB",
+    "state": "staged",
+    "sourceId": 431,
+    "models": 0
+  },
+  {
+    "id": "CHATTER",
+    "state": "staged",
+    "sourceId": 448,
+    "models": 0
+  },
+  {
+    "id": "KARATE_CHOP",
+    "state": "blocked-native-layer",
+    "reason": "Required native model bundle absent from local effmodel archive: ew002_hand"
+  },
+  {
+    "id": "DOUBLE_SLAP",
+    "state": "blocked-native-layer",
+    "reason": "Required native model bundle absent from local effmodel archive: ew003_hand_right"
+  },
+  {
+    "id": "BONE_CLUB",
+    "state": "blocked-native-layer",
+    "reason": "Required native model bundle absent from local effmodel archive: ew125_at_bone01"
+  },
+  {
+    "id": "CONSTRICT",
+    "state": "blocked-native-layer",
+    "reason": "Required native model bundle absent from local effmodel archive: ew132_line01"
+  }
+]

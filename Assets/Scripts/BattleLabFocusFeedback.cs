@@ -33,6 +33,7 @@ namespace BattleLab
                 bool visible=at.z>0&&at.x>.09f&&at.x<.91f&&at.y>.2f&&at.y<.82f;
                 float x=Mathf.Clamp(at.x*1440,150,1290),y=Mathf.Clamp((1-at.y)*900,145,620);
                 if(at.z<0){x=at.x<.5f?1290:150;y=450;}
+                if(Enemies>1&&x>980)y=Mathf.Max(y,230+17*Enemies);
                 Text(x-130,y-32,260,(visible?"▼ FOCUS · ":"FOCUS → ")+target.data.id,small);
                 HealthBar(x-70,y,140,target);
             }

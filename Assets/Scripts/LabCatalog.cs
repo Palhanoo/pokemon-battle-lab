@@ -10,8 +10,8 @@ namespace BattleLab
     [Serializable] public class SpeciesData { public string id; public int[] stats; public string[] types, moves; }
     [Serializable] public class MoveData
     {
-        public string id, name, type, shape, source;
-        public int power, accuracy, pp, priority, zaPower;
+        public string id, name, type, shape, source, effectOrigin, labNotes;
+        public int power, accuracy, pp, priority, zaPower, hitCount;
         public bool physical;
         public float cooldown, windup, recovery, rangeMin, rangeMax, radius, speed;
     }

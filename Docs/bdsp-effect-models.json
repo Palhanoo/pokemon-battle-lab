@@ -59,5 +59,25 @@
     "vertices": 55,
     "unmappedMaterialTracks": [],
     "trailFallback": true
+  },
+  {
+    "file": "ew020_ringM/ew020_ringM.gfbmdl",
+    "bundle": "ew020_ringm",
+    "renderers": 4,
+    "tracks": 8,
+    "materialTracks": 0,
+    "vertices": 4116,
+    "unmappedMaterialTracks": [],
+    "trailFallback": false
+  },
+  {
+    "file": "cmn_locator/cmn_locator.gfbmdl",
+    "bundle": "cmn_locator",
+    "renderers": 1,
+    "tracks": 0,
+    "materialTracks": 0,
+    "vertices": 4,
+    "unmappedMaterialTracks": [],
+    "trailFallback": false
   }
 ]

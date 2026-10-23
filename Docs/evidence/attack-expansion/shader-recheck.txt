@@ -1,0 +1,12 @@
+Expanded source catalog is present in player
+Expanded-move review models loaded
+SLUDGE_BOMB/ZA: native playback, one damage event, finite tail and cleanup passed
+SLUDGE_BOMB/BDSP: native playback, one damage event, finite tail and cleanup passed
+DRAGON_PULSE/ZA: native playback, one damage event, finite tail and cleanup passed
+DRAGON_PULSE/BDSP: native playback, one damage event, finite tail and cleanup passed
+FLAMETHROWER/ZA: native playback, one damage event, finite tail and cleanup passed
+HYDRO_PUMP/ZA: native playback, one damage event, finite tail and cleanup passed
+ACID/ZA: native playback, one damage event, finite tail and cleanup passed
+SURF/ZA: native playback, one damage event, finite tail and cleanup passed
+AURORA_BEAM/ZA: native playback, one damage event, finite tail and cleanup passed
+Expanded catalog playback failures: 0

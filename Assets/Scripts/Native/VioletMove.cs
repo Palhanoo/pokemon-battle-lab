@@ -1,3 +1,4 @@
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,10 +91,28 @@ namespace BattleLab.Native
                 if (cmd == "Animation/SetTrigger" && p != null && VioletFx.J.Str(p, "Trigger") == "damage_trigger" && (mv.hitTime < 0 || st < mv.hitTime)) mv.hitTime = st;
                 if (cmd == "Title/Battle/AttackMotion" && (mv.attackTime < 0 || st < mv.attackTime)) mv.attackTime = st;
             }
+            // SV authored optional target copies and non-particle transform anchors.
+            // This presentation has one selected defender; never stack unused target copies at origin.
+            var definitions=VioletFx.J.List(js,"objects").Select(VioletFx.J.Obj).ToArray();
+            var placements=definitions.SelectMany(d=>VioletFx.J.List(d,"clips")).Select(VioletFx.J.Obj)
+                .Where(c=>VioletFx.J.Str(c,"cmd") is "GameObject/SetTranslation" or "GameObject/AttachTransform")
+                .Select(c=>VioletFx.J.Str(VioletFx.J.Obj(c["params"]),"Target")).ToArray();
+            string selectedAlias=placements.Contains("DEF")?null:placements.Where(n=>n.StartsWith("DEF")&&n.Length>3).OrderBy(n=>n).FirstOrDefault();
+            var existingNames=definitions.Select(d=>VioletFx.J.Str(d,"name")).ToHashSet();
+            foreach(var group in mv.actorClips.GroupBy(c=>VioletFx.J.Str(c,"object")))
+            {
+                if(!placements.Contains(group.Key)||existingNames.Contains(group.Key)||group.Key=="ATK"||group.Key.StartsWith("DEF")||string.IsNullOrEmpty(group.Key))continue;
+                var anchor=new GameObject(group.Key);anchor.transform.SetParent(go.transform,false);
+                mv.objs.Add(new Obj{name=group.Key,set="",fx=anchor,clips=group.ToList()});
+            }
             float first = float.MaxValue, last = 0;
             foreach (var o in VioletFx.J.List(js, "objects"))
             {
                 var od = VioletFx.J.Obj(o);
+                var numbered=VioletFx.J.List(od,"clips").Select(VioletFx.J.Obj)
+                    .Where(c=>VioletFx.J.Str(c,"cmd") is "GameObject/SetTranslation" or "GameObject/AttachTransform")
+                    .Select(c=>VioletFx.J.Str(VioletFx.J.Obj(c["params"]),"Target")).Where(n=>n.StartsWith("DEF")&&n.Length>3).ToArray();
+                if(numbered.Length>0&&!numbered.Contains(selectedAlias))continue;
                 var obj = new Obj { name = VioletFx.J.Str(od, "name"),set=VioletFx.J.Str(od,"set") };
                 if (keep != null && !keep(obj.name)) continue;
                 var set = setJson(VioletFx.J.Str(od, "set"));
@@ -106,7 +125,7 @@ namespace BattleLab.Native
                     var cd = VioletFx.J.Obj(c);
                     obj.clips.Add(cd);
                     string cmd = VioletFx.J.Str(cd, "cmd");
-                    if (cmd == "Particle/Emit") { first = Mathf.Min(first, VioletFx.J.F(cd, "start")); mv.lastEmit = Mathf.Max(mv.lastEmit, VioletFx.J.F(cd, "start")); }
+                    if (cmd == "Particle/Emit" || cmd == "Particle/EmitLoop") { first = Mathf.Min(first, VioletFx.J.F(cd, "start")); mv.lastEmit = Mathf.Max(mv.lastEmit, VioletFx.J.F(cd, "start")); }
                     if (cmd == "Particle/Stop" || cmd.StartsWith("GameObject/")) last = Mathf.Max(last, VioletFx.J.F(cd, "end"));
                 }
                 // size adjustments before scale clips, placement before emission on the same frame
@@ -265,7 +284,7 @@ namespace BattleLab.Native
                     o.fx.transform.localScale=Vector3.one*Mathf.Clamp(attacker.height*.2f,.2f,.6f);
                 if((LabMove=="BLAZE_KICK"||LabMove=="DRAGON_CLAW")&&o.name=="bullet1")
                 {o.fx.transform.position=defender.Center;var facing=defender.Center-attacker.Center;if(facing.sqrMagnitude>.001f)o.fx.transform.rotation=Quaternion.LookRotation(facing);}
-                if(LabMove=="MUDDY_WATER"&&o.name.StartsWith("bullet"))
+                if((LabMove=="MUDDY_WATER"||LabMove=="SURF")&&o.name.StartsWith("bullet"))
                 {var f=defender.root.position-attacker.root.position;f.y=0;if(f.sqrMagnitude>.001f)o.fx.transform.rotation=Quaternion.LookRotation(f);}
                 if(LabMove=="EARTHQUAKE"&&o.name=="bullet0")
                 {o.fx.transform.position=attacker.root.position;o.fx.transform.rotation=Quaternion.LookRotation(attacker.Forward,Vector3.up);}
@@ -319,6 +338,7 @@ namespace BattleLab.Native
             var tr = o.fx.transform;
             switch (VioletFx.J.Str(c, "cmd"))
             {
+                case "Particle/EmitLoop":
                 case "Particle/Emit":
                     if (begins)
                     {
@@ -327,6 +347,7 @@ namespace BattleLab.Native
                         else VioletFx.Play(o.fx);
                         o.playing = true;
                     }
+                    if(VioletFx.J.Str(c,"cmd")=="Particle/EmitLoop"&&now>=e)VioletFx.Stop(o.fx,!VioletFx.J.B(p,"Kill"));
                     break;
                 case "Particle/Stop":
                     if (begins) VioletFx.Stop(o.fx, !VioletFx.J.B(p, "Kill"));
@@ -373,6 +394,22 @@ namespace BattleLab.Native
                         tr.rotation = Quaternion.LookRotation(dir) * Quaternion.Euler(-VioletFx.J.F(p, "OffsetRotateX"), -VioletFx.J.F(p, "OffsetRotateY"), 0);
                     break;
                 }
+                case "GameObject/SetRotationFront":
+                {
+                    string name=VioletFx.J.Str(p,"Target");var target=Side(name);var carrier=objs.Find(x=>x.name==name);
+                    var direction=target!=null?target.Forward:carrier!=null?carrier.fx.transform.position-carrier.previousPosition:attacker.Forward;
+                    if(VioletFx.J.F(p,"AxisType")>=1)direction.y=0;
+                    if(direction.sqrMagnitude>.00001f)tr.rotation=Quaternion.LookRotation(direction)*Quaternion.Euler(-VioletFx.J.F(p,"OffsetRotateX"),-VioletFx.J.F(p,"OffsetRotateY"),0);
+                    break;
+                }
+                case "GameObject/DisableCulling":
+                    if(begins)foreach(var ps in o.fx.GetComponentsInChildren<ParticleSystem>(true))
+                    {
+                        var main=ps.main;main.cullingMode=ParticleSystemCullingMode.AlwaysSimulate;
+                        // A native hammer can extend far beyond its emitter's small origin bounds.
+                        ps.GetComponent<ParticleSystemRenderer>().localBounds=new Bounds(Vector3.zero,Vector3.one*200);
+                    }
+                    break;
                 case "GameObject/SetRotationByTarget":
                 {
                     var target = Side(VioletFx.J.Str(p, "Target"));
@@ -406,6 +443,22 @@ namespace BattleLab.Native
                     // The battle lab's floor is y=0. Native ray endpoints locate this same surface.
                     tr.position=new Vector3(tr.position.x,0,tr.position.z);
                     break;
+                case "Title/Battle/AdjustScale":
+                    if(begins){adjust[o]=effectScale*(p.ContainsKey("Scale")?VioletFx.J.F(p,"Scale"):1);tr.localScale=Vector3.one*adjust[o];}
+                    break;
+                case "GameObject/SetLengthScale":
+                {
+                    var target=Side(VioletFx.J.Str(p,"Target"));if(target==null)break;
+                    float length=Vector3.Distance(tr.position,Node(target,VioletFx.J.Str(p,"Node")))/Mathf.Max(.001f,(p.ContainsKey("BaseLength")?VioletFx.J.F(p,"BaseLength"):1));
+                    var scale=tr.localScale;
+                    if(VioletFx.J.B(p,"X"))scale.x=length;if(VioletFx.J.B(p,"Y"))scale.y=length;if(VioletFx.J.B(p,"Z"))scale.z=length;
+                    tr.localScale=scale;break;
+                }
+                case "Title/Battle/SetCenterPosition":
+                    // Native battle-center effects attach to the flat arena midpoint.
+                    tr.position=(attacker.root.position+defender.root.position)*.5f;
+                    tr.position=new Vector3(tr.position.x,0,tr.position.z);
+                    break;
                 case "Title/Battle/AdjustScaleTarget":
                 {
                     var target = Side(VioletFx.J.Str(p, "Target"));
@@ -425,7 +478,16 @@ namespace BattleLab.Native
         readonly Dictionary<Obj, Vector3> scaleFrom = new Dictionary<Obj, Vector3>();
         readonly Dictionary<Obj, float> adjust = new Dictionary<Obj, float>();
 
-        Battler Side(string s) => s == "ATK" ? attacker : s == "DEF" ? defender : null;
+        readonly Dictionary<string,Battler> anchorBindings=new();
+        Battler Side(string s)
+        {
+            if(s=="ATK")return attacker;
+            if(s=="DEF"||s.StartsWith("DEF")&&int.TryParse(s.Substring(3),out _))return defender;
+            if(anchorBindings.TryGetValue(s,out var cached))return cached;
+            var anchor=string.IsNullOrEmpty(s)||s=="0"?transform:objs.Find(o=>o.name==s)?.fx.transform;
+            if(!anchor)return null;
+            var result=new Battler{root=anchor,height=1,radius=.1f,scale=1,center=()=>anchor.position};anchorBindings[s]=result;return result;
+        }
 
         // Violet's effect locators, approximated.
         public static Vector3 Node(Battler b, string node)

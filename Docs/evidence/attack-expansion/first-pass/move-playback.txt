@@ -1,0 +1,130 @@
+2v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Enemy team defeat ends fight
+2v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Enemy team defeat ends fight
+3v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+3v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v1: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v2: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v6: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v12: exact independent rosters load
+Every living ally controllable once per cycle
+Every living enemy focusable
+One ally faint does not end the fight
+Control hands off to surviving ally
+Enemy team defeat ends fight
+6v12 autonomous fighters approach and resolve attacks
+Large-team reset clears damage and effect tails
+Expanded-move review models loaded
+QUICK_ATTACK/ZA: native playback, one damage event, finite tail and cleanup passed
+QUICK_ATTACK/BDSP: FAIL Unsupported effect material
+THUNDERBOLT/ZA: native playback, one damage event, finite tail and cleanup passed
+THUNDERBOLT/BDSP: FAIL Unsupported effect material
+IRON_TAIL/ZA: native playback, one damage event, finite tail and cleanup passed
+IRON_TAIL/BDSP: FAIL Unsupported effect material
+THUNDER/ZA: native playback, one damage event, finite tail and cleanup passed
+THUNDER/BDSP: FAIL Unsupported effect material
+SPARK/ZA: native playback, one damage event, finite tail and cleanup passed
+SPARK/BDSP: FAIL Unsupported effect material
+DISCHARGE/ZA: native playback, one damage event, finite tail and cleanup passed
+DISCHARGE/BDSP: FAIL Unsupported effect material
+SHADOW_BALL/ZA: native playback, one damage event, finite tail and cleanup passed
+SHADOW_BALL/BDSP: FAIL Unsupported effect material
+DARK_PULSE/ZA: native playback, one damage event, finite tail and cleanup passed
+DARK_PULSE/BDSP: FAIL Unsupported effect material
+SLUDGE_BOMB/ZA: native playback, one damage event, finite tail and cleanup passed
+SLUDGE_BOMB/BDSP: FAIL Unsupported effect material
+LICK/ZA: native playback, one damage event, finite tail and cleanup passed
+LICK/BDSP: FAIL Unsupported effect material
+PSYCHIC/ZA: native playback, one damage event, finite tail and cleanup passed
+PSYCHIC/BDSP: FAIL Unsupported effect material
+AURA_SPHERE/ZA: native playback, one damage event, finite tail and cleanup passed
+AURA_SPHERE/BDSP: FAIL Unsupported effect material
+METAL_CLAW/ZA: native playback, one damage event, finite tail and cleanup passed
+METAL_CLAW/BDSP: FAIL Unsupported effect material
+DRAGON_PULSE/ZA: native playback, one damage event, finite tail and cleanup passed
+DRAGON_PULSE/BDSP: FAIL Unsupported effect material
+BULLET_PUNCH/ZA: native playback, one damage event, finite tail and cleanup passed
+BULLET_PUNCH/BDSP: FAIL Unsupported effect material
+CLOSE_COMBAT/ZA: native playback, one damage event, finite tail and cleanup passed
+CLOSE_COMBAT/BDSP: FAIL Unsupported effect material
+LEAF_BLADE/ZA: native playback, one damage event, finite tail and cleanup passed
+ENERGY_BALL/ZA: native playback, one damage event, finite tail and cleanup passed
+LEAF_STORM/ZA: native playback, one damage event, finite tail and cleanup passed
+ABSORB/ZA: native playback, one damage event, finite tail and cleanup passed
+GIGA_DRAIN/ZA: native playback, one damage event, finite tail and cleanup passed
+GIGA_DRAIN/BDSP: FAIL Unsupported effect material
+SLASH/ZA: native playback, one damage event, finite tail and cleanup passed
+EMBER/ZA: native playback, one damage event, finite tail and cleanup passed
+FLAMETHROWER/ZA: native playback, one damage event, finite tail and cleanup passed
+PECK/ZA: native playback, one damage event, finite tail and cleanup passed
+FIRE_SPIN/ZA: native playback, one damage event, finite tail and cleanup passed
+AERIAL_ACE/ZA: native playback, one damage event, finite tail and cleanup passed
+TACKLE/ZA: native playback, one damage event, finite tail and cleanup passed
+WATER_GUN/ZA: native playback, one damage event, finite tail and cleanup passed
+WATER_PULSE/ZA: native playback, one damage event, finite tail and cleanup passed
+MUD_SHOT/ZA: native playback, one damage event, finite tail and cleanup passed
+ROCK_THROW/ZA: native playback, one damage event, finite tail and cleanup passed
+HYDRO_PUMP/ZA: native playback, one damage event, finite tail and cleanup passed
+CONFUSION/ZA: native playback, one damage event, finite tail and cleanup passed
+PSYBEAM/ZA: native playback, one damage event, finite tail and cleanup passed
+DISARMING_VOICE/ZA: native playback, one damage event, finite tail and cleanup passed
+DRAINING_KISS/ZA: native playback, one damage event, finite tail and cleanup passed
+BITE/ZA: native playback, one damage event, finite tail and cleanup passed
+CRUNCH/ZA: native playback, one damage event, finite tail and cleanup passed
+DIG/ZA: native playback, one damage event, finite tail and cleanup passed
+TAKE_DOWN/ZA: native playback, one damage event, finite tail and cleanup passed
+PLAY_ROUGH/ZA: native playback, one damage event, finite tail and cleanup passed
+MACH_PUNCH/ZA: native playback, one damage event, finite tail and cleanup passed
+MACH_PUNCH/BDSP: FAIL Unsupported effect material
+BRICK_BREAK/ZA: native playback, one damage event, finite tail and cleanup passed
+BRICK_BREAK/BDSP: FAIL Unsupported effect material
+SEED_BOMB/ZA: native playback, one damage event, finite tail and cleanup passed
+SEED_BOMB/BDSP: FAIL Unsupported effect material
+ROCK_TOMB/ZA: native playback, one damage event, finite tail and cleanup passed
+ROCK_TOMB/BDSP: FAIL Unsupported effect material
+DRAIN_PUNCH/ZA: native playback, one damage event, finite tail and cleanup passed
+DRAIN_PUNCH/BDSP: FAIL Unsupported effect material
+BLAZE_KICK/ZA: native playback, one damage event, finite tail and cleanup passed
+BLAZE_KICK/BDSP: FAIL Unsupported effect material
+MUDDY_WATER/ZA: native playback, one damage event, finite tail and cleanup passed
+MUDDY_WATER/BDSP: FAIL Unsupported effect material
+ICE_BEAM/ZA: native playback, one damage event, finite tail and cleanup passed
+ICE_BEAM/BDSP: FAIL Unsupported effect material
+DRAGON_CLAW/ZA: native playback, one damage event, finite tail and cleanup passed
+DRAGON_CLAW/BDSP: FAIL Unsupported effect material
+ROCK_SLIDE/ZA: native playback, one damage event, finite tail and cleanup passed
+ROCK_SLIDE/BDSP: FAIL Unsupported effect material
+EARTHQUAKE/ZA: native playback, one damage event, finite tail and cleanup passed
+EARTHQUAKE/BDSP: FAIL Unsupported effect material

@@ -1,0 +1,12 @@
+エフェクト_ヒット/ew280_hit=0
+ew280_hit/bashi=12
+ew280_hit/ring=1
+ew280_hit/hit_mark=1
+ew280_hit/kona=40
+ew280_hit/glow=1
+ew280_hit/ring2=1
+エフェクト_多段ヒット/ew280_hit_many=0
+ew280_hit_many/wind_r=6
+ew280_hit_many/glow=1
+ew280_hit_many/wind_l=6
+ew280_hit_many/tail=1

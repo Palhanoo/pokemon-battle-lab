@@ -35,7 +35,7 @@ namespace BattleLab
         {
             if(inspect)yield break;
             var names=new List<string>{Species[playerSpecies],Species[enemySpecies]};
-            if(teamSize==3&&mode==BattleMode.ZA)names.AddRange(allySpecies.Concat(foeSpecies).Select(i=>Species[i]));
+            if(mode==BattleMode.ZA)names.AddRange(allySpecies.Take(Allies-1).Concat(foeSpecies.Take(Enemies-1)).Select(i=>Species[i]));
             foreach(var name in names.Distinct()){var form=SelectedForm(name);if(form!=null)yield return megaModels[form.id];}
         }
         void FormSetupUI()

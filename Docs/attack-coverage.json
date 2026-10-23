@@ -1,0 +1,5634 @@
+{
+  "playable": 487,
+  "added": [],
+  "counts": {
+    "playable": 487,
+    "missing-native-presentation-or-timing": 95,
+    "needs-special-mechanics": 355
+  },
+  "scope": "Native damage presentations using the lab direct-damage baseline. Visual review tracked separately. Status, fixed-damage and absent effects remain gaps.",
+  "moves": [
+    {
+      "id": "POUND",
+      "sourceId": 1,
+      "presentation": "ew0001",
+      "state": "playable"
+    },
+    {
+      "id": "KARATE_CHOP",
+      "sourceId": 2,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "DOUBLE_SLAP",
+      "sourceId": 3,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "COMET_PUNCH",
+      "sourceId": 4,
+      "presentation": "zaew0004",
+      "state": "playable"
+    },
+    {
+      "id": "MEGA_PUNCH",
+      "sourceId": 5,
+      "presentation": "ew0005",
+      "state": "playable"
+    },
+    {
+      "id": "PAY_DAY",
+      "sourceId": 6,
+      "presentation": "zaew0006",
+      "state": "playable"
+    },
+    {
+      "id": "FIRE_PUNCH",
+      "sourceId": 7,
+      "presentation": "zaew0007",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_PUNCH",
+      "sourceId": 8,
+      "presentation": "zaew0008",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDER_PUNCH",
+      "sourceId": 9,
+      "presentation": "zaew0009",
+      "state": "playable"
+    },
+    {
+      "id": "SCRATCH",
+      "sourceId": 10,
+      "presentation": "ew0010",
+      "state": "playable"
+    },
+    {
+      "id": "VICE_GRIP",
+      "sourceId": 11,
+      "presentation": "ew0011",
+      "state": "playable"
+    },
+    {
+      "id": "GUILLOTINE",
+      "sourceId": 12,
+      "presentation": "ew0012",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RAZOR_WIND",
+      "sourceId": 13,
+      "presentation": "zaew0013",
+      "state": "playable"
+    },
+    {
+      "id": "SWORDS_DANCE",
+      "sourceId": 14,
+      "presentation": "zaew0014",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CUT",
+      "sourceId": 15,
+      "presentation": "ew0015",
+      "state": "playable"
+    },
+    {
+      "id": "GUST",
+      "sourceId": 16,
+      "presentation": "zaew0016",
+      "state": "playable"
+    },
+    {
+      "id": "WING_ATTACK",
+      "sourceId": 17,
+      "presentation": "zaew0017",
+      "state": "playable"
+    },
+    {
+      "id": "WHIRLWIND",
+      "sourceId": 18,
+      "presentation": "zaew0018",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLY",
+      "sourceId": 19,
+      "presentation": "zaew0019",
+      "state": "playable"
+    },
+    {
+      "id": "BIND",
+      "sourceId": 20,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "SLAM",
+      "sourceId": 21,
+      "presentation": "ew0021",
+      "state": "playable"
+    },
+    {
+      "id": "VINE_WHIP",
+      "sourceId": 22,
+      "presentation": "zaew0022",
+      "state": "playable"
+    },
+    {
+      "id": "STOMP",
+      "sourceId": 23,
+      "presentation": "ew0023",
+      "state": "playable"
+    },
+    {
+      "id": "DOUBLE_KICK",
+      "sourceId": 24,
+      "presentation": "ew0024",
+      "state": "playable"
+    },
+    {
+      "id": "MEGA_KICK",
+      "sourceId": 25,
+      "presentation": "ew0025",
+      "state": "playable"
+    },
+    {
+      "id": "JUMP_KICK",
+      "sourceId": 26,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "ROLLING_KICK",
+      "sourceId": 27,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SAND_ATTACK",
+      "sourceId": 28,
+      "presentation": "ew0028",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEADBUTT",
+      "sourceId": 29,
+      "presentation": "zaew0029",
+      "state": "playable"
+    },
+    {
+      "id": "HORN_ATTACK",
+      "sourceId": 30,
+      "presentation": "ew0030",
+      "state": "playable"
+    },
+    {
+      "id": "FURY_ATTACK",
+      "sourceId": 31,
+      "presentation": "ew0031",
+      "state": "playable"
+    },
+    {
+      "id": "HORN_DRILL",
+      "sourceId": 32,
+      "presentation": "ew0032",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TACKLE",
+      "sourceId": 33,
+      "presentation": "zaew0033",
+      "state": "playable"
+    },
+    {
+      "id": "BODY_SLAM",
+      "sourceId": 34,
+      "presentation": "zaew0034",
+      "state": "playable"
+    },
+    {
+      "id": "WRAP",
+      "sourceId": 35,
+      "presentation": "ew0035",
+      "state": "playable"
+    },
+    {
+      "id": "TAKE_DOWN",
+      "sourceId": 36,
+      "presentation": "zaew0036",
+      "state": "playable"
+    },
+    {
+      "id": "THRASH",
+      "sourceId": 37,
+      "presentation": "ew0037",
+      "state": "playable"
+    },
+    {
+      "id": "DOUBLE_EDGE",
+      "sourceId": 38,
+      "presentation": "zaew0038",
+      "state": "playable"
+    },
+    {
+      "id": "TAIL_WHIP",
+      "sourceId": 39,
+      "presentation": "zaew0039",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POISON_STING",
+      "sourceId": 40,
+      "presentation": "zaew0040",
+      "state": "playable"
+    },
+    {
+      "id": "TWINEEDLE",
+      "sourceId": 41,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PIN_MISSILE",
+      "sourceId": 42,
+      "presentation": "zaew0042",
+      "state": "playable"
+    },
+    {
+      "id": "LEER",
+      "sourceId": 43,
+      "presentation": "zaew0043",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BITE",
+      "sourceId": 44,
+      "presentation": "zaew0044",
+      "state": "playable"
+    },
+    {
+      "id": "GROWL",
+      "sourceId": 45,
+      "presentation": "zaew0045",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROAR",
+      "sourceId": 46,
+      "presentation": "zaew0046",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SING",
+      "sourceId": 47,
+      "presentation": "zaew0047",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUPERSONIC",
+      "sourceId": 48,
+      "presentation": "zaew0048",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SONIC_BOOM",
+      "sourceId": 49,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DISABLE",
+      "sourceId": 50,
+      "presentation": "ew0050",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACID",
+      "sourceId": 51,
+      "presentation": "ew0051",
+      "state": "playable"
+    },
+    {
+      "id": "EMBER",
+      "sourceId": 52,
+      "presentation": "zaew0052",
+      "state": "playable"
+    },
+    {
+      "id": "FLAMETHROWER",
+      "sourceId": 53,
+      "presentation": "zaew0053",
+      "state": "playable"
+    },
+    {
+      "id": "MIST",
+      "sourceId": 54,
+      "presentation": "zaew0054",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WATER_GUN",
+      "sourceId": 55,
+      "presentation": "zaew0055",
+      "state": "playable"
+    },
+    {
+      "id": "HYDRO_PUMP",
+      "sourceId": 56,
+      "presentation": "zaew0056",
+      "state": "playable"
+    },
+    {
+      "id": "SURF",
+      "sourceId": 57,
+      "presentation": "zaew0057",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_BEAM",
+      "sourceId": 58,
+      "presentation": "zaew0058",
+      "state": "playable"
+    },
+    {
+      "id": "BLIZZARD",
+      "sourceId": 59,
+      "presentation": "zaew0059",
+      "state": "playable"
+    },
+    {
+      "id": "PSYBEAM",
+      "sourceId": 60,
+      "presentation": "zaew0060",
+      "state": "playable"
+    },
+    {
+      "id": "BUBBLE_BEAM",
+      "sourceId": 61,
+      "presentation": "zaew0061",
+      "state": "playable"
+    },
+    {
+      "id": "AURORA_BEAM",
+      "sourceId": 62,
+      "presentation": "ew0062",
+      "state": "playable"
+    },
+    {
+      "id": "HYPER_BEAM",
+      "sourceId": 63,
+      "presentation": "zaew0063",
+      "state": "playable"
+    },
+    {
+      "id": "PECK",
+      "sourceId": 64,
+      "presentation": "zaew0064",
+      "state": "playable"
+    },
+    {
+      "id": "DRILL_PECK",
+      "sourceId": 65,
+      "presentation": "ew0065",
+      "state": "playable"
+    },
+    {
+      "id": "SUBMISSION",
+      "sourceId": 66,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "LOW_KICK",
+      "sourceId": 67,
+      "presentation": "ew0067",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "COUNTER",
+      "sourceId": 68,
+      "presentation": "ew0068",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SEISMIC_TOSS",
+      "sourceId": 69,
+      "presentation": "ew0069",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STRENGTH",
+      "sourceId": 70,
+      "presentation": "ew0070",
+      "state": "playable"
+    },
+    {
+      "id": "ABSORB",
+      "sourceId": 71,
+      "presentation": "zaew0071",
+      "state": "playable"
+    },
+    {
+      "id": "MEGA_DRAIN",
+      "sourceId": 72,
+      "presentation": "ew0072",
+      "state": "playable"
+    },
+    {
+      "id": "LEECH_SEED",
+      "sourceId": 73,
+      "presentation": "zaew0073",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GROWTH",
+      "sourceId": 74,
+      "presentation": "zaew0074",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RAZOR_LEAF",
+      "sourceId": 75,
+      "presentation": "zaew0075",
+      "state": "playable"
+    },
+    {
+      "id": "SOLAR_BEAM",
+      "sourceId": 76,
+      "presentation": "zaew0076",
+      "state": "playable"
+    },
+    {
+      "id": "POISON_POWDER",
+      "sourceId": 77,
+      "presentation": "zaew0077",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STUN_SPORE",
+      "sourceId": 78,
+      "presentation": "zaew0078",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SLEEP_POWDER",
+      "sourceId": 79,
+      "presentation": "zaew0079",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PETAL_DANCE",
+      "sourceId": 80,
+      "presentation": "zaew0080",
+      "state": "playable"
+    },
+    {
+      "id": "STRING_SHOT",
+      "sourceId": 81,
+      "presentation": "zaew0081",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRAGON_RAGE",
+      "sourceId": 82,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FIRE_SPIN",
+      "sourceId": 83,
+      "presentation": "zaew0083",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDER_SHOCK",
+      "sourceId": 84,
+      "presentation": "zaew0084",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDERBOLT",
+      "sourceId": 85,
+      "presentation": "zaew0085",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDER_WAVE",
+      "sourceId": 86,
+      "presentation": "zaew0086",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "THUNDER",
+      "sourceId": 87,
+      "presentation": "zaew0087",
+      "state": "playable"
+    },
+    {
+      "id": "ROCK_THROW",
+      "sourceId": 88,
+      "presentation": "zaew0088",
+      "state": "playable"
+    },
+    {
+      "id": "EARTHQUAKE",
+      "sourceId": 89,
+      "presentation": "zaew0089",
+      "state": "playable"
+    },
+    {
+      "id": "FISSURE",
+      "sourceId": 90,
+      "presentation": "zaew0090",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DIG",
+      "sourceId": 91,
+      "presentation": "zaew0091",
+      "state": "playable"
+    },
+    {
+      "id": "TOXIC",
+      "sourceId": 92,
+      "presentation": "zaew0092",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONFUSION",
+      "sourceId": 93,
+      "presentation": "zaew0093",
+      "state": "playable"
+    },
+    {
+      "id": "PSYCHIC",
+      "sourceId": 94,
+      "presentation": "zaew0094",
+      "state": "playable"
+    },
+    {
+      "id": "HYPNOSIS",
+      "sourceId": 95,
+      "presentation": "zaew0095",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MEDITATE",
+      "sourceId": 96,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AGILITY",
+      "sourceId": 97,
+      "presentation": "zaew0097",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "QUICK_ATTACK",
+      "sourceId": 98,
+      "presentation": "zaew0098",
+      "state": "playable"
+    },
+    {
+      "id": "RAGE",
+      "sourceId": 99,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "TELEPORT",
+      "sourceId": 100,
+      "presentation": "zaew0100",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NIGHT_SHADE",
+      "sourceId": 101,
+      "presentation": "ew0101",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MIMIC",
+      "sourceId": 102,
+      "presentation": "zaew0102",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SCREECH",
+      "sourceId": 103,
+      "presentation": "zaew0103",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DOUBLE_TEAM",
+      "sourceId": 104,
+      "presentation": "zaew0104",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RECOVER",
+      "sourceId": 105,
+      "presentation": "zaew0105",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HARDEN",
+      "sourceId": 106,
+      "presentation": "zaew0106",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MINIMIZE",
+      "sourceId": 107,
+      "presentation": "ew0107",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SMOKESCREEN",
+      "sourceId": 108,
+      "presentation": "zaew0108",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONFUSE_RAY",
+      "sourceId": 109,
+      "presentation": "zaew0109",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WITHDRAW",
+      "sourceId": 110,
+      "presentation": "ew0110",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DEFENSE_CURL",
+      "sourceId": 111,
+      "presentation": "ew0111",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BARRIER",
+      "sourceId": 112,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LIGHT_SCREEN",
+      "sourceId": 113,
+      "presentation": "zaew0113",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HAZE",
+      "sourceId": 114,
+      "presentation": "zaew0114",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "REFLECT",
+      "sourceId": 115,
+      "presentation": "zaew0115",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FOCUS_ENERGY",
+      "sourceId": 116,
+      "presentation": "zaew0116",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BIDE",
+      "sourceId": 117,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "METRONOME",
+      "sourceId": 118,
+      "presentation": "zaew0118",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MIRROR_MOVE",
+      "sourceId": 119,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SELF_DESTRUCT",
+      "sourceId": 120,
+      "presentation": "zaew0120",
+      "state": "playable"
+    },
+    {
+      "id": "EGG_BOMB",
+      "sourceId": 121,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "LICK",
+      "sourceId": 122,
+      "presentation": "zaew0122",
+      "state": "playable"
+    },
+    {
+      "id": "SMOG",
+      "sourceId": 123,
+      "presentation": "ew0123",
+      "state": "playable"
+    },
+    {
+      "id": "SLUDGE",
+      "sourceId": 124,
+      "presentation": "ew0124",
+      "state": "playable"
+    },
+    {
+      "id": "BONE_CLUB",
+      "sourceId": 125,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FIRE_BLAST",
+      "sourceId": 126,
+      "presentation": "zaew0126",
+      "state": "playable"
+    },
+    {
+      "id": "WATERFALL",
+      "sourceId": 127,
+      "presentation": "zaew0127",
+      "state": "playable"
+    },
+    {
+      "id": "CLAMP",
+      "sourceId": 128,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SWIFT",
+      "sourceId": 129,
+      "presentation": "zaew0129",
+      "state": "playable"
+    },
+    {
+      "id": "SKULL_BASH",
+      "sourceId": 130,
+      "presentation": "zaew0130",
+      "state": "playable"
+    },
+    {
+      "id": "SPIKE_CANNON",
+      "sourceId": 131,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "CONSTRICT",
+      "sourceId": 132,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "AMNESIA",
+      "sourceId": 133,
+      "presentation": "zaew0133",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "KINESIS",
+      "sourceId": 134,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SOFT_BOILED",
+      "sourceId": 135,
+      "presentation": "ew0135",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HIGH_JUMP_KICK",
+      "sourceId": 136,
+      "presentation": "ew0136",
+      "state": "playable"
+    },
+    {
+      "id": "GLARE",
+      "sourceId": 137,
+      "presentation": "zaew0137",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DREAM_EATER",
+      "sourceId": 138,
+      "presentation": "zaew0138",
+      "state": "playable"
+    },
+    {
+      "id": "POISON_GAS",
+      "sourceId": 139,
+      "presentation": "ew0139",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BARRAGE",
+      "sourceId": 140,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "LEECH_LIFE",
+      "sourceId": 141,
+      "presentation": "zaew0141",
+      "state": "playable"
+    },
+    {
+      "id": "LOVELY_KISS",
+      "sourceId": 142,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SKY_ATTACK",
+      "sourceId": 143,
+      "presentation": "zaew0143",
+      "state": "playable"
+    },
+    {
+      "id": "TRANSFORM",
+      "sourceId": 144,
+      "presentation": "ew0144",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BUBBLE",
+      "sourceId": 145,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "DIZZY_PUNCH",
+      "sourceId": 146,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SPORE",
+      "sourceId": 147,
+      "presentation": "zaew0147",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLASH",
+      "sourceId": 148,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PSYWAVE",
+      "sourceId": 149,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPLASH",
+      "sourceId": 150,
+      "presentation": "ew0150",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACID_ARMOR",
+      "sourceId": 151,
+      "presentation": "zaew0151",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CRABHAMMER",
+      "sourceId": 152,
+      "presentation": "ew0152",
+      "state": "playable"
+    },
+    {
+      "id": "EXPLOSION",
+      "sourceId": 153,
+      "presentation": "zaew0153",
+      "state": "playable"
+    },
+    {
+      "id": "FURY_SWIPES",
+      "sourceId": 154,
+      "presentation": "ew0154",
+      "state": "playable"
+    },
+    {
+      "id": "BONEMERANG",
+      "sourceId": 155,
+      "presentation": "zaew0155",
+      "state": "playable"
+    },
+    {
+      "id": "REST",
+      "sourceId": 156,
+      "presentation": "ew0156",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROCK_SLIDE",
+      "sourceId": 157,
+      "presentation": "zaew0157",
+      "state": "playable"
+    },
+    {
+      "id": "HYPER_FANG",
+      "sourceId": 158,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "SHARPEN",
+      "sourceId": 159,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONVERSION",
+      "sourceId": 160,
+      "presentation": "zaew0160",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRI_ATTACK",
+      "sourceId": 161,
+      "presentation": "zaew0161",
+      "state": "playable"
+    },
+    {
+      "id": "SUPER_FANG",
+      "sourceId": 162,
+      "presentation": "zaew0162",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SLASH",
+      "sourceId": 163,
+      "presentation": "zaew0163",
+      "state": "playable"
+    },
+    {
+      "id": "SUBSTITUTE",
+      "sourceId": 164,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STRUGGLE",
+      "sourceId": 165,
+      "presentation": "ew0165",
+      "state": "playable"
+    },
+    {
+      "id": "SKETCH",
+      "sourceId": 166,
+      "presentation": "ew0166",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRIPLE_KICK",
+      "sourceId": 167,
+      "presentation": "ew0167",
+      "state": "playable"
+    },
+    {
+      "id": "THIEF",
+      "sourceId": 168,
+      "presentation": "ew0168",
+      "state": "playable"
+    },
+    {
+      "id": "SPIDER_WEB",
+      "sourceId": 169,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MIND_READER",
+      "sourceId": 170,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NIGHTMARE",
+      "sourceId": 171,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLAME_WHEEL",
+      "sourceId": 172,
+      "presentation": "zaew0172",
+      "state": "playable"
+    },
+    {
+      "id": "SNORE",
+      "sourceId": 173,
+      "presentation": "ew0173",
+      "state": "playable"
+    },
+    {
+      "id": "CURSE",
+      "sourceId": 174,
+      "presentation": "zaew0174",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLAIL",
+      "sourceId": 175,
+      "presentation": "ew0175",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONVERSION_2",
+      "sourceId": 176,
+      "presentation": "zaew0176",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AEROBLAST",
+      "sourceId": 177,
+      "presentation": "ew0177",
+      "state": "playable"
+    },
+    {
+      "id": "COTTON_SPORE",
+      "sourceId": 178,
+      "presentation": "ew0178",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "REVERSAL",
+      "sourceId": 179,
+      "presentation": "ew0179",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPITE",
+      "sourceId": 180,
+      "presentation": "ew0180",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POWDER_SNOW",
+      "sourceId": 181,
+      "presentation": "ew0181",
+      "state": "playable"
+    },
+    {
+      "id": "PROTECT",
+      "sourceId": 182,
+      "presentation": "zaew0182",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MACH_PUNCH",
+      "sourceId": 183,
+      "presentation": "zaew0183",
+      "state": "playable"
+    },
+    {
+      "id": "SCARY_FACE",
+      "sourceId": 184,
+      "presentation": "ew0184",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FEINT_ATTACK",
+      "sourceId": 185,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SWEET_KISS",
+      "sourceId": 186,
+      "presentation": "ew0186",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BELLY_DRUM",
+      "sourceId": 187,
+      "presentation": "ew0187",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SLUDGE_BOMB",
+      "sourceId": 188,
+      "presentation": "zaew0188",
+      "state": "playable"
+    },
+    {
+      "id": "MUD_SLAP",
+      "sourceId": 189,
+      "presentation": "ew0189",
+      "state": "playable"
+    },
+    {
+      "id": "OCTAZOOKA",
+      "sourceId": 190,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "SPIKES",
+      "sourceId": 191,
+      "presentation": "zaew0191",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ZAP_CANNON",
+      "sourceId": 192,
+      "presentation": "zaew0192",
+      "state": "playable"
+    },
+    {
+      "id": "FORESIGHT",
+      "sourceId": 193,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DESTINY_BOND",
+      "sourceId": 194,
+      "presentation": "ew0194",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PERISH_SONG",
+      "sourceId": 195,
+      "presentation": "zaew0195",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ICY_WIND",
+      "sourceId": 196,
+      "presentation": "zaew0196",
+      "state": "playable"
+    },
+    {
+      "id": "DETECT",
+      "sourceId": 197,
+      "presentation": "zaew0197",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BONE_RUSH",
+      "sourceId": 198,
+      "presentation": "ew0198",
+      "state": "playable"
+    },
+    {
+      "id": "LOCK_ON",
+      "sourceId": 199,
+      "presentation": "ew0199",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "OUTRAGE",
+      "sourceId": 200,
+      "presentation": "zaew0200",
+      "state": "playable"
+    },
+    {
+      "id": "SANDSTORM",
+      "sourceId": 201,
+      "presentation": "ew0201",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GIGA_DRAIN",
+      "sourceId": 202,
+      "presentation": "zaew0202",
+      "state": "playable"
+    },
+    {
+      "id": "ENDURE",
+      "sourceId": 203,
+      "presentation": "zaew0203",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CHARM",
+      "sourceId": 204,
+      "presentation": "zaew0204",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROLLOUT",
+      "sourceId": 205,
+      "presentation": "zaew0205",
+      "state": "playable"
+    },
+    {
+      "id": "FALSE_SWIPE",
+      "sourceId": 206,
+      "presentation": "zaew0206",
+      "state": "playable"
+    },
+    {
+      "id": "SWAGGER",
+      "sourceId": 207,
+      "presentation": "zaew0207",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MILK_DRINK",
+      "sourceId": 208,
+      "presentation": "ew0208",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPARK",
+      "sourceId": 209,
+      "presentation": "zaew0209",
+      "state": "playable"
+    },
+    {
+      "id": "FURY_CUTTER",
+      "sourceId": 210,
+      "presentation": "ew0210",
+      "state": "playable"
+    },
+    {
+      "id": "STEEL_WING",
+      "sourceId": 211,
+      "presentation": "zaew0211",
+      "state": "playable"
+    },
+    {
+      "id": "MEAN_LOOK",
+      "sourceId": 212,
+      "presentation": "ew0212",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ATTRACT",
+      "sourceId": 213,
+      "presentation": "ew0213",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SLEEP_TALK",
+      "sourceId": 214,
+      "presentation": "ew0214",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAL_BELL",
+      "sourceId": 215,
+      "presentation": "ew0215",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RETURN",
+      "sourceId": 216,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PRESENT",
+      "sourceId": 217,
+      "presentation": "ew0217",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FRUSTRATION",
+      "sourceId": 218,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SAFEGUARD",
+      "sourceId": 219,
+      "presentation": "zaew0219",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PAIN_SPLIT",
+      "sourceId": 220,
+      "presentation": "ew0220",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SACRED_FIRE",
+      "sourceId": 221,
+      "presentation": "ew0221",
+      "state": "playable"
+    },
+    {
+      "id": "MAGNITUDE",
+      "sourceId": 222,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DYNAMIC_PUNCH",
+      "sourceId": 223,
+      "presentation": "zaew0223",
+      "state": "playable"
+    },
+    {
+      "id": "MEGAHORN",
+      "sourceId": 224,
+      "presentation": "zaew0224",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_BREATH",
+      "sourceId": 225,
+      "presentation": "zaew0225",
+      "state": "playable"
+    },
+    {
+      "id": "BATON_PASS",
+      "sourceId": 226,
+      "presentation": "ew0226",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ENCORE",
+      "sourceId": 227,
+      "presentation": "ew0227",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PURSUIT",
+      "sourceId": 228,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "RAPID_SPIN",
+      "sourceId": 229,
+      "presentation": "ew0229",
+      "state": "playable"
+    },
+    {
+      "id": "SWEET_SCENT",
+      "sourceId": 230,
+      "presentation": "ew0230",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "IRON_TAIL",
+      "sourceId": 231,
+      "presentation": "zaew0231",
+      "state": "playable"
+    },
+    {
+      "id": "METAL_CLAW",
+      "sourceId": 232,
+      "presentation": "zaew0232",
+      "state": "playable"
+    },
+    {
+      "id": "VITAL_THROW",
+      "sourceId": 233,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "MORNING_SUN",
+      "sourceId": 234,
+      "presentation": "zaew0234",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SYNTHESIS",
+      "sourceId": 235,
+      "presentation": "zaew0235",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MOONLIGHT",
+      "sourceId": 236,
+      "presentation": "zaew0236",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HIDDEN_POWER",
+      "sourceId": 237,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "CROSS_CHOP",
+      "sourceId": 238,
+      "presentation": "ew0238",
+      "state": "playable"
+    },
+    {
+      "id": "TWISTER",
+      "sourceId": 239,
+      "presentation": "zaew0239",
+      "state": "playable"
+    },
+    {
+      "id": "RAIN_DANCE",
+      "sourceId": 240,
+      "presentation": "ew0240",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUNNY_DAY",
+      "sourceId": 241,
+      "presentation": "ew0241",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CRUNCH",
+      "sourceId": 242,
+      "presentation": "zaew0242",
+      "state": "playable"
+    },
+    {
+      "id": "MIRROR_COAT",
+      "sourceId": 243,
+      "presentation": "ew0243",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PSYCH_UP",
+      "sourceId": 244,
+      "presentation": "ew0244",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "EXTREME_SPEED",
+      "sourceId": 245,
+      "presentation": "zaew0245",
+      "state": "playable"
+    },
+    {
+      "id": "ANCIENT_POWER",
+      "sourceId": 246,
+      "presentation": "zaew0246",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_BALL",
+      "sourceId": 247,
+      "presentation": "zaew0247",
+      "state": "playable"
+    },
+    {
+      "id": "FUTURE_SIGHT",
+      "sourceId": 248,
+      "presentation": "zaew0248",
+      "state": "playable"
+    },
+    {
+      "id": "ROCK_SMASH",
+      "sourceId": 249,
+      "presentation": "zaew0249",
+      "state": "playable"
+    },
+    {
+      "id": "WHIRLPOOL",
+      "sourceId": 250,
+      "presentation": "zaew0250",
+      "state": "playable"
+    },
+    {
+      "id": "BEAT_UP",
+      "sourceId": 251,
+      "presentation": "ew0251",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FAKE_OUT",
+      "sourceId": 252,
+      "presentation": "zaew0252",
+      "state": "playable"
+    },
+    {
+      "id": "UPROAR",
+      "sourceId": 253,
+      "presentation": "ew0253",
+      "state": "playable"
+    },
+    {
+      "id": "STOCKPILE",
+      "sourceId": 254,
+      "presentation": "ew0254",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPIT_UP",
+      "sourceId": 255,
+      "presentation": "ew0255",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SWALLOW",
+      "sourceId": 256,
+      "presentation": "ew0256",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAT_WAVE",
+      "sourceId": 257,
+      "presentation": "zaew0257",
+      "state": "playable"
+    },
+    {
+      "id": "HAIL",
+      "sourceId": 258,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TORMENT",
+      "sourceId": 259,
+      "presentation": "zaew0259",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLATTER",
+      "sourceId": 260,
+      "presentation": "ew0260",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WILL_O_WISP",
+      "sourceId": 261,
+      "presentation": "zaew0261",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MEMENTO",
+      "sourceId": 262,
+      "presentation": "ew0262",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FACADE",
+      "sourceId": 263,
+      "presentation": "zaew0263",
+      "state": "playable"
+    },
+    {
+      "id": "FOCUS_PUNCH",
+      "sourceId": 264,
+      "presentation": "ew0264",
+      "state": "playable"
+    },
+    {
+      "id": "SMELLING_SALTS",
+      "sourceId": 265,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FOLLOW_ME",
+      "sourceId": 266,
+      "presentation": "ew0266",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NATURE_POWER",
+      "sourceId": 267,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CHARGE",
+      "sourceId": 268,
+      "presentation": "zaew0268",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TAUNT",
+      "sourceId": 269,
+      "presentation": "zaew0269",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HELPING_HAND",
+      "sourceId": 270,
+      "presentation": "ew0270",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRICK",
+      "sourceId": 271,
+      "presentation": "ew0271",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROLE_PLAY",
+      "sourceId": 272,
+      "presentation": "ew0272",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WISH",
+      "sourceId": 273,
+      "presentation": "zaew0273",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ASSIST",
+      "sourceId": 274,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "INGRAIN",
+      "sourceId": 275,
+      "presentation": "ew0275",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUPERPOWER",
+      "sourceId": 276,
+      "presentation": "ew0276",
+      "state": "playable"
+    },
+    {
+      "id": "MAGIC_COAT",
+      "sourceId": 277,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RECYCLE",
+      "sourceId": 278,
+      "presentation": "ew0278",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "REVENGE",
+      "sourceId": 279,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "BRICK_BREAK",
+      "sourceId": 280,
+      "presentation": "zaew0280",
+      "state": "playable"
+    },
+    {
+      "id": "YAWN",
+      "sourceId": 281,
+      "presentation": "ew0281",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "KNOCK_OFF",
+      "sourceId": 282,
+      "presentation": "zaew0282",
+      "state": "playable"
+    },
+    {
+      "id": "ENDEAVOR",
+      "sourceId": 283,
+      "presentation": "ew0283",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ERUPTION",
+      "sourceId": 284,
+      "presentation": "ew0284",
+      "state": "playable"
+    },
+    {
+      "id": "SKILL_SWAP",
+      "sourceId": 285,
+      "presentation": "ew0285",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "IMPRISON",
+      "sourceId": 286,
+      "presentation": "ew0286",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "REFRESH",
+      "sourceId": 287,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GRUDGE",
+      "sourceId": 288,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SNATCH",
+      "sourceId": 289,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SECRET_POWER",
+      "sourceId": 290,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "DIVE",
+      "sourceId": 291,
+      "presentation": "ew0291",
+      "state": "playable"
+    },
+    {
+      "id": "ARM_THRUST",
+      "sourceId": 292,
+      "presentation": "ew0292",
+      "state": "playable"
+    },
+    {
+      "id": "CAMOUFLAGE",
+      "sourceId": 293,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TAIL_GLOW",
+      "sourceId": 294,
+      "presentation": "ew0294",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LUSTER_PURGE",
+      "sourceId": 295,
+      "presentation": "zaew0295",
+      "state": "playable"
+    },
+    {
+      "id": "MIST_BALL",
+      "sourceId": 296,
+      "presentation": "zaew0296",
+      "state": "playable"
+    },
+    {
+      "id": "FEATHER_DANCE",
+      "sourceId": 297,
+      "presentation": "zaew0297",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TEETER_DANCE",
+      "sourceId": 298,
+      "presentation": "ew0298",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLAZE_KICK",
+      "sourceId": 299,
+      "presentation": "zaew0299",
+      "state": "playable"
+    },
+    {
+      "id": "MUD_SPORT",
+      "sourceId": 300,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ICE_BALL",
+      "sourceId": 301,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "NEEDLE_ARM",
+      "sourceId": 302,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SLACK_OFF",
+      "sourceId": 303,
+      "presentation": "ew0303",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HYPER_VOICE",
+      "sourceId": 304,
+      "presentation": "zaew0304",
+      "state": "playable"
+    },
+    {
+      "id": "POISON_FANG",
+      "sourceId": 305,
+      "presentation": "zaew0305",
+      "state": "playable"
+    },
+    {
+      "id": "CRUSH_CLAW",
+      "sourceId": 306,
+      "presentation": "ew0306",
+      "state": "playable"
+    },
+    {
+      "id": "BLAST_BURN",
+      "sourceId": 307,
+      "presentation": "zaew0307",
+      "state": "playable"
+    },
+    {
+      "id": "HYDRO_CANNON",
+      "sourceId": 308,
+      "presentation": "zaew0308",
+      "state": "playable"
+    },
+    {
+      "id": "METEOR_MASH",
+      "sourceId": 309,
+      "presentation": "ew0309",
+      "state": "playable"
+    },
+    {
+      "id": "ASTONISH",
+      "sourceId": 310,
+      "presentation": "ew0310",
+      "state": "playable"
+    },
+    {
+      "id": "WEATHER_BALL",
+      "sourceId": 311,
+      "presentation": "ew0311",
+      "state": "playable"
+    },
+    {
+      "id": "AROMATHERAPY",
+      "sourceId": 312,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FAKE_TEARS",
+      "sourceId": 313,
+      "presentation": "zaew0313",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AIR_CUTTER",
+      "sourceId": 314,
+      "presentation": "ew0314",
+      "state": "playable"
+    },
+    {
+      "id": "OVERHEAT",
+      "sourceId": 315,
+      "presentation": "zaew0315",
+      "state": "playable"
+    },
+    {
+      "id": "ODOR_SLEUTH",
+      "sourceId": 316,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROCK_TOMB",
+      "sourceId": 317,
+      "presentation": "zaew0317",
+      "state": "playable"
+    },
+    {
+      "id": "SILVER_WIND",
+      "sourceId": 318,
+      "presentation": "zaew0318",
+      "state": "playable"
+    },
+    {
+      "id": "METAL_SOUND",
+      "sourceId": 319,
+      "presentation": "zaew0319",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GRASS_WHISTLE",
+      "sourceId": 320,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TICKLE",
+      "sourceId": 321,
+      "presentation": "ew0321",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "COSMIC_POWER",
+      "sourceId": 322,
+      "presentation": "ew0322",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WATER_SPOUT",
+      "sourceId": 323,
+      "presentation": "ew0323",
+      "state": "playable"
+    },
+    {
+      "id": "SIGNAL_BEAM",
+      "sourceId": 324,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_PUNCH",
+      "sourceId": 325,
+      "presentation": "zaew0325",
+      "state": "playable"
+    },
+    {
+      "id": "EXTRASENSORY",
+      "sourceId": 326,
+      "presentation": "ew0326",
+      "state": "playable"
+    },
+    {
+      "id": "SKY_UPPERCUT",
+      "sourceId": 327,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SAND_TOMB",
+      "sourceId": 328,
+      "presentation": "zaew0328",
+      "state": "playable"
+    },
+    {
+      "id": "SHEER_COLD",
+      "sourceId": 329,
+      "presentation": "zaew0329",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MUDDY_WATER",
+      "sourceId": 330,
+      "presentation": "zaew0330",
+      "state": "playable"
+    },
+    {
+      "id": "BULLET_SEED",
+      "sourceId": 331,
+      "presentation": "zaew0331",
+      "state": "playable"
+    },
+    {
+      "id": "AERIAL_ACE",
+      "sourceId": 332,
+      "presentation": "zaew0332",
+      "state": "playable"
+    },
+    {
+      "id": "ICICLE_SPEAR",
+      "sourceId": 333,
+      "presentation": "zaew0333",
+      "state": "playable"
+    },
+    {
+      "id": "IRON_DEFENSE",
+      "sourceId": 334,
+      "presentation": "zaew0334",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLOCK",
+      "sourceId": 335,
+      "presentation": "ew0335",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HOWL",
+      "sourceId": 336,
+      "presentation": "ew0336",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRAGON_CLAW",
+      "sourceId": 337,
+      "presentation": "zaew0337",
+      "state": "playable"
+    },
+    {
+      "id": "FRENZY_PLANT",
+      "sourceId": 338,
+      "presentation": "zaew0338",
+      "state": "playable"
+    },
+    {
+      "id": "BULK_UP",
+      "sourceId": 339,
+      "presentation": "zaew0339",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BOUNCE",
+      "sourceId": 340,
+      "presentation": "zaew0340",
+      "state": "playable"
+    },
+    {
+      "id": "MUD_SHOT",
+      "sourceId": 341,
+      "presentation": "zaew0341",
+      "state": "playable"
+    },
+    {
+      "id": "POISON_TAIL",
+      "sourceId": 342,
+      "presentation": "ew0342",
+      "state": "playable"
+    },
+    {
+      "id": "COVET",
+      "sourceId": 343,
+      "presentation": "ew0343",
+      "state": "playable"
+    },
+    {
+      "id": "VOLT_TACKLE",
+      "sourceId": 344,
+      "presentation": "zaew0344",
+      "state": "playable"
+    },
+    {
+      "id": "MAGICAL_LEAF",
+      "sourceId": 345,
+      "presentation": "zaew0345",
+      "state": "playable"
+    },
+    {
+      "id": "WATER_SPORT",
+      "sourceId": 346,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CALM_MIND",
+      "sourceId": 347,
+      "presentation": "zaew0347",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LEAF_BLADE",
+      "sourceId": 348,
+      "presentation": "zaew0348",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_DANCE",
+      "sourceId": 349,
+      "presentation": "ew0349",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROCK_BLAST",
+      "sourceId": 350,
+      "presentation": "zaew0350",
+      "state": "playable"
+    },
+    {
+      "id": "SHOCK_WAVE",
+      "sourceId": 351,
+      "presentation": "ew0351",
+      "state": "playable"
+    },
+    {
+      "id": "WATER_PULSE",
+      "sourceId": 352,
+      "presentation": "zaew0352",
+      "state": "playable"
+    },
+    {
+      "id": "DOOM_DESIRE",
+      "sourceId": 353,
+      "presentation": "ew0353",
+      "state": "playable"
+    },
+    {
+      "id": "PSYCHO_BOOST",
+      "sourceId": 354,
+      "presentation": "ew0354",
+      "state": "playable"
+    },
+    {
+      "id": "ROOST",
+      "sourceId": 355,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GRAVITY",
+      "sourceId": 356,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MIRACLE_EYE",
+      "sourceId": 357,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WAKE_UP_SLAP",
+      "sourceId": 358,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "HAMMER_ARM",
+      "sourceId": 359,
+      "presentation": "ew0359",
+      "state": "playable"
+    },
+    {
+      "id": "GYRO_BALL",
+      "sourceId": 360,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEALING_WISH",
+      "sourceId": 361,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BRINE",
+      "sourceId": 362,
+      "presentation": "ew0362",
+      "state": "playable"
+    },
+    {
+      "id": "NATURAL_GIFT",
+      "sourceId": 363,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FEINT",
+      "sourceId": 364,
+      "presentation": "ew0364",
+      "state": "playable"
+    },
+    {
+      "id": "PLUCK",
+      "sourceId": 365,
+      "presentation": "ew0365",
+      "state": "playable"
+    },
+    {
+      "id": "TAILWIND",
+      "sourceId": 366,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACUPRESSURE",
+      "sourceId": 367,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "METAL_BURST",
+      "sourceId": 368,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "U_TURN",
+      "sourceId": 369,
+      "presentation": "zaew0369",
+      "state": "playable"
+    },
+    {
+      "id": "CLOSE_COMBAT",
+      "sourceId": 370,
+      "presentation": "zaew0370",
+      "state": "playable"
+    },
+    {
+      "id": "PAYBACK",
+      "sourceId": 371,
+      "presentation": "ew0371",
+      "state": "playable"
+    },
+    {
+      "id": "ASSURANCE",
+      "sourceId": 372,
+      "presentation": "ew0372",
+      "state": "playable"
+    },
+    {
+      "id": "EMBARGO",
+      "sourceId": 373,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLING",
+      "sourceId": 374,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PSYCHO_SHIFT",
+      "sourceId": 375,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRUMP_CARD",
+      "sourceId": 376,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAL_BLOCK",
+      "sourceId": 377,
+      "presentation": "zaew0377",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WRING_OUT",
+      "sourceId": 378,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POWER_TRICK",
+      "sourceId": 379,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GASTRO_ACID",
+      "sourceId": 380,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LUCKY_CHANT",
+      "sourceId": 381,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ME_FIRST",
+      "sourceId": 382,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "COPYCAT",
+      "sourceId": 383,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POWER_SWAP",
+      "sourceId": 384,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GUARD_SWAP",
+      "sourceId": 385,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PUNISHMENT",
+      "sourceId": 386,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LAST_RESORT",
+      "sourceId": 387,
+      "presentation": "ew0387",
+      "state": "playable"
+    },
+    {
+      "id": "WORRY_SEED",
+      "sourceId": 388,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUCKER_PUNCH",
+      "sourceId": 389,
+      "presentation": "ew0389",
+      "state": "playable"
+    },
+    {
+      "id": "TOXIC_SPIKES",
+      "sourceId": 390,
+      "presentation": "zaew0390",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEART_SWAP",
+      "sourceId": 391,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AQUA_RING",
+      "sourceId": 392,
+      "presentation": "zaew0392",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAGNET_RISE",
+      "sourceId": 393,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLARE_BLITZ",
+      "sourceId": 394,
+      "presentation": "zaew0394",
+      "state": "playable"
+    },
+    {
+      "id": "FORCE_PALM",
+      "sourceId": 395,
+      "presentation": "ew0395",
+      "state": "playable"
+    },
+    {
+      "id": "AURA_SPHERE",
+      "sourceId": 396,
+      "presentation": "zaew0396",
+      "state": "playable"
+    },
+    {
+      "id": "ROCK_POLISH",
+      "sourceId": 397,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POISON_JAB",
+      "sourceId": 398,
+      "presentation": "zaew0398",
+      "state": "playable"
+    },
+    {
+      "id": "DARK_PULSE",
+      "sourceId": 399,
+      "presentation": "zaew0399",
+      "state": "playable"
+    },
+    {
+      "id": "NIGHT_SLASH",
+      "sourceId": 400,
+      "presentation": "zaew0400",
+      "state": "playable"
+    },
+    {
+      "id": "AQUA_TAIL",
+      "sourceId": 401,
+      "presentation": "ew0401",
+      "state": "playable"
+    },
+    {
+      "id": "SEED_BOMB",
+      "sourceId": 402,
+      "presentation": "zaew0402",
+      "state": "playable"
+    },
+    {
+      "id": "AIR_SLASH",
+      "sourceId": 403,
+      "presentation": "zaew0403",
+      "state": "playable"
+    },
+    {
+      "id": "X_SCISSOR",
+      "sourceId": 404,
+      "presentation": "zaew0404",
+      "state": "playable"
+    },
+    {
+      "id": "BUG_BUZZ",
+      "sourceId": 405,
+      "presentation": "zaew0405",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_PULSE",
+      "sourceId": 406,
+      "presentation": "zaew0406",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_RUSH",
+      "sourceId": 407,
+      "presentation": "zaew0407",
+      "state": "playable"
+    },
+    {
+      "id": "POWER_GEM",
+      "sourceId": 408,
+      "presentation": "zaew0408",
+      "state": "playable"
+    },
+    {
+      "id": "DRAIN_PUNCH",
+      "sourceId": 409,
+      "presentation": "zaew0409",
+      "state": "playable"
+    },
+    {
+      "id": "VACUUM_WAVE",
+      "sourceId": 410,
+      "presentation": "zaew0410",
+      "state": "playable"
+    },
+    {
+      "id": "FOCUS_BLAST",
+      "sourceId": 411,
+      "presentation": "zaew0411",
+      "state": "playable"
+    },
+    {
+      "id": "ENERGY_BALL",
+      "sourceId": 412,
+      "presentation": "zaew0412",
+      "state": "playable"
+    },
+    {
+      "id": "BRAVE_BIRD",
+      "sourceId": 413,
+      "presentation": "zaew0413",
+      "state": "playable"
+    },
+    {
+      "id": "EARTH_POWER",
+      "sourceId": 414,
+      "presentation": "zaew0414",
+      "state": "playable"
+    },
+    {
+      "id": "SWITCHEROO",
+      "sourceId": 415,
+      "presentation": "ew0415",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GIGA_IMPACT",
+      "sourceId": 416,
+      "presentation": "zaew0416",
+      "state": "playable"
+    },
+    {
+      "id": "NASTY_PLOT",
+      "sourceId": 417,
+      "presentation": "zaew0417",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BULLET_PUNCH",
+      "sourceId": 418,
+      "presentation": "zaew0418",
+      "state": "playable"
+    },
+    {
+      "id": "AVALANCHE",
+      "sourceId": 419,
+      "presentation": "ew0419",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_SHARD",
+      "sourceId": 420,
+      "presentation": "zaew0420",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_CLAW",
+      "sourceId": 421,
+      "presentation": "zaew0421",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDER_FANG",
+      "sourceId": 422,
+      "presentation": "zaew0422",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_FANG",
+      "sourceId": 423,
+      "presentation": "zaew0423",
+      "state": "playable"
+    },
+    {
+      "id": "FIRE_FANG",
+      "sourceId": 424,
+      "presentation": "zaew0424",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_SNEAK",
+      "sourceId": 425,
+      "presentation": "zaew0425",
+      "state": "playable"
+    },
+    {
+      "id": "MUD_BOMB",
+      "sourceId": 426,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PSYCHO_CUT",
+      "sourceId": 427,
+      "presentation": "zaew0427",
+      "state": "playable"
+    },
+    {
+      "id": "ZEN_HEADBUTT",
+      "sourceId": 428,
+      "presentation": "zaew0428",
+      "state": "playable"
+    },
+    {
+      "id": "MIRROR_SHOT",
+      "sourceId": 429,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FLASH_CANNON",
+      "sourceId": 430,
+      "presentation": "zaew0430",
+      "state": "playable"
+    },
+    {
+      "id": "ROCK_CLIMB",
+      "sourceId": 431,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "DEFOG",
+      "sourceId": 432,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRICK_ROOM",
+      "sourceId": 433,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRACO_METEOR",
+      "sourceId": 434,
+      "presentation": "zaew0434",
+      "state": "playable"
+    },
+    {
+      "id": "DISCHARGE",
+      "sourceId": 435,
+      "presentation": "zaew0435",
+      "state": "playable"
+    },
+    {
+      "id": "LAVA_PLUME",
+      "sourceId": 436,
+      "presentation": "zaew0436",
+      "state": "playable"
+    },
+    {
+      "id": "LEAF_STORM",
+      "sourceId": 437,
+      "presentation": "zaew0437",
+      "state": "playable"
+    },
+    {
+      "id": "POWER_WHIP",
+      "sourceId": 438,
+      "presentation": "zaew0438",
+      "state": "playable"
+    },
+    {
+      "id": "ROCK_WRECKER",
+      "sourceId": 439,
+      "presentation": "ew0439",
+      "state": "playable"
+    },
+    {
+      "id": "CROSS_POISON",
+      "sourceId": 440,
+      "presentation": "ew0440",
+      "state": "playable"
+    },
+    {
+      "id": "GUNK_SHOT",
+      "sourceId": 441,
+      "presentation": "zaew0441",
+      "state": "playable"
+    },
+    {
+      "id": "IRON_HEAD",
+      "sourceId": 442,
+      "presentation": "zaew0442",
+      "state": "playable"
+    },
+    {
+      "id": "MAGNET_BOMB",
+      "sourceId": 443,
+      "presentation": "zaew0443",
+      "state": "playable"
+    },
+    {
+      "id": "STONE_EDGE",
+      "sourceId": 444,
+      "presentation": "zaew0444",
+      "state": "playable"
+    },
+    {
+      "id": "CAPTIVATE",
+      "sourceId": 445,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STEALTH_ROCK",
+      "sourceId": 446,
+      "presentation": "zaew0446",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GRASS_KNOT",
+      "sourceId": 447,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CHATTER",
+      "sourceId": 448,
+      "presentation": null,
+      "state": "playable"
+    },
+    {
+      "id": "JUDGMENT",
+      "sourceId": 449,
+      "presentation": "ew0449",
+      "state": "playable"
+    },
+    {
+      "id": "BUG_BITE",
+      "sourceId": 450,
+      "presentation": "ew0450",
+      "state": "playable"
+    },
+    {
+      "id": "CHARGE_BEAM",
+      "sourceId": 451,
+      "presentation": "zaew0451",
+      "state": "playable"
+    },
+    {
+      "id": "WOOD_HAMMER",
+      "sourceId": 452,
+      "presentation": "zaew0452",
+      "state": "playable"
+    },
+    {
+      "id": "AQUA_JET",
+      "sourceId": 453,
+      "presentation": "zaew0453",
+      "state": "playable"
+    },
+    {
+      "id": "ATTACK_ORDER",
+      "sourceId": 454,
+      "presentation": "ew0454",
+      "state": "playable"
+    },
+    {
+      "id": "DEFEND_ORDER",
+      "sourceId": 455,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAL_ORDER",
+      "sourceId": 456,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAD_SMASH",
+      "sourceId": 457,
+      "presentation": "zaew0457",
+      "state": "playable"
+    },
+    {
+      "id": "DOUBLE_HIT",
+      "sourceId": 458,
+      "presentation": "zaew0458",
+      "state": "playable"
+    },
+    {
+      "id": "ROAR_OF_TIME",
+      "sourceId": 459,
+      "presentation": "ew0459",
+      "state": "playable"
+    },
+    {
+      "id": "SPACIAL_REND",
+      "sourceId": 460,
+      "presentation": "ew0460",
+      "state": "playable"
+    },
+    {
+      "id": "LUNAR_DANCE",
+      "sourceId": 461,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CRUSH_GRIP",
+      "sourceId": 462,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAGMA_STORM",
+      "sourceId": 463,
+      "presentation": "zaew0463",
+      "state": "playable"
+    },
+    {
+      "id": "DARK_VOID",
+      "sourceId": 464,
+      "presentation": "zaew0464",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SEED_FLARE",
+      "sourceId": 465,
+      "presentation": "ew0465",
+      "state": "playable"
+    },
+    {
+      "id": "OMINOUS_WIND",
+      "sourceId": 466,
+      "presentation": "zaew0466",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_FORCE",
+      "sourceId": 467,
+      "presentation": "ew0467",
+      "state": "playable"
+    },
+    {
+      "id": "HONE_CLAWS",
+      "sourceId": 468,
+      "presentation": "ew0468",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WIDE_GUARD",
+      "sourceId": 469,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GUARD_SPLIT",
+      "sourceId": 470,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POWER_SPLIT",
+      "sourceId": 471,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WONDER_ROOM",
+      "sourceId": 472,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PSYSHOCK",
+      "sourceId": 473,
+      "presentation": "zaew0473",
+      "state": "playable"
+    },
+    {
+      "id": "VENOSHOCK",
+      "sourceId": 474,
+      "presentation": "ew0474",
+      "state": "playable"
+    },
+    {
+      "id": "AUTOTOMIZE",
+      "sourceId": 475,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RAGE_POWDER",
+      "sourceId": 476,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TELEKINESIS",
+      "sourceId": 477,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAGIC_ROOM",
+      "sourceId": 478,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SMACK_DOWN",
+      "sourceId": 479,
+      "presentation": "ew0479",
+      "state": "playable"
+    },
+    {
+      "id": "STORM_THROW",
+      "sourceId": 480,
+      "presentation": "zaew0480",
+      "state": "playable"
+    },
+    {
+      "id": "FLAME_BURST",
+      "sourceId": 481,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SLUDGE_WAVE",
+      "sourceId": 482,
+      "presentation": "zaew0482",
+      "state": "playable"
+    },
+    {
+      "id": "QUIVER_DANCE",
+      "sourceId": 483,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAVY_SLAM",
+      "sourceId": 484,
+      "presentation": "zaew0484",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SYNCHRONOISE",
+      "sourceId": 485,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "ELECTRO_BALL",
+      "sourceId": 486,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SOAK",
+      "sourceId": 487,
+      "presentation": "ew0487",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLAME_CHARGE",
+      "sourceId": 488,
+      "presentation": "zaew0488",
+      "state": "playable"
+    },
+    {
+      "id": "COIL",
+      "sourceId": 489,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LOW_SWEEP",
+      "sourceId": 490,
+      "presentation": "zaew0490",
+      "state": "playable"
+    },
+    {
+      "id": "ACID_SPRAY",
+      "sourceId": 491,
+      "presentation": "zaew0491",
+      "state": "playable"
+    },
+    {
+      "id": "FOUL_PLAY",
+      "sourceId": 492,
+      "presentation": "ew0492",
+      "state": "playable"
+    },
+    {
+      "id": "SIMPLE_BEAM",
+      "sourceId": 493,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ENTRAINMENT",
+      "sourceId": 494,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AFTER_YOU",
+      "sourceId": 495,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ROUND",
+      "sourceId": 496,
+      "presentation": "ew0496",
+      "state": "playable"
+    },
+    {
+      "id": "ECHOED_VOICE",
+      "sourceId": 497,
+      "presentation": "ew0497",
+      "state": "playable"
+    },
+    {
+      "id": "CHIP_AWAY",
+      "sourceId": 498,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "CLEAR_SMOG",
+      "sourceId": 499,
+      "presentation": "ew0499",
+      "state": "playable"
+    },
+    {
+      "id": "STORED_POWER",
+      "sourceId": 500,
+      "presentation": "ew0500",
+      "state": "playable"
+    },
+    {
+      "id": "QUICK_GUARD",
+      "sourceId": 501,
+      "presentation": "ew0501",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ALLY_SWITCH",
+      "sourceId": 502,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SCALD",
+      "sourceId": 503,
+      "presentation": "zaew0503",
+      "state": "playable"
+    },
+    {
+      "id": "SHELL_SMASH",
+      "sourceId": 504,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEAL_PULSE",
+      "sourceId": 505,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEX",
+      "sourceId": 506,
+      "presentation": "ew0506",
+      "state": "playable"
+    },
+    {
+      "id": "SKY_DROP",
+      "sourceId": 507,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHIFT_GEAR",
+      "sourceId": 508,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CIRCLE_THROW",
+      "sourceId": 509,
+      "presentation": "zaew0509",
+      "state": "playable"
+    },
+    {
+      "id": "INCINERATE",
+      "sourceId": 510,
+      "presentation": "ew0510",
+      "state": "playable"
+    },
+    {
+      "id": "QUASH",
+      "sourceId": 511,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACROBATICS",
+      "sourceId": 512,
+      "presentation": "ew0512",
+      "state": "playable"
+    },
+    {
+      "id": "REFLECT_TYPE",
+      "sourceId": 513,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "RETALIATE",
+      "sourceId": 514,
+      "presentation": "ew0514",
+      "state": "playable"
+    },
+    {
+      "id": "FINAL_GAMBIT",
+      "sourceId": 515,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BESTOW",
+      "sourceId": 516,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "INFERNO",
+      "sourceId": 517,
+      "presentation": "ew0517",
+      "state": "playable"
+    },
+    {
+      "id": "WATER_PLEDGE",
+      "sourceId": 518,
+      "presentation": "ew0518",
+      "state": "playable"
+    },
+    {
+      "id": "FIRE_PLEDGE",
+      "sourceId": 519,
+      "presentation": "ew0519",
+      "state": "playable"
+    },
+    {
+      "id": "GRASS_PLEDGE",
+      "sourceId": 520,
+      "presentation": "ew0520",
+      "state": "playable"
+    },
+    {
+      "id": "VOLT_SWITCH",
+      "sourceId": 521,
+      "presentation": "zaew0521",
+      "state": "playable"
+    },
+    {
+      "id": "STRUGGLE_BUG",
+      "sourceId": 522,
+      "presentation": "ew0522",
+      "state": "playable"
+    },
+    {
+      "id": "BULLDOZE",
+      "sourceId": 523,
+      "presentation": "zaew0523",
+      "state": "playable"
+    },
+    {
+      "id": "FROST_BREATH",
+      "sourceId": 524,
+      "presentation": "zaew0524",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_TAIL",
+      "sourceId": 525,
+      "presentation": "ew0525",
+      "state": "playable"
+    },
+    {
+      "id": "WORK_UP",
+      "sourceId": 526,
+      "presentation": "zaew0526",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ELECTROWEB",
+      "sourceId": 527,
+      "presentation": "zaew0527",
+      "state": "playable"
+    },
+    {
+      "id": "WILD_CHARGE",
+      "sourceId": 528,
+      "presentation": "zaew0528",
+      "state": "playable"
+    },
+    {
+      "id": "DRILL_RUN",
+      "sourceId": 529,
+      "presentation": "zaew0529",
+      "state": "playable"
+    },
+    {
+      "id": "DUAL_CHOP",
+      "sourceId": 530,
+      "presentation": "zaew0530",
+      "state": "playable"
+    },
+    {
+      "id": "HEART_STAMP",
+      "sourceId": 531,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "HORN_LEECH",
+      "sourceId": 532,
+      "presentation": "zaew0532",
+      "state": "playable"
+    },
+    {
+      "id": "SACRED_SWORD",
+      "sourceId": 533,
+      "presentation": "zaew0533",
+      "state": "playable"
+    },
+    {
+      "id": "RAZOR_SHELL",
+      "sourceId": 534,
+      "presentation": "ew0534",
+      "state": "playable"
+    },
+    {
+      "id": "HEAT_CRASH",
+      "sourceId": 535,
+      "presentation": "zaew0535",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LEAF_TORNADO",
+      "sourceId": 536,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "STEAMROLLER",
+      "sourceId": 537,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "COTTON_GUARD",
+      "sourceId": 538,
+      "presentation": "zaew0538",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NIGHT_DAZE",
+      "sourceId": 539,
+      "presentation": "ew0539",
+      "state": "playable"
+    },
+    {
+      "id": "PSYSTRIKE",
+      "sourceId": 540,
+      "presentation": "zaew0540",
+      "state": "playable"
+    },
+    {
+      "id": "TAIL_SLAP",
+      "sourceId": 541,
+      "presentation": "ew0541",
+      "state": "playable"
+    },
+    {
+      "id": "HURRICANE",
+      "sourceId": 542,
+      "presentation": "zaew0542",
+      "state": "playable"
+    },
+    {
+      "id": "HEAD_CHARGE",
+      "sourceId": 543,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "GEAR_GRIND",
+      "sourceId": 544,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SEARING_SHOT",
+      "sourceId": 545,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "TECHNO_BLAST",
+      "sourceId": 546,
+      "presentation": "zaew0546",
+      "state": "playable"
+    },
+    {
+      "id": "RELIC_SONG",
+      "sourceId": 547,
+      "presentation": "zaew0547",
+      "state": "playable"
+    },
+    {
+      "id": "SECRET_SWORD",
+      "sourceId": 548,
+      "presentation": "zaew0548",
+      "state": "playable"
+    },
+    {
+      "id": "GLACIATE",
+      "sourceId": 549,
+      "presentation": "ew0549",
+      "state": "playable"
+    },
+    {
+      "id": "BOLT_STRIKE",
+      "sourceId": 550,
+      "presentation": "ew0550",
+      "state": "playable"
+    },
+    {
+      "id": "BLUE_FLARE",
+      "sourceId": 551,
+      "presentation": "ew0551",
+      "state": "playable"
+    },
+    {
+      "id": "FIERY_DANCE",
+      "sourceId": 552,
+      "presentation": "ew0552",
+      "state": "playable"
+    },
+    {
+      "id": "FREEZE_SHOCK",
+      "sourceId": 553,
+      "presentation": "ew0553",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_BURN",
+      "sourceId": 554,
+      "presentation": "ew0554",
+      "state": "playable"
+    },
+    {
+      "id": "SNARL",
+      "sourceId": 555,
+      "presentation": "zaew0555",
+      "state": "playable"
+    },
+    {
+      "id": "ICICLE_CRASH",
+      "sourceId": 556,
+      "presentation": "zaew0556",
+      "state": "playable"
+    },
+    {
+      "id": "V_CREATE",
+      "sourceId": 557,
+      "presentation": "ew0557",
+      "state": "playable"
+    },
+    {
+      "id": "FUSION_FLARE",
+      "sourceId": 558,
+      "presentation": "ew0558",
+      "state": "playable"
+    },
+    {
+      "id": "FUSION_BOLT",
+      "sourceId": 559,
+      "presentation": "ew0559",
+      "state": "playable"
+    },
+    {
+      "id": "FLYING_PRESS",
+      "sourceId": 560,
+      "presentation": "zaew0560",
+      "state": "playable"
+    },
+    {
+      "id": "MAT_BLOCK",
+      "sourceId": 561,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BELCH",
+      "sourceId": 562,
+      "presentation": "ew0562",
+      "state": "playable"
+    },
+    {
+      "id": "ROTOTILLER",
+      "sourceId": 563,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STICKY_WEB",
+      "sourceId": 564,
+      "presentation": "zaew0564",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FELL_STINGER",
+      "sourceId": 565,
+      "presentation": "ew0565",
+      "state": "playable"
+    },
+    {
+      "id": "PHANTOM_FORCE",
+      "sourceId": 566,
+      "presentation": "zaew0566",
+      "state": "playable"
+    },
+    {
+      "id": "TRICK_OR_TREAT",
+      "sourceId": 567,
+      "presentation": "zaew0567",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NOBLE_ROAR",
+      "sourceId": 568,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ION_DELUGE",
+      "sourceId": 569,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PARABOLIC_CHARGE",
+      "sourceId": 570,
+      "presentation": "zaew0570",
+      "state": "playable"
+    },
+    {
+      "id": "FORESTS_CURSE",
+      "sourceId": 571,
+      "presentation": "zaew0571",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PETAL_BLIZZARD",
+      "sourceId": 572,
+      "presentation": "ew0572",
+      "state": "playable"
+    },
+    {
+      "id": "FREEZE_DRY",
+      "sourceId": 573,
+      "presentation": "zaew0573",
+      "state": "playable"
+    },
+    {
+      "id": "DISARMING_VOICE",
+      "sourceId": 574,
+      "presentation": "zaew0574",
+      "state": "playable"
+    },
+    {
+      "id": "PARTING_SHOT",
+      "sourceId": 575,
+      "presentation": "zaew0575",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TOPSY_TURVY",
+      "sourceId": 576,
+      "presentation": "zaew0576",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRAINING_KISS",
+      "sourceId": 577,
+      "presentation": "zaew0577",
+      "state": "playable"
+    },
+    {
+      "id": "CRAFTY_SHIELD",
+      "sourceId": 578,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLOWER_SHIELD",
+      "sourceId": 579,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GRASSY_TERRAIN",
+      "sourceId": 580,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MISTY_TERRAIN",
+      "sourceId": 581,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ELECTRIFY",
+      "sourceId": 582,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PLAY_ROUGH",
+      "sourceId": 583,
+      "presentation": "zaew0583",
+      "state": "playable"
+    },
+    {
+      "id": "FAIRY_WIND",
+      "sourceId": 584,
+      "presentation": "zaew0584",
+      "state": "playable"
+    },
+    {
+      "id": "MOONBLAST",
+      "sourceId": 585,
+      "presentation": "zaew0585",
+      "state": "playable"
+    },
+    {
+      "id": "BOOMBURST",
+      "sourceId": 586,
+      "presentation": "zaew0586",
+      "state": "playable"
+    },
+    {
+      "id": "FAIRY_LOCK",
+      "sourceId": 587,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "KINGS_SHIELD",
+      "sourceId": 588,
+      "presentation": "zaew0588",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "PLAY_NICE",
+      "sourceId": 589,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONFIDE",
+      "sourceId": 590,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DIAMOND_STORM",
+      "sourceId": 591,
+      "presentation": "zaew0591",
+      "state": "playable"
+    },
+    {
+      "id": "STEAM_ERUPTION",
+      "sourceId": 592,
+      "presentation": "zaew0592",
+      "state": "playable"
+    },
+    {
+      "id": "HYPERSPACE_HOLE",
+      "sourceId": 593,
+      "presentation": "zaew0593",
+      "state": "playable"
+    },
+    {
+      "id": "WATER_SHURIKEN",
+      "sourceId": 594,
+      "presentation": "zaew0594",
+      "state": "playable"
+    },
+    {
+      "id": "MYSTICAL_FIRE",
+      "sourceId": 595,
+      "presentation": "zaew0595",
+      "state": "playable"
+    },
+    {
+      "id": "SPIKY_SHIELD",
+      "sourceId": 596,
+      "presentation": "zaew0596",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AROMATIC_MIST",
+      "sourceId": 597,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "EERIE_IMPULSE",
+      "sourceId": 598,
+      "presentation": "zaew0598",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "VENOM_DRENCH",
+      "sourceId": 599,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POWDER",
+      "sourceId": 600,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GEOMANCY",
+      "sourceId": 601,
+      "presentation": "zaew0601",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAGNETIC_FLUX",
+      "sourceId": 602,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HAPPY_HOUR",
+      "sourceId": 603,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ELECTRIC_TERRAIN",
+      "sourceId": 604,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DAZZLING_GLEAM",
+      "sourceId": 605,
+      "presentation": "zaew0605",
+      "state": "playable"
+    },
+    {
+      "id": "CELEBRATE",
+      "sourceId": 606,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HOLD_HANDS",
+      "sourceId": 607,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BABY_DOLL_EYES",
+      "sourceId": 608,
+      "presentation": "ew0608",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NUZZLE",
+      "sourceId": 609,
+      "presentation": "zaew0609",
+      "state": "playable"
+    },
+    {
+      "id": "HOLD_BACK",
+      "sourceId": 610,
+      "presentation": "ew0610",
+      "state": "playable"
+    },
+    {
+      "id": "INFESTATION",
+      "sourceId": 611,
+      "presentation": "zaew0611",
+      "state": "playable"
+    },
+    {
+      "id": "POWER_UP_PUNCH",
+      "sourceId": 612,
+      "presentation": "zaew0612",
+      "state": "playable"
+    },
+    {
+      "id": "OBLIVION_WING",
+      "sourceId": 613,
+      "presentation": "zaew0613",
+      "state": "playable"
+    },
+    {
+      "id": "THOUSAND_ARROWS",
+      "sourceId": 614,
+      "presentation": "zaew0614",
+      "state": "playable"
+    },
+    {
+      "id": "THOUSAND_WAVES",
+      "sourceId": 615,
+      "presentation": "zaew0615",
+      "state": "playable"
+    },
+    {
+      "id": "LANDS_WRATH",
+      "sourceId": 616,
+      "presentation": "zaew0616",
+      "state": "playable"
+    },
+    {
+      "id": "LIGHT_OF_RUIN",
+      "sourceId": 617,
+      "presentation": "zaew0617",
+      "state": "playable"
+    },
+    {
+      "id": "ORIGIN_PULSE",
+      "sourceId": 618,
+      "presentation": "zaew0618",
+      "state": "playable"
+    },
+    {
+      "id": "PRECIPICE_BLADES",
+      "sourceId": 619,
+      "presentation": "zaew0619",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_ASCENT",
+      "sourceId": 620,
+      "presentation": "zaew0620",
+      "state": "playable"
+    },
+    {
+      "id": "HYPERSPACE_FURY",
+      "sourceId": 621,
+      "presentation": "zaew0621",
+      "state": "playable"
+    },
+    {
+      "id": "BREAKNECK_BLITZ__PHYSICAL",
+      "sourceId": 622,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BREAKNECK_BLITZ__SPECIAL",
+      "sourceId": 623,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ALL_OUT_PUMMELING__PHYSICAL",
+      "sourceId": 624,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ALL_OUT_PUMMELING__SPECIAL",
+      "sourceId": 625,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUPERSONIC_SKYSTRIKE__PHYSICAL",
+      "sourceId": 626,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUPERSONIC_SKYSTRIKE__SPECIAL",
+      "sourceId": 627,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACID_DOWNPOUR__PHYSICAL",
+      "sourceId": 628,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ACID_DOWNPOUR__SPECIAL",
+      "sourceId": 629,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TECTONIC_RAGE__PHYSICAL",
+      "sourceId": 630,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TECTONIC_RAGE__SPECIAL",
+      "sourceId": 631,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONTINENTAL_CRUSH__PHYSICAL",
+      "sourceId": 632,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CONTINENTAL_CRUSH__SPECIAL",
+      "sourceId": 633,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SAVAGE_SPIN_OUT__PHYSICAL",
+      "sourceId": 634,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SAVAGE_SPIN_OUT__SPECIAL",
+      "sourceId": 635,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NEVER_ENDING_NIGHTMARE__PHYSICAL",
+      "sourceId": 636,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NEVER_ENDING_NIGHTMARE__SPECIAL",
+      "sourceId": 637,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CORKSCREW_CRASH__PHYSICAL",
+      "sourceId": 638,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CORKSCREW_CRASH__SPECIAL",
+      "sourceId": 639,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "INFERNO_OVERDRIVE__PHYSICAL",
+      "sourceId": 640,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "INFERNO_OVERDRIVE__SPECIAL",
+      "sourceId": 641,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HYDRO_VORTEX__PHYSICAL",
+      "sourceId": 642,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HYDRO_VORTEX__SPECIAL",
+      "sourceId": 643,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLOOM_DOOM__PHYSICAL",
+      "sourceId": 644,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLOOM_DOOM__SPECIAL",
+      "sourceId": 645,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GIGAVOLT_HAVOC__PHYSICAL",
+      "sourceId": 646,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GIGAVOLT_HAVOC__SPECIAL",
+      "sourceId": 647,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHATTERED_PSYCHE__PHYSICAL",
+      "sourceId": 648,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHATTERED_PSYCHE__SPECIAL",
+      "sourceId": 649,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUBZERO_SLAMMER__PHYSICAL",
+      "sourceId": 650,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SUBZERO_SLAMMER__SPECIAL",
+      "sourceId": 651,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DEVASTATING_DRAKE__PHYSICAL",
+      "sourceId": 652,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DEVASTATING_DRAKE__SPECIAL",
+      "sourceId": 653,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLACK_HOLE_ECLIPSE__PHYSICAL",
+      "sourceId": 654,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BLACK_HOLE_ECLIPSE__SPECIAL",
+      "sourceId": 655,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TWINKLE_TACKLE__PHYSICAL",
+      "sourceId": 656,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TWINKLE_TACKLE__SPECIAL",
+      "sourceId": 657,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CATASTROPIKA",
+      "sourceId": 658,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHORE_UP",
+      "sourceId": 659,
+      "presentation": "zaew0659",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FIRST_IMPRESSION",
+      "sourceId": 660,
+      "presentation": "zaew0660",
+      "state": "playable"
+    },
+    {
+      "id": "BANEFUL_BUNKER",
+      "sourceId": 661,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPIRIT_SHACKLE",
+      "sourceId": 662,
+      "presentation": "ew0662",
+      "state": "playable"
+    },
+    {
+      "id": "DARKEST_LARIAT",
+      "sourceId": 663,
+      "presentation": "ew0663",
+      "state": "playable"
+    },
+    {
+      "id": "SPARKLING_ARIA",
+      "sourceId": 664,
+      "presentation": "ew0664",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_HAMMER",
+      "sourceId": 665,
+      "presentation": "zaew0665",
+      "state": "playable"
+    },
+    {
+      "id": "FLORAL_HEALING",
+      "sourceId": 666,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HIGH_HORSEPOWER",
+      "sourceId": 667,
+      "presentation": "ew0667",
+      "state": "playable"
+    },
+    {
+      "id": "STRENGTH_SAP",
+      "sourceId": 668,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SOLAR_BLADE",
+      "sourceId": 669,
+      "presentation": "zaew0669",
+      "state": "playable"
+    },
+    {
+      "id": "LEAFAGE",
+      "sourceId": 670,
+      "presentation": "zaew0670",
+      "state": "playable"
+    },
+    {
+      "id": "SPOTLIGHT",
+      "sourceId": 671,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TOXIC_THREAD",
+      "sourceId": 672,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LASER_FOCUS",
+      "sourceId": 673,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GEAR_UP",
+      "sourceId": 674,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "THROAT_CHOP",
+      "sourceId": 675,
+      "presentation": "ew0675",
+      "state": "playable"
+    },
+    {
+      "id": "POLLEN_PUFF",
+      "sourceId": 676,
+      "presentation": "ew0676",
+      "state": "playable"
+    },
+    {
+      "id": "ANCHOR_SHOT",
+      "sourceId": 677,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PSYCHIC_TERRAIN",
+      "sourceId": 678,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "LUNGE",
+      "sourceId": 679,
+      "presentation": "zaew0679",
+      "state": "playable"
+    },
+    {
+      "id": "FIRE_LASH",
+      "sourceId": 680,
+      "presentation": "ew0680",
+      "state": "playable"
+    },
+    {
+      "id": "POWER_TRIP",
+      "sourceId": 681,
+      "presentation": "ew0681",
+      "state": "playable"
+    },
+    {
+      "id": "BURN_UP",
+      "sourceId": 682,
+      "presentation": "ew0682",
+      "state": "playable"
+    },
+    {
+      "id": "SPEED_SWAP",
+      "sourceId": 683,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SMART_STRIKE",
+      "sourceId": 684,
+      "presentation": "ew0684",
+      "state": "playable"
+    },
+    {
+      "id": "PURIFY",
+      "sourceId": 685,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "REVELATION_DANCE",
+      "sourceId": 686,
+      "presentation": "ew0686",
+      "state": "playable"
+    },
+    {
+      "id": "CORE_ENFORCER",
+      "sourceId": 687,
+      "presentation": "zaew0687",
+      "state": "playable"
+    },
+    {
+      "id": "TROP_KICK",
+      "sourceId": 688,
+      "presentation": "ew0688",
+      "state": "playable"
+    },
+    {
+      "id": "INSTRUCT",
+      "sourceId": 689,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BEAK_BLAST",
+      "sourceId": 690,
+      "presentation": "ew0690",
+      "state": "playable"
+    },
+    {
+      "id": "CLANGING_SCALES",
+      "sourceId": 691,
+      "presentation": "ew0691",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_HAMMER",
+      "sourceId": 692,
+      "presentation": "ew0692",
+      "state": "playable"
+    },
+    {
+      "id": "BRUTAL_SWING",
+      "sourceId": 693,
+      "presentation": "zaew0693",
+      "state": "playable"
+    },
+    {
+      "id": "AURORA_VEIL",
+      "sourceId": 694,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SINISTER_ARROW_RAID",
+      "sourceId": 695,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MALICIOUS_MOONSAULT",
+      "sourceId": 696,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "OCEANIC_OPERETTA",
+      "sourceId": 697,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "GUARDIAN_OF_ALOLA",
+      "sourceId": 698,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SOUL_STEALING_7_STAR_STRIKE",
+      "sourceId": 699,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "STOKED_SPARKSURFER",
+      "sourceId": 700,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PULVERIZING_PANCAKE",
+      "sourceId": 701,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "EXTREME_EVOBOOST",
+      "sourceId": 702,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "GENESIS_SUPERNOVA",
+      "sourceId": 703,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHELL_TRAP",
+      "sourceId": 704,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FLEUR_CANNON",
+      "sourceId": 705,
+      "presentation": "zaew0705",
+      "state": "playable"
+    },
+    {
+      "id": "PSYCHIC_FANGS",
+      "sourceId": 706,
+      "presentation": "zaew0706",
+      "state": "playable"
+    },
+    {
+      "id": "STOMPING_TANTRUM",
+      "sourceId": 707,
+      "presentation": "ew0707",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_BONE",
+      "sourceId": 708,
+      "presentation": "zaew0708",
+      "state": "playable"
+    },
+    {
+      "id": "ACCELEROCK",
+      "sourceId": 709,
+      "presentation": "ew0709",
+      "state": "playable"
+    },
+    {
+      "id": "LIQUIDATION",
+      "sourceId": 710,
+      "presentation": "zaew0710",
+      "state": "playable"
+    },
+    {
+      "id": "PRISMATIC_LASER",
+      "sourceId": 711,
+      "presentation": "ew0711",
+      "state": "playable"
+    },
+    {
+      "id": "SPECTRAL_THIEF",
+      "sourceId": 712,
+      "presentation": "zaew0712",
+      "state": "playable"
+    },
+    {
+      "id": "SUNSTEEL_STRIKE",
+      "sourceId": 713,
+      "presentation": "ew0713",
+      "state": "playable"
+    },
+    {
+      "id": "MOONGEIST_BEAM",
+      "sourceId": 714,
+      "presentation": "ew0714",
+      "state": "playable"
+    },
+    {
+      "id": "TEARFUL_LOOK",
+      "sourceId": 715,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ZING_ZAP",
+      "sourceId": 716,
+      "presentation": "ew0716",
+      "state": "playable"
+    },
+    {
+      "id": "NATURES_MADNESS",
+      "sourceId": 717,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MULTI_ATTACK",
+      "sourceId": 718,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "10_000_000_VOLT_THUNDERBOLT",
+      "sourceId": 719,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MIND_BLOWN",
+      "sourceId": 720,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PLASMA_FISTS",
+      "sourceId": 721,
+      "presentation": "zaew0721",
+      "state": "playable"
+    },
+    {
+      "id": "PHOTON_GEYSER",
+      "sourceId": 722,
+      "presentation": "ew0722",
+      "state": "playable"
+    },
+    {
+      "id": "LIGHT_THAT_BURNS_THE_SKY",
+      "sourceId": 723,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SEARING_SUNRAZE_SMASH",
+      "sourceId": 724,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MENACING_MOONRAZE_MAELSTROM",
+      "sourceId": 725,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "LETS_SNUGGLE_FOREVER",
+      "sourceId": 726,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SPLINTERED_STORMSHARDS",
+      "sourceId": 727,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "CLANGOROUS_SOULBLAZE",
+      "sourceId": 728,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "ZIPPY_ZAP",
+      "sourceId": 729,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SPLISHY_SPLASH",
+      "sourceId": 730,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FLOATY_FALL",
+      "sourceId": 731,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PIKA_PAPOW",
+      "sourceId": 732,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BOUNCY_BUBBLE",
+      "sourceId": 733,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "BUZZY_BUZZ",
+      "sourceId": 734,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SIZZLY_SLIDE",
+      "sourceId": 735,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "GLITZY_GLOW",
+      "sourceId": 736,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "BADDY_BAD",
+      "sourceId": 737,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SAPPY_SEED",
+      "sourceId": 738,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FREEZY_FROST",
+      "sourceId": 739,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SPARKLY_SWIRL",
+      "sourceId": 740,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "VEEVEE_VOLLEY",
+      "sourceId": 741,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DOUBLE_IRON_BASH",
+      "sourceId": 742,
+      "presentation": "zaew0742",
+      "state": "playable"
+    },
+    {
+      "id": "MAX_GUARD",
+      "sourceId": 743,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DYNAMAX_CANNON",
+      "sourceId": 744,
+      "presentation": "ew0744",
+      "state": "playable"
+    },
+    {
+      "id": "SNIPE_SHOT",
+      "sourceId": 745,
+      "presentation": "ew0745",
+      "state": "playable"
+    },
+    {
+      "id": "JAW_LOCK",
+      "sourceId": 746,
+      "presentation": "ew0746",
+      "state": "playable"
+    },
+    {
+      "id": "STUFF_CHEEKS",
+      "sourceId": 747,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "NO_RETREAT",
+      "sourceId": 748,
+      "presentation": "zaew0748",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TAR_SHOT",
+      "sourceId": 749,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAGIC_POWDER",
+      "sourceId": 750,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRAGON_DARTS",
+      "sourceId": 751,
+      "presentation": "ew0751",
+      "state": "playable"
+    },
+    {
+      "id": "TEATIME",
+      "sourceId": 752,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "OCTOLOCK",
+      "sourceId": 753,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BOLT_BEAK",
+      "sourceId": 754,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "FISHIOUS_REND",
+      "sourceId": 755,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "COURT_CHANGE",
+      "sourceId": 756,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "MAX_FLARE",
+      "sourceId": 757,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_FLUTTERBY",
+      "sourceId": 758,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_LIGHTNING",
+      "sourceId": 759,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_STRIKE",
+      "sourceId": 760,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_KNUCKLE",
+      "sourceId": 761,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_PHANTASM",
+      "sourceId": 762,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_HAILSTORM",
+      "sourceId": 763,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_OOZE",
+      "sourceId": 764,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_GEYSER",
+      "sourceId": 765,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_AIRSTREAM",
+      "sourceId": 766,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_STARFALL",
+      "sourceId": 767,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_WYRMWIND",
+      "sourceId": 768,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_MINDSTORM",
+      "sourceId": 769,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_ROCKFALL",
+      "sourceId": 770,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_QUAKE",
+      "sourceId": 771,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_DARKNESS",
+      "sourceId": 772,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_OVERGROWTH",
+      "sourceId": 773,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "MAX_STEELSPIKE",
+      "sourceId": 774,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "CLANGOROUS_SOUL",
+      "sourceId": 775,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "BODY_PRESS",
+      "sourceId": 776,
+      "presentation": "ew0776",
+      "state": "playable"
+    },
+    {
+      "id": "DECORATE",
+      "sourceId": 777,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRUM_BEATING",
+      "sourceId": 778,
+      "presentation": "ew0778",
+      "state": "playable"
+    },
+    {
+      "id": "SNAP_TRAP",
+      "sourceId": 779,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "PYRO_BALL",
+      "sourceId": 780,
+      "presentation": "ew0780",
+      "state": "playable"
+    },
+    {
+      "id": "BEHEMOTH_BLADE",
+      "sourceId": 781,
+      "presentation": "ew0781",
+      "state": "playable"
+    },
+    {
+      "id": "BEHEMOTH_BASH",
+      "sourceId": 782,
+      "presentation": "ew0782",
+      "state": "playable"
+    },
+    {
+      "id": "AURA_WHEEL",
+      "sourceId": 783,
+      "presentation": "zaew0783",
+      "state": "playable"
+    },
+    {
+      "id": "BREAKING_SWIPE",
+      "sourceId": 784,
+      "presentation": "zaew0784",
+      "state": "playable"
+    },
+    {
+      "id": "BRANCH_POKE",
+      "sourceId": 785,
+      "presentation": "ew0785",
+      "state": "playable"
+    },
+    {
+      "id": "OVERDRIVE",
+      "sourceId": 786,
+      "presentation": "zaew0786",
+      "state": "playable"
+    },
+    {
+      "id": "APPLE_ACID",
+      "sourceId": 787,
+      "presentation": "ew0787",
+      "state": "playable"
+    },
+    {
+      "id": "GRAV_APPLE",
+      "sourceId": 788,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SPIRIT_BREAK",
+      "sourceId": 789,
+      "presentation": "ew0789",
+      "state": "playable"
+    },
+    {
+      "id": "STRANGE_STEAM",
+      "sourceId": 790,
+      "presentation": "ew0790",
+      "state": "playable"
+    },
+    {
+      "id": "LIFE_DEW",
+      "sourceId": 791,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "OBSTRUCT",
+      "sourceId": 792,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FALSE_SURRENDER",
+      "sourceId": 793,
+      "presentation": "ew0793",
+      "state": "playable"
+    },
+    {
+      "id": "METEOR_ASSAULT",
+      "sourceId": 794,
+      "presentation": "zaew0794",
+      "state": "playable"
+    },
+    {
+      "id": "ETERNABEAM",
+      "sourceId": 795,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "STEEL_BEAM",
+      "sourceId": 796,
+      "presentation": "zaew0796",
+      "state": "playable"
+    },
+    {
+      "id": "EXPANDING_FORCE",
+      "sourceId": 797,
+      "presentation": "ew0797",
+      "state": "playable"
+    },
+    {
+      "id": "STEEL_ROLLER",
+      "sourceId": 798,
+      "presentation": "ew0798",
+      "state": "playable"
+    },
+    {
+      "id": "SCALE_SHOT",
+      "sourceId": 799,
+      "presentation": "zaew0799",
+      "state": "playable"
+    },
+    {
+      "id": "METEOR_BEAM",
+      "sourceId": 800,
+      "presentation": "zaew0800",
+      "state": "playable"
+    },
+    {
+      "id": "SHELL_SIDE_ARM",
+      "sourceId": 801,
+      "presentation": "ew0801",
+      "state": "playable"
+    },
+    {
+      "id": "MISTY_EXPLOSION",
+      "sourceId": 802,
+      "presentation": "ew0802",
+      "state": "playable"
+    },
+    {
+      "id": "GRASSY_GLIDE",
+      "sourceId": 803,
+      "presentation": "ew0803",
+      "state": "playable"
+    },
+    {
+      "id": "RISING_VOLTAGE",
+      "sourceId": 804,
+      "presentation": "ew0804",
+      "state": "playable"
+    },
+    {
+      "id": "TERRAIN_PULSE",
+      "sourceId": 805,
+      "presentation": "ew0805",
+      "state": "playable"
+    },
+    {
+      "id": "SKITTER_SMACK",
+      "sourceId": 806,
+      "presentation": "ew0806",
+      "state": "playable"
+    },
+    {
+      "id": "BURNING_JEALOUSY",
+      "sourceId": 807,
+      "presentation": "ew0807",
+      "state": "playable"
+    },
+    {
+      "id": "LASH_OUT",
+      "sourceId": 808,
+      "presentation": "ew0808",
+      "state": "playable"
+    },
+    {
+      "id": "POLTERGEIST",
+      "sourceId": 809,
+      "presentation": "ew0809",
+      "state": "playable"
+    },
+    {
+      "id": "CORROSIVE_GAS",
+      "sourceId": 810,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "COACHING",
+      "sourceId": 811,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FLIP_TURN",
+      "sourceId": 812,
+      "presentation": "zaew0812",
+      "state": "playable"
+    },
+    {
+      "id": "TRIPLE_AXEL",
+      "sourceId": 813,
+      "presentation": "zaew0813",
+      "state": "playable"
+    },
+    {
+      "id": "DUAL_WINGBEAT",
+      "sourceId": 814,
+      "presentation": "zaew0814",
+      "state": "playable"
+    },
+    {
+      "id": "SCORCHING_SANDS",
+      "sourceId": 815,
+      "presentation": "zaew0815",
+      "state": "playable"
+    },
+    {
+      "id": "JUNGLE_HEALING",
+      "sourceId": 816,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "WICKED_BLOW",
+      "sourceId": 817,
+      "presentation": "ew0817",
+      "state": "playable"
+    },
+    {
+      "id": "SURGING_STRIKES",
+      "sourceId": 818,
+      "presentation": "ew0818",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDER_CAGE",
+      "sourceId": 819,
+      "presentation": "ew0819",
+      "state": "playable"
+    },
+    {
+      "id": "DRAGON_ENERGY",
+      "sourceId": 820,
+      "presentation": "ew0820",
+      "state": "playable"
+    },
+    {
+      "id": "FREEZING_GLARE",
+      "sourceId": 821,
+      "presentation": "ew0821",
+      "state": "playable"
+    },
+    {
+      "id": "FIERY_WRATH",
+      "sourceId": 822,
+      "presentation": "ew0822",
+      "state": "playable"
+    },
+    {
+      "id": "THUNDEROUS_KICK",
+      "sourceId": 823,
+      "presentation": "ew0823",
+      "state": "playable"
+    },
+    {
+      "id": "GLACIAL_LANCE",
+      "sourceId": 824,
+      "presentation": "ew0824",
+      "state": "playable"
+    },
+    {
+      "id": "ASTRAL_BARRAGE",
+      "sourceId": 825,
+      "presentation": "ew0825",
+      "state": "playable"
+    },
+    {
+      "id": "EERIE_SPELL",
+      "sourceId": 826,
+      "presentation": "ew0826",
+      "state": "playable"
+    },
+    {
+      "id": "DIRE_CLAW",
+      "sourceId": 827,
+      "presentation": "ew0827",
+      "state": "playable"
+    },
+    {
+      "id": "PSYSHIELD_BASH",
+      "sourceId": 828,
+      "presentation": "ew0828",
+      "state": "playable"
+    },
+    {
+      "id": "POWER_SHIFT",
+      "sourceId": 829,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "STONE_AXE",
+      "sourceId": 830,
+      "presentation": "zaew0830",
+      "state": "playable"
+    },
+    {
+      "id": "SPRINGTIDE_STORM",
+      "sourceId": 831,
+      "presentation": "ew0831",
+      "state": "playable"
+    },
+    {
+      "id": "MYSTICAL_POWER",
+      "sourceId": 832,
+      "presentation": "ew0832",
+      "state": "playable"
+    },
+    {
+      "id": "RAGING_FURY",
+      "sourceId": 833,
+      "presentation": "ew0833",
+      "state": "playable"
+    },
+    {
+      "id": "WAVE_CRASH",
+      "sourceId": 834,
+      "presentation": "ew0834",
+      "state": "playable"
+    },
+    {
+      "id": "CHLOROBLAST",
+      "sourceId": 835,
+      "presentation": "ew0835",
+      "state": "playable"
+    },
+    {
+      "id": "MOUNTAIN_GALE",
+      "sourceId": 836,
+      "presentation": "ew0836",
+      "state": "playable"
+    },
+    {
+      "id": "VICTORY_DANCE",
+      "sourceId": 837,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "HEADLONG_RUSH",
+      "sourceId": 838,
+      "presentation": "ew0838",
+      "state": "playable"
+    },
+    {
+      "id": "BARB_BARRAGE",
+      "sourceId": 839,
+      "presentation": "zaew0839",
+      "state": "playable"
+    },
+    {
+      "id": "ESPER_WING",
+      "sourceId": 840,
+      "presentation": "ew0840",
+      "state": "playable"
+    },
+    {
+      "id": "BITTER_MALICE",
+      "sourceId": 841,
+      "presentation": "ew0841",
+      "state": "playable"
+    },
+    {
+      "id": "SHELTER",
+      "sourceId": 842,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TRIPLE_ARROWS",
+      "sourceId": 843,
+      "presentation": "ew0843",
+      "state": "playable"
+    },
+    {
+      "id": "INFERNAL_PARADE",
+      "sourceId": 844,
+      "presentation": "ew0844",
+      "state": "playable"
+    },
+    {
+      "id": "CEASELESS_EDGE",
+      "sourceId": 845,
+      "presentation": "ew0845",
+      "state": "playable"
+    },
+    {
+      "id": "BLEAKWIND_STORM",
+      "sourceId": 846,
+      "presentation": "ew0846",
+      "state": "playable"
+    },
+    {
+      "id": "WILDBOLT_STORM",
+      "sourceId": 847,
+      "presentation": "ew0847",
+      "state": "playable"
+    },
+    {
+      "id": "SANDSEAR_STORM",
+      "sourceId": 848,
+      "presentation": "ew0848",
+      "state": "playable"
+    },
+    {
+      "id": "LUNAR_BLESSING",
+      "sourceId": 849,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TAKE_HEART",
+      "sourceId": 850,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TERA_BLAST",
+      "sourceId": 851,
+      "presentation": "ew0851",
+      "state": "playable"
+    },
+    {
+      "id": "SILK_TRAP",
+      "sourceId": 852,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "AXE_KICK",
+      "sourceId": 853,
+      "presentation": "ew0853",
+      "state": "playable"
+    },
+    {
+      "id": "LAST_RESPECTS",
+      "sourceId": 854,
+      "presentation": "zaew0854",
+      "state": "playable"
+    },
+    {
+      "id": "LUMINA_CRASH",
+      "sourceId": 855,
+      "presentation": "ew0855",
+      "state": "playable"
+    },
+    {
+      "id": "ORDER_UP",
+      "sourceId": 856,
+      "presentation": "zaew0856",
+      "state": "playable"
+    },
+    {
+      "id": "JET_PUNCH",
+      "sourceId": 857,
+      "presentation": "ew0857",
+      "state": "playable"
+    },
+    {
+      "id": "SPICY_EXTRACT",
+      "sourceId": 858,
+      "presentation": "zaew0858",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SPIN_OUT",
+      "sourceId": 859,
+      "presentation": "ew0859",
+      "state": "playable"
+    },
+    {
+      "id": "POPULATION_BOMB",
+      "sourceId": 860,
+      "presentation": "ew0860",
+      "state": "playable"
+    },
+    {
+      "id": "ICE_SPINNER",
+      "sourceId": 861,
+      "presentation": "ew0861",
+      "state": "playable"
+    },
+    {
+      "id": "GLAIVE_RUSH",
+      "sourceId": 862,
+      "presentation": "zaew0862",
+      "state": "playable"
+    },
+    {
+      "id": "REVIVAL_BLESSING",
+      "sourceId": 863,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SALT_CURE",
+      "sourceId": 864,
+      "presentation": "zaew0864",
+      "state": "playable"
+    },
+    {
+      "id": "TRIPLE_DIVE",
+      "sourceId": 865,
+      "presentation": "ew0865",
+      "state": "playable"
+    },
+    {
+      "id": "MORTAL_SPIN",
+      "sourceId": 866,
+      "presentation": "zaew0866",
+      "state": "playable"
+    },
+    {
+      "id": "DOODLE",
+      "sourceId": 867,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "FILLET_AWAY",
+      "sourceId": 868,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "KOWTOW_CLEAVE",
+      "sourceId": 869,
+      "presentation": "ew0869",
+      "state": "playable"
+    },
+    {
+      "id": "FLOWER_TRICK",
+      "sourceId": 870,
+      "presentation": "ew0870",
+      "state": "playable"
+    },
+    {
+      "id": "TORCH_SONG",
+      "sourceId": 871,
+      "presentation": "ew0871",
+      "state": "playable"
+    },
+    {
+      "id": "AQUA_STEP",
+      "sourceId": 872,
+      "presentation": "ew0872",
+      "state": "playable"
+    },
+    {
+      "id": "RAGING_BULL",
+      "sourceId": 873,
+      "presentation": "ew0873",
+      "state": "playable"
+    },
+    {
+      "id": "MAKE_IT_RAIN",
+      "sourceId": 874,
+      "presentation": "zaew0874",
+      "state": "playable"
+    },
+    {
+      "id": "PSYBLADE",
+      "sourceId": 875,
+      "presentation": "ew0875",
+      "state": "playable"
+    },
+    {
+      "id": "HYDRO_STEAM",
+      "sourceId": 876,
+      "presentation": "ew0876",
+      "state": "playable"
+    },
+    {
+      "id": "RUINATION",
+      "sourceId": 877,
+      "presentation": "ew0877",
+      "state": "playable"
+    },
+    {
+      "id": "COLLISION_COURSE",
+      "sourceId": 878,
+      "presentation": "ew0878",
+      "state": "playable"
+    },
+    {
+      "id": "ELECTRO_DRIFT",
+      "sourceId": 879,
+      "presentation": "ew0879",
+      "state": "playable"
+    },
+    {
+      "id": "SHED_TAIL",
+      "sourceId": 880,
+      "presentation": "zaew0880",
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "CHILLY_RECEPTION",
+      "sourceId": 881,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "TIDY_UP",
+      "sourceId": 882,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SNOWSCAPE",
+      "sourceId": 883,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "POUNCE",
+      "sourceId": 884,
+      "presentation": "ew0884",
+      "state": "playable"
+    },
+    {
+      "id": "TRAILBLAZE",
+      "sourceId": 885,
+      "presentation": "zaew0885",
+      "state": "playable"
+    },
+    {
+      "id": "CHILLING_WATER",
+      "sourceId": 886,
+      "presentation": "zaew0886",
+      "state": "playable"
+    },
+    {
+      "id": "HYPER_DRILL",
+      "sourceId": 887,
+      "presentation": "ew0887",
+      "state": "playable"
+    },
+    {
+      "id": "TWIN_BEAM",
+      "sourceId": 888,
+      "presentation": "ew0888",
+      "state": "playable"
+    },
+    {
+      "id": "RAGE_FIST",
+      "sourceId": 889,
+      "presentation": "zaew0889",
+      "state": "playable"
+    },
+    {
+      "id": "ARMOR_CANNON",
+      "sourceId": 890,
+      "presentation": "zaew0890",
+      "state": "playable"
+    },
+    {
+      "id": "BITTER_BLADE",
+      "sourceId": 891,
+      "presentation": "zaew0891",
+      "state": "playable"
+    },
+    {
+      "id": "DOUBLE_SHOCK",
+      "sourceId": 892,
+      "presentation": "ew0892",
+      "state": "playable"
+    },
+    {
+      "id": "GIGATON_HAMMER",
+      "sourceId": 893,
+      "presentation": "zaew0893",
+      "state": "playable"
+    },
+    {
+      "id": "COMEUPPANCE",
+      "sourceId": 894,
+      "presentation": "ew0894",
+      "state": "playable"
+    },
+    {
+      "id": "AQUA_CUTTER",
+      "sourceId": 895,
+      "presentation": "ew0895",
+      "state": "playable"
+    },
+    {
+      "id": "BLAZING_TORQUE",
+      "sourceId": 896,
+      "presentation": "ew0896",
+      "state": "playable"
+    },
+    {
+      "id": "WICKED_TORQUE",
+      "sourceId": 897,
+      "presentation": "ew0897",
+      "state": "playable"
+    },
+    {
+      "id": "NOXIOUS_TORQUE",
+      "sourceId": 898,
+      "presentation": "ew0898",
+      "state": "playable"
+    },
+    {
+      "id": "COMBAT_TORQUE",
+      "sourceId": 899,
+      "presentation": "ew0899",
+      "state": "playable"
+    },
+    {
+      "id": "MAGICAL_TORQUE",
+      "sourceId": 900,
+      "presentation": "ew0900",
+      "state": "playable"
+    },
+    {
+      "id": "BLOOD_MOON",
+      "sourceId": 901,
+      "presentation": "ew0901",
+      "state": "playable"
+    },
+    {
+      "id": "MATCHA_GOTCHA",
+      "sourceId": 902,
+      "presentation": "ew0902",
+      "state": "playable"
+    },
+    {
+      "id": "SYRUP_BOMB",
+      "sourceId": 903,
+      "presentation": "ew0903",
+      "state": "playable"
+    },
+    {
+      "id": "IVY_CUDGEL",
+      "sourceId": 904,
+      "presentation": "ew0904",
+      "state": "playable"
+    },
+    {
+      "id": "ELECTRO_SHOT",
+      "sourceId": 905,
+      "presentation": "ew0905",
+      "state": "playable"
+    },
+    {
+      "id": "TERA_STARSTORM",
+      "sourceId": 906,
+      "presentation": "ew0906",
+      "state": "playable"
+    },
+    {
+      "id": "FICKLE_BEAM",
+      "sourceId": 907,
+      "presentation": "ew0907",
+      "state": "playable"
+    },
+    {
+      "id": "BURNING_BULWARK",
+      "sourceId": 908,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "THUNDERCLAP",
+      "sourceId": 909,
+      "presentation": "ew0909",
+      "state": "playable"
+    },
+    {
+      "id": "MIGHTY_CLEAVE",
+      "sourceId": 910,
+      "presentation": "ew0910",
+      "state": "playable"
+    },
+    {
+      "id": "TACHYON_CUTTER",
+      "sourceId": 911,
+      "presentation": "ew0911",
+      "state": "playable"
+    },
+    {
+      "id": "HARD_PRESS",
+      "sourceId": 912,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "DRAGON_CHEER",
+      "sourceId": 913,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "ALLURING_VOICE",
+      "sourceId": 914,
+      "presentation": "ew0914",
+      "state": "playable"
+    },
+    {
+      "id": "TEMPER_FLARE",
+      "sourceId": 915,
+      "presentation": "ew0915",
+      "state": "playable"
+    },
+    {
+      "id": "SUPERCELL_SLAM",
+      "sourceId": 916,
+      "presentation": "ew0916",
+      "state": "playable"
+    },
+    {
+      "id": "PSYCHIC_NOISE",
+      "sourceId": 917,
+      "presentation": "ew0917",
+      "state": "playable"
+    },
+    {
+      "id": "UPPER_HAND",
+      "sourceId": 918,
+      "presentation": "ew0918",
+      "state": "playable"
+    },
+    {
+      "id": "MALIGNANT_CHAIN",
+      "sourceId": 919,
+      "presentation": "ew0919",
+      "state": "playable"
+    },
+    {
+      "id": "SHADOW_RUSH",
+      "sourceId": 10001,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_BLAST",
+      "sourceId": 10002,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_BLITZ",
+      "sourceId": 10003,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_BOLT",
+      "sourceId": 10004,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_BREAK",
+      "sourceId": 10005,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_CHILL",
+      "sourceId": 10006,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_END",
+      "sourceId": 10007,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_FIRE",
+      "sourceId": 10008,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_RAVE",
+      "sourceId": 10009,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_STORM",
+      "sourceId": 10010,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_WAVE",
+      "sourceId": 10011,
+      "presentation": null,
+      "state": "missing-native-presentation-or-timing"
+    },
+    {
+      "id": "SHADOW_DOWN",
+      "sourceId": 10012,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_HALF",
+      "sourceId": 10013,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_HOLD",
+      "sourceId": 10014,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_MIST",
+      "sourceId": 10015,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_PANIC",
+      "sourceId": 10016,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_SHED",
+      "sourceId": 10017,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    },
+    {
+      "id": "SHADOW_SKY",
+      "sourceId": 10018,
+      "presentation": null,
+      "state": "needs-special-mechanics"
+    }
+  ]
+}

@@ -34,7 +34,7 @@ namespace BattleLab
             float defense = b.stats[move.physical ? 2 : 5] + 35;
             float stab = a.types.Contains(move.type) ? 1.5f : 1;
             // Fixed level 30, no random damage/crit/secondary effects: shared lab baseline.
-            return Math.Max(1, (int)((14 * power * attack / defense / 50 + 2) * stab * type *
+            return Math.Max(1,move.hitCount) * Math.Max(1, (int)((14 * power * attack / defense / 50 + 2) * stab * type *
                 (mode == BattleMode.Arceus ? StylePower(style) : 1) * (mode == BattleMode.ZA ? .7f : 1)));
         }
         public static int NextActor(double a, double b) => a <= b ? 0 : 1;
