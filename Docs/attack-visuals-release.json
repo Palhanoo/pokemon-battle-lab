@@ -1,0 +1,19 @@
+{
+  "build": "AttackVisuals20261023",
+  "effectPresentations": {
+    "ZA": 47,
+    "BDSP": 22
+  },
+  "rosterModelFiles": 1000,
+  "textureBindings": 3600,
+  "missingTextureBindings": 0,
+  "unityBuildErrors": 0,
+  "evidence": "Docs/evidence/attack-completion/final-review",
+  "checks": [
+    "native-final-all69.log",
+    "native-final-travel.log",
+    "native-final-scale.log",
+    "native-final-shaders.log",
+    "native-final-dig-full-roster.log"
+  ]
+}

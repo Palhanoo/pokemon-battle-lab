@@ -127,7 +127,7 @@ namespace BattleLab.Native
             if (d.TryGetValue("color_life", out var cl) && cl != null) { var m2 = ps.colorOverLifetime; m2.enabled = true; m2.color = Gradient(cl); }
             if (Module(d, "uv", out var uv))
             {
-                var m2 = ps.textureSheetAnimation; m2.enabled = true;
+                var m2 = ps.textureSheetAnimation; m2.enabled = true; m2.uvChannelMask=UnityEngine.Rendering.UVChannelFlags.UV0;
                 m2.mode = ParticleSystemAnimationMode.Grid;
                 var tiles = J.Floats(uv["tiles"]);
                 m2.numTilesX = Mathf.Max(1, (int)tiles[0]); m2.numTilesY = Mathf.Max(1, (int)tiles[1]);
@@ -346,10 +346,13 @@ namespace BattleLab.Native
             r.sortingOrder = (int)J.F(d, "order");
             r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             r.receiveShadows = false;
+            r.enableGPUInstancing = false;
             r.SetActiveVertexStreams(new List<ParticleSystemVertexStream>
             {
                 ParticleSystemVertexStream.Position, ParticleSystemVertexStream.Normal, ParticleSystemVertexStream.Color, ParticleSystemVertexStream.UV,
                 ParticleSystemVertexStream.Custom1XYZW, ParticleSystemVertexStream.Custom2XYZW,
+                ParticleSystemVertexStream.UV2,ParticleSystemVertexStream.UV3,
+                ParticleSystemVertexStream.AgePercent,ParticleSystemVertexStream.InvStartLifetime,ParticleSystemVertexStream.StableRandomXYZW,ParticleSystemVertexStream.UV4,
             });
             if (!d.TryGetValue("mat", out var mo) || !(mo is Dictionary<string, object> m)) { r.enabled = false; return; }
             var mat = new Material(baseMaterial) { name = r.gameObject.name };
@@ -359,13 +362,28 @@ namespace BattleLab.Native
             mat.SetFloat("_DstBlend", J.F(m, "dst"));
             mat.SetFloat("_Cull", J.F(m, "cull"));
             mat.SetFloat("_MeshParticles", 0);
+            mat.SetFloat("_ParticleUvClock",1);
+            var sheet=r.GetComponent<ParticleSystem>().textureSheetAnimation;
+            mat.SetVector("_MainSheet",new Vector4(sheet.enabled?sheet.numTilesX:1,sheet.enabled?sheet.numTilesY:1,0,0));
+            mat.SetFloat("_PrimitiveStream",r.renderMode==ParticleSystemRenderMode.Mesh&&J.B(m,"mesh")?1:0);
             int queue = (int)J.F(d, "queue");
             mat.renderQueue = queue >= 2500 ? queue : 3000;
             Texture(mat, "_MainTex", m, "tex0", texture, "_MainScroll");
             mat.SetFloat("_UseSub", Texture(mat, "_SubTex", m, "tex1", texture, "_SubScroll") ? 1 : 0);
             if(m.TryGetValue("combiner",out var combiner))VioletFx.NativeCombiner(mat,J.Obj(combiner));
             mat.SetFloat("_UseThird",Texture(mat,"_ThirdTex",m,"tex2",texture,"_ThirdScroll")?1:0);
-            if(m.TryGetValue("surface",out var surface))VioletFx.Surface(mat,J.Obj(surface));
+            if(m.TryGetValue("surface",out var surface))
+            {
+                var sd=J.Obj(surface);VioletFx.Surface(mat,sd);
+                if(J.F(sd,"distortion_mode")>0)
+                {
+                    mat.SetFloat("_BdspDistortion",J.F(sd,"distortion_mode"));
+                    var strength=J.Floats(sd["distortion_strength"]);
+                    mat.SetVector("_DistortionStrength",new Vector4(strength[0],strength[1],0,0));
+                    var points=J.List(sd,"distortion_curve");
+                    for(int k=0;k<points.Count;k++){var pt=J.Floats(points[k]);mat.SetVector("_DistortionKey"+k,new Vector4(pt[0],pt[1],0,0));}
+                }
+            }
             if(m.TryGetValue("render_state",out var state))VioletFx.RenderState(mat,J.Obj(state));
             r.sharedMaterial = mat;
             // the combiner's colour scale and multiply colour act on colour0 / colour1
@@ -410,6 +428,7 @@ namespace BattleLab.Native
                 var s = J.Floats(t["scroll"]);
                 mat.SetVector(scrollProp, new Vector4(s[0], s[1], 0, 0));
             }
+            mat.SetFloat(prop.Replace("Tex","UvChannel"),J.F(t,"uv_channel"));
             mat.SetFloat(prop.Replace("Tex","Sphere"),J.B(t,"sphere_map")?1:0);
             mat.SetFloat(prop.Replace("Tex","Rotation"),J.F(t,"rotation"));
             var speed=t.ContainsKey("scale_speed")?J.Floats(t["scale_speed"]):new float[2];
@@ -440,12 +459,22 @@ namespace BattleLab.Native
                 for (int i = 0; i < us.Length && i * 2 + 1 < u.Length; i++) us[i] = new Vector2(u[i * 2], u[i * 2 + 1]);
                 mesh.uv = us;
             }
-            if (m.ContainsKey("col"))
+            // Primitive masks and particle tint are distinct shader inputs. The
+            // exporter normalizes UNorm8 colours before packing these UV streams.
+            var colors=m.ContainsKey("col")?J.Floats(m["col"]):null;
+            var rg=new List<Vector2>();var ba=new List<Vector2>();var white=new Color32[verts.Length];
+            for(int i=0;i<verts.Length;i++)
             {
-                var c = J.Floats(m["col"]);
-                var cs = new Color[verts.Length];
-                for (int i = 0; i < cs.Length && i * 4 + 3 < c.Length; i++) cs[i] = new Color(c[i * 4], c[i * 4 + 1], c[i * 4 + 2], c[i * 4 + 3]);
-                mesh.colors = cs;
+                var c=colors!=null&&i*4+3<colors.Length?new Color(colors[i*4],colors[i*4+1],colors[i*4+2],colors[i*4+3]):Color.white;
+                rg.Add(new Vector2(c.r,c.g));ba.Add(new Vector2(c.b,c.a));white[i]=Color.white;
+            }
+            // Mesh particle COLOR requires packed UNorm8; Float32 colours bake as raw bytes on this Unity path.
+            mesh.colors32=white;mesh.SetUVs(1,rg);mesh.SetUVs(2,ba);
+            if(m.ContainsKey("uv1"))
+            {
+                var sourceUv=J.Floats(m["uv1"]);var secondary=new List<Vector2>();
+                for(int i=0;i<verts.Length;i++)secondary.Add(new Vector2(sourceUv[i*2],sourceUv[i*2+1]));
+                mesh.SetUVs(3,secondary);
             }
             var idx = J.Floats(m["i"]);
             var tris = new int[idx.Length];

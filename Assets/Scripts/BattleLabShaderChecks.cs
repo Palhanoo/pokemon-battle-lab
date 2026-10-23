@@ -53,6 +53,7 @@ namespace BattleLab
                 if(before.Where((p,i)=>Difference(p,back[i])>6).Any())throw new Exception("Native back-face culling regression");
                 renderer.enabled=false;
                 primitiveMask=Instantiate(lens.GetComponent<MeshFilter>().sharedMesh);
+                primitiveMask.colors32=primitiveMask.vertices.Select(v=>(Color32)Color.white).ToArray();
                 primitiveMask.SetUVs(1,primitiveMask.vertices.Select(v=>Vector2.one).ToList());
                 primitiveMask.SetUVs(2,primitiveMask.vertices.Select(v=>new Vector2(1,v.x<0?0:1)).ToList());
                 var particles=new GameObject("Native primitive mask transport");particles.transform.parent=root.transform;particles.transform.position=lens.transform.position;
@@ -69,6 +70,13 @@ namespace BattleLab
                 ps.Emit(1);ps.Simulate(.01f,false,false);
                 var primitive=Pixels("native-primitive-mask");
                 if(Difference(before[380*1024+450],primitive[380*1024+450])>6||Difference(before[380*1024+650],primitive[380*1024+650])<30)throw new Exception("Native primitive-channel transport regression");
+                // Regression: float mesh COLOR was interpreted as packed bytes, turning brown seeds blue/black.
+                main.startColor=new Color(.45f,.3586f,.3586f,1);ps.Clear();ps.Emit(1);ps.Simulate(.01f,false,false);
+                var baked=new Mesh();particleRenderer.BakeMesh(baked,cam,ParticleSystemBakeMeshOptions.BakeRotationAndScale);
+                var expected=QualitySettings.activeColorSpace==ColorSpace.Linear?main.startColor.color.linear:main.startColor.color;
+                if(baked.colors.Length==0||baked.colors.Any(c=>Mathf.Abs(c.r-expected.r)>.02f||Mathf.Abs(c.g-expected.g)>.02f||Mathf.Abs(c.b-expected.b)>.02f||Mathf.Abs(c.a-expected.a)>.02f))throw new Exception("Packed mesh particle tint regression");
+                Destroy(baked);
+                File.AppendAllText(Path.Combine(folder,"refraction-pixels.txt"),"Packed UNorm8 mesh tint agrees with particle colour.\n");
                 File.AppendAllText(Path.Combine(folder,"refraction-pixels.txt"),"Soft-intersection, native alpha cutout front/back culling and actual particle primitive-channel pixel checks passed.\n");
                 Debug.Log($"LAB REFRACTION PIXELS PASSED changed={changed}, outside/zero/foreground/soft=0");
             }

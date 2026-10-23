@@ -349,7 +349,12 @@ def material(t, mb, tex):
         'blend_enable':not(out['src']==1 and out['dst']==0)}
     out['surface']={'soft':1 if '_SOFTPARTICLESENABLED_ON' in kw else 0,
         'soft_range':[fl.get('_SoftParticlesNearFadeDistance',0),fl.get('_SoftParticlesFarFadeDistance',1)],
-        'refraction':False}
+        'refraction':int(fl.get('_Distortion',0))==1,
+        'distortion_mode':int(fl.get('_Distortion',0)),
+        'distortion_strength':[fl.get('_DistortionStrengthX',0),fl.get('_DistortionStrengthY',0)],
+        'distortion_curve':[[cols.get('_DistortionAnim'+str(i),{}).get('r',i/3),cols.get('_DistortionAnim'+str(i),{}).get('g',1)] for i in range(4)],
+        'fresnel':fl.get('_FresnelAlphaType',0),
+        'fresnel_range':[cols.get('_FresnelAlphaRef',{}).get('r',0),cols.get('_FresnelAlphaRef',{}).get('g',1)]}
 
     def channels(prefix,values):return [values[key(f'_{prefix}TEXTURE{i}CHANNEL_',next(iter(values)))] for i in range(3)]
     def blends(prefix):return [{'MUL':0,'PLUS':1,'MINUS':2}.get(key(f'_{prefix}TEXTURE{i}BLENDTYPE_','MUL'),0) for i in (1,2)]+[0]
@@ -372,13 +377,16 @@ def material(t, mb, tex):
         d = {'name': info[0], 'wrap': info[1], 'scale': _r(sc), 'offset': _r([te['m_Offset']['x'], te['m_Offset']['y']])}
         if mb is not None and slot < len(mb.get('_UvScroll0', [])):
             s = mb['_UvScroll0'][slot]
-            d['scroll'] = _r([s['x'], s['y']])
+            d['offset'] = _r([d['offset'][0]+s['x'],d['offset'][1]+s['y']])
+            speed=mb.get('_UvScroll1',[{}]*3)[slot]
+            d['scroll'] = _r([speed.get('x',0),speed.get('y',0)])
         if slot>0 and not any(k.startswith('_MULTITEXTUREMODE_TEX'+str(n)) for k in kw for n in range(slot+1,4)):
             continue
+        d['uv_channel']=int(key('_MULTITEXTUREMODE_','TEX1_0').split('_')[-1][slot])
         d['sphere_map']=bool(fl.get(f'_SphereMapEnabled_Tex{slot}',0))
         if mb is not None and slot<len(mb.get('_UvRotation',[])):
             rotation=mb['_UvRotation'][slot]
-            d['rotation']=_r(rotation['x']);d['rotation_speed']=_r(rotation['y'])
+            d['rotation']=_r(rotation['x']);d['rotation_speed']=_r(rotation['z'])
         if mb is not None and slot<len(mb.get('_UvScale1',[])):
             delta=mb['_UvScale1'][slot];d['scale_speed']=_r([delta['x'],delta['y']])
         out[f'tex{slot}'] = d
@@ -503,8 +511,12 @@ def mesh_json(mesh):
         out['n'] = _r([c for v in h.m_Normals for c in v[:3]], 4)
     if h.m_UV0:
         out['uv'] = _r([c for v in h.m_UV0 for c in v[:2]], 5)
+    if h.m_UV1:
+        out['uv1'] = _r([c for v in h.m_UV1 for c in v[:2]], 5)
     if h.m_Colors:
-        out['col'] = _r([c for v in h.m_Colors for c in v[:4]], 3)
+        # MeshHandler exposes UNorm8 bytes as 0..255; Unity colours are 0..1.
+        divisor=255.0 if mesh.m_VertexData.m_Channels[3].format==2 else 1.0
+        out['col'] = _r([c/divisor for v in h.m_Colors for c in v[:4]], 5)
     return out
 
 # ---------------------------------------------------------------- moves

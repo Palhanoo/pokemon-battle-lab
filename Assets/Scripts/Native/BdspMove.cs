@@ -38,6 +38,7 @@ namespace BattleLab.Native
             public Group followGroup; public Vector3 followOffset;
             public VioletMove.Battler followPoke; public int followNode;
             public bool alive, playing;
+            public BdspCameraLayer cameraLayer;
             public float baseScale = 1f;
             public Vector3 scale = Vector3.one;
             public Vector3 tweenFrom; public Quaternion rotFrom; public Vector3 scaleFrom;
@@ -80,6 +81,7 @@ namespace BattleLab.Native
                     float s = J.F(c, "start"), e = J.F(c, "end");
                     {
                         g.file = J.Str(J.Obj(c["args"]), "file");
+                        if(cmd=="ParticleCreate"&&J.F(J.Obj(c["args"]),"drawType")==1)g.cameraLayer=holder.AddComponent<BdspCameraLayer>();
                         var json = prefabJson(g.file);
                         if (json == null) continue;
                         g.fx = cmd=="ModelCreate"?BdspModel.Build(json,texture,baseMaterial,holder.transform):BdspFx.Build(json, texture, baseMaterial, holder.transform);
@@ -190,6 +192,7 @@ namespace BattleLab.Native
                 case "ParticleMovePosition":
                 case "ModelMovePosition":
                 {
+                    if(g.cameraLayer){g.cameraLayer.offset=J.Vec(p,"pos")*.01f;break;}
                     var off = Offset(g.anchor ?? attacker, p, "pos", true);
                     if (begins) g.tweenFrom = g.tr.position;
                     var to = J.B(p, "relative") ? g.tweenFrom + off : Middle() + off;
@@ -275,7 +278,11 @@ namespace BattleLab.Native
             else if (g.followPoke != null) g.tr.position = Node(g.followPoke, g.followNode) + g.followPoke.root.rotation * (g.followOffset * Size(g.followPoke));
         }
 
-        void ApplyScale(Group g) => g.tr.localScale = Vector3.Scale(g.scale,new Vector3(g.flip?-1:1,1,1)) * Size(g.anchor ?? attacker);
+        void ApplyScale(Group g)
+        {
+            if(g.cameraLayer){g.cameraLayer.authoredScale=g.scale;return;}
+            g.tr.localScale = Vector3.Scale(g.scale,new Vector3(g.flip?-1:1,1,1)) * Size(g.anchor ?? attacker);
+        }
 
         // Effects were made for BDSP's battle size; a small Pokémon gets a smaller burst.
         static float Size(VioletMove.Battler b) => b == null ? 1f : Mathf.Clamp(b.height / RefHeight, 0.45f, 1.8f) * Mathf.Max(0.3f, b.scale);
@@ -321,4 +328,21 @@ namespace BattleLab.Native
             _ => t,
         };
     }
+    // Native drawType=1 uses a camera plane of height two. It must never become
+    // a floating rectangle in the arena or inherit the attacker's body scale.
+    public sealed class BdspCameraLayer : MonoBehaviour
+    {
+        public Vector3 authoredScale=Vector3.one,offset;
+        void OnEnable()=>UnityEngine.Rendering.RenderPipelineManager.beginCameraRendering+=Place;
+        void OnDisable()=>UnityEngine.Rendering.RenderPipelineManager.beginCameraRendering-=Place;
+        void Place(UnityEngine.Rendering.ScriptableRenderContext context,Camera camera)
+        {
+            if(camera!=Camera.main)return;
+            float depth=camera.nearClipPlane+.2f;
+            float halfHeight=camera.orthographic?camera.orthographicSize:Mathf.Tan(camera.fieldOfView*Mathf.Deg2Rad*.5f)*depth;
+            transform.SetPositionAndRotation(camera.transform.TransformPoint(new Vector3(offset.x*halfHeight,offset.y*halfHeight,depth)),camera.transform.rotation);
+            transform.localScale=authoredScale*halfHeight;
+        }
+    }
+
 }

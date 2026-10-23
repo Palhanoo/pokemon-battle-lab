@@ -32524,8 +32524,8 @@
   },
   "limitations": [
     "Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.",
-    "Opaque-scene refraction uses a calibrated displacement factor; transparent-on-transparent refraction and native Fresnel/distance-fade modes remain incomplete.",
-    "Source camera tracks, native deformation and full state machines remain incomplete.",
+    "Opaque-scene refraction uses a calibrated displacement factor; transparent-on-transparent refraction and native near/far distance fading remain outside this reconstruction. Native Fresnel and BDSP distortion modes are now applied.",
+    "BDSP drawType=1 camera layers are attached to the render camera. Original cinematic camera tracks, native mesh deformation and full source-game state machines are not replicated.",
     "Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause."
   ]
 }

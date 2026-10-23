@@ -110,6 +110,20 @@ namespace BattleLab.Native
                     var cd=ps.customData;cd.SetVector(ParticleSystemCustomData.Custom2,2,new ParticleSystem.MinMaxCurve(1,KeyCurve(J.List(d,"params"),1,1)));
                 }
             }
+            if(e.TryGetValue("native_shader",out var shaderData))
+            {
+                var native=J.Obj(shaderData);
+                if(J.F(native,"flow")>0)
+                {
+                    var values=J.Floats(native["values"]);
+                    if(values.Length>=20)
+                    {
+                        mat.SetFloat("_NativeFlow",J.F(native,"flow"));mat.SetFloat("_FlowColor",J.F(native,"flow_color"));
+                        mat.SetVector("_FlowShape",new Vector4(values[12],values[13],values[14],values[15]));
+                        mat.SetVector("_FlowEdge",new Vector4(values[16],values[17],values[18],values[19]));
+                    }
+                }
+            }
             r.sharedMaterial = mat;
             Render(r, e, meshes);
             if(e.TryGetValue("render_state",out var state))RenderState(mat,J.Obj(state));
@@ -149,6 +163,8 @@ namespace BattleLab.Native
         {
             var range=J.Floats(data["soft_range"]);
             mat.SetVector("_SoftParticle",new Vector4(J.F(data,"soft")>0?1:0,range[0],Mathf.Max(.0001f,range[1]-range[0]),0));
+            if(J.F(data,"fresnel")>0 && data.ContainsKey("fresnel_range"))
+            {var rim=J.Floats(data["fresnel_range"]);mat.SetVector("_Fresnel",new Vector4(1,rim[0],rim[1],0));}
             if(!J.B(data,"refraction"))return;
             mat.SetFloat("_Refraction",1);mat.SetFloat("_DistortionByDistance",J.F(data,"distance"));
             mat.SetFloat("_SrcBlend",5);mat.SetFloat("_DstBlend",10);mat.SetFloat("_ZWrite",0);
@@ -442,9 +458,13 @@ namespace BattleLab.Native
                 int slot = (int)J.F(t, "slot");
                 if (slot == 0) t0 = t; else if (slot == 1 && t1 == null) t1 = t; else if(slot==2 && t2==null)t2=t;
             }
-            if (t0 == null) t0 = t1 ?? t2;
-            if (t0 == null) return;
-            var tex = texture(J.Str(t0, "name"));
+            // Keep sparse native slots in place. Promoting slot 1 to slot 0
+            // applies the wrong channel selector (often ONE), exposing whole cards.
+            if(t0==null)t0=new Dictionary<string,object>{
+                {"name",""},{"div",new List<object>{1d,1d}},
+                {"uv_scale",new List<object>{1d,1d}},{"scroll",new List<object>{0d,0d}},
+                {"scroll_per_s",new List<object>{0d,0d}}};
+            var tex = string.IsNullOrEmpty(J.Str(t0,"name"))?null:texture(J.Str(t0, "name"));
             if (tex) { Wrap(mat,"Main", t0); mat.SetTexture("_MainTex", tex); mat.SetFloat("_MainGrey", Grey(tex) ? 1 : 0); }
             var div = J.Floats(t0["div"]);
             int nx = Mathf.Max(1, (int)div[0]), ny = Mathf.Max(1, (int)div[1]);
@@ -526,6 +546,7 @@ namespace BattleLab.Native
         static void SheetAnimation(ParticleSystem ps, Dictionary<string, object> t, int nx, int ny, float avgLife)
         {
             var tsa = ps.textureSheetAnimation;
+            tsa.uvChannelMask=UnityEngine.Rendering.UVChannelFlags.UV0;
             tsa.enabled = true;
             tsa.mode = ParticleSystemAnimationMode.Grid;
             tsa.numTilesX = nx; tsa.numTilesY = ny;
@@ -641,10 +662,11 @@ namespace BattleLab.Native
             mesh.vertices = v; mesh.normals = n; mesh.uv = u; mesh.triangles = tris;
             // Unity's particle COLOR stream is particle tint, not a stable primitive-color transport.
             // Reserve UV2/UV3 for the four native primitive channels; keep that data independent.
-            var rg=new List<Vector2>();var ba=new List<Vector2>();var white=new Color[c.Length];
+            var rg=new List<Vector2>();var ba=new List<Vector2>();var white=new Color32[c.Length];
             foreach(var value in c){rg.Add(new Vector2(value.r,value.g));ba.Add(new Vector2(value.b,value.a));}
             for(int i=0;i<white.Length;i++)white[i]=Color.white;
-            mesh.colors=white;mesh.SetUVs(1,rg);mesh.SetUVs(2,ba);
+            // Mesh particle COLOR requires packed UNorm8; Float32 colours bake as raw bytes on this Unity path.
+            mesh.colors32=white;mesh.SetUVs(1,rg);mesh.SetUVs(2,ba);
             mesh.RecalculateBounds();
             return mesh;
         }

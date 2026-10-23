@@ -1,0 +1,11 @@
+Pikachu actual skinned vertices ground error: 0
+Both Flying test moves use the 0.65s faded clip (was 11.2167s)
+Uncontrolled fighter repositions on cooldown; controlled Pikachu stays put without input
+ZA MOVE_SHADOW_BALL: models=0; 55 systems, peak 690 particles; refraction=4, soft=11; material bindings/clock exercised; contact capture saved
+ZA MOVE_CLOSE_COMBAT: models=0; 35 systems, peak 339 particles; refraction=0, soft=1; material bindings/clock exercised; contact capture saved
+ZA MOVE_FIRE_SPIN: models=0; 29 systems, peak 919 particles; refraction=0, soft=1; material bindings/clock exercised; contact capture saved
+ZA MOVE_DRAIN_PUNCH: models=0; 28 systems, peak 497 particles; refraction=0, soft=8; material bindings/clock exercised; contact capture saved
+BDSP MOVE_DRAIN_PUNCH: models=0; 33 systems, peak 87 particles; refraction=0, soft=0; material bindings/clock exercised; contact capture saved
+BDSP MOVE_CLOSE_COMBAT: models=0; 19 systems, peak 68 particles; refraction=0, soft=2; material bindings/clock exercised; contact capture saved
+BDSP MOVE_SHADOW_BALL: models=0; 27 systems, peak 97 particles; refraction=2, soft=8; material bindings/clock exercised; contact capture saved
+Sphere-projected material bindings exercised: 12. These checks do not establish native visual parity.

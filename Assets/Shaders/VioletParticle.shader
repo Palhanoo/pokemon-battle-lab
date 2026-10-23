@@ -5,6 +5,17 @@ Shader "Hoenn/VioletParticle"
     // Custom1, colour1/alpha1 in Custom2 (both HDR). Streams: UV, Custom1, Custom2 packed into TEXCOORD0..2.
     Properties
     {
+        _BdspDistortion ("Native BDSP distortion mode", Float) = 0
+        _DistortionStrength ("Native distortion XY", Vector) = (0,0,0,0)
+        _DistortionKey0 ("Distortion life key 0", Vector) = (0,1,0,0)
+        _DistortionKey1 ("Distortion life key 1", Vector) = (.25,1,0,0)
+        _DistortionKey2 ("Distortion life key 2", Vector) = (.75,1,0,0)
+        _DistortionKey3 ("Distortion life key 3", Vector) = (1,1,0,0)
+        _NativeFlow ("Native shape/colour/erosion program", Float) = 0
+        _FlowColor ("Native flow colour expression", Float) = 0
+        _FlowShape ("Native edge width, colour power, shape power, opacity", Vector) = (0,1,1,1)
+        _FlowEdge ("Native edge colour", Vector) = (1,1,1,1)
+        _Fresnel ("Native Fresnel enabled, start, end", Vector) = (0,0,1,0)
         _ZTest ("Native depth comparison", Float) = 4
         _AlphaTest ("Native alpha comparison enabled", Float) = 0
         _AlphaCompare ("Native alpha comparison", Float) = 4
@@ -27,6 +38,9 @@ Shader "Hoenn/VioletParticle"
         _MainWrap ("Main wrap", Vector) = (1,1,0,0)
         _SubWrap ("Second wrap", Vector) = (1,1,0,0)
         _ThirdWrap ("Third wrap", Vector) = (1,1,0,0)
+        _MainUvChannel ("Main native UV channel", Float) = 0
+        _SubUvChannel ("Second native UV channel", Float) = 0
+        _ThirdUvChannel ("Third native UV channel", Float) = 0
         _MainSphere ("Main sphere projection", Float) = 0
         _SubSphere ("Second sphere projection", Float) = 0
         _ThirdSphere ("Third sphere projection", Float) = 0
@@ -82,6 +96,11 @@ Shader "Hoenn/VioletParticle"
             TEXTURE2D(_SubTex); SAMPLER(sampler_SubTex);
             TEXTURE2D(_ThirdTex); SAMPLER(sampler_ThirdTex);
             CBUFFER_START(UnityPerMaterial)
+                float _BdspDistortion;
+                float4 _DistortionStrength,_DistortionKey0,_DistortionKey1,_DistortionKey2,_DistortionKey3;
+                float _NativeFlow,_FlowColor;
+                float4 _FlowShape,_FlowEdge,_Fresnel;
+                float _MainUvChannel, _SubUvChannel, _ThirdUvChannel;
                 float _ZTest, _AlphaTest, _AlphaCompare, _AlphaThreshold, _OpaqueParticle, _PrimitiveStream;
                 float _Refraction, _RefractionScale, _DistortionByDistance;
                 float4 _SoftParticle;
@@ -106,6 +125,7 @@ Shader "Hoenn/VioletParticle"
                 float4 t1 : TEXCOORD1; // c0.zw, c1.xy
                 float4 t2 : TEXCOORD2; // c1.zw, primitive.rg
                 float4 t3 : TEXCOORD3; // primitive.ba, normalized age, inverse lifetime
+                float2 t5 : TEXCOORD5; // BDSP secondary mesh UV, after primitive and particle streams
                 float4 t4 : TEXCOORD4; // stable per-particle random
                 UNITY_VERTEX_INPUT_INSTANCE_ID
             };
@@ -122,6 +142,8 @@ Shader "Hoenn/VioletParticle"
                 float2 rawUv : TEXCOORD6;
                 float4 primitive : TEXCOORD7;
                 float4 particleUv : TEXCOORD8; // seconds since birth, random phase
+                float age : TEXCOORD9;
+                float2 sourceUv1 : TEXCOORD10;
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -133,6 +155,7 @@ Shader "Hoenn/VioletParticle"
                 UNITY_SETUP_INSTANCE_ID(i);
                 UNITY_TRANSFER_INSTANCE_ID(i, o);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+                o.sourceUv1=i.t5;
                 o.world=TransformObjectToWorld(i.pos.xyz);o.rawUv=i.t0.xy;
                 o.cs = TransformWorldToHClip(o.world);
                 o.color = i.color;
@@ -140,7 +163,7 @@ Shader "Hoenn/VioletParticle"
                 o.c0 = float4(i.t0.zw, i.t1.xy);
                 o.c1 = float4(i.t1.zw, i.t2.xy);
                 o.primitive=float4(i.t2.zw,i.t3.xy);
-                o.particleUv=float4(i.t3.z/max(i.t3.w,1e-6),i.t4.xyz);
+                o.particleUv=float4(i.t3.z/max(i.t3.w,1e-6),i.t4.xyz);o.age=i.t3.z;
                 if(_Model>.5){o.c0=_ModelColor;o.c1=float4(0,0,0,1);o.color=1;}
                 return o;
             }
@@ -169,9 +192,9 @@ Shader "Hoenn/VioletParticle"
                 float2 baseUv=i.rawUv;
                 if(_ParticleUvClock>.5&&(_MainSheet.x>1||_MainSheet.y>1))baseUv=frac(i.rawUv*_MainSheet.xy);
                 float2 phase=i.particleUv.yz*_ParticleUvClock;
-                i.uv.xy=RotateMask(lerp(i.rawUv,sphereUv,_MainSphere),_MainRotation+_MainMotion.z*clock)*(_MainTex_ST.xy+_MainMotion.xy*clock)+_MainTex_ST.zw+_MainScroll.xy*clock+phase*_MainRandomScroll.xy;
-                i.uv.zw=RotateMask(lerp(baseUv,sphereUv,_SubSphere),_SubRotation+_SubMotion.z*clock)*(_SubTex_ST.xy+_SubMotion.xy*clock)+_SubTex_ST.zw+_SubScroll.xy*clock+phase.yx*_SubRandomScroll.xy;
-                i.thirdUv=RotateMask(lerp(baseUv,sphereUv,_ThirdSphere),_ThirdRotation+_ThirdMotion.z*clock)*(_ThirdTex_ST.xy+_ThirdMotion.xy*clock)+_ThirdTex_ST.zw+_ThirdScroll.xy*clock+frac(phase+.381966)*_ThirdRandomScroll.xy*_ParticleUvClock;
+                i.uv.xy=RotateMask(lerp(lerp(i.rawUv,i.sourceUv1,_MainUvChannel),sphereUv,_MainSphere),_MainRotation+_MainMotion.z*clock)*(_MainTex_ST.xy+_MainMotion.xy*clock)+_MainTex_ST.zw+_MainScroll.xy*clock+phase*_MainRandomScroll.xy;
+                i.uv.zw=RotateMask(lerp(lerp(baseUv,i.sourceUv1,_SubUvChannel),sphereUv,_SubSphere),_SubRotation+_SubMotion.z*clock)*(_SubTex_ST.xy+_SubMotion.xy*clock)+_SubTex_ST.zw+_SubScroll.xy*clock+phase.yx*_SubRandomScroll.xy;
+                i.thirdUv=RotateMask(lerp(lerp(baseUv,i.sourceUv1,_ThirdUvChannel),sphereUv,_ThirdSphere),_ThirdRotation+_ThirdMotion.z*clock)*(_ThirdTex_ST.xy+_ThirdMotion.xy*clock)+_ThirdTex_ST.zw+_ThirdScroll.xy*clock+frac(phase+.381966)*_ThirdRandomScroll.xy*_ParticleUvClock;
                 float2 screenUv=GetNormalizedScreenSpaceUV(i.cs);
                 float eyeDepth=-TransformWorldToView(i.world).z;
                 float fade=1;
@@ -180,13 +203,26 @@ Shader "Hoenn/VioletParticle"
                     float sceneDepth=LinearEyeDepth(SampleSceneDepth(screenUv),_ZBufferParams);
                     fade=saturate((sceneDepth-eyeDepth-_SoftParticle.y)/_SoftParticle.z);
                 }
+                float2 da=i.age<_DistortionKey1.x?_DistortionKey0.xy:i.age<_DistortionKey2.x?_DistortionKey1.xy:_DistortionKey2.xy;
+                float2 db=i.age<_DistortionKey1.x?_DistortionKey1.xy:i.age<_DistortionKey2.x?_DistortionKey2.xy:_DistortionKey3.xy;
+                float distortionLife=lerp(da.y,db.y,saturate((i.age-da.x)/max(.0001,db.x-da.x)));
+                float4 distortionVector=SAMPLE_TEXTURE2D(_SubTex,sampler_SubTex,WrapMask(i.uv.zw,_SubWrap.xy));
+                if(_BdspDistortion>1.5)i.uv.xy+=(distortionVector.rg*2-1)*_DistortionStrength.xy*distortionLife;
+                if(_NativeFlow>2.5)
+                {
+                    // Authored beam turbulence shears the two flowing maps along the tube.
+                    i.uv.z+=i.rawUv.y*_FlowShape.z;
+                    i.thirdUv.x+=i.rawUv.y*_FlowShape.z;
+                }
                 half4 t = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, WrapMask(i.uv.xy,_MainWrap.xy));
                 half4 distortionMask=t;
+                float4 flowMain=t, flowSub=1, flowNoise=1;
                 if (_MainGrey > 0.5) t = t.rrrr;
                 if(_NativeCombiner>.5)t=Channels(t,_ColorChannels.x,_AlphaChannels.x);
                 if (_UseSub > 0.5)
                 {
                     half4 s = SAMPLE_TEXTURE2D(_SubTex, sampler_SubTex, WrapMask(i.uv.zw,_SubWrap.xy));
+                    flowSub=s;
                     if(_SubGrey>.5)s=s.rrrr;
                     if(_NativeCombiner>.5)t=Combine(t,Channels(s,_ColorChannels.y,_AlphaChannels.y),_ColorBlends.x,_AlphaBlends.x);
                     else t *= _SubGrey > .5 ? s.rrrr : (s.r*s.a).xxxx;
@@ -194,6 +230,7 @@ Shader "Hoenn/VioletParticle"
                 if (_UseThird > .5)
                 {
                     half4 third = SAMPLE_TEXTURE2D(_ThirdTex,sampler_ThirdTex,WrapMask(i.thirdUv,_ThirdWrap.xy));
+                    flowNoise=third;
                     if(_ThirdGrey>.5)third=third.rrrr;
                     if(_NativeCombiner>.5)t=Combine(t,Channels(third,_ColorChannels.z,_AlphaChannels.z),_ColorBlends.y,_AlphaBlends.y);
                     else t *= _ThirdGrey > .5 ? third.rrrr : (third.r*third.a).xxxx;
@@ -214,7 +251,49 @@ Shader "Hoenn/VioletParticle"
                 else if (_AlphaMode > 1.5) a = t.r * a0;
                 else if (_AlphaMode > 0.5) a = saturate((t.a - (1 - a0)) * 2);
                 else a = t.a * a0;
-                // mesh particles get unreliable vertex colour from Unity: tint billboards only
+                if(_NativeFlow>.5&&_NativeFlow<1.5)
+                {
+                    // Reconstructed from the asset's embedded NV fragment program,
+                    // CSDP offsets 48/64. Secondary maps must not multiply coverage.
+                    float shape=pow(max(0,flowMain.r),_FlowShape.z);
+                    float coverage=pow(max(0,shape*(1+flowNoise.r)*.5),.675);
+                    float width=_FlowShape.x;
+                    float threshold=coverage-width+a0*.5-1;
+                    float interior=ceil(saturate(threshold));
+                    float edge=ceil(threshold+width-.0001)*(1-interior);
+                    float3 fill=lerp(c1,c0,pow(max(0,flowSub.r),_FlowShape.y));
+                    if(_FlowColor>.5)
+                        fill=(c0*(1-abs(_FlowShape.y))+c0*flowSub.rgb*saturate(-_FlowShape.y)+(c0+flowSub.rgb)*saturate(_FlowShape.y));
+                    col=lerp(_FlowEdge.rgb*_FlowEdge.a,fill,interior);
+                    if(_FlowColor>.5)col*=c1;
+                    a=saturate(a1*(interior*_FlowShape.w+edge));
+                }
+                if(_NativeFlow>1.5)
+                {
+                    float noise=flowNoise.r+a0-1;
+                    float inside=ceil(saturate(noise-_FlowShape.x));
+                    float visible=ceil(saturate(noise));
+                    float3 left=_NativeFlow<2.5?c0*flowMain.rgb:c0;
+                    float3 right=_NativeFlow<2.5?c1*flowSub.rgb:flowSub.rgb;
+                    float3 fill=left*(1-abs(_FlowShape.y))+left*right*saturate(-_FlowShape.y)+(left+right)*saturate(_FlowShape.y);
+                    col=lerp(_FlowEdge.rgb*_FlowEdge.a,fill,inside);
+                    if(_NativeFlow<2.5)
+                    {
+                        float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
+                        float f=saturate((facing-_Fresnel.y)/((_Fresnel.z-_Fresnel.y)==0?.0001:(_Fresnel.z-_Fresnel.y)));
+                        float rim=pow(max(0,1-f*f*(3-2*f)),_FlowShape.z);
+                        col+=rim*_FlowShape.w*_FlowEdge.rgb;
+                        a=a1*visible;
+                    }
+                    else {col*=c1;a=flowMain.r*visible*a1;}
+                }
+                if(_Fresnel.x>.5&&(_NativeFlow<1.5||_NativeFlow>2.5))
+                {
+                    float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
+                    float rim=saturate((facing-_Fresnel.y)/((_Fresnel.z-_Fresnel.y)==0?.0001:(_Fresnel.z-_Fresnel.y)));
+                    a*=rim*rim*(3-2*rim);
+                }
+                // Native particle tint is distinct from primitive channels; model draws opt out.
                 if (_MeshParticles < 0.5) { col *= i.color.rgb; a *= i.color.a; }
                 else if(_Model>.5) col *= 0.55 + 0.45 * saturate(dot(normalize(i.n), normalize(float3(0.3, 1, -0.4)))); // simple form shading for rocks, leaves
                 if(_Model>.5)col+=_ModelEmission.rgb;
@@ -232,7 +311,9 @@ Shader "Hoenn/VioletParticle"
                     // replaces the original engine's framebuffer scale; native lifetime curve is c1.z.
                     float strength=max(0,lerp(i.c1.z,1,_Model))*_RefractionScale;
                     if(_DistortionByDistance>.5)strength/=max(1,eyeDepth);
-                    float2 offset=(distortionMask.rg*2-1)*strength*a;
+                    float2 distortionDirection=(distortionMask.rg*2-1);
+                    if(_BdspDistortion>.5){distortionDirection=(distortionVector.rg*2-1)*_DistortionStrength.xy;strength=distortionLife*_RefractionScale;}
+                    float2 offset=distortionDirection*strength*a;
                     offset.x*=_ScreenParams.y/_ScreenParams.x;
                     float2 displaced=clamp(screenUv+offset,0.001,0.999);
                     // Do not pull foreground silhouettes across the refracting surface.

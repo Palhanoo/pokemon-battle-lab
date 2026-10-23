@@ -42,6 +42,7 @@ namespace BattleLab
             foreach(var source in travelReview?new[]{"ZA"}:new[]{"ZA","BDSP"})
             {
                 var ids=source=="ZA"?zaFx.moves.Select(m=>m.id).ToArray():bdspFx.moves.Select(m=>m.id).ToArray();
+                if(full&&ids.Length!=(source=="ZA"?47:22))throw new Exception(source+" staged attack set changed: "+ids.Length);
                 if(full&&source=="BDSP"){playerSpecies=Array.IndexOf(Species,"NIDOKING");ResetBattle();while(loading)yield return null;Paused=true;Player.body.transform.position=new Vector3(-2,0,0);Target.body.transform.position=new Vector3(2,0,0);Player.body.Face(Target.body.Centre);Target.body.Face(Player.body.Centre);midpoint=(Player.body.Centre+Target.body.Centre)*.5f;}
                 if(shaders)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM","MOVE_PSYCHIC","MOVE_SHADOW_BALL","MOVE_THUNDERBOLT"}:new[]{"MOVE_THUNDERBOLT","MOVE_PSYCHIC","MOVE_BRICK_BREAK"}).Contains(id)).ToArray();
                 else if(visuals&&!full)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();
@@ -53,7 +54,13 @@ namespace BattleLab
                     IMoveFx fx=source=="ZA"?zaFx.Play(id,AttackPresentation.Bind(Player.body),AttackPresentation.Bind(Target.body),id=="MOVE_HYDRO_PUMP"?n=>!n.Contains("0c0"):null):bdspFx.Play(id,AttackPresentation.Bind(Player.body),AttackPresentation.Bind(Target.body));
                     if(fx==null)throw new Exception(source+id+" missing presentation");
                     if(fx is VioletMove v){v.time=0;v.FitUnitBeam=id=="MOVE_HYDRO_PUMP"||id=="MOVE_PSYBEAM";}else if(fx is BdspMove b)b.time=0;
-                    AttackPresentation.ApplyReadability(fx.gameObject,id.Replace("MOVE_",""));fx.ManualSimulate=true;var systems=fx.gameObject.GetComponentsInChildren<ParticleSystem>(true);
+                    AttackPresentation.ApplyReadability(fx.gameObject,id.Replace("MOVE_",""));
+                    if(source=="ZA"&&(id=="MOVE_FIRE_SPIN"||id=="MOVE_SHADOW_BALL"))
+                    {
+                        var group=fx.gameObject.transform.Find(id=="MOVE_FIRE_SPIN"?"bullet0":"impact0_0");
+                        if(!group||group.childCount==0||Mathf.Abs(group.GetChild(0).localScale.x-.3f)>.001f)throw new Exception(id+" readability scale was not applied to the inner emitter set");
+                    }
+                    fx.ManualSimulate=true;var systems=fx.gameObject.GetComponentsInChildren<ParticleSystem>(true);
                     var materials=fx.gameObject.GetComponentsInChildren<Renderer>(true).SelectMany(r=>r.sharedMaterials).Where(m=>m).Distinct().ToArray();
                     foreach(var m in materials)
                     {
@@ -66,7 +73,7 @@ namespace BattleLab
                         }
                     }
                     var models=fx.gameObject.GetComponentsInChildren<BdspModel>(true);
-                    if(visuals&&!shaders&&!full&&source=="BDSP"&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
+                    if(visuals&&source=="BDSP"&&new[]{"MOVE_LICK","MOVE_IRON_TAIL","MOVE_BRICK_BREAK"}.Contains(id)&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
                     var perLayer=new Dictionary<string,int>();
                     bool travelDiagnosed=false;
                     bool refractionCaptured=false;int maximum=0;int snapshots=0;bool captured=false;float captureAt=Mathf.Max(.1f,fx.HitTime+.1f);
@@ -120,7 +127,46 @@ namespace BattleLab
                             CaptureEvidence(Path.Combine(folder,source+"-"+id+"-"+(snapshots++).ToString("00")+".png"));
                         }
                         if(!captured&&fx.Now>=captureAt)
-                        {cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);CaptureEvidence(Path.Combine(folder,source+"-"+id+".png"));captured=true;}
+                        {
+                            cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);CaptureEvidence(Path.Combine(folder,source+"-"+id+".png"));captured=true;
+                            if(Environment.GetCommandLineArgs().Contains("-lab-isolate"))
+                            {
+                                var active=systems.Select(p=>p.GetComponent<ParticleSystemRenderer>()).Where(r=>r.enabled&&r.GetComponent<ParticleSystem>().particleCount>0).ToArray();
+                                foreach(var r in active)r.enabled=false;
+                                string layers=Path.Combine(folder,"isolated",source+"-"+id);Directory.CreateDirectory(layers);
+                                for(int k=0;k<active.Length;k++)
+                                {
+                                    var r=active[k];r.enabled=true;CaptureEvidence(Path.Combine(layers,k.ToString("00")+"-"+r.name+".png"));
+                                    if(source=="BDSP"&&id=="MOVE_SEED_BOMB"&&r.name=="seed_base")
+                                    {
+                                        var m=r.sharedMaterial;var original=new Material(m);
+                                        foreach(string variant in new[]{"no-third","no-sub","no-tint","no-primitive","colour-only","no-tint-colour-only","white"})
+                                        {
+                                            m.CopyPropertiesFromMaterial(original);
+                                            if(variant=="no-third")m.SetFloat("_UseThird",0);
+                                            if(variant=="no-sub")m.SetFloat("_UseSub",0);
+                                            if(variant=="no-tint")m.SetFloat("_MeshParticles",1);
+                                            if(variant=="no-primitive")m.SetFloat("_PrimitiveStream",0);
+                                            if(variant=="no-tint-colour-only"){m.SetFloat("_ColorMode",0);m.SetFloat("_MeshParticles",1);}
+                                            if(variant=="colour-only")m.SetFloat("_ColorMode",0);
+                                            if(variant=="white"){m.SetFloat("_Model",1);m.SetColor("_ModelColor",Color.white);m.SetFloat("_ColorMode",0);m.SetFloat("_MeshParticles",1);}
+                                            CaptureEvidence(Path.Combine(layers,k.ToString("00")+"-"+variant+".png"));
+                                        }
+                                        m.CopyPropertiesFromMaterial(original);Destroy(original);
+                                        var d0=new List<Vector4>();var d1=new List<Vector4>();var ps=r.GetComponent<ParticleSystem>();ps.GetCustomParticleData(d0,ParticleSystemCustomData.Custom1);ps.GetCustomParticleData(d1,ParticleSystemCustomData.Custom2);
+                                        File.WriteAllText(Path.Combine(layers,k.ToString("00")+"-data.txt"),"C0 "+string.Join(";",d0)+" C1 "+string.Join(";",d1)+" Main "+m.GetTexture("_MainTex").name+" Channels "+m.GetVector("_ColorChannels"));
+                                        var streams=new List<ParticleSystemVertexStream>();r.GetActiveVertexStreams(streams);
+                                        var baked=new Mesh();r.BakeMesh(baked,cam,ParticleSystemBakeMeshOptions.BakeRotationAndScale);
+                                        string layout="\nStreams "+string.Join(",",streams)+"\nColors "+string.Join(";",baked.colors.Take(8));
+                                        for(int channel=0;channel<5;channel++){var uv=new List<Vector4>();baked.GetUVs(channel,uv);layout+="\nUV"+channel+" "+string.Join(";",uv.Take(8));}
+                                        File.AppendAllText(Path.Combine(layers,k.ToString("00")+"-data.txt"),layout);Destroy(baked);
+
+                                    }
+                                    r.enabled=false;
+                                }
+                                foreach(var r in active)r.enabled=true;
+                            }
+                        }
                     }
                     if(shaders&&materials.Any(m=>m.GetFloat("_Refraction")>.5f)&&!refractionCaptured)throw new Exception(id+" refraction never emitted");
                     if(maximum==0)throw new Exception(source+id+" never emitted particles");

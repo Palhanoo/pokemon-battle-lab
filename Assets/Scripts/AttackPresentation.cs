@@ -59,6 +59,16 @@ namespace BattleLab
         }
         public static void ApplyReadability(GameObject root,string move)
         {
+            // Scale the presentation's inner effect root, leaving native attachment and
+            // travel transforms intact. Restored layers otherwise dominate a close camera.
+            foreach(var t in root.GetComponentsInChildren<Transform>(true))
+            {
+                if(t.parent&&t.parent.parent==root.transform&&!t.GetComponent<ParticleSystem>())
+                {
+                    if(move=="FIRE_SPIN"&&(t.parent.name=="bullet0"||t.parent.name=="bullet0_1"))t.localScale*=.3f;
+                    if(move=="SHADOW_BALL"&&(t.parent.name=="ew0247_impact"||t.parent.name=="impact0_0"))t.localScale*=.3f;
+                }
+            }
             foreach(var ps in root.GetComponentsInChildren<ParticleSystem>(true))
             {
                 float scale=1,opacity=1;
@@ -66,9 +76,10 @@ namespace BattleLab
                 if(ps.name=="glow"){scale=beam?1:.3f;opacity=.5f;}
                 if(move=="CLOSE_COMBAT")
                 {
-                    // The reconstructed backdrop renders as a filled disk, not a native
-                    // textured impact. Omit that decorative layer until its compositor is supported.
-                    if(ps.name=="base"){ps.GetComponent<ParticleSystemRenderer>().enabled=false;continue;}
+                    // Keep the authored backdrop and ink shapes readable around
+                    // a directly controlled fighter in this close battle camera.
+                    if(ps.name=="base"){scale=.5f;opacity=.22f;}
+                    else if(ps.name.StartsWith("shock_")){scale=.6f;}
                     else if(ps.name.StartsWith("wind")||ps.name.StartsWith("trail")){scale=.45f;opacity=.45f;}
                     else if(ps.transform.parent.name.Contains("warp")){scale=.55f;opacity=.45f;}
                 }

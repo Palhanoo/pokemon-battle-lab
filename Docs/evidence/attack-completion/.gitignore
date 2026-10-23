@@ -3,3 +3,9 @@
 /*-layers.txt
 /focused-checks-in-progress.txt
 /shader-checks/
+
+# Local diagnostic variants; the final review and selected originals are committed.
+/isolated/
+/native-program-first/
+/*-geometry.txt
+/travel-clash-paths.txt

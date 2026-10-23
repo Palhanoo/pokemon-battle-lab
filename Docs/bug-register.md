@@ -582,3 +582,39 @@ patches. Reject/revert the separate BDSP mesh transport and retain the baseline
 mesh path. Native primitive metadata remains exported for later repair. The
 atlas stripe repair is confirmed separately; complete Sludge/Seed/Shadow mesh
 fidelity remains open. Evidence preserved in rejected-mesh/.
+
+LAB-18/19 continuation: native BNSH fragment programs identify custom ZA
+shape/colour/erosion and beam shading that the generic combiner did not reproduce.
+Tools/enrich_effect_data.py + Native/VioletFx.cs + VioletParticle.shader now carry
+those programs' constants and formulas; sparse texture slots remain in their
+original slots. Dense Flamethrower/Dragon Pulse captures show travelling cores,
+with one-hit/expiry and equal-power clash checks passing in native-final-travel.log.
+BDSP colour corruption is confirmed separately: source UNorm8 normalization plus
+packed Color32 mesh upload fixes false blue tint. Tools/vendor/bdspfx.py and
+Native/BdspFx.cs preserve secondary mesh UVs, native UV offsets/motion and native
+distortion parameters. Recurrence: packed-colour pixel fixture, Seed/Sludge/Shadow
+layer review, plus all69 bindings/model-layer/clock checks.
+
+LAB-20 — BDSP camera graphics appeared as arena cards. Evidence: Close Combat's
+blue rectangular backdrop and Drain Punch's misplaced speed lines in the all69
+capture. Confirmed cause: ParticleCreate drawType=1 was ignored, so a camera-space
+layer inherited arena positioning and body scale. Native/BdspMove.cs now attaches
+these graphics to the render camera and sizes them to its viewport. Recheck both
+moves with camera movement, inspect contact/expiry and ensure no world-space card
+edges. Focused native-final-camera.log passes and captures show the backdrop
+covering the screen and speed lines anchored to the viewport. This supersedes the
+earlier hypothesis that Close Combat's rectangular layer was distortion.
+
+Restored ZA coverage also revealed excessive Fire Spin field and Shadow Ball hit
+mesh extents. AttackPresentation.ApplyReadability scales their inner emitter sets
+without altering projectile paths. The first attempted adjustment matched a root
+name that the timeline renames and had no effect; rejected. A hierarchy-based
+repair and explicit recurrence assertion now verify the actual scaled sets.
+
+LAB-18/19/20 release verification: AttackVisuals20261023 built with0 errors and
+replaces PokedexShaderDetails in Play Battle Lab.cmd. All69 presentations exercised;
+final affected camera/scale rerun, dense travel/clash run, shader pixel fixtures,
+asset audit (3,600 bindings,0 missing,0 unknown particle commands) and Dig with
+normal roster loading pass. Rendered review accepts the reported repair scope;
+curated contact/timeline evidence is under attack-completion/final-review. Exact
+source-game parity limits remain explicitly recorded in the chapter notes.
