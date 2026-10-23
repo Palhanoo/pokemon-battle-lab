@@ -17,7 +17,7 @@ namespace BattleLab
         public float SoundAt { get; private set; }
         public int CueCount => cueIndex;
         readonly LabActor body,target;
-        readonly bool projectile;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
+        readonly bool projectile,beam,groundWave;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
         readonly ZaMove timing;
         readonly Material[] effectMaterials;
         int cueIndex;
@@ -29,7 +29,7 @@ namespace BattleLab
             scale=actor.transform.lossyScale.x,center=()=>actor.Centre,bone=actor.Bone};
         public AttackPresentation(LabActor actor,LabActor target,MoveData move,VioletFxCatalog za,BdspFxCatalog bdsp,NativeTiming table)
         {
-            body=actor;this.target=target;projectile=move.shape=="Projectile";
+            body=actor;this.target=target;projectile=move.shape=="Projectile"||move.shape=="Beam";beam=move.shape=="Beam";groundWave=move.id=="MUDDY_WATER";
             if(actor.entry.source=="BDSP"&&bdsp.Has(move.id))
             {
                 var fx=bdsp.Play(move.id,Bind(actor),Bind(target));Effect=fx;
@@ -43,9 +43,9 @@ namespace BattleLab
             {
                 timing=table.Get(move.id)??throw new InvalidOperationException("Missing native timing: "+move.id);
                 var fx=za.Play(move.id,Bind(actor),Bind(target),move.id=="HYDRO_PUMP" ? name=>!name.Contains("0c0") : null);Effect=fx;
-                if(fx && (move.id=="HYDRO_PUMP" || move.id=="PSYBEAM"))fx.FitUnitBeam=true;
+                if(fx && (move.id=="HYDRO_PUMP" || move.id=="PSYBEAM" || move.id=="ICE_BEAM"))fx.FitUnitBeam=true;
                 if(!fx)throw new InvalidOperationException("Missing ZA effects: "+move.id);
-                fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
+                fx.LabMove=move.id;fx.time=0;HitAt=Mathf.Max(ZaTimeline.ShootAt(timing),fx.HitTime);SoundAt=ZaTimeline.AttackAt(timing);
                 FreeAt=ZaTimeline.Plan(timing,actor.entry,move.physical?"Physical":"Special",cues);
             }
             FreeAt=Mathf.Max(FreeAt,HitAt+.15f);
@@ -65,6 +65,11 @@ namespace BattleLab
             {
                 if(t.parent&&t.parent.parent==root.transform&&!t.GetComponent<ParticleSystem>())
                 {
+                    if(move=="BLAZE_KICK"&&t.parent.name=="bullet1")t.localScale*=.3f;
+                    if(move=="DRAGON_CLAW"&&t.parent.name=="bullet1")t.localScale*=.28f;
+                    if(root.GetComponent<VioletMove>()&&move=="MUDDY_WATER"&&t.parent.name!="ready")t.localScale*=t.parent.name=="bullet0_1"?.2f:.32f;
+                    if(root.GetComponent<VioletMove>()&&move=="EARTHQUAKE"&&t.parent.name!="ready")t.localScale*=.22f;
+                    if(move=="ROCK_SLIDE"&&t.parent.name=="ew0157_line")t.localScale*=.4f;
                     if(move=="FIRE_SPIN"&&(t.parent.name=="bullet0"||t.parent.name=="bullet0_1"))t.localScale*=.3f;
                     if(move=="SHADOW_BALL"&&(t.parent.name=="ew0247_impact"||t.parent.name=="impact0_0"))t.localScale*=.3f;
                 }
@@ -74,6 +79,7 @@ namespace BattleLab
                 float scale=1,opacity=1;
                 bool beam=(move=="HYDRO_PUMP"||move=="PSYBEAM")&&ps.transform.parent.name.Contains("_beam");
                 if(ps.name=="glow"){scale=beam?1:.3f;opacity=.5f;}
+                if(root.GetComponent<BdspMove>()&&move=="ICE_BEAM"&&(ps.name=="shock"||ps.name=="hit_ring"))scale=.3f;
                 if(move=="CLOSE_COMBAT")
                 {
                     // Keep the authored backdrop and ink shapes readable around
@@ -84,6 +90,13 @@ namespace BattleLab
                     else if(ps.transform.parent.name.Contains("warp")){scale=.55f;opacity=.45f;}
                 }
                 var main=ps.main;
+                if(root.GetComponent<VioletMove>()&&move=="MUDDY_WATER"&&ps.name=="nami")
+                    {ps.transform.localRotation*=Quaternion.Euler(180,180,0);ps.transform.localScale*=.5f;}
+                if(root.GetComponent<VioletMove>()&&move=="EARTHQUAKE"&&(ps.name=="ring_main"||ps.name=="ring_main2"||ps.name=="ring_wave"))
+                {
+                    main.startRotationX=0;var p=ps.transform.localPosition;p.y=0;ps.transform.localPosition=p;
+                    main.startSizeYMultiplier*=.15f;
+                }
                 if(main.startSize3D){main.startSizeXMultiplier*=scale;main.startSizeYMultiplier*=scale;main.startSizeZMultiplier*=scale;}
                 else main.startSizeMultiplier*=scale;
                 var renderer=ps.GetComponent<ParticleSystemRenderer>();
@@ -121,7 +134,9 @@ namespace BattleLab
         {
             previous=current=Vector3.zero;
             if(!projectile||!Alive||Time<shootAt||previousTime>HitAt)return false;
-            if(Effect is VioletMove native && native.ProjectileSegment(out previous,out current))return true;
+            if(beam){previous=VioletMove.Node(Bind(body),"eff_rangeattack01");current=target.Centre;return true;}
+            if(Effect is VioletMove native && native.ProjectileSegment(out previous,out current))
+            {if(groundWave){previous.y+=.55f;current.y+=.55f;}return true;}
             float duration=Mathf.Max(.05f,HitAt-shootAt);
             previous=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((previousTime-shootAt)/duration));
             current=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((Time-shootAt)/duration));return true;

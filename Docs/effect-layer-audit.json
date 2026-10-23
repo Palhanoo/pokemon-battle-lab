@@ -1,18 +1,18 @@
 {
   "surfaceSummary": {
-    "ZA_refraction": 16,
-    "ZA_soft": 195,
-    "ZA_masked": 914,
-    "ZA_one_sided": 242,
-    "BDSP_soft": 188
+    "ZA_refraction": 17,
+    "ZA_soft": 225,
+    "ZA_masked": 1041,
+    "ZA_one_sided": 301,
+    "BDSP_soft": 255
   },
   "scope": {
-    "ZA": 47,
-    "BDSP": 22,
+    "ZA": 53,
+    "BDSP": 28,
     "Arceus/SV/Sword": "Bodies use shared ZA effects; their separate native effect engines are not imported."
   },
   "missing": [],
-  "layerCount": 3600,
+  "layerCount": 4355,
   "layers": [
     {
       "source": "ZA",
@@ -25908,6 +25908,4866 @@
       "bound": true
     },
     {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "grain",
+      "texture": "cpt_0_fire0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "grain",
+      "texture": "cpt_3_smoke0207",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_impact_tp09_00.json",
+      "emitter": "glow",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "uni",
+      "texture": "cpt_2_obj0401s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_flow0703s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "foot",
+      "texture": "cpt_0_bubble0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "fire",
+      "texture": "cpt_2_fire0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "fire",
+      "texture": "cpt_3_flow0703s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "fire",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "foot_rim",
+      "texture": "cpt_0_bubble0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "glow",
+      "texture": "cpt_1_circle0004",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "windline",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impact_fire",
+      "texture": "cpt_2_fire0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impact_fire",
+      "texture": "cpt_3_flow0703s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impact_fire",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impatc_shock",
+      "texture": "cpt_2_shock0015s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impatc_shock",
+      "texture": "cpt_3_flow0703s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "impatc_shock",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "smoke_hot",
+      "texture": "cpt_0_smoke0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "smoke_hot",
+      "texture": "cpt_3_flow0803ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "grain",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0299/ew0299_bullet.json",
+      "emitter": "grain",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "uni",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "nami",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_soto",
+      "texture": "cpt_0_base0601s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_soto",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_soto",
+      "texture": "cpt_3_flownor0102",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_naka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_naka",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "main_naka",
+      "texture": "cpt_3_flownor0102",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "kurai",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "kurai",
+      "texture": "cpt_3_flow1602s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_0_base0601s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_0_mask0004s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "pos",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_0_grad0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "glow",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "splash_01",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "splash_01",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "splash_01",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01",
+      "texture": "cpt_0_aura0003s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01_ura",
+      "texture": "cpt_0_aura0003s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01_ura",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "trail01_ura",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "tubu_col",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_charge.json",
+      "emitter": "tubu_col",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "nami",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_soto",
+      "texture": "cpt_0_base0601s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_soto",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_soto",
+      "texture": "cpt_3_flownor0102",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_naka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_naka",
+      "texture": "cpt_3_flow0027s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "main_naka",
+      "texture": "cpt_3_flownor0102",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "kurai",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "kurai",
+      "texture": "cpt_3_flow1602s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_0_base0601s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_naka",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_0_mask0004",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_shita2",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "pos",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_0_grad0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_mesh_yuka",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_ushiro",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_migi",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shibuki_hidari",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_3_color0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "shock_burst",
+      "texture": "cpt_3_flow0024ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "splash",
+      "texture": "cpt_0_base0601s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "splash",
+      "texture": "cpt_3_flow0101s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "splash",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_02",
+      "texture": "cpt_0_line0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_02",
+      "texture": "cpt_0_light1601",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_02",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_01",
+      "texture": "cpt_0_line0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_01",
+      "texture": "cpt_0_light1601",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "wind_01",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_02",
+      "texture": "cpt_0_line0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_02",
+      "texture": "cpt_3_flow0024s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_02",
+      "texture": "cpt_3_flow0018",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_01",
+      "texture": "cpt_0_line0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_01",
+      "texture": "cpt_3_flow0024",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "hit_01",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "shock",
+      "texture": "cpt_2_shock0018s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "shock",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "shock",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "sen",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "sen",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "sen",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "grain_01",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "grain_01",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "grain_02",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "grain_02",
+      "texture": "cpt_3_ice0001_8aa355",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "smoke",
+      "texture": "cpt_3_smoke0207",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "smoke",
+      "texture": "cpt_0_smoke0701",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "smoke",
+      "texture": "cpt_3_flow0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_impact_tp14_01.json",
+      "emitter": "dust",
+      "texture": "cpt_0_water0803",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "uni",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "uni_Copy1",
+      "texture": "cpt_0_smoke0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+      "emitter": "uni_Copy1",
+      "texture": "cpt_3_flow0703s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_core",
+      "texture": "cpt_3_flow0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_core",
+      "texture": "cpt_3_ice0001_8aa355",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_core",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_ice0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_ice0201s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "chill",
+      "texture": "cpt_0_blur0602s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "chill",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "chill",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_base",
+      "texture": "cpt_3_water0802",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_base",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_base",
+      "texture": "cpt_3_flow0019s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_water0802",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_flow0019s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sentan",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sentan",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_beam.json",
+      "emitter": "sentan",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "core",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "core",
+      "texture": "cpt_3_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "core",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "glow",
+      "texture": "cpt_1_circle0004",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust_spin",
+      "texture": "cpt_0_circle0201s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust_core",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust_core",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust_core",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_3_flow1102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_0_smoke0701",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_3_flow0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust1",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust1",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust1",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust2",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust2",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "dust2",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_charge.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_chill.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_3_flow1102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_chill.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_chill.json",
+      "emitter": "chill_Copy1",
+      "texture": "cpt_0_smoke0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_chill.json",
+      "emitter": "dust_Copy1",
+      "texture": "cpt_0_circle0201s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_core",
+      "texture": "cpt_3_flow0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_core",
+      "texture": "cpt_3_ice0001_8aa355",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_core",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_ice0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "main_ice",
+      "texture": "cpt_3_ice0201s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "sub_silver",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "chill",
+      "texture": "cpt_0_blur0602s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "chill",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "chill",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_water0802",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "dust_glow",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "denki",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "denki",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_end.json",
+      "emitter": "denki",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "glow",
+      "texture": "cpt_1_circle0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "snowpowder",
+      "texture": "cpt_0_water0803",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "splash",
+      "texture": "cpt_0_aura0003s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "splash",
+      "texture": "cpt_3_ice0001_8aa355",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "splash",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "dust1",
+      "texture": "cpt_2_dust0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "dust2",
+      "texture": "cpt_2_fire0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "dust2",
+      "texture": "cpt_3_water0802",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_impact.json",
+      "emitter": "dust3",
+      "texture": "cpt_0_circle0201s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "glow_gensan",
+      "texture": "cpt_0_circle0605s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "glow_core",
+      "texture": "cpt_0_circle0005ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock1",
+      "texture": "cpt_2_shock0010",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock1",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock2",
+      "texture": "cpt_0_grad0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock2",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock2",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock3",
+      "texture": "cpt_2_hit006s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock3",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "shock3",
+      "texture": "cpt_3_flow0016",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr_glow",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr_glow",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr_glow",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr",
+      "texture": "cpt_0_grad0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr",
+      "texture": "cpt_3_line_color0001",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust_pr",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "glow_base",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "dust",
+      "texture": "cpt_2_dust0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "wind",
+      "texture": "cpt_3_mask0003s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "wind",
+      "texture": "cpt_3_flow0024",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "wind",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0058/ew0058_muzzle.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_cmn_lt0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "glow",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "grain",
+      "texture": "cpt_0_fire0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_impact_tp15_00.json",
+      "emitter": "grain",
+      "texture": "cpt_3_smoke0207",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "uni",
+      "texture": "cpt_2_obj0401s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_flow0703s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_dist",
+      "texture": "cpt_3_flow0017nss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_dist",
+      "texture": "cpt_0_aura0003",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_main",
+      "texture": "cpt_0_aura0003",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_main",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_main",
+      "texture": "cpt_3_flow0018s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_glow",
+      "texture": "cpt_0_aura0003",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_glow",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "slash_glow",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_0",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_0",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_0",
+      "texture": "cpt_3_flow0016",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_1",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_1",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_1",
+      "texture": "cpt_3_flow0016",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_2",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_2",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_2",
+      "texture": "cpt_3_flow0016",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_0",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_0",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_0",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_1",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_1",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_1",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_2",
+      "texture": "cpt_2_fire0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_2",
+      "texture": "cpt_3_color0004ss",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "after_glow_2",
+      "texture": "cpt_3_flow0017s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_0",
+      "texture": "cpt_0_fire0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_0",
+      "texture": "cpt_3_smoke0207",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_1",
+      "texture": "cpt_0_fire0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_1",
+      "texture": "cpt_3_smoke0207",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_2",
+      "texture": "cpt_0_fire0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "grain_2",
+      "texture": "cpt_3_smoke0207",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0337/ew0337_claw.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "uni",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "uni",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "uni",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_0_smoke0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_4_flow0804s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02_Copy1",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02_Copy1",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_bullet.json",
+      "emitter": "rock_debris_fall_sprite02_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockdebris_large",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockdebris_large",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockdebris_large",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_mideam",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_mideam",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_mideam",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "rockDebris_small02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "smoke_sprite",
+      "texture": "cpt_3_flow0016ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "smoke_sprite",
+      "texture": "cpt_3_flow0017s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "smoke_sprite",
+      "texture": "cpt_0_smoke0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "meshsmoke",
+      "texture": "cpt_3_smoke0207s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "meshsmoke",
+      "texture": "cpt_3_flow0018s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_impact.json",
+      "emitter": "meshsmoke",
+      "texture": "cpt_3_flow0018s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_0_smoke0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_4_flow0804s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "trail",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "trail",
+      "texture": "cpt_3_flow0018s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "trail",
+      "texture": "cpt_3_flow0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "smoke_follow_tr_Copy1",
+      "texture": "cpt_0_smoke0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_line.json",
+      "emitter": "smoke_follow_tr_Copy1",
+      "texture": "cpt_4_flow0804",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_0_smoke0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr",
+      "texture": "cpt_4_flow0804",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail",
+      "texture": "cpt_3_flow0018s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail",
+      "texture": "cpt_3_flow0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr_Copy1",
+      "texture": "cpt_0_smoke0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr_Copy1",
+      "texture": "cpt_4_flow0804",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy1",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy2",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy2",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock_Copy2",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr_Copy2",
+      "texture": "cpt_0_smoke0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "smoke_follow_tr_Copy2",
+      "texture": "cpt_4_flow0804",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_01_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_sprite_S_02_Copy2",
+      "texture": "cpt_2_obj0701s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m_Copy1",
+      "texture": "cpt0_rock0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m_Copy1",
+      "texture": "cpt3_rock1601s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rockdebris_fall_mesh_m_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail_Copy1",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail_Copy1",
+      "texture": "cpt_3_flow0018s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "trail_Copy1",
+      "texture": "cpt_3_flow0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock",
+      "texture": "cpt_3_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_2_water0007",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_3_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "shock02",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "grain",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "grain",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "grain",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_impact_tp04_00.json",
+      "emitter": "glow",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_aura0003ss",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "main",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "main",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "uni",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "uni",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+      "emitter": "uni",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01",
+      "texture": "cpt_0_shock0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01_Copy1",
+      "texture": "cpt_0_shock0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "C_shockwave01_Copy1",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow0026s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow1102",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt_3_flow0026s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt_3_flow1102",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "rock",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "smoke",
+      "texture": "cpt_3_flow1102s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "smoke",
+      "texture": "cpt_0_smoke0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "shock_oneshot",
+      "texture": "cpt_0_shock0001",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "shock_oneshot",
+      "texture": "cpt_0_blur0603",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "shock_oneshot",
+      "texture": "cpt_3_flow0019s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main",
+      "texture": "cpt_3_flow0019",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main",
+      "texture": "cpt_0_grad0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main2",
+      "texture": "cpt_3_flow0019",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main2",
+      "texture": "cpt_0_grad0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_main2",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "foot_smoke",
+      "texture": "cpt_0_grad0803s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "foot_smoke",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "foot_smoke",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "glow",
+      "texture": "cpt_0_base0601",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_wave",
+      "texture": "cpt_0_mask0004",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "ring_wave",
+      "texture": "cpt_3_flow0016",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "durt_Copy1",
+      "texture": "cpt_2_fire0202",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "durt_Copy1",
+      "texture": "cpt_0_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "durt_Copy1",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_bullet.json",
+      "emitter": "tubu_s",
+      "texture": "cpt_0_trail0003",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow0026s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow1102",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "rock_fly",
+      "texture": "cpt_3_flow0026s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "smoke02_Copy1",
+      "texture": "cpt_3_flow1102s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "smoke02_Copy1",
+      "texture": "cpt_0_smoke0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "durt",
+      "texture": "cpt_2_fire0202",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "durt",
+      "texture": "cpt_0_color0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "durt",
+      "texture": "cpt_3_water0802",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "gizagiza",
+      "texture": "cpt_3_flow0019",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "gizagiza",
+      "texture": "cpt_0_grad0001s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "gizagiza",
+      "texture": "cpt_cmn_white0001s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "light",
+      "texture": "fx_soft_dot",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "C_shockwave01_Copy1_Copy1",
+      "texture": "cpt_0_shock0007s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "C_shockwave01_Copy1_Copy1",
+      "texture": "cpt_0_grad0005s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zaew0089/ew0089_charge.json",
+      "emitter": "C_shockwave01_Copy1_Copy1",
+      "texture": "cpt_3_flow0024s",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam.json",
+      "emitter": "beam_core",
+      "texture": "fxpt_3_flow016_m_02",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam.json",
+      "emitter": "beam",
+      "texture": "fxpt_3_ice201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "ice",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "ice",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "tubu",
+      "texture": "fxpt_2_dast001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "snow",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "aura",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "aura",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_beam_ice.json",
+      "emitter": "aura",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "glow_enb",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "core_first",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "core",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "smoke",
+      "texture": "fxpt_3_flow015_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "smoke",
+      "texture": "fxpt_0_smoke005_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "tubu",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "Emitter1",
+      "texture": "fxpt_1_ring301_t",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "line_fly_out",
+      "texture": "fxpt_0_mark006_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_charge.json",
+      "emitter": "snow",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "ice_field",
+      "texture": "fxpt_3_flow401_e",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "ice_field",
+      "texture": "fxpt_3_flow803_n",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "ice_field",
+      "texture": "fxpt_0_mask007_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "snow01_base_nor",
+      "texture": "fxpt_0_smoke002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "snow01_base_nor",
+      "texture": "fxpt_0_ice001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "snow03_nor",
+      "texture": "fxpt_0_smoke002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "snow03_nor",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "smoke_nor",
+      "texture": "fxpt_0_smoke002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "ice02_nor",
+      "texture": "fxpt_0_ice002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "ice02_nor",
+      "texture": "fxpt_3_line001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_freezen_field.json",
+      "emitter": "tubu_nor",
+      "texture": "fxpt_2_dast001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "ice_bashi",
+      "texture": "fxpt_2_hit003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "hit_ring",
+      "texture": "fxpt_2_ring005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "line_fly_out",
+      "texture": "fxpt_0_water001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "hit_basih",
+      "texture": "fxpt_3_flow017_m_mirror",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "hit_basih",
+      "texture": "fxpt_2_hit008_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "ice_fly",
+      "texture": "fxpt_2_object004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "ice2",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "ice2",
+      "texture": "fxpt_2_object004_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "glow_core",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_hit_last.json",
+      "emitter": "snow",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "glow_enb",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "smoke",
+      "texture": "fxpt_0_smoke005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "ice",
+      "texture": "fxpt_0_ice001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "hit_core",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "line_fly",
+      "texture": "fxpt_0_water001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "smoke_fly",
+      "texture": "fxpt_3_flow701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "smoke_fly",
+      "texture": "fxpt_2_smoke002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "line_fly_out",
+      "texture": "fxpt_0_mark006_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "tubu",
+      "texture": "fxpt_1_circle001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "Ice_cube",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "Ice_cube",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "shock",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_many_hit.json",
+      "emitter": "shock",
+      "texture": "fxpt_2_fire005_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "glow_enb",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "smoke",
+      "texture": "fxpt_0_smoke005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "core_first",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "core",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ring",
+      "texture": "fxpt_2_ring004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "line_fly_out",
+      "texture": "fxpt_0_mark006_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice_muzzle",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice_muzzle",
+      "texture": "fxpt_2_hit010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice_muzzle_lock",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice_muzzle_lock",
+      "texture": "fxpt_2_hit010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "Emitter1",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice2",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "ice2",
+      "texture": "fxpt_2_object004_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "Emitter2",
+      "texture": "fxpt_1_circle001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "bashi",
+      "texture": "fxpt_3_flow001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "bashi",
+      "texture": "fxpt_2_water010_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "snow",
+      "texture": "fxpt_2_object007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "tubu",
+      "texture": "fxpt_3_flow017_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew058_muzzle_02.json",
+      "emitter": "tubu",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew085_at_start.json",
       "emitter": "00_xy_grow01_nor",
@@ -26776,6 +31636,465 @@
       "asset": "BDSP/prefabs/ew087_df_hit02.json",
       "emitter": "kona_rain_Copy1",
       "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "kem",
+      "texture": "fxpt_0_aura201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "kem",
+      "texture": "fxpt_0_aura201_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_3_smoke203_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_0_aura003_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_old",
+      "texture": "fxpt_2_object201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_Child",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone",
+      "texture": "fxpt_2_object201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_Child",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02_Child",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_02_Child",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_smoke",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03_Child",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_03_Child",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_smoke",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04_Child",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_04_Child",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_smoke",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05_Child",
+      "texture": "fxpt_ew414",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_05_Child",
+      "texture": "fxpt_ew414_lumi_n",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_at_kem.json",
+      "emitter": "stone_smoke",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "kem",
+      "texture": "fxpt_0_aura201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "kem",
+      "texture": "fxpt_0_aura201_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_3_smoke203_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "kem_up_02",
+      "texture": "fxpt_0_aura003_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "stone_old",
+      "texture": "fxpt_3_ice201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "stone_Child",
+      "texture": "fxpt_3_ice201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "stone",
+      "texture": "fxpt_3_ice201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_crack_kem01.json",
+      "emitter": "stone_Child",
+      "texture": "fxpt_3_ice201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_df_hit.json",
+      "emitter": "koukasen",
+      "texture": "fxpt_0_wind001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_df_hit.json",
+      "emitter": "ring",
+      "texture": "fxpt_0_ring001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_df_hit.json",
+      "emitter": "hit_mark",
+      "texture": "fxpt_2_hit014_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_df_hit.json",
+      "emitter": "hit_mark02",
+      "texture": "fxpt_2_hit005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew089_df_hit.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
       "slot": "tex0",
       "exists": true,
       "bound": true
@@ -27668,6 +32987,204 @@
       "emitter": "water_down_kotei_add",
       "texture": "fxpt_3_flow001_m",
       "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l",
+      "texture": "fxpt_cmn_white001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l",
+      "texture": "fxpt_cmn_lt602_u",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_white001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_lt002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "grain",
+      "texture": "fxpt_2_object003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_pre",
+      "texture": "fxpt_cmn_white001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_pre",
+      "texture": "fxpt_cmn_lt602_u",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_pre",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_white001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_lt002_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_df_rock.json",
+      "emitter": "rock_l_Child",
+      "texture": "fxpt_cmn_lt001_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke",
+      "texture": "fxpt_2_smoke003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke_lite",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke_lite",
+      "texture": "fxpt_3_flow701_o",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "wind",
+      "texture": "fxpt_2_wind001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "wind2",
+      "texture": "fxpt_2_hit007_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke_out",
+      "texture": "fxpt_2_smoke002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke_Copy1",
+      "texture": "fxpt_2_smoke003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew157_hit.json",
+      "emitter": "smoke_Copy1_Copy1",
+      "texture": "fxpt_2_smoke010_m",
+      "slot": "tex0",
       "exists": true,
       "bound": true
     },
@@ -29338,6 +34855,186 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "speedline_Copy1",
+      "texture": "fxpt_3_flow702_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "speedline_Copy1",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "foot",
+      "texture": "fxpt_2_mark002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "fire",
+      "texture": "fxpt_2_fire005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "speedline",
+      "texture": "fxpt_3_flow702_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_foot.json",
+      "emitter": "speedline",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "dist",
+      "texture": "fxpt_0_smoke701_o",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "bashi",
+      "texture": "fxpt_2_hit010_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "hit_mark",
+      "texture": "fxpt_2_hit014_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "line",
+      "texture": "fxpt_0_blur002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "ring",
+      "texture": "fxpt_0_ring001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "ring2",
+      "texture": "fxpt_1_ring009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "fire",
+      "texture": "fxpt_2_fire006_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "kona",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "kona_add",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "fire_core_add",
+      "texture": "fxpt_2_fire004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "foot",
+      "texture": "fxpt_2_mark002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew299_hit.json",
+      "emitter": "kona_end",
+      "texture": "fxpt_1_circle005_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/ew317_at_rock.json",
       "emitter": "smok",
       "texture": "fxpt_2_smoke009_m",
@@ -29458,6 +35155,582 @@
       "asset": "BDSP/prefabs/ew317_df_hit.json",
       "emitter": "smok_yoin",
       "texture": "fxpt_2_smoke009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_at_start01.json",
+      "emitter": "smoke",
+      "texture": "fxpt_2_smoke003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_at_start01.json",
+      "emitter": "wind",
+      "texture": "fxpt_2_wind001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_at_start01.json",
+      "emitter": "smoke_center",
+      "texture": "fxpt_2_bom004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_at_start01.json",
+      "emitter": "smoke_center_ybill",
+      "texture": "fxpt_2_line002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_at_start01.json",
+      "emitter": "smoke_under",
+      "texture": "fxpt_2_smoke002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave01.json",
+      "emitter": "pri_wave06",
+      "texture": "fxpt_3_flow013_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave01.json",
+      "emitter": "pri_wave06",
+      "texture": "fxpt_3_flow011_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave02.json",
+      "emitter": "pri_wave07",
+      "texture": "fxpt_3_flow013_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave02.json",
+      "emitter": "pri_wave07",
+      "texture": "fxpt_3_flow011_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "pri_wave01_nor",
+      "texture": "fxpt_3_flow011_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "pri_wave01_nor",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "pri_wave02_add",
+      "texture": "fxpt_3_flow013_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "pri_wave02_add",
+      "texture": "fxpt_3_flow011_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "pri_wave02_add",
+      "texture": "fxpt_0_mask002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "sprash03_ring_nor",
+      "texture": "fxpt_2_water009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "sprash03_ring_nor",
+      "texture": "fxpt_0_dast001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "grain03_ring",
+      "texture": "fxpt_0_water002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "grain03_ring",
+      "texture": "fxpt_0_dast001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_base_wave04.json",
+      "emitter": "grain03_ring",
+      "texture": "fxpt_1_circle002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "base_nor",
+      "texture": "fxpt_1_circle001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "base_nor",
+      "texture": "fxpt_1_ring009_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "base_add",
+      "texture": "fxpt_0_flash201_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "base_add",
+      "texture": "fxpt_0_ring001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "hit_mark",
+      "texture": "fxpt_2_hit011_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "ring",
+      "texture": "fxpt_0_ring002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "ring",
+      "texture": "fxpt_1_ring011_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "grain",
+      "texture": "fxpt_0_water002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "grain",
+      "texture": "fxpt_0_dast001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "grain",
+      "texture": "fxpt_1_circle002_m",
+      "slot": "tex2",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "sprash",
+      "texture": "fxpt_2_water004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew330_df_hit01.json",
+      "emitter": "sprash",
+      "texture": "fxpt_0_dast001_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "shock_last_enb",
+      "texture": "fxpt_2_hit004_m_02",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "shock_last_enb",
+      "texture": "fxpt_2_fire004_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "ball_enb",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "line_fly",
+      "texture": "fxpt_0_mark006_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "flash_toge",
+      "texture": "fxpt_0_flash001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "kona",
+      "texture": "fxpt_0_water002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "glow_fast",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "ring",
+      "texture": "fxpt_1_ring015_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "flash",
+      "texture": "fxpt_1_circle004_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "shock_last_enb_Copy1",
+      "texture": "fxpt_2_hit004_m_02",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "shock_last_enb_Copy1",
+      "texture": "fxpt_2_fire004_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_charge.json",
+      "emitter": "tubu",
+      "texture": "fxpt_0_wind701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "slash_1",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "slash_2",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "slash_3",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "01_bashi",
+      "texture": "fxpt_2_hit010_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "01_bashi",
+      "texture": "fxpt_0_mirror201_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "01_ring",
+      "texture": "fxpt_0_ring001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "hit01",
+      "texture": "fxpt_2_hit014_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "zansen_add",
+      "texture": "fxpt_2_hit001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "zansen_add",
+      "texture": "fxpt_3_cloud201_a",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki",
+      "texture": "fxpt_2_hit003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_up",
+      "texture": "fxpt_2_hit003_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_1",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_1",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_2",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_2",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_3",
+      "texture": "fxpt_2_fire009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "syougeki_nokoshi_3",
+      "texture": "fxpt_3_flow016_m",
+      "slot": "tex1",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "01_line",
+      "texture": "fxpt_0_blur002_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "01_ring2",
+      "texture": "fxpt_1_ring009_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "line_02",
+      "texture": "fxpt_0_wind701_o",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/ew337_hit.json",
+      "emitter": "glow",
+      "texture": "fxpt_1_circle004_m",
       "slot": "tex0",
       "exists": true,
       "bound": true
@@ -32398,6 +38671,528 @@
     },
     {
       "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_rock203_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_blur001_m",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
+      "asset": "BDSP/prefabs/model_ew089_floor.json",
+      "emitter": "model",
+      "texture": "fxmt_3_floor204_big_a",
+      "slot": "tex0",
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "BDSP",
       "asset": "BDSP/prefabs/model_ew280_tail.json",
       "emitter": "model",
       "texture": "fxpt_ew280_shock_m",
@@ -32496,30 +39291,58 @@
       "asset": "ZA/zaew0317/ew0317_rock_break.json",
       "emitter": "hit_oya",
       "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
+    },
+    {
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "nami",
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
+    },
+    {
+      "asset": "ZA/zaew0330/ew0330_bullet.json",
+      "emitter": "pos",
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
+    },
+    {
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "nami",
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
+    },
+    {
+      "asset": "ZA/zaew0330/ew0330_end.json",
+      "emitter": "pos",
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
+    },
+    {
+      "asset": "ZA/zaew0157/ew0157_sign.json",
+      "emitter": "rock",
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     }
   ],
   "unhandledTimelineCommands": [],
   "commands": {
     "BDSP:DprParticleFollowModel": 2,
-    "BDSP:ModelCreate": 5,
+    "BDSP:ModelCreate": 6,
+    "BDSP:ModelMovePosition": 1,
     "BDSP:ModelMoveRelativePoke": 5,
-    "BDSP:ParticleCreate": 79,
-    "BDSP:ParticleFollowPoke": 5,
-    "BDSP:ParticleMovePosition": 1,
-    "BDSP:ParticleMoveRelativePoke": 81,
-    "BDSP:ParticleRotate": 6,
+    "BDSP:ParticleCreate": 105,
+    "BDSP:ParticleFollowPoke": 6,
+    "BDSP:ParticleMovePosition": 2,
+    "BDSP:ParticleMoveRelativePoke": 108,
+    "BDSP:ParticleRotate": 8,
     "BDSP:ParticleRotateOffset": 1,
     "BDSP:ParticleRotatePoke": 5,
-    "BDSP:ParticleScale": 107,
-    "ZA:GameObject/AttachTransform": 75,
+    "BDSP:ParticleScale": 145,
+    "ZA:GameObject/AttachTransform": 86,
+    "ZA:GameObject/SetRotation": 24,
     "ZA:GameObject/SetRotationByTarget": 27,
-    "ZA:GameObject/SetRotationtoTarget": 168,
-    "ZA:GameObject/SetScale": 113,
-    "ZA:GameObject/SetTranslation": 245,
-    "ZA:Particle/Emit": 269,
-    "ZA:Particle/Stop": 234,
-    "ZA:Physics/CastRay": 2,
-    "ZA:Title/Battle/AdjustScaleTarget": 191,
+    "ZA:GameObject/SetRotationtoTarget": 180,
+    "ZA:GameObject/SetScale": 125,
+    "ZA:GameObject/SetTranslation": 333,
+    "ZA:Particle/Emit": 342,
+    "ZA:Particle/Stop": 304,
+    "ZA:Physics/CastRay": 3,
+    "ZA:Title/Battle/AdjustScaleTarget": 211,
+    "ZA:Title/Bullet/RotateGroundDirection": 1,
     "ZA:Title/Character/SetTargetPosition": 1
   },
   "limitations": [

@@ -1,3 +1,4 @@
+using System.Linq;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace BattleLab.Native
         sealed class MaterialTrack {public int material,component;public string property;public float[] times,values;}
         readonly List<MaterialTrack> materialTracks=new();
         readonly List<Track> tracks=new();readonly List<Mesh> meshes=new();readonly List<Material> materials=new();
+        bool groundPresentation;
         public int TrackCount=>tracks.Count;
         public static GameObject Build(string json,Func<string,Texture2D> texture,Material basis,Transform parent)
         {
@@ -33,6 +35,8 @@ namespace BattleLab.Native
             foreach(var item in J.List(data,"meshes"))
             {
                 var d=J.Obj(item);var m=BdspFx.BuildMesh(d);model.meshes.Add(m);
+                var submeshes=J.List(d,"submeshes");if(submeshes.Count>0)
+                {m.subMeshCount=submeshes.Count;for(int sm=0;sm<submeshes.Count;sm++)m.SetTriangles(J.Floats(submeshes[sm]).Select(x=>(int)x).ToArray(),sm);}
                 if(d.ContainsKey("bi"))
                 {
                     var indices=J.Floats(d["bi"]);var weights=J.Floats(d["bw"]);var bw=new BoneWeight[m.vertexCount];
@@ -57,9 +61,9 @@ namespace BattleLab.Native
         }
         // The source models include offsets for BDSP's fixed cinematic stage. Normalize
         // the contact pose once; keep the original skeleton motion relative to that pose.
-        public void FitContact(float at)
+        public void FitContact(float at,bool ground=false)
         {
-            Sample(at);bool found=false;var bounds=new Bounds();
+            groundPresentation=ground;Sample(ground?0:at);bool found=false;var bounds=new Bounds();
             foreach(var renderer in GetComponentsInChildren<Renderer>(true))
             {
                 Mesh mesh=null;bool temporary=false;
@@ -67,9 +71,9 @@ namespace BattleLab.Native
                 else if(renderer.TryGetComponent<MeshFilter>(out var filter))mesh=filter.sharedMesh;
                 if(!mesh)continue;
                 foreach(var v in mesh.vertices){var local=transform.InverseTransformPoint(renderer.transform.TransformPoint(v));if(!found){bounds=new Bounds(local,Vector3.zero);found=true;}else bounds.Encapsulate(local);}
-                if(temporary)Destroy(mesh);
+                if(temporary)Release(mesh);
             }
-            if(found){float k=1.1f/Mathf.Max(.01f,Mathf.Max(bounds.size.x,Mathf.Max(bounds.size.y,bounds.size.z)));transform.localScale=Vector3.one*k;transform.localPosition=-bounds.center*k;}
+            if(found){float k=(ground?7:1.1f)/Mathf.Max(.01f,ground?Mathf.Max(bounds.size.x,bounds.size.z):Mathf.Max(bounds.size.x,Mathf.Max(bounds.size.y,bounds.size.z)));transform.localScale=Vector3.one*k;transform.localPosition=ground?new Vector3(-bounds.center.x*k,0,-bounds.center.z*k):-bounds.center*k;}
             Sample(0);
         }
         public void Sample(float time)
@@ -78,7 +82,13 @@ namespace BattleLab.Native
             {
                 int a=Array.BinarySearch(t.times,time);if(a<0)a=~a-1;a=Mathf.Clamp(a,0,t.times.Length-1);int b=Mathf.Min(a+1,t.times.Length-1);float u=a==b?0:Mathf.Clamp01((time-t.times[a])/(t.times[b]-t.times[a]));int dim=t.property==2?4:3;int x=a*dim,y=b*dim;var v=t.values;
                 if(t.property==2)t.node.localRotation=Quaternion.Slerp(new Quaternion(v[x],v[x+1],v[x+2],v[x+3]),new Quaternion(v[y],v[y+1],v[y+2],v[y+3]),u);
-                else{var value=Vector3.Lerp(new Vector3(v[x],v[x+1],v[x+2]),new Vector3(v[y],v[y+1],v[y+2]),u);if(t.property==1)t.node.localPosition=value;else if(t.property==3)t.node.localScale=value;}
+                else{var value=Vector3.Lerp(new Vector3(v[x],v[x+1],v[x+2]),new Vector3(v[y],v[y+1],v[y+2]),u);if(t.property==1)
+                    {
+                        // The original centimetre-scale floor tremor needs readable
+                        // displacement after fitting its stage-sized pieces to this arena.
+                        if(groundPresentation&&t.node.name.Contains(":joint")&&!t.node.name.EndsWith(":joint1"))value.y*=12;
+                        t.node.localPosition=value;
+                    }else if(t.property==3)t.node.localScale=value;}
             }
             foreach(var t in materialTracks)
             {
@@ -87,6 +97,7 @@ namespace BattleLab.Native
             }
             foreach(var m in materials)m.SetFloat("_EffectTime",time);
         }
-        void OnDestroy(){foreach(var m in meshes)if(m)Destroy(m);foreach(var m in materials)if(m)Destroy(m);}
+        static void Release(UnityEngine.Object o){if(Application.isPlaying)Destroy(o);else DestroyImmediate(o);}
+        void OnDestroy(){foreach(var m in meshes)if(m)Release(m);foreach(var m in materials)if(m)Release(m);}
     }
 }

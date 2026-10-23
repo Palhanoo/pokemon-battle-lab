@@ -42,7 +42,7 @@ namespace BattleLab
             foreach(var source in travelReview?new[]{"ZA"}:new[]{"ZA","BDSP"})
             {
                 var ids=source=="ZA"?zaFx.moves.Select(m=>m.id).ToArray():bdspFx.moves.Select(m=>m.id).ToArray();
-                if(full&&ids.Length!=(source=="ZA"?47:22))throw new Exception(source+" staged attack set changed: "+ids.Length);
+                if(full&&ids.Length!=(source=="ZA"?catalog.data.moves.Length:28))throw new Exception(source+" staged attack set changed: "+ids.Length);
                 if(full&&source=="BDSP"){playerSpecies=Array.IndexOf(Species,"NIDOKING");ResetBattle();while(loading)yield return null;Paused=true;Player.body.transform.position=new Vector3(-2,0,0);Target.body.transform.position=new Vector3(2,0,0);Player.body.Face(Target.body.Centre);Target.body.Face(Player.body.Centre);midpoint=(Player.body.Centre+Target.body.Centre)*.5f;}
                 if(shaders)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM","MOVE_PSYCHIC","MOVE_SHADOW_BALL","MOVE_THUNDERBOLT"}:new[]{"MOVE_THUNDERBOLT","MOVE_PSYCHIC","MOVE_BRICK_BREAK"}).Contains(id)).ToArray();
                 else if(visuals&&!full)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();

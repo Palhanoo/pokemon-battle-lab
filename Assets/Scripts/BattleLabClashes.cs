@@ -11,16 +11,21 @@ namespace BattleLab
     {
         int clashCount;string clashMessage;float clashMessageUntil;
         readonly List<(GameObject root,float end)> clashBursts=new();
+        static bool CanClash(MoveData move)=>move.shape=="Projectile"||move.shape=="Beam";
         void ResolveClashes()
         {
             if(mode!=BattleMode.ZA)return;
             for(int i=0;i<fighters.Length;i++)for(int j=i+1;j<fighters.Length;j++)
             {
                 var f=fighters[i];var g=fighters[j];var a=f.action;var b=g.action;
-                if(f.team==g.team||a==null||b==null||a.hit||b.hit||a.blocked||b.blocked||a.phase!=1||b.phase!=1||a.met.Contains(b)||a.move.shape!="Projectile"||b.move.shape!="Projectile")continue;
+                if(f.team==g.team||a==null||b==null||a.hit||b.hit||a.blocked||b.blocked||a.phase!=1||b.phase!=1||a.met.Contains(b)||!CanClash(a.move)||!CanClash(b.move))continue;
                 if(!a.presentation.Travel(out var a0,out var a1)||!b.presentation.Travel(out var b0,out var b1))continue;
                 float radius=Mathf.Clamp(a.move.radius*.2f,.12f,.35f)+Mathf.Clamp(b.move.radius*.2f,.12f,.35f);
-                if(!ClashRules.SweptContact(a0,a1,b0,b1,radius,out var point))continue;
+                Vector3 point;
+                bool contact=a.move.shape=="Beam"||b.move.shape=="Beam"
+                    ?ClashRules.SegmentContact(a0,a1,b0,b1,radius,out point)
+                    :ClashRules.SweptContact(a0,a1,b0,b1,radius,out point);
+                if(!contact)continue;
                 int da=a.remainingDamage??CombatRules.Damage(f.data,a.target.data,a.move,catalog.data.types,mode,a.style);
                 int db=b.remainingDamage??CombatRules.Damage(g.data,b.target.data,b.move,catalog.data.types,mode,b.style);
                 var result=ClashRules.Resolve(da,db);a.met.Add(b);b.met.Add(a);clashCount++;
@@ -44,7 +49,16 @@ namespace BattleLab
                     if(Direct&&now<a.target.dodgeUntil)contact=false;
                     if(IsUnderground(a.target))contact=false;
                     if(a.dig!=null)contact=contact&&Vector3.Distance(f.body.transform.position,a.target.body.transform.position)<=Clearance(f,a.target)+.85f;
-                    Impact(f,contact);
+                    if(a.move.id=="EARTHQUAKE"&&Direct)
+                    {
+                        foreach(var victim in fighters.Where(v=>v.team!=f.team&&v.hp>0).ToArray())
+                        {
+                            float distance=Vector3.Distance(f.body.transform.position,victim.body.transform.position);
+                            bool reached=distance<=a.move.radius+Mathf.Max(victim.body.Bounds.extents.x,victim.body.Bounds.extents.z)&&now>=victim.dodgeUntil&&!IsUnderground(victim);
+                            if(reached)Impact(f,true,victim);
+                        }
+                    }
+                    else Impact(f,contact);
                 }
                 if(f.action!=null)f.state=a.blocked?"Attack blocked":"Recovering";
             }

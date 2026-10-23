@@ -359,7 +359,7 @@ def material(t, mb, tex):
     def channels(prefix,values):return [values[key(f'_{prefix}TEXTURE{i}CHANNEL_',next(iter(values)))] for i in range(3)]
     def blends(prefix):return [{'MUL':0,'PLUS':1,'MINUS':2}.get(key(f'_{prefix}TEXTURE{i}BLENDTYPE_','MUL'),0) for i in (1,2)]+[0]
     out['combiner']={'color_channels':channels('COLOR',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),
-                     'alpha_channels':channels('ALPHA',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3}),
+                     'alpha_channels':channels('ALPHA',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3,'ONEMINUSR':4}),
                      'color_blends':blends('COLOR'),'alpha_blends':blends('ALPHA')}
     for prefix,stem,values in [('COLOR','color',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),('ALPHA','alpha',{'ALPHA':0,'R':1,'ONE':2,'ONEMINUSALPHA':3,'ONEMINUSR':4})]:
         out['combiner'][stem+'_channels'].append(values[key(f'_{prefix}PRIMITIVECHANNEL_',next(iter(values)))])

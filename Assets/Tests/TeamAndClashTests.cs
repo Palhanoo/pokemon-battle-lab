@@ -15,6 +15,15 @@ public class TeamAndClashTests
         Assert.IsFalse(ClashRules.SweptContact(Vector3.left*3,Vector3.right,Vector3.back,Vector3.forward*3,.1f,out _));
         Assert.IsFalse(ClashRules.SweptContact(Vector3.left,Vector3.right,Vector3.right+Vector3.up,Vector3.left+Vector3.up,.1f,out _));
     }
+    [Test] public void BeamOccupiesFiniteSegmentWhileProjectileCrossesIt()
+    {
+        Assert.IsTrue(ClashRules.SegmentContact(Vector3.left*3,Vector3.right*3,Vector3.back,Vector3.forward,.1f,out var p));
+        Assert.Less(p.magnitude,.01f);
+        Assert.IsFalse(ClashRules.SegmentContact(Vector3.left,Vector3.right,Vector3.right*3+Vector3.back,Vector3.right*3+Vector3.forward,.1f,out _));
+        Assert.IsFalse(ClashRules.SegmentContact(Vector3.left,Vector3.right,Vector3.back+Vector3.up,Vector3.forward+Vector3.up,.1f,out _));
+        Assert.IsTrue(ClashRules.SegmentContact(Vector3.left,Vector3.right,Vector3.right,Vector3.left,.1f,out p));Assert.Less(p.magnitude,.01f);
+        Assert.IsTrue(ClashRules.SegmentContact(Vector3.left,Vector3.right,Vector3.zero,Vector3.zero,.1f,out _));
+    }
     [Test] public void ClashUsesDamageAfterStabAndTargetType()
     {
         var c=Resources.Load<LabCatalog>("LabCatalog");var fire=c.Species("TORCHIC");var water=c.Species("MUDKIP");

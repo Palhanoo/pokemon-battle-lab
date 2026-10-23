@@ -8,7 +8,7 @@ public class RosterAndEffectsTests
     [Test] public void MixedSourcesHaveSixChoicesWithDataAndSound()
     {
         var cat=Resources.Load<LabCatalog>("LabCatalog");var audio=Resources.Load<LabAudio>("LabAudio");
-        Assert.AreEqual(9,cat.data.species.Length);Assert.AreEqual(15,cat.models.Length);Assert.AreEqual(47,cat.data.moves.Length);
+        Assert.AreEqual(9,cat.data.species.Length);Assert.AreEqual(15,cat.models.Length);Assert.AreEqual(53,cat.data.moves.Length);
         foreach(var species in cat.data.species)
         {
             Assert.AreEqual(6,species.moves.Distinct().Count(),species.id);
@@ -40,7 +40,7 @@ public class RosterAndEffectsTests
     [Test] public void ImportedSoundsContainAudioSamples()
     {
         var cat=Resources.Load<LabAudio>("LabAudio");
-        Assert.AreEqual(47,cat.moves.Length);Assert.AreEqual(8,cat.cries.Length);
+        Assert.AreEqual(53,cat.moves.Length);Assert.AreEqual(8,cat.cries.Length);
         foreach(var clip in cat.moves.Select(m=>m.clip).Concat(cat.cries.Select(c=>c.clip)).Distinct())
         {
             Assert.Greater(clip.samples,100);Assert.IsTrue(clip.LoadAudioData());

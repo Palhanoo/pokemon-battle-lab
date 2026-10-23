@@ -62,7 +62,7 @@ namespace BattleLab
                     picker=-1;ResetBattle();
                 }
             }
-            GUI.EndScrollView();Text(332,790,1060,"Z-A → Scarlet/Violet → Arceus → BDSP → Sword/Shield. Native body clips; 47 shared test moves. Some move slots are test-only.",small,50);
+            GUI.EndScrollView();Text(332,790,1060,$"Z-A → Scarlet/Violet → Arceus → BDSP → Sword/Shield. Native body clips; {catalog.data.moves.Length} shared test moves. Some move slots are test-only.",small,50);
         }
         IEnumerator RosterSmoke()
         {

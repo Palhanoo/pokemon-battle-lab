@@ -1,0 +1,7 @@
+*.png
+first-pass/
+second-pass/
+third-pass/
+fourth-pass/
+checks-in-progress.txt
+*-layers.txt

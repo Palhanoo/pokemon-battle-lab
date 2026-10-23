@@ -33,6 +33,7 @@ def main():
     roster=json.loads((ROOT/'Tools/roster.json').read_text())
     bdspSpecies={m['species'] for m in roster['models'] if m['source']=='BDSP'}
     ids={m for species in data['species'] if species['id'] in bdspSpecies for m in species['moves']}
+    ids.update(m['id'] for m in json.loads((ROOT/'Tools/hoenn-moves.json').read_text())['moves'])
     bdspfx.SOURCE={m:MOVES[m] for m in ids};exported,missing=bdspfx.export_all(out/'BDSP')
     if missing or len(exported)!=len(ids):raise RuntimeError(f'Incomplete BDSP export: {missing}')
     rows=[]
@@ -42,7 +43,8 @@ def main():
     from enrich_effect_data import enrich
     from export_bdsp_effect_models import export_models
     from repair_motion_streams import repair
-    repair(args.source);enrich(args.source);export_models()
+    from stage_hoenn_effects import stage
+    repair(args.source);stage(args.source);enrich(args.source);export_models()
     manifest=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in out.rglob('*') if p.is_file() and p.suffix!='.meta']
     (ROOT/'Docs/native-fx-manifest.json').write_text(json.dumps(manifest,indent=2))
     print(f'Staged {len(manifest)} native effect files. Run BattleLabBuilder.Setup next.')

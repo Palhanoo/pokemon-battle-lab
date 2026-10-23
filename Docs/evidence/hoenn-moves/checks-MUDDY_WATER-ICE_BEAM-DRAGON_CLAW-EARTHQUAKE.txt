@@ -1,0 +1,12 @@
+SWAMPERT MUDDY_WATER: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA MUDDY_WATER: 36 particle systems, peak 551, 5 body cues; contact 2.933; captures and cleanup checked
+BDSP MUDDY_WATER: 24 particle systems, peak 173, 2 body cues; contact 3.333; captures and cleanup checked
+WALREIN ICE_BEAM: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA ICE_BEAM: 55 particle systems, peak 1159, 5 body cues; contact 1.700; captures and cleanup checked
+BDSP ICE_BEAM: 71 particle systems, peak 316, 2 body cues; contact 1.700; captures and cleanup checked
+SALAMENCE DRAGON_CLAW: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA DRAGON_CLAW: 20 particle systems, peak 554, 4 body cues; contact 0.700; captures and cleanup checked
+BDSP DRAGON_CLAW: 28 particle systems, peak 90, 2 body cues; contact 1.500; captures and cleanup checked
+FLYGON EARTHQUAKE: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA EARTHQUAKE: 41 particle systems, peak 325, 5 body cues; contact 1.300; captures and cleanup checked
+BDSP EARTHQUAKE: 44 particle systems, peak 949, 2 body cues; contact 1.733; captures and cleanup checked

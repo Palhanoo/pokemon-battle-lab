@@ -22,7 +22,7 @@ namespace BattleLab.Native
     // for an effect model) and the sequence's commands place, tween, scale, turn and attach it relative to
     // the battlers' effect locators. Sequence distances are centimetres at BDSP's battle size; effects are
     // scaled to the Pokémon they sit on.
-    public class BdspMove : MonoBehaviour, IMoveFx
+    public partial class BdspMove : MonoBehaviour, IMoveFx
     {
         const float RefHeight = 1.1f; // a BDSP battler's on-screen height the effects were sized for
 
@@ -50,6 +50,7 @@ namespace BattleLab.Native
         public bool manualSimulate;
         static Dictionary<int, string> locators;
 
+        string moveId;
         public float Now => time;
         public float StartTime => startTime;
         public float HitTime => hitTime;
@@ -64,7 +65,7 @@ namespace BattleLab.Native
             var go = new GameObject("bdsp move");
             var mv = go.AddComponent<BdspMove>();
             mv.attacker = atk; mv.defender = def;
-            var js = J.Obj(MiniJson.Parse(moveJson));
+            var js = J.Obj(MiniJson.Parse(moveJson));mv.moveId=J.Str(js,"move");
             float first = float.MaxValue, last = 0;
             foreach (var go2 in J.List(js, "groups"))
             {
@@ -86,6 +87,19 @@ namespace BattleLab.Native
                         if (json == null) continue;
                         g.fx = cmd=="ModelCreate"?BdspModel.Build(json,texture,baseMaterial,holder.transform):BdspFx.Build(json, texture, baseMaterial, holder.transform);
                         g.model=g.fx.GetComponent<BdspModel>();g.born=s;
+                        if(mv.moveId=="MOVE_MUDDY_WATER"&&g.file=="ew330_base_wave02")FeatherWaveEdges(g.fx);
+                        if(mv.moveId=="MOVE_ICE_BEAM"&&g.file=="ew058_freezen_field")
+                        {
+                            // Its native XZ ice mesh is a ground field. The prefab's
+                            // authoring rotation is replaced by the arena ground attachment.
+                            g.fx.transform.localRotation=Quaternion.identity;g.fx.transform.localPosition=Vector3.zero;
+                        }
+                        if(mv.moveId=="MOVE_DRAGON_CLAW"||mv.moveId=="MOVE_ICE_BEAM"||mv.moveId=="MOVE_BLAZE_KICK"||mv.moveId=="MOVE_MUDDY_WATER"||mv.moveId=="MOVE_ROCK_SLIDE"||mv.moveId=="MOVE_EARTHQUAKE")foreach(var renderer in g.fx.GetComponentsInChildren<ParticleSystemRenderer>(true))
+                        {
+                            var mat=renderer.sharedMaterial;if(!mat)continue;
+                            foreach(var prop in new[]{"_MainTex","_SubTex","_ThirdTex"})
+                            {var sc=mat.GetTextureScale(prop);var off=mat.GetTextureOffset(prop);if(sc.x<0)off.x-=sc.x;if(sc.y<0)off.y-=sc.y;mat.SetTextureOffset(prop,off);}
+                        }
                         first = Mathf.Min(first, s); mv.lastEmit = Mathf.Max(mv.lastEmit, s);
                     }
                     last = Mathf.Max(last, e);
@@ -97,7 +111,7 @@ namespace BattleLab.Native
             mv.hitTime = js.TryGetValue("hit", out var h) && h is double hd ? (float)hd : -1;
             mv.startTime = first == float.MaxValue ? 0 : Mathf.Max(0, first - 0.1f);
             if (mv.hitTime < mv.startTime) mv.hitTime = first == float.MaxValue ? mv.startTime : mv.lastEmit;
-            foreach(var g in mv.groups)if(g.model)g.model.FitContact(Mathf.Max(0,mv.hitTime-g.born));
+            foreach(var g in mv.groups)if(g.model)g.model.FitContact(Mathf.Max(0,mv.hitTime-g.born),mv.moveId=="MOVE_EARTHQUAKE");
             mv.endTime = Mathf.Max(last, mv.startTime) + 1.5f;
             mv.time = mv.startTime;
             return mv;
@@ -137,7 +151,7 @@ namespace BattleLab.Native
             foreach (var g in groups)
             {
                 foreach (var c in g.cmds) Apply(g, c, prev, time);
-                Follow(g);
+                Follow(g);AdaptToArena(g);
                 if(g.alive&&g.model)g.model.Sample(time-g.born);
                 if (manualSimulate && g.playing && g.fx)
                     foreach (var ps in VioletFx.Roots(g.fx)) ps.Simulate(dt, true, false, false);

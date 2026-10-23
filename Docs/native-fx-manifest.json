@@ -1,18 +1,1778 @@
 [
   {
-    "path": "Assets/NativeFx/za-timing.json",
-    "bytes": 66012,
-    "sha256": "b59895759770f8f7b17ef280ac35be57ff37f23058c39bdbeb250c8f7b50f6ea"
+    "path": "Assets/NativeFx/BDSP/MOVE_AURA_SPHERE/move.json",
+    "bytes": 4559,
+    "sha256": "8eb6b2cb1e4fd3ac1ba3d0b26bb5236e9e57b29c0e605bdfc9cc2af206b1d426"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_BLAZE_KICK/move.json",
+    "bytes": 2676,
+    "sha256": "c60dfdd4371e60f6fce69ba59d50a5b958f4d8555710cbd351cb8576f6736c58"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_BRICK_BREAK/move.json",
+    "bytes": 4165,
+    "sha256": "3a9aa8949b1c4821abfb04182b1bb92fbe50af26cdbf47e3ed7a22a63bb2ea23"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_BULLET_PUNCH/move.json",
+    "bytes": 2271,
+    "sha256": "fbd3538786b3c1ca3058d4a6fee3b0b7df86b3a2b7e2602268528ed0f68236ab"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_CLOSE_COMBAT/move.json",
+    "bytes": 5213,
+    "sha256": "7b48504385e27c40456ca466f078cb8fc1fe3520c9f74a108eb635ff1c4978ee"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_DARK_PULSE/move.json",
+    "bytes": 5113,
+    "sha256": "cb1c25171b7333e86e7dfff5d45449578392183e6bb6fe7ec02531a95318e094"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_DISCHARGE/move.json",
+    "bytes": 4048,
+    "sha256": "1213246afb4908fec152d43ddc8c85339723407297a3530753a3c86a2d652dce"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_DRAGON_CLAW/move.json",
+    "bytes": 2268,
+    "sha256": "74d2eaf2173de9cf7dbf247f309c14450a27a735143a540b7394981649e25c12"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_DRAGON_PULSE/move.json",
+    "bytes": 10448,
+    "sha256": "f8e86ed53c5787b1bd76473e1fe7da18b7217c161d334e25b44191d162c9a76d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_DRAIN_PUNCH/move.json",
+    "bytes": 4195,
+    "sha256": "faaea0c2673a3720e28dfb19b6dadf00f993c872b4ee183ee684df7ef1059ab0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_EARTHQUAKE/move.json",
+    "bytes": 5029,
+    "sha256": "ec18dddb5217ed44fba754b7e2ebdd69dc1361c63e5aff505ef8cdd5e4281baf"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_GIGA_DRAIN/move.json",
+    "bytes": 5432,
+    "sha256": "2910c45228b072d4e896dcb4126294cc3edc634945c33ebe53984c89202bae06"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_ICE_BEAM/move.json",
+    "bytes": 13114,
+    "sha256": "42f004e8cff57d61d6535a012b4500c4075a85791607fea01810542f344bf790"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_IRON_TAIL/move.json",
+    "bytes": 6230,
+    "sha256": "12820d7eda469cf50d5ed32c7ebcf57becac328f759db15e5b58c27a3dee8798"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_LICK/move.json",
+    "bytes": 1870,
+    "sha256": "d70994c0df577b61ea568245223608c4eb9ba665a2e2496c11b99aa37beaf8ed"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_MACH_PUNCH/move.json",
+    "bytes": 3273,
+    "sha256": "064bcdd8ec3cfad033fb08f8769f65a912e3bce4c7424ccf194930aa6467502e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_METAL_CLAW/move.json",
+    "bytes": 1012,
+    "sha256": "008773f5496a246e5d164f7fa61cbda55ba00411ec13eb9a3c11e41845eb56af"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_MUDDY_WATER/move.json",
+    "bytes": 7992,
+    "sha256": "a800bcde5ea8eb0b921c4d673a8ee0b502e05b0da4113b7be7eccb46fac6cfe0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_PSYCHIC/move.json",
+    "bytes": 3810,
+    "sha256": "3894b36fb253d09141fe94f7529009d86e57ec9bb3f874493b5cd8126a204bc5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_QUICK_ATTACK/move.json",
+    "bytes": 5647,
+    "sha256": "1e7509157cef5089f094acc7e44eafc413fa486a4a47a2d431b747fbc974d93d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_ROCK_SLIDE/move.json",
+    "bytes": 2331,
+    "sha256": "f0a59d2003ba0d3f353c4942866324d03aeab6a96201058ba233ccd777ebc687"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_ROCK_TOMB/move.json",
+    "bytes": 2948,
+    "sha256": "c97c499e7a56dc8d644f144494c8babb41abf4d64c9f0037c87cedb2f5cc118d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_SEED_BOMB/move.json",
+    "bytes": 5314,
+    "sha256": "c8919998c50b3f49bb4e48b0bf274966d5d05ee9bd356b27719e255fa70a381c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_SHADOW_BALL/move.json",
+    "bytes": 6169,
+    "sha256": "d2eaeb6fa15e9f9e92b4ba0067ef4eb7d562235537b1d89ff685a1cb2cc9f136"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_SLUDGE_BOMB/move.json",
+    "bytes": 3530,
+    "sha256": "afe9adc64d8078e2028b6bf28d1dbdf53737725626d3f1d7bfba154786ef55a2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_SPARK/move.json",
+    "bytes": 4410,
+    "sha256": "50e43c7ec54059914eb9110961a66930c253e0999bd1acd371d32ce7568cb5e8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_THUNDER/move.json",
+    "bytes": 3352,
+    "sha256": "5bf26b6c3a64b996cb7e33edbbbfe47a38005b10974621132bd46742af65da0b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/MOVE_THUNDERBOLT/move.json",
+    "bytes": 5687,
+    "sha256": "5a0f78d9261e6d72be209ec352e056b3e766a7e96dc9c09fdf5e975c14b407e6"
   },
   {
     "path": "Assets/NativeFx/BDSP/index.json",
-    "bytes": 3094,
-    "sha256": "c868e5fd196a8654453822029167c1a13c85d204dff1853bb4be423ad28bc8a5"
+    "bytes": 3742,
+    "sha256": "d92ad1d6243a09330136a6903f505ece2fa0a4cb22c74d34ff2564ffef28a018"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_beam.json",
+    "bytes": 57402,
+    "sha256": "66634d8bcc10ff5ce29ae38707a42762836a8304cb022d252fa2c85dcc67db7a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_beam_ice.json",
+    "bytes": 42992,
+    "sha256": "1dbdf9c81ae2fe222a15c2b3d72f74d341343980fbbfb20ab5ef2494fde021d4"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_charge.json",
+    "bytes": 31131,
+    "sha256": "a19c31205fa93b0a6b3b51dec77f15549f846e13a2680cd5cad89636ad17e736"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_freezen_field.json",
+    "bytes": 56134,
+    "sha256": "93620243992a7deacef915410360eab60baf247e76a027356ebb6ddd015cf033"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_hit_last.json",
+    "bytes": 31419,
+    "sha256": "abe534f7a2226c970b8caea2f6c85a1348f9180272560076ba99679a69b4d953"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_many_hit.json",
+    "bytes": 39045,
+    "sha256": "1415f7128b5501918eea67ecf51c4cf78370cc5a0e7d07cc0e836e6cfd6247b8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew058_muzzle_02.json",
+    "bytes": 52472,
+    "sha256": "0d4b5c954b541367854b859dd4dbe24cef77913f20860e905faf691c8b22d9bf"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew085_at_start.json",
+    "bytes": 27488,
+    "sha256": "45bcf470d460afe30e4159ccb8d8cf7b8917fa955a37a8695e5de415b388ab1d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew085_beam01.json",
+    "bytes": 53852,
+    "sha256": "8a94d55003922bc6147c67a9b418e20bbe49a53b745b8d00c3e4a7cb3ce217de"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew085_df_hit01.json",
+    "bytes": 49682,
+    "sha256": "56f3d8fde99aeee2ee5a6585f6b0074b49aa1339095eda33ccab6626507edc53"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew085_spark01.json",
+    "bytes": 58260,
+    "sha256": "bb377d25b11f4b286131fa6ecf37720606ac2549e377f8381bc63b92b718f798"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew087_at_start.json",
+    "bytes": 82356,
+    "sha256": "c0e89f786aca844624766baa8e7f9da1db03fb782f56fa2c538b336c5ba0e09a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit.json",
+    "bytes": 85149,
+    "sha256": "3a1635b3ac1b038490e2f4c14d7f59826256b666a60f37a8261559b4ea9b57cc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit02.json",
+    "bytes": 58648,
+    "sha256": "bfb2a72c5d42eb4eaac39e4d1b6538f15e80ff1041d05b0b489252527eafa61f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew089_at_kem.json",
+    "bytes": 65736,
+    "sha256": "034608994db1e72677648fdf4c826dcc116d68395ae7b527041d02b9c3955bb2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew089_crack_kem01.json",
+    "bytes": 32028,
+    "sha256": "f3fe3f3a60365b99e6dbcb67f145f34d8b4b5c6d9372306d17cff9ae6aadbd79"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew089_df_hit.json",
+    "bytes": 17200,
+    "sha256": "850ecc77d57e8490f6424e303483166d5f5f0b5c5843629c332b8b8f9e50c5df"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew094_aura.json",
+    "bytes": 271013,
+    "sha256": "2e4488c3a61559a5848bc4112f032549f99c7916ff70b180bd5f4665483455ef"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew094_df_ball.json",
+    "bytes": 175402,
+    "sha256": "011a1a833340916b72c7816297e19efada4c5b6c692d0ee31443dd3e89ebf77e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew094_hit.json",
+    "bytes": 86842,
+    "sha256": "f1f201007418dd2f87a9a55177c593919f51b958349ac7e757bcfda51416a129"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_bgkem.json",
+    "bytes": 11071,
+    "sha256": "04483dc5d5e88bad2869d4599bff3133a38f7ff8096f31fc9ae109dfb09fc7fc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_srash01.json",
+    "bytes": 4209,
+    "sha256": "e4770f3be5be17f4cc412f412e5b97ce335f10091acd6fafaec6443306e11047"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew098_df_hit.json",
+    "bytes": 30026,
+    "sha256": "9cb6d4636d1ca117bf491a396c06b99f298121bbe11de48c968ba8e7bfc896b3"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew098_hideline.json",
+    "bytes": 4084,
+    "sha256": "c942184f22beaf7b021d847d51deca8942e73b6b763d240fb27d4a4ddd1ffc4f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew122_hit.json",
+    "bytes": 43529,
+    "sha256": "b94bbb6f249e14d3af4afea0e1b83b58b2e82e182e485b76883c8e1652dc8150"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew157_df_rock.json",
+    "bytes": 79731,
+    "sha256": "e22a4c3d89b4e9c29d3e9fa4cca0eab0894261e03826275ea1aef8acff2baf29"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew157_hit.json",
+    "bytes": 24433,
+    "sha256": "89323c50837cceed14ff61c8a858457bfc383071e21d0ff753fa24feb4b1c0bf"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew183_at_line.json",
+    "bytes": 7266,
+    "sha256": "534b3a34f8d930763436db6f9cae9383d2f56f95f1ab170cc1f5b7f7fcbf37ce"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_hit.json",
+    "bytes": 52501,
+    "sha256": "7d1b1445e4810bd24ec55297b3bf2b49df57b41a28c5f6e503bd71a8562c470f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_punch01.json",
+    "bytes": 16831,
+    "sha256": "62f1fea23fc034fcb5323c6a4e9925c7b019c1027558d5bb0dee4f3e8a33b9ba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew188_bullet.json",
+    "bytes": 32981,
+    "sha256": "d6759e981c11c5b98212b3d4c2f90ee0bda044b6475d9a9a1881d9ed5b4f0d27"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew188_hit.json",
+    "bytes": 55363,
+    "sha256": "62157b180bd9840b424647c021a394f5832791c2129cc0b5ad0c40eabf52af88"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew188_muzzle.json",
+    "bytes": 13814,
+    "sha256": "56f4e9b0869295dd75f431abed819927506f7e53f73578615b143599d5c40b1d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_hit.json",
+    "bytes": 37238,
+    "sha256": "5d17bb48dfcae083fb18ea0c414999f2f24a4dc637ca6fb4b97cb71464cd0c67"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_movept.json",
+    "bytes": 27045,
+    "sha256": "279a4d852f85de2193faeb653afa295a9d117adeec30125648671c68407d85b0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew202_df_circle.json",
+    "bytes": 66622,
+    "sha256": "4cfe050989b30b81aca65793a7665ffa1ca6075e7c674ebd94a8762e1eaf570e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew209_body_thunder.json",
+    "bytes": 37208,
+    "sha256": "ad7d1ed59e899bb4aae78f5aeee5c3d51f18995bd98a9ed24d5353f3a50d8049"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew209_hit.json",
+    "bytes": 27736,
+    "sha256": "75eb8aea405fcc75da99d9ca1d375d462b75aa08404bd58e8e45ed1f1eddda9b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri.json",
+    "bytes": 21409,
+    "sha256": "76a9a1ba0369d47def29e12f178eeef73110578718c2315788a09c49cf151877"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri_back.json",
+    "bytes": 4348,
+    "sha256": "4c35b469809a27c0c688e7e1d3bde850db8663a5fb9e532f6668fcfab729498b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew231_at_charge001.json",
+    "bytes": 3895,
+    "sha256": "580b59972e6ab10969f682799ebf617a90b4e4d90d782a2a1738a9e13a0bfc69"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew231_df_hit001.json",
+    "bytes": 51048,
+    "sha256": "a5675590a3023cc3ddbf87d9dbb06d39a46edcdc0a5494302817adea1a1b1751"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew231_wind.json",
+    "bytes": 61339,
+    "sha256": "d8affb1c00142ac81135a199798c4a521807944753621dbfebf941acc21749d5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew232_df_hit.json",
+    "bytes": 44499,
+    "sha256": "ff2a4b2eb47d65091d1e99814129051969237158bf19c42fd113e734ee9307cb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_bullet.json",
+    "bytes": 230131,
+    "sha256": "0d5fa61160e07a8bdfe11ef5f5c1bb64722aa7655187982500176bcb1eac7694"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge.json",
+    "bytes": 18408,
+    "sha256": "c3ae6d7b6d1136ec73a0cd0fd39ef5b6c245235c5b5e4f80d03b6f34a7998cb3"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge2.json",
+    "bytes": 20881,
+    "sha256": "96d3bb08d47dfbbcc3c9acb44b7afa93b4aca366669739d8ee0459c0781e9807"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew247_df_hit.json",
+    "bytes": 76563,
+    "sha256": "b10209b9ef27b5dad68a95d8eba185ceec63507e74af80967e523b476b177fd8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit.json",
+    "bytes": 20199,
+    "sha256": "85d702ad5a343e444b88009cad57c5839b4db31ed28a55d24fd02b969a0dab86"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit_many.json",
+    "bytes": 12529,
+    "sha256": "04b0c7895f1f4730f89bdfd2fdd1dc4d00a87c9d16f28919d397678fae435ff3"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew299_foot.json",
+    "bytes": 17650,
+    "sha256": "7a50eb1ee7032d0d232d9724950f8b23b06a6f4d0754fe159e1515f4b9691863"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew299_hit.json",
+    "bytes": 44509,
+    "sha256": "24c282a49da34a79861ef67cee062d16f284a955bba409e48d24023b62ca0550"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew317_at_rock.json",
+    "bytes": 63907,
+    "sha256": "9ff63ec4e1bebd3566f0f40b6c455b97091d690edaf7722c2eef9adc95c85697"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew317_df_hit.json",
+    "bytes": 40875,
+    "sha256": "672f5c7658de141ed2126ead56b9c33e485499025fcc4e9a45ba4e829eeadbb1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew330_at_start01.json",
+    "bytes": 22627,
+    "sha256": "8ff8f503b8c543460843d04d1e259060740f9ba4953196e120b556e66a46c6db"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew330_base_wave01.json",
+    "bytes": 537152,
+    "sha256": "ce3e93a44ea6472cce3e1038708eb15b03937b3e10e5e095a31bec0e299f5cbe"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew330_base_wave02.json",
+    "bytes": 106517,
+    "sha256": "04958cee66661fe55cbccf4d05ebcccef652bb4b7573e75e5028a5b1c413c1e9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew330_base_wave04.json",
+    "bytes": 604572,
+    "sha256": "bf5ede7c5c671c812ed5decc9ac36722458705b68765c2493ac6dddbf08f5c42"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew330_df_hit01.json",
+    "bytes": 21987,
+    "sha256": "10aa71f62904bee61a16bd211ad3015586229f99c29f3a98d95c131945c144b2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew337_charge.json",
+    "bytes": 34759,
+    "sha256": "a3c8efee3184e6ddbf9b616ed252e5aa81fce03743d21907ff302964ce887c2a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew337_hit.json",
+    "bytes": 55847,
+    "sha256": "4e737bf2d84ebb9a25b53bb8e1f5241451eb5376e85113e982f04a25401fda46"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew370_cam.json",
+    "bytes": 3984,
+    "sha256": "77475a2322e8334f09def969bc2b1a4fb08b6febd357394cbc45070867c57849"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit.json",
+    "bytes": 81121,
+    "sha256": "622ab1235e2f4e1e284046f19498904b2ef534bc57eaf854a8940d8de6fc745b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit_end.json",
+    "bytes": 12329,
+    "sha256": "5f488a6279492c43cdd8681179e4211c5b21036a26721c1aca0d8da6a8430d55"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew370_start.json",
+    "bytes": 4015,
+    "sha256": "3ad80c6e3470a3f56e3b183c70bde8e9f9e060d1805fdc7f583a9225634fcd08"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew370_start_line01.json",
+    "bytes": 54076,
+    "sha256": "cbeb37765f210915f769ec85a14c1c800c056759a1570c6fa7ed45803daadfc2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet.json",
+    "bytes": 199894,
+    "sha256": "7f72abfdc938c3f4d53fec5a9a2765b3f4ac5670b79a1d7b0d8bfadc1f65f7b1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet_charge.json",
+    "bytes": 137108,
+    "sha256": "c85175a42c11e708b670727192416d0b9eb7cfc8750a5117d05ff63e1439fd44"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew396_hit.json",
+    "bytes": 35039,
+    "sha256": "6dd2e23f86b5107951fed13962f47d2d7641f60e11ee907b4bb8c026e1ce3652"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew399_charge.json",
+    "bytes": 14166,
+    "sha256": "5c98685732916dce9e5118fd1f3319f8fb81f4c4a9454edee2a14078ab829865"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew399_hit.json",
+    "bytes": 20575,
+    "sha256": "8cdcb82696213fb1eeea5905fdd8e4e3b9cf8f6b6dc3458ea4073796168d28fc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew399_muzzle_under.json",
+    "bytes": 89686,
+    "sha256": "c1e506939cef6651776cc34e6cceb01a4cec719d16ead2c58105b6524c889915"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew399_ring.json",
+    "bytes": 7715,
+    "sha256": "9d37e640ef0530136cd7295df4926c9973ea2ee249fc616314c0a6401a2aff6c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew402_bullet.json",
+    "bytes": 64458,
+    "sha256": "f7bef00d1365ec89429a5f20fd6ad54290ef8896fa0bd6d1c28d91bc23045f10"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew402_seed.json",
+    "bytes": 97735,
+    "sha256": "59668ae662ea3f983f4411d2c99af82e1bde0ff0e1bd19b5faa179bc5635e28c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_muzzleimpact.json",
+    "bytes": 33681,
+    "sha256": "bd435b36109ba606eb8d30c1a544af81d0d9cbfc42abafca2356654745e9b564"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st01_bgaura.json",
+    "bytes": 9137,
+    "sha256": "d53328ddc1f7fe40173ea3cf1c59ddac5b37233cc8686975119af41ad280f470"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st02_charge.json",
+    "bytes": 49340,
+    "sha256": "b6649863c1399eee9ef0782ad135be5b39db1ba7d28d09fc02afa4237f64b8ac"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st03_muzzle.json",
+    "bytes": 63419,
+    "sha256": "77e556b1aa4f37023dee6d69503cb9db22d38184396224d67575b1e5eda00e28"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
+    "bytes": 19747,
+    "sha256": "8ea53f332feed3e1d4f8009e7288bae11b077884fd5a7c2ede958fd0b1fc6276"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_beam.json",
+    "bytes": 44617,
+    "sha256": "eb66e1845e2c7fdc75a2ccfb12c622936dd99231604063b62ec9b8c4a26087bc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit01_lo.json",
+    "bytes": 32569,
+    "sha256": "49d44dfe6786c6e260add6642423bce3ea2ea2fbc10130880f2050b9642217bf"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit02_end.json",
+    "bytes": 48250,
+    "sha256": "1b63a5921ea9db20647fbd99ada036e920bbcf85e3f3b0916c5c5385dcd55ea4"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew409_at_draw_ed.json",
+    "bytes": 28814,
+    "sha256": "12c0896e42649e93189539f660db5d5fba3368c7d3a63ab399a433e938e78d21"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_draw_st.json",
+    "bytes": 12768,
+    "sha256": "a489d618482749cade00d3fdec99b70f8e8644b65e70f2cf19d2c88cd3838d8d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_hit_punch01.json",
+    "bytes": 37050,
+    "sha256": "a832b8825c9e3e8c3a27a651fc05ebe12cafa628d49742d58b175008fdda6567"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew409_line_st.json",
+    "bytes": 5256,
+    "sha256": "33c9db69bf8b83dc965418420e3dee0aa8367b62246ea54c579c3dcf92d2adb9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark01.json",
+    "bytes": 31012,
+    "sha256": "4790519f9281530fda8ddbcf9b3f2feaa11bda93ed19dbe03e4856f06544add1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark02.json",
+    "bytes": 17507,
+    "sha256": "14a25fc41e821e08ddab79c921d35ada1ea6a65ebe7961a3726d37a6cd17fd64"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew435_body_thunder.json",
+    "bytes": 36183,
+    "sha256": "806b9426eb72745f95990c4d8790c3f5c8203b619136819927b870c34caac669"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew435_field_thunder.json",
+    "bytes": 68681,
+    "sha256": "6cc602e958631e6af1a5bc96f2894a068bf86af2cae8adcf4c5f8c33851d93f0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew435_hit.json",
+    "bytes": 25646,
+    "sha256": "d13ff641cae28f4a89d8441ff55df4a584cc13982726d9162657f8c86324437a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/ew435_thunder_flash.json",
+    "bytes": 45399,
+    "sha256": "0c22c6908a4f7c861426ef1759c5bdbf7a57d0af07568b6f65fa2f3edf1f95e0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew089_floor.json",
+    "bytes": 1794875,
+    "sha256": "3d4974132bc25a0212d341a7800f7e7071134456abad3552101bccd09e138a0d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew122_tanM.json",
+    "bytes": 171015,
+    "sha256": "c75c58fe95181548d04b634321a464042d14979c89a7609c7af0ef3c39a07f4e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew231_whip01.json",
+    "bytes": 346411,
+    "sha256": "54f245c40ca9b36ad5a4597faa05add8e02714488c02f9c53c87835eaf35ab4e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_hand.json",
+    "bytes": 577215,
+    "sha256": "cf34b022f2ed379d21d4920c4b375b9eefd9e9e9d2a6c9c00f4e7e98aa3b4b1d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_tail.json",
+    "bytes": 17194,
+    "sha256": "d89a28fcf2eb19f7fd5396e74bbd327937bf92e4adbe838de4765e2ad0d36568"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxmt_3_blur001_m.png",
+    "bytes": 99563,
+    "sha256": "46a922f46b6fb97b825726b6dc5b6768b45153d43cae109425202849d5c02101"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxmt_3_floor204_big_a.png",
+    "bytes": 420645,
+    "sha256": "de3d6afa748f83015326a9e696b5dbaf9146c61b15a6c9553dc0f86eb024476a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxmt_3_rock203_a.png",
+    "bytes": 68284,
+    "sha256": "8030fb25868068ee308d5e8143af030f95dcb3aabc29655823cd0f78dbc0c373"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura003_m.png",
+    "bytes": 3184,
+    "sha256": "e282b14e3108e3decf016e0b9de06c5543e0b9afcf0be6a1491af6db7bd0973e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura003_m_mirror_clamp.png",
+    "bytes": 3184,
+    "sha256": "e282b14e3108e3decf016e0b9de06c5543e0b9afcf0be6a1491af6db7bd0973e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura201_a.png",
+    "bytes": 15531,
+    "sha256": "69d5c917e479b6c1b48224131f4f376dd2739711c9657fe190731fa529af45f6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura201_a_repeat.png",
+    "bytes": 15531,
+    "sha256": "69d5c917e479b6c1b48224131f4f376dd2739711c9657fe190731fa529af45f6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur001_m.png",
+    "bytes": 39992,
+    "sha256": "545ff85c551ab5b1ba0dfc085811a5efd4f002ce2a68de0b0fe5da4abf3a40fc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur002_m.png",
+    "bytes": 956,
+    "sha256": "797edf8ccbd30e5464c23ddb58c7ef691c48634459b8e839bf661e55b255bb27"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur003_m.png",
+    "bytes": 1297,
+    "sha256": "aab4799b18b93b36b59af2019fb926262467fae40ebef9db577fdb50e103aeff"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur804_n.png",
+    "bytes": 1657,
+    "sha256": "f663187a95edf82565ccc13d42f2857ade77dd9d56f6ec61f1ed19a5d66bf011"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blurmask601_u.png",
+    "bytes": 6352,
+    "sha256": "c2b46d07e8366a2ebd22bbe05e4814d1c34e787176926307fc17e28d76043206"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_bubble201_a.png",
+    "bytes": 7679,
+    "sha256": "9467dc7b8120b2d3d43585f2d8ed980809fc348a030175d760a57abe624f993f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle003_m.png",
+    "bytes": 15844,
+    "sha256": "213e3a075a6a23b1f4c11498b69c2832014b81e0ed03aff1bcfca44ace97fdf1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle201_a_clamp.png",
+    "bytes": 2326,
+    "sha256": "a998768f0c26c76c71768f157ecbec9c9f8917c428ed08096a29b7f4d3223284"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_cloud601_u.png",
+    "bytes": 5463,
+    "sha256": "b9babc42292e4cfce48ece9c280322dd5133a0d9120cee82d743e7c093e731ad"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_dast001_m.png",
+    "bytes": 5240,
+    "sha256": "7f61acecd61b511eecda99f83c139c716830b23edafa2bfeca54e96bb7801f87"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_dast001_m_mirror_repeat.png",
+    "bytes": 5240,
+    "sha256": "7f61acecd61b511eecda99f83c139c716830b23edafa2bfeca54e96bb7801f87"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash001_m.png",
+    "bytes": 10639,
+    "sha256": "179d61c82db599a617dc21e22d99f927b669a351a801cfc737f1624312404264"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash002_m.png",
+    "bytes": 4843,
+    "sha256": "dbdea8bcee93724a1f69c469570193144a5e34a458884824d11ef9cf5121b25d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash003_m.png",
+    "bytes": 900,
+    "sha256": "a2870a25fdc582dadb3e3dfcd3cd1a2ff3c9f1632762948f3a609671bfdd594a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash003_m_02.png",
+    "bytes": 900,
+    "sha256": "a2870a25fdc582dadb3e3dfcd3cd1a2ff3c9f1632762948f3a609671bfdd594a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash201_a.png",
+    "bytes": 75059,
+    "sha256": "b1785f52862a219aa7315a58c26ab9a71a33ac1c923b5032f654d02f0754c0ad"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash202_a.png",
+    "bytes": 4534,
+    "sha256": "b4d95cfbc8c8bfbf8e6d405d15035afe149fcb915515b635d0379b14e8bd610e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash202_clamp.png",
+    "bytes": 75815,
+    "sha256": "b2f98a97b96f26f5eff462954d0801e30db2cccb1d8ff6675d5b57e2eb49dc09"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_frash202_a.png",
+    "bytes": 13403,
+    "sha256": "b28c9866179f5be3a4f091943131ca20a8df1c5064b100831758aa7563102a2e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_hit002_m.png",
+    "bytes": 4337,
+    "sha256": "bdcf9deaea8eb57eb7ad46f1dd5f0eb6d4d182e48611cb15a0ffdd1605172f05"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ice001_m.png",
+    "bytes": 9585,
+    "sha256": "2e8c8fba5dbf6767d364c1edaa3d17a877f62f28ad377d53aa299075c6b7ed2c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ice002_m.png",
+    "bytes": 7644,
+    "sha256": "ff0705ea1592920ce7283172ba2ea0044de6cd5e9eb6e405fa09a7deb2be6477"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_light604_u.png",
+    "bytes": 5349,
+    "sha256": "e789d9af51eef830654000da70190dd6c68231bc6c1d30d0b633892f94d0cbd5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_line702_o_repeat_clamp.png",
+    "bytes": 4518,
+    "sha256": "ce6a686479ad70282762788cf0d7c9660696a02d14b2532c9eb4bf3eab411b0b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mark004_m.png",
+    "bytes": 6528,
+    "sha256": "974f3b93bcee7c3b2aaf7cf41d5b3ed5d8039e1665d6c563d09778645c9a95c1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mark006_m.png",
+    "bytes": 1726,
+    "sha256": "295b2ad4f26be757ad19e2847e001039b891780209b7f0f6b0bf11318291dba8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask001_m.png",
+    "bytes": 81,
+    "sha256": "cb52fb1701b07fdf38e530bfe66eaee2952cd59b18629af1e7b21dff704f4596"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask002_m.png",
+    "bytes": 18476,
+    "sha256": "420f5f4a6a7044492ebb8f1c7cb98cf4fc3db96d7c186c223a4a5cd0b47aca71"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_02.png",
+    "bytes": 1320,
+    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_03.png",
+    "bytes": 1320,
+    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_mirror.png",
+    "bytes": 1320,
+    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask004_m_03.png",
+    "bytes": 150550,
+    "sha256": "e733846c1a5ffb7b5e3a763aad7a7997b5b1fc2cf011a549f631b4f8437edf8a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask006_m.png",
+    "bytes": 2021,
+    "sha256": "044efd0746a02c5341eed0d6d0cab2389cabde23026cb30abfe6cabf52ffc1c0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask007_m.png",
+    "bytes": 198,
+    "sha256": "c5858aad7fa634514dd2607ca50c7f6356d01f8eb09791db07d93fdbd117de7c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask701_o.png",
+    "bytes": 276,
+    "sha256": "5316300352b94a92324dd1363e8b79dbcc6d398c8de7fb0125c1dfbe922abc42"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask702_o.png",
+    "bytes": 13702,
+    "sha256": "b45692fab79b090741de64d62e01f2b7e8446f18f5435b1eb1e882fd1b0d5950"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mirror201_a.png",
+    "bytes": 1085,
+    "sha256": "d704520dc004ba0b503efa336d1518e8b97d8afb86f6b0bc04850bf99b973479"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring001_m.png",
+    "bytes": 36479,
+    "sha256": "2be04a371f6cb00507ad9c23a7fe02c8c63631f0dba5375059b0cf664ebea8da"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring001_m_02.png",
+    "bytes": 36479,
+    "sha256": "2be04a371f6cb00507ad9c23a7fe02c8c63631f0dba5375059b0cf664ebea8da"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring002_m.png",
+    "bytes": 4016,
+    "sha256": "ba5d2feda3af8ee484436dc43db7bf9232e68df75638a585d3e2445c22fa2b10"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring004_m.png",
+    "bytes": 34054,
+    "sha256": "63d9c5558a0476c2abfe94a05e956fe98380fce27bca8510b131348324ed4269"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring004_m_clamp.png",
+    "bytes": 34054,
+    "sha256": "63d9c5558a0476c2abfe94a05e956fe98380fce27bca8510b131348324ed4269"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring005_m.png",
+    "bytes": 18054,
+    "sha256": "1ffa033b6533842dce7b6e81253891318f30febbb18985f5118bd37f7084ae3f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring201_a_02.png",
+    "bytes": 125578,
+    "sha256": "9d21b75d76ce95e332810cdefbd957b389ee93f6ea34181d7ecf433626139e6c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring203_a.png",
+    "bytes": 10047,
+    "sha256": "2d8d326f2e733bf89ccd302c7a04ce484679ab54230148deaa3e56ca8ca2f88a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring501_y.png",
+    "bytes": 21703,
+    "sha256": "6770ac22798a530b526418a402919b0a9d1f212525bf30169749792854adc226"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke002_m.png",
+    "bytes": 5224,
+    "sha256": "c559f92611f85718e5ed9409c48707b61c4a00428389cb3a2379dd5d299d5e3e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke002_m_repeat.png",
+    "bytes": 5224,
+    "sha256": "c559f92611f85718e5ed9409c48707b61c4a00428389cb3a2379dd5d299d5e3e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke005_m.png",
+    "bytes": 10452,
+    "sha256": "ac536e724f52f8003dfb3a0d42b99cd23a8510dbb39a6ff8fa205870c47e6e28"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke701_o.png",
+    "bytes": 41155,
+    "sha256": "50a8db6e2f1d5a84ae1900ba8d1485e7579aab223d6dc7da6c56a4e5d923f3ba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail002_m.png",
+    "bytes": 315,
+    "sha256": "a187c9ba6fece3112b0ab69d222f032a6aa314dd90cb1286b9f0aaa81523e1d6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail004_m.png",
+    "bytes": 3509,
+    "sha256": "6ef50f92c8f389fa3039b33512e4f3d9a72fc6d32b843cc582b01fdf9c54c8c7"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail004_m_repeat.png",
+    "bytes": 3509,
+    "sha256": "6ef50f92c8f389fa3039b33512e4f3d9a72fc6d32b843cc582b01fdf9c54c8c7"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail801_n.png",
+    "bytes": 47353,
+    "sha256": "5145cd7fdd88bcae85f0e457973f315a4dd2d65b8488fd2e588f212f7ad9fe84"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_water001_m.png",
+    "bytes": 1268,
+    "sha256": "b17f2dc87fc41e0a54a0a6ebac247bfa3315ca6a9a745208c17383cfd5abd604"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_water002_m.png",
+    "bytes": 7639,
+    "sha256": "451b158357ba23900cc2fd0df137c4024a7e156a0dfd706176e48625a9f61171"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind001_m.png",
+    "bytes": 11594,
+    "sha256": "d2cdb78821c6654a80f4edc18a822e64f5ca56745fd69546377d52023cbed58a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind002_m.png",
+    "bytes": 3976,
+    "sha256": "667ff556b15205d1c2fa34f0346fb33662ee311a859180ad7903348f5a6fd822"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind003_m.png",
+    "bytes": 48537,
+    "sha256": "6fa50d2040ba9e847a2f6caac030a0033fc3ee6df0162a5e4ce92f3b92f109a1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind004_m_02.png",
+    "bytes": 3908,
+    "sha256": "97c2e0bbe8694d93d6e53afa483c23224f39c64d06d7c428440321d3a1422a6a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind005_m.png",
+    "bytes": 13679,
+    "sha256": "dc7fefdd18246079be10e765215be5579936726f4030f6676ebabe4794289296"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind005_m_02.png",
+    "bytes": 13679,
+    "sha256": "dc7fefdd18246079be10e765215be5579936726f4030f6676ebabe4794289296"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind006_m.png",
+    "bytes": 4585,
+    "sha256": "cb7dc4f69b10aba87681665bc4dbea1ef5f3b726aeb518921b221cbed7592312"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind701_o.png",
+    "bytes": 6369,
+    "sha256": "89be46213e9028dbe5c3d174a7b226e7b439713302863140c4b85471dc3a487d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind701_o_02.png",
+    "bytes": 6369,
+    "sha256": "89be46213e9028dbe5c3d174a7b226e7b439713302863140c4b85471dc3a487d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_aura701_o.png",
+    "bytes": 5723,
+    "sha256": "6869eeac4c4b2e2aa64a8546c52ece7ada7daa2790ace81bfca7343814b25864"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle001_m.png",
+    "bytes": 2749,
+    "sha256": "9775a86799d1f9a781d4992cc99602e4d91ad4293db698a485ca3223c93df99c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle002_m.png",
+    "bytes": 5243,
+    "sha256": "28889d3a00f20cda9f06e77656288c3169fff88cd4acf26a3fe584b4898725ba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle003_m.png",
+    "bytes": 6401,
+    "sha256": "2dc1adc12896dfcdd5dee1c2f9da002ec849dd11d81ee2fc6c45c1e915d624ea"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle004_m.png",
+    "bytes": 120825,
+    "sha256": "472c20a63ef8c8db63c3395dae5b3636e523096989225ddfe87db54b4b021211"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle005_m.png",
+    "bytes": 5962,
+    "sha256": "f45a7eed0998c73d1dcbfc66f776cca8c8ffc97d1f8e664571802708459fdea0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle006_m.png",
+    "bytes": 2757,
+    "sha256": "df884c9e51a9dd4b1b14769c15fb8f8b47f11b6d0d566640d36fbd7c0e6a81cb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_flash001_m.png",
+    "bytes": 5987,
+    "sha256": "d9d6fd9e2ad463610133e54bd3d2ab2b03b62c5baae9b51b55296a0c28c96b07"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_flash002_m.png",
+    "bytes": 2371,
+    "sha256": "5cf1496622913a3aa7574c117ed18b299f944127a4a0871dc14c20f27a64ab2b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_line701_o.png",
+    "bytes": 16517,
+    "sha256": "806005f35c63ad2849bc81179be992e43afde99b0924ce630837df681d24b27e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring001_m.png",
+    "bytes": 7452,
+    "sha256": "1f126066e33429da6b282c93d5d274e7cca67fdeb69cec4ac6d534ee23ab69c2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring003_m.png",
+    "bytes": 54850,
+    "sha256": "b4ee10c49d6fb564471f0d04c01d46c9811746d4742cb578f05dde10c2077ebc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring006_m.png",
+    "bytes": 14123,
+    "sha256": "9d0506fd5090d1bbd772d38d5e523aae570eb3e4eba046483638bdda805a0c47"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring007_m.png",
+    "bytes": 2771,
+    "sha256": "3926dce0f728010d9ef5abd1dfcb19c2bdf74886ba414539d3e19dceac5c3a1f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring009_m.png",
+    "bytes": 23533,
+    "sha256": "b563bfe5d6a598115f35ef527b28993accf77c948b47753c4a19b6b40e7d4c5f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring010_m.png",
+    "bytes": 2668,
+    "sha256": "3f6711dc2b3cf0b57cda230a57895ee795bb85fde8f0f3078e05085a23b2b711"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring011_m.png",
+    "bytes": 2915,
+    "sha256": "0612645dc1038c226a15b7ea571cd106705c35b8d922c6745ba27c78d4b2dc02"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring015_m.png",
+    "bytes": 32084,
+    "sha256": "8b8bafed1b92fd38463fc05e9f2460feabb32a3f335acdd3b5861f9e5ae51f9a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring201_a.png",
+    "bytes": 32284,
+    "sha256": "f168b381e3b8fcfc3dd136bbad2822052460f9fe5bd990e1a9612ba56aef8ab6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring301_t.png",
+    "bytes": 3353,
+    "sha256": "597b48cc5886336cb3f97944ad209e2c7ca4ebcae060d3b8228ca89ff47c962f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring501_y.png",
+    "bytes": 4313,
+    "sha256": "c124ddb450cff05798a15815c8562e4a9bb3d78d65ae58674ca065b0306a182e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring601_u.png",
+    "bytes": 3926,
+    "sha256": "b703025ccf072f76e436a8d04c2d58d6728d78f5a04c692d5090293f33d3e6aa"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom002_m.png",
+    "bytes": 91471,
+    "sha256": "a5cdaa6988aec8ad58c437e7935a244877464fe419de9aceb9ab0abd5357784e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom003_m.png",
+    "bytes": 18662,
+    "sha256": "b8406268c58b55a87274c24ea081b7b9bd9992e15fbe79d4f3b1b147f418a84b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom004_m.png",
+    "bytes": 16637,
+    "sha256": "7016a363a6c3ffcc3dc24d9bebde2a3cc7ed04836de531b997853a12431d36ef"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom201_a.png",
+    "bytes": 98662,
+    "sha256": "0e416430f151aa3e5edf27fecd5b76be176f79f663168b50686fcb141340ecbb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble003_m.png",
+    "bytes": 30510,
+    "sha256": "fc824e2b96b288524fd7f9c5e24f616bf57ef8ec40bcfac3eefd314ef5bffa3f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble004_m.png",
+    "bytes": 12057,
+    "sha256": "b304be39943773f21a0a980cde35cd5f245b0c45c025208ec32d6675eae819ea"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble009_m.png",
+    "bytes": 24852,
+    "sha256": "38c29cb8e513509dbd1e37709f326b51289cba6de55b740ec4cbdccf9e0ba918"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dast001_m.png",
+    "bytes": 5810,
+    "sha256": "d2416e137fb28169f7b28e555e52a200b84b7c4b7dcb2e7a8d5cfddbe4ec62c1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dast003_m.png",
+    "bytes": 8086,
+    "sha256": "958d7fed66f60d45c2572ffe0233929bd5a2ac4d1088ea182456319315a3faef"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dust701_o.png",
+    "bytes": 5864,
+    "sha256": "bd3b425675b168e410dedc3d11b15fc0858343ac1e0a400f616a6d69e61dd977"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire004_m.png",
+    "bytes": 75447,
+    "sha256": "a64dad713f7c1f81212264eeb9d5ba78384be85e59f98aa2038dfe49f3e550a8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire005_m.png",
+    "bytes": 73897,
+    "sha256": "b8ca3985190ebd3a9ddc4295f0d42f56714ee1d5b472887014466cad229c890a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire006_m.png",
+    "bytes": 68759,
+    "sha256": "b4afc363c5b7fd0768ebeb545b34a99c79ecd3350a91eb04b11c11b4668f9f0b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire007_m.png",
+    "bytes": 51078,
+    "sha256": "756046828bcf1393585170e2c833cfa86047a83354e81e931fc8b7de9719da99"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire008_m.png",
+    "bytes": 1419,
+    "sha256": "00f0386544f8d156e749da922e77e98f1aaed0894c00d6d0ab3137075503db54"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire009_m.png",
+    "bytes": 35167,
+    "sha256": "34a483529a81c9bdb6018cd7ae1a039676b49b3211024b47ad907d11d5910310"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire203_a.png",
+    "bytes": 92612,
+    "sha256": "5a552836a82fe719937c83efd0d197ed53e5549ae3ba32c01473f2c976daf79c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit001_m.png",
+    "bytes": 40416,
+    "sha256": "2d2024f09e55f238504c8f2cc6271536bf6816488aa658c188f620354b1c0b54"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit003_m.png",
+    "bytes": 66444,
+    "sha256": "101ca6edc3d2c984ad7ccf83f3a07b01ac8bc38e68acea5267a5e93b103975a3"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit004_m_02.png",
+    "bytes": 26496,
+    "sha256": "045644583be67d7d41c577df6c39dcc6e6219d37917d2ea44da6139b5476de45"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit005_m.png",
+    "bytes": 17657,
+    "sha256": "2e81d6e9236a852e169fd08ed94f425b6eb3ac0b26299fe9a3309c964d94ff70"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit006_m.png",
+    "bytes": 61703,
+    "sha256": "116eeb47ac6a9a0175be919eebd5d84daf3bc08cd0855b5dbb98cdc33972bf2f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit007_m.png",
+    "bytes": 70598,
+    "sha256": "fdc81b065144701c6f232cc6c925eeb6e482c44954d66c558d9658d3589b10a8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit008_m.png",
+    "bytes": 104498,
+    "sha256": "18a672474fa6c834c6b8e787da80f4c2893f24565dfe469de9233292d0e7983b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit010_m.png",
+    "bytes": 57119,
+    "sha256": "d2b71a213d46553fae9721a4f44ebcab9028868320c473b743eae4dba95e2b99"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit011_m.png",
+    "bytes": 59472,
+    "sha256": "53c12f572da382eb18b1a39da6f5272110e2215318f1a1390775889107a8b128"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit012_m.png",
+    "bytes": 89751,
+    "sha256": "3991b0e85570873b2cc19ad964d32140c23724e26b6599d8244e718ef955fcd6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit014_m.png",
+    "bytes": 82048,
+    "sha256": "3150b88972959215b1c95590d38dd0f4981440733cdfc0fa630825ac84d92cea"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit015_m.png",
+    "bytes": 36908,
+    "sha256": "4757b89b1ceaaaa29657e70ce95c57169192a0083773f9c417d332926b5a9a14"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit017_m.png",
+    "bytes": 50448,
+    "sha256": "c8f7c32dd0cd9626139a47fdb7782519d356ac028850d625b2af2d036613e8a7"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit701_o.png",
+    "bytes": 56449,
+    "sha256": "e39b5a2035b215932e124641e1f4b57a03e4d0288dd1c55cfb3b956bb74d162e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line001_m.png",
+    "bytes": 47025,
+    "sha256": "f9985551a3a2a8e83476ef3711d3b46c80136bc04cf3fd547e150a9ef93ba438"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line002_m.png",
+    "bytes": 56079,
+    "sha256": "210f8e6a2e51eeb2dc322e9c231b5d1e2398a5614f21451c152a757f030cecba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line003_m.png",
+    "bytes": 44689,
+    "sha256": "7806b42ade6ba368114bd4ec54f949f814769334bf5d37ec7496e2c82716fc50"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line004_m.png",
+    "bytes": 35125,
+    "sha256": "3d9649d1b40659321c3662c41191690d0e870a91ccacf585a8dd39cec8229069"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_mark001_m.png",
+    "bytes": 24671,
+    "sha256": "3b94dea8a55d444d0ff5134ad504f3dea16a73665866b1277b496afb01cde93d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_mark002_m.png",
+    "bytes": 27572,
+    "sha256": "58df4bd2fa1982e8d4e8b3bcb613a721fc0c1c9b3f4e258df2972f2c8b9371ba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object003_m.png",
+    "bytes": 6870,
+    "sha256": "27e479e440e28d29cf725b397775cd247a4bac13a7244634278f67c25caf3c54"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object004_m.png",
+    "bytes": 13610,
+    "sha256": "44b880303c747dcb2b6e6ae396c523269536fa62ead4bcccc5429cf5fd05f56c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object006_m.png",
+    "bytes": 15777,
+    "sha256": "e1486c6bfa28222963101d68d6a8aa05f67ce11a43dac1f11c7ab5b93f494180"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object007_m.png",
+    "bytes": 57913,
+    "sha256": "c0bb4af609e0f302846b50fad84362f272456509b4b6259666805e7448a74f5a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object201_a.png",
+    "bytes": 6376,
+    "sha256": "3c82f95567849672c8f84b1ec1d13d1464942dfc39483bad1cd42e9ab3f27ace"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring004_m.png",
+    "bytes": 38998,
+    "sha256": "828c7286c12841b581f11c8dd33f41c7401e903e5d5e5c24e0ac8556014b57eb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring005_m.png",
+    "bytes": 72757,
+    "sha256": "41a5c63581c3690f3cb640567d978bbca8b5340b5f1261dc13b697dbd9e5a029"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring006_m.png",
+    "bytes": 33140,
+    "sha256": "09186c06f7590c32c7b3f55b2367de4cda20f57e5edaa6eaca613a935d34beba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring007_m.png",
+    "bytes": 33215,
+    "sha256": "a1273b272cdcf74851c1512350148647d67b15855a964daf7035dbfbe03ea98e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock001_m.png",
+    "bytes": 29501,
+    "sha256": "810a42aff58969efb2c573c4af8a0afa6ece82fb928d339ad9b8ea05f9191f77"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock002.png",
+    "bytes": 34695,
+    "sha256": "6e0751bf69c2a25e5cf5edcfdc04339e19651bb1da47993f455c8146752d32ee"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock003_m.png",
+    "bytes": 296996,
+    "sha256": "df9b07bd47e6f2e3e2cd5dfbd21607fe5f87a6d03f5fd13716830ca63ecb0c15"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke001_m.png",
+    "bytes": 30630,
+    "sha256": "3725a9494974417ecb0f04323f94db1b1678463feb985f7802f85f506e63a65b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke002_m.png",
+    "bytes": 63165,
+    "sha256": "d7e458c967f857e3238a5d2701d2098c10aa4ec0d84983440a0b8e52b441f648"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke003_m.png",
+    "bytes": 19236,
+    "sha256": "461c412a4b4b414ac780d1e0cc11fe533029e8c5f152eacf20f4b9ff651786c7"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke005_m.png",
+    "bytes": 5143,
+    "sha256": "ac43ef9b9c21dc7179893cf4262a1b5283b41fa8cf2ea49dedd01a1c67e7b197"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke007_m.png",
+    "bytes": 27340,
+    "sha256": "f2b4cbf127fffa5ce152b7a22ef4dff5c8d39c5837da86065dddbdf9d8895879"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke009_m.png",
+    "bytes": 46757,
+    "sha256": "b8605e66f5fae21c7f964f9f514b07a76179e2a3110c63784a06afb3f12765cb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke010_m.png",
+    "bytes": 12841,
+    "sha256": "ce7a7351a63962c1d1942ad40d76f9231eb86b46d3590ffa7530a60e4ce2d6b2"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke701_o.png",
+    "bytes": 31071,
+    "sha256": "ec6329c30aa329af4d9e54664dcdba2dbea51f50b76a826a001eac479acfca93"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke702_o.png",
+    "bytes": 10907,
+    "sha256": "db92f19756cbffbaaf07daf2762e54bc8990d21ca0d0b9e1f0511e426f5d7ca6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder002_m.png",
+    "bytes": 40585,
+    "sha256": "c58b29b7acf7b09d3fc22e36c9c6314d8c7918be8e1b056af32eebf735504ce6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder003_m.png",
+    "bytes": 52300,
+    "sha256": "77fed05b250b834caee633b17f80fa34c788b6714148a84c72e4c0ff73045c11"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder004_m.png",
+    "bytes": 48697,
+    "sha256": "9d280c73c55f10b622874459d5630307116bdc061d011575cc6891b8f269cc0b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder005_m.png",
+    "bytes": 74127,
+    "sha256": "f4d3dabafe3a9c808ef02785fb418fd99bebd71a3dfdcec6e911bbca4ca66112"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder006_m.png",
+    "bytes": 17782,
+    "sha256": "785e3a8c7529065a2c43c2df172fc74a708637127b1d91544dbe280af790278c"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder008_m.png",
+    "bytes": 111248,
+    "sha256": "b82f918ccd7cbdb947cc42fe267036b38731bc729d3ffc22e2797f9b75317ebc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder009_m.png",
+    "bytes": 90014,
+    "sha256": "df8ae8a8f789d8f46cbcfa371cf530cc1175975a1191960bfcb15a8970069357"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder010_m.png",
+    "bytes": 45748,
+    "sha256": "9b6aef69db6be3662e851497dd5dcfd96a57ee582ea2f8d864c647a4c98e69f1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder012_m.png",
+    "bytes": 100614,
+    "sha256": "518160cab3e0c053bb38f92081390b5bae74d9ee97c076d98ad85879d954555e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder201_a.png",
+    "bytes": 218161,
+    "sha256": "62aae3c668739a36b6a793aeb7028be9733a87a58a373f3bb5769bb844c10ffc"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder205_a.png",
+    "bytes": 24280,
+    "sha256": "a0a6ce580c7462ea02c3478e359e8153272eefb27447294cdb64b0204ebf4752"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder206_a_2.png",
+    "bytes": 60516,
+    "sha256": "147da4a834054031eaad66bbcd8bb31b06e241a9f6188e7c50e36154142b3fb9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder209a_a.png",
+    "bytes": 263457,
+    "sha256": "7778037618c2e6305e0f3409ee1b99a9ae5a63d23b28466567c579bd14af1ea8"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder702_o.png",
+    "bytes": 46420,
+    "sha256": "f1dee1826ac695ad4e70730b8bee53fac58a9425a5846846c87a19c471ecef09"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder802_n.png",
+    "bytes": 76298,
+    "sha256": "56e7e8bb12252c760104dbb2a9dfabe2e12ac541e643f8fd4c248d59d29f3ace"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water003_m.png",
+    "bytes": 131139,
+    "sha256": "b1e9411ccf66dc69233dfed0d6f730faec55ef5e6cecbd76d2771eec0a4fdeec"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water004_m.png",
+    "bytes": 82141,
+    "sha256": "bcdf86d98677fe4f318664da5db04a648db5ed8cbe901daddee41ca33f8bbc49"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water009_m.png",
+    "bytes": 55657,
+    "sha256": "6d39982b82b36a4179a5e7b7f9653c047a31e33d9dba1d5cedfbde6d4250f7c1"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water010_m.png",
+    "bytes": 25270,
+    "sha256": "675547724ed58648fce7903f55df6661bad02a82c140dea1c6a81e42c7816a6f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water011_m.png",
+    "bytes": 44985,
+    "sha256": "748672ed23bd0cf2694e059a39122c09a180af0d708d7d00d368163c7ff18ffb"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water011_m_02.png",
+    "bytes": 45695,
+    "sha256": "d09054ef549c1cd7d41449f4124336f81acf32e5e6c404ec766b21cca468bb76"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water012_m.png",
+    "bytes": 19073,
+    "sha256": "7c4262b2e2f585b1a94efa8a1f6569913916638db544489c29011ec30a4b442e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water013_m.png",
+    "bytes": 100561,
+    "sha256": "5d6ed40ef01e32f74737d124381bc328f16b187bcf1e54ef136998d965f2272f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_wind001_m.png",
+    "bytes": 40260,
+    "sha256": "9428c3017c1e0fd3bc562365bef82dbc284653579906eea66dd844e317f81230"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud002_m.png",
+    "bytes": 14919,
+    "sha256": "603ef79d30fd52293d9b5ed61b0bb38b9a688d3525fe1061c75ac79248565875"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud201_a.png",
+    "bytes": 247914,
+    "sha256": "bfc9f78a657d99a88ba4aa2ec22a15b0fb46d690044d7eaa18ffefe8ecbb03d6"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud203_a.png",
+    "bytes": 204250,
+    "sha256": "1fb1012bc6cd3eb056d4c05140adb513050b58c6974e5943ee95349bed2a4dba"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud205_a.png",
+    "bytes": 157302,
+    "sha256": "2a222d47cff98d49e7359044864e9cab819936258bdc740832098a95395d82ca"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_color001_m.png",
+    "bytes": 6567,
+    "sha256": "5e3e1e9207586a3e04dcc510a7521af2d7bd49d3e52ad0146673e40506653783"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_color001_m_mirror.png",
+    "bytes": 6567,
+    "sha256": "5e3e1e9207586a3e04dcc510a7521af2d7bd49d3e52ad0146673e40506653783"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_fire201_a_repeat_mirror.png",
+    "bytes": 39604,
+    "sha256": "aaec910d95708b6ee0c985c15a3134a4482fe9993411666d50182d4d43b0efc3"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow001_m.png",
+    "bytes": 27883,
+    "sha256": "f6ce15b20d1451ec9bd5127920ac57b905527f7aa6750f41cc5283c7923ce0a5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow003_m.png",
+    "bytes": 40757,
+    "sha256": "e598e3d2d83503e4493be2b473ac68ccda64081ac82ccaaf80bd7ce20cec78d5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow004_m.png",
+    "bytes": 18098,
+    "sha256": "6a9d477f4537f76e7c768766a953dd3eaa79834f3a0c019b8a6370b17ec45ba9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow004_m_05.png",
+    "bytes": 54830,
+    "sha256": "e64ca4744e11184ecd1816e3f3ab42902e25c8eb6b9a8e9ed857b1e72a0c9206"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow005_a.png",
+    "bytes": 71252,
+    "sha256": "1ad0e0014db3981160c3219cd37c1f0d44474490158839d0b0d27fedf5f00d68"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow007_m.png",
+    "bytes": 75077,
+    "sha256": "c9d5527745e2d16d93818b42be00a27a897d1923a208e08de95b7fb7b84ac78e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow008_m.png",
+    "bytes": 133001,
+    "sha256": "5977ca93caee3a5da9cf2d791924fb381232c6a87d3fa5d426998478c77669ad"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow010_m.png",
+    "bytes": 191460,
+    "sha256": "439edca1c9a3ebe267fa1336be0919c1c4b661b951dfc7530a0d9685d179efec"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow011_m.png",
+    "bytes": 173084,
+    "sha256": "c26197a2d994546aaa6efa9e7210769026f5cccc10c9b92efd621d921f30be23"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow012_m.png",
+    "bytes": 416673,
+    "sha256": "0164f4cfe5737f276ec5ddceb256fc28fbfbeeb87811c913bfa109a7e40dcd3b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow013_m.png",
+    "bytes": 9443,
+    "sha256": "b7c24d6cd41afe89214acfa3acf6be0b1c3be66ed77ecd641b913b3c5765ce16"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow015_m.png",
+    "bytes": 14181,
+    "sha256": "abcf41cc82867804e0b28a309b59c7c97c9fa33392134c066ddba0896bc41e12"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow016_m.png",
+    "bytes": 236852,
+    "sha256": "79f8957efb9b60ba15e978323d6b168f5fa9f82c8b89794deed1f4d23004a14f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow016_m_02.png",
+    "bytes": 162517,
+    "sha256": "4dae07a07766f1b969dbba9148e6ea2ce137f8ccb70a29ff11fdc70565f79c83"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow017_m.png",
+    "bytes": 625128,
+    "sha256": "86eb4f53328ec71954f44540ede713c8a75503694ef6af0adbcdb2ec741a0f26"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow017_m_mirror.png",
+    "bytes": 625128,
+    "sha256": "86eb4f53328ec71954f44540ede713c8a75503694ef6af0adbcdb2ec741a0f26"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow019_m.png",
+    "bytes": 121906,
+    "sha256": "ff0c4eeeb2132e3f8f9a10c5f43e0ad11154ce673ce84f731346966c287cdf1e"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow203_a.png",
+    "bytes": 106897,
+    "sha256": "e7bb2ed5c9835daa3df8c47d10cbddcb86efb5d95469246038abbe59c4b3e3df"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow401_e.png",
+    "bytes": 7673,
+    "sha256": "131360c273347c741703d2780fc69c1a3db06975f116397d13f7bb0ed58733e7"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow601_u.png",
+    "bytes": 44489,
+    "sha256": "22b3fcb931e618480b70eeb45feacb0d222d1a479a664b6e3c464cf677a7e9ac"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow701_o.png",
+    "bytes": 13746,
+    "sha256": "1127898f9826a2f79ce18b72292e0a09c687fbfb8dac74f85e93ce15b1712273"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow701_o_repeat.png",
+    "bytes": 13746,
+    "sha256": "1127898f9826a2f79ce18b72292e0a09c687fbfb8dac74f85e93ce15b1712273"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow702_o.png",
+    "bytes": 28077,
+    "sha256": "72fe3b86350beaf01e79c25788e07fed2cffab7feac871e0e7066b2cdc6abae9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow703_sml_o.png",
+    "bytes": 21968,
+    "sha256": "3cff9c1e7a2dea1ab8436f9b0485f30ce91150eaff00631c5ea75c94cb19c418"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow801_n.png",
+    "bytes": 203558,
+    "sha256": "56f892bcce4e048ed4a3b5f80e6a1ace84ea4f5779222233a62950eea8ba0241"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow803_n.png",
+    "bytes": 59540,
+    "sha256": "260040b6cda119d1c82977fdd6db4e0194b1fecf9880d604c47882ac031c4a44"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_ice201_a.png",
+    "bytes": 55013,
+    "sha256": "453800c1e3c3a26f13c2c81fbdb7c6dc97b24992db1405ee159ed16a2428428d"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_line001_m.png",
+    "bytes": 179,
+    "sha256": "d8fe8dfce2bcd0ab546247c6ddfe1ba00e5fea5d0e03e065a45fbbbecee3f3a0"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_line801_n.png",
+    "bytes": 583,
+    "sha256": "02ba407c3073483a3ca57694919975762ae3d3e5773c933922cd4cc070bf7ed9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_mask001_m.png",
+    "bytes": 52850,
+    "sha256": "18d7153ecc2caa840e03c798fd56d7d9a3b119526cbe00896acb16e4f1c40ccf"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_shock001_m.png",
+    "bytes": 1954,
+    "sha256": "921847c1dcbd00b013c3b7d8c430830a9c96fd3702599b89deb1dc03ddde75c4"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_smoke201_a.png",
+    "bytes": 109093,
+    "sha256": "c46aa1f2e1a65f3f7cec4838bad0f2f4bb4727fbce2a1f1114a4fb0e80b00be9"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_smoke203_a.png",
+    "bytes": 23965,
+    "sha256": "8611e911a8dd3ebe690038e7f426673fb479f07471f0b5079d2fb069a4f87eab"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_ht001_m.png",
+    "bytes": 142,
+    "sha256": "8db71b75f7041481139b7a664f7b2b7222a622c846f0cb929ea59cd6c6a348bd"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt001_m.png",
+    "bytes": 159,
+    "sha256": "dc9983d4a4633e26827479abdde27f449c149bf4fdd2ba0d6960b42480b7329a"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt002_m.png",
+    "bytes": 240,
+    "sha256": "dcec15a8d3a24064cdceaa9f0c95391d3da90aec205eb80f8fef7c81bc171f90"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt602_u.png",
+    "bytes": 496,
+    "sha256": "9eecce3536e5f2f72b4393cb0250172342e1cf9392598b515d64039862c0f464"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt701_o.png",
+    "bytes": 451,
+    "sha256": "b0dddcce90857962ae77f78ce0d9ec4a4004d99d8083364e8fa939251f23fd50"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_white001_m.png",
+    "bytes": 73,
+    "sha256": "304293895c5b70ecb8f014efb4e7c9af0005eb29c301622da17e5e5d0a805a0f"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew280_shock_m.png",
+    "bytes": 59817,
+    "sha256": "a6cd09f78a65675b5d7e59e934b989a9391596aa70854c9c180b14f64988970b"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew402_seed01_o.png",
+    "bytes": 92796,
+    "sha256": "3b0eda3f19158591cf7b6800c31cadbb174c57c48d874a0d5254ab20a71933a5"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew402_seed02_o.png",
+    "bytes": 9786,
+    "sha256": "d99b67df3feb5ab96c60803733e03d9d30b351cc0494e3e21f2341a52fce7436"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew414.png",
+    "bytes": 11326,
+    "sha256": "3b05f5c3931057497ad0f7c413c478b1ffe777bd73bf17abdd7f402228c57a60"
+  },
+  {
+    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew414_lumi_n.png",
+    "bytes": 21213,
+    "sha256": "cfeafa2e39b6d7590992c115ba373c2fde21eef6b31bfef733f2d173b9576cdc"
   },
   {
     "path": "Assets/NativeFx/ZA/index.json",
-    "bytes": 1619,
-    "sha256": "896fa9a9231a615c883ef1a1783c361e87d10ae24a18540d0a21f28feadcc106"
+    "bytes": 1829,
+    "sha256": "fd109ea5891d6c24857107743024ec5e201eb39e2c91b828ab9dcf3743f24cde"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt0_rock0101.png",
@@ -120,6 +1880,11 @@
     "sha256": "eefe423f6f6c373865e2912888cb6ef370e7b6be5a67350acd65bdbc6a900d95"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0201s.png",
+    "bytes": 694,
+    "sha256": "dad55a54e0e25694ca9893c2332f4a2052b0df731b6a1c8f7ccad47522c60229"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0601.png",
     "bytes": 2295,
     "sha256": "be20ac7bd1734eaa26fcb492057d4f7f7736316462641bff59b335d34a8d1672"
@@ -133,6 +1898,11 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0603.png",
     "bytes": 29338,
     "sha256": "348dff07e976cc699b0b046b8e5ed4f3f99b1e5fda0b537926a0f348d9a5a9f2"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0605s.png",
+    "bytes": 3910,
+    "sha256": "a511d5bdf5bed5abb537102e7f66d7f53e5a7729bf7d6a922b02b859fc39a58b"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0701s.png",
@@ -208,6 +1978,11 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_0_grad0001.png",
     "bytes": 5303,
     "sha256": "8adfca1d555adf99a615be4401f364b8523811899e643aed0790264ea6dd2e5a"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_grad0001s.png",
+    "bytes": 1265,
+    "sha256": "2afecc3255ff00ad669a38e160dcc3cb80427ad3c52d61baf6e8c7e3a1c02745"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_grad0003s.png",
@@ -345,6 +2120,16 @@
     "sha256": "181176811fcfc26f7e5cd958c0d62620246ed772db4e6c4f91bf08046eaf4006"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_mask0004.png",
+    "bytes": 19324,
+    "sha256": "c16cb32410383bea9de3b175ce98d7150c7afa800e082c769a001113185d9f63"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_mask0004s.png",
+    "bytes": 5852,
+    "sha256": "a040e9ee354ef42f3c7dbeabd86e1db722d3d11c6d977c578f7dc30ec6257d0e"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_obj0001.png",
     "bytes": 14030,
     "sha256": "dced15060f2a7ff3829a5d657336cf78207054566f9a76e102c8ed8c7d781b32"
@@ -420,6 +2205,11 @@
     "sha256": "ed72319f2f35834ec42c0faeee8220ee58836b6d0d54bd91cfdc3e0bda299c4a"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_smoke0701.png",
+    "bytes": 5196,
+    "sha256": "9cfc8d1a3a92a51c5f72e9f4d7160a134496f4b049d016280baade41ea5151b3"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_smoke0701s.png",
     "bytes": 1691,
     "sha256": "332514644b2075c9e06dfbda54636b7df8f8259d369d655e3029f2f9840feb0f"
@@ -440,6 +2230,11 @@
     "sha256": "30c33aa26fa763f7e4f8b1d30da7c64008123d9d32ecc3e87eb1df4091fe1b4b"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_trail0003.png",
+    "bytes": 3041,
+    "sha256": "677906aeefa1a03066cbe3a08defaea92bd7e0ac9cd9392dc2ead6d317eefea2"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_0_trail0003s.png",
     "bytes": 1117,
     "sha256": "9bb731766cf5cda082f7fe0620ff359cea46e390aea4ec4fd2d862b8a8312dda"
@@ -453,6 +2248,11 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_0_uv0101.png",
     "bytes": 30359,
     "sha256": "63cb0041bfa25d83d7f7ad817baf61b46d3fee65635769a000541b91ae647dfa"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_water0803.png",
+    "bytes": 15512,
+    "sha256": "8f3e54f692ba6169ce3c3554eba88a9744ef52b6e152b8221d7e35af0adf751f"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_1_blur0003.png",
@@ -550,6 +2350,11 @@
     "sha256": "b08254b259d6c4ce48f1b182b9877c0cca5626784be7c236e5707a5cc74b2616"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_2_dust0001.png",
+    "bytes": 8241,
+    "sha256": "71503374c1ed4fb4dd68aa18f54ca08c5132474bf06db6c56ac4b2b064c80ad1"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_2_dust0001_a.png",
     "bytes": 12360,
     "sha256": "f1d0a2e5c34d9015b4f7554843d85c678617303e71d0ea0ed527ff9d22b2ece0"
@@ -593,6 +2398,16 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_2_fire0008.png",
     "bytes": 11775,
     "sha256": "00fd0395341c22aee6672f1f70d1b75d4ca29565b8320d77a9d9267199d80f21"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_2_fire0202.png",
+    "bytes": 21371,
+    "sha256": "7663c0404255d4fc464976b1886388f86be938fb1bbbda6b63d1bfaf622833cf"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_2_hit006s.png",
+    "bytes": 5677,
+    "sha256": "755d77aaa926126ee85f9306d52bb3762cc92664307d820778d014264cdccf31"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_2_line0004.png",
@@ -653,6 +2468,11 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_2_shock0014s.png",
     "bytes": 9763,
     "sha256": "594795facef3d2d7d9e13c147b4157633c5f2e8f6138e35be695dc0ceb343d03"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_2_shock0015s.png",
+    "bytes": 10033,
+    "sha256": "fce48a2b309a28c502fa380376065a396b9b5739f89d0c25f16036f3204fab0f"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_2_shock0017s.png",
@@ -855,6 +2675,11 @@
     "sha256": "acd2115a4b3169b1eb57bd32e62f763715f1539416e48710ede7000eff204c05"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0001s.png",
+    "bytes": 8843,
+    "sha256": "0802bf49a4f14ae9d3beb5273e8ff47b517920d643629d7c597b58f4cf3e7eee"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0003.png",
     "bytes": 16361,
     "sha256": "8ad4dd8af2542c2552c96783e6b48847724495e60469571332f81439efdad14e"
@@ -980,6 +2805,11 @@
     "sha256": "6633e1edf7b989b0d3f1d4e4738fa565ac92213c2d9f4d4b5de8dd09f82fcca6"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0027s.png",
+    "bytes": 11029,
+    "sha256": "2a4699edc4bcdcb9eca697b5066730449cef3040a0b52aed204e378eb35def05"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0101.png",
     "bytes": 31010,
     "sha256": "bd48c899a9474663fe35a6ddef6890fc1f9f0a9622d97891a69c4558e285c6c4"
@@ -1035,6 +2865,11 @@
     "sha256": "6b5353a3eddc1333160d1e2c8109e7945b50eb59a5d98334d9abfd1fa01d079f"
   },
   {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0701s.png",
+    "bytes": 1737,
+    "sha256": "1e1ff67eff60a60517cb2b0c1424316420edb34e2b38de419b0e874d35a4caea"
+  },
+  {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0702s.png",
     "bytes": 4181,
     "sha256": "66d638893af48e76ea9016c62e23c3d1fab6b81d2837c8aeddb78519cb4f66c5"
@@ -1053,6 +2888,11 @@
     "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0803.png",
     "bytes": 27364,
     "sha256": "dee3af46c668a719b36d2de8d4a9ceb022cd2258ab9c61bf81d5c51bda1ce974"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0803ss.png",
+    "bytes": 8188,
+    "sha256": "db08e862d6f1c8ac5bcf3413f5db9e6c46fbff2558f5dfb215d4feef433bf3e7"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0901ss.png",
@@ -1080,14 +2920,29 @@
     "sha256": "a2c3cbba14b63c16085ecf4abcecd53e003fc45a0e6433c0b409816c5977f507"
   },
   {
-    "path": "Assets/NativeFx/ZA/textures/cpt_3_ice0001s.png",
-    "bytes": 110395,
-    "sha256": "da22603dbf195cf6be35379b8c3026ccf8b70285eb33b798a66f6a8d4d3b7e4b"
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow1602s.png",
+    "bytes": 32297,
+    "sha256": "943225cc8eaf8551cf4d61052c92b49121e3f0ef211297b2c1a02f0c7fa26c8e"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flownor0102.png",
+    "bytes": 120493,
+    "sha256": "848f52e354682f36c2e5b03bb7435210af49ac16a973ff42372e999cd2c57a6e"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_ice0001_8aa355.png",
     "bytes": 393802,
     "sha256": "ef941f88bb0e03cf451ee54509035cbc11a07154f727ddb3365a1658f10fa804"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_ice0001s.png",
+    "bytes": 110395,
+    "sha256": "da22603dbf195cf6be35379b8c3026ccf8b70285eb33b798a66f6a8d4d3b7e4b"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_ice0201s.png",
+    "bytes": 21174,
+    "sha256": "f2642633e7bd82f6d2d0ab7c72830c5cac6d94751e179ffbcf75f8f7354dbda7"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt_3_jewelry0001s.png",
@@ -1470,6 +3325,51 @@
     "sha256": "abe2b01978ca73402b33fbaf9ca86d0aa9bfd7b9ebc9203dd927e28dedc1219d"
   },
   {
+    "path": "Assets/NativeFx/ZA/zaew0058/cmn_impact_tp14_01.json",
+    "bytes": 67114,
+    "sha256": "acfc5db3e9bb666cd292848896407a8401cf7ec68f91226e9814faa7d4c4ca5c"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/cmn_ready_foot_tp14_01.json",
+    "bytes": 23474,
+    "sha256": "ba883c547f4cc4da153737cfb1d6464866e5bd52897d2177a561af1e0c16a001"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_beam.json",
+    "bytes": 142066,
+    "sha256": "5320cc47723c95ec567b1baeec74083bf4c57c048d9d9636c300c80b102d4473"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_charge.json",
+    "bytes": 211498,
+    "sha256": "35c6744ecb67ad807e83042d8bd98a2911d5b727b3936096f7e7a3bdb63b0503"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_chill.json",
+    "bytes": 7021,
+    "sha256": "d7154b4cbe13ac9d023af86e9838e67d27474a39f64024871668d8e328be9278"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_end.json",
+    "bytes": 94125,
+    "sha256": "fc68721399fbb692e76505cce70da38b1db61f9a78cc5e45fd6ced100e06d9a2"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_impact.json",
+    "bytes": 18956,
+    "sha256": "e4937dfd8ebce7d1f03f9f9446e65d9fdd2f5011f5b1d564de24417b77c38668"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/ew0058_muzzle.json",
+    "bytes": 109215,
+    "sha256": "4e92b8f1a14a1701453b4c2486d711a391b0dc05553b925a09a2c8b125fb6a27"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0058/move.json",
+    "bytes": 12957,
+    "sha256": "2e16e13f3253d5bb76d178c33d7789d4e1ea5dc8f88c7619f628b3233a2f6b61"
+  },
+  {
     "path": "Assets/NativeFx/ZA/zaew0060/cmn_impact_tp13_01.json",
     "bytes": 99484,
     "sha256": "0ffe0148cedb6d737bd90d36d6fc14d972535acf571a0644e373654e101a2cf2"
@@ -1640,6 +3540,31 @@
     "sha256": "86ff34abcb8c23243ce27862aee3b21507413e9722b3968aeb04d90ff109ee9c"
   },
   {
+    "path": "Assets/NativeFx/ZA/zaew0089/cmn_impact_tp04_00.json",
+    "bytes": 14126,
+    "sha256": "517ef9e91ba1180911b3b286bbabbaef06f53cc884def06304d117b2377c5897"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0089/cmn_ready_foot_tp04_01.json",
+    "bytes": 41193,
+    "sha256": "ac217b6dd27f935be1637b23487fd44282864f091fd402ccff610a875674a3cb"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0089/ew0089_bullet.json",
+    "bytes": 95559,
+    "sha256": "1c607b6b09c9b086c8a92ec555cb840e20359399186e588bb8916b2b1d2ce048"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0089/ew0089_charge.json",
+    "bytes": 33122,
+    "sha256": "c4e534866467d609b73a78089830e260e9b69c494b2450344238d74238eda4ac"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0089/move.json",
+    "bytes": 5987,
+    "sha256": "81558ba82f5f238366fa774ad9c7796141467c4d6a7b4593b4d82bfcdabdeb99"
+  },
+  {
     "path": "Assets/NativeFx/ZA/zaew0091/cmn_impact_tp04_00.json",
     "bytes": 14126,
     "sha256": "517ef9e91ba1180911b3b286bbabbaef06f53cc884def06304d117b2377c5897"
@@ -1763,6 +3688,36 @@
     "path": "Assets/NativeFx/ZA/zaew0122/move.json",
     "bytes": 8187,
     "sha256": "45b016534ba65e7a834bb3e0e0a474b059119ebf2aa1b3e99ab554b0c1e48ab7"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/cmn_ready_foot_tp05_01.json",
+    "bytes": 28736,
+    "sha256": "a064cb78af19b8e30483a252a1d1867bd2d9d59a73a2a4a1b45f535e8299d721"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/ew0157_bullet.json",
+    "bytes": 58207,
+    "sha256": "b3416e3db88b654c6e575ba7e8dbfdb1c043df189bd72eec137372248a4aadb9"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/ew0157_impact.json",
+    "bytes": 54386,
+    "sha256": "3ff3e634b84e60db9d18826894418e2c2aaada42fe46d92cebd1577d73a30b2b"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/ew0157_line.json",
+    "bytes": 65309,
+    "sha256": "2a4466a1f3ad1ef73d21651a4992a149d109839d04e0fd24eead0d7e02346bbe"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/ew0157_sign.json",
+    "bytes": 102669,
+    "sha256": "d76e6534cb508bb7ba5bf02ad43c05bf9aa0f12cfeed2192b8ffb3e37ef1343b"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0157/move.json",
+    "bytes": 44238,
+    "sha256": "971fd2b2e495f122358f49e7f268013aabfcc223ce75a462d5f0e48458cf3b85"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0163/cmn_impact_tp00_00.json",
@@ -2005,6 +3960,26 @@
     "sha256": "5464c4e0367e1aa4c7929b7acd60bb6d8d9193b73c054cc35593a5313c4a8f86"
   },
   {
+    "path": "Assets/NativeFx/ZA/zaew0299/cmn_impact_tp09_00.json",
+    "bytes": 14012,
+    "sha256": "9c4035fec3e3215077c776b8391ad74dc2fbfd80ad10be381e1f591378d54ed5"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0299/cmn_ready_foot_tp09_01.json",
+    "bytes": 20011,
+    "sha256": "0b69faed7a9d783f5406281c4a5573b52e1479e98249d7f6bea73a4e6bc9dccb"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0299/ew0299_bullet.json",
+    "bytes": 109346,
+    "sha256": "20c29feab6b97c05ecef1eb19a1979385e571904a18a3ac5d2f288be01981c9b"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0299/move.json",
+    "bytes": 10700,
+    "sha256": "ccfd65f4624e14b81b7c3a48fe4ae3f02f606d3bcea4837ef7150e24fa4db85f"
+  },
+  {
     "path": "Assets/NativeFx/ZA/zaew0317/cmn_ready_foot_tp05_01.json",
     "bytes": 28736,
     "sha256": "a064cb78af19b8e30483a252a1d1867bd2d9d59a73a2a4a1b45f535e8299d721"
@@ -2030,6 +4005,31 @@
     "sha256": "6cf154894da802a8158c712563038138c18dd4dc7399bfd6ac1ca412e709bee5"
   },
   {
+    "path": "Assets/NativeFx/ZA/zaew0330/cmn_ready_foot_tp10_01.json",
+    "bytes": 20582,
+    "sha256": "fd5f3323ff16734e320ee3c073d02f79de25d28fc5ab54bc8bb59a963bf0a61a"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0330/ew0330_bullet.json",
+    "bytes": 429637,
+    "sha256": "5342301030aaf5d2d8d13742295d9ee90f14d392ed54a8b613b448783c1d0efb"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0330/ew0330_charge.json",
+    "bytes": 32559,
+    "sha256": "7f5e8c3baeb3d259930fed4cb0befca54d81bd071b25ff4731480a8f937ef35e"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0330/ew0330_end.json",
+    "bytes": 432546,
+    "sha256": "320c5f459e14682fe0dfdbc255d35a62dde316c47920346977a68b573c709084"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0330/move.json",
+    "bytes": 8628,
+    "sha256": "f85a8152d9f1bd999f0013f11f0819ef711544b2db1d003c2376c82110ffcd75"
+  },
+  {
     "path": "Assets/NativeFx/ZA/zaew0332/cmn_impact_tp02_00.json",
     "bytes": 14075,
     "sha256": "335491753a322e31f3f76c9f511062841b62e5fed6bd654a58bea9f96b7c2835"
@@ -2048,6 +4048,26 @@
     "path": "Assets/NativeFx/ZA/zaew0332/move.json",
     "bytes": 8214,
     "sha256": "8de7233fe15ce29ea1704d9e366b97a465fc102943c2de6bdb999df4d1118fb1"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0337/cmn_impact_tp15_00.json",
+    "bytes": 14048,
+    "sha256": "5baae3b878f84a170a7722c101e3aa8f3b4a9893f85adc0e7bacd27e1b6d9eea"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0337/cmn_ready_foot_tp15_01.json",
+    "bytes": 20018,
+    "sha256": "58984903522a5ffd411627828a5c2b97fea862fee30b6a9751fd26e0a4922395"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0337/ew0337_claw.json",
+    "bytes": 62515,
+    "sha256": "3b4a9072570882add4bbd80304ed894292fbfda41633fd825aec89eb536a38cd"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zaew0337/move.json",
+    "bytes": 8182,
+    "sha256": "7dfa73cf2239bdb7e529b429916d345e5d53f2363106c5dc408864fc853352a8"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0341/cmn_ready_foot_tp04_01.json",
@@ -2500,1488 +4520,8 @@
     "sha256": "d3b101774c27f711ba38f10b2f329176b52ca8e18ad7c506da235c1a081c6210"
   },
   {
-    "path": "Assets/NativeFx/BDSP/MOVE_AURA_SPHERE/move.json",
-    "bytes": 4559,
-    "sha256": "8eb6b2cb1e4fd3ac1ba3d0b26bb5236e9e57b29c0e605bdfc9cc2af206b1d426"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_BRICK_BREAK/move.json",
-    "bytes": 4165,
-    "sha256": "3a9aa8949b1c4821abfb04182b1bb92fbe50af26cdbf47e3ed7a22a63bb2ea23"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_BULLET_PUNCH/move.json",
-    "bytes": 2271,
-    "sha256": "fbd3538786b3c1ca3058d4a6fee3b0b7df86b3a2b7e2602268528ed0f68236ab"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_CLOSE_COMBAT/move.json",
-    "bytes": 5213,
-    "sha256": "7b48504385e27c40456ca466f078cb8fc1fe3520c9f74a108eb635ff1c4978ee"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_DARK_PULSE/move.json",
-    "bytes": 5113,
-    "sha256": "cb1c25171b7333e86e7dfff5d45449578392183e6bb6fe7ec02531a95318e094"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_DISCHARGE/move.json",
-    "bytes": 4048,
-    "sha256": "1213246afb4908fec152d43ddc8c85339723407297a3530753a3c86a2d652dce"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_DRAGON_PULSE/move.json",
-    "bytes": 10448,
-    "sha256": "f8e86ed53c5787b1bd76473e1fe7da18b7217c161d334e25b44191d162c9a76d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_DRAIN_PUNCH/move.json",
-    "bytes": 4195,
-    "sha256": "faaea0c2673a3720e28dfb19b6dadf00f993c872b4ee183ee684df7ef1059ab0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_GIGA_DRAIN/move.json",
-    "bytes": 5432,
-    "sha256": "2910c45228b072d4e896dcb4126294cc3edc634945c33ebe53984c89202bae06"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_IRON_TAIL/move.json",
-    "bytes": 6230,
-    "sha256": "12820d7eda469cf50d5ed32c7ebcf57becac328f759db15e5b58c27a3dee8798"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_LICK/move.json",
-    "bytes": 1870,
-    "sha256": "d70994c0df577b61ea568245223608c4eb9ba665a2e2496c11b99aa37beaf8ed"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_MACH_PUNCH/move.json",
-    "bytes": 3273,
-    "sha256": "064bcdd8ec3cfad033fb08f8769f65a912e3bce4c7424ccf194930aa6467502e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_METAL_CLAW/move.json",
-    "bytes": 1012,
-    "sha256": "008773f5496a246e5d164f7fa61cbda55ba00411ec13eb9a3c11e41845eb56af"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_PSYCHIC/move.json",
-    "bytes": 3810,
-    "sha256": "3894b36fb253d09141fe94f7529009d86e57ec9bb3f874493b5cd8126a204bc5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_QUICK_ATTACK/move.json",
-    "bytes": 5647,
-    "sha256": "1e7509157cef5089f094acc7e44eafc413fa486a4a47a2d431b747fbc974d93d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_ROCK_TOMB/move.json",
-    "bytes": 2948,
-    "sha256": "c97c499e7a56dc8d644f144494c8babb41abf4d64c9f0037c87cedb2f5cc118d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_SEED_BOMB/move.json",
-    "bytes": 5314,
-    "sha256": "c8919998c50b3f49bb4e48b0bf274966d5d05ee9bd356b27719e255fa70a381c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_SHADOW_BALL/move.json",
-    "bytes": 6169,
-    "sha256": "d2eaeb6fa15e9f9e92b4ba0067ef4eb7d562235537b1d89ff685a1cb2cc9f136"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_SLUDGE_BOMB/move.json",
-    "bytes": 3530,
-    "sha256": "afe9adc64d8078e2028b6bf28d1dbdf53737725626d3f1d7bfba154786ef55a2"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_SPARK/move.json",
-    "bytes": 4410,
-    "sha256": "50e43c7ec54059914eb9110961a66930c253e0999bd1acd371d32ce7568cb5e8"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_THUNDER/move.json",
-    "bytes": 3352,
-    "sha256": "5bf26b6c3a64b996cb7e33edbbbfe47a38005b10974621132bd46742af65da0b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/MOVE_THUNDERBOLT/move.json",
-    "bytes": 5687,
-    "sha256": "5a0f78d9261e6d72be209ec352e056b3e766a7e96dc9c09fdf5e975c14b407e6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew085_at_start.json",
-    "bytes": 27488,
-    "sha256": "45bcf470d460afe30e4159ccb8d8cf7b8917fa955a37a8695e5de415b388ab1d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew085_beam01.json",
-    "bytes": 53852,
-    "sha256": "8a94d55003922bc6147c67a9b418e20bbe49a53b745b8d00c3e4a7cb3ce217de"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew085_df_hit01.json",
-    "bytes": 49682,
-    "sha256": "56f3d8fde99aeee2ee5a6585f6b0074b49aa1339095eda33ccab6626507edc53"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew085_spark01.json",
-    "bytes": 58260,
-    "sha256": "bb377d25b11f4b286131fa6ecf37720606ac2549e377f8381bc63b92b718f798"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew087_at_start.json",
-    "bytes": 82356,
-    "sha256": "c0e89f786aca844624766baa8e7f9da1db03fb782f56fa2c538b336c5ba0e09a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit.json",
-    "bytes": 85149,
-    "sha256": "3a1635b3ac1b038490e2f4c14d7f59826256b666a60f37a8261559b4ea9b57cc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew087_df_hit02.json",
-    "bytes": 58648,
-    "sha256": "bfb2a72c5d42eb4eaac39e4d1b6538f15e80ff1041d05b0b489252527eafa61f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew094_aura.json",
-    "bytes": 271013,
-    "sha256": "2e4488c3a61559a5848bc4112f032549f99c7916ff70b180bd5f4665483455ef"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew094_df_ball.json",
-    "bytes": 175402,
-    "sha256": "011a1a833340916b72c7816297e19efada4c5b6c692d0ee31443dd3e89ebf77e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew094_hit.json",
-    "bytes": 86842,
-    "sha256": "f1f201007418dd2f87a9a55177c593919f51b958349ac7e757bcfda51416a129"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_bgkem.json",
-    "bytes": 11071,
-    "sha256": "04483dc5d5e88bad2869d4599bff3133a38f7ff8096f31fc9ae109dfb09fc7fc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew098_at_srash01.json",
-    "bytes": 4209,
-    "sha256": "e4770f3be5be17f4cc412f412e5b97ce335f10091acd6fafaec6443306e11047"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew098_df_hit.json",
-    "bytes": 30026,
-    "sha256": "9cb6d4636d1ca117bf491a396c06b99f298121bbe11de48c968ba8e7bfc896b3"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew098_hideline.json",
-    "bytes": 4084,
-    "sha256": "c942184f22beaf7b021d847d51deca8942e73b6b763d240fb27d4a4ddd1ffc4f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew122_hit.json",
-    "bytes": 43529,
-    "sha256": "b94bbb6f249e14d3af4afea0e1b83b58b2e82e182e485b76883c8e1652dc8150"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew183_at_line.json",
-    "bytes": 7266,
-    "sha256": "534b3a34f8d930763436db6f9cae9383d2f56f95f1ab170cc1f5b7f7fcbf37ce"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_hit.json",
-    "bytes": 52501,
-    "sha256": "7d1b1445e4810bd24ec55297b3bf2b49df57b41a28c5f6e503bd71a8562c470f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew183_df_punch01.json",
-    "bytes": 16831,
-    "sha256": "62f1fea23fc034fcb5323c6a4e9925c7b019c1027558d5bb0dee4f3e8a33b9ba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew188_bullet.json",
-    "bytes": 32981,
-    "sha256": "d6759e981c11c5b98212b3d4c2f90ee0bda044b6475d9a9a1881d9ed5b4f0d27"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew188_hit.json",
-    "bytes": 55363,
-    "sha256": "62157b180bd9840b424647c021a394f5832791c2129cc0b5ad0c40eabf52af88"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew188_muzzle.json",
-    "bytes": 13814,
-    "sha256": "56f4e9b0869295dd75f431abed819927506f7e53f73578615b143599d5c40b1d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_hit.json",
-    "bytes": 37238,
-    "sha256": "5d17bb48dfcae083fb18ea0c414999f2f24a4dc637ca6fb4b97cb71464cd0c67"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew202_at_movept.json",
-    "bytes": 27045,
-    "sha256": "279a4d852f85de2193faeb653afa295a9d117adeec30125648671c68407d85b0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew202_df_circle.json",
-    "bytes": 66622,
-    "sha256": "4cfe050989b30b81aca65793a7665ffa1ca6075e7c674ebd94a8762e1eaf570e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew209_body_thunder.json",
-    "bytes": 37208,
-    "sha256": "ad7d1ed59e899bb4aae78f5aeee5c3d51f18995bd98a9ed24d5353f3a50d8049"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew209_hit.json",
-    "bytes": 27736,
-    "sha256": "75eb8aea405fcc75da99d9ca1d375d462b75aa08404bd58e8e45ed1f1eddda9b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri.json",
-    "bytes": 21409,
-    "sha256": "76a9a1ba0369d47def29e12f178eeef73110578718c2315788a09c49cf151877"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew209_kemuri_back.json",
-    "bytes": 4348,
-    "sha256": "4c35b469809a27c0c688e7e1d3bde850db8663a5fb9e532f6668fcfab729498b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew231_at_charge001.json",
-    "bytes": 3895,
-    "sha256": "580b59972e6ab10969f682799ebf617a90b4e4d90d782a2a1738a9e13a0bfc69"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew231_df_hit001.json",
-    "bytes": 51048,
-    "sha256": "a5675590a3023cc3ddbf87d9dbb06d39a46edcdc0a5494302817adea1a1b1751"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew231_wind.json",
-    "bytes": 61339,
-    "sha256": "d8affb1c00142ac81135a199798c4a521807944753621dbfebf941acc21749d5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew232_df_hit.json",
-    "bytes": 44499,
-    "sha256": "ff2a4b2eb47d65091d1e99814129051969237158bf19c42fd113e734ee9307cb"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_bullet.json",
-    "bytes": 230131,
-    "sha256": "0d5fa61160e07a8bdfe11ef5f5c1bb64722aa7655187982500176bcb1eac7694"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge.json",
-    "bytes": 18408,
-    "sha256": "c3ae6d7b6d1136ec73a0cd0fd39ef5b6c245235c5b5e4f80d03b6f34a7998cb3"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew247_at_charge2.json",
-    "bytes": 20881,
-    "sha256": "96d3bb08d47dfbbcc3c9acb44b7afa93b4aca366669739d8ee0459c0781e9807"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew247_df_hit.json",
-    "bytes": 76563,
-    "sha256": "b10209b9ef27b5dad68a95d8eba185ceec63507e74af80967e523b476b177fd8"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit.json",
-    "bytes": 20199,
-    "sha256": "85d702ad5a343e444b88009cad57c5839b4db31ed28a55d24fd02b969a0dab86"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew280_hit_many.json",
-    "bytes": 12529,
-    "sha256": "04b0c7895f1f4730f89bdfd2fdd1dc4d00a87c9d16f28919d397678fae435ff3"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew317_at_rock.json",
-    "bytes": 63907,
-    "sha256": "9ff63ec4e1bebd3566f0f40b6c455b97091d690edaf7722c2eef9adc95c85697"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew317_df_hit.json",
-    "bytes": 40875,
-    "sha256": "672f5c7658de141ed2126ead56b9c33e485499025fcc4e9a45ba4e829eeadbb1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew370_cam.json",
-    "bytes": 3984,
-    "sha256": "77475a2322e8334f09def969bc2b1a4fb08b6febd357394cbc45070867c57849"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit.json",
-    "bytes": 81121,
-    "sha256": "622ab1235e2f4e1e284046f19498904b2ef534bc57eaf854a8940d8de6fc745b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew370_df_hit_end.json",
-    "bytes": 12329,
-    "sha256": "5f488a6279492c43cdd8681179e4211c5b21036a26721c1aca0d8da6a8430d55"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew370_start.json",
-    "bytes": 4015,
-    "sha256": "3ad80c6e3470a3f56e3b183c70bde8e9f9e060d1805fdc7f583a9225634fcd08"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew370_start_line01.json",
-    "bytes": 54076,
-    "sha256": "cbeb37765f210915f769ec85a14c1c800c056759a1570c6fa7ed45803daadfc2"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet.json",
-    "bytes": 199894,
-    "sha256": "7f72abfdc938c3f4d53fec5a9a2765b3f4ac5670b79a1d7b0d8bfadc1f65f7b1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew396_bullet_charge.json",
-    "bytes": 137108,
-    "sha256": "c85175a42c11e708b670727192416d0b9eb7cfc8750a5117d05ff63e1439fd44"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew396_hit.json",
-    "bytes": 35039,
-    "sha256": "6dd2e23f86b5107951fed13962f47d2d7641f60e11ee907b4bb8c026e1ce3652"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew399_charge.json",
-    "bytes": 14166,
-    "sha256": "5c98685732916dce9e5118fd1f3319f8fb81f4c4a9454edee2a14078ab829865"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew399_hit.json",
-    "bytes": 20575,
-    "sha256": "8cdcb82696213fb1eeea5905fdd8e4e3b9cf8f6b6dc3458ea4073796168d28fc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew399_muzzle_under.json",
-    "bytes": 89686,
-    "sha256": "c1e506939cef6651776cc34e6cceb01a4cec719d16ead2c58105b6524c889915"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew399_ring.json",
-    "bytes": 7715,
-    "sha256": "9d37e640ef0530136cd7295df4926c9973ea2ee249fc616314c0a6401a2aff6c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew402_bullet.json",
-    "bytes": 64458,
-    "sha256": "f7bef00d1365ec89429a5f20fd6ad54290ef8896fa0bd6d1c28d91bc23045f10"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew402_seed.json",
-    "bytes": 97735,
-    "sha256": "59668ae662ea3f983f4411d2c99af82e1bde0ff0e1bd19b5faa179bc5635e28c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_muzzleimpact.json",
-    "bytes": 33681,
-    "sha256": "bd435b36109ba606eb8d30c1a544af81d0d9cbfc42abafca2356654745e9b564"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st01_bgaura.json",
-    "bytes": 9137,
-    "sha256": "d53328ddc1f7fe40173ea3cf1c59ddac5b37233cc8686975119af41ad280f470"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st02_charge.json",
-    "bytes": 49340,
-    "sha256": "b6649863c1399eee9ef0782ad135be5b39db1ba7d28d09fc02afa4237f64b8ac"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_st03_muzzle.json",
-    "bytes": 63419,
-    "sha256": "77e556b1aa4f37023dee6d69503cb9db22d38184396224d67575b1e5eda00e28"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_at_str04_muzzle_root01.json",
-    "bytes": 19747,
-    "sha256": "8ea53f332feed3e1d4f8009e7288bae11b077884fd5a7c2ede958fd0b1fc6276"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_beam.json",
-    "bytes": 44617,
-    "sha256": "eb66e1845e2c7fdc75a2ccfb12c622936dd99231604063b62ec9b8c4a26087bc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit01_lo.json",
-    "bytes": 32569,
-    "sha256": "49d44dfe6786c6e260add6642423bce3ea2ea2fbc10130880f2050b9642217bf"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew406_df_hit02_end.json",
-    "bytes": 48250,
-    "sha256": "1b63a5921ea9db20647fbd99ada036e920bbcf85e3f3b0916c5c5385dcd55ea4"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew409_at_draw_ed.json",
-    "bytes": 28814,
-    "sha256": "12c0896e42649e93189539f660db5d5fba3368c7d3a63ab399a433e938e78d21"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_draw_st.json",
-    "bytes": 12768,
-    "sha256": "a489d618482749cade00d3fdec99b70f8e8644b65e70f2cf19d2c88cd3838d8d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew409_df_hit_punch01.json",
-    "bytes": 37050,
-    "sha256": "a832b8825c9e3e8c3a27a651fc05ebe12cafa628d49742d58b175008fdda6567"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew409_line_st.json",
-    "bytes": 5256,
-    "sha256": "33c9db69bf8b83dc965418420e3dee0aa8367b62246ea54c579c3dcf92d2adb9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark01.json",
-    "bytes": 31012,
-    "sha256": "4790519f9281530fda8ddbcf9b3f2feaa11bda93ed19dbe03e4856f06544add1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew418_punch_mark02.json",
-    "bytes": 17507,
-    "sha256": "14a25fc41e821e08ddab79c921d35ada1ea6a65ebe7961a3726d37a6cd17fd64"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew435_body_thunder.json",
-    "bytes": 36183,
-    "sha256": "806b9426eb72745f95990c4d8790c3f5c8203b619136819927b870c34caac669"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew435_field_thunder.json",
-    "bytes": 68681,
-    "sha256": "6cc602e958631e6af1a5bc96f2894a068bf86af2cae8adcf4c5f8c33851d93f0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew435_hit.json",
-    "bytes": 25646,
-    "sha256": "d13ff641cae28f4a89d8441ff55df4a584cc13982726d9162657f8c86324437a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/ew435_thunder_flash.json",
-    "bytes": 45399,
-    "sha256": "0c22c6908a4f7c861426ef1759c5bdbf7a57d0af07568b6f65fa2f3edf1f95e0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/model_ew122_tanM.json",
-    "bytes": 159676,
-    "sha256": "307ebf1159082fd39e3039a371b6630de2764cc158081a6b27a1753e6e2591c4"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/model_ew231_whip01.json",
-    "bytes": 322640,
-    "sha256": "a72b1fab079eb8e67719b858d906ec90068a84e88da034bd01d07f3375e15e0f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_hand.json",
-    "bytes": 527451,
-    "sha256": "3196e9d833c97dd5366a5d8f72392557330812220ab035c3895385b937d9fe50"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/prefabs/model_ew280_tail.json",
-    "bytes": 16495,
-    "sha256": "f14005cb340a0365ab9da1f5cb6e0303a618b82ef75f973e175e71ec1e307621"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura003_m.png",
-    "bytes": 3184,
-    "sha256": "e282b14e3108e3decf016e0b9de06c5543e0b9afcf0be6a1491af6db7bd0973e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura003_m_mirror_clamp.png",
-    "bytes": 3184,
-    "sha256": "e282b14e3108e3decf016e0b9de06c5543e0b9afcf0be6a1491af6db7bd0973e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_aura201_a_repeat.png",
-    "bytes": 15531,
-    "sha256": "69d5c917e479b6c1b48224131f4f376dd2739711c9657fe190731fa529af45f6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur001_m.png",
-    "bytes": 39992,
-    "sha256": "545ff85c551ab5b1ba0dfc085811a5efd4f002ce2a68de0b0fe5da4abf3a40fc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur002_m.png",
-    "bytes": 956,
-    "sha256": "797edf8ccbd30e5464c23ddb58c7ef691c48634459b8e839bf661e55b255bb27"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur003_m.png",
-    "bytes": 1297,
-    "sha256": "aab4799b18b93b36b59af2019fb926262467fae40ebef9db577fdb50e103aeff"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blur804_n.png",
-    "bytes": 1657,
-    "sha256": "f663187a95edf82565ccc13d42f2857ade77dd9d56f6ec61f1ed19a5d66bf011"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_blurmask601_u.png",
-    "bytes": 6352,
-    "sha256": "c2b46d07e8366a2ebd22bbe05e4814d1c34e787176926307fc17e28d76043206"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_bubble201_a.png",
-    "bytes": 7679,
-    "sha256": "9467dc7b8120b2d3d43585f2d8ed980809fc348a030175d760a57abe624f993f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle003_m.png",
-    "bytes": 15844,
-    "sha256": "213e3a075a6a23b1f4c11498b69c2832014b81e0ed03aff1bcfca44ace97fdf1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_circle201_a_clamp.png",
-    "bytes": 2326,
-    "sha256": "a998768f0c26c76c71768f157ecbec9c9f8917c428ed08096a29b7f4d3223284"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_cloud601_u.png",
-    "bytes": 5463,
-    "sha256": "b9babc42292e4cfce48ece9c280322dd5133a0d9120cee82d743e7c093e731ad"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_dast001_m.png",
-    "bytes": 5240,
-    "sha256": "7f61acecd61b511eecda99f83c139c716830b23edafa2bfeca54e96bb7801f87"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_dast001_m_mirror_repeat.png",
-    "bytes": 5240,
-    "sha256": "7f61acecd61b511eecda99f83c139c716830b23edafa2bfeca54e96bb7801f87"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash002_m.png",
-    "bytes": 4843,
-    "sha256": "dbdea8bcee93724a1f69c469570193144a5e34a458884824d11ef9cf5121b25d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash003_m.png",
-    "bytes": 900,
-    "sha256": "a2870a25fdc582dadb3e3dfcd3cd1a2ff3c9f1632762948f3a609671bfdd594a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash003_m_02.png",
-    "bytes": 900,
-    "sha256": "a2870a25fdc582dadb3e3dfcd3cd1a2ff3c9f1632762948f3a609671bfdd594a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash201_a.png",
-    "bytes": 75059,
-    "sha256": "b1785f52862a219aa7315a58c26ab9a71a33ac1c923b5032f654d02f0754c0ad"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash202_a.png",
-    "bytes": 4534,
-    "sha256": "b4d95cfbc8c8bfbf8e6d405d15035afe149fcb915515b635d0379b14e8bd610e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_flash202_clamp.png",
-    "bytes": 75815,
-    "sha256": "b2f98a97b96f26f5eff462954d0801e30db2cccb1d8ff6675d5b57e2eb49dc09"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_frash202_a.png",
-    "bytes": 13403,
-    "sha256": "b28c9866179f5be3a4f091943131ca20a8df1c5064b100831758aa7563102a2e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_hit002_m.png",
-    "bytes": 4337,
-    "sha256": "bdcf9deaea8eb57eb7ad46f1dd5f0eb6d4d182e48611cb15a0ffdd1605172f05"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_light604_u.png",
-    "bytes": 5349,
-    "sha256": "e789d9af51eef830654000da70190dd6c68231bc6c1d30d0b633892f94d0cbd5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_line702_o_repeat_clamp.png",
-    "bytes": 4518,
-    "sha256": "ce6a686479ad70282762788cf0d7c9660696a02d14b2532c9eb4bf3eab411b0b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mark004_m.png",
-    "bytes": 6528,
-    "sha256": "974f3b93bcee7c3b2aaf7cf41d5b3ed5d8039e1665d6c563d09778645c9a95c1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mark006_m.png",
-    "bytes": 1726,
-    "sha256": "295b2ad4f26be757ad19e2847e001039b891780209b7f0f6b0bf11318291dba8"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask001_m.png",
-    "bytes": 81,
-    "sha256": "cb52fb1701b07fdf38e530bfe66eaee2952cd59b18629af1e7b21dff704f4596"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask002_m.png",
-    "bytes": 18476,
-    "sha256": "420f5f4a6a7044492ebb8f1c7cb98cf4fc3db96d7c186c223a4a5cd0b47aca71"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_02.png",
-    "bytes": 1320,
-    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_03.png",
-    "bytes": 1320,
-    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask003_m_mirror.png",
-    "bytes": 1320,
-    "sha256": "d985e39eb429f2e21ef2d868d82b08f6fa5a64f7039d4155edae3b12c6415501"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask004_m_03.png",
-    "bytes": 150550,
-    "sha256": "e733846c1a5ffb7b5e3a763aad7a7997b5b1fc2cf011a549f631b4f8437edf8a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask006_m.png",
-    "bytes": 2021,
-    "sha256": "044efd0746a02c5341eed0d6d0cab2389cabde23026cb30abfe6cabf52ffc1c0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask007_m.png",
-    "bytes": 198,
-    "sha256": "c5858aad7fa634514dd2607ca50c7f6356d01f8eb09791db07d93fdbd117de7c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask701_o.png",
-    "bytes": 276,
-    "sha256": "5316300352b94a92324dd1363e8b79dbcc6d398c8de7fb0125c1dfbe922abc42"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mask702_o.png",
-    "bytes": 13702,
-    "sha256": "b45692fab79b090741de64d62e01f2b7e8446f18f5435b1eb1e882fd1b0d5950"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_mirror201_a.png",
-    "bytes": 1085,
-    "sha256": "d704520dc004ba0b503efa336d1518e8b97d8afb86f6b0bc04850bf99b973479"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring001_m.png",
-    "bytes": 36479,
-    "sha256": "2be04a371f6cb00507ad9c23a7fe02c8c63631f0dba5375059b0cf664ebea8da"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring001_m_02.png",
-    "bytes": 36479,
-    "sha256": "2be04a371f6cb00507ad9c23a7fe02c8c63631f0dba5375059b0cf664ebea8da"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring002_m.png",
-    "bytes": 4016,
-    "sha256": "ba5d2feda3af8ee484436dc43db7bf9232e68df75638a585d3e2445c22fa2b10"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring004_m.png",
-    "bytes": 34054,
-    "sha256": "63d9c5558a0476c2abfe94a05e956fe98380fce27bca8510b131348324ed4269"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring004_m_clamp.png",
-    "bytes": 34054,
-    "sha256": "63d9c5558a0476c2abfe94a05e956fe98380fce27bca8510b131348324ed4269"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring005_m.png",
-    "bytes": 18054,
-    "sha256": "1ffa033b6533842dce7b6e81253891318f30febbb18985f5118bd37f7084ae3f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring201_a_02.png",
-    "bytes": 125578,
-    "sha256": "9d21b75d76ce95e332810cdefbd957b389ee93f6ea34181d7ecf433626139e6c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring203_a.png",
-    "bytes": 10047,
-    "sha256": "2d8d326f2e733bf89ccd302c7a04ce484679ab54230148deaa3e56ca8ca2f88a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_ring501_y.png",
-    "bytes": 21703,
-    "sha256": "6770ac22798a530b526418a402919b0a9d1f212525bf30169749792854adc226"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke002_m.png",
-    "bytes": 5224,
-    "sha256": "c559f92611f85718e5ed9409c48707b61c4a00428389cb3a2379dd5d299d5e3e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke002_m_repeat.png",
-    "bytes": 5224,
-    "sha256": "c559f92611f85718e5ed9409c48707b61c4a00428389cb3a2379dd5d299d5e3e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke005_m.png",
-    "bytes": 10452,
-    "sha256": "ac536e724f52f8003dfb3a0d42b99cd23a8510dbb39a6ff8fa205870c47e6e28"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_smoke701_o.png",
-    "bytes": 41155,
-    "sha256": "50a8db6e2f1d5a84ae1900ba8d1485e7579aab223d6dc7da6c56a4e5d923f3ba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail002_m.png",
-    "bytes": 315,
-    "sha256": "a187c9ba6fece3112b0ab69d222f032a6aa314dd90cb1286b9f0aaa81523e1d6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail004_m.png",
-    "bytes": 3509,
-    "sha256": "6ef50f92c8f389fa3039b33512e4f3d9a72fc6d32b843cc582b01fdf9c54c8c7"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail004_m_repeat.png",
-    "bytes": 3509,
-    "sha256": "6ef50f92c8f389fa3039b33512e4f3d9a72fc6d32b843cc582b01fdf9c54c8c7"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_tail801_n.png",
-    "bytes": 47353,
-    "sha256": "5145cd7fdd88bcae85f0e457973f315a4dd2d65b8488fd2e588f212f7ad9fe84"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_water001_m.png",
-    "bytes": 1268,
-    "sha256": "b17f2dc87fc41e0a54a0a6ebac247bfa3315ca6a9a745208c17383cfd5abd604"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_water002_m.png",
-    "bytes": 7639,
-    "sha256": "451b158357ba23900cc2fd0df137c4024a7e156a0dfd706176e48625a9f61171"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind001_m.png",
-    "bytes": 11594,
-    "sha256": "d2cdb78821c6654a80f4edc18a822e64f5ca56745fd69546377d52023cbed58a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind002_m.png",
-    "bytes": 3976,
-    "sha256": "667ff556b15205d1c2fa34f0346fb33662ee311a859180ad7903348f5a6fd822"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind003_m.png",
-    "bytes": 48537,
-    "sha256": "6fa50d2040ba9e847a2f6caac030a0033fc3ee6df0162a5e4ce92f3b92f109a1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind004_m_02.png",
-    "bytes": 3908,
-    "sha256": "97c2e0bbe8694d93d6e53afa483c23224f39c64d06d7c428440321d3a1422a6a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind005_m.png",
-    "bytes": 13679,
-    "sha256": "dc7fefdd18246079be10e765215be5579936726f4030f6676ebabe4794289296"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind005_m_02.png",
-    "bytes": 13679,
-    "sha256": "dc7fefdd18246079be10e765215be5579936726f4030f6676ebabe4794289296"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind006_m.png",
-    "bytes": 4585,
-    "sha256": "cb7dc4f69b10aba87681665bc4dbea1ef5f3b726aeb518921b221cbed7592312"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind701_o.png",
-    "bytes": 6369,
-    "sha256": "89be46213e9028dbe5c3d174a7b226e7b439713302863140c4b85471dc3a487d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_0_wind701_o_02.png",
-    "bytes": 6369,
-    "sha256": "89be46213e9028dbe5c3d174a7b226e7b439713302863140c4b85471dc3a487d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_aura701_o.png",
-    "bytes": 5723,
-    "sha256": "6869eeac4c4b2e2aa64a8546c52ece7ada7daa2790ace81bfca7343814b25864"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle001_m.png",
-    "bytes": 2749,
-    "sha256": "9775a86799d1f9a781d4992cc99602e4d91ad4293db698a485ca3223c93df99c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle002_m.png",
-    "bytes": 5243,
-    "sha256": "28889d3a00f20cda9f06e77656288c3169fff88cd4acf26a3fe584b4898725ba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle003_m.png",
-    "bytes": 6401,
-    "sha256": "2dc1adc12896dfcdd5dee1c2f9da002ec849dd11d81ee2fc6c45c1e915d624ea"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle004_m.png",
-    "bytes": 120825,
-    "sha256": "472c20a63ef8c8db63c3395dae5b3636e523096989225ddfe87db54b4b021211"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle005_m.png",
-    "bytes": 5962,
-    "sha256": "f45a7eed0998c73d1dcbfc66f776cca8c8ffc97d1f8e664571802708459fdea0"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_circle006_m.png",
-    "bytes": 2757,
-    "sha256": "df884c9e51a9dd4b1b14769c15fb8f8b47f11b6d0d566640d36fbd7c0e6a81cb"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_flash001_m.png",
-    "bytes": 5987,
-    "sha256": "d9d6fd9e2ad463610133e54bd3d2ab2b03b62c5baae9b51b55296a0c28c96b07"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_flash002_m.png",
-    "bytes": 2371,
-    "sha256": "5cf1496622913a3aa7574c117ed18b299f944127a4a0871dc14c20f27a64ab2b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_line701_o.png",
-    "bytes": 16517,
-    "sha256": "806005f35c63ad2849bc81179be992e43afde99b0924ce630837df681d24b27e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring001_m.png",
-    "bytes": 7452,
-    "sha256": "1f126066e33429da6b282c93d5d274e7cca67fdeb69cec4ac6d534ee23ab69c2"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring003_m.png",
-    "bytes": 54850,
-    "sha256": "b4ee10c49d6fb564471f0d04c01d46c9811746d4742cb578f05dde10c2077ebc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring006_m.png",
-    "bytes": 14123,
-    "sha256": "9d0506fd5090d1bbd772d38d5e523aae570eb3e4eba046483638bdda805a0c47"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring007_m.png",
-    "bytes": 2771,
-    "sha256": "3926dce0f728010d9ef5abd1dfcb19c2bdf74886ba414539d3e19dceac5c3a1f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring009_m.png",
-    "bytes": 23533,
-    "sha256": "b563bfe5d6a598115f35ef527b28993accf77c948b47753c4a19b6b40e7d4c5f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring010_m.png",
-    "bytes": 2668,
-    "sha256": "3f6711dc2b3cf0b57cda230a57895ee795bb85fde8f0f3078e05085a23b2b711"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring011_m.png",
-    "bytes": 2915,
-    "sha256": "0612645dc1038c226a15b7ea571cd106705c35b8d922c6745ba27c78d4b2dc02"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring015_m.png",
-    "bytes": 32084,
-    "sha256": "8b8bafed1b92fd38463fc05e9f2460feabb32a3f335acdd3b5861f9e5ae51f9a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring201_a.png",
-    "bytes": 32284,
-    "sha256": "f168b381e3b8fcfc3dd136bbad2822052460f9fe5bd990e1a9612ba56aef8ab6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring501_y.png",
-    "bytes": 4313,
-    "sha256": "c124ddb450cff05798a15815c8562e4a9bb3d78d65ae58674ca065b0306a182e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_1_ring601_u.png",
-    "bytes": 3926,
-    "sha256": "b703025ccf072f76e436a8d04c2d58d6728d78f5a04c692d5090293f33d3e6aa"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom002_m.png",
-    "bytes": 91471,
-    "sha256": "a5cdaa6988aec8ad58c437e7935a244877464fe419de9aceb9ab0abd5357784e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom003_m.png",
-    "bytes": 18662,
-    "sha256": "b8406268c58b55a87274c24ea081b7b9bd9992e15fbe79d4f3b1b147f418a84b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom004_m.png",
-    "bytes": 16637,
-    "sha256": "7016a363a6c3ffcc3dc24d9bebde2a3cc7ed04836de531b997853a12431d36ef"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bom201_a.png",
-    "bytes": 98662,
-    "sha256": "0e416430f151aa3e5edf27fecd5b76be176f79f663168b50686fcb141340ecbb"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble003_m.png",
-    "bytes": 30510,
-    "sha256": "fc824e2b96b288524fd7f9c5e24f616bf57ef8ec40bcfac3eefd314ef5bffa3f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble004_m.png",
-    "bytes": 12057,
-    "sha256": "b304be39943773f21a0a980cde35cd5f245b0c45c025208ec32d6675eae819ea"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_bubble009_m.png",
-    "bytes": 24852,
-    "sha256": "38c29cb8e513509dbd1e37709f326b51289cba6de55b740ec4cbdccf9e0ba918"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dast001_m.png",
-    "bytes": 5810,
-    "sha256": "d2416e137fb28169f7b28e555e52a200b84b7c4b7dcb2e7a8d5cfddbe4ec62c1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dast003_m.png",
-    "bytes": 8086,
-    "sha256": "958d7fed66f60d45c2572ffe0233929bd5a2ac4d1088ea182456319315a3faef"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_dust701_o.png",
-    "bytes": 5864,
-    "sha256": "bd3b425675b168e410dedc3d11b15fc0858343ac1e0a400f616a6d69e61dd977"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire004_m.png",
-    "bytes": 75447,
-    "sha256": "a64dad713f7c1f81212264eeb9d5ba78384be85e59f98aa2038dfe49f3e550a8"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire005_m.png",
-    "bytes": 73897,
-    "sha256": "b8ca3985190ebd3a9ddc4295f0d42f56714ee1d5b472887014466cad229c890a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire007_m.png",
-    "bytes": 51078,
-    "sha256": "756046828bcf1393585170e2c833cfa86047a83354e81e931fc8b7de9719da99"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire008_m.png",
-    "bytes": 1419,
-    "sha256": "00f0386544f8d156e749da922e77e98f1aaed0894c00d6d0ab3137075503db54"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire009_m.png",
-    "bytes": 35167,
-    "sha256": "34a483529a81c9bdb6018cd7ae1a039676b49b3211024b47ad907d11d5910310"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_fire203_a.png",
-    "bytes": 92612,
-    "sha256": "5a552836a82fe719937c83efd0d197ed53e5549ae3ba32c01473f2c976daf79c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit001_m.png",
-    "bytes": 40416,
-    "sha256": "2d2024f09e55f238504c8f2cc6271536bf6816488aa658c188f620354b1c0b54"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit003_m.png",
-    "bytes": 66444,
-    "sha256": "101ca6edc3d2c984ad7ccf83f3a07b01ac8bc38e68acea5267a5e93b103975a3"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit006_m.png",
-    "bytes": 61703,
-    "sha256": "116eeb47ac6a9a0175be919eebd5d84daf3bc08cd0855b5dbb98cdc33972bf2f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit008_m.png",
-    "bytes": 104498,
-    "sha256": "18a672474fa6c834c6b8e787da80f4c2893f24565dfe469de9233292d0e7983b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit010_m.png",
-    "bytes": 57119,
-    "sha256": "d2b71a213d46553fae9721a4f44ebcab9028868320c473b743eae4dba95e2b99"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit011_m.png",
-    "bytes": 59472,
-    "sha256": "53c12f572da382eb18b1a39da6f5272110e2215318f1a1390775889107a8b128"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit012_m.png",
-    "bytes": 89751,
-    "sha256": "3991b0e85570873b2cc19ad964d32140c23724e26b6599d8244e718ef955fcd6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit014_m.png",
-    "bytes": 82048,
-    "sha256": "3150b88972959215b1c95590d38dd0f4981440733cdfc0fa630825ac84d92cea"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit015_m.png",
-    "bytes": 36908,
-    "sha256": "4757b89b1ceaaaa29657e70ce95c57169192a0083773f9c417d332926b5a9a14"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit017_m.png",
-    "bytes": 50448,
-    "sha256": "c8f7c32dd0cd9626139a47fdb7782519d356ac028850d625b2af2d036613e8a7"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_hit701_o.png",
-    "bytes": 56449,
-    "sha256": "e39b5a2035b215932e124641e1f4b57a03e4d0288dd1c55cfb3b956bb74d162e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line001_m.png",
-    "bytes": 47025,
-    "sha256": "f9985551a3a2a8e83476ef3711d3b46c80136bc04cf3fd547e150a9ef93ba438"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line002_m.png",
-    "bytes": 56079,
-    "sha256": "210f8e6a2e51eeb2dc322e9c231b5d1e2398a5614f21451c152a757f030cecba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line003_m.png",
-    "bytes": 44689,
-    "sha256": "7806b42ade6ba368114bd4ec54f949f814769334bf5d37ec7496e2c82716fc50"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_line004_m.png",
-    "bytes": 35125,
-    "sha256": "3d9649d1b40659321c3662c41191690d0e870a91ccacf585a8dd39cec8229069"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_mark001_m.png",
-    "bytes": 24671,
-    "sha256": "3b94dea8a55d444d0ff5134ad504f3dea16a73665866b1277b496afb01cde93d"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object003_m.png",
-    "bytes": 6870,
-    "sha256": "27e479e440e28d29cf725b397775cd247a4bac13a7244634278f67c25caf3c54"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_object006_m.png",
-    "bytes": 15777,
-    "sha256": "e1486c6bfa28222963101d68d6a8aa05f67ce11a43dac1f11c7ab5b93f494180"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring006_m.png",
-    "bytes": 33140,
-    "sha256": "09186c06f7590c32c7b3f55b2367de4cda20f57e5edaa6eaca613a935d34beba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_ring007_m.png",
-    "bytes": 33215,
-    "sha256": "a1273b272cdcf74851c1512350148647d67b15855a964daf7035dbfbe03ea98e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock001_m.png",
-    "bytes": 29501,
-    "sha256": "810a42aff58969efb2c573c4af8a0afa6ece82fb928d339ad9b8ea05f9191f77"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock002.png",
-    "bytes": 34695,
-    "sha256": "6e0751bf69c2a25e5cf5edcfdc04339e19651bb1da47993f455c8146752d32ee"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_shock003_m.png",
-    "bytes": 296996,
-    "sha256": "df9b07bd47e6f2e3e2cd5dfbd21607fe5f87a6d03f5fd13716830ca63ecb0c15"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke001_m.png",
-    "bytes": 30630,
-    "sha256": "3725a9494974417ecb0f04323f94db1b1678463feb985f7802f85f506e63a65b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke002_m.png",
-    "bytes": 63165,
-    "sha256": "d7e458c967f857e3238a5d2701d2098c10aa4ec0d84983440a0b8e52b441f648"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke003_m.png",
-    "bytes": 19236,
-    "sha256": "461c412a4b4b414ac780d1e0cc11fe533029e8c5f152eacf20f4b9ff651786c7"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke005_m.png",
-    "bytes": 5143,
-    "sha256": "ac43ef9b9c21dc7179893cf4262a1b5283b41fa8cf2ea49dedd01a1c67e7b197"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke007_m.png",
-    "bytes": 27340,
-    "sha256": "f2b4cbf127fffa5ce152b7a22ef4dff5c8d39c5837da86065dddbdf9d8895879"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke009_m.png",
-    "bytes": 46757,
-    "sha256": "b8605e66f5fae21c7f964f9f514b07a76179e2a3110c63784a06afb3f12765cb"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke701_o.png",
-    "bytes": 31071,
-    "sha256": "ec6329c30aa329af4d9e54664dcdba2dbea51f50b76a826a001eac479acfca93"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_smoke702_o.png",
-    "bytes": 10907,
-    "sha256": "db92f19756cbffbaaf07daf2762e54bc8990d21ca0d0b9e1f0511e426f5d7ca6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder002_m.png",
-    "bytes": 40585,
-    "sha256": "c58b29b7acf7b09d3fc22e36c9c6314d8c7918be8e1b056af32eebf735504ce6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder003_m.png",
-    "bytes": 52300,
-    "sha256": "77fed05b250b834caee633b17f80fa34c788b6714148a84c72e4c0ff73045c11"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder004_m.png",
-    "bytes": 48697,
-    "sha256": "9d280c73c55f10b622874459d5630307116bdc061d011575cc6891b8f269cc0b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder005_m.png",
-    "bytes": 74127,
-    "sha256": "f4d3dabafe3a9c808ef02785fb418fd99bebd71a3dfdcec6e911bbca4ca66112"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder006_m.png",
-    "bytes": 17782,
-    "sha256": "785e3a8c7529065a2c43c2df172fc74a708637127b1d91544dbe280af790278c"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder008_m.png",
-    "bytes": 111248,
-    "sha256": "b82f918ccd7cbdb947cc42fe267036b38731bc729d3ffc22e2797f9b75317ebc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder009_m.png",
-    "bytes": 90014,
-    "sha256": "df8ae8a8f789d8f46cbcfa371cf530cc1175975a1191960bfcb15a8970069357"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder010_m.png",
-    "bytes": 45748,
-    "sha256": "9b6aef69db6be3662e851497dd5dcfd96a57ee582ea2f8d864c647a4c98e69f1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder012_m.png",
-    "bytes": 100614,
-    "sha256": "518160cab3e0c053bb38f92081390b5bae74d9ee97c076d98ad85879d954555e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder201_a.png",
-    "bytes": 218161,
-    "sha256": "62aae3c668739a36b6a793aeb7028be9733a87a58a373f3bb5769bb844c10ffc"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder205_a.png",
-    "bytes": 24280,
-    "sha256": "a0a6ce580c7462ea02c3478e359e8153272eefb27447294cdb64b0204ebf4752"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder206_a_2.png",
-    "bytes": 60516,
-    "sha256": "147da4a834054031eaad66bbcd8bb31b06e241a9f6188e7c50e36154142b3fb9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder209a_a.png",
-    "bytes": 263457,
-    "sha256": "7778037618c2e6305e0f3409ee1b99a9ae5a63d23b28466567c579bd14af1ea8"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder702_o.png",
-    "bytes": 46420,
-    "sha256": "f1dee1826ac695ad4e70730b8bee53fac58a9425a5846846c87a19c471ecef09"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_thunder802_n.png",
-    "bytes": 76298,
-    "sha256": "56e7e8bb12252c760104dbb2a9dfabe2e12ac541e643f8fd4c248d59d29f3ace"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water003_m.png",
-    "bytes": 131139,
-    "sha256": "b1e9411ccf66dc69233dfed0d6f730faec55ef5e6cecbd76d2771eec0a4fdeec"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water009_m.png",
-    "bytes": 55657,
-    "sha256": "6d39982b82b36a4179a5e7b7f9653c047a31e33d9dba1d5cedfbde6d4250f7c1"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water010_m.png",
-    "bytes": 25270,
-    "sha256": "675547724ed58648fce7903f55df6661bad02a82c140dea1c6a81e42c7816a6f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water011_m.png",
-    "bytes": 44985,
-    "sha256": "748672ed23bd0cf2694e059a39122c09a180af0d708d7d00d368163c7ff18ffb"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water011_m_02.png",
-    "bytes": 45695,
-    "sha256": "d09054ef549c1cd7d41449f4124336f81acf32e5e6c404ec766b21cca468bb76"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water012_m.png",
-    "bytes": 19073,
-    "sha256": "7c4262b2e2f585b1a94efa8a1f6569913916638db544489c29011ec30a4b442e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_water013_m.png",
-    "bytes": 100561,
-    "sha256": "5d6ed40ef01e32f74737d124381bc328f16b187bcf1e54ef136998d965f2272f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_2_wind001_m.png",
-    "bytes": 40260,
-    "sha256": "9428c3017c1e0fd3bc562365bef82dbc284653579906eea66dd844e317f81230"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud002_m.png",
-    "bytes": 14919,
-    "sha256": "603ef79d30fd52293d9b5ed61b0bb38b9a688d3525fe1061c75ac79248565875"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud201_a.png",
-    "bytes": 247914,
-    "sha256": "bfc9f78a657d99a88ba4aa2ec22a15b0fb46d690044d7eaa18ffefe8ecbb03d6"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud203_a.png",
-    "bytes": 204250,
-    "sha256": "1fb1012bc6cd3eb056d4c05140adb513050b58c6974e5943ee95349bed2a4dba"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_cloud205_a.png",
-    "bytes": 157302,
-    "sha256": "2a222d47cff98d49e7359044864e9cab819936258bdc740832098a95395d82ca"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_color001_m.png",
-    "bytes": 6567,
-    "sha256": "5e3e1e9207586a3e04dcc510a7521af2d7bd49d3e52ad0146673e40506653783"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_color001_m_mirror.png",
-    "bytes": 6567,
-    "sha256": "5e3e1e9207586a3e04dcc510a7521af2d7bd49d3e52ad0146673e40506653783"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_fire201_a_repeat_mirror.png",
-    "bytes": 39604,
-    "sha256": "aaec910d95708b6ee0c985c15a3134a4482fe9993411666d50182d4d43b0efc3"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow001_m.png",
-    "bytes": 27883,
-    "sha256": "f6ce15b20d1451ec9bd5127920ac57b905527f7aa6750f41cc5283c7923ce0a5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow003_m.png",
-    "bytes": 40757,
-    "sha256": "e598e3d2d83503e4493be2b473ac68ccda64081ac82ccaaf80bd7ce20cec78d5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow004_m.png",
-    "bytes": 18098,
-    "sha256": "6a9d477f4537f76e7c768766a953dd3eaa79834f3a0c019b8a6370b17ec45ba9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow004_m_05.png",
-    "bytes": 54830,
-    "sha256": "e64ca4744e11184ecd1816e3f3ab42902e25c8eb6b9a8e9ed857b1e72a0c9206"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow005_a.png",
-    "bytes": 71252,
-    "sha256": "1ad0e0014db3981160c3219cd37c1f0d44474490158839d0b0d27fedf5f00d68"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow007_m.png",
-    "bytes": 75077,
-    "sha256": "c9d5527745e2d16d93818b42be00a27a897d1923a208e08de95b7fb7b84ac78e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow008_m.png",
-    "bytes": 133001,
-    "sha256": "5977ca93caee3a5da9cf2d791924fb381232c6a87d3fa5d426998478c77669ad"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow010_m.png",
-    "bytes": 191460,
-    "sha256": "439edca1c9a3ebe267fa1336be0919c1c4b661b951dfc7530a0d9685d179efec"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow011_m.png",
-    "bytes": 173084,
-    "sha256": "c26197a2d994546aaa6efa9e7210769026f5cccc10c9b92efd621d921f30be23"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow012_m.png",
-    "bytes": 416673,
-    "sha256": "0164f4cfe5737f276ec5ddceb256fc28fbfbeeb87811c913bfa109a7e40dcd3b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow013_m.png",
-    "bytes": 9443,
-    "sha256": "b7c24d6cd41afe89214acfa3acf6be0b1c3be66ed77ecd641b913b3c5765ce16"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow015_m.png",
-    "bytes": 14181,
-    "sha256": "abcf41cc82867804e0b28a309b59c7c97c9fa33392134c066ddba0896bc41e12"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow016_m.png",
-    "bytes": 236852,
-    "sha256": "79f8957efb9b60ba15e978323d6b168f5fa9f82c8b89794deed1f4d23004a14f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow017_m.png",
-    "bytes": 625128,
-    "sha256": "86eb4f53328ec71954f44540ede713c8a75503694ef6af0adbcdb2ec741a0f26"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow019_m.png",
-    "bytes": 121906,
-    "sha256": "ff0c4eeeb2132e3f8f9a10c5f43e0ad11154ce673ce84f731346966c287cdf1e"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow203_a.png",
-    "bytes": 106897,
-    "sha256": "e7bb2ed5c9835daa3df8c47d10cbddcb86efb5d95469246038abbe59c4b3e3df"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow401_e.png",
-    "bytes": 7673,
-    "sha256": "131360c273347c741703d2780fc69c1a3db06975f116397d13f7bb0ed58733e7"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow601_u.png",
-    "bytes": 44489,
-    "sha256": "22b3fcb931e618480b70eeb45feacb0d222d1a479a664b6e3c464cf677a7e9ac"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow701_o.png",
-    "bytes": 13746,
-    "sha256": "1127898f9826a2f79ce18b72292e0a09c687fbfb8dac74f85e93ce15b1712273"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow701_o_repeat.png",
-    "bytes": 13746,
-    "sha256": "1127898f9826a2f79ce18b72292e0a09c687fbfb8dac74f85e93ce15b1712273"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow702_o.png",
-    "bytes": 28077,
-    "sha256": "72fe3b86350beaf01e79c25788e07fed2cffab7feac871e0e7066b2cdc6abae9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow703_sml_o.png",
-    "bytes": 21968,
-    "sha256": "3cff9c1e7a2dea1ab8436f9b0485f30ce91150eaff00631c5ea75c94cb19c418"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_flow801_n.png",
-    "bytes": 203558,
-    "sha256": "56f892bcce4e048ed4a3b5f80e6a1ace84ea4f5779222233a62950eea8ba0241"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_line801_n.png",
-    "bytes": 583,
-    "sha256": "02ba407c3073483a3ca57694919975762ae3d3e5773c933922cd4cc070bf7ed9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_mask001_m.png",
-    "bytes": 52850,
-    "sha256": "18d7153ecc2caa840e03c798fd56d7d9a3b119526cbe00896acb16e4f1c40ccf"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_shock001_m.png",
-    "bytes": 1954,
-    "sha256": "921847c1dcbd00b013c3b7d8c430830a9c96fd3702599b89deb1dc03ddde75c4"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_3_smoke201_a.png",
-    "bytes": 109093,
-    "sha256": "c46aa1f2e1a65f3f7cec4838bad0f2f4bb4727fbce2a1f1114a4fb0e80b00be9"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_ht001_m.png",
-    "bytes": 142,
-    "sha256": "8db71b75f7041481139b7a664f7b2b7222a622c846f0cb929ea59cd6c6a348bd"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt001_m.png",
-    "bytes": 159,
-    "sha256": "dc9983d4a4633e26827479abdde27f449c149bf4fdd2ba0d6960b42480b7329a"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt002_m.png",
-    "bytes": 240,
-    "sha256": "dcec15a8d3a24064cdceaa9f0c95391d3da90aec205eb80f8fef7c81bc171f90"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt602_u.png",
-    "bytes": 496,
-    "sha256": "9eecce3536e5f2f72b4393cb0250172342e1cf9392598b515d64039862c0f464"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_lt701_o.png",
-    "bytes": 451,
-    "sha256": "b0dddcce90857962ae77f78ce0d9ec4a4004d99d8083364e8fa939251f23fd50"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_cmn_white001_m.png",
-    "bytes": 73,
-    "sha256": "304293895c5b70ecb8f014efb4e7c9af0005eb29c301622da17e5e5d0a805a0f"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew280_shock_m.png",
-    "bytes": 59817,
-    "sha256": "a6cd09f78a65675b5d7e59e934b989a9391596aa70854c9c180b14f64988970b"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew402_seed01_o.png",
-    "bytes": 92796,
-    "sha256": "3b0eda3f19158591cf7b6800c31cadbb174c57c48d874a0d5254ab20a71933a5"
-  },
-  {
-    "path": "Assets/NativeFx/BDSP/textures/fxpt_ew402_seed02_o.png",
-    "bytes": 9786,
-    "sha256": "d99b67df3feb5ab96c60803733e03d9d30b351cc0494e3e21f2341a52fce7436"
+    "path": "Assets/NativeFx/za-timing.json",
+    "bytes": 74460,
+    "sha256": "f050e5acc6985c0e09d5578c54300057e5a517ea3085e66c66f0d3630ba2f94c"
   }
 ]

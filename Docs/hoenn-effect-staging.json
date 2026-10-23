@@ -1,0 +1,14 @@
+{
+  "rockSlide": {
+    "timeline": "ik_effect/data/battle/ew01/ew0157/ew0157_1_bullet.trtml",
+    "shots": 24,
+    "firstContact": 2.2051615384615384,
+    "fallSpeed": 13.0,
+    "spread": "Lab deterministic bounded spread in place of native carrier shake"
+  },
+  "muddyWater": {
+    "speed": 2.5,
+    "referenceDistance": 4
+  },
+  "notes": []
+}

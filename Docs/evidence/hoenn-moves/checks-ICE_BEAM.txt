@@ -1,0 +1,3 @@
+WALREIN ICE_BEAM: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA ICE_BEAM: 55 particle systems, peak 1153, 5 body cues; contact 1.700; captures and cleanup checked
+BDSP ICE_BEAM: 71 particle systems, peak 326, 2 body cues; contact 1.700; captures and cleanup checked

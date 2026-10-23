@@ -15,6 +15,7 @@ def export_models():
  out=ROOT/'Assets/NativeFx/BDSP';store=bdspfx.TextureStore(out/'textures');report=[]
  requests={c['args']['file'] for p in out.glob('*/move.json') for g in json.loads(p.read_text())['groups'] for c in g['cmds'] if c['cmd']=='ModelCreate'}
  for file in sorted(requests):
+  print('Effect model',file,flush=True)
   bundle=file.split('/')[0].lower();trail=bundle=='ew280_tail';bundle='ew280_hand' if trail else bundle
   env=UnityPy.load(str(Path(bdsp.AA)/'Effects/effmodel'/bundle));objs={o.path_id:o for o in env.objects};trees={k:o.read_typetree() for k,o in objs.items() if o.type.name in ['GameObject','Transform','MeshRenderer','MeshFilter','SkinnedMeshRenderer','Material','AnimationClip']}
   trs={k:t for k,t in trees.items() if objs[k].type.name=='Transform'};root=next(k for k,t in trs.items() if t['m_Father']['m_PathID']==0)
@@ -27,26 +28,38 @@ def export_models():
   walk(root,-1,'');renderers=[];meshes=[];materials=[]
   def tex(pid):return store.save((bundle,pid),objs[pid]) if pid in objs and objs[pid].type.name=='Texture2D' else None
   for k,t in trs.items():
-   g=trees[t['m_GameObject']['m_PathID']];comps=[c['component']['m_PathID'] for c in g['m_Component']];isTrail=g['m_Name']=='ew280_tail'
+   g=trees[t['m_GameObject']['m_PathID']]
+   # This inward-facing black dome is BDSP's cinematic blackout enclosure,
+   # not fractured terrain. An open, freely moving battle camera stays in the arena.
+   if bundle=='ew089_floor' and g['m_Name'].endswith((':p_dome03',':p_dome_base01')):continue
+   comps=[c['component']['m_PathID'] for c in g['m_Component']];isTrail=g['m_Name']=='ew280_tail'
    if trail!=isTrail and (trail or bundle=='ew280_hand'):continue
    for pid in comps:
     if objs[pid].type.name not in ['MeshRenderer','SkinnedMeshRenderer']:continue
     r=trees[pid];meshRef=r.get('m_Mesh') or next(trees[c]['m_Mesh'] for c in comps if objs[c].type.name=='MeshFilter');mo=objs[meshRef['m_PathID']].read()
     v,n,u,bi,bw,tris=bdsp._mesh_arrays(mo)
-    m={'name':mo.m_Name,'v':v.flatten().tolist(),'i':np.array(tris).flatten().tolist()}
+    m={'name':mo.m_Name,'v':v.flatten().tolist(),'i':np.concatenate([np.asarray(t).reshape(-1) for t in tris]).tolist(),'submeshes':[np.asarray(t).reshape(-1).tolist() for t in tris]}
     if n is not None:m['n']=n.flatten().tolist()
     if u is not None:m['uv']=u.flatten().tolist()
-    if bi is not None:
+    if bi is not None and bw is None and bi.shape[1]==1:
+     # Unity rigid skinning omits the weight stream: its one influence is 1.
+     bw=np.ones_like(bi,dtype=np.float32)
+    if bi is not None and bw is not None:
      bi=np.pad(bi,((0,0),(0,4-bi.shape[1])));bw=np.pad(bw,((0,0),(0,4-bw.shape[1])))
      m.update(bi=bi.flatten().tolist(),bw=bw.flatten().tolist(),bind=[bdsp.bp_matrix(b) for b in mo.m_BindPose])
-    row={'node':indices[k],'mesh':len(meshes),'materials':[],'bones':[indices[b['m_PathID']] for b in r.get('m_Bones',[])]};meshes.append(m)
+    row={'node':indices[k],'mesh':len(meshes),'materials':[],'bones':[indices[b['m_PathID']] for b in r.get('m_Bones',[])] if 'bi' in m else []};meshes.append(m)
     for ref in r['m_Materials']:
      mt=trees[ref['m_PathID']];sp=mt['m_SavedProperties'];co=dict(sp['m_Colors']);fl=dict(sp['m_Floats']);kw=mt['m_ShaderKeywords']
      if '_COLORTEXTUREEXPRESSION_' in kw:
       mat=bdspfx.material(mt,None,tex);mat['color']=[mat['color_scale']]*3+[1];mat['emission']=[0]*4;mat['lit']=False;mat['zwrite']=0
      else:
       color=co.get('_Color',dict(r=1,g=1,b=1,a=1));em=co.get('_EmissionColor',dict(r=0,g=0,b=0,a=0))
-      mat={'color':[color[c] for c in 'rgba'],'emission':[em[c] for c in 'rgba'],'lit':True,'src':int(fl.get('_SrcBlend',1)),'dst':int(fl.get('_DstBlend',0)),'zwrite':int(fl.get('_ZWrite',1)),'cull':0,'color_mode':1,'alpha_mode':0}
+      mat={'color':[color[c] for c in 'rgba'],'emission':[em[c] for c in 'rgba'],'lit':True,'src':int(fl.get('_SrcBlend',1)),'dst':int(fl.get('_DstBlend',0)),'zwrite':int(fl.get('_ZWrite',1)),'cull':int(fl.get('_Cull',2)),'color_mode':1,'alpha_mode':0}
+      te=dict(sp['m_TexEnvs']).get('_MainTex')
+      if te and te['m_Texture']['m_PathID']:
+       info=tex(te['m_Texture']['m_PathID']);assert info,(file,mt['m_Name'],'missing model texture')
+       mat['tex0']={'name':info[0],'wrap':info[1],'scale':[te['m_Scale']['x'],te['m_Scale']['y']],'offset':[te['m_Offset']['x'],te['m_Offset']['y']]}
+      mat['color']=[v*fl.get('_ColorIntensity',1) if i<3 else v for i,v in enumerate(mat['color'])]
      row['materials'].append(len(materials));materials.append(mat)
     renderers.append(row)
   tracks=[];unmapped=[];materialTracks=[]

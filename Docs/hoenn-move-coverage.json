@@ -1,0 +1,43 @@
+{
+  "species": 1000,
+  "eligibleSpecies": {
+    "EARTHQUAKE": 282,
+    "DRAGON_CLAW": 76,
+    "ROCK_SLIDE": 358,
+    "BLAZE_KICK": 21,
+    "MUDDY_WATER": 98,
+    "ICE_BEAM": 271
+  },
+  "examples": [
+    {
+      "id": "BLAZE_KICK",
+      "species": "BLAZIKEN",
+      "sourceId": 299
+    },
+    {
+      "id": "MUDDY_WATER",
+      "species": "SWAMPERT",
+      "sourceId": 330
+    },
+    {
+      "id": "ICE_BEAM",
+      "species": "WALREIN",
+      "sourceId": 58
+    },
+    {
+      "id": "DRAGON_CLAW",
+      "species": "SALAMENCE",
+      "sourceId": 337
+    },
+    {
+      "id": "ROCK_SLIDE",
+      "species": "AGGRON",
+      "sourceId": 157
+    },
+    {
+      "id": "EARTHQUAKE",
+      "species": "FLYGON",
+      "sourceId": 89
+    }
+  ]
+}

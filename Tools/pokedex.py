@@ -119,6 +119,8 @@ def build_data(results):
         p=ids[r['dex']];stats=[stat[p][i] for i in (1,2,3,6,4,5)];types_=[v for k,v in sorted(tp[p])]
         legal=sorted(learned[p],key=lambda m:(moves[m]['type'] not in types_,moves[m]['shape']!='Melee',moves[m]['power'],m))
         choices=list(original.get(r['species'],{}).get('moves',[])) or legal[:6]
+        additions=[m['id'] for m in json.loads((ROOT/'Tools/hoenn-moves.json').read_text())['moves']]
+        choices += [m for m in additions if m in learned[p] and m not in choices]
         supplements=[]
         for m in sorted(moves,key=lambda m:(moves[m]['type'] not in types_,moves[m]['power'],m)):
             if len(choices)>=6:break

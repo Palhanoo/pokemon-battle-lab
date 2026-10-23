@@ -1,0 +1,26 @@
+BLAZIKEN BLAZE_KICK: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA BLAZE_KICK: 16 particle systems, peak 365, 3 body cues; contact 1.033; captures and cleanup checked
+BDSP BLAZE_KICK: 20 particle systems, peak 119, 2 body cues; contact 0.600; captures and cleanup checked
+SWAMPERT MUDDY_WATER: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA MUDDY_WATER: 36 particle systems, peak 551, 5 body cues; contact 2.933; captures and cleanup checked
+BDSP MUDDY_WATER: 24 particle systems, peak 172, 2 body cues; contact 3.333; captures and cleanup checked
+WALREIN ICE_BEAM: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA ICE_BEAM: 55 particle systems, peak 1157, 5 body cues; contact 1.700; captures and cleanup checked
+BDSP ICE_BEAM: 71 particle systems, peak 330, 2 body cues; contact 1.700; captures and cleanup checked
+SALAMENCE DRAGON_CLAW: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA DRAGON_CLAW: 20 particle systems, peak 557, 4 body cues; contact 0.700; captures and cleanup checked
+BDSP DRAGON_CLAW: 28 particle systems, peak 90, 2 body cues; contact 1.500; captures and cleanup checked
+AGGRON ROCK_SLIDE: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA ROCK_SLIDE: 289 particle systems, peak 1421, 5 body cues; contact 2.205; captures and cleanup checked
+BDSP ROCK_SLIDE: 15 particle systems, peak 299, 2 body cues; contact 1.000; captures and cleanup checked
+FLYGON EARTHQUAKE: distant command approached; one hit/recoil/contact sound; no action or effect tail remains
+ZA EARTHQUAKE: 41 particle systems, peak 332, 5 body cues; contact 1.300; captures and cleanup checked
+BDSP EARTHQUAKE: 44 particle systems, peak 942, 2 body cues; contact 1.733; captures and cleanup checked
+MUDDY_WATER: one equal-power clash, zero damage, all blocked effects disposed
+ICE_BEAM: one equal-power clash, zero damage, all blocked effects disposed
+HYDRO_PUMP: one equal-power clash, zero damage, all blocked effects disposed
+PSYBEAM: one equal-power clash, zero damage, all blocked effects disposed
+Muddy Water vs Ice Beam: damage 33/22 after STAB/type; residual 11/0; one contact flash and correct surviving hit
+Earthquake: three nearby enemies each take one hit; lab allies remain unharmed
+Earthquake: Flying opponent immune, no damage feedback
+Reset while wave travels: no stale damage, effects or actions

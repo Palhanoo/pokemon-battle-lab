@@ -1,0 +1,30 @@
+{
+  "build": "Builds/HoennMoves20261023",
+  "moves": [
+    "BLAZE_KICK",
+    "MUDDY_WATER",
+    "ICE_BEAM",
+    "DRAGON_CLAW",
+    "ROCK_SLIDE",
+    "EARTHQUAKE"
+  ],
+  "rosterModels": 1000,
+  "moveCatalogCount": 53,
+  "nativePresentations": {
+    "ZA": 53,
+    "BDSP": 28
+  },
+  "focusedTests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "buildErrors": 0,
+  "textureBindings": 4355,
+  "missingTextureBindings": 0,
+  "fullRosterCombatReview": "passed",
+  "finalIceBeamReview": "passed",
+  "renderedReview": "12 new native presentations; final Ice Beam frost attachment reviewed after repair",
+  "evidence": "Docs/evidence/hoenn-moves/final-review",
+  "userPlaytest": "pending",
+  "fidelityLimits": "See Docs/2026-10-23-hoenn-moves.md"
+}

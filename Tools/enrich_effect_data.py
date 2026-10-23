@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys,json,struct,hashlib
 ROOT=Path(__file__).resolve().parents[1]
-def enrich(source=None):
+def enrich(source=None,moves=None):
     source=source or ROOT.parent/'HoennVR'
     sys.path.insert(0,str(source/'Tools~'))
     # The BDSP model exporter may already have loaded the vendored package.
@@ -36,6 +36,9 @@ def enrich(source=None):
             'color_blends':[c[k] for k in ['tex1_color_blend','tex2_color_blend','primitive_color_blend']],
             'alpha_blends':[c[k] for k in ['tex1_alpha_blend','tex2_alpha_blend','primitive_alpha_blend']]}
         color=src['color'];static=src['static']
+        if current_batch:
+            for key,kind in [('c0','color0_type'),('c1','color1_type'),('a0','alpha0_type'),('a1','alpha1_type')]:
+                if color[kind]==3 and dst['color'][key]['keys']:dst['color'][key]['type']='keys'
         dst['render_state']=src['render']
         dst['draw']=bool(src['info']['is_particle_draw'])
         dst['surface']={'refraction':c['shader_type']==1,'shader_type':c['shader_type'],
@@ -51,13 +54,16 @@ def enrich(source=None):
         dst['native_shader']={'index':src['shader']['custom_shader_index'],
             'switch':src['shader']['custom_shader_switch'],
             'fragment_sha1':hashlib.sha1(code.encode()).hexdigest(),
-            'flow':1 if '.675000012' in code else (2 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='f6a36f5f89' else 3 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='75a59ce422' else 0),
+            'flow':1 if '.675000012' in code else (2 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='f6a36f5f89' else 3 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='75a59ce422' else 4 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='5f14b1dcf1' else 0),
             'flow_color':1 if '.675000012' in code and '-|R' in code else 0,
             'values':src.get('custom_values',[])}
         count+=1
         # Child emitters in this format are a recursive list.
         for d,s in zip(dst.get('children',[]),src.get('children',[])):merge(d,s)
+    batch={f"zaew{m['sourceId']:04d}" for m in json.loads((ROOT/'Tools/hoenn-moves.json').read_text())['moves']}
     for p in (ROOT/'Assets/NativeFx/ZA').glob('*/move.json'):
+        if moves is not None and p.parent.name not in moves:continue
+        current_batch=p.parent.name in batch
         seen=set()
         for o in json.loads(p.read_text())['objects']:
             path=p.parent/o['set']

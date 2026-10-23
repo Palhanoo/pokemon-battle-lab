@@ -208,7 +208,7 @@ Shader "Hoenn/VioletParticle"
                 float distortionLife=lerp(da.y,db.y,saturate((i.age-da.x)/max(.0001,db.x-da.x)));
                 float4 distortionVector=SAMPLE_TEXTURE2D(_SubTex,sampler_SubTex,WrapMask(i.uv.zw,_SubWrap.xy));
                 if(_BdspDistortion>1.5)i.uv.xy+=(distortionVector.rg*2-1)*_DistortionStrength.xy*distortionLife;
-                if(_NativeFlow>2.5)
+                if(_NativeFlow>2.5&&_NativeFlow<3.5)
                 {
                     // Authored beam turbulence shears the two flowing maps along the tube.
                     i.uv.z+=i.rawUv.y*_FlowShape.z;
@@ -273,11 +273,11 @@ Shader "Hoenn/VioletParticle"
                     float noise=flowNoise.r+a0-1;
                     float inside=ceil(saturate(noise-_FlowShape.x));
                     float visible=ceil(saturate(noise));
-                    float3 left=_NativeFlow<2.5?c0*flowMain.rgb:c0;
+                    float3 left=_NativeFlow>3.5?lerp(c1,c0,flowMain.r):_NativeFlow<2.5?c0*flowMain.rgb:c0;
                     float3 right=_NativeFlow<2.5?c1*flowSub.rgb:flowSub.rgb;
                     float3 fill=left*(1-abs(_FlowShape.y))+left*right*saturate(-_FlowShape.y)+(left+right)*saturate(_FlowShape.y);
                     col=lerp(_FlowEdge.rgb*_FlowEdge.a,fill,inside);
-                    if(_NativeFlow<2.5)
+                    if(_NativeFlow<2.5||_NativeFlow>3.5)
                     {
                         float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
                         float f=saturate((facing-_Fresnel.y)/((_Fresnel.z-_Fresnel.y)==0?.0001:(_Fresnel.z-_Fresnel.y)));
@@ -287,7 +287,7 @@ Shader "Hoenn/VioletParticle"
                     }
                     else {col*=c1;a=flowMain.r*visible*a1;}
                 }
-                if(_Fresnel.x>.5&&(_NativeFlow<1.5||_NativeFlow>2.5))
+                if(_Fresnel.x>.5&&(_NativeFlow<1.5||(_NativeFlow>2.5&&_NativeFlow<3.5)))
                 {
                     float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
                     float rim=saturate((facing-_Fresnel.y)/((_Fresnel.z-_Fresnel.y)==0?.0001:(_Fresnel.z-_Fresnel.y)));

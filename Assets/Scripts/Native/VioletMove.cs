@@ -47,6 +47,7 @@ namespace BattleLab.Native
         float effectScale = 1f;
         public bool manualSimulate; // edit mode: advance particles with Simulate instead of the player loop
 
+        public string LabMove;
         public float Now => time;
         public float StartTime => startTime;
         public float HitTime => hitTime;
@@ -63,6 +64,22 @@ namespace BattleLab.Native
             mv.effectScale = Mathf.Sqrt(Mathf.Max(0.05f, atk.scale) * Mathf.Max(0.05f, def.scale));
             var js = VioletFx.J.Obj(MiniJson.Parse(moveJson));
             SetVolleyCount(js,shotCount);
+            float waveSpeed=VioletFx.J.F(js,"labGroundWaveSpeed");
+            if(waveSpeed>0)
+            {
+                float distance=Vector3.Distance(atk.root.position,def.root.position);
+                float oldHit=0;
+                foreach(var value in VioletFx.J.List(js,"other_clips"))
+                {var c=VioletFx.J.Obj(value);if(VioletFx.J.Str(c,"cmd")=="Animation/SetTrigger")oldHit=VioletFx.J.F(c,"start");}
+                float shift=Mathf.Max(.15f,distance/waveSpeed)-4/waveSpeed;
+                foreach(var value in VioletFx.J.List(js,"objects"))foreach(var item in VioletFx.J.List(VioletFx.J.Obj(value),"clips"))
+                {
+                    var c=VioletFx.J.Obj(item);
+                    foreach(var key in new[]{"start","end"})if(VioletFx.J.F(c,key)>=oldHit-.001f)c[key]=(double)(VioletFx.J.F(c,key)+shift);
+                }
+                foreach(var value in VioletFx.J.List(js,"other_clips"))
+                {var c=VioletFx.J.Obj(value);if(VioletFx.J.Str(c,"cmd")=="Animation/SetTrigger"){c["start"]=(double)(oldHit+shift);c["end"]=(double)(oldHit+shift+1f/30);}}
+            }
             foreach (var o in VioletFx.J.List(js, "other_clips"))
             {
                 var cd = VioletFx.J.Obj(o);
@@ -234,6 +251,18 @@ namespace BattleLab.Native
                     if(direction.sqrMagnitude>.0001f)o.fx.transform.rotation=Quaternion.LookRotation(direction);
                     o.fx.transform.localScale=Vector3.one*Mathf.Clamp(defender.height*.45f,.18f,.65f);
                 }
+                if((LabMove=="BLAZE_KICK"||LabMove=="DRAGON_CLAW")&&o.name=="bullet1")
+                {o.fx.transform.position=defender.Center;var facing=defender.Center-attacker.Center;if(facing.sqrMagnitude>.001f)o.fx.transform.rotation=Quaternion.LookRotation(facing);}
+                if(LabMove=="MUDDY_WATER"&&o.name.StartsWith("bullet"))
+                {var f=defender.root.position-attacker.root.position;f.y=0;if(f.sqrMagnitude>.001f)o.fx.transform.rotation=Quaternion.LookRotation(f);}
+                if(LabMove=="EARTHQUAKE"&&o.name=="bullet0")
+                {o.fx.transform.position=attacker.root.position;o.fx.transform.rotation=Quaternion.LookRotation(attacker.Forward,Vector3.up);}
+                if(LabMove=="ICE_BEAM")
+                {
+                    if(o.name=="ew0058_impact"){o.fx.transform.position=defender.Center;o.fx.transform.localScale=Vector3.one*Mathf.Clamp(defender.height*.4f,.15f,.4f);}
+                    if(o.name=="ew0058_charge")o.fx.transform.localScale=Vector3.one*.3f;
+                    if(time>3.3f&&(o.name=="ew0058_impact"||o.name=="ew0058_charge"))VioletFx.Stop(o.fx,false);
+                }
                 if(SteeredDig&&(o.name=="ew0091_attack_out"||o.name=="ew0091_sign"||o.name=="impact0_0"))
                 {o.fx.transform.position=attacker.root.position;o.fx.transform.localScale=Vector3.one*Mathf.Clamp(attacker.height*.45f,.3f,1.2f);}
                 if (manualSimulate && o.playing)
@@ -349,6 +378,12 @@ namespace BattleLab.Native
                 }
                 case "Title/Character/SetTargetPosition":
                     tr.position=(SteeredDig?attacker:defender).root.position;
+                    break;
+                case "Title/Bullet/RotateGroundDirection":
+                    // The lab arena has one flat floor; native slope orientation reduces
+                    // to horizontal facing here, with no pitch into the ground.
+                    var forward=attacker.Forward;forward.y=0;
+                    if(forward.sqrMagnitude>.0001f)tr.rotation=Quaternion.LookRotation(forward,Vector3.up);
                     break;
                 case "Physics/CastRay":
                     // The battle lab's floor is y=0. Native ray endpoints locate this same surface.

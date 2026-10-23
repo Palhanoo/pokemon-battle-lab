@@ -1,0 +1,35 @@
+{
+  "moves": [
+    {
+      "id": "BLAZE_KICK",
+      "species": "BLAZIKEN",
+      "sourceId": 299
+    },
+    {
+      "id": "MUDDY_WATER",
+      "species": "SWAMPERT",
+      "sourceId": 330
+    },
+    {
+      "id": "ICE_BEAM",
+      "species": "WALREIN",
+      "sourceId": 58
+    },
+    {
+      "id": "DRAGON_CLAW",
+      "species": "SALAMENCE",
+      "sourceId": 337
+    },
+    {
+      "id": "ROCK_SLIDE",
+      "species": "AGGRON",
+      "sourceId": 157
+    },
+    {
+      "id": "EARTHQUAKE",
+      "species": "FLYGON",
+      "sourceId": 89
+    }
+  ],
+  "source": "Local ZA v2 effects/timing; PokeAPI pinned 81d20919 move definitions and pooled learnsets."
+}

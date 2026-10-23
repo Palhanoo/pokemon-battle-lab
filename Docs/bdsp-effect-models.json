@@ -1,5 +1,15 @@
 [
   {
+    "file": "ew089_floor/ew089_floor.gfbmdl",
+    "bundle": "ew089_floor",
+    "renderers": 38,
+    "tracks": 39,
+    "materialTracks": 0,
+    "vertices": 8563,
+    "unmappedMaterialTracks": [],
+    "trailFallback": false
+  },
+  {
     "file": "ew122_tanM/ew122_tanM.gfbmdl",
     "bundle": "ew122_tanm",
     "renderers": 1,

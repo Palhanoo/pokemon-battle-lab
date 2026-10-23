@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="15" result="Passed" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-23 10:42:27Z" end-time="2026-10-23 10:42:42Z" duration="14.9554008">
+  <test-suite type="TestSuite" id="1000" name="Pokemon Battle Lab" fullname="Pokemon Battle Lab" runstate="Runnable" testcasecount="42" result="Passed" start-time="2026-10-23 10:42:27Z" end-time="2026-10-23 10:42:42Z" duration="14.955401" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1050" name="BattleLab.Tests.dll" fullname="D:/www/PokemonBattleLab/Library/ScriptAssemblies/BattleLab.Tests.dll" runstate="Runnable" testcasecount="42" result="Passed" start-time="2026-10-23 10:42:27Z" end-time="2026-10-23 10:42:42Z" duration="14.935725" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23528" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="HoennModelTests" fullname="HoennModelTests" classname="HoennModelTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-23 10:42:27Z" end-time="2026-10-23 10:42:28Z" duration="0.723309" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="EarthquakeRetainsAnimatedSkinnedTerrainAndSubmeshMaterials" fullname="HoennModelTests.EarthquakeRetainsAnimatedSkinnedTerrainAndSubmeshMaterials" methodname="EarthquakeRetainsAnimatedSkinnedTerrainAndSubmeshMaterials" classname="HoennModelTests" runstate="Runnable" seed="1864825608" result="Passed" start-time="2026-10-23 10:42:27Z" end-time="2026-10-23 10:42:28Z" duration="0.696374" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1023" name="RosterAndEffectsTests" fullname="RosterAndEffectsTests" classname="RosterAndEffectsTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-23 10:42:28Z" end-time="2026-10-23 10:42:30Z" duration="2.247149" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1026" name="ImportedSoundsContainAudioSamples" fullname="RosterAndEffectsTests.ImportedSoundsContainAudioSamples" methodname="ImportedSoundsContainAudioSamples" classname="RosterAndEffectsTests" runstate="Runnable" seed="1875046010" result="Passed" start-time="2026-10-23 10:42:28Z" end-time="2026-10-23 10:42:28Z" duration="0.053876" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1024" name="MixedSourcesHaveSixChoicesWithDataAndSound" fullname="RosterAndEffectsTests.MixedSourcesHaveSixChoicesWithDataAndSound" methodname="MixedSourcesHaveSixChoicesWithDataAndSound" classname="RosterAndEffectsTests" runstate="Runnable" seed="1445821943" result="Passed" start-time="2026-10-23 10:42:28Z" end-time="2026-10-23 10:42:30Z" duration="2.189931" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1027" name="TeamAndClashTests" fullname="TeamAndClashTests" classname="TeamAndClashTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:42Z" duration="11.960294" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1036" name="BeamOccupiesFiniteSegmentWhileProjectileCrossesIt" fullname="TeamAndClashTests.BeamOccupiesFiniteSegmentWhileProjectileCrossesIt" methodname="BeamOccupiesFiniteSegmentWhileProjectileCrossesIt" classname="TeamAndClashTests" runstate="Runnable" seed="1156220118" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.005252" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-suite type="ParameterizedMethod" id="1034" name="ClashThresholdAndResidual" fullname="TeamAndClashTests.ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.045044" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1028" name="ClashThresholdAndResidual(100,100,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(100,100,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="1944493066" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.001728" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1029" name="ClashThresholdAndResidual(149,100,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(149,100,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="910366639" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.000274" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1030" name="ClashThresholdAndResidual(150,100,50,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(150,100,50,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="922440306" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.000132" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1031" name="ClashThresholdAndResidual(100,150,0,50)" fullname="TeamAndClashTests.ClashThresholdAndResidual(100,150,0,50)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="1421383441" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.000110" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1032" name="ClashThresholdAndResidual(0,100,0,100)" fullname="TeamAndClashTests.ClashThresholdAndResidual(0,100,0,100)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="89047373" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.000161" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+          <test-case id="1033" name="ClashThresholdAndResidual(0,0,0,0)" fullname="TeamAndClashTests.ClashThresholdAndResidual(0,0,0,0)" methodname="ClashThresholdAndResidual" classname="TeamAndClashTests" runstate="Runnable" seed="984563460" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:30Z" duration="0.000094" asserts="0">
+            <properties>
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-case id="1037" name="ClashUsesDamageAfterStabAndTargetType" fullname="TeamAndClashTests.ClashUsesDamageAfterStabAndTargetType" methodname="ClashUsesDamageAfterStabAndTargetType" classname="TeamAndClashTests" runstate="Runnable" seed="463841820" result="Passed" start-time="2026-10-23 10:42:30Z" end-time="2026-10-23 10:42:31Z" duration="1.464079" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1040" name="EveryNativeBDSPMaterialBindsBothExportedTextureLayers" fullname="TeamAndClashTests.EveryNativeBDSPMaterialBindsBothExportedTextureLayers" methodname="EveryNativeBDSPMaterialBindsBothExportedTextureLayers" classname="TeamAndClashTests" runstate="Runnable" seed="1197758315" result="Passed" start-time="2026-10-23 10:42:31Z" end-time="2026-10-23 10:42:35Z" duration="3.373675" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1039" name="EveryNativeZAEmitterBindsEverySupportedTextureSlot" fullname="TeamAndClashTests.EveryNativeZAEmitterBindsEverySupportedTextureSlot" methodname="EveryNativeZAEmitterBindsEverySupportedTextureSlot" classname="TeamAndClashTests" runstate="Runnable" seed="1182794903" result="Passed" start-time="2026-10-23 10:42:35Z" end-time="2026-10-23 10:42:42Z" duration="7.011277" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1038" name="NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" fullname="TeamAndClashTests.NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" methodname="NativeStopClearsInfiniteAuraCoresButLetsFiniteParticlesAge" classname="TeamAndClashTests" runstate="Runnable" seed="312879210" result="Passed" start-time="2026-10-23 10:42:42Z" end-time="2026-10-23 10:42:42Z" duration="0.046992" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+        </test-case>
+        <test-case id="1035" name="SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" fullname="TeamAndClashTests.SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" methodname="SweptProjectilesCannotTunnelOrCollideAtDifferentTimes" classname="TeamAndClashTests" runstate="Runnable" seed="1719158619" result="Passed" start-time="2026-10-23 10:42:42Z" end-time="2026-10-23 10:42:42Z" duration="0.001449" asserts="0">
+          <properties>
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Saving results to: C:/Users/Bruno/AppData/LocalLow/BrunoLabs/Pokemon Battle Lab\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

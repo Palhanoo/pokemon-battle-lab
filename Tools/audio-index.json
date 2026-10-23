@@ -234,6 +234,36 @@
       "id": "DRAIN_PUNCH",
       "sound": "SE_M_COMET_PUNCH",
       "substitute": true
+    },
+    {
+      "id": "BLAZE_KICK",
+      "sound": "SE_M_EMBER",
+      "substitute": true
+    },
+    {
+      "id": "MUDDY_WATER",
+      "sound": "SE_M_BUBBLE",
+      "substitute": true
+    },
+    {
+      "id": "ICE_BEAM",
+      "sound": "SE_M_HYPER_BEAM",
+      "substitute": true
+    },
+    {
+      "id": "DRAGON_CLAW",
+      "sound": "SE_M_CUT",
+      "substitute": true
+    },
+    {
+      "id": "ROCK_SLIDE",
+      "sound": "SE_M_ROCK_THROW",
+      "substitute": true
+    },
+    {
+      "id": "EARTHQUAKE",
+      "sound": "SE_M_STRENGTH",
+      "substitute": true
     }
   ],
   "cries": [

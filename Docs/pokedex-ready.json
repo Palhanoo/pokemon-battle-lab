@@ -472,7 +472,8 @@
           "ENERGY_BALL",
           "SLUDGE_BOMB",
           "LEAF_STORM",
-          "TACKLE"
+          "TACKLE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -628,7 +629,9 @@
           "FLAMETHROWER",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -784,7 +787,9 @@
           "FLAMETHROWER",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -941,7 +946,11 @@
           "EMBER",
           "FLAMETHROWER",
           "METAL_CLAW",
-          "BITE"
+          "BITE",
+          "BLAZE_KICK",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -1097,7 +1106,10 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -1253,7 +1265,10 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -1409,7 +1424,11 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -2913,7 +2932,8 @@
           "TAKE_DOWN",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -3050,7 +3070,8 @@
           "TAKE_DOWN",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -3488,7 +3509,9 @@
           "CRUNCH",
           "DIG",
           "IRON_TAIL",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -3644,7 +3667,9 @@
           "CRUNCH",
           "DIG",
           "IRON_TAIL",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -4108,7 +4133,9 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -4260,7 +4287,9 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -4397,7 +4426,8 @@
           "AERIAL_ACE",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -4530,7 +4560,8 @@
           "AERIAL_ACE",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -4664,7 +4695,10 @@
           "SLUDGE_BOMB",
           "TACKLE",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -4801,7 +4835,8 @@
           "TACKLE",
           "DIG",
           "IRON_TAIL",
-          "CONFUSION"
+          "CONFUSION",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -4934,7 +4969,8 @@
           "TACKLE",
           "DIG",
           "IRON_TAIL",
-          "WATER_GUN"
+          "WATER_GUN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -5068,7 +5104,10 @@
           "SLUDGE_BOMB",
           "PECK",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -5224,7 +5263,8 @@
           "DISARMING_VOICE",
           "TACKLE",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -5380,7 +5420,8 @@
           "DISARMING_VOICE",
           "TACKLE",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -5840,7 +5881,8 @@
           "DISARMING_VOICE",
           "TAKE_DOWN",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -5997,7 +6039,8 @@
           "DISARMING_VOICE",
           "TAKE_DOWN",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -7523,7 +7566,9 @@
           "AERIAL_ACE",
           "SLASH",
           "ROCK_TOMB",
-          "SLUDGE_BOMB"
+          "SLUDGE_BOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -7675,7 +7720,9 @@
           "AERIAL_ACE",
           "SLASH",
           "ROCK_TOMB",
-          "SLUDGE_BOMB"
+          "SLUDGE_BOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -8139,7 +8186,9 @@
           "HYDRO_PUMP",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -8291,7 +8340,9 @@
           "HYDRO_PUMP",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -8447,7 +8498,9 @@
           "CLOSE_COMBAT",
           "AERIAL_ACE",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -8603,7 +8656,9 @@
           "CLOSE_COMBAT",
           "AERIAL_ACE",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -9059,7 +9114,9 @@
           "HYDRO_PUMP",
           "DIG",
           "MUD_SHOT",
-          "PSYCHIC"
+          "PSYCHIC",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -9211,7 +9268,10 @@
           "HYDRO_PUMP",
           "BRICK_BREAK",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -9364,7 +9424,11 @@
           "CLOSE_COMBAT",
           "WATER_GUN",
           "WATER_PULSE",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -9988,7 +10052,9 @@
           "CLOSE_COMBAT",
           "BULLET_PUNCH",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -10144,7 +10210,9 @@
           "CLOSE_COMBAT",
           "BULLET_PUNCH",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -10300,7 +10368,9 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "BULLET_PUNCH",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -10924,7 +10994,9 @@
           "SLUDGE_BOMB",
           "HYDRO_PUMP",
           "MUD_SHOT",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -11077,7 +11149,9 @@
           "SLUDGE_BOMB",
           "HYDRO_PUMP",
           "MUD_SHOT",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -11230,7 +11304,9 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -11383,7 +11459,9 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -11536,7 +11614,9 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -11989,7 +12069,9 @@
           "WATER_PULSE",
           "PSYBEAM",
           "PSYCHIC",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -12146,7 +12228,10 @@
           "WATER_PULSE",
           "PSYBEAM",
           "PSYCHIC",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -13073,7 +13158,9 @@
           "HYDRO_PUMP",
           "LICK",
           "PECK",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -13226,7 +13313,9 @@
           "HYDRO_PUMP",
           "LICK",
           "PLAY_ROUGH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -13378,7 +13467,8 @@
           "DRAIN_PUNCH",
           "DIG",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -13530,7 +13620,8 @@
           "DRAIN_PUNCH",
           "DIG",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -13682,7 +13773,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "MUD_SHOT",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -13835,7 +13927,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "MUD_SHOT",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -14463,7 +14556,9 @@
           "ROCK_TOMB",
           "TACKLE",
           "IRON_TAIL",
-          "DRAGON_PULSE"
+          "DRAGON_PULSE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -14900,7 +14995,9 @@
           "METAL_CLAW",
           "SLASH",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -15033,7 +15130,9 @@
           "HYDRO_PUMP",
           "METAL_CLAW",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -15643,7 +15742,8 @@
           "PSYBEAM",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -15799,7 +15899,10 @@
           "BRICK_BREAK",
           "IRON_TAIL",
           "WATER_GUN",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -15955,7 +16058,10 @@
           "BRICK_BREAK",
           "IRON_TAIL",
           "WATER_GUN",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -16107,7 +16213,10 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "BULLET_PUNCH",
-          "TACKLE"
+          "TACKLE",
+          "BLAZE_KICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -16259,7 +16368,9 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "AURA_SPHERE",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -16407,7 +16518,11 @@
           "LICK",
           "BRICK_BREAK",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -16864,7 +16979,10 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -17017,7 +17135,10 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -17169,7 +17290,10 @@
           "DRAINING_KISS",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -17473,7 +17597,10 @@
           "BITE",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -17625,7 +17752,9 @@
           "HYDRO_PUMP",
           "DRAGON_PULSE",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -17779,7 +17908,9 @@
           "HYDRO_PUMP",
           "DRAGON_PULSE",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -17918,7 +18049,9 @@
           "HYDRO_PUMP",
           "PECK",
           "QUICK_ATTACK",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -18051,7 +18184,9 @@
           "HYDRO_PUMP",
           "PECK",
           "QUICK_ATTACK",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -18207,7 +18342,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "PSYBEAM",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -18363,7 +18499,8 @@
           "PSYBEAM",
           "PSYCHIC",
           "HYDRO_PUMP",
-          "TACKLE"
+          "TACKLE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -18811,7 +18948,8 @@
           "LICK",
           "DRAINING_KISS",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -19271,7 +19409,9 @@
           "SLASH",
           "BRICK_BREAK",
           "DIG",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -19423,7 +19563,10 @@
           "DIG",
           "IRON_TAIL",
           "CLOSE_COMBAT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -19741,7 +19884,10 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "CRUNCH"
+          "CRUNCH",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -19894,7 +20040,10 @@
           "HYDRO_PUMP",
           "IRON_TAIL",
           "DISARMING_VOICE",
-          "DRAGON_PULSE"
+          "DRAGON_PULSE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -20365,7 +20514,9 @@
           "HYDRO_PUMP",
           "QUICK_ATTACK",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -20833,7 +20984,8 @@
           "AERIAL_ACE",
           "IRON_TAIL",
           "PSYBEAM",
-          "SPARK"
+          "SPARK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -20959,7 +21111,10 @@
           "ROCK_TOMB",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -21093,7 +21248,10 @@
           "ROCK_TOMB",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -21210,7 +21368,9 @@
           "ROCK_TOMB",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -21344,7 +21504,9 @@
           "ROCK_TOMB",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -21501,7 +21663,10 @@
           "ROCK_TOMB",
           "BITE",
           "CRUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -21652,7 +21817,10 @@
           "LICK",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -21805,7 +21973,8 @@
           "WATER_GUN",
           "WATER_PULSE",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -22269,7 +22438,8 @@
           "FIRE_SPIN",
           "WATER_GUN",
           "WATER_PULSE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -22425,7 +22595,8 @@
           "FIRE_SPIN",
           "WATER_GUN",
           "WATER_PULSE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -22582,7 +22753,11 @@
           "BRICK_BREAK",
           "IRON_TAIL",
           "FIRE_SPIN",
-          "WATER_GUN"
+          "WATER_GUN",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -22738,7 +22913,10 @@
           "PSYCHIC",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -22890,7 +23068,13 @@
           "PSYCHIC",
           "DRAINING_KISS",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "BLAZE_KICK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -23358,7 +23542,8 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TACKLE"
+          "TACKLE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -23814,7 +23999,9 @@
           "FLAMETHROWER",
           "QUICK_ATTACK",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -23970,7 +24157,11 @@
           "HYDRO_PUMP",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -24126,7 +24317,11 @@
           "HYDRO_PUMP",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -24282,7 +24477,12 @@
           "HYDRO_PUMP",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -24433,7 +24633,8 @@
           "SLASH",
           "TAKE_DOWN",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -24585,7 +24786,8 @@
           "TAKE_DOWN",
           "BRICK_BREAK",
           "DIG",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -25793,7 +25995,9 @@
           "SPARK",
           "DISCHARGE",
           "THUNDERBOLT",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -25946,7 +26150,9 @@
           "SPARK",
           "DISCHARGE",
           "THUNDERBOLT",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -27771,7 +27977,9 @@
           "DISARMING_VOICE",
           "WATER_GUN",
           "WATER_PULSE",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -27924,7 +28132,9 @@
           "DISARMING_VOICE",
           "WATER_GUN",
           "WATER_PULSE",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -28076,7 +28286,9 @@
           "TACKLE",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -28228,7 +28440,10 @@
           "HYDRO_PUMP",
           "BRICK_BREAK",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -29445,7 +29660,11 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -29597,7 +29816,11 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -30219,7 +30442,11 @@
           "WATER_PULSE",
           "PSYBEAM",
           "PSYCHIC",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -30823,7 +31050,8 @@
           "PSYBEAM",
           "PSYCHIC",
           "TAKE_DOWN",
-          "CRUNCH"
+          "CRUNCH",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -30975,7 +31203,9 @@
           "ROCK_TOMB",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31128,7 +31358,9 @@
           "ROCK_TOMB",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31280,7 +31512,10 @@
           "DIG",
           "IRON_TAIL",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31433,7 +31668,9 @@
           "MUD_SHOT",
           "QUICK_ATTACK",
           "METAL_CLAW",
-          "SLASH"
+          "SLASH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31590,7 +31827,9 @@
           "TACKLE",
           "CRUNCH",
           "ROCK_THROW",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31742,7 +31981,8 @@
           "TACKLE",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -31894,7 +32134,9 @@
           "TACKLE",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -32051,7 +32293,8 @@
           "SLUDGE_BOMB",
           "HYDRO_PUMP",
           "TACKLE",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -32346,7 +32589,9 @@
           "DIG",
           "MUD_SHOT",
           "SLUDGE_BOMB",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -32505,7 +32750,9 @@
           "TACKLE",
           "AERIAL_ACE",
           "SLASH",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -32658,7 +32905,8 @@
           "QUICK_ATTACK",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -32810,7 +33058,9 @@
           "TAKE_DOWN",
           "LICK",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -32962,7 +33212,9 @@
           "TAKE_DOWN",
           "LICK",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33114,7 +33366,9 @@
           "FLAMETHROWER",
           "ROCK_THROW",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33267,7 +33521,9 @@
           "ROCK_THROW",
           "ROCK_TOMB",
           "FLAMETHROWER",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33419,7 +33675,10 @@
           "TACKLE",
           "BITE",
           "ROCK_TOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33571,7 +33830,10 @@
           "PECK",
           "TACKLE",
           "BITE",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33705,7 +33967,10 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -33853,7 +34118,8 @@
           "HYDRO_PUMP",
           "MUD_SHOT",
           "PSYBEAM",
-          "SEED_BOMB"
+          "SEED_BOMB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -34001,7 +34267,8 @@
           "HYDRO_PUMP",
           "MUD_SHOT",
           "PSYBEAM",
-          "SEED_BOMB"
+          "SEED_BOMB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -34158,7 +34425,8 @@
           "BRICK_BREAK",
           "WATER_PULSE",
           "SEED_BOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -34307,7 +34575,10 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "TACKLE",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -34464,7 +34735,8 @@
           "AERIAL_ACE",
           "SLASH",
           "ROCK_TOMB",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -34931,7 +35203,9 @@
           "DRAGON_PULSE",
           "HYDRO_PUMP",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -35085,7 +35359,9 @@
           "TACKLE",
           "PLAY_ROUGH",
           "IRON_TAIL",
-          "WATER_GUN"
+          "WATER_GUN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -35237,7 +35513,9 @@
           "TACKLE",
           "PLAY_ROUGH",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -35393,7 +35671,8 @@
           "AERIAL_ACE",
           "IRON_TAIL",
           "PSYBEAM",
-          "DISCHARGE"
+          "DISCHARGE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -35545,7 +35824,8 @@
           "BITE",
           "DIG",
           "IRON_TAIL",
-          "CONFUSION"
+          "CONFUSION",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -35856,7 +36136,9 @@
           "BULLET_PUNCH",
           "TACKLE",
           "TAKE_DOWN",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -36010,7 +36292,9 @@
           "CLOSE_COMBAT",
           "BULLET_PUNCH",
           "QUICK_ATTACK",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -36148,7 +36432,8 @@
           "LICK",
           "DRAINING_KISS",
           "WATER_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -36589,7 +36874,10 @@
           "PLAY_ROUGH",
           "IRON_TAIL",
           "ROCK_TOMB",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -36741,7 +37029,10 @@
           "DRAINING_KISS",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -37197,7 +37488,8 @@
           "HYDRO_PUMP",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -37354,7 +37646,10 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -37511,7 +37806,10 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -37668,7 +37966,12 @@
           "ROCK_THROW",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "TACKLE"
+          "TACKLE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -37821,7 +38124,9 @@
           "IRON_TAIL",
           "WATER_PULSE",
           "GIGA_DRAIN",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -37974,7 +38279,8 @@
           "FLAMETHROWER",
           "GIGA_DRAIN",
           "SHADOW_BALL",
-          "PSYCHIC"
+          "PSYCHIC",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -38268,7 +38574,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "ABSORB",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -38426,7 +38733,8 @@
           "GIGA_DRAIN",
           "SEED_BOMB",
           "ENERGY_BALL",
-          "LEAF_STORM"
+          "LEAF_STORM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -38582,7 +38890,10 @@
           "GIGA_DRAIN",
           "SEED_BOMB",
           "ENERGY_BALL",
-          "LEAF_STORM"
+          "LEAF_STORM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -38738,7 +39049,8 @@
           "FLAMETHROWER",
           "PECK",
           "FIRE_SPIN",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -38895,7 +39207,9 @@
           "FIRE_SPIN",
           "EMBER",
           "FLAMETHROWER",
-          "PECK"
+          "PECK",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -39052,7 +39366,10 @@
           "FIRE_SPIN",
           "EMBER",
           "AURA_SPHERE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "BLAZE_KICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -39208,7 +39525,10 @@
           "WATER_PULSE",
           "MUD_SHOT",
           "ROCK_THROW",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -39365,7 +39685,11 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "TACKLE"
+          "TACKLE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -39522,7 +39846,11 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "TACKLE"
+          "TACKLE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -39963,7 +40291,8 @@
           "DIG",
           "IRON_TAIL",
           "MUD_SHOT",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -40100,7 +40429,8 @@
           "TAKE_DOWN",
           "DIG",
           "PLAY_ROUGH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -41017,7 +41347,9 @@
           "WATER_PULSE",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -41170,7 +41502,9 @@
           "WATER_PULSE",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -41323,7 +41657,9 @@
           "WATER_PULSE",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -41628,7 +41964,8 @@
           "GIGA_DRAIN",
           "DARK_PULSE",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -41781,7 +42118,8 @@
           "GIGA_DRAIN",
           "DARK_PULSE",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -42221,7 +42559,9 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "QUICK_ATTACK",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -42374,7 +42714,9 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "QUICK_ATTACK",
-          "SEED_BOMB"
+          "SEED_BOMB",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -42997,7 +43339,8 @@
           "HYDRO_PUMP",
           "QUICK_ATTACK",
           "MUD_SHOT",
-          "PSYBEAM"
+          "PSYBEAM",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -43149,7 +43492,8 @@
           "WATER_GUN",
           "MUD_SHOT",
           "WATER_PULSE",
-          "PSYBEAM"
+          "PSYBEAM",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -43453,7 +43797,8 @@
           "SEED_BOMB",
           "GIGA_DRAIN",
           "ROCK_TOMB",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -43605,7 +43950,9 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -43757,7 +44104,10 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -43909,7 +44259,10 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -44428,7 +44781,8 @@
           "WATER_PULSE",
           "SHADOW_BALL",
           "FLAMETHROWER",
-          "QUICK_ATTACK"
+          "QUICK_ATTACK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -44563,7 +44917,10 @@
           "ROCK_TOMB",
           "WATER_PULSE",
           "SHADOW_BALL",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -44696,7 +45053,10 @@
           "CRUNCH",
           "ROCK_TOMB",
           "WATER_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -44847,7 +45207,9 @@
           "CLOSE_COMBAT",
           "BULLET_PUNCH",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -44999,7 +45361,9 @@
           "CLOSE_COMBAT",
           "TACKLE",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -45152,7 +45516,9 @@
           "IRON_TAIL",
           "WATER_GUN",
           "MUD_SHOT",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -45303,7 +45669,9 @@
           "TACKLE",
           "SPARK",
           "DISCHARGE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -45440,7 +45808,8 @@
           "PLAY_ROUGH",
           "IRON_TAIL",
           "DISARMING_VOICE",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -45577,7 +45946,8 @@
           "PLAY_ROUGH",
           "IRON_TAIL",
           "DISARMING_VOICE",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -45891,7 +46261,9 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -46048,7 +46420,9 @@
           "ROCK_TOMB",
           "TACKLE",
           "AERIAL_ACE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -46205,7 +46579,9 @@
           "ROCK_TOMB",
           "TACKLE",
           "AERIAL_ACE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -46362,7 +46738,11 @@
           "ROCK_TOMB",
           "TACKLE",
           "AERIAL_ACE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -46519,7 +46899,8 @@
           "CLOSE_COMBAT",
           "CONFUSION",
           "PSYBEAM",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -46676,7 +47057,9 @@
           "CLOSE_COMBAT",
           "CONFUSION",
           "PSYBEAM",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -47909,7 +48292,8 @@
           "WATER_PULSE",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -48065,7 +48449,9 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "GIGA_DRAIN",
-          "SEED_BOMB"
+          "SEED_BOMB",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -48222,7 +48608,8 @@
           "WATER_PULSE",
           "DARK_PULSE",
           "HYDRO_PUMP",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -48379,7 +48766,9 @@
           "WATER_PULSE",
           "DARK_PULSE",
           "HYDRO_PUMP",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -48512,7 +48901,9 @@
           "HYDRO_PUMP",
           "ROCK_TOMB",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -48652,7 +49043,9 @@
           "HYDRO_PUMP",
           "ROCK_TOMB",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -48812,7 +49205,9 @@
           "EMBER",
           "MUD_SHOT",
           "FLAMETHROWER",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -48969,7 +49364,9 @@
           "EMBER",
           "MUD_SHOT",
           "FLAMETHROWER",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -49121,7 +49518,9 @@
           "FLAMETHROWER",
           "IRON_TAIL",
           "ROCK_TOMB",
-          "SLUDGE_BOMB"
+          "SLUDGE_BOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -49566,7 +49965,8 @@
           "DRAIN_PUNCH",
           "DIG",
           "ROCK_TOMB",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -49718,7 +50118,9 @@
           "QUICK_ATTACK",
           "BITE",
           "CRUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -49871,7 +50273,10 @@
           "DRAGON_PULSE",
           "QUICK_ATTACK",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -50024,7 +50429,10 @@
           "DRAGON_PULSE",
           "QUICK_ATTACK",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -50486,7 +50894,8 @@
           "TAKE_DOWN",
           "PLAY_ROUGH",
           "DISARMING_VOICE",
-          "DRAGON_PULSE"
+          "DRAGON_PULSE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -50643,7 +51052,10 @@
           "DRAGON_PULSE",
           "PLAY_ROUGH",
           "IRON_TAIL",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -50799,7 +51211,9 @@
           "TAKE_DOWN",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -50955,7 +51369,8 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -51077,7 +51492,10 @@
           "ROCK_TOMB",
           "PSYCHIC",
           "TACKLE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -51199,7 +51617,9 @@
           "ROCK_TOMB",
           "PSYCHIC",
           "TACKLE",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -51352,7 +51772,11 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "ROCK_TOMB",
-          "SPARK"
+          "SPARK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -51505,7 +51929,11 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "ROCK_TOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -51657,7 +52085,10 @@
           "HYDRO_PUMP",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -51810,7 +52241,10 @@
           "WATER_PULSE",
           "DARK_PULSE",
           "HYDRO_PUMP",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -51936,7 +52370,10 @@
           "PSYBEAM",
           "PSYCHIC",
           "ROCK_TOMB",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -52062,7 +52499,10 @@
           "PSYBEAM",
           "PSYCHIC",
           "ROCK_TOMB",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -52196,7 +52636,8 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "MUD_SHOT",
-          "SLUDGE_BOMB"
+          "SLUDGE_BOMB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -52330,7 +52771,9 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -52464,7 +52907,8 @@
           "AERIAL_ACE",
           "SLASH",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -52598,7 +53042,9 @@
           "AERIAL_ACE",
           "SLASH",
           "BRICK_BREAK",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -52754,7 +53200,9 @@
           "IRON_TAIL",
           "MUD_SHOT",
           "DRAGON_PULSE",
-          "WATER_GUN"
+          "WATER_GUN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -52912,7 +53360,9 @@
           "HYDRO_PUMP",
           "TACKLE",
           "DRAINING_KISS",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -53031,7 +53481,8 @@
           "WATER_GUN",
           "WATER_PULSE",
           "SHADOW_BALL",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -53187,7 +53638,9 @@
           "AERIAL_ACE",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -53651,7 +54104,8 @@
           "DARK_PULSE",
           "PSYCHIC",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -53806,7 +54260,10 @@
           "ABSORB",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -53959,7 +54416,8 @@
           "GIGA_DRAIN",
           "SEED_BOMB",
           "ENERGY_BALL",
-          "LEAF_STORM"
+          "LEAF_STORM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -54271,7 +54729,9 @@
           "QUICK_ATTACK",
           "AERIAL_ACE",
           "SLASH",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -54571,7 +55031,8 @@
           "WATER_PULSE",
           "SHADOW_BALL",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -54729,7 +55190,9 @@
           "WATER_PULSE",
           "DARK_PULSE",
           "SHADOW_BALL",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -54878,7 +55341,10 @@
           "IRON_TAIL",
           "ROCK_TOMB",
           "HYDRO_PUMP",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -55030,7 +55496,10 @@
           "IRON_TAIL",
           "ROCK_TOMB",
           "HYDRO_PUMP",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -55182,7 +55651,10 @@
           "HYDRO_PUMP",
           "CRUNCH",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -55298,7 +55770,9 @@
           "HYDRO_PUMP",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -55436,7 +55910,8 @@
           "HYDRO_PUMP",
           "BITE",
           "CRUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -55569,7 +56044,8 @@
           "HYDRO_PUMP",
           "DRAINING_KISS",
           "CONFUSION",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -55703,7 +56179,11 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "TACKLE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -55855,7 +56335,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "DRAINING_KISS",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -56011,7 +56492,9 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -56167,7 +56650,9 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -56324,7 +56809,10 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -56643,7 +57131,9 @@
           "CONFUSION",
           "PSYCHIC",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -56800,7 +57290,9 @@
           "CONFUSION",
           "PSYCHIC",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -56951,7 +57443,9 @@
           "BRICK_BREAK",
           "DRAIN_PUNCH",
           "DIG",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -57102,7 +57596,10 @@
           "THUNDERBOLT",
           "THUNDER",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -57256,7 +57753,9 @@
           "BRICK_BREAK",
           "ROCK_TOMB",
           "TAKE_DOWN",
-          "THUNDERBOLT"
+          "THUNDERBOLT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -57413,7 +57912,10 @@
           "PSYCHIC",
           "DRAINING_KISS",
           "AERIAL_ACE",
-          "DISARMING_VOICE"
+          "DISARMING_VOICE",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -57570,7 +58072,10 @@
           "PSYCHIC",
           "AERIAL_ACE",
           "WATER_PULSE",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -57734,7 +58239,11 @@
           "BRICK_BREAK",
           "ROCK_TOMB",
           "TAKE_DOWN",
-          "THUNDERBOLT"
+          "THUNDERBOLT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -57898,7 +58407,10 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -58063,7 +58575,11 @@
           "BRICK_BREAK",
           "CRUNCH",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -58368,7 +58884,9 @@
           "AERIAL_ACE",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -58825,7 +59343,9 @@
           "MUD_SHOT",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -58977,7 +59497,9 @@
           "FLAMETHROWER",
           "TACKLE",
           "AERIAL_ACE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -59130,7 +59652,8 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "FIRE_SPIN",
-          "EMBER"
+          "EMBER",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -59283,7 +59806,10 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "FIRE_SPIN",
-          "EMBER"
+          "EMBER",
+          "BLAZE_KICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -59435,7 +59961,8 @@
           "HYDRO_PUMP",
           "PECK",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -59587,7 +60114,8 @@
           "HYDRO_PUMP",
           "PECK",
           "TACKLE",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -59740,7 +60268,10 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "PECK",
-          "TACKLE"
+          "TACKLE",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -60217,7 +60748,8 @@
           "AERIAL_ACE",
           "TAKE_DOWN",
           "BRICK_BREAK",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -60365,7 +60897,8 @@
           "TAKE_DOWN",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -60514,7 +61047,8 @@
           "WATER_PULSE",
           "TAKE_DOWN",
           "BITE",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -61745,7 +62279,10 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -61897,7 +62434,11 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -62050,7 +62591,10 @@
           "TACKLE",
           "DIG",
           "FLAMETHROWER",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -62203,7 +62747,10 @@
           "TACKLE",
           "DIG",
           "FLAMETHROWER",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -63274,7 +63821,8 @@
           "HYDRO_PUMP",
           "QUICK_ATTACK",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -63426,7 +63974,9 @@
           "HYDRO_PUMP",
           "QUICK_ATTACK",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -63873,7 +64423,10 @@
           "HYDRO_PUMP",
           "TACKLE",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -64025,7 +64578,11 @@
           "MUD_SHOT",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "TACKLE"
+          "TACKLE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -64639,7 +65196,8 @@
           "DRAIN_PUNCH",
           "DIG",
           "PLAY_ROUGH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -64795,7 +65353,8 @@
           "DRAINING_KISS",
           "DRAIN_PUNCH",
           "DIG",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -66013,7 +66572,9 @@
           "TACKLE",
           "ROCK_TOMB",
           "SHADOW_BALL",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -66166,7 +66727,9 @@
           "PSYCHIC",
           "TACKLE",
           "ROCK_TOMB",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -66318,7 +66881,9 @@
           "TACKLE",
           "BRICK_BREAK",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67089,7 +67654,10 @@
           "DRAGON_PULSE",
           "TACKLE",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67245,7 +67813,10 @@
           "DRAGON_PULSE",
           "TACKLE",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67402,7 +67973,10 @@
           "DRAGON_PULSE",
           "TACKLE",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67554,7 +68128,10 @@
           "LICK",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67710,7 +68287,10 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "BULLET_PUNCH",
-          "QUICK_ATTACK"
+          "QUICK_ATTACK",
+          "BLAZE_KICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -67867,7 +68447,10 @@
           "METAL_CLAW",
           "DRAGON_PULSE",
           "BULLET_PUNCH",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "BLAZE_KICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -68023,7 +68606,10 @@
           "TACKLE",
           "BITE",
           "CRUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -68179,7 +68765,10 @@
           "TACKLE",
           "BITE",
           "CRUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -68477,7 +69066,9 @@
           "DARK_PULSE",
           "SLUDGE_BOMB",
           "AERIAL_ACE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -68630,7 +69221,9 @@
           "CLOSE_COMBAT",
           "SLUDGE_BOMB",
           "BULLET_PUNCH",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -68783,7 +69376,9 @@
           "CLOSE_COMBAT",
           "SLUDGE_BOMB",
           "BULLET_PUNCH",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -69083,7 +69678,8 @@
           "HYDRO_PUMP",
           "PSYBEAM",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -69237,7 +69833,8 @@
           "HYDRO_PUMP",
           "PSYBEAM",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -69388,7 +69985,10 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "TACKLE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -69545,7 +70145,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "IRON_TAIL",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -69702,7 +70303,10 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "BRICK_BREAK",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -69855,7 +70459,8 @@
           "QUICK_ATTACK",
           "METAL_CLAW",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -70156,7 +70761,11 @@
           "BRICK_BREAK",
           "DIG",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -70309,7 +70918,10 @@
           "ROCK_TOMB",
           "TACKLE",
           "METAL_CLAW",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -70457,7 +71069,9 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -70609,7 +71223,9 @@
           "THUNDERBOLT",
           "THUNDER",
           "QUICK_ATTACK",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -70761,7 +71377,9 @@
           "FLAMETHROWER",
           "MACH_PUNCH",
           "TACKLE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -71375,7 +71993,8 @@
           "BITE",
           "DIG",
           "IRON_TAIL",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -71528,7 +72147,9 @@
           "MUD_SHOT",
           "QUICK_ATTACK",
           "METAL_CLAW",
-          "SLASH"
+          "SLASH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -71681,7 +72302,10 @@
           "PECK",
           "TACKLE",
           "BITE",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -71837,7 +72461,8 @@
           "AERIAL_ACE",
           "IRON_TAIL",
           "PSYBEAM",
-          "SPARK"
+          "SPARK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -71994,7 +72619,9 @@
           "CLOSE_COMBAT",
           "CONFUSION",
           "PSYBEAM",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -72147,7 +72774,9 @@
           "TACKLE",
           "SPARK",
           "DISCHARGE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -72299,7 +72928,10 @@
           "ABSORB",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -72456,7 +73088,8 @@
           "BITE",
           "CRUNCH",
           "WATER_PULSE",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -72919,7 +73552,8 @@
           "PSYCHIC",
           "DRAINING_KISS",
           "DRAIN_PUNCH",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -73224,7 +73858,11 @@
           "DRAGON_PULSE",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -73377,7 +74015,11 @@
           "HYDRO_PUMP",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -73534,7 +74176,9 @@
           "EMBER",
           "FLAMETHROWER",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -73686,7 +74330,9 @@
           "BRICK_BREAK",
           "DRAIN_PUNCH",
           "ROCK_TOMB",
-          "THUNDERBOLT"
+          "THUNDERBOLT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -73839,7 +74485,9 @@
           "AERIAL_ACE",
           "SLASH",
           "IRON_TAIL",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -73991,7 +74639,8 @@
           "PSYCHIC",
           "TACKLE",
           "SLASH",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -74143,7 +74792,8 @@
           "HYDRO_PUMP",
           "DISARMING_VOICE",
           "CONFUSION",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -74297,7 +74947,8 @@
           "HYDRO_PUMP",
           "DISARMING_VOICE",
           "CONFUSION",
-          "PSYBEAM"
+          "PSYBEAM",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -74461,7 +75112,9 @@
           "AERIAL_ACE",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -74765,7 +75418,11 @@
           "AERIAL_ACE",
           "BRICK_BREAK",
           "IRON_TAIL",
-          "CONFUSION"
+          "CONFUSION",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -75534,7 +76191,8 @@
           "CLOSE_COMBAT",
           "FIRE_SPIN",
           "EMBER",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -75691,7 +76349,9 @@
           "CLOSE_COMBAT",
           "FIRE_SPIN",
           "EMBER",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -75843,7 +76503,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -75995,7 +76656,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -76147,7 +76809,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -77083,7 +77746,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "LICK",
-          "BITE"
+          "BITE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -77395,7 +78059,9 @@
           "LICK",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -77551,7 +78217,8 @@
           "HYDRO_PUMP",
           "LICK",
           "BITE",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -77707,7 +78374,9 @@
           "LICK",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -77863,7 +78532,8 @@
           "ROCK_TOMB",
           "SHADOW_BALL",
           "ENERGY_BALL",
-          "CONFUSION"
+          "CONFUSION",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -78021,7 +78691,8 @@
           "ROCK_TOMB",
           "SHADOW_BALL",
           "ENERGY_BALL",
-          "CONFUSION"
+          "CONFUSION",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -78883,7 +79554,9 @@
           "TAKE_DOWN",
           "ROCK_THROW",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -79020,7 +79693,9 @@
           "ROCK_THROW",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -79158,7 +79833,9 @@
           "ROCK_THROW",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -79595,7 +80272,9 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -79752,7 +80431,9 @@
           "MUD_SHOT",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -79908,7 +80589,8 @@
           "DRAIN_PUNCH",
           "DIG",
           "IRON_TAIL",
-          "DISARMING_VOICE"
+          "DISARMING_VOICE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -80060,7 +80742,8 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "DIG",
-          "ROCK_THROW"
+          "ROCK_THROW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -80212,7 +80895,8 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "DIG",
-          "ROCK_THROW"
+          "ROCK_THROW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -80364,7 +81048,9 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "DIG",
-          "ROCK_THROW"
+          "ROCK_THROW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -80484,7 +81170,8 @@
           "MUD_SHOT",
           "SLUDGE_BOMB",
           "WATER_GUN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -80625,7 +81312,8 @@
           "HYDRO_PUMP",
           "SLUDGE_BOMB",
           "WATER_GUN",
-          "DIG"
+          "DIG",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -80766,7 +81454,10 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -80922,7 +81613,9 @@
           "ROCK_TOMB",
           "MACH_PUNCH",
           "DRAIN_PUNCH",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -81082,7 +81775,9 @@
           "DIG",
           "ROCK_TOMB",
           "MACH_PUNCH",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -82027,7 +82722,9 @@
           "DIG",
           "IRON_TAIL",
           "ROCK_TOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -82792,7 +83489,9 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "CRUNCH"
+          "CRUNCH",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -82949,7 +83648,9 @@
           "DIG",
           "MUD_SHOT",
           "DARK_PULSE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -83106,7 +83807,10 @@
           "DIG",
           "MUD_SHOT",
           "DARK_PULSE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -83263,7 +83967,10 @@
           "DIG",
           "MUD_SHOT",
           "DARK_PULSE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -83400,7 +84107,8 @@
           "FLAMETHROWER",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -83537,7 +84245,9 @@
           "FLAMETHROWER",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -83812,7 +84522,9 @@
           "SLASH",
           "DIG",
           "ROCK_THROW",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -83953,7 +84665,9 @@
           "SLASH",
           "DIG",
           "ROCK_THROW",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -84113,7 +84827,9 @@
           "CRUNCH",
           "CLOSE_COMBAT",
           "DARK_PULSE",
-          "DIG"
+          "DIG",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -84270,7 +84986,9 @@
           "CRUNCH",
           "CLOSE_COMBAT",
           "DARK_PULSE",
-          "DIG"
+          "DIG",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -84408,7 +85126,8 @@
           "PSYBEAM",
           "PSYCHIC",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -85796,7 +86515,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -85948,7 +86668,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -86100,7 +86821,8 @@
           "PSYCHIC",
           "BRICK_BREAK",
           "ROCK_TOMB",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -86251,7 +86973,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "SHADOW_BALL",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -86403,7 +87126,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "SHADOW_BALL",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -86554,7 +87278,8 @@
           "PSYCHIC",
           "DRAIN_PUNCH",
           "ROCK_TOMB",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -86707,7 +87432,8 @@
           "WATER_PULSE",
           "DISARMING_VOICE",
           "PECK",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -86863,7 +87589,8 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "DISARMING_VOICE",
-          "PECK"
+          "PECK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -87021,7 +87748,8 @@
           "LICK",
           "FIRE_SPIN",
           "PECK",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -87183,7 +87911,8 @@
           "LICK",
           "FIRE_SPIN",
           "PECK",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -87345,7 +88074,8 @@
           "LICK",
           "FIRE_SPIN",
           "PECK",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -88521,7 +89251,8 @@
           "SHADOW_BALL",
           "HYDRO_PUMP",
           "ABSORB",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -88655,7 +89386,9 @@
           "SHADOW_BALL",
           "HYDRO_PUMP",
           "ABSORB",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -88807,7 +89540,8 @@
           "PLAY_ROUGH",
           "SHADOW_BALL",
           "PSYCHIC",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -90283,7 +91017,10 @@
           "THUNDER",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "CRUNCH"
+          "CRUNCH",
+          "MUDDY_WATER",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -90398,7 +91135,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -90531,7 +91269,8 @@
           "PSYCHIC",
           "ROCK_TOMB",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -91154,7 +91893,8 @@
           "BITE",
           "SLASH",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -91306,7 +92046,8 @@
           "BITE",
           "SLASH",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -91458,7 +92199,10 @@
           "BITE",
           "SLASH",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -91610,7 +92354,9 @@
           "SLASH",
           "CRUNCH",
           "DIG",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -91762,7 +92508,10 @@
           "SLASH",
           "BRICK_BREAK",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -91918,7 +92667,8 @@
           "TAKE_DOWN",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -92347,7 +93097,10 @@
           "SPARK",
           "DISCHARGE",
           "THUNDERBOLT",
-          "THUNDER"
+          "THUNDER",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -92499,7 +93252,8 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "AERIAL_ACE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -92651,7 +93405,9 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "AERIAL_ACE",
-          "DIG"
+          "DIG",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -92808,7 +93564,10 @@
           "BRICK_BREAK",
           "DRAIN_PUNCH",
           "ROCK_TOMB",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -92965,7 +93724,10 @@
           "BRICK_BREAK",
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -93424,7 +94186,8 @@
           "AERIAL_ACE",
           "SLASH",
           "TAKE_DOWN",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -93577,7 +94340,8 @@
           "SLASH",
           "TAKE_DOWN",
           "METAL_CLAW",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -94154,7 +94918,8 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -94612,7 +95377,9 @@
           "DARK_PULSE",
           "DRAGON_PULSE",
           "TACKLE",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -95232,7 +95999,9 @@
           "ROCK_TOMB",
           "AURA_SPHERE",
           "QUICK_ATTACK",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -95847,7 +96616,9 @@
           "FLAMETHROWER",
           "SLASH",
           "CRUNCH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -96000,7 +96771,9 @@
           "THUNDER",
           "SLASH",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -96153,7 +96926,9 @@
           "TACKLE",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -96306,7 +97081,10 @@
           "SLASH",
           "ROCK_TOMB",
           "SHADOW_BALL",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -96463,7 +97241,8 @@
           "WATER_PULSE",
           "AURA_SPHERE",
           "HYDRO_PUMP",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -96777,7 +97556,9 @@
           "AERIAL_ACE",
           "SLASH",
           "GIGA_DRAIN",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "BLAZE_KICK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -96933,7 +97714,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "TACKLE",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -97089,7 +97871,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "TACKLE",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -97246,7 +98029,10 @@
           "CLOSE_COMBAT",
           "GIGA_DRAIN",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -97871,7 +98657,9 @@
           "HYDRO_PUMP",
           "LICK",
           "QUICK_ATTACK",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -98027,7 +98815,9 @@
           "HYDRO_PUMP",
           "LICK",
           "QUICK_ATTACK",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -98184,7 +98974,9 @@
           "DARK_PULSE",
           "HYDRO_PUMP",
           "LICK",
-          "QUICK_ATTACK"
+          "QUICK_ATTACK",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -98340,7 +99132,9 @@
           "TAKE_DOWN",
           "BRICK_BREAK",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -98497,7 +99291,9 @@
           "DIG",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -98968,7 +99764,8 @@
           "FIRE_SPIN",
           "EMBER",
           "FLAMETHROWER",
-          "QUICK_ATTACK"
+          "QUICK_ATTACK",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -100388,7 +101185,8 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -100544,7 +101342,9 @@
           "SEED_BOMB",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -100700,7 +101500,8 @@
           "TACKLE",
           "AERIAL_ACE",
           "SLASH",
-          "CRUNCH"
+          "CRUNCH",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -100857,7 +101658,10 @@
           "CRUNCH",
           "CLOSE_COMBAT",
           "DARK_PULSE",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -101482,7 +102286,8 @@
           "SLASH",
           "BRICK_BREAK",
           "CLOSE_COMBAT",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -101641,7 +102446,8 @@
           "SLASH",
           "BRICK_BREAK",
           "CLOSE_COMBAT",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -101800,7 +102606,8 @@
           "AERIAL_ACE",
           "SLASH",
           "BRICK_BREAK",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -102583,7 +103390,8 @@
           "PSYCHIC",
           "PECK",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -102740,7 +103548,8 @@
           "PSYCHIC",
           "PECK",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -102897,7 +103706,10 @@
           "WATER_PULSE",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -103054,7 +103866,12 @@
           "WATER_PULSE",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -103211,7 +104028,8 @@
           "SLUDGE_BOMB",
           "HYDRO_PUMP",
           "TACKLE",
-          "PLAY_ROUGH"
+          "PLAY_ROUGH",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -103368,7 +104186,8 @@
           "TACKLE",
           "PLAY_ROUGH",
           "IRON_TAIL",
-          "WATER_GUN"
+          "WATER_GUN",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -103524,7 +104343,10 @@
           "HYDRO_PUMP",
           "IRON_TAIL",
           "MUD_SHOT",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -103680,7 +104502,10 @@
           "HYDRO_PUMP",
           "IRON_TAIL",
           "MUD_SHOT",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -103837,7 +104662,8 @@
           "THUNDER",
           "DIG",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -103994,7 +104820,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -104151,7 +104978,10 @@
           "DRAGON_PULSE",
           "TACKLE",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -104308,7 +105138,10 @@
           "TACKLE",
           "AERIAL_ACE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -104465,7 +105298,9 @@
           "IRON_TAIL",
           "MUD_SHOT",
           "WATER_PULSE",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -104622,7 +105457,10 @@
           "IRON_TAIL",
           "MUD_SHOT",
           "WATER_PULSE",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -104935,7 +105773,8 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -105249,7 +106088,8 @@
           "TACKLE",
           "PSYCHIC",
           "TAKE_DOWN",
-          "DISARMING_VOICE"
+          "DISARMING_VOICE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -105407,7 +106247,9 @@
           "IRON_TAIL",
           "ABSORB",
           "WATER_GUN",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -105563,7 +106405,10 @@
           "IRON_TAIL",
           "ABSORB",
           "WATER_GUN",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -105719,7 +106564,12 @@
           "IRON_TAIL",
           "ABSORB",
           "WATER_GUN",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -106036,7 +106886,8 @@
           "SHADOW_BALL",
           "ENERGY_BALL",
           "TACKLE",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -106193,7 +107044,9 @@
           "SHADOW_BALL",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -106350,7 +107203,8 @@
           "SHADOW_BALL",
           "ENERGY_BALL",
           "DARK_PULSE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -106507,7 +107361,8 @@
           "SHADOW_BALL",
           "ENERGY_BALL",
           "DARK_PULSE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -106663,7 +107518,9 @@
           "CRUNCH",
           "ROCK_TOMB",
           "WATER_PULSE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -106819,7 +107676,10 @@
           "CRUNCH",
           "ROCK_TOMB",
           "WATER_PULSE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -106976,7 +107836,8 @@
           "TACKLE",
           "BITE",
           "BRICK_BREAK",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -107133,7 +107994,8 @@
           "TACKLE",
           "BITE",
           "BRICK_BREAK",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -107289,7 +108151,8 @@
           "TACKLE",
           "CLOSE_COMBAT",
           "PSYCHIC",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -107454,7 +108317,9 @@
           "SHADOW_BALL",
           "PSYCHIC",
           "PECK",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -107622,7 +108487,9 @@
           "BITE",
           "BRICK_BREAK",
           "CRUNCH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -107779,7 +108646,8 @@
           "ROCK_THROW",
           "ROCK_TOMB",
           "TACKLE",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -108093,7 +108961,9 @@
           "WATER_PULSE",
           "FLAMETHROWER",
           "HYDRO_PUMP",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -109009,7 +109879,9 @@
           "FIRE_SPIN",
           "EMBER",
           "DARK_PULSE",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "BLAZE_KICK",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -109161,7 +110033,8 @@
           "HYDRO_PUMP",
           "DRAINING_KISS",
           "PLAY_ROUGH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -109313,7 +110186,8 @@
           "HYDRO_PUMP",
           "DRAINING_KISS",
           "PLAY_ROUGH",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -109466,7 +110340,8 @@
           "DISARMING_VOICE",
           "WATER_GUN",
           "WATER_PULSE",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -110084,7 +110959,8 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -110236,7 +111112,8 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -110850,7 +111727,9 @@
           "CLOSE_COMBAT",
           "DIG",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -111007,7 +111886,10 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -111622,7 +112504,8 @@
           "TACKLE",
           "BITE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -111774,7 +112657,8 @@
           "QUICK_ATTACK",
           "TACKLE",
           "BITE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -111907,7 +112791,10 @@
           "HYDRO_PUMP",
           "IRON_TAIL",
           "MUD_SHOT",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -112060,7 +112947,9 @@
           "HYDRO_PUMP",
           "PECK",
           "BITE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -112213,7 +113102,9 @@
           "HYDRO_PUMP",
           "PECK",
           "BITE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -112364,7 +113255,9 @@
           "TAKE_DOWN",
           "MUD_SHOT",
           "DIG",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -112520,7 +113413,9 @@
           "ROCK_TOMB",
           "TAKE_DOWN",
           "DIG",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -112676,7 +113571,8 @@
           "HYDRO_PUMP",
           "BITE",
           "CRUNCH",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -112829,7 +113725,8 @@
           "HYDRO_PUMP",
           "BITE",
           "CRUNCH",
-          "GIGA_DRAIN"
+          "GIGA_DRAIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -113562,7 +114459,8 @@
           "SLUDGE_BOMB",
           "IRON_TAIL",
           "DRAGON_PULSE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -113715,7 +114613,8 @@
           "SLUDGE_BOMB",
           "IRON_TAIL",
           "DRAGON_PULSE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -113845,7 +114744,9 @@
           "TAKE_DOWN",
           "AERIAL_ACE",
           "ROCK_TOMB",
-          "MACH_PUNCH"
+          "MACH_PUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -113985,7 +114886,10 @@
           "DRAIN_PUNCH",
           "CLOSE_COMBAT",
           "TAKE_DOWN",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -114746,7 +115650,9 @@
           "PSYCHIC",
           "TAKE_DOWN",
           "BRICK_BREAK",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -114898,7 +115804,9 @@
           "CLOSE_COMBAT",
           "QUICK_ATTACK",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -115217,7 +116125,10 @@
           "SLASH",
           "BRICK_BREAK",
           "CLOSE_COMBAT",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -115374,7 +116285,9 @@
           "ABSORB",
           "ROCK_TOMB",
           "GIGA_DRAIN",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -115531,7 +116444,9 @@
           "ABSORB",
           "ROCK_TOMB",
           "GIGA_DRAIN",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -115812,7 +116727,9 @@
           "AERIAL_ACE",
           "QUICK_ATTACK",
           "SLASH",
-          "ABSORB"
+          "ABSORB",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -115953,7 +116870,10 @@
           "AERIAL_ACE",
           "BITE",
           "CRUNCH",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -116106,7 +117026,9 @@
           "PSYCHIC",
           "TAKE_DOWN",
           "PECK",
-          "ROCK_THROW"
+          "ROCK_THROW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -116260,7 +117182,9 @@
           "BRICK_BREAK",
           "PLAY_ROUGH",
           "ROCK_TOMB",
-          "SEED_BOMB"
+          "SEED_BOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -116398,7 +117322,9 @@
           "DRAGON_PULSE",
           "FLAMETHROWER",
           "TACKLE",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -116846,7 +117772,8 @@
           "WATER_PULSE",
           "PSYCHIC",
           "HYDRO_PUMP",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -117003,7 +117930,11 @@
           "WATER_PULSE",
           "SHADOW_BALL",
           "ENERGY_BALL",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -117141,7 +118072,10 @@
           "SHADOW_BALL",
           "ENERGY_BALL",
           "AERIAL_ACE",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -117293,7 +118227,10 @@
           "AERIAL_ACE",
           "BRICK_BREAK",
           "IRON_TAIL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -117446,7 +118383,10 @@
           "CLOSE_COMBAT",
           "DRAGON_PULSE",
           "TACKLE",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -117599,7 +118539,10 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "DRAGON_PULSE",
-          "TACKLE"
+          "TACKLE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -118070,7 +119013,9 @@
           "PSYCHIC",
           "CRUNCH",
           "CLOSE_COMBAT",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -118223,7 +119168,8 @@
           "PSYCHIC",
           "AERIAL_ACE",
           "THUNDERBOLT",
-          "THUNDER"
+          "THUNDER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -118375,7 +119321,9 @@
           "METAL_CLAW",
           "AERIAL_ACE",
           "SLASH",
-          "BRICK_BREAK"
+          "BRICK_BREAK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -118532,7 +119480,8 @@
           "DISARMING_VOICE",
           "BRICK_BREAK",
           "PSYBEAM",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -118689,7 +119638,9 @@
           "CLOSE_COMBAT",
           "AURA_SPHERE",
           "SHADOW_BALL",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "BLAZE_KICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -118845,7 +119796,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "QUICK_ATTACK",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -119163,7 +120115,10 @@
           "DISCHARGE",
           "THUNDERBOLT",
           "THUNDER",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -119621,7 +120576,8 @@
           "ENERGY_BALL",
           "LEAF_STORM",
           "BRICK_BREAK",
-          "DRAIN_PUNCH"
+          "DRAIN_PUNCH",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -119773,7 +120729,8 @@
           "FLAMETHROWER",
           "QUICK_ATTACK",
           "TACKLE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -119925,7 +120882,8 @@
           "FLAMETHROWER",
           "QUICK_ATTACK",
           "TACKLE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -120077,7 +121035,8 @@
           "FLAMETHROWER",
           "QUICK_ATTACK",
           "TACKLE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "BLAZE_KICK"
         ]
       },
       "testOnlyMoves": [],
@@ -120229,7 +121188,8 @@
           "HYDRO_PUMP",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -120383,7 +121343,8 @@
           "HYDRO_PUMP",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -120537,7 +121498,9 @@
           "HYDRO_PUMP",
           "MUD_SHOT",
           "DARK_PULSE",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -120841,7 +121804,8 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -122925,7 +123889,11 @@
           "WATER_PULSE",
           "HYDRO_PUMP",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -123351,7 +124319,8 @@
           "DIG",
           "TAKE_DOWN",
           "ROCK_THROW",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -123507,7 +124476,8 @@
           "FLAMETHROWER",
           "TACKLE",
           "DIG",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -123660,7 +124630,9 @@
           "FLAMETHROWER",
           "TACKLE",
           "DIG",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -124126,7 +125098,8 @@
           "DRAGON_PULSE",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -124278,7 +125251,9 @@
           "ROCK_TOMB",
           "TAKE_DOWN",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -124433,7 +125408,9 @@
           "ROCK_TOMB",
           "TAKE_DOWN",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -124589,7 +125566,8 @@
           "WATER_GUN",
           "WATER_PULSE",
           "HYDRO_PUMP",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -124893,7 +125871,8 @@
           "PECK",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -125651,7 +126630,8 @@
           "MUD_SHOT",
           "MACH_PUNCH",
           "DRAIN_PUNCH",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -125811,7 +126791,8 @@
           "CLOSE_COMBAT",
           "DIG",
           "MUD_SHOT",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -127170,7 +128151,8 @@
           "LICK",
           "BRICK_BREAK",
           "DIG",
-          "IRON_TAIL"
+          "IRON_TAIL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -127463,7 +128445,10 @@
           "DIG",
           "ROCK_TOMB",
           "GIGA_DRAIN",
-          "PSYCHIC"
+          "PSYCHIC",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -127779,7 +128764,8 @@
           "PSYCHIC",
           "BRICK_BREAK",
           "DRAIN_PUNCH",
-          "SHADOW_BALL"
+          "SHADOW_BALL",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -127936,7 +128922,9 @@
           "GIGA_DRAIN",
           "DARK_PULSE",
           "DRAGON_PULSE",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -128400,7 +129388,8 @@
           "TACKLE",
           "ROCK_TOMB",
           "SEED_BOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -128552,7 +129541,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "PECK",
-          "WATER_GUN"
+          "WATER_GUN",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -128864,7 +129854,8 @@
           "TAKE_DOWN",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -129019,7 +130010,9 @@
           "TAKE_DOWN",
           "ABSORB",
           "LICK",
-          "FIRE_SPIN"
+          "FIRE_SPIN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -129175,7 +130168,8 @@
           "TAKE_DOWN",
           "HYDRO_PUMP",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -129644,7 +130638,9 @@
           "DIG",
           "PLAY_ROUGH",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -129796,7 +130792,9 @@
           "DIG",
           "PLAY_ROUGH",
           "MUD_SHOT",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -129934,7 +130932,10 @@
           "THUNDERBOLT",
           "THUNDER",
           "TACKLE",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -130072,7 +131073,9 @@
           "THUNDER",
           "IRON_TAIL",
           "ROCK_TOMB",
-          "HYDRO_PUMP"
+          "HYDRO_PUMP",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -130210,7 +131213,9 @@
           "HYDRO_PUMP",
           "TACKLE",
           "BITE",
-          "CRUNCH"
+          "CRUNCH",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -130348,7 +131353,9 @@
           "BITE",
           "CRUNCH",
           "ROCK_TOMB",
-          "WATER_PULSE"
+          "WATER_PULSE",
+          "ICE_BEAM",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -130503,7 +131510,9 @@
           "SLASH",
           "BRICK_BREAK",
           "ROCK_TOMB",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -130967,7 +131976,8 @@
           "QUICK_ATTACK",
           "BITE",
           "FLAMETHROWER",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -131729,7 +132739,8 @@
           "CRUNCH",
           "CLOSE_COMBAT",
           "AURA_SPHERE",
-          "DARK_PULSE"
+          "DARK_PULSE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -131882,7 +132893,8 @@
           "GIGA_DRAIN",
           "DARK_PULSE",
           "SEED_BOMB",
-          "ENERGY_BALL"
+          "ENERGY_BALL",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -132190,7 +133202,9 @@
           "CRUNCH",
           "TAKE_DOWN",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -132345,7 +133359,8 @@
           "CLOSE_COMBAT",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -132805,7 +133820,8 @@
           "PSYBEAM",
           "PSYCHIC",
           "TAKE_DOWN",
-          "BITE"
+          "BITE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -132962,7 +133978,8 @@
           "AERIAL_ACE",
           "SLASH",
           "BRICK_BREAK",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -133115,7 +134132,9 @@
           "DIG",
           "TAKE_DOWN",
           "LICK",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -133268,7 +134287,9 @@
           "SHADOW_BALL",
           "HYDRO_PUMP",
           "TACKLE",
-          "BITE"
+          "BITE",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -133421,7 +134442,8 @@
           "SLUDGE_BOMB",
           "QUICK_ATTACK",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -133578,7 +134600,8 @@
           "DARK_PULSE",
           "SLUDGE_BOMB",
           "TACKLE",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -134645,7 +135668,8 @@
           "EMBER",
           "SHADOW_BALL",
           "FLAMETHROWER",
-          "TACKLE"
+          "TACKLE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -137876,7 +138900,9 @@
           "DIG",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -138034,7 +139060,9 @@
           "DIG",
           "MUD_SHOT",
           "TAKE_DOWN",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -138192,7 +139220,9 @@
           "TACKLE",
           "BRICK_BREAK",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -138665,7 +139695,8 @@
           "SHADOW_BALL",
           "FLAMETHROWER",
           "BRICK_BREAK",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -138817,7 +139848,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "TACKLE",
-          "WATER_GUN"
+          "WATER_GUN",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -138969,7 +140001,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "TACKLE",
-          "WATER_GUN"
+          "WATER_GUN",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [],
@@ -140667,7 +141700,8 @@
           "METAL_CLAW",
           "BRICK_BREAK",
           "DIG",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -141746,7 +142780,8 @@
           "PLAY_ROUGH",
           "ROCK_TOMB",
           "BULLET_PUNCH",
-          "DISARMING_VOICE"
+          "DISARMING_VOICE",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -141906,7 +142941,8 @@
           "PLAY_ROUGH",
           "BRICK_BREAK",
           "ROCK_TOMB",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -142065,7 +143101,8 @@
           "PLAY_ROUGH",
           "BRICK_BREAK",
           "ROCK_TOMB",
-          "BULLET_PUNCH"
+          "BULLET_PUNCH",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -142219,7 +143256,9 @@
           "HYDRO_PUMP",
           "DIG",
           "MUD_SHOT",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -142371,7 +143410,9 @@
           "HYDRO_PUMP",
           "DIG",
           "MUD_SHOT",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -142524,7 +143565,8 @@
           "DARK_PULSE",
           "ROCK_THROW",
           "ROCK_TOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [],
@@ -142676,7 +143718,8 @@
           "HYDRO_PUMP",
           "DRAINING_KISS",
           "DISARMING_VOICE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -142828,7 +143871,8 @@
           "HYDRO_PUMP",
           "DRAINING_KISS",
           "DRAIN_PUNCH",
-          "CLOSE_COMBAT"
+          "CLOSE_COMBAT",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -143299,7 +144343,8 @@
           "DRAGON_PULSE",
           "TAKE_DOWN",
           "AERIAL_ACE",
-          "BITE"
+          "BITE",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -143451,7 +144496,9 @@
           "DIG",
           "MUD_SHOT",
           "ROCK_TOMB",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -143608,7 +144655,8 @@
           "SLUDGE_BOMB",
           "MUD_SHOT",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -143768,7 +144816,8 @@
           "SLUDGE_BOMB",
           "MUD_SHOT",
           "ENERGY_BALL",
-          "ABSORB"
+          "ABSORB",
+          "ROCK_SLIDE"
         ]
       },
       "testOnlyMoves": [
@@ -144393,7 +145442,9 @@
           "WATER_PULSE",
           "TAKE_DOWN",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -144548,7 +145599,9 @@
           "WATER_PULSE",
           "TAKE_DOWN",
           "ABSORB",
-          "LICK"
+          "LICK",
+          "ICE_BEAM",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -144704,7 +145757,8 @@
           "HYDRO_PUMP",
           "TACKLE",
           "SLASH",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -144860,7 +145914,9 @@
           "HYDRO_PUMP",
           "TACKLE",
           "CRUNCH",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -145017,7 +146073,8 @@
           "DRAGON_PULSE",
           "HYDRO_PUMP",
           "TAKE_DOWN",
-          "ABSORB"
+          "ABSORB",
+          "MUDDY_WATER"
         ]
       },
       "testOnlyMoves": [
@@ -145176,7 +146233,9 @@
           "CLOSE_COMBAT",
           "SHADOW_BALL",
           "DIG",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -145329,7 +146388,10 @@
           "SLUDGE_BOMB",
           "ROCK_TOMB",
           "WATER_PULSE",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "MUDDY_WATER",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -145482,7 +146544,8 @@
           "PSYBEAM",
           "PSYCHIC",
           "TAKE_DOWN",
-          "CRUNCH"
+          "CRUNCH",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -145634,7 +146697,10 @@
           "MUD_SHOT",
           "ROCK_TOMB",
           "SHADOW_BALL",
-          "FLAMETHROWER"
+          "FLAMETHROWER",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -145940,7 +147006,9 @@
           "CLOSE_COMBAT",
           "MUD_SHOT",
           "PLAY_ROUGH",
-          "ROCK_TOMB"
+          "ROCK_TOMB",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -146093,7 +147161,8 @@
           "PSYCHIC",
           "BITE",
           "DRAIN_PUNCH",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [],
@@ -146552,7 +147621,8 @@
           "AERIAL_ACE",
           "EMBER",
           "GIGA_DRAIN",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -146705,7 +147775,8 @@
           "DISCHARGE",
           "THUNDERBOLT",
           "THUNDER",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -146858,7 +147929,9 @@
           "TAKE_DOWN",
           "THUNDER",
           "BULLET_PUNCH",
-          "METAL_CLAW"
+          "METAL_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -147014,7 +148087,8 @@
           "PLAY_ROUGH",
           "TAKE_DOWN",
           "WATER_GUN",
-          "ABSORB"
+          "ABSORB",
+          "ICE_BEAM"
         ]
       },
       "testOnlyMoves": [
@@ -147170,7 +148244,9 @@
           "CLOSE_COMBAT",
           "THUNDERBOLT",
           "THUNDER",
-          "TACKLE"
+          "TACKLE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -147629,7 +148705,11 @@
           "THUNDERBOLT",
           "THUNDER",
           "METAL_CLAW",
-          "BITE"
+          "BITE",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -147786,7 +148866,9 @@
           "BITE",
           "CRUNCH",
           "DIG",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "ICE_BEAM",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -147943,7 +149025,9 @@
           "AERIAL_ACE",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -148100,7 +149184,10 @@
           "AERIAL_ACE",
           "BITE",
           "BRICK_BREAK",
-          "CRUNCH"
+          "CRUNCH",
+          "ICE_BEAM",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -148878,7 +149965,9 @@
           "DARK_PULSE",
           "ROCK_TOMB",
           "TAKE_DOWN",
-          "BITE"
+          "BITE",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [
@@ -149186,7 +150275,10 @@
           "DARK_PULSE",
           "DRAGON_PULSE",
           "METAL_CLAW",
-          "AERIAL_ACE"
+          "AERIAL_ACE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -149492,7 +150584,8 @@
           "CLOSE_COMBAT",
           "DRAGON_PULSE",
           "CRUNCH",
-          "DIG"
+          "DIG",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -149645,7 +150738,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "CRUNCH",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -149798,7 +150892,8 @@
           "HYDRO_PUMP",
           "BITE",
           "CRUNCH",
-          "MUD_SHOT"
+          "MUD_SHOT",
+          "DRAGON_CLAW"
         ]
       },
       "testOnlyMoves": [],
@@ -151179,7 +152274,10 @@
           "SLASH",
           "BRICK_BREAK",
           "ROCK_TOMB",
-          "AURA_SPHERE"
+          "AURA_SPHERE",
+          "DRAGON_CLAW",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -151332,7 +152430,8 @@
           "DRAGON_PULSE",
           "ENERGY_BALL",
           "LEAF_STORM",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -151485,7 +152584,9 @@
           "FLAMETHROWER",
           "BITE",
           "CRUNCH",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "DRAGON_CLAW",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -151638,7 +152739,8 @@
           "THUNDERBOLT",
           "THUNDER",
           "CRUNCH",
-          "TAKE_DOWN"
+          "TAKE_DOWN",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -151790,7 +152892,8 @@
           "PSYCHIC",
           "QUICK_ATTACK",
           "AERIAL_ACE",
-          "SLASH"
+          "SLASH",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],
@@ -152094,7 +153197,10 @@
           "WATER_PULSE",
           "AURA_SPHERE",
           "DARK_PULSE",
-          "DRAGON_PULSE"
+          "DRAGON_PULSE",
+          "ICE_BEAM",
+          "ROCK_SLIDE",
+          "EARTHQUAKE"
         ]
       },
       "testOnlyMoves": [],

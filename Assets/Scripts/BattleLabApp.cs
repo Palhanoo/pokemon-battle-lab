@@ -86,7 +86,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();BuildArena();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")||Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -368,9 +368,9 @@ namespace BattleLab
             else if(a.phase==4)
             {MoveActor(f,f.home,dt,4);if(Vector3.Distance(f.body.transform.position,f.home)<.1f)Finish(f);}
         }
-        void Impact(Fighter f,bool contact)
+        void Impact(Fighter f,bool contact,Fighter victim=null)
         {
-            var a=f.action;var t=a.target;
+            var a=f.action;var t=victim??a.target;
             bool hit=contact&&(mode==BattleMode.ZA||CombatRules.Hits(a.move.accuracy,rng));
             if(!hit){Note(a.move.name+" missed");return;}
             int damage=a.remainingDamage??CombatRules.Damage(f.data,t.data,a.move,catalog.data.types,mode,a.style);
@@ -484,6 +484,17 @@ namespace BattleLab
                 {int next=chosen[slot];do{next=(next+1)%f.data.moves.Length;}while(chosen.Contains(next));chosen[slot]=next;ResetBattle();}
             Text(348,545,670,"Sound effects · Emerald recordings, substitutes for newer moves",small);
             soundVolume=GUI.HorizontalSlider(new Rect(352,583,650,20),soundVolume,0,1);
+            if(pokedex!=null)
+            {
+                Text(348,626,670,"HOENN MOVE TRYOUTS · equips the move in slot 1",small);
+                for(int i=0;i<HoennMoves.Length;i++)
+                    if(Button(new Rect(348+i%3*225,652+i/3*32,218,29),catalog.Move(HoennMoves[i]).name))
+                    {
+                        var species=catalog.data.species.First(s=>s.id==HoennUsers[i]);int choice=Array.IndexOf(species.moves,HoennMoves[i]);
+                        loadouts[species.id]=new[]{choice}.Concat(Enumerable.Range(0,species.moves.Length).Where(n=>n!=choice).Take(3)).ToArray();
+                        playerSpecies=Array.IndexOf(Species,species.id);enemySpecies=Array.IndexOf(Species,"MUDKIP");teamSize=1;ai=false;practice=true;ResetBattle();
+                    }
+            }
         }
         void GalleryUI()
         {
@@ -558,7 +569,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")?HoennSmoke():Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             while(true)
             {
                 object item;
