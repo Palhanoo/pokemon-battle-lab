@@ -1,0 +1,44 @@
+FOCUS CHECK Swampert live-action loadout change safely clears fighters before dependent form UI
+FOCUS CHECK Swampert reload completes with changed move
+FOCUS CHECK SWAMPERT ZA focused accepted
+FOCUS CHECK SWAMPERT ZA focused resolves exactly one hit and expires
+FOCUS CHECK SWAMPERT ZA aimed accepted
+FOCUS CHECK SWAMPERT ZA aimed resolves exactly one hit and expires
+FOCUS CHECK HYDRO_PUMP ZA deliberate aimed miss has no false hit
+FOCUS CHECK SWAMPERT BDSP focused accepted
+FOCUS CHECK SWAMPERT BDSP focused resolves exactly one hit and expires
+FOCUS CHECK SWAMPERT BDSP aimed accepted
+FOCUS CHECK SWAMPERT BDSP aimed resolves exactly one hit and expires
+FOCUS CHECK HYDRO_PUMP BDSP deliberate aimed miss has no false hit
+FOCUS CHECK AERODACTYL ZA focused accepted
+FOCUS CHECK AERODACTYL ZA focused resolves exactly one hit and expires
+FOCUS CHECK AERODACTYL ZA aimed accepted
+FOCUS CHECK AERODACTYL ZA aimed resolves exactly one hit and expires
+FOCUS CHECK ROCK_THROW ZA deliberate aimed miss has no false hit
+FOCUS CHECK AERODACTYL BDSP focused accepted
+FOCUS CHECK AERODACTYL BDSP focused resolves exactly one hit and expires
+FOCUS CHECK AERODACTYL BDSP aimed accepted
+FOCUS CHECK AERODACTYL BDSP aimed resolves exactly one hit and expires
+FOCUS CHECK ROCK_THROW BDSP deliberate aimed miss has no false hit
+FOCUS CHECK PIKACHU Classic walk/stop camera anchor stays stable
+FOCUS CHECK PIKACHU RPG walk/stop camera anchor stays stable
+FOCUS CHECK PIKACHU Shoulder walk/stop camera anchor stays stable
+FOCUS CHECK ROTOM Classic walk/stop camera anchor stays stable
+FOCUS CHECK ROTOM RPG walk/stop camera anchor stays stable
+FOCUS CHECK ROTOM Shoulder walk/stop camera anchor stays stable
+FOCUS CHECK Rotom bounded levitation rises to 1.6m
+FOCUS CHECK Rotom descends when F released
+FOCUS CHECK Mega starts charge on original body before swapping
+FOCUS CHECK Mega reveals native model with ZA charge/reveal effects
+FOCUS CHECK Mega effects expire and release controls
+FOCUS CHECK Mega can attack after its native appeal
+FOCUS CHECK Mega Hydro Pump hits once
+FOCUS CHECK Mega reverts to original body
+FOCUS CHECK Eternatus posed body fits expanded floor
+FOCUS CHECK Arena edge respects Eternatus footprint
+FOCUS CHECK Eternatus posed body fits expanded floor
+FOCUS CHECK Arena edge respects Eternatus footprint
+FOCUS CHECK Two Eternatus spawn without footprint overlap
+FOCUS CHECK Reset clears attacks and Mega transitions
+FOCUS CHECK No runtime exceptions in focused regression
+LAB FOCUS PASSED

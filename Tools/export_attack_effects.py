@@ -45,6 +45,10 @@ def main():
     from repair_motion_streams import repair
     from stage_hoenn_effects import stage
     repair(args.source);stage(args.source);enrich(args.source);export_models()
+    from repair_falling_projectiles import repair as repair_falling
+    repair_falling(args.source)
+    from stage_mega_effects import stage as stage_mega
+    stage_mega()
     manifest=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in out.rglob('*') if p.is_file() and p.suffix!='.meta']
     (ROOT/'Docs/native-fx-manifest.json').write_text(json.dumps(manifest,indent=2))
     print(f'Staged {len(manifest)} native effect files. Run BattleLabBuilder.Setup next.')

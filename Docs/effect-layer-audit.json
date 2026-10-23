@@ -1,18 +1,18 @@
 {
   "surfaceSummary": {
-    "ZA_refraction": 17,
-    "ZA_soft": 225,
-    "ZA_masked": 1041,
-    "ZA_one_sided": 301,
+    "ZA_refraction": 18,
+    "ZA_soft": 235,
+    "ZA_masked": 1054,
+    "ZA_one_sided": 305,
     "BDSP_soft": 255
   },
   "scope": {
-    "ZA": 53,
+    "ZA": 54,
     "BDSP": 28,
     "Arceus/SV/Sword": "Bodies use shared ZA effects; their separate native effect engines are not imported."
   },
   "missing": [],
-  "layerCount": 4355,
+  "layerCount": 4428,
   "layers": [
     {
       "source": "ZA",
@@ -30084,6 +30084,672 @@
       "bound": true
     },
     {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "col_bra",
+      "texture": "cpt_3_flow0015s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "col_bra",
+      "texture": "cpt_3_flow0004",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "glow",
+      "texture": "cpt_0_circle0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "tubu",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "tubu",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_3_flownor0102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_0_grad0005",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "tubu",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "tubu",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_aura0101s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_0_aura0101s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_0_aura0101s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_Copy1",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "tubu_Copy1",
+      "texture": "cpt_2_dust0001_as",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "tubu_Copy1",
+      "texture": "cpt_3_flow0006s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "line_swrl",
+      "texture": "cpt_0_shock0701",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "line_swrl",
+      "texture": "cpt_3_color0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_3_flownor0102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_bg",
+      "texture": "cpt_0_grad0104",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "glow_Copy1",
+      "texture": "cpt_0_circle0005s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "dist",
+      "texture": "cpt_0_uv0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "dist",
+      "texture": "cpt_3_color0103",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "ring",
+      "texture": "cpt_0_grad0104",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "ring",
+      "texture": "cpt_3_flow0104s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring",
+      "texture": "cpt_0_blur0602s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring_out_Copy1",
+      "texture": "cpt_0_smoke0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring_out_Copy1",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_ring_out_Copy1",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_ring_out",
+      "texture": "cpt_0_blur0602s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_ring_out",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "par_ring_out",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_shock_Copy1",
+      "texture": "cpt_4_flow0804s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_shock_Copy1",
+      "texture": "cpt_3_flow0024",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "aura_shock_Copy1",
+      "texture": "cpt_0_grad0007",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "in_main_circle_Copy1",
+      "texture": "cpt_3_blur0202s",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "in_main_circle_Copy1",
+      "texture": "cpt_3_color0701s",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_end_00.json",
+      "emitter": "in_main_circle_Copy1",
+      "texture": "cpt_3_flow0024",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "aura",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flownor0102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flow0017",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flow0612",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_00.json",
+      "emitter": "glow",
+      "texture": "cpt_0_circle0005",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "aura",
+      "texture": "cpt_3_flow0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flownor0102",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flow0017",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "f_aura",
+      "texture": "cpt_3_flow0612",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_aura0101",
+      "slot": 0,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_3_flow0101",
+      "slot": 1,
+      "exists": true,
+      "bound": true
+    },
+    {
+      "source": "ZA",
+      "asset": "ZA/zamega/cmn_mega_charge_foot_end_00.json",
+      "emitter": "par_aura_long",
+      "texture": "cpt_0_dust0101",
+      "slot": 2,
+      "exists": true,
+      "bound": true
+    },
+    {
       "source": "BDSP",
       "asset": "BDSP/prefabs/ew058_beam.json",
       "emitter": "beam_core",
@@ -38781,15 +39447,6 @@
       "source": "BDSP",
       "asset": "BDSP/prefabs/model_ew089_floor.json",
       "emitter": "model",
-      "texture": "fxmt_3_rock203_a",
-      "slot": "tex0",
-      "exists": true,
-      "bound": true
-    },
-    {
-      "source": "BDSP",
-      "asset": "BDSP/prefabs/model_ew089_floor.json",
-      "emitter": "model",
       "texture": "fxmt_3_blur001_m",
       "slot": "tex0",
       "exists": true,
@@ -39332,14 +39989,14 @@
     "BDSP:ParticleRotateOffset": 1,
     "BDSP:ParticleRotatePoke": 5,
     "BDSP:ParticleScale": 145,
-    "ZA:GameObject/AttachTransform": 86,
+    "ZA:GameObject/AttachTransform": 90,
     "ZA:GameObject/SetRotation": 24,
     "ZA:GameObject/SetRotationByTarget": 27,
     "ZA:GameObject/SetRotationtoTarget": 180,
     "ZA:GameObject/SetScale": 125,
-    "ZA:GameObject/SetTranslation": 333,
-    "ZA:Particle/Emit": 342,
-    "ZA:Particle/Stop": 304,
+    "ZA:GameObject/SetTranslation": 334,
+    "ZA:Particle/Emit": 346,
+    "ZA:Particle/Stop": 308,
     "ZA:Physics/CastRay": 3,
     "ZA:Title/Battle/AdjustScaleTarget": 211,
     "ZA:Title/Bullet/RotateGroundDirection": 1,

@@ -15,6 +15,8 @@ namespace BattleLab
         public float ClipLength => clip ? clip.length : 0;
         public Bounds Bounds { get { var rs=bodyRenderers; var b=rs[0].bounds; foreach(var r in rs)b.Encapsulate(r.bounds); return b; } }
         public Vector3 Centre => Bounds.center;
+        // Captured from the neutral posed model, independent of walking wings/feet/recoil.
+        public Vector3 CameraAnchor => transform.position+Vector3.up*Mathf.Max(.25f,footprint.center.y*transform.lossyScale.y);
         Bounds footprint;
         public float FootprintRadius(Vector3 direction)
         {
@@ -26,7 +28,7 @@ namespace BattleLab
         Transform visualRoot;Vector3 visualRest,recoilDirection;float recoilRemaining;
         (Transform bone,Vector3 position,Quaternion rotation,Vector3 scale)[] restPose;
         public void Recoil(Vector3 away,float strength)
-        {recoilDirection=transform.InverseTransformDirection(away.normalized)*Mathf.Clamp(strength,.04f,.16f);recoilRemaining=.18f;}
+        {recoilDirection=transform.InverseTransformDirection(away.normalized)*Mathf.Clamp(strength,.04f,.3f);recoilRemaining=.18f;}
         float burrowDepth;
         public void SetBurrowDepth(float depth){burrowDepth=Mathf.Max(0,depth);if(visualRoot)visualRoot.localPosition=visualRest+Vector3.down*burrowDepth;}
         float reactionRemaining;

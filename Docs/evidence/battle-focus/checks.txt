@@ -1,0 +1,1 @@
+Final Setup renders after viewport settles, with no exceptions

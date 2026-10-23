@@ -88,13 +88,13 @@ namespace BattleLab
                 var away=next-other.body.transform.position;away.y=0;float clearance=f.body.FootprintRadius(-away)+other.body.FootprintRadius(away)+.12f;
                 if(away.magnitude<clearance)next=other.body.transform.position+(away.sqrMagnitude>.001f?away.normalized:Vector3.back)*clearance;
             }
-            next.y=f.altitude;next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);return next;
+            next.y=f.altitude;return ClampToArena(f,next);
         }
         void TickReposition(float dt)
         {
             for(int i=0;i<fighters.Length;i++)
             {
-                var f=fighters[i];if(i==controlled||f.hp<=0||f.action!=null)continue;
+                var f=fighters[i];if(i==controlled||f.hp<=0||f.action!=null||f.pendingMega!=null||f.state=="Mega Evolved")continue;
                 var enemy=NearestEnemy(f);if(enemy==null)continue;
                 if(now>=f.repositionUntil)
                 {
@@ -154,11 +154,7 @@ namespace BattleLab
                 Text(22,201+row++*27,300,$"{(f==Player?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
             Text(1110,134,300,"ENEMIES · E to target",small);row=0;
             foreach(var f in fighters.Where(f=>f.team==1))Text(1110,164+row++*27,300,$"{(f==Target?"▶ ":"")}{f.data.id}  {f.hp}/{f.MaxHp}",small);
-            if(Target!=null)
-            {
-                var at=cam.WorldToScreenPoint(Target.body.Centre+Vector3.up*(Target.body.BodyHeight*.65f));
-                if(at.z>0)Text(at.x*1440/Screen.width-75,(Screen.height-at.y)*900/Screen.height,150,"▼ TARGET",small);
-            }
+
         }
         IEnumerator TeamSmokeRun()
         {

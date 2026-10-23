@@ -24,7 +24,7 @@ namespace BattleLab.Native
             public string name,set;
             public GameObject fx;
             public List<Dictionary<string, object>> clips = new List<Dictionary<string, object>>();
-            public bool playing;public Vector3 previousPosition;
+            public bool playing,contactStopped;public Vector3 previousPosition;
         }
 
         readonly List<Obj> objs = new List<Obj>();
@@ -227,6 +227,7 @@ namespace BattleLab.Native
             if(!ExternalActorClock)SampleActor(time);
             foreach (var o in objs)
             {
+                if(o.contactStopped)continue;
                 o.previousPosition=o.fx.transform.position;
                 foreach (var c in o.clips) Apply(o, c, prev, time);
                 if(FitUnitBeam&&!o.set.Contains("_beam")&&o.name!="ready")
@@ -251,6 +252,17 @@ namespace BattleLab.Native
                     if(direction.sqrMagnitude>.0001f)o.fx.transform.rotation=Quaternion.LookRotation(direction);
                     o.fx.transform.localScale=Vector3.one*Mathf.Clamp(defender.height*.45f,.18f,.65f);
                 }
+                if(LabMove=="HYDRO_PUMP"&&!o.set.Contains("_beam")&&o.name!="ready")
+                {
+                    bool impact=o.name.Contains("impact")||o.set.Contains("_end");
+                    float fit=impact?Mathf.Clamp(defender.height*.16f,.075f,.16f):Mathf.Clamp(attacker.height*.12f,.08f,.2f);
+                    o.fx.transform.localScale=Vector3.one*fit;
+                    // BulletWeakHandle is the beam carrier at the mouth; its impact
+                    // assembly belongs at the endpoint, not around the caster/camera.
+                    if(impact)o.fx.transform.position=defender.Center;
+                }
+                if(LabMove=="MEGA_EVOLUTION")
+                    o.fx.transform.localScale=Vector3.one*Mathf.Clamp(attacker.height*.2f,.2f,.6f);
                 if((LabMove=="BLAZE_KICK"||LabMove=="DRAGON_CLAW")&&o.name=="bullet1")
                 {o.fx.transform.position=defender.Center;var facing=defender.Center-attacker.Center;if(facing.sqrMagnitude>.001f)o.fx.transform.rotation=Quaternion.LookRotation(facing);}
                 if(LabMove=="MUDDY_WATER"&&o.name.StartsWith("bullet"))
@@ -270,6 +282,11 @@ namespace BattleLab.Native
             }
         }
 
+        public void StopProjectileBodies()
+        {
+            foreach(var o in objs)if(o.name.StartsWith("bullet"))
+            {o.contactStopped=true;o.playing=false;VioletFx.Stop(o.fx,false);}
+        }
         public bool ProjectileSegment(out Vector3 previous,out Vector3 current)
         {
             previous=current=Vector3.zero;if(FitUnitBeam)return false;

@@ -29,9 +29,9 @@ namespace BattleLab
             public float dodgeUntil,dodgeReady; public Vector3 dodgeDirection;
             public string state="Ready";
             public float flightEnergy=3,altitude; public bool ascending;
-            public SpeciesData baseData;public ModelEntry baseModel;public string megaId;public float formEnds;public int maxAttacks;public bool dynamax,megaUsed,maxUsed;
-            public Vector3 baseScale; public GameObject formHalo;
-            public int MaxHp => (data.stats[0]+100)*(dynamax?2:1);
+            public SpeciesData baseData;public ModelEntry baseModel;public string megaId;public float formEnds;public bool megaUsed;public float megaSwapAt;public MegaFormData pendingMega;public BattleLab.Native.VioletMove megaFx;
+            public Vector3 baseScale;
+            public int MaxHp => data.stats[0]+100;
         }
         class Action
         {
@@ -53,7 +53,7 @@ namespace BattleLab
         bool setup,practice=false;
         readonly Dictionary<string,int[]> loadouts=new();
         LabAudio soundCatalog;float soundVolume=.5f;
-        float yaw=90,pitch=18;
+        float yaw=60,pitch=23;
         Vector3 cameraFocus;
         Vector3 testInput; bool testDash;
         bool Direct => !inspect&&mode==BattleMode.ZA;
@@ -90,7 +90,7 @@ namespace BattleLab
             soundCatalog=Resources.Load<LabAudio>("LabAudio");
             Application.logMessageReceived+=SmokeLog;catalog=Instantiate(catalog);LoadPokedex();LoadForms();BuildArena();BuildWaterLane();ResetBattle();
             teamSmoke=Environment.GetCommandLineArgs().Contains("-lab-team-smoke");
-            smoke=Environment.GetCommandLineArgs().Contains("-lab-immersion-check")||Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")||Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
+            smoke=Environment.GetCommandLineArgs().Contains("-lab-focus-check")||Environment.GetCommandLineArgs().Contains("-lab-immersion-check")||Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")||Environment.GetCommandLineArgs().Contains("-lab-dig-check")||Environment.GetCommandLineArgs().Contains("-lab-effect-audit")||Environment.GetCommandLineArgs().Contains("-lab-hit-feel")||Environment.GetCommandLineArgs().Contains("-lab-review-fixes")||Environment.GetCommandLineArgs().Contains("-lab-stream-combat")||Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")||teamSmoke||Environment.GetCommandLineArgs().Contains("-lab-smoke");
             if(smoke)StartCoroutine(SafeSmoke());
         }
         Material Material(Color color)
@@ -112,7 +112,7 @@ namespace BattleLab
             var cameraData=cam.gameObject.AddComponent<UnityEngine.Rendering.Universal.UniversalAdditionalCameraData>();cameraData.renderPostProcessing=true;cameraData.requiresColorTexture=true;cameraData.requiresDepthTexture=true;
             var volume=new GameObject("HDR colour mapping").AddComponent<UnityEngine.Rendering.Volume>();volume.isGlobal=true;
             volumeProfile=Instantiate(Resources.Load<UnityEngine.Rendering.VolumeProfile>("LabTone"));volume.sharedProfile=volumeProfile;
-            cam.fieldOfView=42;cam.nearClipPlane=.1f;cam.farClipPlane=70;
+            cam.fieldOfView=42;cam.nearClipPlane=.1f;cam.farClipPlane=240;
             cam.rect=new Rect(.215f,.18f,.785f,.73f);
             var light=new GameObject("Soft key").AddComponent<Light>();light.type=LightType.Directional;light.intensity=2;
             light.transform.rotation=Quaternion.Euler(45,-25,0);light.shadows=LightShadows.Soft;
@@ -120,13 +120,13 @@ namespace BattleLab
             floorMat=Material(new Color(.13f,.19f,.22f));gridMat=Material(new Color(.19f,.27f,.30f));
             var floor=GameObject.CreatePrimitive(PrimitiveType.Plane);floor.name="Only arena floor";
             floor.transform.localScale=new Vector3(3,1,3);floor.GetComponent<Renderer>().sharedMaterial=floorMat;
-            for(int i=-14;i<=14;i+=2)
+            for(int i=-48;i<=48;i+=2)
             {
                 foreach(bool horizontal in new[]{true,false})
                 {
                     var line=GameObject.CreatePrimitive(PrimitiveType.Cube);line.name="Grid";
                     line.transform.position=horizontal?new Vector3(0,.006f,i):new Vector3(i,.006f,0);
-                    line.transform.localScale=horizontal?new Vector3(28,.01f,.015f):new Vector3(.015f,.01f,28);
+                    line.transform.localScale=horizontal?new Vector3(96,.01f,.015f):new Vector3(.015f,.01f,96);
                     line.GetComponent<Renderer>().sharedMaterial=gridMat;Destroy(line.GetComponent<Collider>());
                 }
             }
@@ -163,8 +163,8 @@ namespace BattleLab
             if(!ai)fighters[1].next=double.PositiveInfinity;
             fighters[0].body.Face(fighters[1].home);fighters[1].body.Face(fighters[0].home);
             log.Clear();Note("Reset · same matchup, seed 42");
-            cameraFocus=fighters[0].body.Centre;testInput=Vector3.zero;testDash=false;
-            message=Direct?(immersive?"WASD move · mouse aim · 1–4 fire · RMB mark · F fly · M Mega · G Dynamax · Tab setup":"WASD move · hold RMB look · 1–4 attack · Space dash · Tab setup"):"Choose a move to begin.";
+            cameraFocus=fighters[0].body.CameraAnchor;testInput=Vector3.zero;testDash=false;
+            message=Direct?(immersive?"WASD move · hold RMB aim · 1–4 fire · T mark · F fly · M Mega · Tab setup":"WASD move · hold RMB look · 1–4 attack · Space dash · Tab setup"):"Choose a move to begin.";
         }
         Fighter CreateFighter(int species,int source,Vector3 at)
         {
@@ -178,10 +178,10 @@ namespace BattleLab
         }
         void StopActions()
         {
-            if(fighters!=null)foreach(var f in fighters){EndDig(f);f.action?.presentation?.Dispose();if(f.voice)f.voice.Stop();if(f.body)Destroy(f.body.gameObject);if(f.formHalo)Destroy(f.formHalo);}
+            if(fighters!=null)foreach(var f in fighters){EndDig(f);f.action?.presentation?.Dispose();if(f.voice)f.voice.Stop();if(f.body)Destroy(f.body.gameObject);if(f.megaFx)Destroy(f.megaFx.gameObject);}
             foreach(var tail in tails)tail.Dispose();tails.Clear();
             foreach(var burst in clashBursts)DestroyBurst(burst.root);clashBursts.Clear();
-            hitStopRemaining=0;contactFeedbackCount=0;fighters=null;foreach(var f in flashes)if(f.go)Destroy(f.go);flashes.Clear();
+            hitStopRemaining=0;contactFeedbackCount=0;damageLabels.Clear();hitConfirmUntil=0;fighters=null;foreach(var f in flashes)if(f.go)Destroy(f.go);flashes.Clear();
         }
         void Note(string text){message=text;log.Enqueue($"{now:0.0}s  {text}");while(log.Count>6)log.Dequeue();Debug.Log("LAB "+text);}
         bool Ended => fighters!=null&&(!fighters.Any(f=>f.team==0&&f.hp>0)||!fighters.Any(f=>f.team==1&&f.hp>0));
@@ -216,37 +216,48 @@ namespace BattleLab
             for(int i=flashes.Count-1;i>=0;i--)if(now>=flashes[i].end){Destroy(flashes[i].go);flashes.RemoveAt(i);}
             TickClashes(dt);UpdateCamera(dt);
         }
+        enum CameraView { Classic, RPG, Shoulder }
+        CameraView cameraView=CameraView.Classic;
+        void CycleCamera()
+        {
+            cameraView=(CameraView)(((int)cameraView+1)%3);
+            pitch=cameraView==CameraView.RPG?38:23;
+            Note("Camera: "+cameraView+" · C changes view · scroll zooms · hold RMB to rotate");
+        }
         void UpdateCamera(float dt)
         {
             if(loading||(!inspect&&fighters==null))return;
-            bool orbit=Direct&&!setup&&!Paused&&!smoke&&(immersive||Input.GetMouseButton(1));
+            bool orbit=Direct&&!setup&&!Paused&&!smoke&&Input.GetMouseButton(1);
             Cursor.lockState=orbit?CursorLockMode.Locked:CursorLockMode.None;Cursor.visible=!orbit;
-            if(orbit){yaw+=Input.GetAxis("Mouse X")*3;pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,immersive?-40:8,65);}
-            if(Direct&&!Paused&&!smoke)cameraDistance=Mathf.Clamp(cameraDistance-Input.mouseScrollDelta.y*.5f,3.5f,12);
+            if(orbit){yaw+=Input.GetAxis("Mouse X")*3;pitch=Mathf.Clamp(pitch-Input.GetAxis("Mouse Y")*2,immersive?-35:8,70);}
+            if(Direct&&!Paused&&!smoke)cameraDistance=Mathf.Clamp(cameraDistance-Input.mouseScrollDelta.y*.5f,2.5f,24);
             cam.rect=Direct&&!setup?new Rect(0,0,1,1):new Rect(.215f,.18f,.785f,.73f);
             cam.orthographic=inspect;cam.orthographicSize=2.5f*cameraDistance/5.8f;
-            Vector3 focus=inspect?new Vector3(0,.85f,0):fighters!=null?(Direct?Player.body.transform.position+Vector3.up*Mathf.Clamp(Player.body.BodyHeight*.6f,.4f,1.6f):(fighters[0].body.Centre+fighters[1].body.Centre)*.5f):Vector3.zero;
-            cameraFocus=Vector3.Lerp(cameraFocus,focus,1-Mathf.Exp(-12*dt));
+            Vector3 focus=inspect?new Vector3(0,.85f,0):Direct?Player.body.CameraAnchor:(fighters[0].body.CameraAnchor+fighters[1].body.CameraAnchor)*.5f;
+            if(Direct&&cameraView==CameraView.RPG&&!immersive&&Target!=null)
+                focus+=Vector3.ClampMagnitude(Target.body.CameraAnchor-focus,6)*.25f;
+            cameraFocus=Vector3.Lerp(cameraFocus,focus,1-Mathf.Exp(-8*dt));
             if(inspect)cameraFocus=focus;
-            float followDistance=Direct?Mathf.Max(cameraDistance,Player.body.BodyHeight*Player.body.transform.lossyScale.x*2.2f+2):cameraDistance;
+            float height=Direct?Player.body.BodyHeight*Player.body.transform.lossyScale.y:1;
+            // Small species receive a closer starting distance; scroll remains a multiplier.
+            float distance=Direct?Mathf.Max(3.2f,height*2.2f+2)*(cameraDistance/5.8f):cameraDistance;
             if(Direct)
             {
-                // Aim ahead of the controlled body so it does not cover the target/projectile path.
-                var look=Quaternion.Euler(0,yaw,0)*Vector3.forward;
-                cameraFocus+=look*Mathf.Min(1.2f,Player.body.BodyHeight*.4f)*Mathf.Clamp01(dt*12);
+                var facing=Quaternion.Euler(0,yaw,0);var body=Player.body;
+                float width=Mathf.Max(body.FootprintRadius(facing*Vector3.right),body.FootprintRadius(facing*Vector3.left));
+                float depth=body.FootprintRadius(facing*Vector3.back);
+                distance=Mathf.Max(distance,(depth+width*2.1f+.8f)*(cameraDistance/5.8f));
             }
-            cam.transform.position=Direct?cameraFocus+Quaternion.Euler(pitch,yaw,0)*Vector3.back*followDistance:focus+new Vector3(0,inspect?0:cameraDistance*.42f,-cameraDistance);
-            cam.transform.LookAt(Direct?cameraFocus:focus);
-            if(Direct&&immersive)
-            {
-                cam.fieldOfView=60;
-                var rotation=Quaternion.Euler(pitch,yaw,0);
-                var aimFocus=Player.body.Centre+Vector3.up*Mathf.Min(.5f,Player.body.BodyHeight*.15f);
-                float shoulder=Mathf.Max(.85f,Player.body.FootprintRadius(rotation*Vector3.right)*.85f+.4f);
-                cam.transform.SetPositionAndRotation(aimFocus+rotation*new Vector3(shoulder,.35f,-followDistance*.85f),rotation);
-                if(cam.transform.position.y<.25f){var at=cam.transform.position;at.y=.25f;cam.transform.position=at;}
-            }
-            else cam.fieldOfView=42;
+            if(cameraView==CameraView.RPG&&Direct)distance*=1.25f;
+            var rotation=Quaternion.Euler(pitch,yaw,0);
+            cam.fieldOfView=Direct&&cameraView==CameraView.Shoulder?55:42;
+            var offset=Vector3.back*distance;
+            if(Direct&&cameraView==CameraView.Shoulder)
+                offset=new Vector3(Mathf.Max(.6f,Player.body.FootprintRadius(rotation*Vector3.right)+.25f),.25f,-distance);
+            cam.transform.position=Direct?cameraFocus+rotation*offset:focus+new Vector3(0,inspect?0:cameraDistance*.42f,-cameraDistance);
+            if(Direct&&cameraView==CameraView.Shoulder)cam.transform.rotation=rotation;
+            else cam.transform.LookAt(Direct?cameraFocus:focus);
+            if(Direct&&cam.transform.position.y<.3f){var at=cam.transform.position;at.y=.3f;cam.transform.position=at;}
         }
         void TickTurns()
         {
@@ -269,7 +280,7 @@ namespace BattleLab
         }
         public bool Command(int slot)
         {
-            if(loading||fighters==null||inspect||Paused||(setup&&Direct)||Ended||slot<0||slot>=ActiveSlots||Player.action!=null||Player.hp<=0)return false;
+            if(loading||fighters==null||inspect||Paused||(setup&&Direct)||Ended||slot<0||slot>=ActiveSlots||Player.action!=null||Player.pendingMega!=null||Player.state=="Mega Evolved"||Player.hp<=0)return false;
             var f=Player;selectedAttack=slot;
             if(mode==BattleMode.ZA)
             {
@@ -316,7 +327,7 @@ namespace BattleLab
                 else if(p.action.hit&&p.action.clock>=p.action.presentation.HitAt+.18f)ReleaseAction(p);
             }
             if(IsUnderground(p))MoveUnderground(p,input,dt);
-            if(p.action==null||p.action.aimed&&p.action.phase==1)
+            if(p.pendingMega==null&&p.state!="Mega Evolved"&&(p.action==null||p.action.aimed&&p.action.phase==1))
             {
                 if(dash&&p.action==null&&now>=dodgeReady)
                 {dodgeDirection=input.sqrMagnitude>.01f?input:p.body.transform.forward;dodgeUntil=now+.24f;dodgeReady=now+.85f;}
@@ -324,7 +335,7 @@ namespace BattleLab
                 if(velocity.sqrMagnitude>.01f)
                 {
                     var at=p.body.transform.position;var next=at+velocity*dt;
-                    next.x=Mathf.Clamp(next.x,-12,12);next.z=Mathf.Clamp(next.z,-12,12);
+                    next=ClampToArena(p,next);
                     // Separate footprints; direct input never gets handed to partner-follow logic.
                     next=ClearPosition(p,next);
                     p.body.Face(at+velocity);p.body.transform.position=next;
@@ -337,7 +348,7 @@ namespace BattleLab
             if(ai)TickReposition(dt);
             if(ai&&now>=aiAt)
             {
-                for(int i=0;i<fighters.Length;i++)if(i!=controlled&&fighters[i].hp>0&&fighters[i].action==null)
+                for(int i=0;i<fighters.Length;i++)if(i!=controlled&&fighters[i].hp>0&&fighters[i].action==null&&fighters[i].pendingMega==null&&fighters[i].state!="Mega Evolved")
                 {int m=ChooseEnemy(fighters[i]);if(m>=0)Begin(i,m,MoveStyle.Normal);}
                 aiAt=now+.4f;
             }
@@ -398,7 +409,7 @@ namespace BattleLab
             bool hit=contact&&(mode==BattleMode.ZA||CombatRules.Hits(a.move.accuracy,rng));
             if(!hit){Note(a.move.name+" missed");return;}
             int damage=a.remainingDamage??CombatRules.Damage(f.data,t.data,a.move,catalog.data.types,mode,a.style);
-            t.hp=practice?t.hp:Mathf.Max(0,t.hp-damage);ResolvedHits++;
+            t.hp=practice?t.hp:Mathf.Max(0,t.hp-damage);ResolvedHits++;ConfirmHit(f,t,damage);
             if(damage>0)
             {
                 if(t.hp<=0)t.body.Role("faint");else if(t.action==null)t.body.React();
@@ -411,7 +422,7 @@ namespace BattleLab
         {
             var a=f.action;if(mode==BattleMode.Arceus)f.next+=CombatRules.ActionDelay(f.data.stats[3],a.style);
             f.action=null;f.state="Ready";f.body.Idle();if(!a.aimed)f.body.Face(a.target.body.transform.position);sequenceAt=now+.25f;
-            if(f.dynamax)f.maxAttacks--;
+
 
         }
         void Cancel(Fighter f)
@@ -467,10 +478,10 @@ namespace BattleLab
             bool nextPractice=GUI.Toggle(new Rect(43,629,230,25),practice," Practice · keep HP full");if(nextPractice!=practice){practice=nextPractice;ResetBattle();}
             if(Direct&&Button(new Rect(40,663,238,34),"Play Pokémon  [Tab]"))setup=false;
             if(loading)return;
-            if(inspect)GalleryUI();else {BattleUI();LoadoutUI();if(mode==BattleMode.ZA){TeamSetupUI();ImmersionSetupUI();}}
+            if(inspect)GalleryUI();else {BattleUI();LoadoutUI();if(loading||Player==null)return;if(mode==BattleMode.ZA){TeamSetupUI();if(loading||Player==null)return;ImmersionSetupUI();}}
             Panel(24,724,270,152);Text(40,736,238,$"Playback speed   {gameSpeed:0.00}×",small);
             gameSpeed=GUI.HorizontalSlider(new Rect(43,769,230,20),gameSpeed,.25f,1.5f);
-            Text(40,796,238,"Camera distance",small);cameraDistance=GUI.HorizontalSlider(new Rect(43,829,230,20),cameraDistance,4.5f,14);
+            Text(40,796,238,"Camera distance",small);cameraDistance=GUI.HorizontalSlider(new Rect(43,829,230,20),cameraDistance,2.5f,24);
             Text(322,872,1090,"Native model/clip exports · reconstructed mechanics subset · native ZA / BDSP effects · Arceus / SV use ZA effects · desktop prototype",muted,25);
         }
         void DirectUI()
@@ -482,14 +493,14 @@ namespace BattleLab
             Text(1106,68,296,$"{foe.hp}/{foe.MaxHp} HP · {(ai?"Opponent active":"Training target")}",small);
             if(Button(new Rect(22,125,195,36),"Setup / models  [Tab]"))setup=true;
             Text(450,27,620,"PLAY AS YOUR POKÉMON",small);
-            Text(450,58,620,"WASD move · Shift walk · mouse aim · Space dash · F fly",small);
-            Text(450,85,620,"1–4 fire · RMB mark · Q ally · E target · M Mega · G Dynamax",small);
+            Text(450,58,620,"WASD move · hold RMB look · Space dash · F rise / release descend",small);
+            Text(450,85,620,"1–4 attack · Q ally · E focus · C camera · M Mega",small);
             if(Paused)Text(560,370,400,"PAUSED · Esc to resume",title,50);
             Text(330,663,900,message,label,55);
             for(int i=0;i<ActiveSlots;i++)
             {
                 var m=catalog.Move(p.moves[i]);float left=Mathf.Max(0,p.ready[i]-now);
-                GUI.enabled=!Paused&&!Ended&&p.action==null&&left<=0&&now>=dodgeUntil;
+                GUI.enabled=!Paused&&!Ended&&p.action==null&&p.pendingMega==null&&p.state!="Mega Evolved"&&left<=0&&now>=dodgeUntil;
                 string status=left>0?$"{left:0.0}s":p.action!=null?p.state:"Ready";
                 float stab=p.data.types.Contains(m.type)?1.5f:1;float type=CombatRules.Effectiveness(catalog.data.types,m.type,foe.data.types,mode);
                 int preview=CombatRules.Damage(p.data,foe.data,m,catalog.data.types,mode,style);
@@ -497,8 +508,15 @@ namespace BattleLab
             }
             Text(302,823,950,$"Body: {p.body.CurrentClip} · Effects: {effectSource} · {(immersive?"Aim controls":"Classic controls")}",small);
             Text(302,852,1000,immersive?"Aim ranged attacks · melee approaches · LMB repeats last slot · Tab changes effects, teams and moves":"Attacks approach automatically · WASD cancels approach / exits recovery · Tab changes teams and moves",muted);
-            TeamBattleUI();ImmersionHUD();
+            TeamBattleUI();ImmersionHUD();FocusFeedbackUI();
             if(now<clashMessageUntil)Text(360,130,700,clashMessage,label,95);
+        }
+        void CycleLoadoutSlot(int slot)
+        {
+            if(loading||Player==null)return;
+            var f=Player;var chosen=Loadout(f.data.id);int next=chosen[slot];
+            do{next=(next+1)%f.data.moves.Length;}while(chosen.Contains(next));
+            chosen[slot]=next;ResetBattle();
         }
         void LoadoutUI()
         {
@@ -506,7 +524,7 @@ namespace BattleLab
             Panel(330,302,710,318);Text(348,316,670,"EQUIPPED MOVES · click to cycle · * test-only choice",label);
             for(int slot=0;slot<ActiveSlots;slot++)
                 if(Button(new Rect(348,352+slot*46,668,40),$"[{slot+1}] {catalog.Move(f.moves[slot]).name}{(pokedex?.Row(f.data.id).testOnlyMoves?.Contains(f.moves[slot])==true?" *":"")}  ›"))
-                {int next=chosen[slot];do{next=(next+1)%f.data.moves.Length;}while(chosen.Contains(next));chosen[slot]=next;ResetBattle();}
+                {CycleLoadoutSlot(slot);return;}
             Text(348,545,670,"Sound effects · Emerald recordings, substitutes for newer moves",small);
             soundVolume=GUI.HorizontalSlider(new Rect(352,583,650,20),soundVolume,0,1);
             if(pokedex!=null)
@@ -595,7 +613,7 @@ namespace BattleLab
         }
         IEnumerator SafeSmoke()
         {
-            var run=Environment.GetCommandLineArgs().Contains("-lab-immersion-check")?ImmersionSmoke():Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")?HoennSmoke():Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
+            var run=Environment.GetCommandLineArgs().Contains("-lab-focus-check")?FocusSmoke():Environment.GetCommandLineArgs().Contains("-lab-immersion-check")?ImmersionSmoke():Environment.GetCommandLineArgs().Contains("-lab-hoenn-check")?HoennSmoke():Environment.GetCommandLineArgs().Contains("-lab-dig-check")?DigSmoke():Environment.GetCommandLineArgs().Contains("-lab-effect-audit")?EffectAuditSmoke():Environment.GetCommandLineArgs().Contains("-lab-hit-feel")?HitFeelSmoke():Environment.GetCommandLineArgs().Contains("-lab-review-fixes")?ReviewFixSmoke():Environment.GetCommandLineArgs().Contains("-lab-stream-combat")?StreamCombatSmoke():Environment.GetCommandLineArgs().Contains("-lab-roster-smoke")?RosterSmoke():teamSmoke?TeamSmokeRun():SmokeRun();
             var stack=new Stack<IEnumerator>();stack.Push(run);
             while(stack.Count>0)
             {

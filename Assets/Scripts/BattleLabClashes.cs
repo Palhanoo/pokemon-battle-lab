@@ -73,11 +73,11 @@ namespace BattleLab
         void ContactFeedback(Fighter attacker,Fighter target,int damage)
         {
             var away=target.body.Centre-attacker.body.Centre;away.y=0;
-            target.body.Recoil(away,Mathf.Lerp(.055f,.13f,Mathf.Clamp01((float)damage/target.MaxHp)));
+            target.body.Recoil(away,Mathf.Lerp(.13f,.28f,Mathf.Clamp01((float)damage/target.MaxHp)));
             var contact=target.body.Centre-away.normalized*Mathf.Min(.3f,target.body.Bounds.extents.magnitude*.25f);
-            SpawnBurst(contact,Mathf.Clamp(target.body.BodyHeight*.2f,.18f,.38f),.28f);
-            var sound=soundCatalog.MoveClip("TACKLE");if(sound)target.voice.PlayOneShot(sound,.32f);
-            if(Direct&&(attacker==Player||target==Player))hitStopRemaining=Mathf.Max(hitStopRemaining,.045f);
+            SpawnBurst(contact,Mathf.Clamp(target.body.BodyHeight*.3f,.28f,.65f),.34f);
+            var sound=soundCatalog.MoveClip("TACKLE");if(sound)target.voice.PlayOneShot(sound,.5f);
+            if(Direct&&(attacker==Player||target==Player))hitStopRemaining=Mathf.Max(hitStopRemaining,.065f);
             contactFeedbackCount++;
         }
         void SpawnClash(Vector3 position)

@@ -10,20 +10,26 @@ Builds, exported models, audio and native effect assets remain local and are
 ignored by Git. This repository contains source, staging tools and review records;
 cloning it alone does not supply the native game assets or compiled player.
 
-## Current immersive iteration
+## Current focused battle iteration
 
-- WASD moves; mouse aims the third-person camera; Shift walks; Space dashes.
-- 1–4 fire attacks; left mouse repeats the last slot. Right mouse marks an enemy
-  for targeted projectiles. Beams remain freely aimed, and melee approaches.
-- Q changes allies; E changes the selected target; mouse wheel zooms.
-- Hold F to fly briefly on eligible Pokémon. Energy recovers after landing.
-- M activates/returns from an available Mega form. G activates/returns from the
-  **Dynamax prototype** (size, doubled HP, 20 seconds or three attacks; no Max moves).
-- Tab opens Setup and releases the cursor. Esc pauses; R resets.
-- Setup selects **Auto / ZA / BDSP effects independently of the model**, classic or
-  aimed controls, Earthquake radius, teams, loadouts and alternate Mega forms.
-- F1 opens the model viewer; F2 opens the effect-layer inspector.
-- The blue water lane gives grounded Water types a 1.65× movement bonus.
+- WASD moves; hold RMB to rotate the camera; Shift walks; Space dashes.
+- 1–4 command attacks on the focused enemy, with automatic approach.
+- **C switches Classic / RPG / Shoulder views**; scroll zooms. E changes focus,
+  Q changes allies. Camera anchors remain stable while bodies animate.
+- Hold F to rise briefly on eligible flying/levitating Pokémon; release descends.
+  Rotom has a lower ascent. Energy recovers after landing.
+- M starts Mega Evolution with native ZA charge/reveal particles and the Mega
+  body's appeal animation. **Dynamax has been removed.**
+- Tab opens Setup. Esc pauses; R resets. F1 opens the model viewer;
+  F2 opens the effect-layer inspector.
+- Setup selects **Auto / ZA / BDSP effects independently of the model**, camera,
+  Earthquake radius, teams, loadouts and alternate Mega forms.
+- Manual aiming is optional and experimental; T marks an enemy and LMB repeats
+  the selected slot. Beams still resolve one hit per cast. Hold-to-steer/DPS
+  channels are deferred until the camera/control foundation is accepted.
+- Floating damage, focus HP bars and HIT confirmation distinguish actual hits.
+- The arena is 100×100m. The blue water lane gives grounded Water types a
+  1.65× movement bonus.
 
 There are 53 distinct test moves, four equipped per Pokémon: 53 ZA and 28 BDSP
 native presentations. The Hoenn tryout buttons equip Blaze Kick, Muddy Water,
@@ -37,9 +43,9 @@ adapted to the arena; source-renderer parity is not claimed.
 
 The preferred roster order is ZA → Scarlet/Violet → Arceus → BDSP → Sword/Shield.
 96 additional standard Mega form models can be staged from existing local ZA
-exports; native form stats/types apply, but ability behavior and original Mega
-cinematics are outside this prototype. See
-[iteration notes](Docs/2026-10-23-immersive-battle.md) for tested scope and limits.
+exports; native form stats/types apply. Mega uses original ZA particles/body clips
+with lab timing; exact cinematic/shader parity and ability behavior remain outside
+this prototype. See [iteration notes](Docs/2026-10-23-battle-focus.md) for scope and limits.
 
 ## Build and asset staging
 

@@ -297,6 +297,15 @@ Shader "Hoenn/VioletParticle"
                 if (_MeshParticles < 0.5) { col *= i.color.rgb; a *= i.color.a; }
                 else if(_Model>.5) col *= 0.55 + 0.45 * saturate(dot(normalize(i.n), normalize(float3(0.3, 1, -0.4)))); // simple form shading for rocks, leaves
                 if(_Model>.5)col+=_ModelEmission.rgb;
+                if(_NativeFlow>4.5&&_NativeFlow<5.5)
+                {
+                    // ZA rock fragment 8c08c6da: slot 1 red + 2*alpha0 - 1
+                    // controls coverage. The sphere gradient is lighting, not alpha.
+                    // Multiplying its black texels into coverage erased the rock mesh.
+                    a=saturate(flowSub.r+2*a0-1)*i.primitive.a;
+                    float light=.55+.45*saturate(dot(normalize(i.n),normalize(float3(.3,1,-.4))));
+                    col=flowMain.rgb*c0*i.primitive.rgb*light;
+                }
                 a*=fade;
                 if(_AlphaTest>.5)
                 {

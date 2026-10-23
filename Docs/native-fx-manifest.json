@@ -1771,8 +1771,8 @@
   },
   {
     "path": "Assets/NativeFx/ZA/index.json",
-    "bytes": 1829,
-    "sha256": "fd109ea5891d6c24857107743024ec5e201eb39e2c91b828ab9dcf3743f24cde"
+    "bytes": 1866,
+    "sha256": "69e60382fe22f25284fef7667a60e970bd52717e2e6298ba6293bbaff483d6ed"
   },
   {
     "path": "Assets/NativeFx/ZA/textures/cpt0_rock0101.png",
@@ -3527,17 +3527,17 @@
   {
     "path": "Assets/NativeFx/ZA/zaew0088/ew0088_bullet.json",
     "bytes": 287201,
-    "sha256": "0012894c9946af29fe806779ecf1cd3670628b85ee2a326612202698c11d6bbc"
+    "sha256": "7e8bd88a825b6f077d31143470b4d43d528aecf32a6d4369a5f04bd66ff8285e"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/ew0088_impact.json",
     "bytes": 161422,
-    "sha256": "6adb330f37ca14c36c6fef69302190566a579509d7b34c9d5ef52867d6aad6a6"
+    "sha256": "be8f541e405a256776f1cf62d2fa7ec20d37e74a5cdde2cdd9775de0c9a4e85d"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0088/move.json",
-    "bytes": 7323,
-    "sha256": "86ff34abcb8c23243ce27862aee3b21507413e9722b3968aeb04d90ff109ee9c"
+    "bytes": 5354,
+    "sha256": "a92961e1b4c4e6a44aab08d2127e1a1b6e9629169b442a62e617d2a558b60b69"
   },
   {
     "path": "Assets/NativeFx/ZA/zaew0089/cmn_impact_tp04_00.json",
@@ -4523,5 +4523,70 @@
     "path": "Assets/NativeFx/za-timing.json",
     "bytes": 74460,
     "sha256": "f050e5acc6985c0e09d5578c54300057e5a517ea3085e66c66f0d3630ba2f94c"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_aura0101.png",
+    "bytes": 23576,
+    "sha256": "0db89517d3a0f7fcaca761fc0b1bb25b61e92388419c508cdf922cfd61b17cc2"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_aura0101s.png",
+    "bytes": 4365,
+    "sha256": "5a13417cd87d992e2b4d9ca69305b3f272fa3ea93dc2e8631e99c87a6f955d7a"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_circle0005s.png",
+    "bytes": 7031,
+    "sha256": "071b13c15a87b9b12968f6c0765f72982067c3f47dd1778ee0533736c029b532"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_dust0101.png",
+    "bytes": 153000,
+    "sha256": "d7007619eea1381c7719731f8e02bf48e6cabef1e3359a077d5eeaa3c4fdbd49"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_grad0007.png",
+    "bytes": 255,
+    "sha256": "acc9055731840345b11a365602897ae75b1608b323248935c75c891f112f7795"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_0_shock0701.png",
+    "bytes": 6428,
+    "sha256": "d5c2e569b8bedb1e3ff4fec7deaa641aeb5a50f1ac7ef73644040cea8d444ae2"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0004.png",
+    "bytes": 15089,
+    "sha256": "dfc1fd3fec425e190bb2d924356f066b94ccb5b0cb7347f5cb749369a4eef0fd"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/textures/cpt_3_flow0015s.png",
+    "bytes": 7422,
+    "sha256": "e015fd24cdce8dea9e0138c151dfa09fb3ce3f8f2f42b28b4ee95b2f11f84c41"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zamega/cmn_mega_charge_00.json",
+    "bytes": 120754,
+    "sha256": "3e654db5b17a4f9db19a1559f1eb946dc96c21b3e81d5cd2ba4adf620b930f13"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zamega/cmn_mega_charge_end_00.json",
+    "bytes": 240588,
+    "sha256": "8a11de15ff9a45bf4a1435937f03246ce668b4b4268292247b2bf450ae40fee2"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zamega/cmn_mega_charge_foot_00.json",
+    "bytes": 87876,
+    "sha256": "2be65ca103860c33102d05eaf61a2ebffe62e66ca6af498f3196ae096f04f437"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zamega/cmn_mega_charge_foot_end_00.json",
+    "bytes": 85009,
+    "sha256": "5e8cd0fc45b3548aa46e3c8737a957b29374836bc2b85de8de11006aeb4de176"
+  },
+  {
+    "path": "Assets/NativeFx/ZA/zamega/move.json",
+    "bytes": 3870,
+    "sha256": "839fd396b5b6767e5364f837b340a700bb3de11f16c9f5ed1118bd7ab167ef64"
   }
 ]

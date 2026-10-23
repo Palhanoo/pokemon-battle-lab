@@ -21,7 +21,7 @@ namespace BattleLab
         Vector3 frozenAim; bool aimFrozen;
         public void FreezeAim(Vector3 point){frozenAim=point;aimFrozen=true;if(aimAnchor)aimAnchor.position=point;}
         Vector3 Destination=>aimAnchor?aimAnchor.position:target.Centre;
-        readonly bool projectile,beam,groundWave;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched;
+        readonly bool projectile,beam,groundWave;bool sustainedStopped;float sustainedStopAt=float.PositiveInfinity;float previousTime,shootAt;Vector3 travelOrigin,travelTarget;bool launched,nativeTravelSeen;
         readonly ZaMove timing;
         readonly Material[] effectMaterials;
         int cueIndex;
@@ -154,10 +154,16 @@ namespace BattleLab
             if(!projectile||!Alive||Time<shootAt||previousTime>HitAt)return false;
             if(beam){previous=VioletMove.Node(Bind(body),"eff_rangeattack01");current=Vector3.Lerp(previous,Destination,Mathf.Clamp01((Time-shootAt)/Mathf.Max(.01f,Mathf.Min(.28f,HitAt-shootAt))));return true;}
             if(Effect is VioletMove native && native.ProjectileSegment(out previous,out current))
-            {if(groundWave){previous.y+=.55f;current.y+=.55f;}return true;}
+            {nativeTravelSeen=true;if(groundWave){previous.y+=.55f;current.y+=.55f;}return true;}
+            if(nativeTravelSeen)return false; // Expired native paths must not become synthetic caster-to-target shots.
             float duration=Mathf.Max(.05f,HitAt-shootAt);
             previous=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((previousTime-shootAt)/duration));
             current=Vector3.Lerp(travelOrigin,travelTarget,Mathf.Clamp01((Time-shootAt)/duration));return true;
+        }
+        public void StopProjectileAtContact()
+        {
+            // Keep the authored impact layers alive; a hit is not a clash cancellation.
+            if(Effect is VioletMove native)native.StopProjectileBodies();
         }
         public void BlockEffects(){Dispose();}
         public void Dispose()

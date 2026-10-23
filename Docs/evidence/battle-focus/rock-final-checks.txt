@@ -1,0 +1,22 @@
+FOCUS CHECK Swampert live-action loadout change safely clears fighters before dependent form UI
+FOCUS CHECK Swampert reload completes with changed move
+FOCUS CHECK AERODACTYL ZA focused accepted
+FOCUS CHECK Falling rock has not damaged target halfway through descent
+FOCUS CHECK Rock collision path descends with the rendered projectile
+FOCUS CHECK AERODACTYL ZA focused resolves exactly one hit and expires
+FOCUS CHECK AERODACTYL ZA aimed accepted
+FOCUS CHECK Falling rock has not damaged target halfway through descent
+FOCUS CHECK Rock collision path descends with the rendered projectile
+FOCUS CHECK AERODACTYL ZA aimed resolves exactly one hit and expires
+FOCUS CHECK ROCK_THROW ZA deliberate aimed miss has no false hit
+FOCUS CHECK AERODACTYL BDSP focused accepted
+FOCUS CHECK Falling rock has not damaged target halfway through descent
+FOCUS CHECK Rock collision path descends with the rendered projectile
+FOCUS CHECK AERODACTYL BDSP focused resolves exactly one hit and expires
+FOCUS CHECK AERODACTYL BDSP aimed accepted
+FOCUS CHECK Falling rock has not damaged target halfway through descent
+FOCUS CHECK Rock collision path descends with the rendered projectile
+FOCUS CHECK AERODACTYL BDSP aimed resolves exactly one hit and expires
+FOCUS CHECK ROCK_THROW BDSP deliberate aimed miss has no false hit
+FOCUS CHECK No runtime errors after falling Rock Throw repair
+LAB ROCK FINAL PASSED

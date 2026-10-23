@@ -1,0 +1,3 @@
+*.png
+!reported-loadout-error.png
+first-review/*.png

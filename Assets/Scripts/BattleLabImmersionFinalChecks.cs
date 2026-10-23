@@ -42,13 +42,10 @@ namespace BattleLab
             {
             Equip("BLAZIKEN","BLAZE_KICK");effectSource=EffectSource.ZA;ResetBattle();while(loading)yield return null;
             Begin(1,0,MoveStyle.Normal);ToggleMega();if(Target.action!=null)throw new Exception("Mega left stale incoming action");
-            hp=Target.hp;Command(0);yield return new WaitForSecondsRealtime(1.5f);CaptureEvidence(Path.Combine(folder,"mega-blaze-kick.png"));yield return WaitIdle();
+            yield return new WaitForSecondsRealtime(4);hp=Target.hp;Command(0);yield return new WaitForSecondsRealtime(1.5f);CaptureEvidence(Path.Combine(folder,"mega-blaze-kick.png"));yield return WaitIdle();
             if(Target.hp>=hp||Player.megaId==null)throw new Exception("Mega could not complete an attack");report.Add("Mega Blaziken cancels old body attachments and performs native Blaze Kick with damage");
-            RevertForm(Player);ResetBattle();while(loading)yield return null;ToggleDynamax();Player.formEnds=now+100;practice=true;
-            for(int i=0;i<3;i++){Player.ready[0]=0;Command(0);yield return WaitIdle();}
-            yield return null;if(Player.dynamax)throw new Exception("Dynamax failed three-attack limit");report.Add("Dynamax returns after three completed attacks");
             }
-            playerSpecies=Array.IndexOf(Species,"SALAMENCE");ResetBattle();while(loading)yield return null;ToggleDynamax();yield return new WaitForSecondsRealtime(.8f);CaptureEvidence(Path.Combine(folder,"large-form-camera.png"));RevertForm(Player);yield return new WaitForSecondsRealtime(.6f);
+            playerSpecies=Array.IndexOf(Species,"SALAMENCE");ResetBattle();while(loading)yield return null;yield return new WaitForSecondsRealtime(.8f);CaptureEvidence(Path.Combine(folder,"large-form-camera.png"));
             setup=true;yield return null;yield return null;yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(Path.Combine(folder,"setup-ui.png"));yield return null;yield return null;setup=false;yield return null;yield return null;
             yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(Path.Combine(folder,"play-ui.png"));yield return null;yield return null;
             playerSpecies=Array.IndexOf(Species,"STARMIE");ResetBattle();while(loading)yield return null;Player.body.transform.position=new Vector3(-6,0,6);yield return null;

@@ -1,0 +1,2 @@
+FOCUS CHECK Final Setup renders after viewport settles, with no exceptions
+LAB SETUP FINAL PASSED

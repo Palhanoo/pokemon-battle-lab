@@ -1,0 +1,43 @@
+Swampert live-action loadout change safely clears fighters before dependent form UI
+Swampert reload completes with changed move
+SWAMPERT ZA focused accepted
+SWAMPERT ZA focused resolves exactly one hit and expires
+SWAMPERT ZA aimed accepted
+SWAMPERT ZA aimed resolves exactly one hit and expires
+HYDRO_PUMP ZA deliberate aimed miss has no false hit
+SWAMPERT BDSP focused accepted
+SWAMPERT BDSP focused resolves exactly one hit and expires
+SWAMPERT BDSP aimed accepted
+SWAMPERT BDSP aimed resolves exactly one hit and expires
+HYDRO_PUMP BDSP deliberate aimed miss has no false hit
+AERODACTYL ZA focused accepted
+AERODACTYL ZA focused resolves exactly one hit and expires
+AERODACTYL ZA aimed accepted
+AERODACTYL ZA aimed resolves exactly one hit and expires
+ROCK_THROW ZA deliberate aimed miss has no false hit
+AERODACTYL BDSP focused accepted
+AERODACTYL BDSP focused resolves exactly one hit and expires
+AERODACTYL BDSP aimed accepted
+AERODACTYL BDSP aimed resolves exactly one hit and expires
+ROCK_THROW BDSP deliberate aimed miss has no false hit
+PIKACHU Classic walk/stop camera anchor stays stable
+PIKACHU RPG walk/stop camera anchor stays stable
+PIKACHU Shoulder walk/stop camera anchor stays stable
+ROTOM Classic walk/stop camera anchor stays stable
+ROTOM RPG walk/stop camera anchor stays stable
+ROTOM Shoulder walk/stop camera anchor stays stable
+Rotom bounded levitation rises to 1.6m
+Rotom descends when F released
+Mega starts charge on original body before swapping
+Mega reveals native model with ZA charge/reveal effects
+Mega effects expire and release controls
+Mega can attack after its native appeal
+Mega Hydro Pump hits once
+Mega reverts to original body
+Eternatus posed body fits expanded floor
+Arena edge respects Eternatus footprint
+Eternatus posed body fits expanded floor
+Arena edge respects Eternatus footprint
+Two Eternatus spawn without footprint overlap
+Reset clears attacks and Mega transitions
+No runtime exceptions in focused regression

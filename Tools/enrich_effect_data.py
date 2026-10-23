@@ -54,7 +54,7 @@ def enrich(source=None,moves=None):
         dst['native_shader']={'index':src['shader']['custom_shader_index'],
             'switch':src['shader']['custom_shader_switch'],
             'fragment_sha1':hashlib.sha1(code.encode()).hexdigest(),
-            'flow':1 if '.675000012' in code else (2 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='f6a36f5f89' else 3 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='75a59ce422' else 4 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='5f14b1dcf1' else 0),
+            'flow':5 if hashlib.sha1(code.encode()).hexdigest()=='8c08c6dabf948ec904759b48d63d5e6f3eeb76ea' else 1 if '.675000012' in code else (2 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='f6a36f5f89' else 3 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='75a59ce422' else 4 if hashlib.sha1(code.split('REP.S ;')[0].encode()).hexdigest()[:10]=='5f14b1dcf1' else 0),
             'flow_color':1 if '.675000012' in code and '-|R' in code else 0,
             'values':src.get('custom_values',[])}
         count+=1

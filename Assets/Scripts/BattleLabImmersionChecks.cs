@@ -60,12 +60,8 @@ namespace BattleLab
                 if(f.megaId!=null||f.body.entry!=original||Mathf.Abs((float)f.hp/f.MaxHp-ratio)>.01f)throw new Exception("Mega revert changed body or health fraction");
                 report.Add(species+": native Mega model/stats, HP fraction preserved on return");
             }
-            var p=Player;p.hp=p.MaxHp/2;int baseHp=p.MaxHp;ToggleDynamax();yield return new WaitForSecondsRealtime(.5f);
-            if(!p.dynamax||p.MaxHp!=baseHp*2||p.body.transform.localScale.x<=p.baseScale.x)throw new Exception("Dynamax scale/HP not applied");
-            CaptureEvidence(Path.Combine(folder,"dynamax-salamence.png"));p.hp-=20;float fraction=(float)p.hp/p.MaxHp;p.formEnds=now+.1f;yield return new WaitForSecondsRealtime(.3f);
-            if(p.dynamax||p.MaxHp!=baseHp||Mathf.Abs((float)p.hp/p.MaxHp-fraction)>.01f)throw new Exception("Dynamax expiry healed or lost HP ratio");report.Add("Dynamax scale and 2x HP; timed return preserves damage fraction");
             ResetBattle();while(loading)yield return null;yield return null;
-            if(GameObject.Find("Attack aim point")||fighters.Any(f=>f.formHalo||f.dynamax||f.megaId!=null)||ActiveActions!=0)throw new Exception("Reset leaked aim/form state");
+            if(GameObject.Find("Attack aim point")||fighters.Any(f=>f.megaFx||f.pendingMega!=null||f.megaId!=null)||ActiveActions!=0)throw new Exception("Reset leaked aim/form state");
             if(smokeErrors>0)throw new Exception("Immersion runtime error: "+lastSmokeError);
             report.Add("Reset clears transformations, aim anchors, actions and effects");
             setup=true;yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(Path.Combine(folder,"setup-ui.png"));yield return null;yield return null;setup=false;
