@@ -268,3 +268,25 @@ material-animation curves remain incomplete. BDSP contact pose fitting and beam
 spray footprint limits are intentional real-time lab adaptations. Bruno's visual
 acceptance remains open. Launcher selects this isolated build; previous player
 and build remain intact.
+
+
+LAB-17 final verification: Builds/PokedexShaderDetails builds with zero errors.
+Logs/shader-details-final.log: LAB REFRACTION PIXELS PASSED and LAB SHADER DETAILS
+PASSED, exit 0, no logged exceptions/shader errors through shutdown. Ten focused
+presentations: seven ZA (Flamethrower, Dragon Pulse, Hydro Pump, Psybeam, Psychic,
+Shadow Ball, Thunderbolt), three BDSP (Brick Break, Psychic, Thunderbolt).
+Pixel fixture: 19,845 changed pixels with distortion; zero outside its footprint,
+zero changes at zero strength, and zero changes inside the foreground occluder.
+Soft intersections, alpha cutout, front/back culling and actual particle primitive
+mask transport pass. Native RG/BA now travel in explicit UV2/UV3 streams, separate
+from Unity's particle COLOR; this restores the cores lost in the rejected run.
+Visual review confirms visible Hydro/Psybeam cores with distinct color layers,
+retained fire/Dragon Pulse particles and BDSP contact layers. These captures do
+not establish full original-game parity: flat-looking flame shapes, native rim
+and deformation, transparent-on-transparent refraction, two Iron Tail curves and
+three Dig commands remain open. URP displacement/silhouette are calibrated.
+Full staged audit: 3,600 texture refs resolved; 16 restored refractors, 16 true
+invisible carriers, 195 ZA / 188 BDSP soft-particle entries. Native states restored
+on 914 masked and 242 one-sided ZA emitter records. No attacks added or full
+roster tests rerun. Evidence: Docs/evidence/shader-details. Bruno's acceptance is
+pending; launcher selects this isolated build and prior builds are preserved.

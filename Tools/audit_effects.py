@@ -4,11 +4,18 @@ Asset completeness is deliberately separate from original-engine visual fidelity
 from pathlib import Path
 import collections,json,re
 ROOT=Path(__file__).resolve().parents[1];FX=ROOT/'Assets/NativeFx'
+surface_counts=collections.Counter()
 missing=[];layers=[];commands=collections.Counter();warnings=[];omitted=[];unsupported=[]
 za_supported=set(re.findall(r'case "([^"]+)":',(ROOT/'Assets/Scripts/Native/VioletMove.cs').read_text()))
 bdsp_supported=set(re.findall(r'case "([^"]+)":',(ROOT/'Assets/Scripts/Native/BdspMove.cs').read_text()))
 def walk(e,path):
-    if e.get('draw') is False:omitted.append(dict(asset=str(path.relative_to(FX)),emitter=e['name'],reason='Source export disabled drawing (includes unsupported refraction / carrier-only emitters).'))
+    surface=e.get('surface',{});state=e.get('render_state',{})
+    surface_counts['ZA_refraction']+=bool(surface.get('refraction'))
+    surface_counts['ZA_soft']+=bool(surface.get('soft'))
+    surface_counts['ZA_masked']+=bool(state) and not state.get('blend_enable',True)
+    surface_counts['ZA_one_sided']+=state.get('display_side',0)!=0
+    if not surface or not state:warnings.append(dict(asset=str(path.relative_to(FX)),emitter=e['name'],reason='Missing native surface/render-state metadata'))
+    if e.get('draw') is False:omitted.append(dict(asset=str(path.relative_to(FX)),emitter=e['name'],reason='Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags.'))
     for tex in e.get('textures',[]):
         name=tex.get('name');exists=(FX/'ZA/textures'/(name+'.png')).exists()
         if not exists:missing.append(str(path)+': '+name)
@@ -42,12 +49,13 @@ for path in (FX/'BDSP/prefabs').glob('*.json'):
     data=json.loads(path.read_text())
     entries=[(n['name'],n.get('r',{}).get('mat',{})) for n in data.get('nodes',[])]+[('model',m) for m in data.get('materials',[])]
     for label,mat in entries:
+        surface_counts['BDSP_soft']+=bool(mat.get('surface',{}).get('soft'))
         for slot in ('tex0','tex1','tex2'):
             if not mat.get(slot):continue
             name=mat[slot]['name'];exists=(FX/'BDSP/textures'/(name+'.png')).exists()
             if not exists:missing.append(str(path)+': '+name)
             layers.append(dict(source='BDSP',asset=str(path.relative_to(FX)),emitter=label,texture=name,slot=slot,exists=exists,bound=True))
-report=dict(scope={'ZA':len(za),'BDSP':len(bdsp),'Arceus/SV/Sword':'Bodies use shared ZA effects; their separate native effect engines are not imported.'},missing=missing,layerCount=len(layers),layers=layers,unsupportedLightingLookups=warnings,omittedRenderers=omitted,unhandledTimelineCommands=unsupported,commands=dict(sorted(commands.items())),limitations=['Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.','Source camera tracks, native deformation and full state machines remain incomplete.','Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause.'])
+report=dict(surfaceSummary=dict(surface_counts),scope={'ZA':len(za),'BDSP':len(bdsp),'Arceus/SV/Sword':'Bodies use shared ZA effects; their separate native effect engines are not imported.'},missing=missing,layerCount=len(layers),layers=layers,unsupportedLightingLookups=warnings,omittedRenderers=omitted,unhandledTimelineCommands=unsupported,commands=dict(sorted(commands.items())),limitations=['Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.','Opaque-scene refraction uses a calibrated displacement factor; transparent-on-transparent refraction and native Fresnel/distance-fade modes remain incomplete.','Source camera tracks, native deformation and full state machines remain incomplete.','Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause.'])
 (ROOT/'Docs/effect-layer-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k not in ('layers','commands','unsupportedLightingLookups','omittedRenderers','unhandledTimelineCommands')},indent=2));print('Unsupported texture slots:',len(warnings),'Omitted renderers:',len(omitted),'Unhandled timeline commands:',len(unsupported))
 raise SystemExit(bool(missing))

@@ -365,6 +365,7 @@ namespace BattleLab.Native
             mat.SetFloat("_UseSub", Texture(mat, "_SubTex", m, "tex1", texture, "_SubScroll") ? 1 : 0);
             if(m.TryGetValue("combiner",out var combiner))VioletFx.NativeCombiner(mat,J.Obj(combiner));
             mat.SetFloat("_UseThird",Texture(mat,"_ThirdTex",m,"tex2",texture,"_ThirdScroll")?1:0);
+            if(m.TryGetValue("surface",out var surface))VioletFx.Surface(mat,J.Obj(surface));
             r.sharedMaterial = mat;
             // the combiner's colour scale and multiply colour act on colour0 / colour1
             float scale = J.F(m, "color_scale");

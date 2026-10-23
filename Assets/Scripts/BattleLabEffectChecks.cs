@@ -12,9 +12,10 @@ namespace BattleLab
         IEnumerator EffectAuditSmoke()
         {
             while(loading)yield return null;
-            bool visuals=Environment.GetCommandLineArgs().Contains("-lab-visual-layers");
+            bool shaders=Environment.GetCommandLineArgs().Contains("-lab-shader-details");
+            bool visuals=Environment.GetCommandLineArgs().Contains("-lab-visual-layers")||shaders;
             bool lifecycle=Environment.GetCommandLineArgs().Contains("-lab-effect-lifecycle");
-            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/"+(visuals?"visual-layers":"effect-repair"+(lifecycle?"/lifecycle":""))));Directory.CreateDirectory(folder);
+            string folder=Path.GetFullPath(Path.Combine(Application.dataPath,"../../../Docs/evidence/"+(shaders?"shader-details":visuals?"visual-layers":"effect-repair"+(lifecycle?"/lifecycle":""))));Directory.CreateDirectory(folder);
             var report=new List<string>();teamSize=1;ai=false;practice=true;setup=inspect=false;mode=BattleMode.ZA;gameSpeed=1;
             playerSpecies=Array.IndexOf(Species,"PIKACHU");enemySpecies=Array.IndexOf(Species,"MUDKIP");ResetBattle();while(loading)yield return null;
             if(loadError!=null)throw new Exception(loadError);
@@ -34,11 +35,13 @@ namespace BattleLab
             Player.body.transform.position=new Vector3(-2,0,0);Target.body.transform.position=new Vector3(2,0,0);Player.body.Face(Target.body.Centre);Target.body.Face(Player.body.Centre);
             var midpoint=(Player.body.Centre+Target.body.Centre)*.5f;
             cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);
+            if(shaders)CheckRefractionPixels(folder);
             int sphereMasks=0;
             foreach(var source in new[]{"ZA","BDSP"})
             {
                 var ids=source=="ZA"?zaFx.moves.Select(m=>m.id).ToArray():bdspFx.moves.Select(m=>m.id).ToArray();
-                if(visuals)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();
+                if(shaders)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM","MOVE_PSYCHIC","MOVE_SHADOW_BALL","MOVE_THUNDERBOLT"}:new[]{"MOVE_THUNDERBOLT","MOVE_PSYCHIC","MOVE_BRICK_BREAK"}).Contains(id)).ToArray();
+                else if(visuals)ids=ids.Where(id=>(source=="ZA"?new[]{"MOVE_FLAMETHROWER","MOVE_EMBER","MOVE_DRAGON_PULSE","MOVE_HYDRO_PUMP","MOVE_PSYBEAM"}:new[]{"MOVE_BRICK_BREAK","MOVE_IRON_TAIL","MOVE_LICK"}).Contains(id)).ToArray();
                 if(lifecycle)ids=ids.Where(id=>id==(source=="ZA"?"MOVE_HYDRO_PUMP":"MOVE_PSYCHIC")).ToArray();
                 foreach(string id in ids)
                 {
@@ -58,12 +61,21 @@ namespace BattleLab
                         }
                     }
                     var models=fx.gameObject.GetComponentsInChildren<BdspModel>(true);
-                    if(visuals&&source=="BDSP"&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
-                    int maximum=0;int snapshots=0;bool captured=false;float captureAt=Mathf.Max(.1f,fx.HitTime+.1f);
+                    if(visuals&&!shaders&&source=="BDSP"&&models.Length!=(id=="MOVE_LICK"?1:2))throw new Exception(id+" missing model layers");
+                    bool refractionCaptured=false;int maximum=0;int snapshots=0;bool captured=false;float captureAt=Mathf.Max(.1f,fx.HitTime+.1f);
                     for(float t=0;t<Mathf.Min(fx.EndTime+1,20);t+=.1f)
                     {
                         fx.Step(.1f);foreach(var m in materials)if(m.HasProperty("_EffectTime"))m.SetFloat("_EffectTime",fx.Now);
                         maximum=Mathf.Max(maximum,systems.Sum(ps=>ps.particleCount));
+                        if(shaders&&!refractionCaptured&&systems.Any(ps=>ps.particleCount>0&&ps.GetComponent<ParticleSystemRenderer>().sharedMaterial&&ps.GetComponent<ParticleSystemRenderer>().sharedMaterial.GetFloat("_Refraction")>.5f))
+                        {
+                            refractionCaptured=true;
+                            var refractors=systems.Select(ps=>ps.GetComponent<ParticleSystemRenderer>()).Where(r=>r.enabled&&r.sharedMaterial&&r.sharedMaterial.GetFloat("_Refraction")>.5f).ToArray();
+                            CaptureEvidence(Path.Combine(folder,source+"-"+id+"-refraction-on.png"));
+                            foreach(var r in refractors)r.enabled=false;
+                            CaptureEvidence(Path.Combine(folder,source+"-"+id+"-refraction-off.png"));
+                            foreach(var r in refractors)r.enabled=true;
+                        }
                         if(visuals&&fx.Now>=fx.StartTime+.2f+snapshots*.25f&&snapshots<12)
                         {
                             cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);
@@ -72,6 +84,7 @@ namespace BattleLab
                         if(!captured&&fx.Now>=captureAt)
                         {cam.transform.position=midpoint+new Vector3(0,2,-6);cam.transform.LookAt(midpoint);CaptureEvidence(Path.Combine(folder,source+"-"+id+".png"));captured=true;}
                     }
+                    if(shaders&&materials.Any(m=>m.GetFloat("_Refraction")>.5f)&&!refractionCaptured)throw new Exception(id+" refraction never emitted");
                     if(maximum==0)throw new Exception(source+id+" never emitted particles");
                     if((id=="MOVE_HYDRO_PUMP"||id=="MOVE_PSYBEAM")&&source=="ZA")
                     {
@@ -85,7 +98,7 @@ namespace BattleLab
                         if(skin){var baked=new Mesh();model.Sample(0);skin.BakeMesh(baked);var before=baked.vertices;model.Sample(.25f);skin.BakeMesh(baked);var after=baked.vertices;
                             if(!before.Where((v,i)=>Vector3.Distance(v,after[i])>.0001f).Any())throw new Exception(id+" model skeleton never deformed");Destroy(baked);}
                     }
-                    report.Add($"{source} {id}: models={models.Length}; {systems.Length} systems, peak {maximum} particles; material bindings/clock exercised; contact capture saved");
+                    report.Add($"{source} {id}: models={models.Length}; {systems.Length} systems, peak {maximum} particles; refraction={materials.Count(m=>m.GetFloat("_Refraction")>.5f)}, soft={materials.Count(m=>m.GetVector("_SoftParticle").x>.5f)}; material bindings/clock exercised; contact capture saved");
                     Destroy(fx.gameObject);File.WriteAllLines(Path.Combine(folder,"focused-checks-in-progress.txt"),report);yield return null;
                 }
             }
@@ -93,7 +106,7 @@ namespace BattleLab
             if(visuals)
             {
                 if(smokeErrors>0)throw new Exception(lastSmokeError);
-                File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log("LAB VISUAL LAYERS PASSED");Application.Quit(0);yield break;
+                File.WriteAllLines(Path.Combine(folder,"focused-checks.txt"),report);Debug.Log(shaders?"LAB SHADER DETAILS PASSED":"LAB VISUAL LAYERS PASSED");Application.Quit(0);yield break;
             }
             SpawnClash(midpoint);var ring=clashBursts.Last().root.GetComponent<LineRenderer>();now+=.12f;TickClashes(.12f);
             if(!ring||ring.GetPosition(0).magnitude<.2f)throw new Exception("Clash ring did not expand");

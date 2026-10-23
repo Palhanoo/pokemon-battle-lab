@@ -98,13 +98,23 @@ namespace BattleLab.Native
             mat.SetFloat("_AlphaMode", J.F(J.Obj(e["color"]), "alpha_mode"));
             if(e.TryGetValue("combiner",out var combiner)) NativeCombiner(mat,J.Obj(combiner));
             Textures(ps, mat, J.List(e, "textures"), texture, avgLife);
+            if(e.TryGetValue("surface",out var surface))
+            {
+                var d=J.Obj(surface);Surface(mat,d);
+                if(J.B(d,"refraction"))
+                {
+                    // Distortion uses the original parameter envelope, not colour1 blue.
+                    var cd=ps.customData;cd.SetVector(ParticleSystemCustomData.Custom2,2,new ParticleSystem.MinMaxCurve(1,KeyCurve(J.List(d,"params"),1,1)));
+                }
+            }
             r.sharedMaterial = mat;
             Render(r, e, meshes);
+            if(e.TryGetValue("render_state",out var state))RenderState(mat,J.Obj(state));
             if (e.ContainsKey("draw") && !J.B(e, "draw")) r.enabled = false; // only carries child emitters
             r.SetActiveVertexStreams(new List<ParticleSystemVertexStream>
             {
                 ParticleSystemVertexStream.Position, ParticleSystemVertexStream.Normal, ParticleSystemVertexStream.Color, ParticleSystemVertexStream.UV,
-                ParticleSystemVertexStream.Custom1XYZW, ParticleSystemVertexStream.Custom2XYZW,
+                ParticleSystemVertexStream.Custom1XYZW, ParticleSystemVertexStream.Custom2XYZW, ParticleSystemVertexStream.UV2, ParticleSystemVertexStream.UV3,
             });
 
             foreach (var c in J.List(e, "children"))
@@ -114,6 +124,32 @@ namespace BattleLab.Native
                 subs.AddSubEmitter(child, ParticleSystemSubEmitterType.Birth, ParticleSystemSubEmitterProperties.InheritNothing);
             }
             return ps;
+        }
+
+        static void RenderState(Material mat,Dictionary<string,object> state)
+        {
+            int side=(int)J.F(state,"display_side");mat.SetFloat("_Cull",side==1?2:side==2?1:0);
+            mat.SetFloat("_ZTest",J.B(state,"depth_test")?J.F(state,"depth_func")+1:8);
+            mat.SetFloat("_AlphaTest",J.F(state,"alpha_test"));mat.SetFloat("_AlphaCompare",J.F(state,"alpha_func"));
+            mat.SetFloat("_AlphaThreshold",J.F(state,"alpha_threshold"));
+            if(mat.GetFloat("_Refraction")>.5f)return;
+            mat.SetFloat("_ZWrite",J.F(state,"depth_mask"));
+            if(!J.B(state,"blend_enable"))
+            {
+                mat.SetFloat("_SrcBlend",1);mat.SetFloat("_DstBlend",0);mat.SetFloat("_OpaqueParticle",1);
+                mat.renderQueue=2450; // native masked depth surface, before refraction/transparent layers
+            }
+        }
+
+        public static void Surface(Material mat,Dictionary<string,object> data)
+        {
+            var range=J.Floats(data["soft_range"]);
+            mat.SetVector("_SoftParticle",new Vector4(J.F(data,"soft")>0?1:0,range[0],Mathf.Max(.0001f,range[1]-range[0]),0));
+            if(!J.B(data,"refraction"))return;
+            mat.SetFloat("_Refraction",1);mat.SetFloat("_DistortionByDistance",J.F(data,"distance"));
+            mat.SetFloat("_SrcBlend",5);mat.SetFloat("_DstBlend",10);mat.SetFloat("_ZWrite",0);
+            // The opaque scene copy precedes particles: refract before ordinary effect layers.
+            mat.renderQueue=2990;
         }
 
         public static void NativeCombiner(Material mat,Dictionary<string,object> data)
@@ -557,6 +593,7 @@ namespace BattleLab.Native
                     break;
                 default: r.renderMode = ParticleSystemRenderMode.Billboard; break;
             }
+            r.sharedMaterial.SetFloat("_PrimitiveStream",mesh?1:0);
             r.sharedMaterial.SetFloat("_MeshParticles", r.renderMode == ParticleSystemRenderMode.Mesh ? 1 : 0);
             r.shadowCastingMode = ShadowCastingMode.Off;
             r.receiveShadows = false;
@@ -578,7 +615,7 @@ namespace BattleLab.Native
 
         static Mesh BuildMesh(Dictionary<string, object> m)
         {
-            var pos = J.List(m, "pos"); var nrm = J.List(m, "nrm"); var uv = J.List(m, "uv"); 
+            var colours=J.List(m,"col");var pos = J.List(m, "pos"); var nrm = J.List(m, "nrm"); var uv = J.List(m, "uv");
             var idx = J.List(m, "idx");
             var v = new Vector3[pos.Count]; var n = new Vector3[pos.Count]; var u = new Vector2[pos.Count]; var c = new Color[pos.Count];
             for (int i = 0; i < pos.Count; i++)
@@ -586,7 +623,7 @@ namespace BattleLab.Native
                 var p = J.Floats(pos[i]); v[i] = new Vector3(-p[0], p[1], p[2]);
                 var q = J.Floats(nrm[i]); n[i] = new Vector3(-q[0], q[1], q[2]);
                 var w = J.Floats(uv[i]); u[i] = new Vector2(w[0], 1 - w[1]);
-                c[i] = Color.white; // Violet packs custom-shader data into vertex colour, not tint
+                var col=i<colours.Count?J.Floats(colours[i]):new[]{1f,1f,1f,1f};c[i]=new Color(col[0],col[1],col[2],col[3]); // consumed through native primitive-channel selectors
             }
             var tris = new int[idx.Count];
             for (int i = 0; i + 2 < idx.Count; i += 3) // mirrored, so flip the winding
@@ -594,7 +631,13 @@ namespace BattleLab.Native
                 tris[i] = (int)(double)idx[i]; tris[i + 1] = (int)(double)idx[i + 2]; tris[i + 2] = (int)(double)idx[i + 1];
             }
             var mesh = new Mesh { name = "violet primitive" };
-            mesh.vertices = v; mesh.normals = n; mesh.uv = u; mesh.colors = c; mesh.triangles = tris;
+            mesh.vertices = v; mesh.normals = n; mesh.uv = u; mesh.triangles = tris;
+            // Unity's particle COLOR stream is particle tint, not a stable primitive-color transport.
+            // Reserve UV2/UV3 for the four native primitive channels; keep that data independent.
+            var rg=new List<Vector2>();var ba=new List<Vector2>();var white=new Color[c.Length];
+            foreach(var value in c){rg.Add(new Vector2(value.r,value.g));ba.Add(new Vector2(value.b,value.a));}
+            for(int i=0;i<white.Length;i++)white[i]=Color.white;
+            mesh.colors=white;mesh.SetUVs(1,rg);mesh.SetUVs(2,ba);
             mesh.RecalculateBounds();
             return mesh;
         }

@@ -28,6 +28,8 @@ public static class BattleLabBuilder
         if(!AssetDatabase.LoadAssetAtPath<Material>("Assets/Resources/LabSurface.mat"))
             AssetDatabase.CreateAsset(new Material(Shader.Find("Universal Render Pipeline/Lit")),"Assets/Resources/LabSurface.mat");
         var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/URP.asset");
+        var pipelineSettings=new SerializedObject(pipeline);pipelineSettings.FindProperty("m_OpaqueDownsampling").intValue=0;pipelineSettings.ApplyModifiedPropertiesWithoutUndo();
+        pipeline.supportsCameraOpaqueTexture=true;pipeline.supportsCameraDepthTexture=true;EditorUtility.SetDirty(pipeline);
         GraphicsSettings.defaultRenderPipeline=pipeline;QualitySettings.renderPipeline=pipeline;
         var toneProfile=AssetDatabase.LoadAssetAtPath<VolumeProfile>("Assets/Resources/LabTone.asset");
         if(!toneProfile)
@@ -69,7 +71,7 @@ public static class BattleLabBuilder
         var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{"Assets/Scenes/BattleLab.unity"},
             locationPathName=Path.Combine(output,"PokemonBattleLab.exe"),target=BuildTarget.StandaloneWindows64,options=BuildOptions.Development});
         Debug.Log($"LAB BUILD {report.summary.result} scenes=1 errors={report.summary.totalErrors} bytes={report.summary.totalSize}");
-        if(report.summary.result!=BuildResult.Succeeded)throw new Exception("Battle lab build failed");
+        if(report.summary.result!=BuildResult.Succeeded||report.summary.totalErrors>0)throw new Exception("Battle lab build failed");
         if(!args.Contains("-lab-skip-roster")&&File.Exists("LocalRoster/catalog.json"))
         {
             var roster=JsonUtility.FromJson<RosterDocument>(File.ReadAllText("LocalRoster/catalog.json"));

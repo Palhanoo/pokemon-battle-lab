@@ -105,7 +105,7 @@ namespace BattleLab
             background.depth=-10;background.cullingMask=0;background.clearFlags=CameraClearFlags.SolidColor;background.backgroundColor=new Color(.025f,.045f,.06f);
             cam=new GameObject("Comparison camera").AddComponent<Camera>();cam.tag="MainCamera";cam.gameObject.AddComponent<AudioListener>();
             cam.clearFlags=CameraClearFlags.SolidColor;cam.backgroundColor=new Color(.055f,.085f,.11f);
-            var cameraData=cam.gameObject.AddComponent<UnityEngine.Rendering.Universal.UniversalAdditionalCameraData>();cameraData.renderPostProcessing=true;
+            var cameraData=cam.gameObject.AddComponent<UnityEngine.Rendering.Universal.UniversalAdditionalCameraData>();cameraData.renderPostProcessing=true;cameraData.requiresColorTexture=true;cameraData.requiresDepthTexture=true;
             var volume=new GameObject("HDR colour mapping").AddComponent<UnityEngine.Rendering.Volume>();volume.isGlobal=true;
             volumeProfile=Instantiate(Resources.Load<UnityEngine.Rendering.VolumeProfile>("LabTone"));volume.sharedProfile=volumeProfile;
             cam.fieldOfView=42;cam.nearClipPlane=.1f;cam.farClipPlane=70;

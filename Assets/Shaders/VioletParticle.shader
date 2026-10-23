@@ -5,6 +5,16 @@ Shader "Hoenn/VioletParticle"
     // Custom1, colour1/alpha1 in Custom2 (both HDR). Streams: UV, Custom1, Custom2 packed into TEXCOORD0..2.
     Properties
     {
+        _ZTest ("Native depth comparison", Float) = 4
+        _AlphaTest ("Native alpha comparison enabled", Float) = 0
+        _AlphaCompare ("Native alpha comparison", Float) = 4
+        _AlphaThreshold ("Native cutout threshold", Float) = 0
+        _PrimitiveStream ("Native primitive channels in UV2/UV3", Float) = 0
+        _OpaqueParticle ("Unblended native surface", Float) = 0
+        _Refraction ("Native distortion layer", Float) = 0
+        _RefractionScale ("Screen displacement calibration", Float) = 0.015
+        _DistortionByDistance ("Attenuate distortion by camera distance", Float) = 0
+        _SoftParticle ("Soft intersection: enabled / near / span", Vector) = (0,0,1,0)
         _NativeCombiner ("Native channel combiner", Float) = 0
         _ColorChannels ("Texture colour channels", Vector) = (0,0,0,0)
         _AlphaChannels ("Texture alpha channels", Vector) = (0,0,0,0)
@@ -53,16 +63,23 @@ Shader "Hoenn/VioletParticle"
         {
             Blend [_SrcBlend] [_DstBlend]
             ZWrite [_ZWrite]
+            ZTest [_ZTest]
             Cull [_Cull]
             HLSLPROGRAM
+            #pragma target 3.5
             #pragma vertex vert
             #pragma fragment frag
             #pragma multi_compile_instancing
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareOpaqueTexture.hlsl"
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/DeclareDepthTexture.hlsl"
             TEXTURE2D(_MainTex); SAMPLER(sampler_MainTex);
             TEXTURE2D(_SubTex); SAMPLER(sampler_SubTex);
             TEXTURE2D(_ThirdTex); SAMPLER(sampler_ThirdTex);
             CBUFFER_START(UnityPerMaterial)
+                float _ZTest, _AlphaTest, _AlphaCompare, _AlphaThreshold, _OpaqueParticle, _PrimitiveStream;
+                float _Refraction, _RefractionScale, _DistortionByDistance;
+                float4 _SoftParticle;
                 float _NativeCombiner, _Model, _ZWrite;
                 float4 _ColorChannels, _AlphaChannels, _ColorBlends, _AlphaBlends, _ModelColor, _ModelEmission;
                 float4 _MainWrap, _SubWrap, _ThirdWrap;
@@ -80,7 +97,8 @@ Shader "Hoenn/VioletParticle"
                 half4 color : COLOR;
                 float4 t0 : TEXCOORD0; // uv.xy, c0.xy
                 float4 t1 : TEXCOORD1; // c0.zw, c1.xy
-                float2 t2 : TEXCOORD2; // c1.zw
+                float4 t2 : TEXCOORD2; // c1.zw, primitive.rg
+                float2 t3 : TEXCOORD3; // primitive.ba
                 UNITY_VERTEX_INPUT_INSTANCE_ID
             };
             struct V
@@ -92,6 +110,9 @@ Shader "Hoenn/VioletParticle"
                 float4 uv : TEXCOORD2;
                 float3 n : TEXCOORD3;
                 float2 thirdUv : TEXCOORD4;
+                float3 world : TEXCOORD5;
+                float2 rawUv : TEXCOORD6;
+                float4 primitive : TEXCOORD7;
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
             };
@@ -103,21 +124,14 @@ Shader "Hoenn/VioletParticle"
                 UNITY_SETUP_INSTANCE_ID(i);
                 UNITY_TRANSFER_INSTANCE_ID(i, o);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
-                o.cs = TransformObjectToHClip(i.pos.xyz);
+                o.world=TransformObjectToWorld(i.pos.xyz);o.rawUv=i.t0.xy;
+                o.cs = TransformWorldToHClip(o.world);
                 o.color = i.color;
                 o.n = TransformObjectToWorldNormal(i.normal);
                 o.c0 = float4(i.t0.zw, i.t1.xy);
-                o.c1 = float4(i.t1.zw, i.t2);
+                o.c1 = float4(i.t1.zw, i.t2.xy);
+                o.primitive=float4(i.t2.zw,i.t3);
                 if(_Model>.5){o.c0=_ModelColor;o.c1=float4(0,0,0,1);o.color=1;}
-                float2 uv = i.t0.xy;
-                float3 viewNormal=normalize(mul((float3x3)GetWorldToViewMatrix(),o.n));
-                float2 sphereUv=viewNormal.xy*.5+.5;
-                float2 mainUv=lerp(uv,sphereUv,_MainSphere);
-                float2 subUv=lerp(uv,sphereUv,_SubSphere);
-                float2 thirdUv=lerp(uv,sphereUv,_ThirdSphere);
-                o.uv.xy = RotateMask(mainUv,_MainRotation+_MainMotion.z*_EffectTime) * (_MainTex_ST.xy+_MainMotion.xy*_EffectTime) + _MainTex_ST.zw + _MainScroll.xy * _EffectTime;
-                o.uv.zw = RotateMask(subUv,_SubRotation+_SubMotion.z*_EffectTime) * (_SubTex_ST.xy+_SubMotion.xy*_EffectTime) + _SubTex_ST.zw + _SubScroll.xy * _EffectTime;
-                o.thirdUv = RotateMask(thirdUv,_ThirdRotation+_ThirdMotion.z*_EffectTime) * (_ThirdTex_ST.xy+_ThirdMotion.xy*_EffectTime) + _ThirdTex_ST.zw + _ThirdScroll.xy*_EffectTime;
                 return o;
             }
             float WrapAxis(float uv,float mode)
@@ -137,7 +151,21 @@ Shader "Hoenn/VioletParticle"
             {
                 UNITY_SETUP_INSTANCE_ID(i);
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
+                // Normalize after interpolation: sphere masks must not flatten across coarse mesh faces.
+                float2 sphereUv=normalize(mul((float3x3)GetWorldToViewMatrix(),i.n)).xy*.5+.5;
+                i.uv.xy=RotateMask(lerp(i.rawUv,sphereUv,_MainSphere),_MainRotation+_MainMotion.z*_EffectTime)*(_MainTex_ST.xy+_MainMotion.xy*_EffectTime)+_MainTex_ST.zw+_MainScroll.xy*_EffectTime;
+                i.uv.zw=RotateMask(lerp(i.rawUv,sphereUv,_SubSphere),_SubRotation+_SubMotion.z*_EffectTime)*(_SubTex_ST.xy+_SubMotion.xy*_EffectTime)+_SubTex_ST.zw+_SubScroll.xy*_EffectTime;
+                i.thirdUv=RotateMask(lerp(i.rawUv,sphereUv,_ThirdSphere),_ThirdRotation+_ThirdMotion.z*_EffectTime)*(_ThirdTex_ST.xy+_ThirdMotion.xy*_EffectTime)+_ThirdTex_ST.zw+_ThirdScroll.xy*_EffectTime;
+                float2 screenUv=GetNormalizedScreenSpaceUV(i.cs);
+                float eyeDepth=-TransformWorldToView(i.world).z;
+                float fade=1;
+                if(_SoftParticle.x>.5)
+                {
+                    float sceneDepth=LinearEyeDepth(SampleSceneDepth(screenUv),_ZBufferParams);
+                    fade=saturate((sceneDepth-eyeDepth-_SoftParticle.y)/_SoftParticle.z);
+                }
                 half4 t = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, WrapMask(i.uv.xy,_MainWrap.xy));
+                half4 distortionMask=t;
                 if (_MainGrey > 0.5) t = t.rrrr;
                 if(_NativeCombiner>.5)t=Channels(t,_ColorChannels.x,_AlphaChannels.x);
                 if (_UseSub > 0.5)
@@ -154,6 +182,8 @@ Shader "Hoenn/VioletParticle"
                     if(_NativeCombiner>.5)t=Combine(t,Channels(third,_ColorChannels.z,_AlphaChannels.z),_ColorBlends.y,_AlphaBlends.y);
                     else t *= _ThirdGrey > .5 ? third.rrrr : (third.r*third.a).xxxx;
                 }
+                if(_NativeCombiner>.5 && _PrimitiveStream>.5 && _Model<.5 && _Refraction<.5)
+                    t=Combine(t,Channels(i.primitive,_ColorChannels.w,_AlphaChannels.w),_ColorBlends.z,_AlphaBlends.z);
                 float3 c0 = i.c0.rgb, c1 = i.c1.rgb;
                 float3 col = c0;
                 if (_ColorMode > 2.5) col = c0 * t.rgb + c1;
@@ -170,10 +200,34 @@ Shader "Hoenn/VioletParticle"
                 else a = t.a * a0;
                 // mesh particles get unreliable vertex colour from Unity: tint billboards only
                 if (_MeshParticles < 0.5) { col *= i.color.rgb; a *= i.color.a; }
-                else col *= 0.55 + 0.45 * saturate(dot(normalize(i.n), normalize(float3(0.3, 1, -0.4)))); // simple form shading for rocks, leaves
+                else if(_Model>.5) col *= 0.55 + 0.45 * saturate(dot(normalize(i.n), normalize(float3(0.3, 1, -0.4)))); // simple form shading for rocks, leaves
                 if(_Model>.5)col+=_ModelEmission.rgb;
+                a*=fade;
+                if(_AlphaTest>.5)
+                {
+                    float delta=a-_AlphaThreshold;
+                    bool alphaPass=_AlphaCompare<.5?false:_AlphaCompare<1.5?delta<0:_AlphaCompare<2.5?abs(delta)<.00001:_AlphaCompare<3.5?delta<=0:_AlphaCompare<4.5?delta>0:_AlphaCompare<5.5?abs(delta)>.00001:_AlphaCompare<6.5?delta>=0:true;
+                    clip(alphaPass?1:-1);
+                }
                 a = saturate(a)*_ReadabilityAlpha;
-                if(abs(_SrcBlend-1)<.1)col*=a;
+                if(_Refraction>.5)
+                {
+                    // Signed RG vectors are data, never visible colour. URP screen-space calibration
+                    // replaces the original engine's framebuffer scale; native lifetime curve is c1.z.
+                    float strength=max(0,lerp(i.c1.z,1,_Model))*_RefractionScale;
+                    if(_DistortionByDistance>.5)strength/=max(1,eyeDepth);
+                    float2 offset=(distortionMask.rg*2-1)*strength*a;
+                    offset.x*=_ScreenParams.y/_ScreenParams.x;
+                    float2 displaced=clamp(screenUv+offset,0.001,0.999);
+                    // Do not pull foreground silhouettes across the refracting surface.
+                    float displacedDepth=LinearEyeDepth(SampleSceneDepth(displaced),_ZBufferParams);
+                    if(displacedDepth<eyeDepth)displaced=screenUv;
+                    // Fade the mesh silhouette without tinting it, including at zero strength.
+                    float facing=abs(dot(normalize(i.n),normalize(GetWorldSpaceViewDir(i.world))));
+                    float edge=_MeshParticles>.5?smoothstep(0,.25,facing):1;
+                    return half4(SampleSceneColor(displaced),a*edge*saturate(strength*10000));
+                }
+                if(abs(_SrcBlend-1)<.1&&_OpaqueParticle<.5)col*=a;
                 // Multiplicative effects need white at zero opacity; blend factors ignore alpha.
                 if ((_SrcBlend < .5 && abs(_DstBlend-3)<.1) || (abs(_SrcBlend-2)<.1 && _DstBlend<.5)) col=lerp(float3(1,1,1),col,a);
                 return half4(col, a);

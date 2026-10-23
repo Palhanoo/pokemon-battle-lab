@@ -14,6 +14,16 @@ def enrich(source=None):
         dst['combiner']={'color_channels':v[:3]+[v[6]],'alpha_channels':v[3:6]+[v[7]],
             'color_blends':[c[k] for k in ['tex1_color_blend','tex2_color_blend','primitive_color_blend']],
             'alpha_blends':[c[k] for k in ['tex1_alpha_blend','tex2_alpha_blend','primitive_alpha_blend']]}
+        color=src['color'];static=src['static']
+        dst['render_state']=src['render']
+        dst['draw']=bool(src['info']['is_particle_draw'])
+        dst['surface']={'refraction':c['shader_type']==1,'shader_type':c['shader_type'],
+            'apply_alpha':c['apply_alpha'],'distance':c['distortion_by_distance'],
+            'soft':color['is_soft_particle'],'soft_range':static['soft_edge'],
+            'fresnel':color['is_fresnel_alpha'],'fresnel_range':static['fresnel_alpha'],
+            'near':color['is_near_dist_alpha'],'near_range':static['near_dist_alpha'],
+            'far':color['is_far_dist_alpha'],'far_range':static['far_dist_alpha'],
+            'params':[[k['t'],k['x'],k['y'],k['z']] for k in static['param_keys'][:static['num_param_keys']]]}
         count+=1
         # Child emitters in this format are a recursive list.
         for d,s in zip(dst.get('children',[]),src.get('children',[])):merge(d,s)

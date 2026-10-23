@@ -459,3 +459,58 @@ material-animation curves remain incomplete. BDSP contact pose fitting and beam
 spray footprint limits are intentional real-time lab adaptations. Bruno's visual
 acceptance remains open. Launcher selects this isolated build; previous player
 and build remain intact.
+
+
+## LAB-17 — remaining native shader/refraction fidelity
+
+23 October 2026, PokedexVisualLayers; Bruno requests original-game shader detail
+before adding attacks. Confirmed exporter explicitly disabled shader_type=1
+refraction even when source is_particle_draw=1. Native soft-intersection ranges
+were omitted in both ZA and BDSP; shared shader lit emissive mesh particles with
+an arbitrary directional multiplier. Repair: native metadata hydration, BDSP
+material exporter, VioletFx/BdspFx, VioletParticle and camera opaque/depth inputs.
+Source Fresnel/distance-fade fields are retained but their enum semantics remain
+unconfirmed; do not claim exact native mapping. Refraction amplitude is an
+explicit URP calibration, with native distortion textures and lifetime envelope.
+Recurrence: pixel A/B with checker backdrop, foreground occlusion and zero
+strength; focused attack release/contact/cleanup captures in shader-details.
+Status: source repair in progress; build and visual verification pending.
+
+LAB-17 visual review found another confirmed omission: native front/back culling,
+alpha cutout and depth-write states were discarded. Psybeam's separate inner and
+outer shells were both rendered double-sided and transparent; Flamethrower and
+Dragon Pulse native masked meshes were incorrectly treated as additive/alpha
+layers. Preserve original render state, including disabled blending, before
+refraction. Native mesh primitive channels were also forced white; restore them
+through the actual primitive selectors (Dragon Pulse contains vertex-alpha fades).
+Build/check rerun required after these source repairs.
+
+LAB-17 capture rejection: the first render-state run passed control-fixture checks
+but Hydro/Psybeam lost core layers. Do not accept it as visually repaired.
+Evidence: evidence/shader-details/rejected-hydro-mask-transport.png.
+The generic particle COLOR path is not a reliable source-mesh channel transport;
+carry authored primitive RG/BA in explicit UV2/UV3 streams. Add a real mesh-particle
+pixel fixture asserting one half is clipped and the other visible, alongside the
+ordinary-quad cutout fixture. This diagnosis/repair still requires the rerun.
+
+
+LAB-17 final verification: Builds/PokedexShaderDetails builds with zero errors.
+Logs/shader-details-final.log: LAB REFRACTION PIXELS PASSED and LAB SHADER DETAILS
+PASSED, exit 0, no logged exceptions/shader errors through shutdown. Ten focused
+presentations: seven ZA (Flamethrower, Dragon Pulse, Hydro Pump, Psybeam, Psychic,
+Shadow Ball, Thunderbolt), three BDSP (Brick Break, Psychic, Thunderbolt).
+Pixel fixture: 19,845 changed pixels with distortion; zero outside its footprint,
+zero changes at zero strength, and zero changes inside the foreground occluder.
+Soft intersections, alpha cutout, front/back culling and actual particle primitive
+mask transport pass. Native RG/BA now travel in explicit UV2/UV3 streams, separate
+from Unity's particle COLOR; this restores the cores lost in the rejected run.
+Visual review confirms visible Hydro/Psybeam cores with distinct color layers,
+retained fire/Dragon Pulse particles and BDSP contact layers. These captures do
+not establish full original-game parity: flat-looking flame shapes, native rim
+and deformation, transparent-on-transparent refraction, two Iron Tail curves and
+three Dig commands remain open. URP displacement/silhouette are calibrated.
+Full staged audit: 3,600 texture refs resolved; 16 restored refractors, 16 true
+invisible carriers, 195 ZA / 188 BDSP soft-particle entries. Native states restored
+on 914 masked and 242 one-sided ZA emitter records. No attacks added or full
+roster tests rerun. Evidence: Docs/evidence/shader-details. Bruno's acceptance is
+pending; launcher selects this isolated build and prior builds are preserved.

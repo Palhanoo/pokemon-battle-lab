@@ -1,4 +1,11 @@
 {
+  "surfaceSummary": {
+    "ZA_refraction": 16,
+    "ZA_soft": 195,
+    "ZA_masked": 914,
+    "ZA_one_sided": 242,
+    "BDSP_soft": 188
+  },
   "scope": {
     "ZA": 47,
     "BDSP": 22,
@@ -32413,162 +32420,82 @@
     {
       "asset": "ZA/zaew0098/ew0098_attack.json",
       "emitter": "Emitter1",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0085/ew0085_bullet.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0087/ew0087_hit.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0209/ew0209_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_bullet.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_charge.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_end.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0247/ew0247_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0094/ew0094_bullet.json",
       "emitter": "root",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0094/ew0094_bullet.json",
-      "emitter": "dis",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0094/ew0094_bullet.json",
       "emitter": "in_root",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0094/ew0094_bullet.json",
-      "emitter": "in_dis",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0094/ew0094_charge.json",
       "emitter": "in_root",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0396/ew0396_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0406/ew0406_muzzle.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0418/ew0418_bullet.json",
       "emitter": "cross",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0418/ew0418_bullet.json",
       "emitter": "main_hit",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0412/ew0412_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
       "emitter": "slash",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
       "emitter": "wind",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0437/ew0437_bullet.json",
       "emitter": "leaf",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0071/ew0071_ball.json",
       "emitter": "move01",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0202/ew0202_hit.json",
       "emitter": "move01",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0202/ew0202_hit.json",
       "emitter": "move01_Copy1",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0053/ew0053_bullet.json",
       "emitter": "pos",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0053/ew0053_muzzle.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0056/ew0056_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0093/ew0093_bullet.json",
       "emitter": "in_root_Copy1",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0036/ew0036_bullet.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
-    },
-    {
-      "asset": "ZA/zaew0036/ew0036_impact.json",
-      "emitter": "dist",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0183/ew0183_attack.json",
       "emitter": "Emitter1",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     },
     {
       "asset": "ZA/zaew0317/ew0317_rock_break.json",
       "emitter": "hit_oya",
-      "reason": "Source export disabled drawing (includes unsupported refraction / carrier-only emitters)."
+      "reason": "Native is_particle_draw=0 carrier; refraction renderers are restored from their native draw flags."
     }
   ],
   "unhandledTimelineCommands": [
@@ -32610,6 +32537,7 @@
   },
   "limitations": [
     "Native texture channel/blend selectors retained; view-normal sphere projection and refraction/material fidelity remain approximate.",
+    "Opaque-scene refraction uses a calibrated displacement factor; transparent-on-transparent refraction and native Fresnel/distance-fade modes remain incomplete.",
     "Source camera tracks, native deformation and full state machines remain incomplete.",
     "Manually compare release, travel, contact and cleanup; use F2 layers and Esc pause."
   ]

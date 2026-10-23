@@ -341,6 +341,10 @@ def material(t, mb, tex):
         m2 = mb.get('_MulColor', {'r': 1, 'g': 1, 'b': 1, 'a': 1})
         mul = {ch: mul[ch] * m2[ch] for ch in 'rgba'}
     out['mul'] = _r([mul[ch] for ch in 'rgba'])
+    out['surface']={'soft':1 if '_SOFTPARTICLESENABLED_ON' in kw else 0,
+        'soft_range':[fl.get('_SoftParticlesNearFadeDistance',0),fl.get('_SoftParticlesFarFadeDistance',1)],
+        'refraction':False}
+
     def channels(prefix,values):return [values[key(f'_{prefix}TEXTURE{i}CHANNEL_',next(iter(values)))] for i in range(3)]
     def blends(prefix):return [{'MUL':0,'PLUS':1,'MINUS':2}.get(key(f'_{prefix}TEXTURE{i}BLENDTYPE_','MUL'),0) for i in (1,2)]+[0]
     out['combiner']={'color_channels':channels('COLOR',{'RGB':0,'ONE':1,'ONEMINUSRGB':2,'ALPHA':3,'ONEMINUSALPHA':4}),
